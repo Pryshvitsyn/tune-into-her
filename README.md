@@ -56,7 +56,7 @@ The cycle engine uses calendar dates rather than elapsed hours, avoiding dayligh
 
 ## Prerequisites
 
-- Node.js 22 LTS is recommended. Expo SDK 57's React Native version also supports its declared Node 20, 24, and newer compatible ranges.
+- Node.js 24 LTS is recommended and is the version used by CI. Expo SDK 57's React Native version also supports its other declared compatible Node ranges.
 - npm, using the committed `package-lock.json`.
 - Xcode for local iOS builds.
 - Android Studio and an Android SDK for local Android builds.
