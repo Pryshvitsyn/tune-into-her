@@ -1,0 +1,1602 @@
+{
+  "menstrual_001": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_002": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_003": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_004": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_005": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_006": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_007": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_008": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_009": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_010": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_011": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_012": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_013": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_014": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_015": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_016": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_017": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_018": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_019": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_020": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+  },
+  "menstrual_021": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_022": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_023": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_024": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_025": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_026": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_027": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_028": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_029": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_030": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_031": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_032": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_033": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_034": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_035": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_036": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_037": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_038": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_039": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_040": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+  },
+  "menstrual_041": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_042": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_043": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_044": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_045": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_046": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_047": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_048": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_049": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_050": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_051": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_052": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_053": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_054": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_055": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_056": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_057": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_058": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_059": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_060": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Oggi può bastare un semplice confronto."
+  },
+  "menstrual_061": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_062": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_063": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_064": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_065": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_066": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_067": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_068": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_069": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_070": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_071": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "menstrual_072": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_001": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_002": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_003": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_004": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_005": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_006": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_007": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_008": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Fai inviti facili da accettare o rifiutare."
+  },
+  "follicular_009": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_010": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_011": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_012": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_013": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_014": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_015": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_016": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_017": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_018": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_019": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_020": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_021": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_022": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_023": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_024": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_025": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_026": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_027": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_028": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+  },
+  "follicular_029": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_030": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_031": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_032": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_033": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_034": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_035": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_036": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_037": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_038": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_039": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_040": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_041": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_042": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_043": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_044": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_045": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_046": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_047": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_048": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Offri un aiuto pratico senza farne un grande evento."
+  },
+  "follicular_049": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_050": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_051": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_052": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_053": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_054": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_055": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_056": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_057": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_058": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_059": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_060": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_061": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_062": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_063": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_064": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_065": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_066": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_067": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_068": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Lascia che siano le sue parole a guidare la giornata."
+  },
+  "follicular_069": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_070": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_071": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_072": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_073": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_074": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_075": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_076": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_077": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_078": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_079": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_080": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_081": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_082": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_083": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_084": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_085": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_086": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_087": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_088": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Riduci la pressione non necessaria dove puoi."
+  },
+  "follicular_089": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_090": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_091": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_092": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_093": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_094": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_095": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_096": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_097": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_098": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_099": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_100": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_101": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_102": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_103": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "follicular_104": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "mid_cycle_001": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "mid_cycle_002": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "mid_cycle_003": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "mid_cycle_004": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Scegli la curiosità invece dell’interpretazione."
+  },
+  "mid_cycle_005": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_006": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_007": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_008": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_009": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_010": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_011": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_012": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_013": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_014": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_015": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_016": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_017": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_018": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_019": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_020": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_021": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_022": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_023": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_024": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Una serata flessibile può essere un’opzione premurosa."
+  },
+  "mid_cycle_025": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_026": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_027": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_028": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_029": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_030": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_031": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_032": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_033": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_034": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_035": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_036": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_037": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_038": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_039": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_040": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_041": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_042": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_043": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "mid_cycle_044": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Ascolta prima, se decide di condividere."
+  },
+  "luteal_001": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_002": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_003": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_004": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_005": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_006": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_007": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_008": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_009": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_010": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_011": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_012": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_013": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_014": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_015": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_016": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_017": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_018": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_019": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_020": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Usa la stima come promemoria per prestare attenzione."
+  },
+  "luteal_021": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_022": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_023": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_024": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_025": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_026": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_027": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_028": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_029": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_030": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_031": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_032": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_033": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_034": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_035": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_036": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_037": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_038": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_039": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_040": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+  },
+  "luteal_041": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_042": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_043": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_044": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_045": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_046": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_047": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_048": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_049": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_050": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_051": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_052": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_053": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_054": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_055": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_056": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_057": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_058": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_059": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_060": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Verifica che il programma vada ancora bene a entrambi."
+  },
+  "luteal_061": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_062": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_063": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_064": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_065": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_066": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_067": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_068": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_069": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_070": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_071": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_072": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_073": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_074": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_075": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_076": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_077": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_078": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_079": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_080": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Lascia che oggi le preferenze possano essere diverse."
+  },
+  "luteal_081": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_082": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_083": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_084": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_085": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_086": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_087": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_088": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_089": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_090": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_091": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_092": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_093": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_094": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_095": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_096": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_097": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_098": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_099": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_100": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Offri supporto senza decidere tu che forma debba avere."
+  },
+  "luteal_101": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_102": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_103": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_104": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_105": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_106": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_107": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_108": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_109": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_110": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_111": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_112": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_113": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_114": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_115": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_116": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_117": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_118": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_119": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_120": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+  },
+  "luteal_121": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_122": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_123": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_124": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_125": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_126": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_127": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_128": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_129": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_130": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_131": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_132": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_133": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_134": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_135": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_136": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_137": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_138": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_139": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_140": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+  },
+  "luteal_141": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_142": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_143": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_144": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_145": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_146": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_147": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_148": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_149": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_150": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_151": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_152": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_153": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_154": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_155": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_156": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_157": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_158": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_159": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_160": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Una domanda gentile è più utile di una previsione."
+  },
+  "luteal_161": {
+    "context": "Comfort ed energia possono variare in questo momento.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_162": {
+    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_163": {
+    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_164": {
+    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_165": {
+    "context": "Questa parte del ciclo può cambiare di mese in mese.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_166": {
+    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_167": {
+    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_168": {
+    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_169": {
+    "context": "Oggi l’energia può seguire un ritmo diverso.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_170": {
+    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_171": {
+    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_172": {
+    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_173": {
+    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_174": {
+    "context": "Oggi può essere utile mantenere leggere le aspettative.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_175": {
+    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_176": {
+    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_177": {
+    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_178": {
+    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_179": {
+    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  },
+  "luteal_180": {
+    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
+    "cue": "Resta aperto a una risposta che non ti aspettavi."
+  }
+}

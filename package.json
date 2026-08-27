@@ -1,0 +1,50 @@
+{
+  "name": "partner-cycle-context",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "content:generate": "node scripts/generate-content.mjs",
+    "content:validate": "node scripts/validate-content.mjs"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-community/datetimepicker": "latest",
+    "expo": "~57.0.17",
+    "expo-constants": "latest",
+    "expo-dev-client": "~57.0.16",
+    "expo-linking": "~57.0.8",
+    "expo-localization": "latest",
+    "expo-notifications": "~57.0.15",
+    "expo-router": "~57.0.17",
+    "expo-secure-store": "~57.0.2",
+    "expo-status-bar": "latest",
+    "i18next": "latest",
+    "react": "19.2.3",
+    "react-i18next": "latest",
+    "react-native": "0.86.3",
+    "react-native-purchases": "latest",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-config-expo": "~57.0.2",
+    "typescript": "latest",
+    "vitest": "latest"
+  },
+  "overrides": {
+    "react-dom": "19.2.3"
+  }
+}

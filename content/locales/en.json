@@ -1,0 +1,1602 @@
+{
+  "menstrual_001": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_002": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_003": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_004": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_005": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_006": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_007": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_008": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_009": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_010": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_011": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_012": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_013": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_014": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_015": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_016": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_017": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_018": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_019": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_020": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Ask what would feel helpful instead of assuming."
+  },
+  "menstrual_021": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_022": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_023": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_024": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_025": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_026": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_027": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_028": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_029": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_030": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_031": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_032": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_033": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_034": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_035": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_036": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_037": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_038": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_039": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_040": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Leave a little room for plans to change if useful."
+  },
+  "menstrual_041": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_042": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_043": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_044": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_045": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_046": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_047": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_048": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_049": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_050": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_051": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_052": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_053": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_054": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_055": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_056": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_057": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_058": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_059": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_060": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "A simple check-in can be enough today."
+  },
+  "menstrual_061": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_062": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_063": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_064": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_065": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_066": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_067": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_068": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_069": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_070": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_071": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "menstrual_072": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_001": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_002": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_003": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_004": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_005": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_006": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_007": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_008": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Keep invitations easy to accept or decline."
+  },
+  "follicular_009": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_010": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_011": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_012": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_013": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_014": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_015": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_016": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_017": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_018": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_019": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_020": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_021": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_022": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_023": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_024": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_025": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_026": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_027": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_028": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Make space for either company or quiet."
+  },
+  "follicular_029": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_030": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_031": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_032": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_033": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_034": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_035": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_036": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_037": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_038": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_039": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_040": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_041": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_042": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_043": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_044": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_045": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_046": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_047": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_048": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Offer practical help without making it a big event."
+  },
+  "follicular_049": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_050": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_051": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_052": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_053": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_054": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_055": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_056": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_057": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_058": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_059": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_060": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_061": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_062": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_063": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_064": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_065": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_066": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_067": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_068": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Let their own words guide the day."
+  },
+  "follicular_069": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_070": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_071": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_072": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_073": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_074": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_075": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_076": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_077": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_078": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_079": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_080": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_081": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_082": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_083": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_084": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_085": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_086": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_087": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_088": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Keep unnecessary pressure low where you can."
+  },
+  "follicular_089": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_090": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_091": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_092": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_093": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_094": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_095": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_096": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_097": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_098": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_099": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_100": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_101": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_102": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_103": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "follicular_104": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "mid_cycle_001": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "mid_cycle_002": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "mid_cycle_003": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "mid_cycle_004": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Choose curiosity over interpretation."
+  },
+  "mid_cycle_005": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_006": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_007": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_008": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_009": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_010": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_011": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_012": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_013": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_014": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_015": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_016": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_017": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_018": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_019": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_020": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_021": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_022": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_023": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_024": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "A flexible evening may be a thoughtful option."
+  },
+  "mid_cycle_025": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_026": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_027": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_028": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_029": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_030": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_031": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_032": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_033": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_034": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_035": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_036": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_037": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_038": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_039": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_040": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_041": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_042": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_043": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Listen first if they choose to share."
+  },
+  "mid_cycle_044": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Listen first if they choose to share."
+  },
+  "luteal_001": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_002": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_003": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_004": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_005": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_006": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_007": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_008": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_009": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_010": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_011": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_012": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_013": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_014": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_015": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_016": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_017": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_018": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_019": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_020": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Treat the estimate as a reminder to pay attention."
+  },
+  "luteal_021": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_022": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_023": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_024": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_025": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_026": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_027": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_028": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_029": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_030": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_031": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_032": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_033": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_034": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_035": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_036": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_037": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_038": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_039": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_040": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Make one ordinary task a little easier if welcome."
+  },
+  "luteal_041": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_042": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_043": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_044": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_045": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_046": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_047": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_048": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_049": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_050": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_051": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_052": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_053": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_054": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_055": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_056": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_057": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_058": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_059": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_060": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Check the plan still works for both of you."
+  },
+  "luteal_061": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_062": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_063": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_064": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_065": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_066": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_067": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_068": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_069": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_070": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_071": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_072": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_073": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_074": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_075": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_076": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_077": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_078": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_079": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_080": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Give preferences room to be different today."
+  },
+  "luteal_081": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_082": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_083": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_084": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_085": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_086": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_087": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_088": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_089": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_090": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_091": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_092": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_093": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_094": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_095": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_096": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_097": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_098": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_099": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_100": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Offer, rather than decide, what support looks like."
+  },
+  "luteal_101": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_102": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_103": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_104": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_105": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_106": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_107": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_108": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_109": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_110": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_111": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_112": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_113": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_114": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_115": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_116": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_117": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_118": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_119": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_120": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Keep the day collaborative and low-pressure."
+  },
+  "luteal_121": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_122": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_123": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_124": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_125": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_126": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_127": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_128": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_129": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_130": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_131": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_132": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_133": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_134": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_135": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_136": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_137": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_138": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_139": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_140": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Notice what they say, not what the app suggests."
+  },
+  "luteal_141": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_142": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_143": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_144": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_145": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_146": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_147": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_148": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_149": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_150": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_151": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_152": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_153": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_154": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_155": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_156": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_157": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_158": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_159": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_160": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "A kind question is more useful than a prediction."
+  },
+  "luteal_161": {
+    "context": "Comfort and energy can vary around this point.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_162": {
+    "context": "The pace that feels comfortable may be different today.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_163": {
+    "context": "Some people notice subtle shifts in energy around now.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_164": {
+    "context": "Rest, focus, or sociability may feel a little different.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_165": {
+    "context": "This part of a cycle can feel different from month to month.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_166": {
+    "context": "Preferences for company or quiet may shift around this time.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_167": {
+    "context": "Plans may feel easier with a little breathing room today.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_168": {
+    "context": "Physical comfort can be less predictable around this point.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_169": {
+    "context": "Energy may arrive in a different rhythm today.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_170": {
+    "context": "Small changes in comfort or focus are possible around now.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_171": {
+    "context": "What feels supportive can vary at this point in a cycle.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_172": {
+    "context": "Some people appreciate a gentler pace around this time.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_173": {
+    "context": "Needs and preferences can be especially individual today.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_174": {
+    "context": "There may be value in keeping expectations light today.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_175": {
+    "context": "Every cycle is different, including days around this point.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_176": {
+    "context": "A little extra flexibility may feel welcome around now.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_177": {
+    "context": "Energy and attention may not follow their usual pattern.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_178": {
+    "context": "Comfort can change without saying anything about mood.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_179": {
+    "context": "Today may simply call for a more open-ended pace.",
+    "cue": "Stay open to an answer you did not expect."
+  },
+  "luteal_180": {
+    "context": "This estimate is context, while their experience is personal.",
+    "cue": "Stay open to an answer you did not expect."
+  }
+}
