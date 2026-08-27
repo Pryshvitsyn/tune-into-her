@@ -4,8 +4,8 @@ import brand from './src/config/brand.json';
 
 const config: ExpoConfig = {
   name: brand.displayName,
-  slug: 'partner-cycle-context',
-  scheme: 'cyclecontext',
+  slug: 'tune-into-her',
+  scheme: 'tuneintoher',
   version: '1.0.0',
   orientation: 'portrait',
   userInterfaceStyle: 'light',
