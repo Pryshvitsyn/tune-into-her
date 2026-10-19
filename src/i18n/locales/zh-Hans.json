@@ -1,0 +1,182 @@
+{
+  "brand": {
+    "dailyContext": "给今天一点参考。"
+  },
+  "common": {
+    "continue": "继续",
+    "back": "返回",
+    "save": "保存",
+    "cancel": "取消",
+    "done": "完成",
+    "retry": "重试",
+    "loading": "正在加载…",
+    "on": "开启",
+    "off": "关闭",
+    "notSet": "未设置",
+    "days": "{{count}}天",
+    "close": "关闭"
+  },
+  "onboarding": {
+    "welcomeTitle": "别猜测，用心倾听。",
+    "welcomeBody": "根据伴侣大致的月经周期阶段，每天获得一条体贴的建议。",
+    "contextTitle": "提供参考，不作预测",
+    "contextBody": "每个人、每次周期的体验都不同。本应用无法预测伴侣的感受，也不提供医疗建议。",
+    "privacy": "仅输入伴侣同意你使用的周期信息。尊重她的隐私。",
+    "acknowledge": "我理解，并会尊重地使用估算信息",
+    "required": "请先确认，再继续。",
+    "dateTitle": "上次月经是什么时候开始的？",
+    "dateBody": "请输入最近一次已知月经的第一天。",
+    "futureDate": "日期不能晚于今天。",
+    "typicalTitle": "通常持续多久？",
+    "typicalBody": "估算即可，你可以稍后修改。",
+    "cycleLength": "周期长度",
+    "periodLength": "经期长度",
+    "previewTitle": "今天一览",
+    "previewBody": "这是你每天会看到的建议示例。",
+    "reminderTitle": "每天一次提醒",
+    "reminderBody": "选择提醒时间，或不设提醒，继续使用应用。",
+    "enableReminder": "开启每日提醒",
+    "reminderTime": "提醒时间",
+    "skipReminder": "暂不设置",
+    "finish": "查看今天"
+  },
+  "today": {
+    "day": "第{{day}}天",
+    "approxPhase": "估算阶段：{{phase}}",
+    "today": "今天",
+    "goodMove": "今天的一份体贴",
+    "learnMore": "了解更多",
+    "estimated": "根据输入的周期信息估算。",
+    "update": "更新周期",
+    "newCycle": "预计进入新的周期。得知实际开始日期后，请更新信息。",
+    "settings": "打开设置",
+    "lockedTitle": "今日建议已准备好",
+    "lockedBody": "有效试用或订阅可解锁今日建议。",
+    "unlock": "查看订阅"
+  },
+  "phase": {
+    "menstrual": "月经期",
+    "follicular": "卵泡期",
+    "mid_cycle": "周期中期",
+    "luteal": "黄体期"
+  },
+  "learn": {
+    "title": "关于这一估算阶段",
+    "menstrual": {
+      "heading": "月经期",
+      "body": "这是估算的周期最初几天。舒适度和精力因人而异。本应用仅根据日期计算，无法确认月经已开始，也无法判断伴侣的感受。请询问并倾听。"
+    },
+    "follicular": {
+      "heading": "卵泡期",
+      "body": "这是经期结束后、周期中段前的估算时间。体验和时间各不相同。应用只根据已输入信息计算，请把它当作关心伴侣的提醒，而不是对她感受的解释。"
+    },
+    "mid_cycle": {
+      "heading": "周期中期",
+      "body": "这是周期中间附近的估算区间，并非易孕期计算。请勿用于避孕或备孕。伴侣的舒适度和需求因人而异，她的话比估算更重要。"
+    },
+    "luteal": {
+      "heading": "黄体期",
+      "body": "这是下一次预计周期开始前的后段时间。精力和舒适度可能变化。预测日期并不代表已经确认的事件。请询问、倾听，保持灵活。"
+    },
+    "noSources": "外部资料将在医学审核后添加。"
+  },
+  "settings": {
+    "title": "设置",
+    "cycle": "周期",
+    "cycleDetails": "周期详情",
+    "reminder": "每日提醒",
+    "language": "语言",
+    "subscription": "订阅",
+    "information": "信息",
+    "privacy": "隐私",
+    "disclaimer": "免责声明",
+    "about": "关于",
+    "permission": "权限",
+    "enabledAt": "已开启，时间为{{time}}",
+    "disabled": "已关闭"
+  },
+  "cycle": {
+    "title": "更新周期",
+    "lastPeriod": "最近一次已知月经开始日期",
+    "saved": "周期信息已更新。",
+    "invalid": "请检查周期和经期长度。",
+    "saveError": "无法保存信息。"
+  },
+  "reminder": {
+    "title": "每日提醒",
+    "description": "每天最多安排一次本地通知。",
+    "permissionGranted": "已允许",
+    "permissionDenied": "未允许",
+    "permissionUnknown": "尚未请求",
+    "deniedHelp": "系统设置中已关闭通知。不启用通知也能使用应用。",
+    "saveError": "无法更新提醒。"
+  },
+  "language": {
+    "title": "语言",
+    "en": "English",
+    "it": "Italiano",
+    "ru": "Русский",
+    "uk": "Українська",
+    "es": "Español"
+  },
+  "paywall": {
+    "title": "每天一条实用建议。",
+    "body": "解锁完整的每日建议和周期阶段参考。",
+    "trial": "免费试用{{duration}}",
+    "afterTrial": "试用结束后{{price}}，按{{period}}续订。",
+    "regular": "{{price}}，按{{period}}续订。",
+    "monthly": "每月",
+    "duration": {
+      "day": "{{count}}天",
+      "week": "{{count}}周",
+      "month": "{{count}}个月",
+      "year": "{{count}}年"
+    },
+    "automatic": "可随时取消。除非取消，否则订阅将自动续订。",
+    "startTrial": "开始免费试用",
+    "continue": "继续",
+    "restore": "恢复购买",
+    "loading": "正在加载商店方案…",
+    "unavailable": "无法加载方案，不会假定价格或试用期限。",
+    "cancelled": "购买已取消。",
+    "purchaseError": "无法完成购买。",
+    "restored": "购买已恢复。",
+    "nothingToRestore": "未找到可恢复的有效购买。",
+    "mock": "开发模拟支付",
+    "terms": "条款",
+    "privacy": "隐私"
+  },
+  "subscription": {
+    "title": "订阅",
+    "activeTrial": "试用中",
+    "activePaid": "订阅有效",
+    "activeEnding": "有效至{{date}}",
+    "inactive": "未激活",
+    "expired": "已过期",
+    "billingIssue": "付款问题",
+    "unknown": "正在检查状态",
+    "restore": "恢复购买",
+    "manage": "管理订阅",
+    "manageError": "无法打开订阅管理。"
+  },
+  "privacy": {
+    "title": "隐私",
+    "body": "周期设置保留在本设备，不会发送给RevenueCat。本应用没有账户、广告、分析追踪、位置或联系人收集，也没有自建后端。Apple或Google以及RevenueCat处理订阅交易信息，但不会从本应用收到周期设置。"
+  },
+  "disclaimer": {
+    "title": "免责声明",
+    "body": "本应用是关系交流信息工具，不是医疗器械，不提供医疗建议、诊断或治疗。周期和体验因人、因时而异。估算仅依据输入信息。请勿用于避孕、生育决定、备孕、诊疗或紧急健康决策。本应用无法了解或预测伴侣的感受。"
+  },
+  "about": {
+    "title": "关于",
+    "description": "每天一条体贴建议，不把猜测说成事实。",
+    "version": "版本{{version}}",
+    "support": "发布前需配置支持联系方式。"
+  },
+  "accessibility": {
+    "decrease": "减少{{label}}",
+    "increase": "增加{{label}}",
+    "selectLanguage": "选择{{language}}",
+    "phaseIndicator": "{{phase}}阶段指示"
+  }
+}

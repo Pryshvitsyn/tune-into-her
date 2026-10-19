@@ -1,0 +1,182 @@
+{
+  "brand": {
+    "dailyContext": "Sedikit konteks untuk hari ini."
+  },
+  "common": {
+    "continue": "Teruskan",
+    "back": "Kembali",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "done": "Selesai",
+    "retry": "Cuba lagi",
+    "loading": "Sedang memuatkan…",
+    "on": "Hidup",
+    "off": "Mati",
+    "notSet": "Belum ditetapkan",
+    "days": "{{count}} hari",
+    "close": "Tutup"
+  },
+  "onboarding": {
+    "welcomeTitle": "Jangan meneka. Ambil peduli.",
+    "welcomeBody": "Dapatkan satu cadangan harian yang menghormati pasangan berdasarkan anggaran tahap kitarannya.",
+    "contextTitle": "Konteks, bukan ramalan",
+    "contextBody": "Kitaran dan pengalaman setiap orang berbeza. Aplikasi ini tidak meramal perasaan pasangan atau memberikan nasihat perubatan.",
+    "privacy": "Masukkan hanya maklumat kitaran yang pasangan izinkan untuk digunakan. Hormati privasinya.",
+    "acknowledge": "Saya faham dan akan menggunakan anggaran dengan hormat",
+    "required": "Sila sahkan sebelum meneruskan.",
+    "dateTitle": "Bilakah haid terakhir bermula?",
+    "dateBody": "Gunakan hari pertama haid terakhir yang diketahui.",
+    "futureDate": "Tarikh tidak boleh pada masa hadapan.",
+    "typicalTitle": "Berapakah tempoh biasanya?",
+    "typicalBody": "Anggaran sudah memadai. Anda boleh mengubahnya kemudian.",
+    "cycleLength": "Tempoh kitaran",
+    "periodLength": "Tempoh haid",
+    "previewTitle": "Sepintas lalu hari ini",
+    "previewBody": "Inilah jenis cadangan yang akan anda lihat setiap hari.",
+    "reminderTitle": "Satu peringatan sehari",
+    "reminderBody": "Pilih masa, atau gunakan aplikasi tanpa peringatan.",
+    "enableReminder": "Hidupkan peringatan harian",
+    "reminderTime": "Masa peringatan",
+    "skipReminder": "Bukan sekarang",
+    "finish": "Lihat hari ini"
+  },
+  "today": {
+    "day": "HARI {{day}}",
+    "approxPhase": "Anggaran fasa {{phase}}",
+    "today": "Hari ini",
+    "goodMove": "Satu tindakan prihatin",
+    "learnMore": "Ketahui lebih lanjut",
+    "estimated": "Dianggarkan daripada maklumat kitaran yang dimasukkan.",
+    "update": "Kemas kini kitaran",
+    "newCycle": "Ini anggaran permulaan kitaran baharu. Kemas kini apabila tarikh sebenar diketahui.",
+    "settings": "Buka tetapan",
+    "lockedTitle": "Cadangan hari ini sudah tersedia",
+    "lockedBody": "Percubaan atau langganan aktif membuka akses kepada cadangan hari ini.",
+    "unlock": "Lihat langganan"
+  },
+  "phase": {
+    "menstrual": "haid",
+    "follicular": "folikular",
+    "mid_cycle": "pertengahan kitaran",
+    "luteal": "luteal"
+  },
+  "learn": {
+    "title": "Tentang fasa anggaran ini",
+    "menstrual": {
+      "heading": "Fasa haid",
+      "body": "Anggaran hari-hari awal kitaran. Keselesaan dan tenaga berbeza bagi setiap orang. Aplikasi hanya mengira daripada tarikh yang dimasukkan; ia tidak mengesahkan haid bermula atau mengetahui perasaan pasangan. Tanya dan dengar."
+    },
+    "follicular": {
+      "heading": "Fasa folikular",
+      "body": "Anggaran tempoh selepas haid dan sebelum pertengahan kitaran. Masa dan pengalaman berbeza. Pengiraan hanya berdasarkan maklumat yang dimasukkan. Jadikannya peringatan untuk mengambil peduli, bukan penjelasan perasaan pasangan."
+    },
+    "mid_cycle": {
+      "heading": "Pertengahan kitaran",
+      "body": "Anggaran sekitar pertengahan kitaran, bukan pengiraan waktu subur. Jangan gunakan untuk kontrasepsi atau merancang kehamilan. Kata-kata pasangan lebih penting daripada anggaran aplikasi."
+    },
+    "luteal": {
+      "heading": "Fasa luteal",
+      "body": "Anggaran bahagian akhir kitaran sebelum permulaan seterusnya. Tenaga dan keselesaan boleh berubah. Tarikh ini belum disahkan. Tanya, dengar dan bersikap fleksibel."
+    },
+    "noSources": "Sumber luar akan ditambah selepas semakan perubatan."
+  },
+  "settings": {
+    "title": "Tetapan",
+    "cycle": "Kitaran",
+    "cycleDetails": "Butiran kitaran",
+    "reminder": "Peringatan harian",
+    "language": "Bahasa",
+    "subscription": "Langganan",
+    "information": "Maklumat",
+    "privacy": "Privasi",
+    "disclaimer": "Penafian",
+    "about": "Tentang",
+    "permission": "Kebenaran",
+    "enabledAt": "Dihidupkan pada {{time}}",
+    "disabled": "Dimatikan"
+  },
+  "cycle": {
+    "title": "Kemas kini kitaran",
+    "lastPeriod": "Permulaan haid terakhir yang diketahui",
+    "saved": "Butiran kitaran dikemas kini.",
+    "invalid": "Semak tempoh kitaran dan haid.",
+    "saveError": "Maklumat tidak dapat disimpan."
+  },
+  "reminder": {
+    "title": "Peringatan harian",
+    "description": "Maksimum satu pemberitahuan setempat dijadualkan setiap hari.",
+    "permissionGranted": "Dibenarkan",
+    "permissionDenied": "Tidak dibenarkan",
+    "permissionUnknown": "Belum diminta",
+    "deniedHelp": "Pemberitahuan dimatikan dalam tetapan sistem. Aplikasi tetap boleh digunakan.",
+    "saveError": "Peringatan tidak dapat dikemas kini."
+  },
+  "language": {
+    "title": "Bahasa",
+    "en": "English",
+    "it": "Italiano",
+    "ru": "Русский",
+    "uk": "Українська",
+    "es": "Español"
+  },
+  "paywall": {
+    "title": "Satu cadangan berguna setiap hari.",
+    "body": "Buka akses kepada cadangan harian penuh dan konteks fasa.",
+    "trial": "{{duration}} percuma",
+    "afterTrial": "{{price}} selepas percubaan, diperbaharui {{period}}.",
+    "regular": "{{price}}, diperbaharui {{period}}.",
+    "monthly": "setiap bulan",
+    "duration": {
+      "day": "{{count}} hari",
+      "week": "{{count}} minggu",
+      "month": "{{count}} bulan",
+      "year": "{{count}} tahun"
+    },
+    "automatic": "Boleh dibatalkan bila-bila masa. Langganan diperbaharui secara automatik melainkan dibatalkan.",
+    "startTrial": "Mulakan percubaan percuma",
+    "continue": "Teruskan",
+    "restore": "Pulihkan pembelian",
+    "loading": "Memuatkan tawaran kedai…",
+    "unavailable": "Tawaran tidak tersedia. Harga atau percubaan tidak diandaikan.",
+    "cancelled": "Pembelian dibatalkan.",
+    "purchaseError": "Pembelian tidak dapat diselesaikan.",
+    "restored": "Pembelian dipulihkan.",
+    "nothingToRestore": "Tiada pembelian aktif untuk dipulihkan.",
+    "mock": "BAYARAN SIMULASI PEMBANGUNAN",
+    "terms": "Terma",
+    "privacy": "Privasi"
+  },
+  "subscription": {
+    "title": "Langganan",
+    "activeTrial": "Percubaan aktif",
+    "activePaid": "Langganan aktif",
+    "activeEnding": "Aktif sehingga {{date}}",
+    "inactive": "Tidak aktif",
+    "expired": "Tamat tempoh",
+    "billingIssue": "Masalah bayaran",
+    "unknown": "Menyemak status",
+    "restore": "Pulihkan pembelian",
+    "manage": "Urus langganan",
+    "manageError": "Pengurusan langganan tidak dapat dibuka."
+  },
+  "privacy": {
+    "title": "Privasi",
+    "body": "Tetapan kitaran kekal pada peranti ini dan tidak dihantar kepada RevenueCat. Tiada akaun, iklan, analitik, pengumpulan lokasi atau kenalan, atau pelayan aplikasi sendiri. Apple atau Google dan RevenueCat memproses maklumat transaksi langganan; mereka tidak menerima tetapan kitaran daripada aplikasi ini."
+  },
+  "disclaimer": {
+    "title": "Penafian",
+    "body": "Aplikasi ini ialah alat maklumat untuk hubungan, bukan peranti perubatan. Ia tidak memberikan nasihat perubatan, diagnosis atau rawatan. Kitaran dan pengalaman berbeza. Anggaran berdasarkan maklumat yang dimasukkan sahaja. Jangan gunakan untuk kontrasepsi, keputusan kesuburan, perancangan kehamilan, rawatan atau keputusan kecemasan kesihatan. Aplikasi tidak mengetahui atau meramal perasaan pasangan."
+  },
+  "about": {
+    "title": "Tentang",
+    "description": "Satu hari, satu cadangan yang prihatin; anggaran tidak dianggap fakta.",
+    "version": "Versi {{version}}",
+    "support": "Hubungan sokongan mesti ditetapkan sebelum pelancaran."
+  },
+  "accessibility": {
+    "decrease": "Kurangkan {{label}}",
+    "increase": "Tambah {{label}}",
+    "selectLanguage": "Pilih {{language}}",
+    "phaseIndicator": "Penunjuk fasa {{phase}}"
+  }
+}

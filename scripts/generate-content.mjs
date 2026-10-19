@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
@@ -90,6 +90,8 @@ const copy = {
   }
 };
 
+Object.assign(copy, JSON.parse(await readFile(path.join(root, 'localization/content-new.json'), 'utf8')));
+
 const catalog = [];
 const locales = Object.fromEntries(Object.keys(copy).map((language) => [language, {}]));
 let globalIndex = 0;
@@ -112,3 +114,4 @@ for (const [language, entries] of Object.entries(locales)) {
   await writeFile(path.join(root, 'content', 'locales', `${language}.json`), `${JSON.stringify(entries, null, 2)}\n`);
 }
 console.log(`Generated ${catalog.length} cues in ${Object.keys(locales).length} languages.`);
+

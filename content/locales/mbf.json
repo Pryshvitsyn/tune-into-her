@@ -1,0 +1,1602 @@
+{
+  "menstrual_001": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_002": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_003": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_004": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_005": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_006": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_007": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_008": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_009": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_010": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_011": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_012": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_013": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_014": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_015": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_016": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_017": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_018": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_019": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_020": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Tanya apa boleh bantu, jangan agak saja."
+  },
+  "menstrual_021": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_022": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_023": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_024": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_025": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_026": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_027": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_028": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_029": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_030": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_031": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_032": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_033": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_034": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_035": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_036": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_037": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_038": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_039": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_040": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kasi ruang untuk tukar rancangan."
+  },
+  "menstrual_041": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_042": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_043": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_044": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_045": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_046": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_047": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_048": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_049": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_050": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_051": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_052": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_053": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_054": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_055": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_056": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_057": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_058": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_059": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_060": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Tanya baik-baik pun mungkin sudah cukup."
+  },
+  "menstrual_061": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_062": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_063": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_064": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_065": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_066": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_067": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_068": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_069": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_070": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_071": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "menstrual_072": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_001": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_002": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_003": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_004": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_005": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_006": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_007": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_008": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Ajak cara yang senang terima atau tolak."
+  },
+  "follicular_009": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_010": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_011": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_012": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_013": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_014": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_015": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_016": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_017": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_018": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_019": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_020": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_021": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_022": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_023": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_024": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_025": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_026": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_027": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_028": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kasi ruang untuk teman dan untuk diam."
+  },
+  "follicular_029": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_030": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_031": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_032": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_033": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_034": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_035": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_036": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_037": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_038": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_039": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_040": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_041": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_042": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_043": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_044": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_045": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_046": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_047": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_048": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Bantu satu perkara, tak payah besar-besarkan."
+  },
+  "follicular_049": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_050": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_051": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_052": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_053": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_054": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_055": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_056": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_057": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_058": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_059": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_060": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_061": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_062": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_063": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_064": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_065": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_066": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_067": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_068": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Ikut apa dia sendiri cakap."
+  },
+  "follicular_069": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_070": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_071": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_072": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_073": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_074": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_075": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_076": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_077": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_078": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_079": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_080": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_081": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_082": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_083": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_084": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_085": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_086": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_087": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_088": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kurangkan tekanan yang tak perlu."
+  },
+  "follicular_089": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_090": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_091": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_092": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_093": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_094": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_095": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_096": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_097": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_098": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_099": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_100": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_101": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_102": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_103": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "follicular_104": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "mid_cycle_001": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "mid_cycle_002": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "mid_cycle_003": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "mid_cycle_004": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Tanya dulu, jangan pandai tafsir sendiri."
+  },
+  "mid_cycle_005": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_006": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_007": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_008": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_009": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_010": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_011": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_012": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_013": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_014": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_015": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_016": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_017": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_018": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_019": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_020": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_021": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_022": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_023": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_024": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Rancangan malam jangan terlalu ketat."
+  },
+  "mid_cycle_025": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_026": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_027": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_028": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_029": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_030": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_031": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_032": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_033": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_034": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_035": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_036": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_037": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_038": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_039": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_040": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_041": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_042": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_043": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "mid_cycle_044": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kalau dia mahu cerita, dengar dulu."
+  },
+  "luteal_001": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_002": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_003": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_004": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_005": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_006": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_007": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_008": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_009": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_010": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_011": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_012": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_013": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_014": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_015": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_016": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_017": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_018": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_019": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_020": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Pakai anggaran untuk ingat ambil peduli."
+  },
+  "luteal_021": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_022": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_023": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_024": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_025": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_026": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_027": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_028": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_029": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_030": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_031": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_032": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_033": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_034": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_035": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_036": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_037": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_038": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_039": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_040": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kalau dia suka, tolong satu kerja hari-hari."
+  },
+  "luteal_041": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_042": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_043": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_044": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_045": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_046": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_047": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_048": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_049": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_050": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_051": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_052": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_053": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_054": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_055": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_056": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_057": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_058": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_059": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_060": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Tanya rancangan masih sesuai untuk lu dua orang."
+  },
+  "luteal_061": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_062": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_063": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_064": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_065": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_066": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_067": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_068": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_069": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_070": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_071": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_072": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_073": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_074": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_075": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_076": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_077": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_078": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_079": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_080": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kasi ruang kalau hari ini dia mahu lain."
+  },
+  "luteal_081": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_082": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_083": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_084": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_085": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_086": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_087": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_088": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_089": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_090": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_091": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_092": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_093": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_094": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_095": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_096": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_097": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_098": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_099": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_100": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Tawar bantuan, jangan tentukan dulu dia perlu apa."
+  },
+  "luteal_101": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_102": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_103": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_104": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_105": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_106": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_107": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_108": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_109": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_110": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_111": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_112": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_113": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_114": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_115": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_116": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_117": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_118": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_119": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_120": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Buat sama-sama, jangan kasi tekanan."
+  },
+  "luteal_121": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_122": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_123": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_124": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_125": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_126": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_127": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_128": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_129": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_130": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_131": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_132": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_133": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_134": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_135": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_136": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_137": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_138": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_139": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_140": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Dengar dia cakap, bukan ikut app saja."
+  },
+  "luteal_141": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_142": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_143": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_144": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_145": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_146": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_147": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_148": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_149": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_150": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_151": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_152": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_153": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_154": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_155": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_156": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_157": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_158": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_159": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_160": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Satu soalan baik lebih guna daripada ramalan."
+  },
+  "luteal_161": {
+    "context": "Rasa selesa dan tenaga boleh tukar.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_162": {
+    "context": "Hari ini mungkin lain rentak baru selesa.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_163": {
+    "context": "Ada orang rasa tenaga tukar sedikit.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_164": {
+    "context": "Mahu rehat atau mahu teman boleh lain.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_165": {
+    "context": "Tiap-tiap kitaran boleh rasa lain.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_166": {
+    "context": "Mahu teman atau mahu diam, ikut orang.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_167": {
+    "context": "Kasi sedikit ruang dalam rancangan.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_168": {
+    "context": "Badan rasa selesa boleh tukar.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_169": {
+    "context": "Hari ini tenaga mungkin lain rentak.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_170": {
+    "context": "Tumpuan dan rasa selesa boleh tukar.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_171": {
+    "context": "Sokongan apa yang dia mahu, ikut dia.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_172": {
+    "context": "Kadang-kadang pelahan sedikit lebih baik.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_173": {
+    "context": "Hari ini dia punya keperluan ikut dia sendiri.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_174": {
+    "context": "Jangan letak terlalu banyak harapan.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_175": {
+    "context": "Tiap-tiap kitaran tak sama.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_176": {
+    "context": "Kasi sedikit ruang boleh membantu.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_177": {
+    "context": "Tenaga tak tentu ikut biasa.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_178": {
+    "context": "Rasa selesa tak bererti tahu dia punya mood.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_179": {
+    "context": "Kadang-kadang jadual lebih lapang lebih sesuai.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  },
+  "luteal_180": {
+    "context": "Ini anggaran saja, bukan dia punya pengalaman.",
+    "cue": "Kalau jawapan tak macam lu fikir, dengar juga."
+  }
+}

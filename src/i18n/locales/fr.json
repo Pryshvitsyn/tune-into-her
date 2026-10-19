@@ -1,0 +1,182 @@
+{
+  "brand": {
+    "dailyContext": "Un peu de contexte pour aujourd’hui."
+  },
+  "common": {
+    "continue": "Continuer",
+    "back": "Retour",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "done": "Terminé",
+    "retry": "Réessayer",
+    "loading": "Chargement…",
+    "on": "Activé",
+    "off": "Désactivé",
+    "notSet": "Non défini",
+    "days": "{{count}} jours",
+    "close": "Fermer"
+  },
+  "onboarding": {
+    "welcomeTitle": "Ne devinez pas. Soyez à l’écoute.",
+    "welcomeBody": "Un conseil quotidien respectueux, selon le moment approximatif du cycle de votre partenaire.",
+    "contextTitle": "Un contexte, jamais une prédiction",
+    "contextBody": "Chaque cycle et chaque personne sont différents. L’application ne prédit pas les émotions et ne donne pas de conseil médical.",
+    "privacy": "N’utilisez que les informations partagées avec son accord. Respectez sa vie privée.",
+    "acknowledge": "Je comprends et utiliserai ces estimations avec respect",
+    "required": "Veuillez confirmer avant de continuer.",
+    "dateTitle": "Quand les dernières règles ont-elles commencé ?",
+    "dateBody": "Indiquez le premier jour des dernières règles connues.",
+    "futureDate": "La date ne peut pas être dans le futur.",
+    "typicalTitle": "Quelle est la durée habituelle ?",
+    "typicalBody": "Une estimation suffit. Vous pourrez modifier ces données.",
+    "cycleLength": "Durée du cycle",
+    "periodLength": "Durée des règles",
+    "previewTitle": "Un aperçu d’aujourd’hui",
+    "previewBody": "Voici le type de conseil quotidien proposé.",
+    "reminderTitle": "Un rappel par jour",
+    "reminderBody": "Choisissez une heure ou utilisez l’application sans rappel.",
+    "enableReminder": "Activer le rappel quotidien",
+    "reminderTime": "Heure du rappel",
+    "skipReminder": "Pas maintenant",
+    "finish": "Voir aujourd’hui"
+  },
+  "today": {
+    "day": "JOUR {{day}}",
+    "approxPhase": "Phase {{phase}} estimée",
+    "today": "Aujourd’hui",
+    "goodMove": "Un geste attentionné",
+    "learnMore": "En savoir plus",
+    "estimated": "Estimation fondée sur les informations saisies.",
+    "update": "Actualiser le cycle",
+    "newCycle": "Un nouveau cycle est estimé. Actualisez la date lorsque vous connaissez le début réel.",
+    "settings": "Ouvrir les réglages",
+    "lockedTitle": "Votre conseil du jour est prêt",
+    "lockedBody": "Un essai ou un abonnement actif donne accès au conseil.",
+    "unlock": "Voir l’abonnement"
+  },
+  "phase": {
+    "menstrual": "menstruelle",
+    "follicular": "folliculaire",
+    "mid_cycle": "de milieu de cycle",
+    "luteal": "lutéale"
+  },
+  "learn": {
+    "title": "À propos de cette phase estimée",
+    "menstrual": {
+      "heading": "Phase menstruelle",
+      "body": "Premiers jours estimés du cycle. Le confort et l’énergie varient. Ce calcul ne confirme pas le début des règles et ne décrit pas les émotions de votre partenaire. Demandez-lui et écoutez sa réponse."
+    },
+    "follicular": {
+      "heading": "Phase folliculaire",
+      "body": "Période estimée après les règles et avant le milieu du cycle. Les expériences varient. Le calcul repose sur les données saisies : il invite à être attentif, sans expliquer ce que ressent votre partenaire."
+    },
+    "mid_cycle": {
+      "heading": "Milieu du cycle",
+      "body": "Région approximative du milieu du cycle. Ce n’est pas une fenêtre de fertilité : ne l’utilisez pas pour la contraception ou pour planifier une grossesse. Les paroles de votre partenaire priment sur l’estimation."
+    },
+    "luteal": {
+      "heading": "Phase lutéale",
+      "body": "Dernière partie estimée avant le prochain cycle. Le confort et l’énergie peuvent varier. La date calculée n’est pas un événement confirmé. Demandez, écoutez et restez souple."
+    },
+    "noSources": "Les sources externes seront ajoutées après vérification médicale."
+  },
+  "settings": {
+    "title": "Réglages",
+    "cycle": "Cycle",
+    "cycleDetails": "Détails du cycle",
+    "reminder": "Rappel quotidien",
+    "language": "Langue",
+    "subscription": "Abonnement",
+    "information": "Informations",
+    "privacy": "Confidentialité",
+    "disclaimer": "Avertissement",
+    "about": "À propos",
+    "permission": "Autorisation",
+    "enabledAt": "Activé à {{time}}",
+    "disabled": "Désactivé"
+  },
+  "cycle": {
+    "title": "Actualiser le cycle",
+    "lastPeriod": "Début des dernières règles connues",
+    "saved": "Données du cycle actualisées.",
+    "invalid": "Vérifiez la durée du cycle et des règles.",
+    "saveError": "Impossible d’enregistrer les données."
+  },
+  "reminder": {
+    "title": "Rappel quotidien",
+    "description": "Au maximum une notification locale par jour.",
+    "permissionGranted": "Autorisé",
+    "permissionDenied": "Non autorisé",
+    "permissionUnknown": "Non demandé",
+    "deniedHelp": "Les notifications sont désactivées dans les réglages du téléphone. L’application reste utilisable.",
+    "saveError": "Impossible de modifier les rappels."
+  },
+  "language": {
+    "title": "Langue",
+    "en": "English",
+    "it": "Italiano",
+    "ru": "Русский",
+    "uk": "Українська",
+    "es": "Español"
+  },
+  "paywall": {
+    "title": "Un conseil utile chaque jour.",
+    "body": "Accédez au conseil quotidien complet et au contexte de la phase.",
+    "trial": "{{duration}} gratuit",
+    "afterTrial": "{{price}} après l’essai, renouvellement {{period}}.",
+    "regular": "{{price}}, renouvellement {{period}}.",
+    "monthly": "mensuel",
+    "duration": {
+      "day": "{{count}} jour",
+      "week": "{{count}} semaine",
+      "month": "{{count}} mois",
+      "year": "{{count}} an"
+    },
+    "automatic": "Résiliation à tout moment. Renouvellement automatique sauf résiliation.",
+    "startTrial": "Commencer l’essai gratuit",
+    "continue": "Continuer",
+    "restore": "Restaurer les achats",
+    "loading": "Chargement de l’offre…",
+    "unavailable": "Offre indisponible. Aucun prix ni essai n’est présumé.",
+    "cancelled": "Achat annulé.",
+    "purchaseError": "Impossible de terminer l’achat.",
+    "restored": "Achats restaurés.",
+    "nothingToRestore": "Aucun achat actif à restaurer.",
+    "mock": "PAIEMENT SIMULÉ — DÉVELOPPEMENT",
+    "terms": "Conditions",
+    "privacy": "Confidentialité"
+  },
+  "subscription": {
+    "title": "Abonnement",
+    "activeTrial": "Essai actif",
+    "activePaid": "Abonnement actif",
+    "activeEnding": "Actif jusqu’au {{date}}",
+    "inactive": "Inactif",
+    "expired": "Expiré",
+    "billingIssue": "Problème de paiement",
+    "unknown": "Vérification du statut",
+    "restore": "Restaurer les achats",
+    "manage": "Gérer l’abonnement",
+    "manageError": "Impossible d’ouvrir la gestion de l’abonnement."
+  },
+  "privacy": {
+    "title": "Confidentialité",
+    "body": "Les données du cycle restent sur cet appareil et ne sont pas envoyées à RevenueCat. Aucun compte, publicité, outil d’analyse, collecte de localisation ou de contacts ni serveur applicatif. Apple ou Google et RevenueCat traitent les informations nécessaires aux achats, sans recevoir les données du cycle."
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "body": "Outil d’information pour la relation, sans conseil médical, diagnostic ni traitement. Les cycles et les expériences varient. Les estimations reposent uniquement sur les données saisies. Ne pas utiliser pour la contraception, la fertilité, la grossesse ou une décision médicale urgente. L’application ne sait pas et ne prédit pas ce que ressent votre partenaire."
+  },
+  "about": {
+    "title": "À propos",
+    "description": "Un conseil quotidien pour être attentif, sans présenter une estimation comme un fait.",
+    "version": "Version {{version}}",
+    "support": "Le contact d’assistance doit être configuré avant publication."
+  },
+  "accessibility": {
+    "decrease": "Diminuer {{label}}",
+    "increase": "Augmenter {{label}}",
+    "selectLanguage": "Choisir {{language}}",
+    "phaseIndicator": "Indicateur de phase {{phase}}"
+  }
+}

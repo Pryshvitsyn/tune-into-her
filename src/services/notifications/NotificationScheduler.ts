@@ -1,9 +1,7 @@
 import type { SupportedLanguage } from '../../config/constants';
 import { NOTIFICATION_HORIZON_DAYS } from '../../config/constants';
-import { getLocalizedCue } from '../../domain/content/contentRepository';
-import { selectDailyCue } from '../../domain/content/dailyCueService';
 import type { SelectionStore } from '../../domain/content/types';
-import { estimateCycle, type CycleSettings } from '../../domain/cycle/cycleEngine';
+import { type CycleSettings } from '../../domain/cycle/cycleEngine';
 import { addCalendarDays, dateOnlyToLocalDate, toDateOnly } from '../../domain/cycle/dateOnly';
 import { resources } from '../../i18n/resources';
 
@@ -44,16 +42,19 @@ export class NotificationScheduler {
       const fireDate = dateOnlyToLocalDate(dateOnly);
       fireDate.setHours(request.reminder.hour, request.reminder.minute, 0, 0);
       if (fireDate <= now) continue;
-      const estimate = estimateCycle({ ...request.settings, currentLocalDate: dateOnly });
-      const cueId = await selectDailyCue({ date: dateOnly, phase: estimate.estimatedPhase, settings: request.settings, store: this.selections });
-      const cue = getLocalizedCue(request.language, cueId);
-      const notificationStrings = resources[request.language].translation.today;
+      const notificationStrings = resources[request.language].translation;
       await this.backend.schedule(
         fireDate,
-        `${notificationStrings.day.replace('{{day}}', String(estimate.estimatedCycleDay))} · ${request.brandName}`,
-        estimate.isProjectedNewCycleBoundary ? notificationStrings.newCycle : `${cue.context} ${cue.cue}`,
+        request.brandName,
+        notificationStrings.brand.dailyContext,
         { kind: 'daily-cycle-cue', date: dateOnly, language: request.language },
       );
+    }
+  }
+
+  async cancelAll(): Promise<void> {
+    for (const item of await this.backend.list()) {
+      if (item.content.data?.kind === 'daily-cycle-cue') await this.backend.cancel(item.identifier);
     }
   }
 
@@ -65,3 +66,4 @@ export class NotificationScheduler {
     return this.backend.permissionStatus();
   }
 }
+

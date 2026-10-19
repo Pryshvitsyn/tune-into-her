@@ -1,0 +1,138 @@
+Un peu de contexte pour aujourd’hui.
+Continuer
+Retour
+Enregistrer
+Annuler
+Terminé
+Réessayer
+Chargement…
+Activé
+Désactivé
+Non défini
+{{count}} jours
+Fermer
+Ne devinez pas. Soyez à l’écoute.
+Un conseil quotidien respectueux, selon le moment approximatif du cycle de votre partenaire.
+Un contexte, jamais une prédiction
+Chaque cycle et chaque personne sont différents. L’application ne prédit pas les émotions et ne donne pas de conseil médical.
+N’utilisez que les informations partagées avec son accord. Respectez sa vie privée.
+Je comprends et utiliserai ces estimations avec respect
+Veuillez confirmer avant de continuer.
+Quand les dernières règles ont-elles commencé ?
+Indiquez le premier jour des dernières règles connues.
+La date ne peut pas être dans le futur.
+Quelle est la durée habituelle ?
+Une estimation suffit. Vous pourrez modifier ces données.
+Durée du cycle
+Durée des règles
+Un aperçu d’aujourd’hui
+Voici le type de conseil quotidien proposé.
+Un rappel par jour
+Choisissez une heure ou utilisez l’application sans rappel.
+Activer le rappel quotidien
+Heure du rappel
+Pas maintenant
+Voir aujourd’hui
+JOUR {{day}}
+Phase {{phase}} estimée
+Aujourd’hui
+Un geste attentionné
+En savoir plus
+Estimation fondée sur les informations saisies.
+Actualiser le cycle
+Un nouveau cycle est estimé. Actualisez la date lorsque vous connaissez le début réel.
+Ouvrir les réglages
+Votre conseil du jour est prêt
+Un essai ou un abonnement actif donne accès au conseil.
+Voir l’abonnement
+menstruelle
+folliculaire
+de milieu de cycle
+lutéale
+À propos de cette phase estimée
+Phase menstruelle
+Premiers jours estimés du cycle. Le confort et l’énergie varient. Ce calcul ne confirme pas le début des règles et ne décrit pas les émotions de votre partenaire. Demandez-lui et écoutez sa réponse.
+Phase folliculaire
+Période estimée après les règles et avant le milieu du cycle. Les expériences varient. Le calcul repose sur les données saisies : il invite à être attentif, sans expliquer ce que ressent votre partenaire.
+Milieu du cycle
+Région approximative du milieu du cycle. Ce n’est pas une fenêtre de fertilité : ne l’utilisez pas pour la contraception ou pour planifier une grossesse. Les paroles de votre partenaire priment sur l’estimation.
+Phase lutéale
+Dernière partie estimée avant le prochain cycle. Le confort et l’énergie peuvent varier. La date calculée n’est pas un événement confirmé. Demandez, écoutez et restez souple.
+Les sources externes seront ajoutées après vérification médicale.
+Réglages
+Cycle
+Détails du cycle
+Rappel quotidien
+Langue
+Abonnement
+Informations
+Confidentialité
+Avertissement
+À propos
+Autorisation
+Activé à {{time}}
+Désactivé
+Actualiser le cycle
+Début des dernières règles connues
+Données du cycle actualisées.
+Vérifiez la durée du cycle et des règles.
+Impossible d’enregistrer les données.
+Rappel quotidien
+Au maximum une notification locale par jour.
+Autorisé
+Non autorisé
+Non demandé
+Les notifications sont désactivées dans les réglages du téléphone. L’application reste utilisable.
+Impossible de modifier les rappels.
+Langue
+English
+Italiano
+Русский
+Українська
+Español
+Un conseil utile chaque jour.
+Accédez au conseil quotidien complet et au contexte de la phase.
+{{duration}} gratuit
+{{price}} après l’essai, renouvellement {{period}}.
+{{price}}, renouvellement {{period}}.
+mensuel
+{{count}} jour
+{{count}} semaine
+{{count}} mois
+{{count}} an
+Résiliation à tout moment. Renouvellement automatique sauf résiliation.
+Commencer l’essai gratuit
+Continuer
+Restaurer les achats
+Chargement de l’offre…
+Offre indisponible. Aucun prix ni essai n’est présumé.
+Achat annulé.
+Impossible de terminer l’achat.
+Achats restaurés.
+Aucun achat actif à restaurer.
+PAIEMENT SIMULÉ — DÉVELOPPEMENT
+Conditions
+Confidentialité
+Abonnement
+Essai actif
+Abonnement actif
+Actif jusqu’au {{date}}
+Inactif
+Expiré
+Problème de paiement
+Vérification du statut
+Restaurer les achats
+Gérer l’abonnement
+Impossible d’ouvrir la gestion de l’abonnement.
+Confidentialité
+Les données du cycle restent sur cet appareil et ne sont pas envoyées à RevenueCat. Aucun compte, publicité, outil d’analyse, collecte de localisation ou de contacts ni serveur applicatif. Apple ou Google et RevenueCat traitent les informations nécessaires aux achats, sans recevoir les données du cycle.
+Avertissement
+Outil d’information pour la relation, sans conseil médical, diagnostic ni traitement. Les cycles et les expériences varient. Les estimations reposent uniquement sur les données saisies. Ne pas utiliser pour la contraception, la fertilité, la grossesse ou une décision médicale urgente. L’application ne sait pas et ne prédit pas ce que ressent votre partenaire.
+À propos
+Un conseil quotidien pour être attentif, sans présenter une estimation comme un fait.
+Version {{version}}
+Le contact d’assistance doit être configuré avant publication.
+Diminuer {{label}}
+Augmenter {{label}}
+Choisir {{language}}
+Indicateur de phase {{phase}}

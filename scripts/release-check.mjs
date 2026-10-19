@@ -1,0 +1,12 @@
+import { readFile } from 'node:fs/promises';
+const json=async p=>JSON.parse(await readFile(p,'utf8'));
+const brand=await json('src/config/brand.json');
+const readiness=await json('release/readiness.json');
+const issues=[];
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(brand.supportEmail))issues.push('Set a monitored supportEmail in src/config/brand.json.');
+for(const key of ['privacyUrl','termsUrl'])if(!/^https:\/\//.test(brand[key]))issues.push(`Set a live HTTPS ${key} in src/config/brand.json.`);
+if(!brand.publisherName?.trim())issues.push('Set the actual publisherName.');
+for(const [k,v] of Object.entries(readiness))if(v!==true)issues.push(`Evidence required: ${k}.`);
+for(const platform of ['IOS','ANDROID'])if(!process.env[`EXPO_PUBLIC_REVENUECAT_${platform}_API_KEY`])issues.push(`Missing public RevenueCat ${platform} SDK key in build environment.`);
+if(process.env.EXPO_PUBLIC_USE_MOCK_BILLING==='true')issues.push('Mock billing must be disabled for distribution.');
+if(issues.length){console.error('NOT READY FOR STORE SUBMISSION\n'+issues.map(x=>'• '+x).join('\n'));process.exitCode=1;}else console.log('Release checklist passed. Verify live URLs and store settings before submission.');

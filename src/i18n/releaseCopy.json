@@ -1,0 +1,123 @@
+{
+  "en": {
+    "deleteTitle": "Delete local data",
+    "deleteBody": "Remove cycle details, preferences and cue history from this device? This does not cancel your subscription or delete store transaction records. Manage your subscription separately.",
+    "deleteConfirm": "Delete data",
+    "deleteError": "Could not delete all data. Please try again.",
+    "termsTitle": "Subscription terms",
+    "termsBody": "Access is provided through a store subscription. The price, billing period and any eligible trial are shown before purchase. The subscription renews automatically unless cancelled in your Apple or Google account. You can restore eligible purchases with the same store account. Deleting local data does not cancel the subscription.",
+    "openTerms": "Read full terms",
+    "support": "Contact support",
+    "beta": "Baba Malay translation preview — native-speaker review pending."
+  },
+  "fr": {
+    "deleteTitle": "Effacer les données locales",
+    "deleteBody": "Effacer le cycle, les préférences et l’historique sur cet appareil ? Cela ne résilie pas votre abonnement et ne supprime pas les transactions du magasin. Gérez l’abonnement séparément.",
+    "deleteConfirm": "Effacer",
+    "deleteError": "Suppression incomplète. Réessayez.",
+    "termsTitle": "Conditions d’abonnement",
+    "termsBody": "L’accès dépend d’un abonnement du magasin. Le prix, la période et l’essai éventuel sont indiqués avant l’achat. Le renouvellement est automatique sauf résiliation via Apple ou Google. Restaurez les achats avec le même compte du magasin. Effacer les données ne résilie pas l’abonnement.",
+    "openTerms": "Lire toutes les conditions",
+    "support": "Contacter l’assistance",
+    "beta": "Traduction Baba Malay provisoire : vérification par un locuteur en attente."
+  },
+  "it": {
+    "deleteTitle": "Elimina dati locali",
+    "deleteBody": "Eliminare ciclo, preferenze e cronologia da questo dispositivo? Questo non annulla l’abbonamento né elimina le transazioni dello store. Gestisci l’abbonamento separatamente.",
+    "deleteConfirm": "Elimina dati",
+    "deleteError": "Eliminazione incompleta. Riprova.",
+    "termsTitle": "Condizioni di abbonamento",
+    "termsBody": "L’accesso richiede un abbonamento dello store. Prezzo, periodo di fatturazione ed eventuale prova sono mostrati prima dell’acquisto. Il rinnovo è automatico salvo disdetta tramite Apple o Google. Puoi ripristinare gli acquisti con lo stesso account dello store. Eliminare i dati non annulla l’abbonamento.",
+    "openTerms": "Leggi tutte le condizioni",
+    "support": "Contatta l’assistenza",
+    "beta": "Traduzione Baba Malay in anteprima: revisione madrelingua in attesa."
+  },
+  "es": {
+    "deleteTitle": "Eliminar datos locales",
+    "deleteBody": "¿Eliminar ciclo, preferencias e historial de este dispositivo? Esto no cancela la suscripción ni borra las transacciones de la tienda. Gestiona la suscripción por separado.",
+    "deleteConfirm": "Eliminar datos",
+    "deleteError": "No se pudieron borrar todos los datos. Inténtalo de nuevo.",
+    "termsTitle": "Condiciones de suscripción",
+    "termsBody": "El acceso requiere una suscripción de la tienda. El precio, periodo y prueba disponible se muestran antes de comprar. La suscripción se renueva automáticamente salvo cancelación en Apple o Google. Restaura compras con la misma cuenta de la tienda. Borrar datos no cancela la suscripción.",
+    "openTerms": "Leer todas las condiciones",
+    "support": "Contactar con soporte",
+    "beta": "Traducción Baba Malay preliminar: pendiente de revisión nativa."
+  },
+  "de": {
+    "deleteTitle": "Lokale Daten löschen",
+    "deleteBody": "Zyklusdaten, Einstellungen und Verlauf auf diesem Gerät löschen? Das kündigt kein Abo und löscht keine Store-Transaktionen. Verwalte das Abo separat.",
+    "deleteConfirm": "Daten löschen",
+    "deleteError": "Nicht alle Daten konnten gelöscht werden. Versuche es erneut.",
+    "termsTitle": "Abobedingungen",
+    "termsBody": "Der Zugang erfolgt über ein Store-Abo. Preis, Abrechnungszeitraum und mögliche Testphase werden vor dem Kauf angezeigt. Automatische Verlängerung, sofern nicht über Apple oder Google gekündigt. Käufe lassen sich mit demselben Store-Konto wiederherstellen. Datenlöschen kündigt das Abo nicht.",
+    "openTerms": "Vollständige Bedingungen",
+    "support": "Support kontaktieren",
+    "beta": "Baba-Malay-Übersetzung als Vorschau: muttersprachliche Prüfung ausstehend."
+  },
+  "ru": {
+    "deleteTitle": "Удалить локальные данные",
+    "deleteBody": "Удалить сведения о цикле, настройки и историю подсказок с этого устройства? Это не отменяет подписку и не удаляет записи о покупках в магазине. Управляйте подпиской отдельно.",
+    "deleteConfirm": "Удалить данные",
+    "deleteError": "Не удалось удалить все данные. Попробуйте снова.",
+    "termsTitle": "Условия подписки",
+    "termsBody": "Доступ предоставляется через подписку магазина. Цена, период оплаты и доступный пробный срок показаны до покупки. Подписка продлевается автоматически, пока вы не отмените её в Apple или Google. Восстановите покупки через тот же аккаунт магазина. Удаление данных не отменяет подписку.",
+    "openTerms": "Полные условия",
+    "support": "Написать в поддержку",
+    "beta": "Перевод Baba Malay предварительный: ожидает проверки носителем."
+  },
+  "uk": {
+    "deleteTitle": "Видалити локальні дані",
+    "deleteBody": "Видалити дані циклу, налаштування та історію з цього пристрою? Це не скасовує підписку та не видаляє записи про покупки. Керуйте підпискою окремо.",
+    "deleteConfirm": "Видалити дані",
+    "deleteError": "Не всі дані видалено. Спробуйте ще раз.",
+    "termsTitle": "Умови підписки",
+    "termsBody": "Доступ надається через підписку магазину. Ціну, період оплати та доступний пробний термін показано до покупки. Підписка поновлюється автоматично, доки ви не скасуєте її в Apple або Google. Відновлюйте покупки через той самий обліковий запис магазину. Видалення даних не скасовує підписку.",
+    "openTerms": "Повні умови",
+    "support": "Написати в підтримку",
+    "beta": "Попередній переклад Baba Malay: очікує перевірки носієм."
+  },
+  "hi": {
+    "deleteTitle": "स्थानीय डेटा मिटाएँ",
+    "deleteBody": "इस डिवाइस से चक्र, सेटिंग और इतिहास मिटाएँ? इससे सदस्यता रद्द या स्टोर के लेनदेन नहीं मिटते। सदस्यता अलग से प्रबंधित करें।",
+    "deleteConfirm": "डेटा मिटाएँ",
+    "deleteError": "सारा डेटा नहीं मिट सका। फिर कोशिश करें।",
+    "termsTitle": "सदस्यता की शर्तें",
+    "termsBody": "पहुँच स्टोर की सदस्यता से मिलती है। कीमत, भुगतान अवधि और उपलब्ध परीक्षण खरीदने से पहले दिखते हैं। Apple या Google में रद्द न करने पर सदस्यता अपने आप नवीनीकृत होती है। उसी स्टोर खाते से खरीदारी बहाल करें। डेटा मिटाने से सदस्यता रद्द नहीं होती।",
+    "openTerms": "पूरी शर्तें पढ़ें",
+    "support": "सहायता से संपर्क करें",
+    "beta": "Baba Malay का प्रारंभिक अनुवाद: मातृभाषी की समीक्षा बाकी है।"
+  },
+  "zh-Hans": {
+    "deleteTitle": "删除本地数据",
+    "deleteBody": "删除本设备上的周期信息、设置和历史记录？这不会取消订阅，也不会删除商店交易记录。请另行管理订阅。",
+    "deleteConfirm": "删除数据",
+    "deleteError": "未能删除全部数据，请重试。",
+    "termsTitle": "订阅条款",
+    "termsBody": "通过商店订阅获得访问权限。购买前会显示价格、计费周期及可用试用。除非在Apple或Google中取消，否则自动续订。可使用同一商店账户恢复购买。删除本地数据不会取消订阅。",
+    "openTerms": "阅读完整条款",
+    "support": "联系支持",
+    "beta": "Baba Malay翻译预览：尚待母语者审核。"
+  },
+  "ms": {
+    "deleteTitle": "Padam data setempat",
+    "deleteBody": "Padam butiran kitaran, tetapan dan sejarah pada peranti ini? Ini tidak membatalkan langganan atau memadam transaksi kedai. Urus langganan secara berasingan.",
+    "deleteConfirm": "Padam data",
+    "deleteError": "Tidak semua data dapat dipadam. Cuba lagi.",
+    "termsTitle": "Terma langganan",
+    "termsBody": "Akses melalui langganan kedai. Harga, tempoh bil dan percubaan yang layak dipaparkan sebelum pembelian. Langganan diperbaharui automatik melainkan dibatalkan dalam Apple atau Google. Pulihkan pembelian dengan akaun kedai yang sama. Memadam data tidak membatalkan langganan.",
+    "openTerms": "Baca terma penuh",
+    "support": "Hubungi sokongan",
+    "beta": "Pratonton terjemahan Baba Malay: semakan penutur asli belum selesai."
+  },
+  "mbf": {
+    "deleteTitle": "Padam data dalam telefon",
+    "deleteBody": "Padam kitaran, tetapan dan sejarah dalam telefon ini? Ini tak batal langganan atau padam rekod bayaran kedai. Urus langganan lain.",
+    "deleteConfirm": "Padam data",
+    "deleteError": "Tak semua data dapat padam. Cuba lagi.",
+    "termsTitle": "Terma langganan",
+    "termsBody": "Akses pakai langganan kedai. Harga, lama bayaran dan percubaan yang boleh dapat, semua tunjuk sebelum beli. Langganan sambung sendiri kalau tak batal dalam Apple atau Google. Pakai akaun kedai yang sama untuk pulihkan pembelian. Padam data tak batal langganan.",
+    "openTerms": "Baca semua terma",
+    "support": "Hubungi bantuan",
+    "beta": "Ini terjemahan Baba Malay percubaan. Belum semak dengan penutur asli."
+  }
+}

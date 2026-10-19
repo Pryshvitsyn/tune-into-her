@@ -71,9 +71,10 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
         <Button disabled={working} label={offer.trialEligible ? t('paywall.startTrial') : t('paywall.continue')} onPress={() => void purchase()} />
       </> : null}
       <Button disabled={working} label={t('paywall.restore')} variant="ghost" onPress={() => void restore()} />
-      <View style={styles.links}><Pressable onPress={() => router.push('/disclaimer')}><Text style={styles.link}>{t('paywall.terms')}</Text></Pressable><Pressable onPress={() => router.push('/privacy')}><Text style={styles.link}>{t('paywall.privacy')}</Text></Pressable></View>
+      <View style={styles.links}><Pressable onPress={() => router.push('/terms')}><Text style={styles.link}>{t('paywall.terms')}</Text></Pressable><Pressable onPress={() => router.push('/privacy')}><Text style={styles.link}>{t('paywall.privacy')}</Text></Pressable></View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({ card: { backgroundColor: colors.card, borderRadius: radius.lg, padding: spacing.lg, gap: spacing.md }, mock: { alignSelf: 'flex-start', color: colors.danger, backgroundColor: '#F8E8E5', borderRadius: radius.pill, paddingHorizontal: spacing.sm, paddingVertical: spacing.xs, fontSize: 11, fontWeight: '800' }, title: { color: colors.text, fontSize: 28, lineHeight: 34, fontWeight: '800' }, body: { color: colors.secondary, fontSize: 16, lineHeight: 24 }, loading: { gap: spacing.sm, alignItems: 'center', paddingVertical: spacing.md }, offer: { color: colors.primary, fontSize: 25, fontWeight: '800', textAlign: 'center' }, price: { color: colors.text, fontSize: 16, fontWeight: '600', textAlign: 'center' }, meta: { color: colors.secondary, fontSize: 13, lineHeight: 19, textAlign: 'center' }, links: { flexDirection: 'row', justifyContent: 'center', gap: spacing.lg }, link: { color: colors.primary, textDecorationLine: 'underline' } });
+

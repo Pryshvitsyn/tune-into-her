@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
-const languages = ['en', 'it', 'ru', 'uk', 'es'];
+const { codes: languages } = JSON.parse(await readFile(path.join(root, 'src/config/languages.json'), 'utf8'));
 const validLearnIds = new Set(['menstrual', 'follicular', 'mid_cycle', 'luteal']);
 const catalog = JSON.parse(await readFile(path.join(root, 'content/catalog.json'), 'utf8'));
 const ids = catalog.map((record) => record.id);
@@ -26,3 +26,4 @@ if (problems.length) {
   process.exit(1);
 }
 console.log(`Validated ${catalog.length} unique cues across ${languages.length} languages.`);
+

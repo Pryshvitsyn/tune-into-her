@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import type { SupportedLanguage } from '../config/constants';
+import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../config/constants';
 
 import { storageKeys } from './keys';
 
@@ -22,9 +22,12 @@ export const defaultPreferences: Preferences = {
 
 export async function loadPreferences(): Promise<Preferences | null> {
   const value = await AsyncStorage.getItem(storageKeys.preferences);
-  return value ? { ...defaultPreferences, ...(JSON.parse(value) as Partial<Preferences>) } : null;
+  if (!value) return null;
+  const saved = JSON.parse(value) as Partial<Preferences>;
+  return { ...defaultPreferences, ...saved, language: SUPPORTED_LANGUAGES.includes(saved.language as SupportedLanguage) ? saved.language! : 'en' }; 
 }
 
 export async function savePreferences(preferences: Preferences): Promise<void> {
   await AsyncStorage.setItem(storageKeys.preferences, JSON.stringify(preferences));
 }
+

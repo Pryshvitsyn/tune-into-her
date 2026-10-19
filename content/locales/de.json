@@ -1,0 +1,1602 @@
+{
+  "menstrual_001": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_002": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_003": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_004": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_005": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_006": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_007": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_008": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_009": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_010": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_011": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_012": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_013": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_014": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_015": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_016": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_017": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_018": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_019": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_020": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Frage, was helfen würde, statt es anzunehmen."
+  },
+  "menstrual_021": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_022": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_023": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_024": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_025": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_026": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_027": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_028": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_029": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_030": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_031": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_032": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_033": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_034": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_035": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_036": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_037": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_038": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_039": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_040": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+  },
+  "menstrual_041": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_042": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_043": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_044": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_045": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_046": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_047": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_048": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_049": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_050": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_051": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_052": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_053": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_054": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_055": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_056": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_057": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_058": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_059": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_060": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Ein einfaches Nachfragen kann heute genügen."
+  },
+  "menstrual_061": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_062": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_063": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_064": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_065": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_066": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_067": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_068": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_069": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_070": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_071": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "menstrual_072": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_001": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_002": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_003": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_004": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_005": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_006": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_007": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_008": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+  },
+  "follicular_009": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_010": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_011": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_012": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_013": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_014": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_015": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_016": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_017": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_018": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_019": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_020": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_021": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_022": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_023": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_024": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_025": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_026": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_027": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_028": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Lass Raum für Gesellschaft und Ruhe."
+  },
+  "follicular_029": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_030": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_031": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_032": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_033": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_034": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_035": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_036": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_037": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_038": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_039": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_040": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_041": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_042": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_043": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_044": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_045": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_046": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_047": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_048": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+  },
+  "follicular_049": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_050": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_051": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_052": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_053": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_054": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_055": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_056": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_057": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_058": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_059": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_060": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_061": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_062": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_063": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_064": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_065": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_066": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_067": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_068": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Lass dich von ihren eigenen Worten leiten."
+  },
+  "follicular_069": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_070": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_071": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_072": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_073": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_074": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_075": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_076": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_077": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_078": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_079": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_080": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_081": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_082": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_083": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_084": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_085": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_086": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_087": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_088": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+  },
+  "follicular_089": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_090": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_091": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_092": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_093": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_094": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_095": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_096": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_097": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_098": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_099": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_100": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_101": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_102": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_103": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "follicular_104": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "mid_cycle_001": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "mid_cycle_002": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "mid_cycle_003": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "mid_cycle_004": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Bleibe neugierig, statt zu interpretieren."
+  },
+  "mid_cycle_005": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_006": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_007": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_008": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_009": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_010": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_011": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_012": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_013": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_014": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_015": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_016": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_017": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_018": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_019": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_020": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_021": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_022": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_023": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_024": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Halte die Abendplanung flexibel."
+  },
+  "mid_cycle_025": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_026": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_027": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_028": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_029": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_030": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_031": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_032": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_033": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_034": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_035": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_036": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_037": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_038": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_039": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_040": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_041": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_042": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_043": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "mid_cycle_044": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+  },
+  "luteal_001": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_002": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_003": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_004": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_005": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_006": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_007": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_008": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_009": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_010": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_011": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_012": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_013": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_014": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_015": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_016": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_017": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_018": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_019": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_020": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+  },
+  "luteal_021": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_022": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_023": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_024": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_025": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_026": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_027": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_028": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_029": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_030": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_031": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_032": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_033": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_034": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_035": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_036": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_037": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_038": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_039": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_040": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+  },
+  "luteal_041": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_042": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_043": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_044": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_045": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_046": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_047": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_048": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_049": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_050": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_051": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_052": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_053": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_054": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_055": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_056": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_057": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_058": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_059": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_060": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Frage, ob die Pläne noch für euch beide passen."
+  },
+  "luteal_061": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_062": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_063": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_064": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_065": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_066": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_067": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_068": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_069": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_070": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_071": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_072": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_073": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_074": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_075": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_076": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_077": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_078": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_079": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_080": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Lass Raum für andere Vorlieben heute."
+  },
+  "luteal_081": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_082": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_083": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_084": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_085": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_086": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_087": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_088": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_089": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_090": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_091": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_092": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_093": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_094": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_095": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_096": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_097": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_098": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_099": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_100": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+  },
+  "luteal_101": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_102": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_103": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_104": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_105": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_106": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_107": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_108": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_109": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_110": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_111": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_112": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_113": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_114": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_115": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_116": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_117": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_118": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_119": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_120": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+  },
+  "luteal_121": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_122": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_123": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_124": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_125": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_126": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_127": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_128": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_129": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_130": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_131": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_132": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_133": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_134": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_135": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_136": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_137": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_138": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_139": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_140": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Ihre Worte sind wichtiger als die App."
+  },
+  "luteal_141": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_142": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_143": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_144": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_145": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_146": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_147": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_148": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_149": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_150": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_151": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_152": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_153": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_154": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_155": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_156": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_157": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_158": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_159": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_160": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+  },
+  "luteal_161": {
+    "context": "Wohlbefinden und Energie können variieren.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_162": {
+    "context": "Heute kann ein anderes Tempo passen.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_163": {
+    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_164": {
+    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_165": {
+    "context": "Jeder Zyklus kann sich anders anfühlen.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_166": {
+    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_167": {
+    "context": "Etwas Spielraum kann Pläne erleichtern.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_168": {
+    "context": "Das körperliche Wohlbefinden kann schwanken.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_169": {
+    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_170": {
+    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_171": {
+    "context": "Welche Unterstützung gut tut, ist individuell.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_172": {
+    "context": "Ein ruhigeres Tempo kann manchmal passen.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_173": {
+    "context": "Die heutigen Bedürfnisse sind persönlich.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_174": {
+    "context": "Weniger Erwartungen können hilfreich sein.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_175": {
+    "context": "Jeder Zyklus ist anders.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_176": {
+    "context": "Etwas Flexibilität kann willkommen sein.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_177": {
+    "context": "Energie folgt nicht immer dem gewohnten Muster.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_178": {
+    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_179": {
+    "context": "Ein offenerer Tagesplan kann manchmal passen.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  },
+  "luteal_180": {
+    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
+    "cue": "Bleibe offen für eine unerwartete Antwort."
+  }
+}
