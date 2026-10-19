@@ -1,3 +1,5 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as SecureStore from 'expo-secure-store';
 import { createContext, type PropsWithChildren, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { AppState, type AppStateStatus } from 'react-native';
 
@@ -12,6 +14,7 @@ import { NotificationScheduler } from '../services/notifications/NotificationSch
 import { purchaseService, type EntitlementState } from '../services/purchases';
 import { AsyncSelectionStore } from '../storage/AsyncSelectionStore';
 import { LocalManualCycleProvider } from '../storage/LocalManualCycleProvider';
+import { storageKeys } from '../storage/keys';
 import { defaultPreferences, loadPreferences, savePreferences, type Preferences } from '../storage/preferences';
 
 const cycleProvider = new LocalManualCycleProvider();
@@ -20,6 +23,7 @@ export const notificationScheduler = new NotificationScheduler(new ExpoNotificat
 
 interface AppContextValue {
   ready: boolean;
+  deleteLocalData(): Promise<void>;
   preferences: Preferences;
   cycleSettings: CycleSettings | null;
   entitlement: EntitlementState;
@@ -102,7 +106,15 @@ export function AppProvider({ children }: PropsWithChildren) {
 
   const completeOnboarding = useCallback(() => updatePreferences({ onboardingComplete: true }, true), [updatePreferences]);
 
-  const value = useMemo(() => ({ ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
+  const deleteLocalData = useCallback(async () => {
+    await notificationScheduler.cancelAll();
+    await SecureStore.deleteItemAsync(storageKeys.cycleSettings);
+    await AsyncStorage.multiRemove([storageKeys.preferences, storageKeys.selections, storageKeys.entitlement]);
+    setCycleSettingsState(null);
+    setPreferencesState({ ...defaultPreferences, language: preferences.language });
+  }, [preferences.language]);
+
+  const value = useMemo(() => ({ deleteLocalData, ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 
@@ -111,3 +123,4 @@ export function useApp(): AppContextValue {
   if (!value) throw new Error('useApp must be used inside AppProvider');
   return value;
 }
+

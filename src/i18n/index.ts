@@ -6,7 +6,8 @@ import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../config/constants
 
 import { resources } from './resources';
 
-const deviceCode = Localization.getLocales()[0]?.languageCode;
+const locale = Localization.getLocales()[0];
+const deviceCode = locale?.languageCode === 'zh' ? (locale.languageTag?.includes('Hant') || ['TW', 'HK', 'MO'].includes(locale.regionCode ?? '') ? 'en' : 'zh-Hans') : locale?.languageCode;
 const initialLanguage: SupportedLanguage = SUPPORTED_LANGUAGES.includes(deviceCode as SupportedLanguage)
   ? (deviceCode as SupportedLanguage)
   : 'en';
@@ -22,3 +23,4 @@ void i18n.use(initReactI18next).init({
 });
 
 export { i18n, initialLanguage };
+

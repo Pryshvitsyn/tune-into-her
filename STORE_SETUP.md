@@ -7,9 +7,10 @@ These are external owner actions and are not completed by this repository.
 - RevenueCat entitlement: `full_access`
 - Store product concept: `monthly_access` (use the exact same neutral ID on both stores if available)
 - RevenueCat offering: default offering with its monthly package pointing to the monthly product
-- Placeholder iOS bundle ID to replace: `com.placeholder.partnercyclecontext`
-- Placeholder Android package to replace: `com.placeholder.partnercyclecontext`
-- EAS project ID to replace: `00000000-0000-0000-0000-000000000000`
+- Configured iOS bundle ID: `com.pryshvitsyn.tuneintoher` (verify registration)
+- Configured Android package: `com.pryshvitsyn.tuneintoher` (verify registration)
+- Existing EAS project ID: `dc8938e7-7163-413a-9003-479d0afc8a17`
+- Current release handoff: [release/RELEASE_GUIDE_RU.md](release/RELEASE_GUIDE_RU.md)
 
 ## Apple
 
@@ -49,3 +50,4 @@ These are external owner actions and are not completed by this repository.
 - Build an iOS development client with `eas build --profile development --platform ios`, install from the EAS link, then run `npx expo start --dev-client`.
 - Build an Android development client with `eas build --profile development --platform android` and distribute through the authorized testing path.
 - Create preview builds for stakeholder QA, then production builds. Do not submit until product assets, legal copy, owner identity, privacy URL, store screenshots, review notes, and subscription review screenshots are complete.
+

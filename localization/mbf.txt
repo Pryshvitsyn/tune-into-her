@@ -1,0 +1,138 @@
+Sedikit konteks hari ini.
+Teruskan
+Balek
+Simpan
+Batal
+Sudah
+Cuba lagi
+Tengah muat…
+Buka
+Tutup
+Belum pilih
+{{count}} hari
+Tutup
+Jangan agak saja. Dengar baik-baik.
+Satu cadangan tiap-tiap hari, ikut anggaran kitaran lu punya pasangan.
+Konteks saja, bukan ramalan
+Tiap-tiap orang punya kitaran dan pengalaman tak sama. Ini app tak tahu pasangan rasa apa dan bukan nasihat doktor.
+Masok maklumat kitaran kalau pasangan sudah kasi izin. Jaga dia punya privasi.
+Gua faham, gua akan pakai anggaran dengan hormat
+Sila sahkan dulu baru teruskan.
+Haid yang lalu mula bila?
+Pakai hari pertama haid terakhir yang lu tahu.
+Tarikh tak boleh lepas hari ini.
+Biasa berapa lama?
+Agak pun boleh. Nanti lu boleh tukar.
+Lama kitaran
+Lama haid
+Tengok hari ini
+Ini macam cadangan lu boleh tengok tiap-tiap hari.
+Satu peringatan sehari
+Pilih jam, atau pakai app tanpa peringatan.
+Buka peringatan tiap-tiap hari
+Jam peringatan
+Bukan sekarang
+Tengok hari ini
+HARI {{day}}
+Anggaran fasa {{phase}}
+Hari ini
+Satu perkara baik boleh buat
+Tengok lagi
+Anggaran ikut maklumat kitaran yang lu masok.
+Tukar maklumat kitaran
+Ini anggaran kitaran baru mula. Bila tahu tarikh betul, tukar maklumat.
+Buka tetapan
+Cadangan hari ini sudah ada
+Percubaan atau langganan aktif boleh buka cadangan hari ini.
+Tengok langganan
+haid
+folikular
+tengah kitaran
+luteal
+Tentang anggaran fasa ini
+Fasa haid
+Ini anggaran hari awal kitaran. Tiap-tiap orang punya rasa selesa dan tenaga tak sama. App kira ikut tarikh saja; tak boleh sahkan haid sudah mula atau pasangan rasa apa. Tanya dia, dengar dia.
+Fasa folikular
+Anggaran masa lepas haid, sebelum tengah kitaran. Masa dan pengalaman boleh lain. App kira ikut maklumat yang lu masok saja. Pakai sebagai peringatan ambil peduli, bukan jawapan tentang dia punya perasaan.
+Tengah kitaran
+Anggaran dekat tengah kitaran, bukan kira waktu subur. Jangan pakai untuk cegah hamil atau rancang kehamilan. Apa pasangan cakap lebih penting daripada app punya anggaran.
+Fasa luteal
+Anggaran bahagian hujung kitaran sebelum yang baru mula. Tenaga dan rasa selesa boleh tukar. Tarikh belum tentu betul. Tanya, dengar, jangan keras dengan rancangan.
+Sumber luar akan tambah lepas semakan perubatan.
+Tetapan
+Kitaran
+Maklumat kitaran
+Peringatan harian
+Bahasa
+Langganan
+Maklumat
+Privasi
+Penafian
+Tentang
+Izin
+Buka jam {{time}}
+Tutup
+Tukar maklumat kitaran
+Mula haid terakhir yang lu tahu
+Maklumat kitaran sudah tukar.
+Tengok balik lama kitaran dan haid.
+Tak dapat simpan maklumat.
+Peringatan harian
+Paling banyak satu notifikasi dalam telefon tiap-tiap hari.
+Sudah kasi izin
+Tak kasi izin
+Belum tanya
+Notifikasi tutup dalam tetapan telefon. App masih boleh pakai.
+Tak dapat tukar peringatan.
+Bahasa
+English
+Italiano
+Русский
+Українська
+Español
+Satu cadangan berguna tiap-tiap hari.
+Buka cadangan harian penuh dan konteks fasa.
+{{duration}} percuma
+{{price}} lepas percubaan, sambung {{period}}.
+{{price}}, sambung {{period}}.
+tiap-tiap bulan
+{{count}} hari
+{{count}} minggu
+{{count}} bulan
+{{count}} tahun
+Boleh batal bila-bila. Langganan sambung sendiri kalau tak batal.
+Mula cuba percuma
+Teruskan
+Pulihkan pembelian
+Tengah muat tawaran kedai…
+Tawaran tak dapat muat. Harga atau percubaan tak diandaikan.
+Pembelian sudah batal.
+Tak dapat habiskan pembelian.
+Pembelian sudah pulih.
+Tak ada pembelian aktif untuk pulihkan.
+BAYARAN CUBA UNTUK PEMBANGUNAN
+Terma
+Privasi
+Langganan
+Percubaan aktif
+Langganan aktif
+Aktif sampai {{date}}
+Tak aktif
+Sudah tamat
+Masalah bayaran
+Tengah tengok status
+Pulihkan pembelian
+Urus langganan
+Tak dapat buka urusan langganan.
+Privasi
+Maklumat kitaran tinggal dalam telefon ini, tak hantar ke RevenueCat. Tak ada akaun, iklan, analitik, ambil lokasi atau kenalan, atau server app sendiri. Apple atau Google dan RevenueCat proses maklumat bayaran langganan; tak terima maklumat kitaran dari app ini.
+Penafian
+Ini app bagi maklumat untuk hubungan, bukan alat perubatan. Tak bagi nasihat doktor, diagnosis atau rawatan. Kitaran dan pengalaman tak sama. Anggaran ikut maklumat yang lu masok saja. Jangan pakai untuk cegah hamil, keputusan kesuburan, rancang kehamilan, rawatan atau kecemasan kesihatan. App tak tahu atau ramal pasangan rasa apa.
+Tentang
+Satu hari, satu cadangan; anggaran bukan fakta.
+Versi {{version}}
+Hubungan bantuan mesti isi sebelum keluarkan app.
+Kurangkan {{label}}
+Tambah {{label}}
+Pilih {{language}}
+Tanda fasa {{phase}}

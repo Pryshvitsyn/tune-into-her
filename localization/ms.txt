@@ -1,0 +1,138 @@
+Sedikit konteks untuk hari ini.
+Teruskan
+Kembali
+Simpan
+Batal
+Selesai
+Cuba lagi
+Sedang memuatkan…
+Hidup
+Mati
+Belum ditetapkan
+{{count}} hari
+Tutup
+Jangan meneka. Ambil peduli.
+Dapatkan satu cadangan harian yang menghormati pasangan berdasarkan anggaran tahap kitarannya.
+Konteks, bukan ramalan
+Kitaran dan pengalaman setiap orang berbeza. Aplikasi ini tidak meramal perasaan pasangan atau memberikan nasihat perubatan.
+Masukkan hanya maklumat kitaran yang pasangan izinkan untuk digunakan. Hormati privasinya.
+Saya faham dan akan menggunakan anggaran dengan hormat
+Sila sahkan sebelum meneruskan.
+Bilakah haid terakhir bermula?
+Gunakan hari pertama haid terakhir yang diketahui.
+Tarikh tidak boleh pada masa hadapan.
+Berapakah tempoh biasanya?
+Anggaran sudah memadai. Anda boleh mengubahnya kemudian.
+Tempoh kitaran
+Tempoh haid
+Sepintas lalu hari ini
+Inilah jenis cadangan yang akan anda lihat setiap hari.
+Satu peringatan sehari
+Pilih masa, atau gunakan aplikasi tanpa peringatan.
+Hidupkan peringatan harian
+Masa peringatan
+Bukan sekarang
+Lihat hari ini
+HARI {{day}}
+Anggaran fasa {{phase}}
+Hari ini
+Satu tindakan prihatin
+Ketahui lebih lanjut
+Dianggarkan daripada maklumat kitaran yang dimasukkan.
+Kemas kini kitaran
+Ini anggaran permulaan kitaran baharu. Kemas kini apabila tarikh sebenar diketahui.
+Buka tetapan
+Cadangan hari ini sudah tersedia
+Percubaan atau langganan aktif membuka akses kepada cadangan hari ini.
+Lihat langganan
+haid
+folikular
+pertengahan kitaran
+luteal
+Tentang fasa anggaran ini
+Fasa haid
+Anggaran hari-hari awal kitaran. Keselesaan dan tenaga berbeza bagi setiap orang. Aplikasi hanya mengira daripada tarikh yang dimasukkan; ia tidak mengesahkan haid bermula atau mengetahui perasaan pasangan. Tanya dan dengar.
+Fasa folikular
+Anggaran tempoh selepas haid dan sebelum pertengahan kitaran. Masa dan pengalaman berbeza. Pengiraan hanya berdasarkan maklumat yang dimasukkan. Jadikannya peringatan untuk mengambil peduli, bukan penjelasan perasaan pasangan.
+Pertengahan kitaran
+Anggaran sekitar pertengahan kitaran, bukan pengiraan waktu subur. Jangan gunakan untuk kontrasepsi atau merancang kehamilan. Kata-kata pasangan lebih penting daripada anggaran aplikasi.
+Fasa luteal
+Anggaran bahagian akhir kitaran sebelum permulaan seterusnya. Tenaga dan keselesaan boleh berubah. Tarikh ini belum disahkan. Tanya, dengar dan bersikap fleksibel.
+Sumber luar akan ditambah selepas semakan perubatan.
+Tetapan
+Kitaran
+Butiran kitaran
+Peringatan harian
+Bahasa
+Langganan
+Maklumat
+Privasi
+Penafian
+Tentang
+Kebenaran
+Dihidupkan pada {{time}}
+Dimatikan
+Kemas kini kitaran
+Permulaan haid terakhir yang diketahui
+Butiran kitaran dikemas kini.
+Semak tempoh kitaran dan haid.
+Maklumat tidak dapat disimpan.
+Peringatan harian
+Maksimum satu pemberitahuan setempat dijadualkan setiap hari.
+Dibenarkan
+Tidak dibenarkan
+Belum diminta
+Pemberitahuan dimatikan dalam tetapan sistem. Aplikasi tetap boleh digunakan.
+Peringatan tidak dapat dikemas kini.
+Bahasa
+English
+Italiano
+Русский
+Українська
+Español
+Satu cadangan berguna setiap hari.
+Buka akses kepada cadangan harian penuh dan konteks fasa.
+{{duration}} percuma
+{{price}} selepas percubaan, diperbaharui {{period}}.
+{{price}}, diperbaharui {{period}}.
+setiap bulan
+{{count}} hari
+{{count}} minggu
+{{count}} bulan
+{{count}} tahun
+Boleh dibatalkan bila-bila masa. Langganan diperbaharui secara automatik melainkan dibatalkan.
+Mulakan percubaan percuma
+Teruskan
+Pulihkan pembelian
+Memuatkan tawaran kedai…
+Tawaran tidak tersedia. Harga atau percubaan tidak diandaikan.
+Pembelian dibatalkan.
+Pembelian tidak dapat diselesaikan.
+Pembelian dipulihkan.
+Tiada pembelian aktif untuk dipulihkan.
+BAYARAN SIMULASI PEMBANGUNAN
+Terma
+Privasi
+Langganan
+Percubaan aktif
+Langganan aktif
+Aktif sehingga {{date}}
+Tidak aktif
+Tamat tempoh
+Masalah bayaran
+Menyemak status
+Pulihkan pembelian
+Urus langganan
+Pengurusan langganan tidak dapat dibuka.
+Privasi
+Tetapan kitaran kekal pada peranti ini dan tidak dihantar kepada RevenueCat. Tiada akaun, iklan, analitik, pengumpulan lokasi atau kenalan, atau pelayan aplikasi sendiri. Apple atau Google dan RevenueCat memproses maklumat transaksi langganan; mereka tidak menerima tetapan kitaran daripada aplikasi ini.
+Penafian
+Aplikasi ini ialah alat maklumat untuk hubungan, bukan peranti perubatan. Ia tidak memberikan nasihat perubatan, diagnosis atau rawatan. Kitaran dan pengalaman berbeza. Anggaran berdasarkan maklumat yang dimasukkan sahaja. Jangan gunakan untuk kontrasepsi, keputusan kesuburan, perancangan kehamilan, rawatan atau keputusan kecemasan kesihatan. Aplikasi tidak mengetahui atau meramal perasaan pasangan.
+Tentang
+Satu hari, satu cadangan yang prihatin; anggaran tidak dianggap fakta.
+Versi {{version}}
+Hubungan sokongan mesti ditetapkan sebelum pelancaran.
+Kurangkan {{label}}
+Tambah {{label}}
+Pilih {{language}}
+Penunjuk fasa {{phase}}

@@ -31,3 +31,22 @@ describe('notification scheduler', () => {
     expect(backend.scheduled.every((item) => item.date.getHours() === 9 && item.date.getMinutes() === 15)).toBe(true);
   });
 });
+
+
+describe('notification privacy and deletion', () => {
+  it('never exposes cycle day or personalized context on the lock screen', async () => {
+    const backend = new FakeBackend(); const scheduler = new NotificationScheduler(backend, new MemoryStore());
+    await scheduler.rebuild(base, new Date(2026, 0, 2, 7));
+    expect(backend.scheduled.length).toBeGreaterThan(0);
+    for (const item of backend.scheduled) {
+      expect(item.title).toBe('Test Brand');
+      expect(item.body).toBe('A little context for today.');
+    }
+  });
+  it('cancels all owned reminders for local-data deletion', async () => {
+    const backend = new FakeBackend(); const scheduler = new NotificationScheduler(backend, new MemoryStore());
+    await scheduler.rebuild(base, new Date(2026, 0, 2, 7));
+    await scheduler.cancelAll();
+    expect(backend.scheduled).toHaveLength(0);
+  });
+});

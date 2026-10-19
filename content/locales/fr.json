@@ -1,0 +1,1602 @@
+{
+  "menstrual_001": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_002": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_003": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_004": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_005": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_006": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_007": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_008": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_009": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_010": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_011": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_012": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_013": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_014": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_015": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_016": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_017": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_018": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_019": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_020": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Demandez ce qui serait utile au lieu de le supposer."
+  },
+  "menstrual_021": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_022": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_023": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_024": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_025": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_026": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_027": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_028": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_029": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_030": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_031": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_032": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_033": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_034": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_035": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_036": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_037": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_038": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_039": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_040": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Laissez la possibilité de modifier les projets."
+  },
+  "menstrual_041": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_042": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_043": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_044": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_045": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_046": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_047": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_048": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_049": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_050": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_051": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_052": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_053": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_054": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_055": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_056": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_057": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_058": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_059": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_060": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Un simple « Comment vas-tu ? » peut suffire."
+  },
+  "menstrual_061": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_062": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_063": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_064": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_065": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_066": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_067": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_068": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_069": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_070": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_071": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "menstrual_072": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_001": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_002": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_003": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_004": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_005": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_006": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_007": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_008": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Proposez sans rendre un refus difficile."
+  },
+  "follicular_009": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_010": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_011": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_012": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_013": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_014": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_015": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_016": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_017": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_018": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_019": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_020": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_021": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_022": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_023": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_024": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_025": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_026": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_027": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_028": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Laissez de la place à la compagnie et au calme."
+  },
+  "follicular_029": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_030": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_031": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_032": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_033": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_034": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_035": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_036": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_037": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_038": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_039": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_040": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_041": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_042": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_043": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_044": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_045": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_046": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_047": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_048": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Offrez une aide concrète, simplement."
+  },
+  "follicular_049": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_050": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_051": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_052": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_053": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_054": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_055": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_056": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_057": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_058": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_059": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_060": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_061": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_062": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_063": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_064": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_065": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_066": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_067": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_068": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Laissez ses paroles vous guider."
+  },
+  "follicular_069": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_070": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_071": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_072": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_073": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_074": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_075": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_076": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_077": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_078": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_079": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_080": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_081": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_082": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_083": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_084": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_085": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_086": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_087": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_088": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Réduisez la pression inutile si possible."
+  },
+  "follicular_089": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_090": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_091": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_092": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_093": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_094": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_095": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_096": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_097": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_098": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_099": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_100": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_101": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_102": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_103": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "follicular_104": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "mid_cycle_001": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "mid_cycle_002": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "mid_cycle_003": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "mid_cycle_004": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Soyez curieux plutôt que d’interpréter."
+  },
+  "mid_cycle_005": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_006": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_007": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_008": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_009": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_010": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_011": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_012": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_013": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_014": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_015": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_016": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_017": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_018": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_019": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_020": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_021": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_022": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_023": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_024": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Gardez le programme de la soirée flexible."
+  },
+  "mid_cycle_025": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_026": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_027": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_028": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_029": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_030": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_031": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_032": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_033": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_034": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_035": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_036": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_037": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_038": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_039": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_040": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_041": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_042": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_043": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "mid_cycle_044": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Écoutez d’abord si elle souhaite parler."
+  },
+  "luteal_001": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_002": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_003": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_004": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_005": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_006": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_007": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_008": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_009": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_010": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_011": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_012": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_013": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_014": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_015": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_016": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_017": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_018": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_019": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_020": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Utilisez cette estimation pour vous rappeler d’être attentif."
+  },
+  "luteal_021": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_022": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_023": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_024": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_025": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_026": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_027": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_028": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_029": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_030": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_031": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_032": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_033": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_034": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_035": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_036": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_037": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_038": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_039": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_040": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Allégez une tâche quotidienne si cela lui convient."
+  },
+  "luteal_041": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_042": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_043": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_044": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_045": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_046": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_047": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_048": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_049": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_050": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_051": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_052": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_053": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_054": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_055": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_056": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_057": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_058": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_059": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_060": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Vérifiez que vos projets conviennent à tous les deux."
+  },
+  "luteal_061": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_062": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_063": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_064": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_065": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_066": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_067": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_068": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_069": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_070": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_071": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_072": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_073": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_074": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_075": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_076": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_077": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_078": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_079": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_080": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Acceptez que ses préférences puissent changer."
+  },
+  "luteal_081": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_082": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_083": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_084": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_085": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_086": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_087": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_088": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_089": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_090": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_091": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_092": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_093": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_094": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_095": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_096": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_097": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_098": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_099": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_100": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Proposez du soutien sans en décider la forme."
+  },
+  "luteal_101": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_102": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_103": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_104": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_105": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_106": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_107": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_108": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_109": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_110": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_111": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_112": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_113": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_114": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_115": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_116": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_117": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_118": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_119": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_120": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Faites équipe sans ajouter de pression."
+  },
+  "luteal_121": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_122": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_123": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_124": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_125": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_126": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_127": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_128": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_129": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_130": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_131": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_132": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_133": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_134": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_135": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_136": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_137": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_138": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_139": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_140": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Ses paroles comptent plus que l’application."
+  },
+  "luteal_141": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_142": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_143": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_144": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_145": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_146": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_147": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_148": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_149": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_150": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_151": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_152": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_153": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_154": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_155": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_156": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_157": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_158": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_159": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_160": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Une question bienveillante vaut mieux qu’une prédiction."
+  },
+  "luteal_161": {
+    "context": "Le confort et l’énergie peuvent varier.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_162": {
+    "context": "Le rythme qui convient aujourd’hui peut être différent.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_163": {
+    "context": "Certaines personnes remarquent de légers changements d’énergie.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_164": {
+    "context": "Les besoins de repos ou de compagnie peuvent évoluer.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_165": {
+    "context": "Chaque cycle peut être vécu différemment.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_166": {
+    "context": "L’envie de calme ou de compagnie reste personnelle.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_167": {
+    "context": "Un peu de souplesse peut faciliter les projets.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_168": {
+    "context": "Le confort physique peut varier.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_169": {
+    "context": "L’énergie peut suivre un autre rythme aujourd’hui.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_170": {
+    "context": "L’attention et le confort peuvent changer.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_171": {
+    "context": "Le soutien souhaité dépend de la personne.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_172": {
+    "context": "Un rythme plus doux peut parfois convenir.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_173": {
+    "context": "Les besoins d’aujourd’hui sont individuels.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_174": {
+    "context": "Des attentes légères peuvent aider.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_175": {
+    "context": "Chaque cycle est différent.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_176": {
+    "context": "Un peu de flexibilité peut être bienvenu.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_177": {
+    "context": "L’énergie ne suit pas toujours le rythme habituel.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_178": {
+    "context": "Le confort ne permet pas de déduire l’humeur.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_179": {
+    "context": "Une journée moins chargée peut parfois convenir.",
+    "cue": "Accueillez une réponse inattendue."
+  },
+  "luteal_180": {
+    "context": "Cette estimation est un contexte, pas son expérience.",
+    "cue": "Accueillez une réponse inattendue."
+  }
+}

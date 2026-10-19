@@ -7,14 +7,19 @@ const config: ExpoConfig = {
   slug: 'tune-into-her',
   scheme: 'tuneintoher',
   version: '1.0.0',
+  icon: './assets/icon.png',
+  owner: 'eliogenesis',
   orientation: 'portrait',
   userInterfaceStyle: 'light',
   ios: {
     supportsTablet: false,
-    bundleIdentifier: 'com.placeholder.partnercyclecontext',
+    infoPlist: { ITSAppUsesNonExemptEncryption: false },
+    bundleIdentifier: 'com.pryshvitsyn.tuneintoher',
   },
   android: {
-    package: 'com.placeholder.partnercyclecontext',
+    package: 'com.pryshvitsyn.tuneintoher',
+    adaptiveIcon: { foregroundImage: './assets/adaptive-icon.png', backgroundColor: '#F7F5F0' },
+    allowBackup: false,
   },
   plugins: [
     'expo-router',
@@ -40,3 +45,4 @@ const config: ExpoConfig = {
 };
 
 export default config;
+

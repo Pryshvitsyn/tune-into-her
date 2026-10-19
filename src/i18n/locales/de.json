@@ -1,0 +1,182 @@
+{
+  "brand": {
+    "dailyContext": "Ein wenig Kontext für heute."
+  },
+  "common": {
+    "continue": "Weiter",
+    "back": "Zurück",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "done": "Fertig",
+    "retry": "Erneut versuchen",
+    "loading": "Wird geladen…",
+    "on": "Ein",
+    "off": "Aus",
+    "notSet": "Nicht festgelegt",
+    "days": "{{count}} Tage",
+    "close": "Schließen"
+  },
+  "onboarding": {
+    "welcomeTitle": "Nicht raten. Aufmerksam sein.",
+    "welcomeBody": "Ein respektvoller täglicher Impuls passend zum ungefähren Zeitpunkt im Zyklus deiner Partnerin.",
+    "contextTitle": "Kontext, keine Vorhersage",
+    "contextBody": "Zyklen und Erfahrungen sind verschieden. Die App sagt keine Gefühle voraus und gibt keinen medizinischen Rat.",
+    "privacy": "Verwende nur Zyklusdaten, die deine Partnerin mit dir teilen möchte. Respektiere ihre Privatsphäre.",
+    "acknowledge": "Ich verstehe und nutze Schätzungen respektvoll",
+    "required": "Bitte bestätige dies, bevor du fortfährst.",
+    "dateTitle": "Wann begann die letzte Periode?",
+    "dateBody": "Gib den ersten Tag der letzten bekannten Periode an.",
+    "futureDate": "Das Datum darf nicht in der Zukunft liegen.",
+    "typicalTitle": "Was ist üblich?",
+    "typicalBody": "Eine Schätzung genügt. Du kannst die Angaben später ändern.",
+    "cycleLength": "Zykluslänge",
+    "periodLength": "Periodendauer",
+    "previewTitle": "Heute auf einen Blick",
+    "previewBody": "So sieht ein täglicher Impuls aus.",
+    "reminderTitle": "Eine Erinnerung am Tag",
+    "reminderBody": "Wähle eine Uhrzeit oder nutze die App ohne Erinnerungen.",
+    "enableReminder": "Tägliche Erinnerung aktivieren",
+    "reminderTime": "Uhrzeit",
+    "skipReminder": "Jetzt nicht",
+    "finish": "Heute öffnen"
+  },
+  "today": {
+    "day": "TAG {{day}}",
+    "approxPhase": "Ungefähre Phase: {{phase}}",
+    "today": "Heute",
+    "goodMove": "Eine aufmerksame Geste",
+    "learnMore": "Mehr erfahren",
+    "estimated": "Geschätzt anhand der eingegebenen Zyklusdaten.",
+    "update": "Zyklus aktualisieren",
+    "newCycle": "Ein neuer Zyklusbeginn wird geschätzt. Aktualisiere das Datum, sobald du den tatsächlichen Beginn kennst.",
+    "settings": "Einstellungen öffnen",
+    "lockedTitle": "Dein täglicher Impuls ist bereit",
+    "lockedBody": "Ein aktiver Testzeitraum oder ein Abo schaltet den Impuls frei.",
+    "unlock": "Abo ansehen"
+  },
+  "phase": {
+    "menstrual": "Menstruation",
+    "follicular": "Follikelphase",
+    "mid_cycle": "Zyklusmitte",
+    "luteal": "Lutealphase"
+  },
+  "learn": {
+    "title": "Über diese ungefähre Phase",
+    "menstrual": {
+      "heading": "Menstruationsphase",
+      "body": "Geschätzte erste Zyklustage. Wohlbefinden und Energie sind individuell. Die Berechnung bestätigt keinen Periodenbeginn und kennt die Gefühle deiner Partnerin nicht. Frage nach und höre zu."
+    },
+    "follicular": {
+      "heading": "Follikelphase",
+      "body": "Geschätzte Zeit nach der Periode und vor der Zyklusmitte. Erfahrungen sind unterschiedlich. Die Berechnung nutzt nur eingegebene Daten und soll zur Aufmerksamkeit anregen, nichts erklären."
+    },
+    "mid_cycle": {
+      "heading": "Zyklusmitte",
+      "body": "Ungefährer Bereich in der Zyklusmitte. Keine Berechnung fruchtbarer Tage; nicht zur Verhütung oder Schwangerschaftsplanung verwenden. Die Worte deiner Partnerin sind wichtiger als die Schätzung."
+    },
+    "luteal": {
+      "heading": "Lutealphase",
+      "body": "Geschätzter späterer Zyklusabschnitt vor dem nächsten Beginn. Wohlbefinden und Energie können variieren. Das Datum ist nicht bestätigt. Frage nach, höre zu und bleibe flexibel."
+    },
+    "noSources": "Externe Quellen erscheinen nach medizinischer Prüfung."
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "cycle": "Zyklus",
+    "cycleDetails": "Zyklusdetails",
+    "reminder": "Tägliche Erinnerung",
+    "language": "Sprache",
+    "subscription": "Abonnement",
+    "information": "Informationen",
+    "privacy": "Datenschutz",
+    "disclaimer": "Hinweise",
+    "about": "Über die App",
+    "permission": "Berechtigung",
+    "enabledAt": "Aktiviert um {{time}}",
+    "disabled": "Deaktiviert"
+  },
+  "cycle": {
+    "title": "Zyklus aktualisieren",
+    "lastPeriod": "Letzter bekannter Periodenbeginn",
+    "saved": "Zyklusdaten aktualisiert.",
+    "invalid": "Prüfe Zykluslänge und Periodendauer.",
+    "saveError": "Daten konnten nicht gespeichert werden."
+  },
+  "reminder": {
+    "title": "Tägliche Erinnerung",
+    "description": "Höchstens eine lokale Benachrichtigung pro Tag.",
+    "permissionGranted": "Erlaubt",
+    "permissionDenied": "Nicht erlaubt",
+    "permissionUnknown": "Nicht angefragt",
+    "deniedHelp": "Benachrichtigungen sind in den Systemeinstellungen deaktiviert. Die App funktioniert auch ohne sie.",
+    "saveError": "Erinnerungen konnten nicht aktualisiert werden."
+  },
+  "language": {
+    "title": "Sprache",
+    "en": "English",
+    "it": "Italiano",
+    "ru": "Русский",
+    "uk": "Українська",
+    "es": "Español"
+  },
+  "paywall": {
+    "title": "Ein hilfreicher Impuls jeden Tag.",
+    "body": "Schalte den täglichen Impuls und den Phasenkontext frei.",
+    "trial": "{{duration}} kostenlos",
+    "afterTrial": "{{price}} nach dem Testzeitraum, Verlängerung: {{period}}.",
+    "regular": "{{price}}, Verlängerung: {{period}}.",
+    "monthly": "monatlich",
+    "duration": {
+      "day": "{{count}} Tag",
+      "week": "{{count}} Woche",
+      "month": "{{count}} Monat",
+      "year": "{{count}} Jahr"
+    },
+    "automatic": "Jederzeit kündbar. Das Abo verlängert sich automatisch, wenn es nicht gekündigt wird.",
+    "startTrial": "Kostenlos testen",
+    "continue": "Weiter",
+    "restore": "Käufe wiederherstellen",
+    "loading": "Store-Angebot wird geladen…",
+    "unavailable": "Angebot nicht verfügbar. Preis und Testzeitraum werden nicht angenommen.",
+    "cancelled": "Kauf abgebrochen.",
+    "purchaseError": "Kauf konnte nicht abgeschlossen werden.",
+    "restored": "Käufe wiederhergestellt.",
+    "nothingToRestore": "Kein aktiver Kauf zum Wiederherstellen gefunden.",
+    "mock": "SIMULIERTE ZAHLUNG — ENTWICKLUNG",
+    "terms": "Bedingungen",
+    "privacy": "Datenschutz"
+  },
+  "subscription": {
+    "title": "Abonnement",
+    "activeTrial": "Testzeitraum aktiv",
+    "activePaid": "Abonnement aktiv",
+    "activeEnding": "Aktiv bis {{date}}",
+    "inactive": "Inaktiv",
+    "expired": "Abgelaufen",
+    "billingIssue": "Zahlungsproblem",
+    "unknown": "Status wird geprüft",
+    "restore": "Käufe wiederherstellen",
+    "manage": "Abonnement verwalten",
+    "manageError": "Aboverwaltung konnte nicht geöffnet werden."
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "body": "Zyklusdaten bleiben auf diesem Gerät und werden nicht an RevenueCat gesendet. Keine Konten, Werbung, Analysen, Standort- oder Kontakterfassung und kein eigener Server. Apple oder Google und RevenueCat verarbeiten Kaufdaten, erhalten aber keine Zyklusdaten von dieser App."
+  },
+  "disclaimer": {
+    "title": "Hinweise",
+    "body": "Informationsangebot für Beziehungen, kein Medizinprodukt und keine medizinische Beratung, Diagnose oder Behandlung. Zyklen und Erfahrungen variieren. Schätzungen beruhen nur auf eingegebenen Daten. Nicht für Verhütung, Fruchtbarkeitsentscheidungen, Schwangerschaftsplanung oder medizinische Notfälle verwenden. Die App kennt die Gefühle deiner Partnerin nicht und sagt sie nicht voraus."
+  },
+  "about": {
+    "title": "Über die App",
+    "description": "Ein Tag, ein aufmerksamer Impuls. Schätzungen werden nicht als Tatsachen dargestellt.",
+    "version": "Version {{version}}",
+    "support": "Der Supportkontakt muss vor der Veröffentlichung eingerichtet werden."
+  },
+  "accessibility": {
+    "decrease": "{{label}} verringern",
+    "increase": "{{label}} erhöhen",
+    "selectLanguage": "{{language}} auswählen",
+    "phaseIndicator": "Phasenanzeige: {{phase}}"
+  }
+}

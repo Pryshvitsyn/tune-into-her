@@ -1,0 +1,1602 @@
+{
+  "menstrual_001": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_002": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_003": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_004": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_005": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_006": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_007": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_008": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_009": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_010": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_011": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_012": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_013": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_014": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_015": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_016": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_017": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_018": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_019": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_020": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Tanya apa yang membantu, jangan andaikan."
+  },
+  "menstrual_021": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_022": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_023": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_024": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_025": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_026": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_027": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_028": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_029": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_030": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_031": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_032": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_033": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_034": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_035": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_036": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_037": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_038": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_039": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_040": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Beri ruang untuk mengubah rancangan."
+  },
+  "menstrual_041": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_042": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_043": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_044": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_045": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_046": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_047": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_048": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_049": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_050": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_051": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_052": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_053": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_054": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_055": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_056": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_057": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_058": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_059": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_060": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+  },
+  "menstrual_061": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_062": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_063": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_064": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_065": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_066": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_067": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_068": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_069": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_070": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_071": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "menstrual_072": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_001": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_002": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_003": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_004": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_005": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_006": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_007": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_008": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+  },
+  "follicular_009": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_010": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_011": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_012": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_013": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_014": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_015": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_016": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_017": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_018": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_019": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_020": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_021": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_022": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_023": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_024": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_025": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_026": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_027": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_028": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Beri ruang untuk berteman dan bersendirian."
+  },
+  "follicular_029": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_030": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_031": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_032": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_033": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_034": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_035": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_036": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_037": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_038": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_039": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_040": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_041": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_042": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_043": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_044": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_045": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_046": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_047": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_048": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Tawarkan bantuan praktikal secara sederhana."
+  },
+  "follicular_049": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_050": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_051": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_052": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_053": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_054": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_055": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_056": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_057": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_058": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_059": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_060": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_061": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_062": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_063": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_064": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_065": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_066": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_067": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_068": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Biarkan kata-katanya menjadi panduan."
+  },
+  "follicular_069": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_070": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_071": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_072": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_073": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_074": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_075": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_076": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_077": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_078": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_079": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_080": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_081": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_082": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_083": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_084": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_085": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_086": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_087": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_088": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Kurangkan tekanan yang tidak perlu."
+  },
+  "follicular_089": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_090": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_091": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_092": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_093": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_094": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_095": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_096": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_097": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_098": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_099": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_100": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_101": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_102": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_103": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "follicular_104": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "mid_cycle_001": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "mid_cycle_002": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "mid_cycle_003": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "mid_cycle_004": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Pilih untuk bertanya, bukan mentafsir."
+  },
+  "mid_cycle_005": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_006": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_007": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_008": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_009": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_010": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_011": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_012": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_013": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_014": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_015": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_016": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_017": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_018": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_019": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_020": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_021": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_022": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_023": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_024": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Jadikan rancangan malam lebih fleksibel."
+  },
+  "mid_cycle_025": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_026": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_027": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_028": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_029": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_030": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_031": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_032": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_033": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_034": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_035": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_036": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_037": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_038": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_039": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_040": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_041": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_042": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_043": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "mid_cycle_044": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Dengar dahulu jika dia mahu berkongsi."
+  },
+  "luteal_001": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_002": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_003": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_004": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_005": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_006": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_007": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_008": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_009": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_010": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_011": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_012": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_013": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_014": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_015": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_016": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_017": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_018": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_019": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_020": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+  },
+  "luteal_021": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_022": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_023": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_024": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_025": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_026": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_027": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_028": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_029": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_030": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_031": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_032": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_033": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_034": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_035": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_036": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_037": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_038": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_039": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_040": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Ringankan satu tugas harian jika dia selesa."
+  },
+  "luteal_041": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_042": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_043": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_044": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_045": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_046": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_047": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_048": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_049": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_050": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_051": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_052": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_053": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_054": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_055": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_056": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_057": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_058": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_059": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_060": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+  },
+  "luteal_061": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_062": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_063": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_064": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_065": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_066": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_067": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_068": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_069": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_070": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_071": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_072": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_073": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_074": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_075": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_076": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_077": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_078": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_079": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_080": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+  },
+  "luteal_081": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_082": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_083": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_084": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_085": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_086": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_087": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_088": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_089": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_090": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_091": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_092": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_093": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_094": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_095": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_096": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_097": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_098": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_099": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_100": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+  },
+  "luteal_101": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_102": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_103": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_104": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_105": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_106": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_107": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_108": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_109": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_110": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_111": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_112": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_113": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_114": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_115": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_116": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_117": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_118": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_119": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_120": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Jalani hari bersama tanpa tekanan."
+  },
+  "luteal_121": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_122": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_123": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_124": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_125": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_126": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_127": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_128": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_129": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_130": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_131": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_132": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_133": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_134": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_135": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_136": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_137": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_138": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_139": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_140": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+  },
+  "luteal_141": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_142": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_143": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_144": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_145": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_146": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_147": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_148": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_149": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_150": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_151": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_152": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_153": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_154": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_155": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_156": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_157": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_158": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_159": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_160": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+  },
+  "luteal_161": {
+    "context": "Keselesaan dan tenaga boleh berubah.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_162": {
+    "context": "Rentak yang selesa hari ini mungkin berbeza.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_163": {
+    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_164": {
+    "context": "Keperluan berehat atau ditemani boleh berubah.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_165": {
+    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_166": {
+    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_167": {
+    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_168": {
+    "context": "Keselesaan fizikal boleh berubah.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_169": {
+    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_170": {
+    "context": "Tumpuan dan keselesaan boleh berubah.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_171": {
+    "context": "Sokongan yang diingini bergantung pada individu.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_172": {
+    "context": "Rentak lebih perlahan kadangkala sesuai.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_173": {
+    "context": "Keperluan hari ini bersifat peribadi.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_174": {
+    "context": "Jangkaan yang ringan mungkin membantu.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_175": {
+    "context": "Setiap kitaran berbeza.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_176": {
+    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_177": {
+    "context": "Tenaga tidak semestinya mengikut pola biasa.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_178": {
+    "context": "Keselesaan tidak menentukan suasana hati.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_179": {
+    "context": "Jadual lebih lapang kadangkala sesuai.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  },
+  "luteal_180": {
+    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
+    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+  }
+}

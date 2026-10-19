@@ -1,0 +1,138 @@
+Ein wenig Kontext für heute.
+Weiter
+Zurück
+Speichern
+Abbrechen
+Fertig
+Erneut versuchen
+Wird geladen…
+Ein
+Aus
+Nicht festgelegt
+{{count}} Tage
+Schließen
+Nicht raten. Aufmerksam sein.
+Ein respektvoller täglicher Impuls passend zum ungefähren Zeitpunkt im Zyklus deiner Partnerin.
+Kontext, keine Vorhersage
+Zyklen und Erfahrungen sind verschieden. Die App sagt keine Gefühle voraus und gibt keinen medizinischen Rat.
+Verwende nur Zyklusdaten, die deine Partnerin mit dir teilen möchte. Respektiere ihre Privatsphäre.
+Ich verstehe und nutze Schätzungen respektvoll
+Bitte bestätige dies, bevor du fortfährst.
+Wann begann die letzte Periode?
+Gib den ersten Tag der letzten bekannten Periode an.
+Das Datum darf nicht in der Zukunft liegen.
+Was ist üblich?
+Eine Schätzung genügt. Du kannst die Angaben später ändern.
+Zykluslänge
+Periodendauer
+Heute auf einen Blick
+So sieht ein täglicher Impuls aus.
+Eine Erinnerung am Tag
+Wähle eine Uhrzeit oder nutze die App ohne Erinnerungen.
+Tägliche Erinnerung aktivieren
+Uhrzeit
+Jetzt nicht
+Heute öffnen
+TAG {{day}}
+Ungefähre Phase: {{phase}}
+Heute
+Eine aufmerksame Geste
+Mehr erfahren
+Geschätzt anhand der eingegebenen Zyklusdaten.
+Zyklus aktualisieren
+Ein neuer Zyklusbeginn wird geschätzt. Aktualisiere das Datum, sobald du den tatsächlichen Beginn kennst.
+Einstellungen öffnen
+Dein täglicher Impuls ist bereit
+Ein aktiver Testzeitraum oder ein Abo schaltet den Impuls frei.
+Abo ansehen
+Menstruation
+Follikelphase
+Zyklusmitte
+Lutealphase
+Über diese ungefähre Phase
+Menstruationsphase
+Geschätzte erste Zyklustage. Wohlbefinden und Energie sind individuell. Die Berechnung bestätigt keinen Periodenbeginn und kennt die Gefühle deiner Partnerin nicht. Frage nach und höre zu.
+Follikelphase
+Geschätzte Zeit nach der Periode und vor der Zyklusmitte. Erfahrungen sind unterschiedlich. Die Berechnung nutzt nur eingegebene Daten und soll zur Aufmerksamkeit anregen, nichts erklären.
+Zyklusmitte
+Ungefährer Bereich in der Zyklusmitte. Keine Berechnung fruchtbarer Tage; nicht zur Verhütung oder Schwangerschaftsplanung verwenden. Die Worte deiner Partnerin sind wichtiger als die Schätzung.
+Lutealphase
+Geschätzter späterer Zyklusabschnitt vor dem nächsten Beginn. Wohlbefinden und Energie können variieren. Das Datum ist nicht bestätigt. Frage nach, höre zu und bleibe flexibel.
+Externe Quellen erscheinen nach medizinischer Prüfung.
+Einstellungen
+Zyklus
+Zyklusdetails
+Tägliche Erinnerung
+Sprache
+Abonnement
+Informationen
+Datenschutz
+Hinweise
+Über die App
+Berechtigung
+Aktiviert um {{time}}
+Deaktiviert
+Zyklus aktualisieren
+Letzter bekannter Periodenbeginn
+Zyklusdaten aktualisiert.
+Prüfe Zykluslänge und Periodendauer.
+Daten konnten nicht gespeichert werden.
+Tägliche Erinnerung
+Höchstens eine lokale Benachrichtigung pro Tag.
+Erlaubt
+Nicht erlaubt
+Nicht angefragt
+Benachrichtigungen sind in den Systemeinstellungen deaktiviert. Die App funktioniert auch ohne sie.
+Erinnerungen konnten nicht aktualisiert werden.
+Sprache
+English
+Italiano
+Русский
+Українська
+Español
+Ein hilfreicher Impuls jeden Tag.
+Schalte den täglichen Impuls und den Phasenkontext frei.
+{{duration}} kostenlos
+{{price}} nach dem Testzeitraum, Verlängerung: {{period}}.
+{{price}}, Verlängerung: {{period}}.
+monatlich
+{{count}} Tag
+{{count}} Woche
+{{count}} Monat
+{{count}} Jahr
+Jederzeit kündbar. Das Abo verlängert sich automatisch, wenn es nicht gekündigt wird.
+Kostenlos testen
+Weiter
+Käufe wiederherstellen
+Store-Angebot wird geladen…
+Angebot nicht verfügbar. Preis und Testzeitraum werden nicht angenommen.
+Kauf abgebrochen.
+Kauf konnte nicht abgeschlossen werden.
+Käufe wiederhergestellt.
+Kein aktiver Kauf zum Wiederherstellen gefunden.
+SIMULIERTE ZAHLUNG — ENTWICKLUNG
+Bedingungen
+Datenschutz
+Abonnement
+Testzeitraum aktiv
+Abonnement aktiv
+Aktiv bis {{date}}
+Inaktiv
+Abgelaufen
+Zahlungsproblem
+Status wird geprüft
+Käufe wiederherstellen
+Abonnement verwalten
+Aboverwaltung konnte nicht geöffnet werden.
+Datenschutz
+Zyklusdaten bleiben auf diesem Gerät und werden nicht an RevenueCat gesendet. Keine Konten, Werbung, Analysen, Standort- oder Kontakterfassung und kein eigener Server. Apple oder Google und RevenueCat verarbeiten Kaufdaten, erhalten aber keine Zyklusdaten von dieser App.
+Hinweise
+Informationsangebot für Beziehungen, kein Medizinprodukt und keine medizinische Beratung, Diagnose oder Behandlung. Zyklen und Erfahrungen variieren. Schätzungen beruhen nur auf eingegebenen Daten. Nicht für Verhütung, Fruchtbarkeitsentscheidungen, Schwangerschaftsplanung oder medizinische Notfälle verwenden. Die App kennt die Gefühle deiner Partnerin nicht und sagt sie nicht voraus.
+Über die App
+Ein Tag, ein aufmerksamer Impuls. Schätzungen werden nicht als Tatsachen dargestellt.
+Version {{version}}
+Der Supportkontakt muss vor der Veröffentlichung eingerichtet werden.
+{{label}} verringern
+{{label}} erhöhen
+{{language}} auswählen
+Phasenanzeige: {{phase}}

@@ -9,7 +9,8 @@ The product is designed for empathy, restraint, and privacy. It is not a medical
 ## Platforms and languages
 
 - iOS and Android through Expo and React Native.
-- English, Italian, Russian, Ukrainian, and Spanish.
+- Eleven in-app locales: English, French, Italian, Spanish, German, Russian, Ukrainian, Hindi, Simplified Chinese, Malay, and Baba Malay (Peranakan).
+- New translations are editorial drafts. Baba Malay is separately labeled as a preview pending community review.
 - Offline-first daily content with 400 localized cues bundled in the app.
 
 ## Technology
@@ -73,7 +74,7 @@ npm ci
 cp .env.example .env
 ```
 
-The project keeps production bundle identifiers and the EAS project ID as explicit placeholders until approved. Do not register stores or create builds intended for distribution before resolving the checklist in [STORE_SETUP.md](STORE_SETUP.md).
+The configured identifier is `com.pryshvitsyn.tuneintoher`; store registration has not been verified. The EAS project ID is retained from the existing source. Follow [release/RELEASE_GUIDE_RU.md](release/RELEASE_GUIDE_RU.md) for the current handoff and outstanding release requirements.
 
 ## Environment configuration
 
@@ -182,4 +183,5 @@ Notifications are scheduled locally. The scheduler maintains a rolling 14-day ho
 
 ## Release readiness
 
-Before store submission, complete [STORE_SETUP.md](STORE_SETUP.md), replace all approved placeholders, provide final product assets and legal URLs, and obtain legal, medical-safety, and native-language editorial review. No open-source license is granted by this repository.
+Before store submission, complete [release/RELEASE_GUIDE_RU.md](release/RELEASE_GUIDE_RU.md), configure support and legal URLs, verify purchases on devices, and obtain editorial review. `npm run release:check` reports outstanding work and also runs before production EAS builds. No signed IPA/AAB or store submission is included. No open-source license is granted by this repository.
+

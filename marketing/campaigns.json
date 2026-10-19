@@ -1,0 +1,157 @@
+[
+  {
+    "id": "01-listen",
+    "name": "Listen before you solve",
+    "audience": "Partners who want to listen more attentively",
+    "hypothesis": "A specific listening prompt earns more saves than a broad relationship promise.",
+    "background": "#183C33",
+    "accent": "#D8E5C9",
+    "caption": "Sometimes support starts with one question: Do you want me to listen, help, or give you some space? Tune Into Her offers one respectful daily cue. Follow this page for launch updates.",
+    "slides": [
+      [
+        "You don’t need\nthe perfect answer.",
+        "Start with a better question."
+      ],
+      [
+        "Listen. Help.\nOr give space?",
+        "Ask which one would feel useful."
+      ],
+      [
+        "Her answer\ncomes first.",
+        "A calendar cannot tell you how she feels."
+      ],
+      [
+        "One small cue.\nEvery day.",
+        "Tune Into Her helps you remember to ask and listen."
+      ],
+      [
+        "Don’t guess.\nTune in.",
+        "Follow for launch updates."
+      ]
+    ]
+  },
+  {
+    "id": "02-small-things",
+    "name": "Small things count",
+    "audience": "Busy couples",
+    "hypothesis": "Concrete everyday actions drive more profile visits than abstract messaging.",
+    "background": "#EFE7DD",
+    "accent": "#38584B",
+    "caption": "Check the plan. Share a task. Ask what would help. Small, welcome actions can make care visible. Tune Into Her brings one thoughtful cue into your day. Follow for launch updates.",
+    "slides": [
+      [
+        "Care can be\na small thing.",
+        "A moment of attention in an ordinary day."
+      ],
+      [
+        "Check the plan.",
+        "Does tonight still work for both of us?"
+      ],
+      [
+        "Share a task.",
+        "Would it help if I took care of dinner?"
+      ],
+      [
+        "Ask. Then listen.",
+        "Offer support without choosing the answer for her."
+      ],
+      [
+        "Make attention\na daily habit.",
+        "Tune Into Her · Follow for launch updates."
+      ]
+    ]
+  },
+  {
+    "id": "03-context",
+    "name": "Context without assumptions",
+    "audience": "People curious about cycle context",
+    "hypothesis": "Explaining the product’s limits builds trust and qualified interest.",
+    "background": "#E8E8F0",
+    "accent": "#51486B",
+    "caption": "Cycle timing can offer approximate context. It cannot explain a person or predict their mood. Tune Into Her combines a simple estimate with a respectful daily cue. Use only information your partner agrees to share. Follow for launch updates.",
+    "slides": [
+      [
+        "A cycle is\nnot a personality.",
+        "People deserve more than a label."
+      ],
+      [
+        "Timing offers\napproximate context.",
+        "Experiences differ between people and cycles."
+      ],
+      [
+        "Ask permission\nbefore adding data.",
+        "Shared information should stay a shared choice."
+      ],
+      [
+        "Use the cue\nto start listening.",
+        "Her own words matter more than the estimate."
+      ],
+      [
+        "Context. Care.\nA conversation.",
+        "Tune Into Her · Follow for launch updates."
+      ]
+    ]
+  },
+  {
+    "id": "04-private",
+    "name": "A quieter kind of app",
+    "audience": "People who value privacy and simple tools",
+    "hypothesis": "Local cycle storage and a restrained experience improve qualified interest.",
+    "background": "#24352F",
+    "accent": "#E8DEC8",
+    "caption": "No social feed. No ads. No app account. Cycle details stay on your device. Store providers and RevenueCat process subscription information. Tune Into Her is built around one daily cue and your real-world relationship. Follow for launch updates.",
+    "slides": [
+      [
+        "Your relationship\nisn’t a feed.",
+        "It deserves a little room to breathe."
+      ],
+      [
+        "No ads.\nNo app account.",
+        "A focused daily experience."
+      ],
+      [
+        "Cycle details stay\non your device.",
+        "Subscription services process purchase information."
+      ],
+      [
+        "One daily cue.\nOptional reminders.",
+        "Then back to the person in front of you."
+      ],
+      [
+        "Less scrolling.\nMore attention.",
+        "Tune Into Her · Follow for launch updates."
+      ]
+    ]
+  },
+  {
+    "id": "05-language",
+    "name": "Care in your own words",
+    "audience": "Multilingual couples and Peranakan community collaborators",
+    "hypothesis": "Community participation yields better language feedback and referrals.",
+    "background": "#EADCCB",
+    "accent": "#513E36",
+    "caption": "Care should sound natural. Tune Into Her is being prepared in 11 languages, including separate Bahasa Melayu and Baba Melayu options. The Baba Melayu translation is a draft: we’re inviting native speakers to help review it. Follow and tell us which language you use at home.",
+    "slides": [
+      [
+        "Care should sound\nlike you.",
+        "In the words you use at home."
+      ],
+      [
+        "11 languages\nin preparation.",
+        "English · French · Italian · Spanish · German\nRussian · Ukrainian · Hindi · Simplified Chinese"
+      ],
+      [
+        "Bahasa Melayu.\nBaba Melayu.",
+        "Two separate options. One shared intention: care."
+      ],
+      [
+        "Peranakan voices\nare welcome.",
+        "Help review our Baba Melayu translation draft."
+      ],
+      [
+        "Bring your words.\nHelp shape the app.",
+        "Follow and tell us your home language."
+      ]
+    ]
+  }
+]

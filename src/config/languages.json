@@ -1,0 +1,28 @@
+{
+  "codes": [
+    "en",
+    "fr",
+    "it",
+    "es",
+    "de",
+    "ru",
+    "uk",
+    "hi",
+    "zh-Hans",
+    "ms",
+    "mbf"
+  ],
+  "labels": {
+    "en": "English",
+    "fr": "Français",
+    "it": "Italiano",
+    "es": "Español",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "uk": "Українська",
+    "hi": "हिन्दी",
+    "zh-Hans": "简体中文",
+    "ms": "Bahasa Melayu",
+    "mbf": "Baba Melayu · Peranakan"
+  }
+}

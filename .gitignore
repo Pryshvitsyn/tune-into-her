@@ -5,6 +5,7 @@ node_modules/
 .expo-shared/
 .eas/
 dist/
+export-check/
 build/
 coverage/
 web-build/
@@ -36,3 +37,4 @@ google-services.json
 npm-debug.log*
 *.log
 .DS_Store
+
