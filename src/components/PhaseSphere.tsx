@@ -1,7 +1,13 @@
-import { Image, View, StyleSheet } from 'react-native';
+import { View } from "react-native";
 
-/** Decorative brand mark; not a visualization of hormones or mood. */
+import { useTheme } from "../theme/useTheme";
+
+import { BrandMark } from "./BrandMark";
 export function PhaseSphere({ small = false }: { small?: boolean }) {
- return <View pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={[styles.wrap, small && styles.small]}><Image source={require('../../assets/sphere.png')} style={styles.image} resizeMode="contain" accessible={false}/></View>;
+  const { colors } = useTheme();
+  return (
+    <View accessible={false} style={{ alignSelf: "center", padding: 24 }}>
+      <BrandMark size={small ? 92 : 130} color={colors.primary} />
+    </View>
+  );
 }
-const styles=StyleSheet.create({wrap:{width:220,height:200,alignSelf:'center'},small:{width:150,height:140},image:{width:'100%',height:'100%'}});

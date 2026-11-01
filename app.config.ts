@@ -7,10 +7,15 @@ const config: ExpoConfig = {
   slug: 'tune-into-her',
   scheme: 'tuneintoher',
   version: '1.0.0',
+  runtimeVersion: { policy: 'fingerprint' },
+  updates: {
+    url: 'https://u.expo.dev/dc8938e7-7163-413a-9003-479d0afc8a17',
+    checkAutomatically: 'ON_LOAD',
+  },
   icon: './assets/icon.png',
   owner: 'eliogenesis',
   orientation: 'portrait',
-  userInterfaceStyle: 'light',
+  userInterfaceStyle: 'automatic',
   ios: {
     supportsTablet: false,
     infoPlist: { ITSAppUsesNonExemptEncryption: false },

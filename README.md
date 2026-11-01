@@ -2,7 +2,7 @@
 ## What it is
 Local-first iOS/Android app for practical daily partner support informed by estimated cycle timing. Not medical or mood prediction.
 ## Current status
-Development / recovery. Remote baseline 6367bd8 recovered. Approved new UI/content remains to implement. Not store-ready.
+Development. Native dual-theme interface, THEA branding, calendar, appearance and three-part advice layout implemented. Full-format content expansion and device QA remain. Not store-ready.
 ## Stack
 Expo SDK 57, React Native, TypeScript, Expo Router, Vitest, i18next, SecureStore, AsyncStorage, local notifications, RevenueCat.
 ## Run
