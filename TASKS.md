@@ -1,6 +1,6 @@
 # TASKS
 ## NOW
-- [ ] Publish prepared documentation branch and open PR.
+- [x] Publish prepared documentation branch and open PR #2 (2026-11-01).
 - [ ] Implement shared dual themes and two-logo header on Today.
 - [ ] Create exact scalable THEA/app emblems from approved references; verify small-size rendering.
 - [ ] Implement centered DO/SUPPORT/KEEP IN MIND, daily gratitude and 90-day coverage tests.
