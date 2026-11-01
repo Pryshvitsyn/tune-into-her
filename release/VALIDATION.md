@@ -4,7 +4,7 @@
 - Failed run 41295193181: installation, content, lint, type-check and all tests passed; Expo Doctor failed on eight outdated SDK 57 packages.
 - Applied SDK-compatible patch updates via expo install --fix and regenerated package-lock.json.
 - Clean npm ci followed by Expo Doctor: 21/21 checks pass. Lint, type-check, 39 tests and content validation pass again.
-- GitHub rerun pending publication; both iOS and Android Hermes exports pass after the dependency updates.
+- GitHub Actions run [41296523081](https://github.com/Pryshvitsyn/tune-into-her/actions/runs/41296523081) passes every step on commit 345d741. Both iOS and Android Hermes exports pass locally after the dependency updates.
 
 ## Interface checks
 

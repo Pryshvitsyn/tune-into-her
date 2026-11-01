@@ -1,7 +1,7 @@
 # TASKS
 ## NOW
 - [x] Diagnose failed CI and align Expo SDK 57 patch dependencies; verify clean installation and 21/21 health checks.
-- [ ] Publish CI fix to PR #3 and verify the new GitHub Actions run.
+- [x] Publish CI fix to PR #3 and verify GitHub Actions run 41296523081 (all steps pass).
 - [x] Publish prepared documentation branch and open PR #2 (2026-11-01).
 - [x] Implement shared dual themes and two-logo header on Today.
 - [x] Create shared vector THEA/app emblems.
