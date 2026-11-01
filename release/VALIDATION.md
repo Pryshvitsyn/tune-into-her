@@ -1,5 +1,13 @@
 # Validation — 1 November 2026
 
+## CI repair
+- Failed run 41295193181: installation, content, lint, type-check and all tests passed; Expo Doctor failed on eight outdated SDK 57 packages.
+- Applied SDK-compatible patch updates via expo install --fix and regenerated package-lock.json.
+- Clean npm ci followed by Expo Doctor: 21/21 checks pass. Lint, type-check, 39 tests and content validation pass again.
+- GitHub rerun pending publication; both iOS and Android Hermes exports pass after the dependency updates.
+
+## Interface checks
+
 - ESLint and TypeScript pass.
 - Vitest: 39 tests pass across 8 files.
 - Content validator: existing 400 unique cues across 11 locales.
