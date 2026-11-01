@@ -12,7 +12,7 @@ Before substantial work read README, GOAL, PRODUCT_SNAPSHOT, relevant TASKS, the
 - Add DECISIONS only for actual decisions; update architecture only on technical changes.
 - Do not create special agents/skills without real need.
 - Never expose credentials, commit .env/signing material or claim untested release readiness.
-- Founder explicitly authorized publication on 2026-11-01: prepared project documentation may be pushed to a feature branch and proposed in a PR. This supersedes the earlier lack of push authorization for this scope. Merge, deployment and store submission remain separate actions.
+- Founder explicitly authorized publication on 2026-11-01: prepared project documentation may be pushed to a feature branch and proposed in a PR. The subsequent instruction to implement the native interface continues that publication workflow for the implementation branch. This supersedes the earlier lack of push authorization for this scope. Merge, deployment and store submission remain separate actions.
 ## Completion
 DONE requires implementation, passing relevant checks, expected behavior and regression verification, updated snapshot/tasks.
 Documentation-only completion requires validated facts, links and structure; does not imply runtime changes.

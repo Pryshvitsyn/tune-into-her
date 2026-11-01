@@ -1,10 +1,14 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../config/constants';
+import {
+  SUPPORTED_LANGUAGES,
+  type SupportedLanguage,
+} from "../config/constants";
 
-import { storageKeys } from './keys';
+import { storageKeys } from "./keys";
 
 export interface Preferences {
+  theme: "light" | "dark";
   onboardingComplete: boolean;
   language: SupportedLanguage;
   reminderEnabled: boolean;
@@ -13,8 +17,9 @@ export interface Preferences {
 }
 
 export const defaultPreferences: Preferences = {
+  theme: "light",
   onboardingComplete: false,
-  language: 'en',
+  language: "en",
   reminderEnabled: false,
   reminderHour: 8,
   reminderMinute: 30,
@@ -23,11 +28,28 @@ export const defaultPreferences: Preferences = {
 export async function loadPreferences(): Promise<Preferences | null> {
   const value = await AsyncStorage.getItem(storageKeys.preferences);
   if (!value) return null;
-  const saved = JSON.parse(value) as Partial<Preferences>;
-  return { ...defaultPreferences, ...saved, language: SUPPORTED_LANGUAGES.includes(saved.language as SupportedLanguage) ? saved.language! : 'en' }; 
+  let saved: Partial<Preferences>;
+  try {
+    const parsed: unknown = JSON.parse(value);
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed))
+      return null;
+    saved = parsed as Partial<Preferences>;
+  } catch {
+    return null;
+  }
+  return {
+    ...defaultPreferences,
+    ...saved,
+    theme: saved.theme === "dark" ? "dark" : "light",
+    language: SUPPORTED_LANGUAGES.includes(saved.language as SupportedLanguage)
+      ? saved.language!
+      : "en",
+  };
 }
 
 export async function savePreferences(preferences: Preferences): Promise<void> {
-  await AsyncStorage.setItem(storageKeys.preferences, JSON.stringify(preferences));
+  await AsyncStorage.setItem(
+    storageKeys.preferences,
+    JSON.stringify(preferences),
+  );
 }
-

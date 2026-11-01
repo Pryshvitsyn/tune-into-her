@@ -1,14 +1,16 @@
 # TASKS
 ## NOW
 - [x] Publish prepared documentation branch and open PR #2 (2026-11-01).
-- [ ] Implement shared dual themes and two-logo header on Today.
-- [ ] Create exact scalable THEA/app emblems from approved references; verify small-size rendering.
-- [ ] Implement centered DO/SUPPORT/KEEP IN MIND, daily gratitude and 90-day coverage tests.
+- [x] Implement shared dual themes and two-logo header on Today.
+- [x] Create shared vector THEA/app emblems.
+- [ ] Visually verify emblem geometry and small-size rendering on devices.
+- [x] Implement centered DO/SUPPORT/KEEP IN MIND and daily gratitude rotation.
+- [ ] Expand new support/context bank and prove 90-day full-format coverage.
 ## NEXT
-- [ ] Apply visual system to existing routes; implement missing Appearance and About THEA.
+- [x] Apply visual system to existing routes; implement Appearance and About THEA.
 - [ ] Verify cycle editing, onboarding, language/theme persistence, deletion and notification denial.
 - [ ] Verify same-day stability, next-day changes, timezone and locale switching.
-- [ ] Run lint/types/tests and native exports after changes.
+- [x] Run lint/types/tests and native iOS/Android exports after changes.
 - [ ] Complete native device and purchase/restore/cancel QA.
 ## PARALLEL
 - [ ] Native-language editorial review including Baba Malay community review.

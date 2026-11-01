@@ -10,7 +10,7 @@ const config: ExpoConfig = {
   icon: './assets/icon.png',
   owner: 'eliogenesis',
   orientation: 'portrait',
-  userInterfaceStyle: 'light',
+  userInterfaceStyle: 'automatic',
   ios: {
     supportsTablet: false,
     infoPlist: { ITSAppUsesNonExemptEncryption: false },

@@ -1,4 +1,17 @@
-# Validation — 19 October 2026
+# Validation — 1 November 2026
+
+- ESLint and TypeScript pass.
+- Vitest: 39 tests pass across 8 files.
+- Content validator: existing 400 unique cues across 11 locales.
+- Final Hermes exports succeed on iOS (1417 modules) and Android (1562 modules).
+- Preference tests cover migration, dark-theme persistence and malformed saved data.
+- Reminder tests verify exactly one gratitude line and stable cross-locale identities for 366 dates, plus position rotation.
+- These are code/bundling checks, NOT manual device or visual interaction QA. No signed IPA/AAB or store submission.
+- New support/context copy is an editorial starter bank. No claim of three-month nonrepeating full-format coverage or native-language approval.
+- THEA external website action remains absent until a real HTTPS URL is supplied.
+
+## Historical baseline checks (19 October 2026)
+
 
 - TypeScript check passed.
 - Vitest: 33 tests passed across 6 files.
