@@ -4,7 +4,7 @@
 - Installed expo-updates ~57.0.26; configured fingerprint runtime matching and preview/production channels.
 - TypeScript, ESLint and 39 tests pass; Expo Doctor passes 21/21 checks.
 - iOS and Android Hermes exports succeed after OTA configuration. Resolved Expo config contains the existing update URL and fingerprint policy.
-- EAS CLI authentication check returns Not logged in. No native cloud build, installation or OTA delivery has been verified.
+- Initial EAS CLI authentication check returned Not logged in; subsequent device authorization succeeded as eliogenesis. project:info confirms @eliogenesis/tune-into-her and project ID dc8938e7-7163-413a-9003-479d0afc8a17. No native cloud build, installation or OTA delivery has been verified. Apple Developer membership/signing and device registration remain outstanding.
 
 ## CI repair
 - Failed run 41295193181: installation, content, lint, type-check and all tests passed; Expo Doctor failed on eight outdated SDK 57 packages.

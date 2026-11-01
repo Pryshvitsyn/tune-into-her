@@ -1,5 +1,6 @@
 # TASKS
 ## NOW
+- [x] Authenticate as eliogenesis and verify the existing EAS project identity/access.
 - [x] Prepare expo-updates, fingerprint runtime compatibility and separate preview/production channels.
 - [ ] Verify update delivery on an installed preview build.
 - [x] Diagnose failed CI and align Expo SDK 57 patch dependencies; verify clean installation and 21/21 health checks.
@@ -21,7 +22,7 @@
 - [ ] Prepare actual publisher/support/legal pages and store configuration.
 ## BLOCKED
 - [ ] Build and install iPhone preview, then test native flows.
-  Blocked by: EAS login (CLI reports Not logged in), Apple signing/device registration; test billing access needs configuration.
+  Blocked by: Apple Developer Program enrollment, Apple signing/device registration; test billing access needs configuration.
 - [ ] Activate Explore THEA.
   Blocked by: confirmed website URL.
 - [ ] Submit signed store builds.

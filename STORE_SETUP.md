@@ -55,7 +55,7 @@ These are external owner actions and are not completed by this repository.
 ## Preview updates (1 November 2026)
 - `expo-updates` is configured for the existing EAS project; verify account access before building.
 - `preview` builds receive only the `preview` channel; `production` uses `production`. Fingerprint runtime policy prevents delivery to incompatible native runtimes.
-- First install requires a signed native build containing expo-updates. No cloud build or OTA update has been published from this session: EAS CLI reports Not logged in.
+- First install requires a signed native build containing expo-updates. No cloud build or OTA update has been published. EAS device login subsequently succeeded as eliogenesis; project:info confirms the existing Tune Into Her project. Apple signing and device registration remain required.
 - After EAS authentication and Apple device/signing setup: `npx eas-cli build --platform ios --profile preview`. This standalone build does not require a running Metro server.
 - After checks, publish compatible changes with `npx eas-cli update --channel preview --environment preview --message "Describe the change"`. A Git push alone does not publish an OTA update.
 - Default startup checks download compatible updates; the downloaded update normally takes effect on a subsequent cold launch. No promise of an instant visible change while the app is open.
