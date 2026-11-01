@@ -51,3 +51,12 @@ These are external owner actions and are not completed by this repository.
 - Build an Android development client with `eas build --profile development --platform android` and distribute through the authorized testing path.
 - Create preview builds for stakeholder QA, then production builds. Do not submit until product assets, legal copy, owner identity, privacy URL, store screenshots, review notes, and subscription review screenshots are complete.
 
+
+## Preview updates (1 November 2026)
+- `expo-updates` is configured for the existing EAS project; verify account access before building.
+- `preview` builds receive only the `preview` channel; `production` uses `production`. Fingerprint runtime policy prevents delivery to incompatible native runtimes.
+- First install requires a signed native build containing expo-updates. No cloud build or OTA update has been published from this session: EAS CLI reports Not logged in.
+- After EAS authentication and Apple device/signing setup: `npx eas-cli build --platform ios --profile preview`. This standalone build does not require a running Metro server.
+- After checks, publish compatible changes with `npx eas-cli update --channel preview --environment preview --message "Describe the change"`. A Git push alone does not publish an OTA update.
+- Default startup checks download compatible updates; the downloaded update normally takes effect on a subsequent cold launch. No promise of an instant visible change while the app is open.
+- Native dependency/configuration changes require a new compatible signed build and installation. Verify actual notification, billing and OTA behavior on the device. Missing RevenueCat keys currently prevent real entitlement access.

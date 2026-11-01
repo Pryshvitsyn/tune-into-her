@@ -1,5 +1,7 @@
 # TASKS
 ## NOW
+- [x] Prepare expo-updates, fingerprint runtime compatibility and separate preview/production channels.
+- [ ] Verify update delivery on an installed preview build.
 - [x] Diagnose failed CI and align Expo SDK 57 patch dependencies; verify clean installation and 21/21 health checks.
 - [x] Publish CI fix to PR #3 and verify GitHub Actions run 41296523081 (all steps pass).
 - [x] Publish prepared documentation branch and open PR #2 (2026-11-01).
@@ -18,6 +20,8 @@
 - [ ] Native-language editorial review including Baba Malay community review.
 - [ ] Prepare actual publisher/support/legal pages and store configuration.
 ## BLOCKED
+- [ ] Build and install iPhone preview, then test native flows.
+  Blocked by: EAS login (CLI reports Not logged in), Apple signing/device registration; test billing access needs configuration.
 - [ ] Activate Explore THEA.
   Blocked by: confirmed website URL.
 - [ ] Submit signed store builds.

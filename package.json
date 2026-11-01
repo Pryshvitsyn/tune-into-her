@@ -30,6 +30,7 @@
     "expo-router": "~57.0.29",
     "expo-secure-store": "~57.0.4",
     "expo-status-bar": "latest",
+    "expo-updates": "~57.0.26",
     "i18next": "latest",
     "react": "19.2.3",
     "react-i18next": "latest",

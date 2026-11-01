@@ -1,5 +1,11 @@
 # Validation — 1 November 2026
 
+## OTA preparation
+- Installed expo-updates ~57.0.26; configured fingerprint runtime matching and preview/production channels.
+- TypeScript, ESLint and 39 tests pass; Expo Doctor passes 21/21 checks.
+- iOS and Android Hermes exports succeed after OTA configuration. Resolved Expo config contains the existing update URL and fingerprint policy.
+- EAS CLI authentication check returns Not logged in. No native cloud build, installation or OTA delivery has been verified.
+
 ## CI repair
 - Failed run 41295193181: installation, content, lint, type-check and all tests passed; Expo Doctor failed on eight outdated SDK 57 packages.
 - Applied SDK-compatible patch updates via expo install --fix and regenerated package-lock.json.
