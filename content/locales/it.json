@@ -1,1602 +1,2422 @@
 {
   "menstrual_001": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "menstrual_002": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "menstrual_003": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "menstrual_004": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "menstrual_005": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "menstrual_006": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "menstrual_007": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "menstrual_008": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "menstrual_009": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "menstrual_010": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "menstrual_011": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "menstrual_012": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "menstrual_013": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "menstrual_014": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "menstrual_015": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "menstrual_016": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "menstrual_017": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "menstrual_018": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "menstrual_019": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "menstrual_020": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Chiedi cosa sarebbe utile invece di presumere."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "menstrual_021": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "menstrual_022": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "menstrual_023": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "menstrual_024": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "menstrual_025": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Se desidera prodotti mestruali, chiedi quello abituale e compra proprio quello.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "menstrual_026": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Offriti di svuotare con discrezione il cestino del bagno; rispetta la sua privacy.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "menstrual_027": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Se riferisce disagio, offri ciò che di solito la fa stare comoda; altrimenti svolgi una faccenda.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "menstrual_028": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Chiedi se una cena più semplice aiuterebbe durante le mestruazioni; segui il suo appetito.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "menstrual_029": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "menstrual_030": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "menstrual_031": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "menstrual_032": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "menstrual_033": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "menstrual_034": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "menstrual_035": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "menstrual_036": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "menstrual_037": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "menstrual_038": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "menstrual_039": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "menstrual_040": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Lascia un po’ di spazio per cambiare i programmi, se serve."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "menstrual_041": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "menstrual_042": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "menstrual_043": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "menstrual_044": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "menstrual_045": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "menstrual_046": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "menstrual_047": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "menstrual_048": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "menstrual_049": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "menstrual_050": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "menstrual_051": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "menstrual_052": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "menstrual_053": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Se desidera prodotti mestruali, chiedi quello abituale e compra proprio quello.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "menstrual_054": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Offriti di svuotare con discrezione il cestino del bagno; rispetta la sua privacy.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "menstrual_055": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Se riferisce disagio, offri ciò che di solito la fa stare comoda; altrimenti svolgi una faccenda.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "menstrual_056": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Chiedi se una cena più semplice aiuterebbe durante le mestruazioni; segui il suo appetito.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "menstrual_057": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "menstrual_058": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "menstrual_059": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "menstrual_060": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Oggi può bastare un semplice confronto."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "menstrual_061": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "menstrual_062": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "menstrual_063": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "menstrual_064": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "menstrual_065": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "menstrual_066": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "menstrual_067": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "menstrual_068": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "menstrual_069": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "menstrual_070": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "menstrual_071": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "menstrual_072": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
+  },
+  "menstrual_073": {
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
+  },
+  "menstrual_074": {
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
+  },
+  "menstrual_075": {
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
+  },
+  "menstrual_076": {
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
+  },
+  "menstrual_077": {
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
+  },
+  "menstrual_078": {
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
+  },
+  "menstrual_079": {
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
+  },
+  "menstrual_080": {
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
+  },
+  "menstrual_081": {
+    "cue": "Se desidera prodotti mestruali, chiedi quello abituale e compra proprio quello.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
+  },
+  "menstrual_082": {
+    "cue": "Offriti di svuotare con discrezione il cestino del bagno; rispetta la sua privacy.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
+  },
+  "menstrual_083": {
+    "cue": "Se riferisce disagio, offri ciò che di solito la fa stare comoda; altrimenti svolgi una faccenda.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
+  },
+  "menstrual_084": {
+    "cue": "Chiedi se una cena più semplice aiuterebbe durante le mestruazioni; segui il suo appetito.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
+  },
+  "menstrual_085": {
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
+  },
+  "menstrual_086": {
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
+  },
+  "menstrual_087": {
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
+  },
+  "menstrual_088": {
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
+  },
+  "menstrual_089": {
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
+  },
+  "menstrual_090": {
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Una promessa è più credibile con un tempo realistico."
+  },
+  "menstrual_091": {
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
+  },
+  "menstrual_092": {
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
+  },
+  "menstrual_093": {
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
+  },
+  "menstrual_094": {
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
+  },
+  "menstrual_095": {
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
+  },
+  "menstrual_096": {
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
+  },
+  "menstrual_097": {
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
+  },
+  "menstrual_098": {
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
+  },
+  "menstrual_099": {
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
+  },
+  "menstrual_100": {
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "follicular_001": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "follicular_002": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "follicular_003": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "follicular_004": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "follicular_005": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "follicular_006": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "follicular_007": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "follicular_008": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Fai inviti facili da accettare o rifiutare."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "follicular_009": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "follicular_010": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "follicular_011": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "follicular_012": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "follicular_013": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "follicular_014": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "follicular_015": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "follicular_016": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "follicular_017": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "follicular_018": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "follicular_019": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "follicular_020": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "follicular_021": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "follicular_022": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "follicular_023": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "follicular_024": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "follicular_025": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Offri un piccolo aiuto per un progetto scelto da lei, senza presumere più energia.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "follicular_026": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Proponi un'attività che le piace e lascia decidere il ritmo a lei.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "follicular_027": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Chiedi se vuole organizzare un'uscita; restare a casa va altrettanto bene.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "follicular_028": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Lascia spazio sia alla compagnia sia alla tranquillità."
+    "cue": "Lascia spazio al suo hobby svolgendo la tua faccenda domestica.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "follicular_029": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "follicular_030": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "follicular_031": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "follicular_032": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "follicular_033": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "follicular_034": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "follicular_035": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "follicular_036": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "follicular_037": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "follicular_038": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "follicular_039": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "follicular_040": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "follicular_041": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "follicular_042": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "follicular_043": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "follicular_044": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "follicular_045": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "follicular_046": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "follicular_047": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "follicular_048": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Offri un aiuto pratico senza farne un grande evento."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "follicular_049": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "follicular_050": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "follicular_051": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "follicular_052": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "follicular_053": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Offri un piccolo aiuto per un progetto scelto da lei, senza presumere più energia.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "follicular_054": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Proponi un'attività che le piace e lascia decidere il ritmo a lei.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "follicular_055": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Chiedi se vuole organizzare un'uscita; restare a casa va altrettanto bene.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "follicular_056": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Lascia spazio al suo hobby svolgendo la tua faccenda domestica.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "follicular_057": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "follicular_058": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "follicular_059": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "follicular_060": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "follicular_061": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "follicular_062": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "follicular_063": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "follicular_064": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "follicular_065": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "follicular_066": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "follicular_067": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "follicular_068": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Lascia che siano le sue parole a guidare la giornata."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "follicular_069": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "follicular_070": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "follicular_071": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "follicular_072": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "follicular_073": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "follicular_074": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "follicular_075": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "follicular_076": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "follicular_077": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "follicular_078": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "follicular_079": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "follicular_080": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "follicular_081": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Offri un piccolo aiuto per un progetto scelto da lei, senza presumere più energia.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "follicular_082": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Proponi un'attività che le piace e lascia decidere il ritmo a lei.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "follicular_083": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Chiedi se vuole organizzare un'uscita; restare a casa va altrettanto bene.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "follicular_084": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Lascia spazio al suo hobby svolgendo la tua faccenda domestica.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "follicular_085": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "follicular_086": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "follicular_087": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "follicular_088": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Riduci la pressione non necessaria dove puoi."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "follicular_089": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "follicular_090": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "follicular_091": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "follicular_092": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "follicular_093": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "follicular_094": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "follicular_095": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "follicular_096": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "follicular_097": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "follicular_098": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "follicular_099": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "follicular_100": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "follicular_101": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "follicular_102": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "follicular_103": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "follicular_104": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "mid_cycle_001": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "mid_cycle_002": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "mid_cycle_003": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "mid_cycle_004": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Scegli la curiosità invece dell’interpretazione."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "mid_cycle_005": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "mid_cycle_006": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "mid_cycle_007": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "mid_cycle_008": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "mid_cycle_009": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "mid_cycle_010": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "mid_cycle_011": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "mid_cycle_012": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "mid_cycle_013": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "mid_cycle_014": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "mid_cycle_015": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "mid_cycle_016": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "mid_cycle_017": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "mid_cycle_018": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "mid_cycle_019": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "mid_cycle_020": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "mid_cycle_021": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "mid_cycle_022": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "mid_cycle_023": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "mid_cycle_024": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Una serata flessibile può essere un’opzione premurosa."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "mid_cycle_025": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Proponi tempo insieme senza considerare la fase stimata come consenso.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "mid_cycle_026": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Chiedi quale vicinanza desidera; una serata tranquilla è una risposta completa.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "mid_cycle_027": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Aiuta a organizzare un appuntamento che volete entrambi, con programmi flessibili.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "mid_cycle_028": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Rispetta il tempo personale concordato senza presumere che voglia compagnia.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "mid_cycle_029": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "mid_cycle_030": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "mid_cycle_031": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "mid_cycle_032": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "mid_cycle_033": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "mid_cycle_034": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "mid_cycle_035": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "mid_cycle_036": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "mid_cycle_037": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "mid_cycle_038": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "mid_cycle_039": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "mid_cycle_040": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "mid_cycle_041": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "mid_cycle_042": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "mid_cycle_043": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "mid_cycle_044": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Ascolta prima, se decide di condividere."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
+  },
+  "mid_cycle_045": {
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
+  },
+  "mid_cycle_046": {
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
+  },
+  "mid_cycle_047": {
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
+  },
+  "mid_cycle_048": {
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non usare l'app per vincere una discussione."
+  },
+  "mid_cycle_049": {
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
+  },
+  "mid_cycle_050": {
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
+  },
+  "mid_cycle_051": {
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
+  },
+  "mid_cycle_052": {
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
+  },
+  "mid_cycle_053": {
+    "cue": "Proponi tempo insieme senza considerare la fase stimata come consenso.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
+  },
+  "mid_cycle_054": {
+    "cue": "Chiedi quale vicinanza desidera; una serata tranquilla è una risposta completa.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Una promessa è più credibile con un tempo realistico."
+  },
+  "mid_cycle_055": {
+    "cue": "Aiuta a organizzare un appuntamento che volete entrambi, con programmi flessibili.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
+  },
+  "mid_cycle_056": {
+    "cue": "Rispetta il tempo personale concordato senza presumere che voglia compagnia.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
+  },
+  "mid_cycle_057": {
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
+  },
+  "mid_cycle_058": {
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
+  },
+  "mid_cycle_059": {
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
+  },
+  "mid_cycle_060": {
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
+  },
+  "mid_cycle_061": {
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
+  },
+  "mid_cycle_062": {
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
+  },
+  "mid_cycle_063": {
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
+  },
+  "mid_cycle_064": {
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
+  },
+  "mid_cycle_065": {
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
+  },
+  "mid_cycle_066": {
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
+  },
+  "mid_cycle_067": {
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non usare l'app per vincere una discussione."
+  },
+  "mid_cycle_068": {
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
+  },
+  "mid_cycle_069": {
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
+  },
+  "mid_cycle_070": {
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
+  },
+  "mid_cycle_071": {
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
+  },
+  "mid_cycle_072": {
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
+  },
+  "mid_cycle_073": {
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Una promessa è più credibile con un tempo realistico."
+  },
+  "mid_cycle_074": {
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
+  },
+  "mid_cycle_075": {
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
+  },
+  "mid_cycle_076": {
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
+  },
+  "mid_cycle_077": {
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
+  },
+  "mid_cycle_078": {
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
+  },
+  "mid_cycle_079": {
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
+  },
+  "mid_cycle_080": {
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
+  },
+  "mid_cycle_081": {
+    "cue": "Proponi tempo insieme senza considerare la fase stimata come consenso.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
+  },
+  "mid_cycle_082": {
+    "cue": "Chiedi quale vicinanza desidera; una serata tranquilla è una risposta completa.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
+  },
+  "mid_cycle_083": {
+    "cue": "Aiuta a organizzare un appuntamento che volete entrambi, con programmi flessibili.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
+  },
+  "mid_cycle_084": {
+    "cue": "Rispetta il tempo personale concordato senza presumere che voglia compagnia.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
+  },
+  "mid_cycle_085": {
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
+  },
+  "mid_cycle_086": {
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Non usare l'app per vincere una discussione."
+  },
+  "mid_cycle_087": {
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
+  },
+  "mid_cycle_088": {
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
+  },
+  "mid_cycle_089": {
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
+  },
+  "mid_cycle_090": {
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
+  },
+  "mid_cycle_091": {
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
+  },
+  "mid_cycle_092": {
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Una promessa è più credibile con un tempo realistico."
+  },
+  "mid_cycle_093": {
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
+  },
+  "mid_cycle_094": {
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
+  },
+  "mid_cycle_095": {
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
+  },
+  "mid_cycle_096": {
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
+  },
+  "mid_cycle_097": {
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
+  },
+  "mid_cycle_098": {
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
+  },
+  "mid_cycle_099": {
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
+  },
+  "mid_cycle_100": {
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_001": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_002": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_003": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_004": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_005": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_006": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_007": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_008": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_009": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_010": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_011": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_012": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_013": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_014": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_015": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_016": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_017": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_018": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "luteal_019": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_020": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Usa la stima come promemoria per prestare attenzione."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_021": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_022": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_023": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_024": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_025": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_026": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_027": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_028": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_029": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_030": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_031": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_032": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_033": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_034": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_035": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_036": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_037": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "luteal_038": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_039": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_040": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Rendi un’attività quotidiana un po’ più semplice, se è gradito."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_041": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_042": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_043": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_044": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_045": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_046": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_047": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_048": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_049": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_050": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_051": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_052": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_053": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_054": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_055": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_056": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_057": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_058": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_059": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_060": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Verifica che il programma vada ancora bene a entrambi."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_061": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_062": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_063": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_064": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_065": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_066": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_067": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_068": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_069": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_070": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_071": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_072": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_073": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_074": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_075": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_076": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_077": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_078": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_079": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_080": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Lascia che oggi le preferenze possano essere diverse."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "luteal_081": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_082": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_083": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_084": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_085": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_086": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_087": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_088": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_089": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_090": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_091": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_092": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_093": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_094": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_095": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_096": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_097": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_098": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_099": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "luteal_100": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Offri supporto senza decidere tu che forma debba avere."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_101": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_102": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_103": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_104": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_105": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_106": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_107": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_108": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_109": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_110": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_111": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_112": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_113": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_114": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_115": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_116": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_117": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_118": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "luteal_119": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_120": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Mantieni la giornata collaborativa e senza pressioni."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_121": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_122": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_123": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_124": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_125": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_126": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_127": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_128": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_129": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_130": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_131": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_132": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_133": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_134": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_135": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_136": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_137": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_138": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_139": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_140": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Nota ciò che dice, non ciò che suggerisce l’app."
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_141": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_142": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_143": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_144": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_145": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
   },
   "luteal_146": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
   },
   "luteal_147": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
   },
   "luteal_148": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
   },
   "luteal_149": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
   },
   "luteal_150": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_151": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_152": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_153": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_154": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_155": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_156": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_157": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_158": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_159": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_160": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Una domanda gentile è più utile di una previsione."
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_161": {
-    "context": "Comfort ed energia possono variare in questo momento.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   },
   "luteal_162": {
-    "context": "Il ritmo più confortevole oggi potrebbe essere diverso.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
   },
   "luteal_163": {
-    "context": "Alcune persone notano lievi cambiamenti di energia in questo periodo.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
   },
   "luteal_164": {
-    "context": "Riposo, concentrazione o socialità possono sembrare un po’ diversi.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
   },
   "luteal_165": {
-    "context": "Questa parte del ciclo può cambiare di mese in mese.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
   },
   "luteal_166": {
-    "context": "La preferenza per compagnia o tranquillità può cambiare in questo periodo.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
   },
   "luteal_167": {
-    "context": "Oggi i programmi possono risultare più facili con un po’ di respiro.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una promessa è più credibile con un tempo realistico."
   },
   "luteal_168": {
-    "context": "Il comfort fisico può essere meno prevedibile in questo momento.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
   },
   "luteal_169": {
-    "context": "Oggi l’energia può seguire un ritmo diverso.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Offriti di cucinare la cena; prima chiedi cosa le piacerebbe.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
   },
   "luteal_170": {
-    "context": "In questo periodo sono possibili piccoli cambiamenti di comfort o concentrazione.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Lava e riponi i piatti senza lasciare a lei l'ultimo passaggio.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
   },
   "luteal_171": {
-    "context": "Ciò che è di supporto può variare in questo punto del ciclo.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Completa la tua parte del bucato, piegando e riponendo i vestiti.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
   },
   "luteal_172": {
-    "context": "Alcune persone apprezzano un ritmo più dolce in questo periodo.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Compra gli alimenti concordati; chiedi prima di sostituirli.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
   },
   "luteal_173": {
-    "context": "Oggi bisogni e preferenze possono essere particolarmente individuali.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Prepara la colazione, se le va, e riordina dopo.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
   },
   "luteal_174": {
-    "context": "Oggi può essere utile mantenere leggere le aspettative.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Prepara le tue cose per domani per ridurre la fretta del mattino.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
   },
   "luteal_175": {
-    "context": "Ogni ciclo è diverso, anche nei giorni intorno a questo momento.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Porta fuori la spazzatura e sostituisci il sacchetto.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
   },
   "luteal_176": {
-    "context": "In questo periodo un po’ di flessibilità in più può essere gradita.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Libera una superficie comune senza spostare le sue cose personali.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
   },
   "luteal_177": {
-    "context": "Energia e attenzione potrebbero non seguire il solito schema.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Offriti di occuparti di una commissione concordata.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
   },
   "luteal_178": {
-    "context": "Il comfort può cambiare senza dire nulla sull’umore.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Chiedi se portare le borse pesanti sarebbe utile; accetta la risposta.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
   },
   "luteal_179": {
-    "context": "Oggi potrebbe semplicemente servire un ritmo più aperto.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Offri acqua o una bevanda abituale e lascia scegliere a lei.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
   },
   "luteal_180": {
-    "context": "Questa stima offre un contesto, mentre l’esperienza è personale.",
-    "cue": "Resta aperto a una risposta che non ti aspettavi."
+    "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "Non usare l'app per vincere una discussione."
   }
 }

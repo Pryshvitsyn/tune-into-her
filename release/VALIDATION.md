@@ -1,4 +1,15 @@
-# Validation — 1 November 2026
+# Validation — 2 November 2026
+
+## Three-month content reserve
+- 484 distinct visible three-part bundles per locale across eleven locales; phase capacities 100/104/100/180. All former 400 IDs preserved; content version 3.
+- Editorial source: 88 sentences per locale. Combinations are distinct; individual sentences/principles recur. Scope and language-review limitations: [CONTENT](../docs/CONTENT.md).
+- Content validator passes, including direct source/output correspondence and visible-bundle uniqueness.
+- TypeScript and ESLint pass. Vitest: 43 tests across 9 files pass, including 90-day reserve simulations and existing regression checks.
+- Both native Hermes exports pass (iOS 1419 modules; Android 1565 modules) with EXPO_OFFLINE=1. Initial online export hit an HTTP proxy timeout; offline bundling succeeded.
+- No native-device, visual, store-purchase or native-speaker QA performed. Language/community readiness flags remain false. No signed build, OTA update or store submission.
+
+## Historical validation — 1 November 2026
+
 
 ## OTA preparation
 - Installed expo-updates ~57.0.26; configured fingerprint runtime matching and preview/production channels.

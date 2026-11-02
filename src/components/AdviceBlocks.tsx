@@ -3,14 +3,15 @@ import { Text, View } from "react-native";
 
 import { useApp } from "../context/AppContext";
 import { dailyReminders } from "../domain/content/dailyGuidance";
+import type { LocalizedCue } from "../domain/content/types";
 import type { DateOnly } from "../domain/cycle/dateOnly";
 import { useInterface } from "../i18n/useInterface";
 import { useTheme } from "../theme/useTheme";
 export function AdviceBlocks({
-  physical,
+  advice,
   date,
 }: {
-  physical: string;
+  advice: LocalizedCue;
   date: DateOnly;
 }) {
   const c = useInterface();
@@ -19,9 +20,9 @@ export function AdviceBlocks({
   const [heights, setHeights] = useState<Record<string, number>>({});
   const minHeight = Math.max(140, ...Object.values(heights).map(height => height + 40));
   const blocks = [
-    { title: c.do, body: physical },
-    { title: c.support, body: c.supportBody },
-    { title: c.mind, body: c.mindBody },
+    { title: c.do, body: advice.cue },
+    { title: c.support, body: advice.support },
+    { title: c.mind, body: advice.context },
   ];
   const reminders = dailyReminders(date, preferences.language);
   return (

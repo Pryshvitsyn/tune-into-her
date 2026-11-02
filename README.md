@@ -2,7 +2,7 @@
 ## What it is
 Local-first iOS/Android app for practical daily partner support informed by estimated cycle timing. Not medical or mood prediction.
 ## Current status
-Development. Native dual-theme interface, THEA branding, calendar, appearance and three-part advice layout implemented. Full-format content expansion and device QA remain. Not store-ready.
+Development. Native dual-theme interface, THEA branding, calendar, appearance and three-part advice layout implemented. A 90-day three-part reserve is implemented across eleven locales; native-language review and device QA remain. Not store-ready.
 ## Stack
 Expo SDK 57, React Native, TypeScript, Expo Router, Vitest, i18next, SecureStore, AsyncStorage, local notifications, RevenueCat.
 ## Run
@@ -15,6 +15,6 @@ Existing profiles: [eas.json](eas.json). See [STORE_SETUP.md](STORE_SETUP.md) an
 ## Structure
 app/ routes; src/ implementation; content/ catalog; tests/; release/ evidence.
 ## Project brain
-[GOAL](GOAL.md) · [SNAPSHOT](PRODUCT_SNAPSHOT.md) · [TASKS](TASKS.md) · [DECISIONS](DECISIONS.md) · [ARCHITECTURE](ARCHITECTURE.md) · [PRODUCT](docs/PRODUCT.md) · [UX](docs/UX.md).
+[GOAL](GOAL.md) · [SNAPSHOT](PRODUCT_SNAPSHOT.md) · [TASKS](TASKS.md) · [DECISIONS](DECISIONS.md) · [ARCHITECTURE](ARCHITECTURE.md) · [PRODUCT](docs/PRODUCT.md) · [UX](docs/UX.md) · [Content reserve](docs/CONTENT.md).
 ## Agent rules
 Read [AGENTS.md](AGENTS.md). Historical validation is not current proof.

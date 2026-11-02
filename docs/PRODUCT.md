@@ -12,4 +12,4 @@ About THEA briefly describes mission and products; TRUTHBACK marked in developme
 ## Commercial intent
 Previously proposed $1/month and 30-day trial; actual price/trial eligibility must come from store configuration. Do not hardcode unverified offers.
 ## Historical sources
-August Library snapshot and Secret_Bronze_Brand_Requirements.txt are superseded where conflicting with latest Founder decisions. 400-cue baseline does not prove new three-part reserve exists.
+August Library snapshot and Secret_Bronze_Brand_Requirements.txt are superseded where conflicting with latest Founder decisions. The old 400-cue baseline is superseded by the three-part reserve documented in [CONTENT](CONTENT.md).

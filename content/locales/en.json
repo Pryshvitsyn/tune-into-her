@@ -1,1602 +1,2422 @@
 {
   "menstrual_001": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "menstrual_002": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "menstrual_003": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Do not use this app to win an argument."
   },
   "menstrual_004": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "menstrual_005": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "menstrual_006": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "menstrual_007": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "menstrual_008": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "menstrual_009": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "menstrual_010": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "An apology names your action and the repair you will make."
   },
   "menstrual_011": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "menstrual_012": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "menstrual_013": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "menstrual_014": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not share her personal experience as a joke."
   },
   "menstrual_015": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "menstrual_016": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "menstrual_017": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "menstrual_018": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "menstrual_019": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "menstrual_020": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Ask what would feel helpful instead of assuming."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "menstrual_021": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "menstrual_022": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "menstrual_023": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "menstrual_024": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "You can offer support without taking over her decisions."
   },
   "menstrual_025": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "If she wants period supplies, check her preferred product and bring exactly that.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "menstrual_026": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Offer to empty the bathroom bin discreetly; keep her belongings private.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "menstrual_027": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "If she reports discomfort, offer her usual comfort item; otherwise take an ordinary chore.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Do not use this app to win an argument."
   },
   "menstrual_028": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Ask whether an easier meal would help during her period; follow her actual appetite.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "menstrual_029": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "An apology names your action and the repair you will make."
   },
   "menstrual_030": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "menstrual_031": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "menstrual_032": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "menstrual_033": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not share her personal experience as a joke."
   },
   "menstrual_034": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "menstrual_035": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "menstrual_036": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "menstrual_037": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "menstrual_038": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "menstrual_039": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "menstrual_040": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Leave a little room for plans to change if useful."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "menstrual_041": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "menstrual_042": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "menstrual_043": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "You can offer support without taking over her decisions."
   },
   "menstrual_044": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "menstrual_045": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "menstrual_046": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Do not use this app to win an argument."
   },
   "menstrual_047": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "menstrual_048": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "menstrual_049": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "menstrual_050": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "menstrual_051": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "menstrual_052": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "menstrual_053": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "If she wants period supplies, check her preferred product and bring exactly that.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "An apology names your action and the repair you will make."
   },
   "menstrual_054": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Offer to empty the bathroom bin discreetly; keep her belongings private.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "menstrual_055": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "If she reports discomfort, offer her usual comfort item; otherwise take an ordinary chore.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "menstrual_056": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Ask whether an easier meal would help during her period; follow her actual appetite.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "menstrual_057": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "menstrual_058": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "menstrual_059": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "menstrual_060": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "A simple check-in can be enough today."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "menstrual_061": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "menstrual_062": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "You can offer support without taking over her decisions."
   },
   "menstrual_063": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "menstrual_064": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "menstrual_065": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Do not use this app to win an argument."
   },
   "menstrual_066": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "menstrual_067": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "menstrual_068": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "menstrual_069": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "menstrual_070": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "menstrual_071": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "menstrual_072": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "An apology names your action and the repair you will make."
+  },
+  "menstrual_073": {
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
+  },
+  "menstrual_074": {
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Different preferences do not mean that either person is wrong."
+  },
+  "menstrual_075": {
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "You can listen carefully without agreeing on every detail."
+  },
+  "menstrual_076": {
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not share her personal experience as a joke."
+  },
+  "menstrual_077": {
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "An offer is useful only when “no” is a real option."
+  },
+  "menstrual_078": {
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Finish the task rather than leaving the organising to her."
+  },
+  "menstrual_079": {
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "A good day does not create an obligation to be social or intimate."
+  },
+  "menstrual_080": {
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Small reliable actions matter more than a grand promise."
+  },
+  "menstrual_081": {
+    "cue": "If she wants period supplies, check her preferred product and bring exactly that.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not infer a mood from the estimated cycle phase."
+  },
+  "menstrual_082": {
+    "cue": "Offer to empty the bathroom bin discreetly; keep her belongings private.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Pause a tense discussion and agree when to return to it."
+  },
+  "menstrual_083": {
+    "cue": "If she reports discomfort, offer her usual comfort item; otherwise take an ordinary chore.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Notice what worked and ask before repeating it another day."
+  },
+  "menstrual_084": {
+    "cue": "Ask whether an easier meal would help during her period; follow her actual appetite.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Do not turn practical help into a request for praise or affection."
+  },
+  "menstrual_085": {
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Keep your own responsibilities visible and manageable."
+  },
+  "menstrual_086": {
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "Ask before touching or moving personal belongings."
+  },
+  "menstrual_087": {
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Silence can be comfortable; check before trying to fill it."
+  },
+  "menstrual_088": {
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Respect a boundary even when you do not understand its reason."
+  },
+  "menstrual_089": {
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "A changed plan does not require an explanation about hormones."
+  },
+  "menstrual_090": {
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A promise is easier to trust when you give a realistic time."
+  },
+  "menstrual_091": {
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "An apology names your action and the repair you will make."
+  },
+  "menstrual_092": {
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
+  },
+  "menstrual_093": {
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Different preferences do not mean that either person is wrong."
+  },
+  "menstrual_094": {
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "You can listen carefully without agreeing on every detail."
+  },
+  "menstrual_095": {
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not share her personal experience as a joke."
+  },
+  "menstrual_096": {
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "An offer is useful only when “no” is a real option."
+  },
+  "menstrual_097": {
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Finish the task rather than leaving the organising to her."
+  },
+  "menstrual_098": {
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "A good day does not create an obligation to be social or intimate."
+  },
+  "menstrual_099": {
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Small reliable actions matter more than a grand promise."
+  },
+  "menstrual_100": {
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "follicular_001": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "follicular_002": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "follicular_003": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not share her personal experience as a joke."
   },
   "follicular_004": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "follicular_005": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "follicular_006": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "follicular_007": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "follicular_008": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Keep invitations easy to accept or decline."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "follicular_009": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "follicular_010": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "follicular_011": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "follicular_012": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "follicular_013": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "You can offer support without taking over her decisions."
   },
   "follicular_014": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "follicular_015": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "follicular_016": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Do not use this app to win an argument."
   },
   "follicular_017": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "follicular_018": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "follicular_019": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "follicular_020": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "follicular_021": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "follicular_022": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "follicular_023": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "An apology names your action and the repair you will make."
   },
   "follicular_024": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "follicular_025": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Offer one small step in a project she has chosen; do not assume extra energy.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "follicular_026": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Suggest an activity she enjoys and leave the pace to her.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "follicular_027": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Ask whether she wants to plan an outing; staying home is equally valid.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not share her personal experience as a joke."
   },
   "follicular_028": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Make space for either company or quiet."
+    "cue": "Make space for her chosen hobby by completing your own household task.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "follicular_029": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "follicular_030": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "follicular_031": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "follicular_032": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "You can offer support without taking over her decisions."
   },
   "follicular_033": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "follicular_034": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "follicular_035": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Do not use this app to win an argument."
   },
   "follicular_036": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "follicular_037": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "follicular_038": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "follicular_039": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "follicular_040": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "follicular_041": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "follicular_042": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "An apology names your action and the repair you will make."
   },
   "follicular_043": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "follicular_044": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "follicular_045": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "follicular_046": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not share her personal experience as a joke."
   },
   "follicular_047": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "follicular_048": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Offer practical help without making it a big event."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "follicular_049": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Let their own words guide the day."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "follicular_050": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Let their own words guide the day."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "follicular_051": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Let their own words guide the day."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "follicular_052": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Let their own words guide the day."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "follicular_053": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Let their own words guide the day."
+    "cue": "Offer one small step in a project she has chosen; do not assume extra energy.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "follicular_054": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Let their own words guide the day."
+    "cue": "Suggest an activity she enjoys and leave the pace to her.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "follicular_055": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Let their own words guide the day."
+    "cue": "Ask whether she wants to plan an outing; staying home is equally valid.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "follicular_056": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Let their own words guide the day."
+    "cue": "Make space for her chosen hobby by completing your own household task.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "You can offer support without taking over her decisions."
   },
   "follicular_057": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Let their own words guide the day."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "follicular_058": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Let their own words guide the day."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "follicular_059": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Let their own words guide the day."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "follicular_060": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Let their own words guide the day."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "follicular_061": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Let their own words guide the day."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "An apology names your action and the repair you will make."
   },
   "follicular_062": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Let their own words guide the day."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "follicular_063": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Let their own words guide the day."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "follicular_064": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Let their own words guide the day."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "follicular_065": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Let their own words guide the day."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not share her personal experience as a joke."
   },
   "follicular_066": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Let their own words guide the day."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "follicular_067": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Let their own words guide the day."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "follicular_068": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Let their own words guide the day."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "follicular_069": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "follicular_070": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "follicular_071": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "follicular_072": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "follicular_073": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "follicular_074": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "follicular_075": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "You can offer support without taking over her decisions."
   },
   "follicular_076": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "follicular_077": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "follicular_078": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Do not use this app to win an argument."
   },
   "follicular_079": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "follicular_080": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "follicular_081": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Offer one small step in a project she has chosen; do not assume extra energy.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "follicular_082": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Suggest an activity she enjoys and leave the pace to her.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "follicular_083": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Ask whether she wants to plan an outing; staying home is equally valid.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "follicular_084": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Make space for her chosen hobby by completing your own household task.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "follicular_085": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "follicular_086": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "follicular_087": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "follicular_088": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Keep unnecessary pressure low where you can."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "follicular_089": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "follicular_090": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "follicular_091": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "follicular_092": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "follicular_093": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "follicular_094": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "You can offer support without taking over her decisions."
   },
   "follicular_095": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "follicular_096": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "follicular_097": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Do not use this app to win an argument."
   },
   "follicular_098": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "follicular_099": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "follicular_100": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "follicular_101": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "follicular_102": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "follicular_103": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "follicular_104": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "An apology names your action and the repair you will make."
   },
   "mid_cycle_001": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "mid_cycle_002": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "You can offer support without taking over her decisions."
   },
   "mid_cycle_003": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "mid_cycle_004": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Choose curiosity over interpretation."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "mid_cycle_005": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not use this app to win an argument."
   },
   "mid_cycle_006": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "mid_cycle_007": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Ask before touching or moving personal belongings."
   },
   "mid_cycle_008": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "mid_cycle_009": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "mid_cycle_010": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "mid_cycle_011": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "mid_cycle_012": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "An apology names your action and the repair you will make."
   },
   "mid_cycle_013": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "mid_cycle_014": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "mid_cycle_015": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "mid_cycle_016": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Do not share her personal experience as a joke."
   },
   "mid_cycle_017": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "mid_cycle_018": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "mid_cycle_019": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "mid_cycle_020": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "mid_cycle_021": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "mid_cycle_022": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "mid_cycle_023": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "mid_cycle_024": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "A flexible evening may be a thoughtful option."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "mid_cycle_025": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Suggest time together without treating an estimated phase as consent.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "mid_cycle_026": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Ask what kind of closeness she wants; a quiet evening is a complete answer.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "You can offer support without taking over her decisions."
   },
   "mid_cycle_027": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Help organise a date you both want, with room to change the plan.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "mid_cycle_028": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Protect agreed personal time instead of assuming she wants company.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "mid_cycle_029": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "mid_cycle_030": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "mid_cycle_031": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "An apology names your action and the repair you will make."
   },
   "mid_cycle_032": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "mid_cycle_033": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "mid_cycle_034": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "mid_cycle_035": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Do not share her personal experience as a joke."
   },
   "mid_cycle_036": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "mid_cycle_037": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "mid_cycle_038": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "mid_cycle_039": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "mid_cycle_040": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "mid_cycle_041": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "mid_cycle_042": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "mid_cycle_043": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "mid_cycle_044": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Listen first if they choose to share."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
+  },
+  "mid_cycle_045": {
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "You can offer support without taking over her decisions."
+  },
+  "mid_cycle_046": {
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
+  },
+  "mid_cycle_047": {
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
+  },
+  "mid_cycle_048": {
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not use this app to win an argument."
+  },
+  "mid_cycle_049": {
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Keep your own responsibilities visible and manageable."
+  },
+  "mid_cycle_050": {
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Ask before touching or moving personal belongings."
+  },
+  "mid_cycle_051": {
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Silence can be comfortable; check before trying to fill it."
+  },
+  "mid_cycle_052": {
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Respect a boundary even when you do not understand its reason."
+  },
+  "mid_cycle_053": {
+    "cue": "Suggest time together without treating an estimated phase as consent.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "A changed plan does not require an explanation about hormones."
+  },
+  "mid_cycle_054": {
+    "cue": "Ask what kind of closeness she wants; a quiet evening is a complete answer.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "A promise is easier to trust when you give a realistic time."
+  },
+  "mid_cycle_055": {
+    "cue": "Help organise a date you both want, with room to change the plan.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "An apology names your action and the repair you will make."
+  },
+  "mid_cycle_056": {
+    "cue": "Protect agreed personal time instead of assuming she wants company.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
+  },
+  "mid_cycle_057": {
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A good day does not create an obligation to be social or intimate."
+  },
+  "mid_cycle_058": {
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Small reliable actions matter more than a grand promise."
+  },
+  "mid_cycle_059": {
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Do not infer a mood from the estimated cycle phase."
+  },
+  "mid_cycle_060": {
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Pause a tense discussion and agree when to return to it."
+  },
+  "mid_cycle_061": {
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Notice what worked and ask before repeating it another day."
+  },
+  "mid_cycle_062": {
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Do not turn practical help into a request for praise or affection."
+  },
+  "mid_cycle_063": {
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
+  },
+  "mid_cycle_064": {
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "You can offer support without taking over her decisions."
+  },
+  "mid_cycle_065": {
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
+  },
+  "mid_cycle_066": {
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
+  },
+  "mid_cycle_067": {
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not use this app to win an argument."
+  },
+  "mid_cycle_068": {
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Keep your own responsibilities visible and manageable."
+  },
+  "mid_cycle_069": {
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Ask before touching or moving personal belongings."
+  },
+  "mid_cycle_070": {
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Silence can be comfortable; check before trying to fill it."
+  },
+  "mid_cycle_071": {
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Respect a boundary even when you do not understand its reason."
+  },
+  "mid_cycle_072": {
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "A changed plan does not require an explanation about hormones."
+  },
+  "mid_cycle_073": {
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "A promise is easier to trust when you give a realistic time."
+  },
+  "mid_cycle_074": {
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "An apology names your action and the repair you will make."
+  },
+  "mid_cycle_075": {
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
+  },
+  "mid_cycle_076": {
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Different preferences do not mean that either person is wrong."
+  },
+  "mid_cycle_077": {
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "You can listen carefully without agreeing on every detail."
+  },
+  "mid_cycle_078": {
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Do not share her personal experience as a joke."
+  },
+  "mid_cycle_079": {
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "An offer is useful only when “no” is a real option."
+  },
+  "mid_cycle_080": {
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Finish the task rather than leaving the organising to her."
+  },
+  "mid_cycle_081": {
+    "cue": "Suggest time together without treating an estimated phase as consent.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A good day does not create an obligation to be social or intimate."
+  },
+  "mid_cycle_082": {
+    "cue": "Ask what kind of closeness she wants; a quiet evening is a complete answer.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Small reliable actions matter more than a grand promise."
+  },
+  "mid_cycle_083": {
+    "cue": "Help organise a date you both want, with room to change the plan.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Do not infer a mood from the estimated cycle phase."
+  },
+  "mid_cycle_084": {
+    "cue": "Protect agreed personal time instead of assuming she wants company.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "Pause a tense discussion and agree when to return to it."
+  },
+  "mid_cycle_085": {
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
+  },
+  "mid_cycle_086": {
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Do not use this app to win an argument."
+  },
+  "mid_cycle_087": {
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "Keep your own responsibilities visible and manageable."
+  },
+  "mid_cycle_088": {
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "Ask before touching or moving personal belongings."
+  },
+  "mid_cycle_089": {
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Silence can be comfortable; check before trying to fill it."
+  },
+  "mid_cycle_090": {
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Respect a boundary even when you do not understand its reason."
+  },
+  "mid_cycle_091": {
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "A changed plan does not require an explanation about hormones."
+  },
+  "mid_cycle_092": {
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "A promise is easier to trust when you give a realistic time."
+  },
+  "mid_cycle_093": {
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "An apology names your action and the repair you will make."
+  },
+  "mid_cycle_094": {
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
+  },
+  "mid_cycle_095": {
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Different preferences do not mean that either person is wrong."
+  },
+  "mid_cycle_096": {
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "You can listen carefully without agreeing on every detail."
+  },
+  "mid_cycle_097": {
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Do not share her personal experience as a joke."
+  },
+  "mid_cycle_098": {
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "An offer is useful only when “no” is a real option."
+  },
+  "mid_cycle_099": {
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Finish the task rather than leaving the organising to her."
+  },
+  "mid_cycle_100": {
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_001": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_002": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_003": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_004": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_005": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_006": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_007": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_008": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_009": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_010": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_011": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_012": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_013": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_014": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_015": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_016": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_017": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_018": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   },
   "luteal_019": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_020": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Treat the estimate as a reminder to pay attention."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_021": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_022": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_023": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_024": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_025": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_026": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_027": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_028": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_029": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_030": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_031": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_032": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_033": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_034": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_035": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_036": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_037": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   },
   "luteal_038": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_039": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_040": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Make one ordinary task a little easier if welcome."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_041": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_042": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_043": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_044": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_045": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_046": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_047": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_048": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_049": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_050": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_051": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_052": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_053": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_054": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_055": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_056": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_057": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_058": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_059": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_060": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Check the plan still works for both of you."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_061": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_062": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_063": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_064": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_065": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_066": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_067": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_068": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_069": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_070": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_071": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_072": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_073": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_074": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_075": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_076": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_077": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_078": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_079": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_080": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Give preferences room to be different today."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   },
   "luteal_081": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_082": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_083": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_084": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_085": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_086": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_087": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_088": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_089": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_090": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_091": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_092": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_093": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_094": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_095": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_096": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_097": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_098": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_099": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   },
   "luteal_100": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Offer, rather than decide, what support looks like."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_101": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_102": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_103": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_104": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_105": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_106": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_107": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_108": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_109": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_110": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_111": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_112": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_113": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_114": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_115": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_116": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_117": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_118": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   },
   "luteal_119": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_120": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Keep the day collaborative and low-pressure."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_121": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_122": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_123": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_124": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_125": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_126": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_127": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_128": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_129": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_130": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_131": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_132": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_133": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_134": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_135": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_136": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_137": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_138": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_139": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_140": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Notice what they say, not what the app suggests."
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_141": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_142": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_143": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_144": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_145": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
   },
   "luteal_146": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Different preferences do not mean that either person is wrong."
   },
   "luteal_147": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "You can listen carefully without agreeing on every detail."
   },
   "luteal_148": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "Do not share her personal experience as a joke."
   },
   "luteal_149": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "An offer is useful only when “no” is a real option."
   },
   "luteal_150": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_151": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_152": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_153": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_154": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_155": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_156": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_157": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_158": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_159": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_160": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "A kind question is more useful than a prediction."
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_161": {
-    "context": "Comfort and energy can vary around this point.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   },
   "luteal_162": {
-    "context": "The pace that feels comfortable may be different today.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Keep your own responsibilities visible and manageable."
   },
   "luteal_163": {
-    "context": "Some people notice subtle shifts in energy around now.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Ask before touching or moving personal belongings."
   },
   "luteal_164": {
-    "context": "Rest, focus, or sociability may feel a little different.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "Silence can be comfortable; check before trying to fill it."
   },
   "luteal_165": {
-    "context": "This part of a cycle can feel different from month to month.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Respect a boundary even when you do not understand its reason."
   },
   "luteal_166": {
-    "context": "Preferences for company or quiet may shift around this time.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A changed plan does not require an explanation about hormones."
   },
   "luteal_167": {
-    "context": "Plans may feel easier with a little breathing room today.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A promise is easier to trust when you give a realistic time."
   },
   "luteal_168": {
-    "context": "Physical comfort can be less predictable around this point.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "An apology names your action and the repair you will make."
   },
   "luteal_169": {
-    "context": "Energy may arrive in a different rhythm today.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Offer to cook dinner; check what she would enjoy before starting.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "Finish the task rather than leaving the organising to her."
   },
   "luteal_170": {
-    "context": "Small changes in comfort or focus are possible around now.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Wash the dishes and put them away without leaving the last step to her.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "A good day does not create an obligation to be social or intimate."
   },
   "luteal_171": {
-    "context": "What feels supportive can vary at this point in a cycle.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Complete your agreed share of laundry, including folding and putting it away.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "Small reliable actions matter more than a grand promise."
   },
   "luteal_172": {
-    "context": "Some people appreciate a gentler pace around this time.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Pick up the groceries you agreed on; ask before substituting items.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "Do not infer a mood from the estimated cycle phase."
   },
   "luteal_173": {
-    "context": "Needs and preferences can be especially individual today.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Prepare breakfast if welcome, and clean up afterwards.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "Pause a tense discussion and agree when to return to it."
   },
   "luteal_174": {
-    "context": "There may be value in keeping expectations light today.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Prepare your own things for tomorrow so the morning needs less coordination.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Notice what worked and ask before repeating it another day."
   },
   "luteal_175": {
-    "context": "Every cycle is different, including days around this point.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Take out the rubbish and replace the bag.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Do not turn practical help into a request for praise or affection."
   },
   "luteal_176": {
-    "context": "A little extra flexibility may feel welcome around now.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Clear one shared surface without moving her personal belongings.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
   },
   "luteal_177": {
-    "context": "Energy and attention may not follow their usual pattern.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Offer to take one agreed errand off her list.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "You can offer support without taking over her decisions."
   },
   "luteal_178": {
-    "context": "Comfort can change without saying anything about mood.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Ask whether carrying the heavy bags would help; accept her answer.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
   },
   "luteal_179": {
-    "context": "Today may simply call for a more open-ended pace.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Offer water or a familiar drink and let her choose.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
   },
   "luteal_180": {
-    "context": "This estimate is context, while their experience is personal.",
-    "cue": "Stay open to an answer you did not expect."
+    "cue": "Handle the details of an agreed journey, including the way home.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Do not use this app to win an argument."
   }
 }

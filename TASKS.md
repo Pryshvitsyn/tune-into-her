@@ -10,7 +10,7 @@
 - [x] Create shared vector THEA/app emblems.
 - [ ] Visually verify emblem geometry and small-size rendering on devices.
 - [x] Implement centered DO/SUPPORT/KEEP IN MIND and daily gratitude rotation.
-- [ ] Expand new support/context bank and prove 90-day full-format coverage.
+- [x] Expand all three daily sections across 11 locales; verify 90-day visible-bundle coverage and constituent rotation. See docs/CONTENT.md.
 ## NEXT
 - [x] Apply visual system to existing routes; implement Appearance and About THEA.
 - [ ] Verify cycle editing, onboarding, language/theme persistence, deletion and notification denial.

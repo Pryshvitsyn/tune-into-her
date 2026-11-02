@@ -1,1602 +1,2422 @@
 {
   "menstrual_001": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "menstrual_002": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "menstrual_003": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "menstrual_004": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "menstrual_005": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "menstrual_006": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "menstrual_007": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "menstrual_008": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "menstrual_009": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "menstrual_010": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "menstrual_011": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "menstrual_012": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "menstrual_013": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "menstrual_014": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "menstrual_015": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "menstrual_016": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "menstrual_017": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "menstrual_018": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "menstrual_019": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "menstrual_020": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Tanya apa yang membantu, jangan andaikan."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "menstrual_021": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "menstrual_022": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "menstrual_023": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "menstrual_024": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "menstrual_025": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Jika dia mahu produk haid, semak produk pilihannya dan belikan yang tepat.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "menstrual_026": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tawarkan membuang sampah bilik mandi dengan berhati-hati; jaga privasinya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "menstrual_027": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Jika dia menyatakan rasa tidak selesa, tawarkan barang keselesaan biasanya; jika tidak, buat kerja biasa.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "menstrual_028": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tanya sama ada hidangan ringkas membantu semasa haid; ikut seleranya yang sebenar.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "menstrual_029": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "menstrual_030": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "menstrual_031": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "menstrual_032": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "menstrual_033": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "menstrual_034": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "menstrual_035": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "menstrual_036": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "menstrual_037": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "menstrual_038": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "menstrual_039": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "menstrual_040": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Beri ruang untuk mengubah rancangan."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "menstrual_041": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "menstrual_042": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "menstrual_043": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "menstrual_044": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "menstrual_045": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "menstrual_046": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "menstrual_047": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "menstrual_048": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "menstrual_049": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "menstrual_050": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "menstrual_051": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "menstrual_052": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "menstrual_053": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Jika dia mahu produk haid, semak produk pilihannya dan belikan yang tepat.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "menstrual_054": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Tawarkan membuang sampah bilik mandi dengan berhati-hati; jaga privasinya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "menstrual_055": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Jika dia menyatakan rasa tidak selesa, tawarkan barang keselesaan biasanya; jika tidak, buat kerja biasa.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "menstrual_056": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Tanya sama ada hidangan ringkas membantu semasa haid; ikut seleranya yang sebenar.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "menstrual_057": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "menstrual_058": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "menstrual_059": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "menstrual_060": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Pertanyaan ringkas mungkin sudah memadai."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "menstrual_061": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "menstrual_062": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "menstrual_063": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "menstrual_064": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "menstrual_065": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "menstrual_066": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "menstrual_067": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "menstrual_068": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "menstrual_069": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "menstrual_070": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "menstrual_071": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "menstrual_072": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
+  },
+  "menstrual_073": {
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
+  },
+  "menstrual_074": {
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
+  },
+  "menstrual_075": {
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
+  },
+  "menstrual_076": {
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
+  },
+  "menstrual_077": {
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
+  },
+  "menstrual_078": {
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
+  },
+  "menstrual_079": {
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
+  },
+  "menstrual_080": {
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
+  },
+  "menstrual_081": {
+    "cue": "Jika dia mahu produk haid, semak produk pilihannya dan belikan yang tepat.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
+  },
+  "menstrual_082": {
+    "cue": "Tawarkan membuang sampah bilik mandi dengan berhati-hati; jaga privasinya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
+  },
+  "menstrual_083": {
+    "cue": "Jika dia menyatakan rasa tidak selesa, tawarkan barang keselesaan biasanya; jika tidak, buat kerja biasa.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
+  },
+  "menstrual_084": {
+    "cue": "Tanya sama ada hidangan ringkas membantu semasa haid; ikut seleranya yang sebenar.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
+  },
+  "menstrual_085": {
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
+  },
+  "menstrual_086": {
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
+  },
+  "menstrual_087": {
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
+  },
+  "menstrual_088": {
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
+  },
+  "menstrual_089": {
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
+  },
+  "menstrual_090": {
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
+  },
+  "menstrual_091": {
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
+  },
+  "menstrual_092": {
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
+  },
+  "menstrual_093": {
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
+  },
+  "menstrual_094": {
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
+  },
+  "menstrual_095": {
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
+  },
+  "menstrual_096": {
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
+  },
+  "menstrual_097": {
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
+  },
+  "menstrual_098": {
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
+  },
+  "menstrual_099": {
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
+  },
+  "menstrual_100": {
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "follicular_001": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "follicular_002": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "follicular_003": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "follicular_004": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "follicular_005": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "follicular_006": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "follicular_007": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "follicular_008": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Buat pelawaan yang mudah diterima atau ditolak."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "follicular_009": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "follicular_010": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "follicular_011": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "follicular_012": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "follicular_013": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "follicular_014": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "follicular_015": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "follicular_016": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "follicular_017": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "follicular_018": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "follicular_019": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "follicular_020": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "follicular_021": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "follicular_022": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "follicular_023": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "follicular_024": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "follicular_025": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tawarkan satu langkah kecil untuk projek pilihannya tanpa menganggap tenaganya bertambah.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "follicular_026": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Cadangkan aktiviti yang dia suka dan biarkan dia menentukan rentaknya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "follicular_027": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Tanya sama ada dia mahu merancang untuk keluar; duduk di rumah juga baik.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "follicular_028": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Beri ruang untuk berteman dan bersendirian."
+    "cue": "Beri ruang untuk hobinya dengan menyiapkan kerja rumah anda.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "follicular_029": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "follicular_030": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "follicular_031": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "follicular_032": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "follicular_033": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "follicular_034": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "follicular_035": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "follicular_036": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "follicular_037": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "follicular_038": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "follicular_039": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "follicular_040": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "follicular_041": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "follicular_042": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "follicular_043": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "follicular_044": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "follicular_045": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "follicular_046": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "follicular_047": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "follicular_048": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Tawarkan bantuan praktikal secara sederhana."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "follicular_049": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "follicular_050": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "follicular_051": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "follicular_052": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "follicular_053": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tawarkan satu langkah kecil untuk projek pilihannya tanpa menganggap tenaganya bertambah.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "follicular_054": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Cadangkan aktiviti yang dia suka dan biarkan dia menentukan rentaknya.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "follicular_055": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tanya sama ada dia mahu merancang untuk keluar; duduk di rumah juga baik.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "follicular_056": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Beri ruang untuk hobinya dengan menyiapkan kerja rumah anda.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "follicular_057": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "follicular_058": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "follicular_059": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "follicular_060": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "follicular_061": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "follicular_062": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "follicular_063": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "follicular_064": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "follicular_065": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "follicular_066": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "follicular_067": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "follicular_068": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Biarkan kata-katanya menjadi panduan."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "follicular_069": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "follicular_070": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "follicular_071": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "follicular_072": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "follicular_073": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "follicular_074": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "follicular_075": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "follicular_076": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "follicular_077": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "follicular_078": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "follicular_079": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "follicular_080": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "follicular_081": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Tawarkan satu langkah kecil untuk projek pilihannya tanpa menganggap tenaganya bertambah.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "follicular_082": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Cadangkan aktiviti yang dia suka dan biarkan dia menentukan rentaknya.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "follicular_083": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Tanya sama ada dia mahu merancang untuk keluar; duduk di rumah juga baik.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "follicular_084": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Beri ruang untuk hobinya dengan menyiapkan kerja rumah anda.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "follicular_085": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "follicular_086": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "follicular_087": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "follicular_088": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Kurangkan tekanan yang tidak perlu."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "follicular_089": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "follicular_090": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "follicular_091": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "follicular_092": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "follicular_093": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "follicular_094": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "follicular_095": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "follicular_096": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "follicular_097": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "follicular_098": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "follicular_099": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "follicular_100": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "follicular_101": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "follicular_102": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "follicular_103": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "follicular_104": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "mid_cycle_001": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "mid_cycle_002": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "mid_cycle_003": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "mid_cycle_004": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Pilih untuk bertanya, bukan mentafsir."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "mid_cycle_005": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "mid_cycle_006": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "mid_cycle_007": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "mid_cycle_008": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "mid_cycle_009": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "mid_cycle_010": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "mid_cycle_011": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "mid_cycle_012": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "mid_cycle_013": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "mid_cycle_014": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "mid_cycle_015": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "mid_cycle_016": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "mid_cycle_017": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "mid_cycle_018": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "mid_cycle_019": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "mid_cycle_020": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "mid_cycle_021": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "mid_cycle_022": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "mid_cycle_023": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "mid_cycle_024": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Jadikan rancangan malam lebih fleksibel."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "mid_cycle_025": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Cadangkan masa bersama tanpa menganggap anggaran fasa sebagai persetujuan.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "mid_cycle_026": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Tanya jenis kemesraan yang dia mahu; malam yang tenang juga jawapan yang lengkap.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "mid_cycle_027": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Bantu mengatur janji temu yang anda berdua mahu, dengan ruang mengubah rancangan.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "mid_cycle_028": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Hormati masa peribadi yang dipersetujui tanpa menganggap dia mahu ditemani.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "mid_cycle_029": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "mid_cycle_030": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "mid_cycle_031": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "mid_cycle_032": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "mid_cycle_033": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "mid_cycle_034": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "mid_cycle_035": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "mid_cycle_036": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "mid_cycle_037": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "mid_cycle_038": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "mid_cycle_039": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "mid_cycle_040": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "mid_cycle_041": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "mid_cycle_042": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "mid_cycle_043": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "mid_cycle_044": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Dengar dahulu jika dia mahu berkongsi."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
+  },
+  "mid_cycle_045": {
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
+  },
+  "mid_cycle_046": {
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
+  },
+  "mid_cycle_047": {
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
+  },
+  "mid_cycle_048": {
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
+  },
+  "mid_cycle_049": {
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
+  },
+  "mid_cycle_050": {
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
+  },
+  "mid_cycle_051": {
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
+  },
+  "mid_cycle_052": {
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
+  },
+  "mid_cycle_053": {
+    "cue": "Cadangkan masa bersama tanpa menganggap anggaran fasa sebagai persetujuan.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
+  },
+  "mid_cycle_054": {
+    "cue": "Tanya jenis kemesraan yang dia mahu; malam yang tenang juga jawapan yang lengkap.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
+  },
+  "mid_cycle_055": {
+    "cue": "Bantu mengatur janji temu yang anda berdua mahu, dengan ruang mengubah rancangan.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
+  },
+  "mid_cycle_056": {
+    "cue": "Hormati masa peribadi yang dipersetujui tanpa menganggap dia mahu ditemani.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
+  },
+  "mid_cycle_057": {
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
+  },
+  "mid_cycle_058": {
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
+  },
+  "mid_cycle_059": {
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
+  },
+  "mid_cycle_060": {
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
+  },
+  "mid_cycle_061": {
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
+  },
+  "mid_cycle_062": {
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
+  },
+  "mid_cycle_063": {
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
+  },
+  "mid_cycle_064": {
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
+  },
+  "mid_cycle_065": {
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
+  },
+  "mid_cycle_066": {
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
+  },
+  "mid_cycle_067": {
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
+  },
+  "mid_cycle_068": {
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
+  },
+  "mid_cycle_069": {
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
+  },
+  "mid_cycle_070": {
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
+  },
+  "mid_cycle_071": {
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
+  },
+  "mid_cycle_072": {
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
+  },
+  "mid_cycle_073": {
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
+  },
+  "mid_cycle_074": {
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
+  },
+  "mid_cycle_075": {
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
+  },
+  "mid_cycle_076": {
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
+  },
+  "mid_cycle_077": {
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
+  },
+  "mid_cycle_078": {
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
+  },
+  "mid_cycle_079": {
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
+  },
+  "mid_cycle_080": {
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
+  },
+  "mid_cycle_081": {
+    "cue": "Cadangkan masa bersama tanpa menganggap anggaran fasa sebagai persetujuan.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
+  },
+  "mid_cycle_082": {
+    "cue": "Tanya jenis kemesraan yang dia mahu; malam yang tenang juga jawapan yang lengkap.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
+  },
+  "mid_cycle_083": {
+    "cue": "Bantu mengatur janji temu yang anda berdua mahu, dengan ruang mengubah rancangan.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
+  },
+  "mid_cycle_084": {
+    "cue": "Hormati masa peribadi yang dipersetujui tanpa menganggap dia mahu ditemani.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
+  },
+  "mid_cycle_085": {
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
+  },
+  "mid_cycle_086": {
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
+  },
+  "mid_cycle_087": {
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
+  },
+  "mid_cycle_088": {
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
+  },
+  "mid_cycle_089": {
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
+  },
+  "mid_cycle_090": {
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
+  },
+  "mid_cycle_091": {
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
+  },
+  "mid_cycle_092": {
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
+  },
+  "mid_cycle_093": {
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
+  },
+  "mid_cycle_094": {
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
+  },
+  "mid_cycle_095": {
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
+  },
+  "mid_cycle_096": {
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
+  },
+  "mid_cycle_097": {
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
+  },
+  "mid_cycle_098": {
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
+  },
+  "mid_cycle_099": {
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
+  },
+  "mid_cycle_100": {
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_001": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_002": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_003": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_004": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_005": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_006": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_007": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_008": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_009": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_010": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_011": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_012": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_013": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_014": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_015": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_016": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_017": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_018": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "luteal_019": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_020": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Gunakan anggaran sebagai peringatan untuk mengambil peduli."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_021": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_022": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_023": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_024": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_025": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_026": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_027": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_028": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_029": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_030": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_031": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_032": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_033": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_034": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_035": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_036": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_037": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "luteal_038": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_039": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_040": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Ringankan satu tugas harian jika dia selesa."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_041": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_042": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_043": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_044": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_045": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_046": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_047": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_048": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_049": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_050": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_051": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_052": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_053": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_054": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_055": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_056": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_057": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_058": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_059": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_060": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Pastikan rancangan masih sesuai untuk anda berdua."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_061": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_062": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_063": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_064": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_065": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_066": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_067": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_068": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_069": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_070": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_071": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_072": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_073": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_074": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_075": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_076": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_077": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_078": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_079": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_080": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Terima bahawa pilihannya mungkin berbeza hari ini."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "luteal_081": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_082": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_083": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_084": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_085": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_086": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_087": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_088": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_089": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_090": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_091": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_092": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_093": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_094": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_095": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_096": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_097": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_098": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_099": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "luteal_100": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Tawarkan sokongan tanpa menentukan bentuknya dahulu."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_101": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_102": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_103": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_104": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_105": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_106": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_107": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_108": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_109": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_110": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_111": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_112": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_113": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_114": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_115": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_116": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_117": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_118": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "luteal_119": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_120": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Jalani hari bersama tanpa tekanan."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_121": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_122": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_123": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_124": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_125": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_126": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_127": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_128": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_129": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_130": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_131": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_132": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_133": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_134": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_135": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_136": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_137": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_138": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_139": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_140": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Utamakan kata-katanya, bukan cadangan aplikasi."
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_141": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_142": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_143": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_144": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_145": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
   },
   "luteal_146": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
   },
   "luteal_147": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
   },
   "luteal_148": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
   },
   "luteal_149": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
   },
   "luteal_150": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_151": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_152": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_153": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_154": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_155": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_156": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_157": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_158": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_159": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_160": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Soalan yang baik lebih berguna daripada ramalan."
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_161": {
-    "context": "Keselesaan dan tenaga boleh berubah.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   },
   "luteal_162": {
-    "context": "Rentak yang selesa hari ini mungkin berbeza.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
   },
   "luteal_163": {
-    "context": "Sesetengah orang merasakan perubahan kecil pada tenaga.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
   },
   "luteal_164": {
-    "context": "Keperluan berehat atau ditemani boleh berubah.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
   },
   "luteal_165": {
-    "context": "Setiap kitaran mungkin dirasai secara berbeza.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
   },
   "luteal_166": {
-    "context": "Keinginan untuk teman atau ketenangan bersifat peribadi.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
   },
   "luteal_167": {
-    "context": "Sedikit kelonggaran boleh memudahkan rancangan.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
   },
   "luteal_168": {
-    "context": "Keselesaan fizikal boleh berubah.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
   },
   "luteal_169": {
-    "context": "Tenaga hari ini mungkin mengikut rentak lain.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Tawarkan untuk memasak makan malam; tanya dahulu apa yang dia mahu.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
   },
   "luteal_170": {
-    "context": "Tumpuan dan keselesaan boleh berubah.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Basuh dan simpan pinggan tanpa meninggalkan langkah terakhir kepadanya.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
   },
   "luteal_171": {
-    "context": "Sokongan yang diingini bergantung pada individu.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Selesaikan bahagian cucian anda, termasuk melipat dan menyimpan pakaian.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
   },
   "luteal_172": {
-    "context": "Rentak lebih perlahan kadangkala sesuai.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Beli barang dapur yang dipersetujui; tanya sebelum menggantikan barang.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
   },
   "luteal_173": {
-    "context": "Keperluan hari ini bersifat peribadi.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Sediakan sarapan jika dia mahu, kemudian kemaskan semuanya.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
   },
   "luteal_174": {
-    "context": "Jangkaan yang ringan mungkin membantu.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Sediakan barang anda untuk esok supaya pagi kurang kelam-kabut.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
   },
   "luteal_175": {
-    "context": "Setiap kitaran berbeza.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Buang sampah dan gantikan beg sampah.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
   },
   "luteal_176": {
-    "context": "Sedikit fleksibiliti mungkin dialu-alukan.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Kosongkan satu permukaan bersama tanpa mengalihkan barang peribadinya.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
   },
   "luteal_177": {
-    "context": "Tenaga tidak semestinya mengikut pola biasa.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Tawarkan untuk mengurus satu urusan yang dipersetujui.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
   },
   "luteal_178": {
-    "context": "Keselesaan tidak menentukan suasana hati.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Tanya sama ada membantu membawa beg berat berguna; terima jawapannya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
   },
   "luteal_179": {
-    "context": "Jadual lebih lapang kadangkala sesuai.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Tawarkan air atau minuman biasa dan biarkan dia memilih.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
   },
   "luteal_180": {
-    "context": "Anggaran ini memberi konteks, bukan menggambarkan pengalamannya.",
-    "cue": "Bersikap terbuka kepada jawapan yang tidak dijangka."
+    "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
   }
 }

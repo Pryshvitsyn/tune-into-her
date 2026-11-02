@@ -1,1602 +1,2422 @@
 {
   "menstrual_001": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "menstrual_002": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "menstrual_003": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "menstrual_004": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "menstrual_005": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "menstrual_006": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "menstrual_007": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "menstrual_008": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "menstrual_009": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "menstrual_010": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "menstrual_011": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "menstrual_012": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "menstrual_013": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "menstrual_014": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "menstrual_015": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "menstrual_016": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "menstrual_017": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "menstrual_018": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "menstrual_019": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "menstrual_020": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Frage, was helfen würde, statt es anzunehmen."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "menstrual_021": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "menstrual_022": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "menstrual_023": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "menstrual_024": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "menstrual_025": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Wenn sie Menstruationsprodukte möchte, frage nach ihrem gewohnten Produkt und besorge genau dieses.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "menstrual_026": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Biete an, den Badmülleimer diskret zu leeren; wahre ihre Privatsphäre.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "menstrual_027": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Wenn sie Unwohlsein anspricht, biete ihren gewohnten Komfortgegenstand an; sonst erledige eine normale Aufgabe.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "menstrual_028": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Frage, ob ein einfacheres Essen während ihrer Periode hilft; richte dich nach ihrem Appetit.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "menstrual_029": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "menstrual_030": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "menstrual_031": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "menstrual_032": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "menstrual_033": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "menstrual_034": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "menstrual_035": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "menstrual_036": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "menstrual_037": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "menstrual_038": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "menstrual_039": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "menstrual_040": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Lass Raum, Pläne bei Bedarf zu ändern."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "menstrual_041": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "menstrual_042": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "menstrual_043": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "menstrual_044": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "menstrual_045": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "menstrual_046": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "menstrual_047": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "menstrual_048": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "menstrual_049": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "menstrual_050": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "menstrual_051": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "menstrual_052": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "menstrual_053": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Wenn sie Menstruationsprodukte möchte, frage nach ihrem gewohnten Produkt und besorge genau dieses.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "menstrual_054": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Biete an, den Badmülleimer diskret zu leeren; wahre ihre Privatsphäre.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "menstrual_055": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Wenn sie Unwohlsein anspricht, biete ihren gewohnten Komfortgegenstand an; sonst erledige eine normale Aufgabe.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "menstrual_056": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Frage, ob ein einfacheres Essen während ihrer Periode hilft; richte dich nach ihrem Appetit.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "menstrual_057": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "menstrual_058": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "menstrual_059": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "menstrual_060": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Ein einfaches Nachfragen kann heute genügen."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "menstrual_061": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "menstrual_062": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "menstrual_063": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "menstrual_064": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "menstrual_065": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "menstrual_066": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "menstrual_067": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "menstrual_068": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "menstrual_069": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "menstrual_070": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "menstrual_071": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "menstrual_072": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
+  },
+  "menstrual_073": {
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
+  },
+  "menstrual_074": {
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
+  },
+  "menstrual_075": {
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
+  },
+  "menstrual_076": {
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
+  },
+  "menstrual_077": {
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
+  },
+  "menstrual_078": {
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
+  },
+  "menstrual_079": {
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
+  },
+  "menstrual_080": {
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
+  },
+  "menstrual_081": {
+    "cue": "Wenn sie Menstruationsprodukte möchte, frage nach ihrem gewohnten Produkt und besorge genau dieses.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
+  },
+  "menstrual_082": {
+    "cue": "Biete an, den Badmülleimer diskret zu leeren; wahre ihre Privatsphäre.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
+  },
+  "menstrual_083": {
+    "cue": "Wenn sie Unwohlsein anspricht, biete ihren gewohnten Komfortgegenstand an; sonst erledige eine normale Aufgabe.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
+  },
+  "menstrual_084": {
+    "cue": "Frage, ob ein einfacheres Essen während ihrer Periode hilft; richte dich nach ihrem Appetit.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
+  },
+  "menstrual_085": {
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
+  },
+  "menstrual_086": {
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
+  },
+  "menstrual_087": {
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
+  },
+  "menstrual_088": {
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
+  },
+  "menstrual_089": {
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
+  },
+  "menstrual_090": {
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
+  },
+  "menstrual_091": {
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
+  },
+  "menstrual_092": {
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
+  },
+  "menstrual_093": {
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
+  },
+  "menstrual_094": {
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
+  },
+  "menstrual_095": {
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
+  },
+  "menstrual_096": {
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
+  },
+  "menstrual_097": {
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
+  },
+  "menstrual_098": {
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
+  },
+  "menstrual_099": {
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
+  },
+  "menstrual_100": {
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "follicular_001": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "follicular_002": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "follicular_003": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "follicular_004": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "follicular_005": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "follicular_006": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "follicular_007": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "follicular_008": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Mach Einladungen leicht annehmbar und ablehnbar."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "follicular_009": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "follicular_010": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "follicular_011": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "follicular_012": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "follicular_013": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "follicular_014": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "follicular_015": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "follicular_016": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "follicular_017": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "follicular_018": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "follicular_019": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "follicular_020": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "follicular_021": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "follicular_022": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "follicular_023": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "follicular_024": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "follicular_025": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Biete einen kleinen Schritt bei ihrem gewählten Projekt an, ohne zusätzliche Energie anzunehmen.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "follicular_026": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Schlage eine Aktivität vor, die sie mag, und überlasse ihr das Tempo.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "follicular_027": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Frage, ob sie einen Ausflug planen möchte; zu Hause zu bleiben ist ebenso gut.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "follicular_028": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Lass Raum für Gesellschaft und Ruhe."
+    "cue": "Schaffe Raum für ihr Hobby, indem du deine Haushaltsaufgabe erledigst.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "follicular_029": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "follicular_030": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "follicular_031": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "follicular_032": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "follicular_033": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "follicular_034": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "follicular_035": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "follicular_036": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "follicular_037": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "follicular_038": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "follicular_039": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "follicular_040": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "follicular_041": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "follicular_042": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "follicular_043": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "follicular_044": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "follicular_045": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "follicular_046": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "follicular_047": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "follicular_048": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Biete praktische Hilfe ohne großes Aufheben an."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "follicular_049": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "follicular_050": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "follicular_051": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "follicular_052": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "follicular_053": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Biete einen kleinen Schritt bei ihrem gewählten Projekt an, ohne zusätzliche Energie anzunehmen.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "follicular_054": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Schlage eine Aktivität vor, die sie mag, und überlasse ihr das Tempo.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "follicular_055": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Frage, ob sie einen Ausflug planen möchte; zu Hause zu bleiben ist ebenso gut.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "follicular_056": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Schaffe Raum für ihr Hobby, indem du deine Haushaltsaufgabe erledigst.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "follicular_057": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "follicular_058": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "follicular_059": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "follicular_060": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "follicular_061": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "follicular_062": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "follicular_063": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "follicular_064": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "follicular_065": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "follicular_066": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "follicular_067": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "follicular_068": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Lass dich von ihren eigenen Worten leiten."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "follicular_069": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "follicular_070": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "follicular_071": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "follicular_072": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "follicular_073": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "follicular_074": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "follicular_075": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "follicular_076": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "follicular_077": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "follicular_078": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "follicular_079": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "follicular_080": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "follicular_081": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Biete einen kleinen Schritt bei ihrem gewählten Projekt an, ohne zusätzliche Energie anzunehmen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "follicular_082": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Schlage eine Aktivität vor, die sie mag, und überlasse ihr das Tempo.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "follicular_083": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Frage, ob sie einen Ausflug planen möchte; zu Hause zu bleiben ist ebenso gut.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "follicular_084": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Schaffe Raum für ihr Hobby, indem du deine Haushaltsaufgabe erledigst.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "follicular_085": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "follicular_086": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "follicular_087": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "follicular_088": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Nimm unnötigen Druck heraus, wenn möglich."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "follicular_089": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "follicular_090": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "follicular_091": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "follicular_092": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "follicular_093": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "follicular_094": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "follicular_095": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "follicular_096": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "follicular_097": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "follicular_098": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "follicular_099": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "follicular_100": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "follicular_101": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "follicular_102": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "follicular_103": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "follicular_104": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "mid_cycle_001": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "mid_cycle_002": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "mid_cycle_003": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "mid_cycle_004": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Bleibe neugierig, statt zu interpretieren."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "mid_cycle_005": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "mid_cycle_006": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "mid_cycle_007": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "mid_cycle_008": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "mid_cycle_009": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "mid_cycle_010": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "mid_cycle_011": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "mid_cycle_012": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "mid_cycle_013": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "mid_cycle_014": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "mid_cycle_015": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "mid_cycle_016": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "mid_cycle_017": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "mid_cycle_018": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "mid_cycle_019": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "mid_cycle_020": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "mid_cycle_021": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "mid_cycle_022": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "mid_cycle_023": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "mid_cycle_024": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Halte die Abendplanung flexibel."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "mid_cycle_025": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Schlage gemeinsame Zeit vor, ohne eine geschätzte Phase als Zustimmung zu verstehen.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "mid_cycle_026": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Frage, welche Nähe sie möchte; ein ruhiger Abend ist eine vollständige Antwort.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "mid_cycle_027": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Hilf bei einem Treffen, das ihr beide wollt, mit Spielraum für Planänderungen.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "mid_cycle_028": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Respektiere vereinbarte Zeit für sich, statt Gesellschaft vorauszusetzen.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "mid_cycle_029": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "mid_cycle_030": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "mid_cycle_031": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "mid_cycle_032": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "mid_cycle_033": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "mid_cycle_034": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "mid_cycle_035": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "mid_cycle_036": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "mid_cycle_037": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "mid_cycle_038": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "mid_cycle_039": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "mid_cycle_040": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "mid_cycle_041": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "mid_cycle_042": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "mid_cycle_043": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "mid_cycle_044": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Höre zuerst zu, wenn sie etwas erzählen möchte."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
+  },
+  "mid_cycle_045": {
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
+  },
+  "mid_cycle_046": {
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
+  },
+  "mid_cycle_047": {
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
+  },
+  "mid_cycle_048": {
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
+  },
+  "mid_cycle_049": {
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
+  },
+  "mid_cycle_050": {
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
+  },
+  "mid_cycle_051": {
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
+  },
+  "mid_cycle_052": {
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
+  },
+  "mid_cycle_053": {
+    "cue": "Schlage gemeinsame Zeit vor, ohne eine geschätzte Phase als Zustimmung zu verstehen.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
+  },
+  "mid_cycle_054": {
+    "cue": "Frage, welche Nähe sie möchte; ein ruhiger Abend ist eine vollständige Antwort.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
+  },
+  "mid_cycle_055": {
+    "cue": "Hilf bei einem Treffen, das ihr beide wollt, mit Spielraum für Planänderungen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
+  },
+  "mid_cycle_056": {
+    "cue": "Respektiere vereinbarte Zeit für sich, statt Gesellschaft vorauszusetzen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
+  },
+  "mid_cycle_057": {
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
+  },
+  "mid_cycle_058": {
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
+  },
+  "mid_cycle_059": {
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
+  },
+  "mid_cycle_060": {
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
+  },
+  "mid_cycle_061": {
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
+  },
+  "mid_cycle_062": {
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
+  },
+  "mid_cycle_063": {
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
+  },
+  "mid_cycle_064": {
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
+  },
+  "mid_cycle_065": {
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
+  },
+  "mid_cycle_066": {
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
+  },
+  "mid_cycle_067": {
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
+  },
+  "mid_cycle_068": {
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
+  },
+  "mid_cycle_069": {
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
+  },
+  "mid_cycle_070": {
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
+  },
+  "mid_cycle_071": {
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
+  },
+  "mid_cycle_072": {
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
+  },
+  "mid_cycle_073": {
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
+  },
+  "mid_cycle_074": {
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
+  },
+  "mid_cycle_075": {
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
+  },
+  "mid_cycle_076": {
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
+  },
+  "mid_cycle_077": {
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
+  },
+  "mid_cycle_078": {
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
+  },
+  "mid_cycle_079": {
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
+  },
+  "mid_cycle_080": {
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
+  },
+  "mid_cycle_081": {
+    "cue": "Schlage gemeinsame Zeit vor, ohne eine geschätzte Phase als Zustimmung zu verstehen.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
+  },
+  "mid_cycle_082": {
+    "cue": "Frage, welche Nähe sie möchte; ein ruhiger Abend ist eine vollständige Antwort.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
+  },
+  "mid_cycle_083": {
+    "cue": "Hilf bei einem Treffen, das ihr beide wollt, mit Spielraum für Planänderungen.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
+  },
+  "mid_cycle_084": {
+    "cue": "Respektiere vereinbarte Zeit für sich, statt Gesellschaft vorauszusetzen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
+  },
+  "mid_cycle_085": {
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
+  },
+  "mid_cycle_086": {
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
+  },
+  "mid_cycle_087": {
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
+  },
+  "mid_cycle_088": {
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
+  },
+  "mid_cycle_089": {
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
+  },
+  "mid_cycle_090": {
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
+  },
+  "mid_cycle_091": {
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
+  },
+  "mid_cycle_092": {
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
+  },
+  "mid_cycle_093": {
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
+  },
+  "mid_cycle_094": {
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
+  },
+  "mid_cycle_095": {
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
+  },
+  "mid_cycle_096": {
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
+  },
+  "mid_cycle_097": {
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
+  },
+  "mid_cycle_098": {
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
+  },
+  "mid_cycle_099": {
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
+  },
+  "mid_cycle_100": {
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_001": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_002": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_003": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_004": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_005": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_006": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_007": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_008": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_009": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_010": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_011": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_012": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_013": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_014": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_015": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_016": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_017": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_018": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "luteal_019": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_020": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Nutze die Schätzung als Erinnerung, aufmerksam zu sein."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_021": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_022": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_023": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_024": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_025": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Frage vor der geschätzten Periode, ob ihre gewohnten Produkte aufgefüllt werden sollen.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_026": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Biete an, eine vereinbarte Mahlzeit vorzubereiten, damit der Abend ruhiger wird.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_027": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Wenn sie einen leichteren Zeitplan wünscht, übernimm eine praktische Umplanung.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_028": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Prüfe deinen Anteil an kommenden Aufgaben, ohne ihr Befinden vorauszusetzen.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_029": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_030": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_031": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_032": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_033": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_034": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_035": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_036": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_037": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "luteal_038": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_039": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_040": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Erleichtere eine Alltagstätigkeit, wenn es willkommen ist."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_041": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_042": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_043": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_044": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_045": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_046": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_047": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_048": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_049": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_050": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_051": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_052": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_053": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Frage vor der geschätzten Periode, ob ihre gewohnten Produkte aufgefüllt werden sollen.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_054": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Biete an, eine vereinbarte Mahlzeit vorzubereiten, damit der Abend ruhiger wird.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_055": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Wenn sie einen leichteren Zeitplan wünscht, übernimm eine praktische Umplanung.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_056": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Prüfe deinen Anteil an kommenden Aufgaben, ohne ihr Befinden vorauszusetzen.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_057": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_058": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_059": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_060": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Frage, ob die Pläne noch für euch beide passen."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_061": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_062": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_063": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_064": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_065": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_066": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_067": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_068": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_069": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_070": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_071": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_072": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_073": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_074": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_075": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_076": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_077": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_078": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_079": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_080": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Lass Raum für andere Vorlieben heute."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "luteal_081": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Frage vor der geschätzten Periode, ob ihre gewohnten Produkte aufgefüllt werden sollen.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_082": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Biete an, eine vereinbarte Mahlzeit vorzubereiten, damit der Abend ruhiger wird.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_083": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Wenn sie einen leichteren Zeitplan wünscht, übernimm eine praktische Umplanung.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_084": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Prüfe deinen Anteil an kommenden Aufgaben, ohne ihr Befinden vorauszusetzen.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_085": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_086": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_087": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_088": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_089": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_090": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_091": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_092": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_093": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_094": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_095": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_096": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_097": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_098": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_099": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "luteal_100": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Biete Unterstützung an, ohne ihre Form vorzugeben."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_101": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_102": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_103": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_104": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_105": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_106": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_107": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_108": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_109": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Frage vor der geschätzten Periode, ob ihre gewohnten Produkte aufgefüllt werden sollen.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_110": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Biete an, eine vereinbarte Mahlzeit vorzubereiten, damit der Abend ruhiger wird.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_111": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Wenn sie einen leichteren Zeitplan wünscht, übernimm eine praktische Umplanung.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_112": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Prüfe deinen Anteil an kommenden Aufgaben, ohne ihr Befinden vorauszusetzen.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_113": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_114": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_115": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_116": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_117": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_118": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "luteal_119": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_120": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Gestaltet den Tag gemeinsam und ohne Druck."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_121": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_122": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_123": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_124": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_125": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_126": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_127": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_128": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_129": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_130": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_131": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_132": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_133": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_134": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_135": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_136": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_137": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Frage vor der geschätzten Periode, ob ihre gewohnten Produkte aufgefüllt werden sollen.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_138": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Biete an, eine vereinbarte Mahlzeit vorzubereiten, damit der Abend ruhiger wird.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_139": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Wenn sie einen leichteren Zeitplan wünscht, übernimm eine praktische Umplanung.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_140": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Ihre Worte sind wichtiger als die App."
+    "cue": "Prüfe deinen Anteil an kommenden Aufgaben, ohne ihr Befinden vorauszusetzen.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_141": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_142": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_143": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_144": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_145": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage, welche Hilfe sie heute nicht möchte.",
+    "context": "Wenn du etwas missverstanden hast, frage ruhig statt Absichten zu erraten."
   },
   "luteal_146": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sag, wann du reden kannst, und halte dir diese Zeit frei.",
+    "context": "Unterschiedliche Wünsche bedeuten nicht, dass jemand falschliegt."
   },
   "luteal_147": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage: „Möchtest du Zuhören, Ideen oder praktische Hilfe?“",
+    "context": "Du kannst aufmerksam zuhören, ohne in jedem Detail zuzustimmen."
   },
   "luteal_148": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Leg dein Handy weg und höre zu, ohne deine Antwort vorzubereiten.",
+    "context": "Erzähle ihre persönliche Erfahrung nicht als Witz weiter."
   },
   "luteal_149": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Frage: „Was würde deinen Abend leichter machen?“",
+    "context": "Ein Angebot hilft nur, wenn „Nein“ wirklich möglich ist."
   },
   "luteal_150": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_151": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_152": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_153": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Erledige deinen Haushaltsteil, damit sie auf Wunsch eine Pause machen kann.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_154": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Behebe eine kleine Störung im Haushalt, um die du dich kümmern wolltest.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_155": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Verstaue die Reste und hinterlasse die Küche bereit für die nächste Mahlzeit.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_156": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Prüfe gemeinsame Badvorräte und fülle auf, was zur Neige geht.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_157": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Biete an, die Bettwäsche zu wechseln; stimmt den Zeitpunkt vorher ab.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_158": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Schlage einen kurzen, einfachen Spaziergang vor, den sie leicht ablehnen kann.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_159": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Schlage zwei einfache Abendessen vor und frage, was ihr passt.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_160": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Eine freundliche Frage hilft mehr als eine Vorhersage."
+    "cue": "Erledige eine Verwaltungsaufgabe, für die du verantwortlich bist.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_161": {
-    "context": "Wohlbefinden und Energie können variieren.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Räume deine Schuhe und Sachen im Eingangsbereich auf.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   },
   "luteal_162": {
-    "context": "Heute kann ein anderes Tempo passen.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Teilt eine große gemeinsame Aufgabe in Schritte; erledige deinen Anteil.",
+    "support": "Bedanke dich für eine alltägliche Geste, die oft unbemerkt bleibt.",
+    "context": "Halte deine eigenen Aufgaben klar und machbar."
   },
   "luteal_163": {
-    "context": "Manche Menschen bemerken kleine Veränderungen ihrer Energie.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Biete einen Snack oder ein Lunchpaket nach ihren Vorlieben an.",
+    "support": "Frage: „Gibt es heute etwas, das du feiern möchtest?“",
+    "context": "Frage, bevor du persönliche Dinge anfasst oder umräumst."
   },
   "luteal_164": {
-    "context": "Das Bedürfnis nach Ruhe oder Gesellschaft kann sich ändern.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Erledige eine kleine versprochene Sache und sag, dass sie fertig ist.",
+    "support": "Lass sie ausreden, bevor du die nächste Frage stellst.",
+    "context": "Stille kann angenehm sein; frage, bevor du sie füllst."
   },
   "luteal_165": {
-    "context": "Jeder Zyklus kann sich anders anfühlen.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Frage vor der geschätzten Periode, ob ihre gewohnten Produkte aufgefüllt werden sollen.",
+    "support": "Sage: „Ich höre, dass dir das wichtig ist.“",
+    "context": "Respektiere eine Grenze, auch wenn du den Grund nicht verstehst."
   },
   "luteal_166": {
-    "context": "Der Wunsch nach Gesellschaft oder Ruhe ist individuell.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Biete an, eine vereinbarte Mahlzeit vorzubereiten, damit der Abend ruhiger wird.",
+    "support": "Frage, ob sie Zuspruch oder Zeit zum Nachdenken möchte.",
+    "context": "Eine Planänderung braucht keine Erklärung über Hormone."
   },
   "luteal_167": {
-    "context": "Etwas Spielraum kann Pläne erleichtern.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Wenn sie einen leichteren Zeitplan wünscht, übernimm eine praktische Umplanung.",
+    "support": "Erinnere an einen Moment, in dem ihre Fürsorge dir geholfen hat.",
+    "context": "Ein Versprechen wird mit einem realistischen Zeitpunkt verlässlicher."
   },
   "luteal_168": {
-    "context": "Das körperliche Wohlbefinden kann schwanken.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Prüfe deinen Anteil an kommenden Aufgaben, ohne ihr Befinden vorauszusetzen.",
+    "support": "Sage, was du an eurer gemeinsamen Zeit schätzt.",
+    "context": "Eine Entschuldigung benennt deine Handlung und wie du sie wiedergutmachen willst."
   },
   "luteal_169": {
-    "context": "Die Energie kann heute einem anderen Rhythmus folgen.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Biete an, das Abendessen zu kochen; frage vorher, worauf sie Lust hat.",
+    "support": "Gib das Gehörte wieder und frage, ob du es richtig verstanden hast.",
+    "context": "Beende die Aufgabe, ohne ihr die Organisation zu überlassen."
   },
   "luteal_170": {
-    "context": "Aufmerksamkeit und Wohlbefinden können sich verändern.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Spüle und verräume das Geschirr, ohne ihr den letzten Schritt zu überlassen.",
+    "support": "Sage: „Wir können den Plan ändern, wenn er nicht mehr passt.“",
+    "context": "Wohlbefinden verpflichtet weder zu Geselligkeit noch zu Intimität."
   },
   "luteal_171": {
-    "context": "Welche Unterstützung gut tut, ist individuell.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Erledige deinen Teil der Wäsche, einschließlich Falten und Einräumen.",
+    "support": "Frage, ob sie Gesellschaft oder etwas Zeit allein möchte.",
+    "context": "Kleine verlässliche Handlungen zählen mehr als ein großes Versprechen."
   },
   "luteal_172": {
-    "context": "Ein ruhigeres Tempo kann manchmal passen.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Kaufe die vereinbarten Lebensmittel; frage vor einem Ersatz nach.",
+    "support": "Benenne eine bemerkte Anstrengung und bedanke dich konkret dafür.",
+    "context": "Leite ihre Stimmung nicht aus der geschätzten Zyklusphase ab."
   },
   "luteal_173": {
-    "context": "Die heutigen Bedürfnisse sind persönlich.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Bereite auf Wunsch das Frühstück vor und räume danach auf.",
+    "support": "Frage nach dem schwierigsten Teil des Tages; sie entscheidet, wie viel sie erzählt.",
+    "context": "Unterbrecht ein angespanntes Gespräch und vereinbart, wann ihr weitersprecht."
   },
   "luteal_174": {
-    "context": "Weniger Erwartungen können hilfreich sein.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Lege deine Sachen für morgen bereit, damit morgens weniger abzustimmen ist.",
+    "support": "Sage: „Du musst jetzt nicht alles erklären.“",
+    "context": "Achte darauf, was geholfen hat, und frage vor einer Wiederholung an einem anderen Tag."
   },
   "luteal_175": {
-    "context": "Jeder Zyklus ist anders.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Bring den Müll hinaus und setze einen neuen Beutel ein.",
+    "support": "Frage, ob sie eine Umarmung möchte, und nimm jede Antwort freundlich an.",
+    "context": "Mache Hilfe nicht zur Forderung nach Lob oder Nähe."
   },
   "luteal_176": {
-    "context": "Etwas Flexibilität kann willkommen sein.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Räume eine gemeinsame Fläche frei, ohne ihre persönlichen Dinge zu verschieben.",
+    "support": "Frage, was du dir fürs nächste Mal merken sollst.",
+    "context": "Stelle eine klare Frage, statt ständig nach ihrem Befinden zu fragen."
   },
   "luteal_177": {
-    "context": "Energie folgt nicht immer dem gewohnten Muster.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Biete an, eine vereinbarte Besorgung zu übernehmen.",
+    "support": "Erkenne ihr Gefühl an, ohne ihr zu sagen, wie sie sich fühlen sollte.",
+    "context": "Du kannst unterstützen, ohne für sie zu entscheiden."
   },
   "luteal_178": {
-    "context": "Wohlbefinden sagt nichts Sicheres über die Stimmung aus.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Frage, ob du die schweren Taschen tragen sollst; akzeptiere ihre Antwort.",
+    "support": "Sage: „Ich kümmere mich um meinen Teil; du musst mich nicht erinnern.“",
+    "context": "Ihr beschriebenes Befinden zählt mehr als die Kalenderschätzung."
   },
   "luteal_179": {
-    "context": "Ein offenerer Tagesplan kann manchmal passen.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Biete Wasser oder ein gewohntes Getränk an und lass sie wählen.",
+    "support": "Frage, ob du später nachfragen sollst oder sie selbst auf dich zukommen möchte.",
+    "context": "Teile Informationen über ihren Zyklus nur mit ihrer Zustimmung."
   },
   "luteal_180": {
-    "context": "Diese Schätzung gibt Kontext, beschreibt aber nicht ihr Erleben.",
-    "cue": "Bleibe offen für eine unerwartete Antwort."
+    "cue": "Organisiere eine vereinbarte Fahrt, einschließlich des Rückwegs.",
+    "support": "Benenne eine bewunderte Eigenschaft und ein Beispiel aus letzter Zeit.",
+    "context": "Benutze diese App nicht, um einen Streit zu gewinnen."
   }
 }

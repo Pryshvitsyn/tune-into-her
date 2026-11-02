@@ -211,7 +211,7 @@ export default function OnboardingScreen() {
           <Text style={styles.hero}>{t("onboarding.previewTitle")}</Text>
           <Text style={styles.body}>{`${c.do} · ${c.support} · ${c.mind}`}</Text>
           <AdviceBlocks
-            physical={previewCue.cue}
+            advice={previewCue}
             date={toDateOnly(new Date())}
           />
         </View>
