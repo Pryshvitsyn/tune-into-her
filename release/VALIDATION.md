@@ -51,5 +51,13 @@
 See DEVICE_QA.md for the remaining native checks. New translations, especially Baba Malay, require native-language editorial review before release.
 # Accelerated preview — 2026-11-03
 
-Source implementation adds a preview-only 30-day/5-minute trial, isolated local state, native scheduling and validated notification navigation. Content validation passes (484 bundles, eleven locales). Local dependency installation is blocked by an incomplete offline npm cache; full lint/type/Vitest/Expo verification must be read from the feature-branch CI before claiming a pass. Scheduler smoke checks and syntax-only checks do not replace that CI or iPhone delivery tests. No signed IPA or device QA is claimed.
+Source implementation adds a preview-only 30-day/5-minute trial, isolated local state, native scheduling and validated notification navigation.
+
+- GitHub Actions [run 41676014811](https://github.com/Pryshvitsyn/tune-into-her/actions/runs/41676014811) passes on source commit `6efcd50a9fb1b007c5f072051a63634f6a42bc1e`.
+- Clean dependency installation, content validation (484 bundles, eleven locales), ESLint and TypeScript pass.
+- Vitest: **65 tests across 13 files pass**, including demo timing, catalog isolation, scheduler rollback/cleanup and notification navigation.
+- Expo Doctor: **21/21 checks pass**. This is project health verification, not a signed native build.
+- Read-only review confirmed the two notification-flow fixes: revisiting demo screens refreshes persisted state, and transient storage failures preserve a validated notification target for retry.
+- Local offline dependency installation was unavailable because the npm cache was incomplete; the full-suite evidence above comes from GitHub Actions.
+- Signed IPA, actual iPhone notification delivery/tap behavior, visual/device QA and the full 150-minute device run remain unverified. No native build, installation link, store submission or paid operation is claimed.
 

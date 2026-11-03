@@ -2,7 +2,7 @@
 ## NOW
 - [x] Implement installed accelerated preview: 30 sample days, five minutes each, isolated history, one-tap Start/Stop and 29 native reminders.
 - [x] Add preview-only first launch and eleven-language demo controls, without requiring a purchase entitlement.
-- [ ] Complete full lint/type/test/Expo CI for the accelerated-preview delta.
+- [x] Complete full lint/type/test/Expo CI for the accelerated-preview delta: run 41676014811 on 6efcd50 passes; 65 tests, 21/21 Expo Doctor checks.
 - [ ] Install the signed preview and verify background notification/tap delivery and the full 150-minute trial on iPhone.
 - [x] Authenticate as eliogenesis and verify the existing EAS project identity/access.
 - [x] Prepare expo-updates, fingerprint runtime compatibility and separate preview/production channels.
