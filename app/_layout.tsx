@@ -6,6 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { AppProvider } from "../src/context/AppContext";
+import { DemoNotificationNavigation } from "../src/components/DemoNotificationNavigation";
 import { useTheme } from "../src/theme/useTheme";
 
 Notifications.setNotificationHandler({
@@ -39,6 +40,7 @@ function Navigation() {
           animation: "slide_from_right",
         }}
       />
+      <DemoNotificationNavigation />
     </>
   );
 }

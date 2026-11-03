@@ -49,3 +49,7 @@
 - No native simulator/device tests, signed IPA/AAB, App Store Connect submission, Google Play submission, or paid advertising performed.
 
 See DEVICE_QA.md for the remaining native checks. New translations, especially Baba Malay, require native-language editorial review before release.
+# Accelerated preview — 2026-11-03
+
+Source implementation adds a preview-only 30-day/5-minute trial, isolated local state, native scheduling and validated notification navigation. Content validation passes (484 bundles, eleven locales). Local dependency installation is blocked by an incomplete offline npm cache; full lint/type/Vitest/Expo verification must be read from the feature-branch CI before claiming a pass. Scheduler smoke checks and syntax-only checks do not replace that CI or iPhone delivery tests. No signed IPA or device QA is claimed.
+

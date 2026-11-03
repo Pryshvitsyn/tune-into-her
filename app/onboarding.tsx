@@ -11,6 +11,7 @@ import { PaywallCard } from "../src/components/PaywallCard";
 import { PhaseSphere } from "../src/components/PhaseSphere";
 import { Screen } from "../src/components/Screen";
 import { SUPPORTED_LANGUAGES } from "../src/config/constants";
+import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
 import { useApp, notificationScheduler } from "../src/context/AppContext";
 import {
   getCatalog,
@@ -19,6 +20,7 @@ import {
 import { estimateCycle } from "../src/domain/cycle/cycleEngine";
 import { toDateOnly } from "../src/domain/cycle/dateOnly";
 import releaseCopy from "../src/i18n/releaseCopy.json";
+import { getDemoCopy } from "../src/i18n/acceleratedDemo";
 import { useInterface } from "../src/i18n/useInterface";
 import { radius, spacing } from "../src/theme";
 import type { Palette } from "../src/theme";
@@ -115,6 +117,9 @@ export default function OnboardingScreen() {
           <PhaseSphere small />
           <Text style={styles.hero}>{t("onboarding.welcomeTitle")}</Text>
           <Text style={styles.body}>{`${c.do} · ${c.support} · ${c.mind}`}</Text>
+          {acceleratedDemoEnabled ? (
+            <Button label={getDemoCopy(preferences.language).title} variant="secondary" onPress={() => router.push("/demo")} />
+          ) : null}
           {preferences.language === "mbf" ? (
             <Text style={styles.noteText}>{releaseCopy.mbf.beta}</Text>
           ) : null}

@@ -14,3 +14,5 @@ Onboarding → local settings → estimated phase/date → history-aware daily c
 eas.json development/preview/production; release checker and build guard. Native signing/device testing/store products externally configured.
 ## Boundaries
 No analytics/ads or transmission of cycle details. Unsigned exports are not store releases.
+## Accelerated preview
+The preview/development build profile enables `extra.acceleratedDemo`; the production profile forces it off. `/demo` reuses AdviceBlocks and the existing editorial catalog, with a separate in-memory content history and synthetic 30/5 scenario. Session metadata lives in a dedicated AsyncStorage key; it contains no personal cycle dates. Elapsed wall time restores the displayed day after backgrounding. AcceleratedDemoScheduler schedules 29 native one-off notifications and filters cleanup by its own kind/run. Root notification routing validates the current run and day before opening `/demo`. A first launch or active session can open the preview without purchase/onboarding; ordinary access checks are unchanged.

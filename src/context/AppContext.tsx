@@ -11,6 +11,7 @@ import { toDateOnly } from '../domain/cycle/dateOnly';
 import { i18n, initialLanguage } from '../i18n';
 import { ExpoNotificationBackend } from '../services/notifications/ExpoNotificationBackend';
 import { NotificationScheduler } from '../services/notifications/NotificationScheduler';
+import { stopDemoSession } from '../services/notifications/acceleratedDemo';
 import { purchaseService, type EntitlementState } from '../services/purchases';
 import { AsyncSelectionStore } from '../storage/AsyncSelectionStore';
 import { LocalManualCycleProvider } from '../storage/LocalManualCycleProvider';
@@ -107,6 +108,7 @@ export function AppProvider({ children }: PropsWithChildren) {
   const completeOnboarding = useCallback(() => updatePreferences({ onboardingComplete: true }, true), [updatePreferences]);
 
   const deleteLocalData = useCallback(async () => {
+    await stopDemoSession();
     await notificationScheduler.cancelAll();
     await SecureStore.deleteItemAsync(storageKeys.cycleSettings);
     await AsyncStorage.multiRemove([storageKeys.preferences, storageKeys.selections, storageKeys.entitlement]);
