@@ -10,8 +10,8 @@ import { NumberStepper } from "../src/components/NumberStepper";
 import { PaywallCard } from "../src/components/PaywallCard";
 import { PhaseSphere } from "../src/components/PhaseSphere";
 import { Screen } from "../src/components/Screen";
-import { SUPPORTED_LANGUAGES } from "../src/config/constants";
 import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
+import { SUPPORTED_LANGUAGES } from "../src/config/constants";
 import { useApp, notificationScheduler } from "../src/context/AppContext";
 import {
   getCatalog,
@@ -19,8 +19,8 @@ import {
 } from "../src/domain/content/contentRepository";
 import { estimateCycle } from "../src/domain/cycle/cycleEngine";
 import { toDateOnly } from "../src/domain/cycle/dateOnly";
-import releaseCopy from "../src/i18n/releaseCopy.json";
 import { getDemoCopy } from "../src/i18n/acceleratedDemo";
+import releaseCopy from "../src/i18n/releaseCopy.json";
 import { useInterface } from "../src/i18n/useInterface";
 import { radius, spacing } from "../src/theme";
 import type { Palette } from "../src/theme";

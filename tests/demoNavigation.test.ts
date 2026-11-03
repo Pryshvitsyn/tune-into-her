@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { DEMO_DAY_DURATION_MS } from '../src/domain/demo/acceleratedDemo';
-import { demoNotificationTarget } from '../src/domain/navigation/demoNotificationTarget';
+import { demoNotificationCandidate, demoNotificationTarget } from '../src/domain/navigation/demoNotificationTarget';
 
 const session = { runId: 'sample-run', startedAt: Date.parse('2024-03-08T12:00:00Z') };
 const notification = { kind: 'accelerated-demo', runId: session.runId, demoDay: '2' };
@@ -27,5 +27,12 @@ describe('demo notification navigation', () => {
 
   it('never trusts a URL from the notification payload', () => {
     expect(demoNotificationTarget({ ...notification, url: 'https://example.invalid' }, session, session.startedAt + DEMO_DAY_DURATION_MS)?.pathname).toBe('/demo');
+  });
+
+  it('retains only safe pending parameters through a failed storage read', () => {
+    const pending = demoNotificationCandidate({ ...notification, url: 'https://example.invalid' });
+    expect(pending).toEqual({ pathname: '/demo', params: { runId: session.runId, day: '2' } });
+    expect(demoNotificationTarget(notification, { ...session, runId: 'replacement-run' }, session.startedAt + DEMO_DAY_DURATION_MS)).toBeNull();
+    expect(demoNotificationCandidate({ ...notification, runId: '../other-route' })).toBeNull();
   });
 });

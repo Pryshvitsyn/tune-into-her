@@ -2,8 +2,8 @@ import { Redirect } from "expo-router";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 
-import { useApp } from "../src/context/AppContext";
 import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
+import { useApp } from "../src/context/AppContext";
 import { getDemoProgress } from "../src/domain/demo/acceleratedDemo";
 import { loadDemoSession } from "../src/services/notifications/acceleratedDemo";
 import type { Palette } from "../src/theme";

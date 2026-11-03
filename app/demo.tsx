@@ -1,4 +1,4 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, AppState, Linking, StyleSheet, Text, View } from 'react-native';
 
@@ -24,35 +24,36 @@ export default function DemoScreen() {
   const styles = makeStyles(colors);
   const copy = getDemoCopy(preferences.language);
   const ui = useInterface();
-  const params = useLocalSearchParams<{ runId?: string; day?: string }>();
+  const params = useLocalSearchParams<{ runId?: string; day?: string; receivedAt?: string }>();
   const [session, setSession] = useState<AcceleratedDemoSession | null | undefined>(undefined);
-  const [days, setDays] = useState<DemoDay[] | null>(null);
+  const [content, setContent] = useState<{ language: string; days: DemoDay[] } | null>(null);
   const [now, setNow] = useState(Date.now);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<ErrorKind>(null);
   const [notice, setNotice] = useState<'stopped' | null>(null);
-  const [notificationPreview, setNotificationPreview] = useState<{ runId: string; day: number; receivedOnDay: number } | null>(null);
   const completedRun = useRef<string | null>(null);
   const mounted = useRef(true);
   const operation = useRef(false);
 
-  const refresh = useCallback(async () => {
-    try {
-      const saved = await loadDemoSession();
+  const refresh = useCallback(() => {
+    return loadDemoSession().then(saved => {
       if (mounted.current) {
         setSession(saved);
         setNow(Date.now());
         setError(current => current === 'load' ? null : current);
       }
-    } catch {
+    }).catch(() => {
       if (mounted.current) setError('load');
-    }
-  }, []);
+    });
+  }, [setError, setSession, setNow]);
+
+  useFocusEffect(useCallback(() => {
+    if (acceleratedDemoEnabled) void refresh();
+  }, [refresh]));
 
   useEffect(() => {
     mounted.current = true;
     if (!acceleratedDemoEnabled) return;
-    void refresh();
     const clock = setInterval(() => setNow(Date.now()), 1000);
     const subscription = AppState.addEventListener('change', state => {
       if (state === 'active') void refresh();
@@ -67,22 +68,13 @@ export default function DemoScreen() {
   useEffect(() => {
     if (!acceleratedDemoEnabled) return;
     let active = true;
-    setDays(null);
     void buildDemoDays(preferences.language).then(value => {
-      if (active) setDays(value);
+      if (active) setContent({ language: preferences.language, days: value });
     }).catch(() => { if (active) setError('load'); });
     return () => { active = false; };
   }, [preferences.language]);
 
   const progress = session ? getDemoProgress(session.startedAt, now) : null;
-
-  useEffect(() => {
-    if (!session || !params.runId || !params.day) return;
-    const target = demoNotificationTarget({ kind: 'accelerated-demo', runId: params.runId, demoDay: params.day }, session, Date.now());
-    if (!target) return;
-    setNotificationPreview({ runId: session.runId, day: Number(target.params.day), receivedOnDay: getDemoProgress(session.startedAt, Date.now()).day });
-    router.setParams({ runId: '', day: '' });
-  }, [params.day, params.runId, session]);
 
   useEffect(() => {
     if (!session || !progress?.completed || completedRun.current === session.runId) return;
@@ -103,10 +95,9 @@ export default function DemoScreen() {
       const saved = await startDemoSession(preferences.language, { title: copy.notificationTitle, body: copy.notificationBody });
       if (mounted.current) {
         setSession(saved);
-        setNotificationPreview(null);
-        setNow(Date.now());
+        setNow(saved.startedAt);
         completedRun.current = null;
-        router.setParams({ runId: '', day: '' });
+        router.setParams({ runId: '', day: '', receivedAt: '' });
       }
     } catch (caught) {
       if (mounted.current) {
@@ -132,9 +123,8 @@ export default function DemoScreen() {
       await stopDemoSession();
       if (mounted.current) {
         setSession(null);
-        setNotificationPreview(null);
         setNotice('stopped');
-        router.setParams({ runId: '', day: '' });
+        router.setParams({ runId: '', day: '', receivedAt: '' });
       }
     } catch { if (mounted.current) setError('cleanup'); }
     finally { operation.current = false; if (mounted.current) setBusy(false); }
@@ -144,8 +134,12 @@ export default function DemoScreen() {
   if (!ready) return <Screen><ActivityIndicator color={colors.primary} /></Screen>;
 
   const liveDay = progress?.day ?? 1;
-  const shownDay = notificationPreview && session?.runId === notificationPreview.runId && notificationPreview.receivedOnDay === liveDay
-    ? notificationPreview.day : liveDay;
+  const pending = demoNotificationTarget({ kind: 'accelerated-demo', runId: params.runId, demoDay: params.day }, session ?? null, now);
+  const receivedAt = params.receivedAt && /^\d+$/.test(params.receivedAt) ? Number(params.receivedAt) : NaN;
+  const receivedOnDay = session && Number.isSafeInteger(receivedAt) && receivedAt >= session.startedAt && receivedAt <= now
+    ? getDemoProgress(session.startedAt, receivedAt).day : null;
+  const shownDay = pending && receivedOnDay === liveDay ? Number(pending.params.day) : liveDay;
+  const days = content?.language === preferences.language ? content.days : null;
   const day = days?.[shownDay - 1];
   const remainingSeconds = progress?.nextChangeAt ? Math.max(0, Math.ceil((progress.nextChangeAt - now) / 1000)) : 0;
   const time = `${Math.floor(remainingSeconds / 60)}:${String(remainingSeconds % 60).padStart(2, '0')}`;
@@ -162,7 +156,7 @@ export default function DemoScreen() {
       </View>
       {errorText ? <View style={styles.status}><Text accessibilityRole="alert" style={styles.error}>{errorText}</Text>
         {error === 'permission' ? <Button label={copy.openSettings} variant="secondary" onPress={() => { void Linking.openSettings().catch(() => setError('permission')); }} /> : null}
-        {error === 'load' ? <Button label={copy.retry} onPress={() => { void refresh(); void buildDemoDays(preferences.language).then(setDays).catch(() => setError('load')); }} /> : null}
+        {error === 'load' ? <Button label={copy.retry} onPress={() => { void refresh(); void buildDemoDays(preferences.language).then(value => setContent({ language: preferences.language, days: value })).catch(() => setError('load')); }} /> : null}
       </View> : null}
       {notice ? <Text accessibilityLiveRegion="polite" style={styles.body}>{copy.stopped}</Text> : null}
       <View style={styles.controls}>

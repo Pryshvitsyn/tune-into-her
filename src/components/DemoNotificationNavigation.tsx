@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 
 import { acceleratedDemoEnabled } from '../config/acceleratedDemo';
 import { useApp } from '../context/AppContext';
-import { demoNotificationTarget } from '../domain/navigation/demoNotificationTarget';
+import { demoNotificationCandidate, demoNotificationTarget } from '../domain/navigation/demoNotificationTarget';
 import { loadDemoSession } from '../services/notifications/acceleratedDemo';
 
 export function DemoNotificationNavigation() {
@@ -22,11 +22,16 @@ export function DemoNotificationNavigation() {
       if (!active) return;
       const target = demoNotificationTarget(request.content.data, session, Date.now());
       handled.current = request.identifier;
-      if (target) router.push(target);
+      if (target) router.replace({ ...target, params: { ...target.params, receivedAt: String(Date.now()) } });
       void Notifications.clearLastNotificationResponseAsync().catch(() => undefined);
     }).catch(() => {
       // The screen provides a visible retry when local storage cannot be read.
-      if (active) router.push('/demo');
+      if (active) {
+        const pending = demoNotificationCandidate(request.content.data);
+        handled.current = request.identifier;
+        if (pending) router.replace({ ...pending, params: { ...pending.params, receivedAt: String(Date.now()) } });
+        void Notifications.clearLastNotificationResponseAsync().catch(() => undefined);
+      }
     });
     return () => { active = false; };
   }, [navigation?.key, ready, response]);
