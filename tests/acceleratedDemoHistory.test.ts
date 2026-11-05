@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { SUPPORTED_LANGUAGES } from '../src/config/constants';
 import type { DailySelection } from '../src/domain/content/types';
 import { buildDemoDays } from '../src/domain/demo/acceleratedDemo';
 import { AsyncSelectionStore } from '../src/storage/AsyncSelectionStore';
@@ -61,5 +62,20 @@ describe('accelerated demonstration history isolation', () => {
     expect(persistence.secureStore.setItemAsync).not.toHaveBeenCalled();
     expect(persistence.plain).toEqual(plainBefore);
     expect(persistence.secure).toEqual(secureBefore);
+  });
+});
+
+describe('expanded reserve in the installed preview', () => {
+  it('renders thirty distinct blocks in every locale with stable IDs and daily gratitude', async () => {
+    const english = await buildDemoDays('en');
+    for (const language of SUPPORTED_LANGUAGES) {
+      const days = await buildDemoDays(language);
+      expect(days.map(day => day.cueId)).toEqual(english.map(day => day.cueId));
+      expect(days.every(day => day.cueId.startsWith('reserve_'))).toBe(true);
+      for (const key of ['cue', 'support', 'context'] as const) {
+        expect(new Set(days.map(day => day.cue[key].normalize('NFKC'))).size, `${language}:${key}`).toBe(30);
+      }
+      expect(days.every(day => day.reminders.filter(line => line.id === 'gratitude').length === 1)).toBe(true);
+    }
   });
 });

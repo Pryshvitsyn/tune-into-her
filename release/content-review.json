@@ -1,0 +1,63 @@
+{
+  "contentVersion": 4,
+  "scope": "All original and expanded editorial copy. Structural validation is not native-language approval.",
+  "locales": {
+    "en": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "fr": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "it": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "es": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "de": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "ru": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "uk": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "hi": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "zh-Hans": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "ms": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "mbf": {
+      "status": "needs-native-review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "communityReview": "pending",
+      "notes": "Provisional Baba/Peranakan Malay register; community review of regional vocabulary, address and naturalness required."
+    }
+  }
+}

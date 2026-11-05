@@ -2418,5 +2418,635 @@
     "cue": "Handle the details of an agreed journey, including the way home.",
     "support": "Name a quality you admire and a recent example of it.",
     "context": "Do not use this app to win an argument."
+  },
+  "reserve_menstrual_001": {
+    "cue": "If she wants period supplies, check her preferred product and bring exactly that.",
+    "support": "Ask whether she wants help preparing for tomorrow's meeting.",
+    "context": "Do not suggest medication from this calendar."
+  },
+  "reserve_follicular_001": {
+    "cue": "Offer one small step in a project she has chosen; do not assume extra energy.",
+    "support": "Ask whether she wants help preparing for tomorrow's meeting.",
+    "context": "Do not suggest medication from this calendar."
+  },
+  "reserve_mid_cycle_001": {
+    "cue": "Suggest time together without treating an estimated phase as consent.",
+    "support": "Ask whether she wants help preparing for tomorrow's meeting.",
+    "context": "Do not suggest medication from this calendar."
+  },
+  "reserve_luteal_001": {
+    "cue": "Before the estimated period, ask whether her usual supplies need restocking.",
+    "support": "Ask whether she wants help preparing for tomorrow's meeting.",
+    "context": "Do not suggest medication from this calendar."
+  },
+  "reserve_menstrual_002": {
+    "cue": "Offer to empty the bathroom bin discreetly; keep her belongings private.",
+    "support": "Ask which part of a new responsibility feels unclear.",
+    "context": "A changed routine deserves an updated agreement."
+  },
+  "reserve_follicular_002": {
+    "cue": "Suggest an activity she enjoys and leave the pace to her.",
+    "support": "Ask which part of a new responsibility feels unclear.",
+    "context": "A changed routine deserves an updated agreement."
+  },
+  "reserve_mid_cycle_002": {
+    "cue": "Ask what kind of closeness she wants; a quiet evening is a complete answer.",
+    "support": "Ask which part of a new responsibility feels unclear.",
+    "context": "A changed routine deserves an updated agreement."
+  },
+  "reserve_luteal_002": {
+    "cue": "Offer to prepare an agreed meal ahead so the evening is less rushed.",
+    "support": "Ask which part of a new responsibility feels unclear.",
+    "context": "A changed routine deserves an updated agreement."
+  },
+  "reserve_menstrual_003": {
+    "cue": "If she reports discomfort, offer her usual comfort item; otherwise take an ordinary chore.",
+    "support": "Ask what made a recent task satisfying.",
+    "context": "Do not compare her current capacity with someone else's."
+  },
+  "reserve_follicular_003": {
+    "cue": "Ask whether she wants to plan an outing; staying home is equally valid.",
+    "support": "Ask what made a recent task satisfying.",
+    "context": "Do not compare her current capacity with someone else's."
+  },
+  "reserve_mid_cycle_003": {
+    "cue": "Help organise a date you both want, with room to change the plan.",
+    "support": "Ask what made a recent task satisfying.",
+    "context": "Do not compare her current capacity with someone else's."
+  },
+  "reserve_luteal_003": {
+    "cue": "If she asks for a lighter schedule, handle one practical rearrangement.",
+    "support": "Ask what made a recent task satisfying.",
+    "context": "Do not compare her current capacity with someone else's."
+  },
+  "reserve_menstrual_004": {
+    "cue": "Ask whether an easier meal would help during her period; follow her actual appetite.",
+    "support": "Ask whether a decision needs more information or more time.",
+    "context": "A deadline you chose is not automatically her emergency."
+  },
+  "reserve_follicular_004": {
+    "cue": "Make space for her chosen hobby by completing your own household task.",
+    "support": "Ask whether a decision needs more information or more time.",
+    "context": "A deadline you chose is not automatically her emergency."
+  },
+  "reserve_mid_cycle_004": {
+    "cue": "Protect agreed personal time instead of assuming she wants company.",
+    "support": "Ask whether a decision needs more information or more time.",
+    "context": "A deadline you chose is not automatically her emergency."
+  },
+  "reserve_luteal_004": {
+    "cue": "Review your share of upcoming chores without assuming how she feels.",
+    "support": "Ask whether a decision needs more information or more time.",
+    "context": "A deadline you chose is not automatically her emergency."
+  },
+  "reserve_menstrual_005": {
+    "cue": "If she wants to rest during her period, agree a quiet household window.",
+    "support": "Ask what she wants to learn this month.",
+    "context": "Give notice when your availability changes."
+  },
+  "reserve_follicular_005": {
+    "cue": "If she chooses a new class, offer to check its schedule without enrolling her.",
+    "support": "Ask what she wants to learn this month.",
+    "context": "Give notice when your availability changes."
+  },
+  "reserve_mid_cycle_005": {
+    "cue": "If you both want an outing, ask whether photos should stay private.",
+    "support": "Ask what she wants to learn this month.",
+    "context": "Give notice when your availability changes."
+  },
+  "reserve_luteal_005": {
+    "cue": "Before the estimated period, check your own upcoming deadlines to avoid last-minute reliance on her.",
+    "support": "Ask what she wants to learn this month.",
+    "context": "Give notice when your availability changes."
+  },
+  "reserve_menstrual_006": {
+    "cue": "If she mentions a stain, ask whether she wants help washing the item privately.",
+    "support": "Ask if she wants you to rehearse a presentation with her.",
+    "context": "An invitation should name the practical commitment involved."
+  },
+  "reserve_follicular_006": {
+    "cue": "If she wants to start a project, ask which materials she has chosen.",
+    "support": "Ask if she wants you to rehearse a presentation with her.",
+    "context": "An invitation should name the practical commitment involved."
+  },
+  "reserve_mid_cycle_006": {
+    "cue": "Agree a return time before arranging shared evening plans.",
+    "support": "Ask if she wants you to rehearse a presentation with her.",
+    "context": "An invitation should name the practical commitment involved."
+  },
+  "reserve_luteal_006": {
+    "cue": "If she wants fewer errands before her period, offer to combine two agreed stops.",
+    "support": "Ask if she wants you to rehearse a presentation with her.",
+    "context": "An invitation should name the practical commitment involved."
+  },
+  "reserve_menstrual_007": {
+    "cue": "Before a period-day outing, ask whether she wants a shorter travel time.",
+    "support": "Ask which commitment she wants to keep time for this week.",
+    "context": "Do not spend shared money on a surprise without agreed limits."
+  },
+  "reserve_follicular_007": {
+    "cue": "Offer to protect one study session she chooses, without assuming a productive phase.",
+    "support": "Ask which commitment she wants to keep time for this week.",
+    "context": "Do not spend shared money on a surprise without agreed limits."
+  },
+  "reserve_mid_cycle_007": {
+    "cue": "If she wants company, ask which activity she actually enjoys today.",
+    "support": "Ask which commitment she wants to keep time for this week.",
+    "context": "Do not spend shared money on a surprise without agreed limits."
+  },
+  "reserve_luteal_007": {
+    "cue": "Ask whether she wants the coming weekend kept flexible; do not decide from the phase.",
+    "support": "Ask which commitment she wants to keep time for this week.",
+    "context": "Do not spend shared money on a surprise without agreed limits."
+  },
+  "reserve_menstrual_008": {
+    "cue": "If period discomfort interrupts a task, offer to complete its agreed final step.",
+    "support": "Ask whether she wants help finding words for a difficult request.",
+    "context": "Reading a message together still requires the sender's privacy to matter."
+  },
+  "reserve_follicular_008": {
+    "cue": "If she wants a new outing, find its cost before asking her to commit.",
+    "support": "Ask whether she wants help finding words for a difficult request.",
+    "context": "Reading a message together still requires the sender's privacy to matter."
+  },
+  "reserve_mid_cycle_008": {
+    "cue": "If she declines a date, cancel its arrangements without asking her to defend the choice.",
+    "support": "Ask whether she wants help finding words for a difficult request.",
+    "context": "Reading a message together still requires the sender's privacy to matter."
+  },
+  "reserve_luteal_008": {
+    "cue": "If she reports sensitivity to noise, offer headphones for your own audio.",
+    "support": "Ask whether she wants help finding words for a difficult request.",
+    "context": "Reading a message together still requires the sender's privacy to matter."
+  },
+  "reserve_menstrual_009": {
+    "cue": "If she wants extra clothing for an outing, ask which item to pack.",
+    "support": "Ask what helped her feel included recently.",
+    "context": "She can enjoy an activity without wanting to repeat it weekly."
+  },
+  "reserve_follicular_009": {
+    "cue": "Ask whether she wants a trial step before buying equipment for a chosen hobby.",
+    "support": "Ask what helped her feel included recently.",
+    "context": "She can enjoy an activity without wanting to repeat it weekly."
+  },
+  "reserve_mid_cycle_009": {
+    "cue": "Ask before making a public post about time you spent together.",
+    "support": "Ask what helped her feel included recently.",
+    "context": "She can enjoy an activity without wanting to repeat it weekly."
+  },
+  "reserve_luteal_009": {
+    "cue": "If she wants simpler mornings before her period, offer to prepare your shared breakfast supplies.",
+    "support": "Ask what helped her feel included recently.",
+    "context": "She can enjoy an activity without wanting to repeat it weekly."
+  },
+  "reserve_menstrual_010": {
+    "cue": "If she prefers a quieter period-day meal, offer to postpone guests with her agreement.",
+    "support": "Ask whether she wants company while tackling paperwork.",
+    "context": "Tiredness is not a character flaw."
+  },
+  "reserve_follicular_010": {
+    "cue": "If she chooses to reconnect with a friend, offer practical space for that visit.",
+    "support": "Ask whether she wants company while tackling paperwork.",
+    "context": "Tiredness is not a character flaw."
+  },
+  "reserve_mid_cycle_010": {
+    "cue": "If you choose a group activity, agree how either person can leave independently.",
+    "support": "Ask whether she wants company while tackling paperwork.",
+    "context": "Tiredness is not a character flaw."
+  },
+  "reserve_luteal_010": {
+    "cue": "If an expected period overlaps travel, ask whether she wants a more flexible booking.",
+    "support": "Ask whether she wants company while tackling paperwork.",
+    "context": "Tiredness is not a character flaw."
+  },
+  "reserve_menstrual_011": {
+    "cue": "Ask whether her usual period comfort item needs cleaning before returning it.",
+    "support": "Ask which recent choice she feels proud of.",
+    "context": "A plan can include doing less than the available time allows."
+  },
+  "reserve_follicular_011": {
+    "cue": "If she wants to organise a project shelf, ask which objects you may handle.",
+    "support": "Ask which recent choice she feels proud of.",
+    "context": "A plan can include doing less than the available time allows."
+  },
+  "reserve_mid_cycle_011": {
+    "cue": "If she wants physical activity together, let her choose the intensity.",
+    "support": "Ask which recent choice she feels proud of.",
+    "context": "A plan can include doing less than the available time allows."
+  },
+  "reserve_luteal_011": {
+    "cue": "If she wants fewer decisions tonight, ask permission to choose one already agreed household option.",
+    "support": "Ask which recent choice she feels proud of.",
+    "context": "A plan can include doing less than the available time allows."
+  },
+  "reserve_menstrual_012": {
+    "cue": "If she needs a bathroom stop during her period, help find one without announcing why.",
+    "support": "Ask if an upcoming event has any awkward practical details.",
+    "context": "Do not treat tears as a tactic by default."
+  },
+  "reserve_follicular_012": {
+    "cue": "If she prefers not to start anything new, support keeping today's ordinary routine.",
+    "support": "Ask if an upcoming event has any awkward practical details.",
+    "context": "Do not treat tears as a tactic by default."
+  },
+  "reserve_mid_cycle_012": {
+    "cue": "If she chooses solo time, use it for your own plans without repeated check-ins.",
+    "support": "Ask if an upcoming event has any awkward practical details.",
+    "context": "Do not treat tears as a tactic by default."
+  },
+  "reserve_luteal_012": {
+    "cue": "If she feels well before the estimated period, keep the activity she actually chose.",
+    "support": "Ask if an upcoming event has any awkward practical details.",
+    "context": "Do not treat tears as a tactic by default."
+  },
+  "reserve_all_013": {
+    "cue": "Do your share of a household task so she can take a break if she wants.",
+    "support": "Ask whether she wants help comparing options without a recommendation.",
+    "context": "Support should not create a debt she must repay."
+  },
+  "reserve_all_014": {
+    "cue": "Fix one small household annoyance you have already agreed to address.",
+    "support": "Ask what she would like to finish before taking a break.",
+    "context": "A clear request names the action, not a judgment about personality."
+  },
+  "reserve_all_015": {
+    "cue": "Store the leftovers and leave the kitchen ready for the next meal.",
+    "support": "Ask whether a family expectation needs discussing together.",
+    "context": "Do not negotiate someone else's boundary in front of guests."
+  },
+  "reserve_all_016": {
+    "cue": "Check shared bathroom supplies and replace what is running out.",
+    "support": "Ask what she wants a visitor to know before arriving.",
+    "context": "Her professional goals deserve time alongside shared obligations."
+  },
+  "reserve_all_017": {
+    "cue": "Offer to change the bed linen; agree on timing first.",
+    "support": "Ask whether she wants a clear end time for today's social plans.",
+    "context": "Help with a form does not give you authority to sign it for her."
+  },
+  "reserve_all_018": {
+    "cue": "Suggest a short walk with an easy route and an easy option to decline.",
+    "support": "Ask which skill of hers she wishes people noticed more.",
+    "context": "A question about symptoms can be declined."
+  },
+  "reserve_all_019": {
+    "cue": "Choose two realistic dinner options and let her say what suits her.",
+    "support": "Ask whether she wants feedback now or after resting.",
+    "context": "Doing your part is not babysitting your own household."
+  },
+  "reserve_all_020": {
+    "cue": "Finish one administrative task that is your responsibility.",
+    "support": "Ask which part of a shared plan she wants to lead.",
+    "context": "Do not ask her to manage your reminder system."
+  },
+  "reserve_all_021": {
+    "cue": "Tidy your shoes and belongings from the entrance.",
+    "support": "Ask what would make asking for help feel easier.",
+    "context": "A preference can be specific without being unreasonable."
+  },
+  "reserve_all_022": {
+    "cue": "Split a large shared task into steps and complete your agreed part.",
+    "support": "Ask whether she wants you present during an agreed difficult call.",
+    "context": "Do not make her the audience for complaints about helping her."
+  },
+  "reserve_all_023": {
+    "cue": "Offer to prepare a snack or packed lunch using her preferences.",
+    "support": "Ask what felt fair in a recent shared decision.",
+    "context": "An apology does not require immediate forgiveness."
+  },
+  "reserve_all_024": {
+    "cue": "Finish one small thing you promised, then say it is done.",
+    "support": "Ask whether a recurring interruption needs a new agreement.",
+    "context": "Do not use public appreciation to reveal private struggles."
+  },
+  "reserve_all_025": {
+    "cue": "Clean the sink after your morning routine.",
+    "support": "Ask which upcoming deadline needs protected time.",
+    "context": "A realistic estimate includes preparation and cleanup."
+  },
+  "reserve_all_026": {
+    "cue": "Descale the kettle if it needs it.",
+    "support": "Ask whether she wants to revisit a household division of labour.",
+    "context": "Do not interpret a quiet journey as a relationship verdict."
+  },
+  "reserve_all_027": {
+    "cue": "Clean expired food from your shared fridge together with its owner.",
+    "support": "Ask what makes a workspace comfortable for her.",
+    "context": "The person affected should help define what successful help means."
+  },
+  "reserve_all_028": {
+    "cue": "Wipe the hob once it has cooled.",
+    "support": "Ask whether she wants help remembering a question for an appointment.",
+    "context": "Avoid making jokes about her competence when she asks for help."
+  },
+  "reserve_all_029": {
+    "cue": "Replace the kitchen towel with a clean one.",
+    "support": "Ask what she enjoyed about a recent conversation with a friend.",
+    "context": "Shared access to a device is not consent to open every file."
+  },
+  "reserve_all_030": {
+    "cue": "Vacuum a shared room at an agreed time.",
+    "support": "Ask whether she wants support holding a boundary with visitors.",
+    "context": "Do not turn a personal interest into a lesson without being invited."
+  },
+  "reserve_all_031": {
+    "cue": "Sort your own papers from the shared table.",
+    "support": "Ask which daily transition feels most rushed.",
+    "context": "Late notice has a cost even when the change is unavoidable."
+  },
+  "reserve_all_032": {
+    "cue": "Return borrowed household items to their agreed place.",
+    "support": "Ask whether she prefers written details for a shared arrangement.",
+    "context": "A skill she has does not make every related task her responsibility."
+  },
+  "reserve_all_033": {
+    "cue": "Check the shared calendar before proposing weekend plans.",
+    "support": "Ask what she wants you to know about her current workload.",
+    "context": "Do not demand a positive reaction to an unwanted surprise."
+  },
+  "reserve_all_034": {
+    "cue": "Confirm the opening hours for an agreed errand.",
+    "support": "Ask whether a planned purchase needs a spending limit first.",
+    "context": "Support can include admitting that you do not know the answer."
+  },
+  "reserve_all_035": {
+    "cue": "Pack your own bag before a shared outing.",
+    "support": "Ask what she wants to preserve in a changing routine.",
+    "context": "Keep access needs separate from assumptions about motivation."
+  },
+  "reserve_all_036": {
+    "cue": "Offer to collect an agreed parcel.",
+    "support": "Ask if she wants help identifying the first step of a stalled task.",
+    "context": "A shared goal should allow both people to revise their part."
+  },
+  "reserve_all_037": {
+    "cue": "Take agreed recycling to the collection point.",
+    "support": "Ask which environment makes concentrating easier.",
+    "context": "An earlier refusal need not be challenged again today."
+  },
+  "reserve_all_038": {
+    "cue": "Water shared plants according to the agreed schedule.",
+    "support": "Ask if she wants an interruption-free window for a personal interest.",
+    "context": "Measure useful support by her experience, not by your intention alone."
+  },
+  "reserve_all_039": {
+    "cue": "Check whether the shared shopping list has duplicates.",
+    "support": "Ask what a useful progress update would look like.",
+    "context": "Do not replace her chosen product with your preferred one without asking."
+  },
+  "reserve_all_040": {
+    "cue": "Agree who will receive a scheduled delivery.",
+    "support": "Ask whether an old agreement still fits current circumstances.",
+    "context": "Free time does not automatically mean availability for requests."
+  },
+  "reserve_all_041": {
+    "cue": "Offer to handle the booking for an agreed shared appointment.",
+    "support": "Ask what she would like to delegate and what she wants to keep.",
+    "context": "A compromise needs a clear agreement about who does what."
+  },
+  "reserve_all_042": {
+    "cue": "Put clean dishes within everyone's agreed reach.",
+    "support": "Ask if she wants a backup plan for an uncertain commitment.",
+    "context": "Do not rank her concerns against other people's harder experiences."
+  },
+  "reserve_all_043": {
+    "cue": "Clean crumbs from the dining area after eating.",
+    "support": "Ask what would make a shared journey less tiring.",
+    "context": "Her stated wellbeing matters more than the calendar estimate."
+  },
+  "reserve_all_044": {
+    "cue": "Check whether shared towels need washing.",
+    "support": "Ask which part of hosting feels like hidden work.",
+    "context": "A changed plan does not require an explanation about hormones."
+  },
+  "reserve_all_045": {
+    "cue": "Offer to prepare the guest space for agreed visitors.",
+    "support": "Ask whether she wants you to remember a name or detail from her day.",
+    "context": "An offer is useful only when “no” is a real option."
+  },
+  "reserve_all_046": {
+    "cue": "Check the return deadline for a shared purchase.",
+    "support": "Ask what helped her recover after a recent busy day.",
+    "context": "Do not turn practical help into a request for praise or affection."
+  },
+  "reserve_all_047": {
+    "cue": "File the receipt for a shared expense.",
+    "support": "Ask whether she wants questions saved until she finishes her thought.",
+    "context": "Ask before touching or moving personal belongings."
+  },
+  "reserve_all_048": {
+    "cue": "Set your own alarm instead of relying on her to wake you.",
+    "support": "Ask which small expense needs a shared decision.",
+    "context": "Different preferences do not mean that either person is wrong."
+  },
+  "reserve_all_049": {
+    "cue": "Offer to check transport options for a shared visit.",
+    "support": "Ask whether she wants to keep a personal milestone private.",
+    "context": "Do not infer a mood from the estimated cycle phase."
+  },
+  "reserve_all_050": {
+    "cue": "Clear your downloads or work papers from a shared device.",
+    "support": "Ask what an easier morning would include for her.",
+    "context": "Keep private cycle information private unless she agrees otherwise."
+  },
+  "reserve_all_051": {
+    "cue": "Ask before adjusting shared heating or ventilation.",
+    "support": "Ask if she wants help setting a realistic stopping point today.",
+    "context": "A promise is easier to trust when you give a realistic time."
+  },
+  "reserve_all_052": {
+    "cue": "Offer a quieter route for an agreed outing.",
+    "support": "Ask which expectation she wants clarified before saying yes.",
+    "context": "Finish the task rather than leaving the organising to her."
+  },
+  "reserve_all_053": {
+    "cue": "Finish cleaning the tools after your repair.",
+    "support": "Ask whether an upcoming change affects her personal time.",
+    "context": "Ask one clear question instead of repeatedly checking on her."
+  },
+  "reserve_all_054": {
+    "cue": "Check a shared bill's due date and your agreed contribution.",
+    "support": "Ask which source of information she would trust for this decision.",
+    "context": "Silence can be comfortable; check before trying to fill it."
+  },
+  "reserve_all_055": {
+    "cue": "Offer to measure a space before a shared furniture purchase.",
+    "support": "Ask whether she wants a problem written down before discussing solutions.",
+    "context": "You can listen carefully without agreeing on every detail."
+  },
+  "reserve_all_056": {
+    "cue": "Wash the reusable shopping bags if needed.",
+    "support": "Ask what makes a shared space feel welcoming to her.",
+    "context": "Pause a tense discussion and agree when to return to it."
+  },
+  "reserve_all_057": {
+    "cue": "Replace empty soap in the shared dispenser.",
+    "support": "Ask if she wants support declining an invitation without explaining why.",
+    "context": "Do not use this app to win an argument."
+  },
+  "reserve_all_058": {
+    "cue": "Offer to write the agreed packing checklist.",
+    "support": "Ask which detail you should confirm before handling her request.",
+    "context": "An apology names your action and the repair you will make."
+  },
+  "reserve_all_059": {
+    "cue": "Confirm an agreed appointment without making her chase you.",
+    "support": "Ask whether she wants a quiet arrival after today's outing.",
+    "context": "A good day does not create an obligation to be social or intimate."
+  },
+  "reserve_all_060": {
+    "cue": "Put your work notifications on silent during an agreed meal.",
+    "support": "Ask what she wants recognised about learning something difficult.",
+    "context": "You can offer support without taking over her decisions."
+  },
+  "reserve_all_061": {
+    "cue": "Offer to check accessibility at a planned venue.",
+    "support": "Ask whether she wants to choose the order of shared errands.",
+    "context": "Respect a boundary even when you do not understand its reason."
+  },
+  "reserve_all_062": {
+    "cue": "Clean the coffee maker after using it.",
+    "support": "Ask if she wants you to summarise an agreement before acting.",
+    "context": "Do not share her personal experience as a joke."
+  },
+  "reserve_all_063": {
+    "cue": "Offer to take agreed donations to a collection point.",
+    "support": "Ask which part of the week she wants to leave unplanned.",
+    "context": "Notice what worked and ask before repeating it another day."
+  },
+  "reserve_all_064": {
+    "cue": "Check whether shared umbrellas are dry before storing them.",
+    "support": "Ask what she would prefer you not to troubleshoot today.",
+    "context": "Keep your own responsibilities visible and manageable."
+  },
+  "reserve_all_065": {
+    "cue": "Offer to charge a shared device before your joint trip.",
+    "support": "Ask whether a shared goal still feels like her choice too.",
+    "context": "If you misunderstood, ask calmly rather than guessing intent."
+  },
+  "reserve_all_066": {
+    "cue": "Organise your own medication or personal supplies.",
+    "support": "Ask whether she wants help checking the conditions of a new commitment.",
+    "context": "Small reliable actions matter more than a grand promise."
+  },
+  "reserve_all_067": {
+    "cue": "Offer to cover the agreed household delivery window.",
+    "support": "Ask: “Would you like listening, ideas, or practical help?”",
+    "context": "Household work includes noticing what needs doing."
+  },
+  "reserve_all_068": {
+    "cue": "Clean your hair from the shower drain after washing.",
+    "support": "Put your phone aside and listen without preparing a reply.",
+    "context": "A shared budget needs both people's agreement."
+  },
+  "reserve_all_069": {
+    "cue": "Offer to move your noisy task to another time.",
+    "support": "Ask: “What would make this evening easier for you?”",
+    "context": "Permission to help does not include permission to inspect private messages."
+  },
+  "reserve_all_070": {
+    "cue": "Check the ingredients before cooking an agreed meal.",
+    "support": "Reflect what you heard, then check you understood correctly.",
+    "context": "A work deadline does not erase the need for rest."
+  },
+  "reserve_all_071": {
+    "cue": "Offer to print or organise agreed shared travel documents.",
+    "support": "Say: “We can change the plan if it no longer works for you.”",
+    "context": "Her friendships do not require your supervision."
+  },
+  "reserve_all_072": {
+    "cue": "Remove your empty containers from the shared fridge.",
+    "support": "Ask whether she would prefer company or some time alone.",
+    "context": "A guest invitation changes both people's home time."
+  },
+  "reserve_all_073": {
+    "cue": "Offer to compare two agreed service quotes.",
+    "support": "Name one effort you noticed and thank her specifically for it.",
+    "context": "A missed message is not proof of rejection."
+  },
+  "reserve_all_074": {
+    "cue": "Set a reminder for your own recurring household responsibility.",
+    "support": "Ask which part of the day was hardest; let her decide how much to share.",
+    "context": "An estimate in this app cannot establish a fertile day."
+  },
+  "reserve_all_075": {
+    "cue": "Offer to organise the agreed shared subscription renewal.",
+    "support": "Say: “You do not have to explain everything right now.”",
+    "context": "Past consent does not replace a current answer."
+  },
+  "reserve_all_076": {
+    "cue": "Ask which light setting suits the shared room now.",
+    "support": "Offer a hug as a question, and accept either answer warmly.",
+    "context": "Feedback is easier to use when it names one observable action."
+  },
+  "reserve_all_077": {
+    "cue": "Put your used cups in the dishwasher or wash them.",
+    "support": "Ask what she would like you to remember for next time.",
+    "context": "Do not announce her achievements without asking."
+  },
+  "reserve_all_078": {
+    "cue": "Offer to research disposal options for an agreed broken item.",
+    "support": "Acknowledge her feeling without telling her how she should feel.",
+    "context": "A task done differently is not automatically done badly."
+  },
+  "reserve_all_079": {
+    "cue": "Make room for her workspace by moving your own clutter.",
+    "support": "Say: “I can handle my part; you do not need to remind me.”",
+    "context": "Do not volunteer her time to relatives or friends."
+  },
+  "reserve_all_080": {
+    "cue": "Offer to check the weather before finalising shared outdoor plans.",
+    "support": "Ask whether she wants a check-in later or would rather initiate it.",
+    "context": "A private hobby does not need a productivity goal."
+  },
+  "reserve_all_081": {
+    "cue": "Offer to update the shared emergency-contact list with permission.",
+    "support": "Name a quality you admire and a recent example of it.",
+    "context": "Urgency should be stated, not implied through repeated messages."
+  },
+  "reserve_all_082": {
+    "cue": "Offer to prepare a separate portion for an agreed dietary need.",
+    "support": "Thank her for something ordinary that often goes unnoticed.",
+    "context": "Do not correct harmless details while she tells a story."
+  },
+  "reserve_all_083": {
+    "cue": "Check that you have your keys before leaving together.",
+    "support": "Ask: “Is there something you want to celebrate today?”",
+    "context": "Fairness considers time and effort, not just task counts."
+  },
+  "reserve_all_084": {
+    "cue": "Offer to handle your agreed part of post-visit cleanup.",
+    "support": "Let her finish her sentence before asking your next question.",
+    "context": "An unanswered offer can wait without pressure."
+  },
+  "reserve_all_085": {
+    "cue": "Offer to test an agreed video-call setup before a family call.",
+    "support": "Say: “I hear that this matters to you.”",
+    "context": "Avoid discussing confidential matters where others can hear."
+  },
+  "reserve_all_086": {
+    "cue": "Clear your lint from the dryer filter after use.",
+    "support": "Ask whether she wants reassurance or space to think.",
+    "context": "A delayed start may need fewer obstacles, not criticism."
+  },
+  "reserve_all_087": {
+    "cue": "Offer to prepare a place to sit during a planned long wait.",
+    "support": "Mention a moment when her care made a difference to you.",
+    "context": "A financial concern deserves discussion without ridicule."
+  },
+  "reserve_all_088": {
+    "cue": "Label agreed shared leftovers with the preparation date.",
+    "support": "Share one thing you appreciate about your time together.",
+    "context": "Travel planning includes a workable way to leave early."
+  },
+  "reserve_all_089": {
+    "cue": "Offer to check a booking's cancellation terms before paying.",
+    "support": "Ask what kind of help she does not want today.",
+    "context": "Do not turn a shared calendar into a tracking tool."
+  },
+  "reserve_all_090": {
+    "cue": "Offer to check the route home before the last transport leaves.",
+    "support": "Say when you are available to talk, and keep that time free.",
+    "context": "Her description of pain should not need your proof."
   }
 }

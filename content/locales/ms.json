@@ -2418,5 +2418,635 @@
     "cue": "Urus butiran perjalanan yang dipersetujui, termasuk perjalanan pulang.",
     "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
     "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
+  },
+  "reserve_menstrual_001": {
+    "cue": "Jika dia mahu produk haid, semak produk pilihannya dan belikan yang tepat.",
+    "support": "Tanya sama ada dia mahu bantuan bersedia untuk mesyuarat esok.",
+    "context": "Jangan cadangkan ubat berdasarkan kalendar ini."
+  },
+  "reserve_follicular_001": {
+    "cue": "Tawarkan satu langkah kecil untuk projek pilihannya tanpa menganggap tenaganya bertambah.",
+    "support": "Tanya sama ada dia mahu bantuan bersedia untuk mesyuarat esok.",
+    "context": "Jangan cadangkan ubat berdasarkan kalendar ini."
+  },
+  "reserve_mid_cycle_001": {
+    "cue": "Cadangkan masa bersama tanpa menganggap anggaran fasa sebagai persetujuan.",
+    "support": "Tanya sama ada dia mahu bantuan bersedia untuk mesyuarat esok.",
+    "context": "Jangan cadangkan ubat berdasarkan kalendar ini."
+  },
+  "reserve_luteal_001": {
+    "cue": "Sebelum anggaran haid, tanya sama ada produk biasanya perlu ditambah.",
+    "support": "Tanya sama ada dia mahu bantuan bersedia untuk mesyuarat esok.",
+    "context": "Jangan cadangkan ubat berdasarkan kalendar ini."
+  },
+  "reserve_menstrual_002": {
+    "cue": "Tawarkan membuang sampah bilik mandi dengan berhati-hati; jaga privasinya.",
+    "support": "Tanya bahagian tanggungjawab baharu yang kurang jelas.",
+    "context": "Rutin berubah wajar disertai persetujuan terkini."
+  },
+  "reserve_follicular_002": {
+    "cue": "Cadangkan aktiviti yang dia suka dan biarkan dia menentukan rentaknya.",
+    "support": "Tanya bahagian tanggungjawab baharu yang kurang jelas.",
+    "context": "Rutin berubah wajar disertai persetujuan terkini."
+  },
+  "reserve_mid_cycle_002": {
+    "cue": "Tanya jenis kemesraan yang dia mahu; malam yang tenang juga jawapan yang lengkap.",
+    "support": "Tanya bahagian tanggungjawab baharu yang kurang jelas.",
+    "context": "Rutin berubah wajar disertai persetujuan terkini."
+  },
+  "reserve_luteal_002": {
+    "cue": "Tawarkan menyediakan hidangan yang dipersetujui lebih awal supaya petang kurang tergesa-gesa.",
+    "support": "Tanya bahagian tanggungjawab baharu yang kurang jelas.",
+    "context": "Rutin berubah wajar disertai persetujuan terkini."
+  },
+  "reserve_menstrual_003": {
+    "cue": "Jika dia menyatakan rasa tidak selesa, tawarkan barang keselesaan biasanya; jika tidak, buat kerja biasa.",
+    "support": "Tanya apa yang memuaskan dalam tugas baru-baru ini.",
+    "context": "Jangan bandingkan keupayaannya sekarang dengan orang lain."
+  },
+  "reserve_follicular_003": {
+    "cue": "Tanya sama ada dia mahu merancang untuk keluar; duduk di rumah juga baik.",
+    "support": "Tanya apa yang memuaskan dalam tugas baru-baru ini.",
+    "context": "Jangan bandingkan keupayaannya sekarang dengan orang lain."
+  },
+  "reserve_mid_cycle_003": {
+    "cue": "Bantu mengatur janji temu yang anda berdua mahu, dengan ruang mengubah rancangan.",
+    "support": "Tanya apa yang memuaskan dalam tugas baru-baru ini.",
+    "context": "Jangan bandingkan keupayaannya sekarang dengan orang lain."
+  },
+  "reserve_luteal_003": {
+    "cue": "Jika dia meminta jadual lebih ringan, urus satu perubahan praktikal.",
+    "support": "Tanya apa yang memuaskan dalam tugas baru-baru ini.",
+    "context": "Jangan bandingkan keupayaannya sekarang dengan orang lain."
+  },
+  "reserve_menstrual_004": {
+    "cue": "Tanya sama ada hidangan ringkas membantu semasa haid; ikut seleranya yang sebenar.",
+    "support": "Tanya sama ada keputusan memerlukan maklumat atau masa tambahan.",
+    "context": "Tarikh akhir pilihanmu bukan secara automatik kecemasannya."
+  },
+  "reserve_follicular_004": {
+    "cue": "Beri ruang untuk hobinya dengan menyiapkan kerja rumah anda.",
+    "support": "Tanya sama ada keputusan memerlukan maklumat atau masa tambahan.",
+    "context": "Tarikh akhir pilihanmu bukan secara automatik kecemasannya."
+  },
+  "reserve_mid_cycle_004": {
+    "cue": "Hormati masa peribadi yang dipersetujui tanpa menganggap dia mahu ditemani.",
+    "support": "Tanya sama ada keputusan memerlukan maklumat atau masa tambahan.",
+    "context": "Tarikh akhir pilihanmu bukan secara automatik kecemasannya."
+  },
+  "reserve_luteal_004": {
+    "cue": "Semak bahagian tugas anda yang akan datang tanpa menganggap perasaannya.",
+    "support": "Tanya sama ada keputusan memerlukan maklumat atau masa tambahan.",
+    "context": "Tarikh akhir pilihanmu bukan secara automatik kecemasannya."
+  },
+  "reserve_menstrual_005": {
+    "cue": "Jika dia mahu berehat semasa haid, setujui waktu tenang di rumah.",
+    "support": "Tanya apa yang dia mahu belajar bulan ini.",
+    "context": "Beritahu apabila masa lapangmu berubah."
+  },
+  "reserve_follicular_005": {
+    "cue": "Jika dia memilih kelas baharu, tawarkan menyemak jadual tanpa mendaftarkannya.",
+    "support": "Tanya apa yang dia mahu belajar bulan ini.",
+    "context": "Beritahu apabila masa lapangmu berubah."
+  },
+  "reserve_mid_cycle_005": {
+    "cue": "Jika kedua-duanya mahu keluar, tanya sama ada gambar patut kekal peribadi.",
+    "support": "Tanya apa yang dia mahu belajar bulan ini.",
+    "context": "Beritahu apabila masa lapangmu berubah."
+  },
+  "reserve_luteal_005": {
+    "cue": "Sebelum anggaran haid, semak tarikh akhirmu supaya tidak bergantung padanya saat akhir.",
+    "support": "Tanya apa yang dia mahu belajar bulan ini.",
+    "context": "Beritahu apabila masa lapangmu berubah."
+  },
+  "reserve_menstrual_006": {
+    "cue": "Jika dia menyebut kesan kotoran, tanya sama ada dia mahu bantuan membasuhnya secara sulit.",
+    "support": "Tanya sama ada dia mahu berlatih pembentangan bersamamu.",
+    "context": "Jemputan patut menjelaskan komitmen praktikal yang terlibat."
+  },
+  "reserve_follicular_006": {
+    "cue": "Jika dia mahu memulakan projek, tanya bahan yang telah dipilihnya.",
+    "support": "Tanya sama ada dia mahu berlatih pembentangan bersamamu.",
+    "context": "Jemputan patut menjelaskan komitmen praktikal yang terlibat."
+  },
+  "reserve_mid_cycle_006": {
+    "cue": "Setujui masa pulang sebelum merancang malam bersama.",
+    "support": "Tanya sama ada dia mahu berlatih pembentangan bersamamu.",
+    "context": "Jemputan patut menjelaskan komitmen praktikal yang terlibat."
+  },
+  "reserve_luteal_006": {
+    "cue": "Jika dia mahu kurang urusan sebelum haid, tawarkan menggabungkan dua hentian dipersetujui.",
+    "support": "Tanya sama ada dia mahu berlatih pembentangan bersamamu.",
+    "context": "Jemputan patut menjelaskan komitmen praktikal yang terlibat."
+  },
+  "reserve_menstrual_007": {
+    "cue": "Sebelum keluar semasa haid, tanya sama ada dia mahu perjalanan lebih singkat.",
+    "support": "Tanya komitmen mana yang dia mahu luangkan masa minggu ini.",
+    "context": "Jangan belanjakan wang bersama untuk kejutan tanpa had dipersetujui."
+  },
+  "reserve_follicular_007": {
+    "cue": "Tawarkan melindungi sesi belajar pilihannya tanpa menganggap fasa ini produktif.",
+    "support": "Tanya komitmen mana yang dia mahu luangkan masa minggu ini.",
+    "context": "Jangan belanjakan wang bersama untuk kejutan tanpa had dipersetujui."
+  },
+  "reserve_mid_cycle_007": {
+    "cue": "Jika dia mahu teman, tanya aktiviti yang benar-benar disukainya hari ini.",
+    "support": "Tanya komitmen mana yang dia mahu luangkan masa minggu ini.",
+    "context": "Jangan belanjakan wang bersama untuk kejutan tanpa had dipersetujui."
+  },
+  "reserve_luteal_007": {
+    "cue": "Tanya sama ada dia mahu hujung minggu fleksibel; jangan tentukan berdasarkan fasa.",
+    "support": "Tanya komitmen mana yang dia mahu luangkan masa minggu ini.",
+    "context": "Jangan belanjakan wang bersama untuk kejutan tanpa had dipersetujui."
+  },
+  "reserve_menstrual_008": {
+    "cue": "Jika ketidakselesaan haid mengganggu tugas, tawarkan menyiapkan langkah akhir dipersetujui.",
+    "support": "Tanya sama ada dia mahu bantuan menyusun kata untuk permintaan sukar.",
+    "context": "Membaca mesej bersama tetap memerlukan privasi pengirim dihormati."
+  },
+  "reserve_follicular_008": {
+    "cue": "Jika dia mahu aktiviti luar baharu, cari kosnya sebelum meminta komitmen.",
+    "support": "Tanya sama ada dia mahu bantuan menyusun kata untuk permintaan sukar.",
+    "context": "Membaca mesej bersama tetap memerlukan privasi pengirim dihormati."
+  },
+  "reserve_mid_cycle_008": {
+    "cue": "Jika dia menolak janji temu, batalkan urusannya tanpa meminta dia mempertahankan pilihan.",
+    "support": "Tanya sama ada dia mahu bantuan menyusun kata untuk permintaan sukar.",
+    "context": "Membaca mesej bersama tetap memerlukan privasi pengirim dihormati."
+  },
+  "reserve_luteal_008": {
+    "cue": "Jika dia melaporkan sensitif kepada bunyi, tawarkan menggunakan fon kepala untuk audiomu.",
+    "support": "Tanya sama ada dia mahu bantuan menyusun kata untuk permintaan sukar.",
+    "context": "Membaca mesej bersama tetap memerlukan privasi pengirim dihormati."
+  },
+  "reserve_menstrual_009": {
+    "cue": "Jika dia mahu pakaian tambahan untuk keluar, tanya yang mana perlu dibawa.",
+    "support": "Tanya apa yang membuatnya rasa diterima baru-baru ini.",
+    "context": "Dia boleh menikmati aktiviti tanpa mahu mengulanginya setiap minggu."
+  },
+  "reserve_follicular_009": {
+    "cue": "Tanya sama ada dia mahu mencuba dahulu sebelum membeli peralatan hobi pilihan.",
+    "support": "Tanya apa yang membuatnya rasa diterima baru-baru ini.",
+    "context": "Dia boleh menikmati aktiviti tanpa mahu mengulanginya setiap minggu."
+  },
+  "reserve_mid_cycle_009": {
+    "cue": "Tanya sebelum membuat hantaran awam tentang masa bersama.",
+    "support": "Tanya apa yang membuatnya rasa diterima baru-baru ini.",
+    "context": "Dia boleh menikmati aktiviti tanpa mahu mengulanginya setiap minggu."
+  },
+  "reserve_luteal_009": {
+    "cue": "Jika dia mahu pagi lebih mudah sebelum haid, tawarkan menyediakan bekalan sarapan bersama.",
+    "support": "Tanya apa yang membuatnya rasa diterima baru-baru ini.",
+    "context": "Dia boleh menikmati aktiviti tanpa mahu mengulanginya setiap minggu."
+  },
+  "reserve_menstrual_010": {
+    "cue": "Jika dia mahu makan tenang semasa haid, tawarkan menunda tetamu dengan persetujuannya.",
+    "support": "Tanya sama ada dia mahu ditemani semasa mengurus dokumen.",
+    "context": "Keletihan bukan kelemahan peribadi."
+  },
+  "reserve_follicular_010": {
+    "cue": "Jika dia memilih bertemu semula rakan, tawarkan ruang praktikal untuk lawatan itu.",
+    "support": "Tanya sama ada dia mahu ditemani semasa mengurus dokumen.",
+    "context": "Keletihan bukan kelemahan peribadi."
+  },
+  "reserve_mid_cycle_010": {
+    "cue": "Jika memilih aktiviti kumpulan, setujui cara masing-masing boleh pulang sendiri.",
+    "support": "Tanya sama ada dia mahu ditemani semasa mengurus dokumen.",
+    "context": "Keletihan bukan kelemahan peribadi."
+  },
+  "reserve_luteal_010": {
+    "cue": "Jika anggaran haid bertembung dengan perjalanan, tanya sama ada dia mahu tempahan lebih fleksibel.",
+    "support": "Tanya sama ada dia mahu ditemani semasa mengurus dokumen.",
+    "context": "Keletihan bukan kelemahan peribadi."
+  },
+  "reserve_menstrual_011": {
+    "cue": "Tanya sama ada barang keselesaan haid biasanya perlu dibersihkan sebelum disimpan.",
+    "support": "Tanya pilihan terkini mana yang membanggakannya.",
+    "context": "Rancangan boleh merangkumi kurang daripada masa yang tersedia."
+  },
+  "reserve_follicular_011": {
+    "cue": "Jika dia mahu menyusun rak projek, tanya objek yang boleh kamu kendalikan.",
+    "support": "Tanya pilihan terkini mana yang membanggakannya.",
+    "context": "Rancangan boleh merangkumi kurang daripada masa yang tersedia."
+  },
+  "reserve_mid_cycle_011": {
+    "cue": "Jika dia mahu aktiviti fizikal bersama, biarkan dia memilih intensiti.",
+    "support": "Tanya pilihan terkini mana yang membanggakannya.",
+    "context": "Rancangan boleh merangkumi kurang daripada masa yang tersedia."
+  },
+  "reserve_luteal_011": {
+    "cue": "Jika dia mahu kurang membuat keputusan malam ini, minta izin memilih satu pilihan rumah yang sudah dipersetujui.",
+    "support": "Tanya pilihan terkini mana yang membanggakannya.",
+    "context": "Rancangan boleh merangkumi kurang daripada masa yang tersedia."
+  },
+  "reserve_menstrual_012": {
+    "cue": "Jika dia perlu tandas semasa haid, bantu cari tanpa mengumumkan sebabnya.",
+    "support": "Tanya sama ada acara akan datang ada urusan praktikal yang menyulitkan.",
+    "context": "Jangan anggap air mata sebagai taktik secara automatik."
+  },
+  "reserve_follicular_012": {
+    "cue": "Jika dia tidak mahu memulakan sesuatu yang baharu, sokong rutin biasa hari ini.",
+    "support": "Tanya sama ada acara akan datang ada urusan praktikal yang menyulitkan.",
+    "context": "Jangan anggap air mata sebagai taktik secara automatik."
+  },
+  "reserve_mid_cycle_012": {
+    "cue": "Jika dia memilih masa sendiri, urus rancanganmu tanpa kerap bertanya khabar.",
+    "support": "Tanya sama ada acara akan datang ada urusan praktikal yang menyulitkan.",
+    "context": "Jangan anggap air mata sebagai taktik secara automatik."
+  },
+  "reserve_luteal_012": {
+    "cue": "Jika dia berasa sihat sebelum anggaran haid, kekalkan aktiviti pilihannya.",
+    "support": "Tanya sama ada acara akan datang ada urusan praktikal yang menyulitkan.",
+    "context": "Jangan anggap air mata sebagai taktik secara automatik."
+  },
+  "reserve_all_013": {
+    "cue": "Selesaikan bahagian kerja rumah anda supaya dia boleh berehat jika mahu.",
+    "support": "Tanya sama ada dia mahu membandingkan pilihan tanpa cadangan.",
+    "context": "Sokongan tidak patut mewujudkan hutang yang perlu dibalasnya."
+  },
+  "reserve_all_014": {
+    "cue": "Baiki satu masalah kecil di rumah yang anda sudah bersetuju untuk uruskan.",
+    "support": "Tanya apa yang dia mahu siapkan sebelum berehat.",
+    "context": "Permintaan jelas menyebut tindakan, bukan menilai peribadi."
+  },
+  "reserve_all_015": {
+    "cue": "Simpan lebihan makanan dan sediakan dapur untuk hidangan seterusnya.",
+    "support": "Tanya sama ada jangkaan keluarga perlu dibincangkan bersama.",
+    "context": "Jangan tawar-menawar batas orang lain di hadapan tetamu."
+  },
+  "reserve_all_016": {
+    "cue": "Periksa bekalan bilik mandi yang dikongsi dan tambah yang hampir habis.",
+    "support": "Tanya apa yang dia mahu tetamu tahu sebelum tiba.",
+    "context": "Matlamat kerjayanya layak mendapat masa di samping kewajipan bersama."
+  },
+  "reserve_all_017": {
+    "cue": "Tawarkan untuk menukar cadar; persetujui masanya dahulu.",
+    "support": "Tanya sama ada dia mahu waktu tamat jelas untuk rancangan sosial hari ini.",
+    "context": "Membantu borang tidak memberi kuasa menandatangani bagi pihaknya."
+  },
+  "reserve_all_018": {
+    "cue": "Cadangkan berjalan sebentar di laluan mudah dengan kebebasan untuk menolak.",
+    "support": "Tanya kemahirannya yang dia harap lebih dihargai orang.",
+    "context": "Soalan tentang gejala boleh ditolak."
+  },
+  "reserve_all_019": {
+    "cue": "Cadangkan dua pilihan makan malam yang mudah dan tanya pilihannya.",
+    "support": "Tanya sama ada dia mahu maklum balas sekarang atau selepas berehat.",
+    "context": "Melakukan bahagianmu bukan membuat jasa kepada rumah sendiri."
+  },
+  "reserve_all_020": {
+    "cue": "Selesaikan satu urusan pentadbiran yang menjadi tanggungjawab anda.",
+    "support": "Tanya bahagian rancangan bersama yang dia mahu pimpin.",
+    "context": "Jangan minta dia mengurus sistem peringatanmu."
+  },
+  "reserve_all_021": {
+    "cue": "Kemaskan kasut dan barang anda di pintu masuk.",
+    "support": "Tanya apa yang akan memudahkan dia meminta bantuan.",
+    "context": "Keutamaan boleh khusus tanpa menjadi tidak munasabah."
+  },
+  "reserve_all_022": {
+    "cue": "Bahagikan tugas besar bersama kepada langkah kecil; siapkan bahagian anda.",
+    "support": "Tanya sama ada dia mahu kamu hadir semasa panggilan sukar dipersetujui.",
+    "context": "Jangan jadikan dia pendengar rungutan tentang membantunya."
+  },
+  "reserve_all_023": {
+    "cue": "Tawarkan menyediakan snek atau bekal mengikut citarasanya.",
+    "support": "Tanya apa yang terasa adil dalam keputusan bersama baru-baru ini.",
+    "context": "Permohonan maaf tidak menuntut kemaafan segera."
+  },
+  "reserve_all_024": {
+    "cue": "Selesaikan satu janji kecil dan beritahu bahawa ia sudah siap.",
+    "support": "Tanya sama ada gangguan berulang memerlukan persetujuan baharu.",
+    "context": "Jangan dedahkan kesukaran peribadi melalui penghargaan terbuka."
+  },
+  "reserve_all_025": {
+    "cue": "Bersihkan sinki selepas bersiap pagi.",
+    "support": "Tanya tarikh akhir mana yang memerlukan masa tanpa gangguan.",
+    "context": "Anggaran realistik merangkumi persediaan dan mengemas."
+  },
+  "reserve_all_026": {
+    "cue": "Buang kerak cerek jika perlu.",
+    "support": "Tanya sama ada dia mahu menilai semula pembahagian kerja rumah.",
+    "context": "Jangan tafsir perjalanan sunyi sebagai keputusan tentang hubungan."
+  },
+  "reserve_all_027": {
+    "cue": "Semak makanan luput dalam peti sejuk bersama pemiliknya.",
+    "support": "Tanya apa yang membuat ruang kerjanya selesa.",
+    "context": "Orang yang dibantu patut turut menentukan maksud bantuan berjaya."
+  },
+  "reserve_all_028": {
+    "cue": "Lap dapur selepas sejuk.",
+    "support": "Tanya sama ada dia mahu bantuan mengingati soalan untuk janji temu.",
+    "context": "Elakkan bergurau tentang kecekapannya apabila dia meminta bantuan."
+  },
+  "reserve_all_029": {
+    "cue": "Gantikan tuala dapur dengan yang bersih.",
+    "support": "Tanya apa yang dia nikmati dalam perbualan terkini dengan rakan.",
+    "context": "Akses bersama kepada peranti bukan izin membuka semua fail."
+  },
+  "reserve_all_030": {
+    "cue": "Vakum ruang bersama pada masa dipersetujui.",
+    "support": "Tanya sama ada dia mahu sokongan menjaga batas dengan tetamu.",
+    "context": "Jangan jadikan minat peribadi sebagai pengajaran tanpa dipelawa."
+  },
+  "reserve_all_031": {
+    "cue": "Kemaskan kertas sendiri dari meja bersama.",
+    "support": "Tanya peralihan harian mana yang paling tergesa-gesa.",
+    "context": "Notis lewat ada kesannya walaupun perubahan tidak dapat dielakkan."
+  },
+  "reserve_all_032": {
+    "cue": "Pulangkan barang rumah yang dipinjam ke tempat dipersetujui.",
+    "support": "Tanya sama ada dia lebih suka butiran persetujuan bersama secara bertulis.",
+    "context": "Kemahirannya tidak menjadikan semua tugas berkaitan tanggungjawabnya."
+  },
+  "reserve_all_033": {
+    "cue": "Semak kalendar bersama sebelum mencadangkan rancangan hujung minggu.",
+    "support": "Tanya apa yang dia mahu kamu tahu tentang beban kerjanya sekarang.",
+    "context": "Jangan tuntut reaksi positif terhadap kejutan yang tidak diingini."
+  },
+  "reserve_all_034": {
+    "cue": "Sahkan waktu operasi untuk urusan dipersetujui.",
+    "support": "Tanya sama ada pembelian dirancang memerlukan had belanja dahulu.",
+    "context": "Sokongan boleh termasuk mengakui kamu tidak tahu jawapannya."
+  },
+  "reserve_all_035": {
+    "cue": "Siapkan beg sendiri sebelum keluar bersama.",
+    "support": "Tanya apa yang dia mahu kekalkan dalam rutin yang berubah.",
+    "context": "Asingkan keperluan akses daripada andaian tentang motivasi."
+  },
+  "reserve_all_036": {
+    "cue": "Tawarkan mengambil bungkusan yang dipersetujui.",
+    "support": "Tanya sama ada dia mahu bantuan mengenal pasti langkah pertama tugas terbantut.",
+    "context": "Matlamat bersama patut membolehkan kedua-duanya menyemak bahagian masing-masing."
+  },
+  "reserve_all_037": {
+    "cue": "Bawa bahan kitar semula dipersetujui ke pusat kutipan.",
+    "support": "Tanya suasana yang memudahkan tumpuannya.",
+    "context": "Penolakan terdahulu tidak perlu dipersoalkan lagi hari ini."
+  },
+  "reserve_all_038": {
+    "cue": "Siram tanaman bersama mengikut jadual dipersetujui.",
+    "support": "Tanya sama ada dia mahu masa tanpa gangguan untuk minat peribadi.",
+    "context": "Nilai sokongan berguna melalui pengalamannya, bukan niatmu sahaja."
+  },
+  "reserve_all_039": {
+    "cue": "Semak barang berulang dalam senarai belian bersama.",
+    "support": "Tanya bentuk kemas kini kemajuan yang berguna.",
+    "context": "Jangan gantikan produk pilihannya dengan pilihanmu tanpa bertanya."
+  },
+  "reserve_all_040": {
+    "cue": "Setujui siapa akan menerima penghantaran berjadual.",
+    "support": "Tanya sama ada persetujuan lama masih sesuai dengan keadaan kini.",
+    "context": "Masa lapang tidak semestinya bermaksud tersedia untuk permintaan."
+  },
+  "reserve_all_041": {
+    "cue": "Tawarkan mengurus tempahan janji temu bersama yang dipersetujui.",
+    "support": "Tanya apa yang dia mahu serahkan dan apa yang mahu urus sendiri.",
+    "context": "Kompromi memerlukan persetujuan jelas tentang siapa melakukan apa."
+  },
+  "reserve_all_042": {
+    "cue": "Letakkan pinggan bersih di tempat dipersetujui yang mudah dicapai.",
+    "support": "Tanya sama ada dia mahu pelan sandaran untuk komitmen belum pasti.",
+    "context": "Jangan rendahkan kebimbangannya dengan membandingkan pengalaman orang lain yang lebih sukar."
+  },
+  "reserve_all_043": {
+    "cue": "Bersihkan serdak di ruang makan selepas makan.",
+    "support": "Tanya apa yang menjadikan perjalanan bersama kurang memenatkan.",
+    "context": "Apa yang dia nyatakan tentang keadaannya lebih penting daripada anggaran kalendar."
+  },
+  "reserve_all_044": {
+    "cue": "Periksa sama ada tuala bersama perlu dibasuh.",
+    "support": "Tanya bahagian menerima tetamu yang terasa seperti kerja tidak kelihatan.",
+    "context": "Perubahan rancangan tidak perlu dijelaskan dengan hormon."
+  },
+  "reserve_all_045": {
+    "cue": "Tawarkan menyediakan ruang untuk tetamu dipersetujui.",
+    "support": "Tanya sama ada dia mahu kamu ingat nama atau butiran harinya.",
+    "context": "Tawaran hanya membantu jika “tidak” benar-benar boleh dipilih."
+  },
+  "reserve_all_046": {
+    "cue": "Semak tarikh akhir pemulangan pembelian bersama.",
+    "support": "Tanya apa yang membantunya pulih selepas hari sibuk baru-baru ini.",
+    "context": "Jangan jadikan bantuan sebagai tuntutan pujian atau keintiman."
+  },
+  "reserve_all_047": {
+    "cue": "Simpan resit perbelanjaan bersama.",
+    "support": "Tanya sama ada dia mahu soalan ditangguhkan sehingga selesai bercakap.",
+    "context": "Minta izin sebelum menyentuh atau mengalihkan barang peribadi."
+  },
+  "reserve_all_048": {
+    "cue": "Pasang penggera sendiri tanpa bergantung padanya untuk mengejutkanmu.",
+    "support": "Tanya perbelanjaan kecil mana memerlukan keputusan bersama.",
+    "context": "Pilihan berbeza tidak bermakna salah seorang bersalah."
+  },
+  "reserve_all_049": {
+    "cue": "Tawarkan menyemak pengangkutan untuk lawatan bersama.",
+    "support": "Tanya sama ada dia mahu pencapaian peribadi dirahsiakan.",
+    "context": "Jangan simpulkan emosinya daripada anggaran fasa kitaran."
+  },
+  "reserve_all_050": {
+    "cue": "Kemaskan muat turun atau fail kerja sendiri pada peranti bersama.",
+    "support": "Tanya apa yang menjadikan paginya lebih mudah.",
+    "context": "Jangan kongsi maklumat kitarannya tanpa persetujuan."
+  },
+  "reserve_all_051": {
+    "cue": "Tanya sebelum melaras pemanasan atau pengudaraan bersama.",
+    "support": "Tanya sama ada dia mahu bantuan menentukan titik berhenti realistik hari ini.",
+    "context": "Janji lebih mudah dipercayai apabila waktunya realistik."
+  },
+  "reserve_all_052": {
+    "cue": "Cadangkan laluan lebih tenang untuk keluar yang dipersetujui.",
+    "support": "Tanya jangkaan mana yang dia mahu jelaskan sebelum bersetuju.",
+    "context": "Siapkan tugas tanpa menyerahkan urusan mengaturnya kepada dia."
+  },
+  "reserve_all_053": {
+    "cue": "Bersihkan alat selepas membaiki sesuatu.",
+    "support": "Tanya sama ada perubahan akan datang menjejaskan masa peribadinya.",
+    "context": "Tanya satu soalan yang jelas dan bukannya bertanya berulang kali."
+  },
+  "reserve_all_054": {
+    "cue": "Semak tarikh bil bersama dan bahagian bayaranmu yang dipersetujui.",
+    "support": "Tanya sumber maklumat yang dia percayai untuk keputusan ini.",
+    "context": "Diam boleh terasa selesa; tanya sebelum cuba mengisinya."
+  },
+  "reserve_all_055": {
+    "cue": "Tawarkan mengukur ruang sebelum membeli perabot bersama.",
+    "support": "Tanya sama ada dia mahu masalah ditulis dahulu sebelum membincangkan penyelesaian.",
+    "context": "Anda boleh mendengar dengan teliti tanpa bersetuju dalam setiap hal."
+  },
+  "reserve_all_056": {
+    "cue": "Basuh beg belian guna semula jika perlu.",
+    "support": "Tanya apa yang menjadikan ruang bersama mesra baginya.",
+    "context": "Hentikan seketika perbincangan tegang dan persetujui masa untuk menyambungnya."
+  },
+  "reserve_all_057": {
+    "cue": "Isi semula bekas sabun bersama yang kosong.",
+    "support": "Tanya sama ada dia mahu sokongan menolak jemputan tanpa memberi alasan.",
+    "context": "Jangan gunakan aplikasi ini untuk memenangi pertengkaran."
+  },
+  "reserve_all_058": {
+    "cue": "Tawarkan menulis senarai barang perjalanan yang dipersetujui.",
+    "support": "Tanya butiran yang perlu kamu sahkan sebelum mengurus permintaannya.",
+    "context": "Permohonan maaf menyebut tindakan anda dan cara membaikinya."
+  },
+  "reserve_all_059": {
+    "cue": "Sahkan janji temu dipersetujui tanpa dia perlu mengejarmu.",
+    "support": "Tanya sama ada dia mahu suasana tenang apabila pulang selepas keluar hari ini.",
+    "context": "Berasa sihat tidak mewajibkan seseorang bersosial atau bermesra."
+  },
+  "reserve_all_060": {
+    "cue": "Senyapkan notifikasi kerja semasa waktu makan yang dipersetujui.",
+    "support": "Tanya apa yang dia mahu diiktiraf dalam pembelajaran sesuatu yang sukar.",
+    "context": "Anda boleh menyokong tanpa mengambil alih keputusannya."
+  },
+  "reserve_all_061": {
+    "cue": "Tawarkan menyemak kemudahan akses di tempat dirancang.",
+    "support": "Tanya sama ada dia mahu memilih urutan urusan bersama.",
+    "context": "Hormati batas walaupun anda tidak memahami sebabnya."
+  },
+  "reserve_all_062": {
+    "cue": "Bersihkan mesin kopi selepas digunakan.",
+    "support": "Tanya sama ada dia mahu kamu rumuskan persetujuan sebelum bertindak.",
+    "context": "Jangan jadikan pengalaman peribadinya sebagai bahan jenaka."
+  },
+  "reserve_all_063": {
+    "cue": "Tawarkan menghantar sumbangan dipersetujui ke pusat kutipan.",
+    "support": "Tanya bahagian minggu yang dia mahu biarkan tanpa rancangan.",
+    "context": "Perhatikan apa yang membantu dan tanya sebelum mengulanginya pada hari lain."
+  },
+  "reserve_all_064": {
+    "cue": "Pastikan payung bersama kering sebelum disimpan.",
+    "support": "Tanya perkara yang dia lebih suka kamu tidak cuba selesaikan hari ini.",
+    "context": "Pastikan tanggungjawab anda jelas dan boleh diurus."
+  },
+  "reserve_all_065": {
+    "cue": "Tawarkan mengecas peranti bersama sebelum perjalanan bersama.",
+    "support": "Tanya sama ada matlamat bersama masih terasa sebagai pilihannya juga.",
+    "context": "Jika tersalah faham, tanya dengan tenang dan jangan meneka niat."
+  },
+  "reserve_all_066": {
+    "cue": "Susun ubat atau bekalan peribadi sendiri.",
+    "support": "Tanya sama ada dia mahu bantuan menyemak syarat komitmen baharu.",
+    "context": "Tindakan kecil yang boleh diharap lebih bernilai daripada janji besar."
+  },
+  "reserve_all_067": {
+    "cue": "Tawarkan berada di rumah sepanjang waktu penghantaran dipersetujui.",
+    "support": "Tanya: “Awak mahu saya mendengar, beri idea atau membantu secara praktikal?”",
+    "context": "Kerja rumah termasuk menyedari apa yang perlu dilakukan."
+  },
+  "reserve_all_068": {
+    "cue": "Buang rambut sendiri dari saliran selepas mandi.",
+    "support": "Letakkan telefon dan dengar tanpa merancang jawapan.",
+    "context": "Belanjawan bersama memerlukan persetujuan kedua-dua pihak."
+  },
+  "reserve_all_069": {
+    "cue": "Tawarkan menunda kerja bisingmu ke waktu lain.",
+    "support": "Tanya: “Apa yang boleh memudahkan petang awak?”",
+    "context": "Izin membantu bukan izin membaca mesej peribadi."
+  },
+  "reserve_all_070": {
+    "cue": "Semak bahan sebelum memasak hidangan dipersetujui.",
+    "support": "Ulang maksud yang anda dengar dan semak sama ada anda faham dengan betul.",
+    "context": "Tarikh akhir kerja tidak menghapuskan keperluan berehat."
+  },
+  "reserve_all_071": {
+    "cue": "Tawarkan mencetak atau menyusun dokumen perjalanan bersama yang dipersetujui.",
+    "support": "Katakan: “Kita boleh ubah rancangan jika sudah tidak sesuai.”",
+    "context": "Persahabatannya tidak memerlukan pengawasanmu."
+  },
+  "reserve_all_072": {
+    "cue": "Keluarkan bekas kosong sendiri dari peti sejuk bersama.",
+    "support": "Tanya sama ada dia mahu ditemani atau masa bersendirian.",
+    "context": "Jemputan tetamu mengubah masa di rumah bagi kedua-duanya."
+  },
+  "reserve_all_073": {
+    "cue": "Tawarkan membandingkan dua sebut harga perkhidmatan dipersetujui.",
+    "support": "Sebut usaha yang anda perhatikan dan ucapkan terima kasih secara khusus.",
+    "context": "Mesej tidak berbalas bukan bukti penolakan."
+  },
+  "reserve_all_074": {
+    "cue": "Tetapkan peringatan untuk tanggungjawab rumahmu yang berulang.",
+    "support": "Tanya bahagian hari yang paling sukar; biarkan dia memilih berapa banyak untuk berkongsi.",
+    "context": "Anggaran aplikasi ini tidak dapat menentukan hari subur."
+  },
+  "reserve_all_075": {
+    "cue": "Tawarkan mengurus pembaharuan langganan bersama yang dipersetujui.",
+    "support": "Katakan: “Awak tidak perlu jelaskan semuanya sekarang.”",
+    "context": "Persetujuan lalu tidak menggantikan jawapan sekarang."
+  },
+  "reserve_all_076": {
+    "cue": "Tanya pencahayaan yang sesuai untuk ruang bersama sekarang.",
+    "support": "Tanya sama ada dia mahu dipeluk dan terima apa-apa jawapan dengan mesra.",
+    "context": "Maklum balas lebih berguna apabila menyebut satu tindakan yang dapat diperhatikan."
+  },
+  "reserve_all_077": {
+    "cue": "Letak cawan sendiri yang digunakan dalam mesin basuh pinggan atau basuh.",
+    "support": "Tanya apa yang dia mahu anda ingat untuk lain kali.",
+    "context": "Jangan umumkan pencapaiannya tanpa bertanya."
+  },
+  "reserve_all_078": {
+    "cue": "Tawarkan mencari cara melupuskan barang rosak yang dipersetujui.",
+    "support": "Akui perasaannya tanpa menentukan bagaimana dia patut berasa.",
+    "context": "Tugas dibuat berbeza tidak semestinya dibuat dengan buruk."
+  },
+  "reserve_all_079": {
+    "cue": "Alihkan barang berselerak sendiri untuk memberi ruang kerjanya.",
+    "support": "Katakan: “Saya akan urus bahagian saya; awak tidak perlu mengingatkan saya.”",
+    "context": "Jangan janjikan masanya kepada saudara atau rakan."
+  },
+  "reserve_all_080": {
+    "cue": "Tawarkan menyemak cuaca sebelum memuktamadkan rancangan luar bersama.",
+    "support": "Tanya sama ada dia mahu anda bertanya lagi nanti atau menunggu dia memulakan.",
+    "context": "Hobi peribadi tidak memerlukan sasaran produktiviti."
+  },
+  "reserve_all_081": {
+    "cue": "Tawarkan mengemas kini senarai hubungan kecemasan bersama dengan izin.",
+    "support": "Sebut satu sifat yang anda kagumi dan contoh baru-baru ini.",
+    "context": "Nyatakan keadaan mendesak, bukan membayangkannya dengan mesej berulang."
+  },
+  "reserve_all_082": {
+    "cue": "Tawarkan menyediakan bahagian berasingan bagi keperluan pemakanan dipersetujui.",
+    "support": "Ucapkan terima kasih atas perkara harian yang sering tidak disedari.",
+    "context": "Jangan betulkan butiran remeh ketika dia bercerita."
+  },
+  "reserve_all_083": {
+    "cue": "Pastikan kunci sendiri ada sebelum keluar bersama.",
+    "support": "Tanya: “Ada sesuatu yang awak mahu raikan hari ini?”",
+    "context": "Keadilan mengambil kira masa dan usaha, bukan jumlah tugas sahaja."
+  },
+  "reserve_all_084": {
+    "cue": "Tawarkan mengurus bahagian mengemasmu selepas tetamu pulang seperti dipersetujui.",
+    "support": "Biarkan dia menghabiskan ayat sebelum soalan seterusnya.",
+    "context": "Tawaran belum dijawab boleh menunggu tanpa tekanan."
+  },
+  "reserve_all_085": {
+    "cue": "Tawarkan menguji persediaan video sebelum panggilan keluarga dipersetujui.",
+    "support": "Katakan: “Saya dengar bahawa perkara ini penting bagi awak.”",
+    "context": "Elakkan membincangkan perkara sulit di tempat orang lain boleh mendengar."
+  },
+  "reserve_all_086": {
+    "cue": "Bersihkan serabut dari penapis pengering selepas digunakan.",
+    "support": "Tanya sama ada dia mahu kata-kata yang menenangkan atau masa untuk berfikir.",
+    "context": "Permulaan tertunda mungkin memerlukan kurang halangan, bukan kritikan."
+  },
+  "reserve_all_087": {
+    "cue": "Tawarkan menyediakan tempat duduk untuk penantian lama yang dijangka.",
+    "support": "Ingatkan satu ketika perhatiannya memberi makna kepada anda.",
+    "context": "Kebimbangan kewangan wajar dibincangkan tanpa ejekan."
+  },
+  "reserve_all_088": {
+    "cue": "Labelkan baki makanan bersama dipersetujui dengan tarikh penyediaan.",
+    "support": "Kongsi satu perkara yang anda hargai tentang masa bersama.",
+    "context": "Perancangan perjalanan termasuk cara praktikal untuk pulang awal."
+  },
+  "reserve_all_089": {
+    "cue": "Tawarkan menyemak syarat pembatalan tempahan sebelum membayar.",
+    "support": "Tanya jenis bantuan yang dia tidak mahu hari ini.",
+    "context": "Jangan jadikan kalendar bersama alat pengawasan."
+  },
+  "reserve_all_090": {
+    "cue": "Tawarkan menyemak jalan pulang sebelum pengangkutan terakhir berlepas.",
+    "support": "Nyatakan masa anda boleh berbual dan lapangkan waktu itu.",
+    "context": "Penerangannya tentang sakit tidak patut memerlukan bukti daripadamu."
   }
 }

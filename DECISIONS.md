@@ -29,3 +29,6 @@ Status: APPROVED
 Decision: Install one preview app and start a clearly labelled accelerated trial inside it. A sample 30-day sequence advances every five minutes; day 30 starts at 145 minutes and the trial completes at 150 minutes. The preview may open this route before onboarding and billing. Production entitlement and personal cycle/history stay separate.
 Reason: Founder requested a simple installed app with an accelerated-mode label instead of manual daily steps.
 Reopen only if: Founder changes the trial timing or installation experience.
+
+## 2026-11-05 — Component-level ninety-day reserve
+Append aligned editorial texts and new reserve IDs rather than rewrite persisted v3 advice. Reserve slots couple support/context identities across phases so fresh histories can select 90 distinct blocks per section; use the previous 89 selections instead of a seven-selection preference. Keep deterministic fallback for legacy/depleted histories. Gratitude is intentionally separate from uniqueness. Native approval remains pending per locale. See docs/CONTENT.md.

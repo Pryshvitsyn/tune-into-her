@@ -4,6 +4,7 @@ import path from 'node:path';
 // Editorial source of truth: aligned, independently readable sentences per locale.
 // Combinations are varied daily bundles, not hundreds of independent principles.
 const root = process.cwd();
+const checkOnly = process.argv.includes('--check');
 const { codes: languages } = JSON.parse(await readFile(path.join(root, 'src/config/languages.json'), 'utf8'));
 const phases = [
   ['menstrual', 100, [1, 20]],
@@ -15,12 +16,12 @@ const banks = {};
 for (const language of languages) {
   const bank = JSON.parse(await readFile(path.join(root, `content/editorial/${language}.json`), 'utf8'));
   for (const key of ['actions', 'support', 'context']) {
-    if (bank[key]?.length !== 24 || new Set(bank[key]).size !== 24 || bank[key].some(s => !s.trim())) {
+    if (bank[key]?.length !== 90 || new Set(bank[key]).size !== 90 || bank[key].some(s => !s.trim())) {
       throw new Error(`Invalid editorial bank: ${language}:${key}`);
     }
   }
   for (const [phase] of phases) {
-    if (bank.phaseActions[phase]?.length !== 4 || bank.phaseActions[phase].some(s => !s.trim())) {
+    if (bank.phaseActions[phase]?.length !== 12 || new Set(bank.phaseActions[phase]).size !== 12 || bank.phaseActions[phase].some(s => !s.trim())) {
       throw new Error(`Invalid phase bank: ${language}:${phase}`);
     }
   }
@@ -56,9 +57,37 @@ for (const [phaseIndex, [phase, count, dayRange]] of phases.entries()) {
     }
   }
 }
-await mkdir(path.join(root, 'content/locales'), { recursive: true });
-await writeFile(path.join(root, 'content/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
-for (const language of languages) {
-  await writeFile(path.join(root, `content/locales/${language}.json`), `${JSON.stringify(locales[language], null, 2)}\n`);
+// Append the v4 reserve without changing any v3 ID, text or identity. Most
+// practical actions suit every phase; twelve slots retain phase-specific options.
+// Each slot has one support and context identity across ALL phases. This makes
+// 90-day component freshness achievable across arbitrary phase transitions.
+for (let index = 0; index < 90; index++) {
+  const variants = index < 12 ? phases : [['all', 0, [1, 90]]];
+  for (const [phase, , dayRange] of variants) {
+    const id = `reserve_${phase}_${String(index + 1).padStart(3, '0')}`;
+    const support = (index + 24) % 90;
+    const context = (index + 48) % 90;
+    const actionId = index < 12 ? `${phase}_action_${index}` : `action_${index}`;
+    catalog.push({ id, phases: phase === 'all' ? phases.map(([name]) => name) : [phase],
+      dayRange, tags: ['practical', 'support', 'boundaries', 'reserve-v4'],
+      learnMoreId: phase === 'all' ? 'follicular' : phase,
+      actionId, supportId: `support_${support}`, contextId: `context_${context}` });
+    for (const language of languages) {
+      const bank = banks[language];
+      locales[language][id] = {
+        cue: index < 12 ? bank.phaseActions[phase][index] : bank.actions[index],
+        support: bank.support[support], context: bank.context[context],
+      };
+    }
+  }
 }
-console.log(`Generated ${catalog.length} distinct three-part bundles across ${languages.length} locales from 88 editorial texts per locale.`);
+const outputs = { 'content/catalog.json': catalog,
+  ...Object.fromEntries(languages.map(language => [`content/locales/${language}.json`, locales[language]])) };
+if (!checkOnly) await mkdir(path.join(root, 'content/locales'), { recursive: true });
+for (const [file, value] of Object.entries(outputs)) {
+  const text = `${JSON.stringify(value, null, 2)}\n`;
+  if (checkOnly) {
+    if (await readFile(path.join(root, file), 'utf8') !== text) throw new Error(`Stale generated content: ${file}`);
+  } else await writeFile(path.join(root, file), text);
+}
+console.log(`${checkOnly ? 'Checked' : 'Generated'} ${catalog.length} distinct three-part bundles across ${languages.length} locales from 318 editorial texts per locale (90 per section plus 48 phase actions).`);

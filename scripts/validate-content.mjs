@@ -8,6 +8,7 @@ const catalog = JSON.parse(await readFile(path.join(root, 'content/catalog.json'
 const ids = catalog.map(record => record.id);
 const problems = [];
 const totals = {};
+const normalize = text => text.normalize('NFKC').toLocaleLowerCase().replace(/[\p{P}\p{Z}\s]/gu, '');
 if (new Set(ids).size !== ids.length) problems.push('Duplicate cue IDs.');
 for (const record of catalog) {
   if (!phases.includes(record.learnMoreId) || !record.phases?.length || record.phases.some(p => !phases.includes(p))) problems.push(`${record.id}: invalid phase.`);
@@ -22,7 +23,11 @@ for (const language of languages) {
   const bank = JSON.parse(await readFile(path.join(root, `content/editorial/${language}.json`), 'utf8'));
   if (language === 'en') reference = bank;
   for (const section of ['actions', 'support', 'context']) {
-    if (bank[section].length !== 24 || new Set(bank[section]).size !== 24) problems.push(`${language}:${section}: incomplete or repeated source.`);
+    if (bank[section].length !== 90 || new Set(bank[section].map(normalize)).size !== 90) problems.push(`${language}:${section}: incomplete or repeated source.`);
+  }
+  for (const phase of phases) {
+    const actions = bank.phaseActions[phase];
+    if (actions?.length !== 12 || new Set(actions.map(normalize)).size !== 12) problems.push(`${language}:${phase}: invalid phase bank.`);
   }
   const locale = JSON.parse(await readFile(path.join(root, `content/locales/${language}.json`), 'utf8'));
   if (Object.keys(locale).sort().join() !== [...ids].sort().join()) problems.push(`${language}: ID set differs.`);
@@ -39,11 +44,20 @@ for (const language of languages) {
     const expected = kind === 'action' ? bank.actions[Number(number)] : bank.phaseActions[record.phases[0]][Number(number)];
     if (entry.cue !== expected || entry.support !== bank.support[Number(record.supportId.split('_')[1])] || entry.context !== bank.context[Number(record.contextId.split('_')[1])]) problems.push(`${language}:${record.id}: generated text differs from editorial source.`);
   }
+  for (const phase of phases) {
+    const reserve = catalog.filter(record => record.phases.includes(phase) && record.tags.includes('reserve-v4'));
+    if (reserve.length !== 90) problems.push(`${language}:${phase}: expected 90 v4 slots.`);
+    for (const key of ['cue', 'support', 'context']) {
+      if (new Set(reserve.map(record => normalize(locale[record.id]?.[key] ?? ''))).size !== 90) problems.push(`${language}:${phase}:${key}: repeated reserve block.`);
+    }
+  }
   if (reference && language !== 'en') {
     for (const section of ['actions', 'support', 'context']) {
       bank[section].forEach((text, i) => { if (text === reference[section][i]) problems.push(`${language}:${section}:${i}: untranslated English.`); });
     }
   }
 }
+const reviews = JSON.parse(await readFile(path.join(root, 'release/content-review.json'), 'utf8'));
+if (Object.keys(reviews.locales).sort().join() !== [...languages].sort().join()) problems.push('Language review coverage differs.');
 if (problems.length) { console.error(problems.join('\n')); process.exit(1); }
-console.log(JSON.stringify({ bundles: catalog.length, locales: languages.length, eligibleBundlesPerPhase: totals, minimumReserveDays: 90, editorialTextsPerLocale: 88, uniqueFullBundles: true, repeatedConstituentIdeas: true, nativeLanguageReview: 'PENDING' }, null, 2));
+console.log(JSON.stringify({ bundles: catalog.length, locales: languages.length, eligibleBundlesPerPhase: totals, minimumReserveDays: 90, editorialTextsPerLocale: 318, uniqueFullBundles: true, constituentReserveDays: 90, nativeLanguageReview: 'PENDING' }, null, 2));
