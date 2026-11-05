@@ -1,18 +1,18 @@
 # PRODUCT SNAPSHOT
-Updated: 2026-11-01
+Updated: 2026-11-05
 ## CURRENT STATE
-Native interface implemented on top of recovered 6367bd8 and bootstrap PR #2. Shared reactive white/neutral-gray and black/graphite palettes cover existing routes. Header shows a small THEA emblem on the left and open-arc app emblem on the right. Appearance preference persists. Calendar navigates months and opens cycle editing. About THEA opens from the header. No website action appears without a confirmed URL.
+Native Expo iOS/Android baseline a09ba11 has dual themes, THEA/app emblems, calendar, cycle editing, appearance and About THEA. No signed store build or device QA. New daily content is local and offline.
 ## LATEST DELTA
-Founder requested an installable iPhone test build. Browser preview was cancelled before publication. Added SDK-compatible expo-updates, fingerprint runtime compatibility and separate preview/production update channels. EAS login succeeded as eliogenesis; project:info confirms @eliogenesis/tune-into-her and existing project ID dc8938e7-7163-413a-9003-479d0afc8a17. No cloud build or update has been published.
+Content version 4 appends a ninety-slot component reserve in all eleven locales: 90 general actions, 90 support prompts, 90 context principles and 12 actions per phase (318 authored texts per locale). The catalog has 610 distinct bundles; all 484 v3 metadata records and translations remain unchanged. Selection prefers fresh components across 89 prior selections, with deterministic fallback for depleted or legacy histories.
 ## WORKING
-Lint and TypeScript pass; 39 tests in 8 files pass. Content validation: 400 unique cues across 11 locales. iOS and Android Hermes exports succeed. Tests cover preference migration/persistence and reminder identity, rotation and exactly-one-gratitude across 366 days in all locales.
+New tests check individual DO/SUPPORT/KEEP IN MIND text in all eleven locales over 90 days for 180 onboarding and six edge settings, varied starts, held phases and daily phase switching. Gratitude remains exactly one separate daily habit. Source/output drift is checked in CI. See docs/CONTENT.md for the fresh-history scope and release/VALIDATION.md for check evidence.
 ## BROKEN / MISSING
-No real-device or visual interaction QA completed. New support/context sections use a small editorial draft bank, not a verified three-month full-format reserve. Eleven-language new copy needs native review, especially Baba Malay. Native purchase/notification behavior still needs device QA.
+Native review remains pending separately for all eleven locales in release/content-review.json; Baba Malay needs community review. Exact-text uniqueness does not certify semantic independence or native quality. Device purchase/notification/visual QA remains incomplete.
 ## BLOCKERS
-Founder has no Apple Developer Program membership yet; Apple signing and device registration block cloud installation on iPhone. Store legal/publisher/support details, RevenueCat keys and release evidence missing. THEA URL unknown. No signed build/store submission.
+Apple membership/signing/device registration and usable test entitlement are needed for standalone iPhone installation. Publisher/legal/support details, RevenueCat keys and release evidence remain missing. THEA URL unknown.
 ## NEXT BEST MOVE
-Activate Apple Developer Program, configure signing/device registration, and prepare a standalone iPhone preview build. Configure a usable test entitlement before distribution; missing RevenueCat keys otherwise block advice access.
+Review localized editorial banks with native speakers while preparing the signed iPhone preview and testing real navigation, purchases and reminders.
 ## PARALLEL
-Editorial review and store/legal preparation.
+Editorial review, legal/store preparation and device-build preparation.
 ## REFERENCES
-Feature branch feat/native-interface-20261101; bootstrap PR #2. docs/UX.md and DECISIONS.md govern visuals. release/VALIDATION.md records check limits.
+Branch feat/three-month-content-20261102, based on native-interface PR #3; bootstrap PR #2. docs/CONTENT.md defines reserve scope and proof; docs/UX.md governs visuals. No build/update/submission was published in this task.

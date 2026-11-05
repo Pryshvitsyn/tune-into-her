@@ -1,5 +1,9 @@
 # TASKS
 ## NOW
+- [x] Audit v3 component repetition and expand each locale from 88 to 318 authored texts.
+- [x] Add first-90-days constituent nonrepetition, phase-transition, legacy compatibility and gratitude tests.
+- [x] Add generated-output drift checking to CI and per-locale pending review status.
+
 - [x] Authenticate as eliogenesis and verify the existing EAS project identity/access.
 - [x] Prepare expo-updates, fingerprint runtime compatibility and separate preview/production channels.
 - [ ] Verify update delivery on an installed preview build.
@@ -10,7 +14,7 @@
 - [x] Create shared vector THEA/app emblems.
 - [ ] Visually verify emblem geometry and small-size rendering on devices.
 - [x] Implement centered DO/SUPPORT/KEEP IN MIND and daily gratitude rotation.
-- [ ] Expand new support/context bank and prove 90-day full-format coverage.
+- [x] Expand all three daily sections across 11 locales; verify 90-day visible-bundle coverage and constituent rotation. See docs/CONTENT.md.
 ## NEXT
 - [x] Apply visual system to existing routes; implement Appearance and About THEA.
 - [ ] Verify cycle editing, onboarding, language/theme persistence, deletion and notification denial.

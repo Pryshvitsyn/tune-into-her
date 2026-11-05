@@ -126,7 +126,7 @@ export default function TodayScreen() {
           onPress={() => setRetry((n) => n + 1)}
         />
       ) : cue ? (
-        <AdviceBlocks physical={cue.cue} date={today} />
+        <AdviceBlocks advice={cue} date={today} />
       ) : (
         <ActivityIndicator color={colors.primary} />
       )}

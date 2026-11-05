@@ -30,12 +30,38 @@ export async function selectDailyCue(options: {
   const existing = history.find((item) => item.date === options.date);
   if (existing) return existing.cueId;
 
-  const candidates = (options.catalog ?? getCatalog()).filter((item) => item.phases.includes(options.phase));
+  const catalog = options.catalog ?? getCatalog();
+  const candidates = catalog.filter((item) => item.phases.includes(options.phase));
   if (!candidates.length) throw new Error(`NO_CUES_FOR_PHASE:${options.phase}`);
   const used = new Set(history.map((item) => item.cueId));
   const offset = stableHash(`${options.date}:${fingerprint}`) % candidates.length;
   const rotated = [...candidates.slice(offset), ...candidates.slice(0, offset)];
-  const selected = rotated.find((item) => !used.has(item.id)) ?? rotated[0];
+  const unused = rotated.filter((item) => !used.has(item.id));
+  const reserve = unused.filter(item => item.tags.includes('reserve-v4'));
+  const pool = reserve.length ? reserve : unused.length ? unused : rotated;
+  const byId = new Map(catalog.map(item => [item.id, item]));
+  const recent = history.filter(item => item.date < options.date)
+    .sort((a, b) => b.date.localeCompare(a.date)).slice(0, 89)
+    .map(item => byId.get(item.cueId)).filter((item): item is CueMetadata => !!item);
+  // v4 slots share one-to-one support/context identities across every phase.
+  // Prefer a candidate whose THREE components are absent from the previous 89
+  // selections. Legacy histories/custom catalogs can lack such a candidate;
+  // use a deterministic least-recent fallback rather than deleting history.
+  const usedActions = new Set(recent.map(item => item.actionId).filter(Boolean));
+  const usedSupport = new Set(recent.map(item => item.supportId).filter(Boolean));
+  const usedContext = new Set(recent.map(item => item.contextId).filter(Boolean));
+  const fresh = pool.find(item => item.actionId && item.supportId && item.contextId &&
+    !usedActions.has(item.actionId) && !usedSupport.has(item.supportId) && !usedContext.has(item.contextId));
+  const repetitionCost = (item: CueMetadata) => recent.reduce((cost, previous, index) => {
+    const recency = 89 - index;
+    return cost + recency * (
+      (item.id === previous.id ? 100 : 0) +
+      (item.actionId && item.actionId === previous.actionId ? 4 : 0) +
+      (item.supportId && item.supportId === previous.supportId ? 2 : 0) +
+      (item.contextId && item.contextId === previous.contextId ? 1 : 0));
+  }, 0);
+  const selected = fresh ?? pool.reduce<CueMetadata | undefined>((best, item) =>
+    !best || repetitionCost(item) < repetitionCost(best) ? item : best, undefined);
   if (!selected) throw new Error(`NO_CUES_FOR_PHASE:${options.phase}`);
 
   await options.store.writeAll([
