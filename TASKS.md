@@ -1,5 +1,9 @@
 # TASKS
 ## NOW
+- [x] Audit v3 component repetition and expand each locale from 88 to 318 authored texts.
+- [x] Add first-90-days constituent nonrepetition, phase-transition, legacy compatibility and gratitude tests.
+- [x] Add generated-output drift checking to CI and per-locale pending review status.
+
 - [x] Authenticate as eliogenesis and verify the existing EAS project identity/access.
 - [x] Prepare expo-updates, fingerprint runtime compatibility and separate preview/production channels.
 - [ ] Verify update delivery on an installed preview build.

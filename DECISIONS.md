@@ -23,3 +23,6 @@ Status: APPROVED
 Decision: Eleven locales, English reference mockups; native review required.
 Reason: Approved release scope.
 Reopen only if: Founder changes scope.
+
+## 2026-11-05 — Component-level ninety-day reserve
+Append aligned editorial texts and new reserve IDs rather than rewrite persisted v3 advice. Reserve slots couple support/context identities across phases so fresh histories can select 90 distinct blocks per section; use the previous 89 selections instead of a seven-selection preference. Keep deterministic fallback for legacy/depleted histories. Gratitude is intentionally separate from uniqueness. Native approval remains pending per locale. See docs/CONTENT.md.

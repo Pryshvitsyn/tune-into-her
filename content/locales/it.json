@@ -2418,5 +2418,635 @@
     "cue": "Organizza i dettagli di un viaggio concordato, compreso il ritorno.",
     "support": "Nomina una qualità che ammiri e un esempio recente.",
     "context": "Non usare l'app per vincere una discussione."
+  },
+  "reserve_menstrual_001": {
+    "cue": "Se desidera prodotti mestruali, chiedi quello abituale e compra proprio quello.",
+    "support": "Chiedi se vuole aiuto per preparare la riunione di domani.",
+    "context": "Non suggerire farmaci in base a questo calendario."
+  },
+  "reserve_follicular_001": {
+    "cue": "Offri un piccolo aiuto per un progetto scelto da lei, senza presumere più energia.",
+    "support": "Chiedi se vuole aiuto per preparare la riunione di domani.",
+    "context": "Non suggerire farmaci in base a questo calendario."
+  },
+  "reserve_mid_cycle_001": {
+    "cue": "Proponi tempo insieme senza considerare la fase stimata come consenso.",
+    "support": "Chiedi se vuole aiuto per preparare la riunione di domani.",
+    "context": "Non suggerire farmaci in base a questo calendario."
+  },
+  "reserve_luteal_001": {
+    "cue": "Prima delle mestruazioni stimate, chiedi se servono i suoi prodotti abituali.",
+    "support": "Chiedi se vuole aiuto per preparare la riunione di domani.",
+    "context": "Non suggerire farmaci in base a questo calendario."
+  },
+  "reserve_menstrual_002": {
+    "cue": "Offriti di svuotare con discrezione il cestino del bagno; rispetta la sua privacy.",
+    "support": "Chiedi quale parte di una nuova responsabilità non è chiara.",
+    "context": "Una routine cambiata merita un accordo aggiornato."
+  },
+  "reserve_follicular_002": {
+    "cue": "Proponi un'attività che le piace e lascia decidere il ritmo a lei.",
+    "support": "Chiedi quale parte di una nuova responsabilità non è chiara.",
+    "context": "Una routine cambiata merita un accordo aggiornato."
+  },
+  "reserve_mid_cycle_002": {
+    "cue": "Chiedi quale vicinanza desidera; una serata tranquilla è una risposta completa.",
+    "support": "Chiedi quale parte di una nuova responsabilità non è chiara.",
+    "context": "Una routine cambiata merita un accordo aggiornato."
+  },
+  "reserve_luteal_002": {
+    "cue": "Offriti di preparare in anticipo un pasto concordato per una serata meno frettolosa.",
+    "support": "Chiedi quale parte di una nuova responsabilità non è chiara.",
+    "context": "Una routine cambiata merita un accordo aggiornato."
+  },
+  "reserve_menstrual_003": {
+    "cue": "Se riferisce disagio, offri ciò che di solito la fa stare comoda; altrimenti svolgi una faccenda.",
+    "support": "Chiedi cosa ha reso soddisfacente un compito recente.",
+    "context": "Non confrontare le sue capacità attuali con quelle altrui."
+  },
+  "reserve_follicular_003": {
+    "cue": "Chiedi se vuole organizzare un'uscita; restare a casa va altrettanto bene.",
+    "support": "Chiedi cosa ha reso soddisfacente un compito recente.",
+    "context": "Non confrontare le sue capacità attuali con quelle altrui."
+  },
+  "reserve_mid_cycle_003": {
+    "cue": "Aiuta a organizzare un appuntamento che volete entrambi, con programmi flessibili.",
+    "support": "Chiedi cosa ha reso soddisfacente un compito recente.",
+    "context": "Non confrontare le sue capacità attuali con quelle altrui."
+  },
+  "reserve_luteal_003": {
+    "cue": "Se chiede un programma più leggero, occupati di una modifica pratica.",
+    "support": "Chiedi cosa ha reso soddisfacente un compito recente.",
+    "context": "Non confrontare le sue capacità attuali con quelle altrui."
+  },
+  "reserve_menstrual_004": {
+    "cue": "Chiedi se una cena più semplice aiuterebbe durante le mestruazioni; segui il suo appetito.",
+    "support": "Chiedi se per decidere servono più informazioni o più tempo.",
+    "context": "Una scadenza scelta da te non diventa automaticamente una sua emergenza."
+  },
+  "reserve_follicular_004": {
+    "cue": "Lascia spazio al suo hobby svolgendo la tua faccenda domestica.",
+    "support": "Chiedi se per decidere servono più informazioni o più tempo.",
+    "context": "Una scadenza scelta da te non diventa automaticamente una sua emergenza."
+  },
+  "reserve_mid_cycle_004": {
+    "cue": "Rispetta il tempo personale concordato senza presumere che voglia compagnia.",
+    "support": "Chiedi se per decidere servono più informazioni o più tempo.",
+    "context": "Una scadenza scelta da te non diventa automaticamente una sua emergenza."
+  },
+  "reserve_luteal_004": {
+    "cue": "Rivedi la tua parte delle prossime faccende senza presumere come si senta.",
+    "support": "Chiedi se per decidere servono più informazioni o più tempo.",
+    "context": "Una scadenza scelta da te non diventa automaticamente una sua emergenza."
+  },
+  "reserve_menstrual_005": {
+    "cue": "Se vuole riposare durante le mestruazioni, concordate un momento tranquillo in casa.",
+    "support": "Chiedi cosa vuole imparare questo mese.",
+    "context": "Avvisa quando cambia la tua disponibilità."
+  },
+  "reserve_follicular_005": {
+    "cue": "Se sceglie un nuovo corso, offriti di controllare gli orari senza iscriverla.",
+    "support": "Chiedi cosa vuole imparare questo mese.",
+    "context": "Avvisa quando cambia la tua disponibilità."
+  },
+  "reserve_mid_cycle_005": {
+    "cue": "Se entrambi volete uscire, chiedi se le foto devono restare private.",
+    "support": "Chiedi cosa vuole imparare questo mese.",
+    "context": "Avvisa quando cambia la tua disponibilità."
+  },
+  "reserve_luteal_005": {
+    "cue": "Prima delle mestruazioni stimate, controlla le tue scadenze per non dipendere da lei all'ultimo minuto.",
+    "support": "Chiedi cosa vuole imparare questo mese.",
+    "context": "Avvisa quando cambia la tua disponibilità."
+  },
+  "reserve_menstrual_006": {
+    "cue": "Se menziona una macchia, chiedi se vuole aiuto a lavare il capo con discrezione.",
+    "support": "Chiedi se vuole provare una presentazione con te.",
+    "context": "Un invito dovrebbe chiarire l'impegno pratico richiesto."
+  },
+  "reserve_follicular_006": {
+    "cue": "Se vuole iniziare un progetto, chiedi quali materiali ha scelto.",
+    "support": "Chiedi se vuole provare una presentazione con te.",
+    "context": "Un invito dovrebbe chiarire l'impegno pratico richiesto."
+  },
+  "reserve_mid_cycle_006": {
+    "cue": "Concordate l'orario di rientro prima di organizzare la serata insieme.",
+    "support": "Chiedi se vuole provare una presentazione con te.",
+    "context": "Un invito dovrebbe chiarire l'impegno pratico richiesto."
+  },
+  "reserve_luteal_006": {
+    "cue": "Se vuole meno commissioni prima delle mestruazioni, proponi di unire due tappe concordate.",
+    "support": "Chiedi se vuole provare una presentazione con te.",
+    "context": "Un invito dovrebbe chiarire l'impegno pratico richiesto."
+  },
+  "reserve_menstrual_007": {
+    "cue": "Prima di un'uscita durante le mestruazioni, chiedi se preferisce un tragitto più breve.",
+    "support": "Chiedi per quale impegno vuole tenere del tempo questa settimana.",
+    "context": "Non spendere soldi comuni per una sorpresa senza limiti concordati."
+  },
+  "reserve_follicular_007": {
+    "cue": "Offriti di proteggere una sessione di studio scelta da lei, senza presumere una fase produttiva.",
+    "support": "Chiedi per quale impegno vuole tenere del tempo questa settimana.",
+    "context": "Non spendere soldi comuni per una sorpresa senza limiti concordati."
+  },
+  "reserve_mid_cycle_007": {
+    "cue": "Se vuole compagnia, chiedi quale attività le piace davvero oggi.",
+    "support": "Chiedi per quale impegno vuole tenere del tempo questa settimana.",
+    "context": "Non spendere soldi comuni per una sorpresa senza limiti concordati."
+  },
+  "reserve_luteal_007": {
+    "cue": "Chiedi se vuole un fine settimana flessibile, senza decidere in base alla fase.",
+    "support": "Chiedi per quale impegno vuole tenere del tempo questa settimana.",
+    "context": "Non spendere soldi comuni per una sorpresa senza limiti concordati."
+  },
+  "reserve_menstrual_008": {
+    "cue": "Se un fastidio mestruale interrompe un compito, offriti di completarne l'ultimo passo concordato.",
+    "support": "Chiedi se vuole aiuto per formulare una richiesta difficile.",
+    "context": "Leggere insieme un messaggio richiede rispetto anche per la privacy del mittente."
+  },
+  "reserve_follicular_008": {
+    "cue": "Se vuole una nuova uscita, trovane il costo prima di chiederle un impegno.",
+    "support": "Chiedi se vuole aiuto per formulare una richiesta difficile.",
+    "context": "Leggere insieme un messaggio richiede rispetto anche per la privacy del mittente."
+  },
+  "reserve_mid_cycle_008": {
+    "cue": "Se rifiuta un appuntamento, annulla i preparativi senza chiederle di giustificarsi.",
+    "support": "Chiedi se vuole aiuto per formulare una richiesta difficile.",
+    "context": "Leggere insieme un messaggio richiede rispetto anche per la privacy del mittente."
+  },
+  "reserve_luteal_008": {
+    "cue": "Se riferisce sensibilità al rumore, offriti di usare cuffie per il tuo audio.",
+    "support": "Chiedi se vuole aiuto per formulare una richiesta difficile.",
+    "context": "Leggere insieme un messaggio richiede rispetto anche per la privacy del mittente."
+  },
+  "reserve_menstrual_009": {
+    "cue": "Se vuole un cambio per uscire, chiedi quale capo mettere in borsa.",
+    "support": "Chiedi cosa l'ha aiutata a sentirsi inclusa di recente.",
+    "context": "Può apprezzare un'attività senza volerla ripetere ogni settimana."
+  },
+  "reserve_follicular_009": {
+    "cue": "Chiedi se vuole una prova prima di comprare attrezzatura per l'hobby scelto.",
+    "support": "Chiedi cosa l'ha aiutata a sentirsi inclusa di recente.",
+    "context": "Può apprezzare un'attività senza volerla ripetere ogni settimana."
+  },
+  "reserve_mid_cycle_009": {
+    "cue": "Chiedi prima di pubblicare un momento passato insieme.",
+    "support": "Chiedi cosa l'ha aiutata a sentirsi inclusa di recente.",
+    "context": "Può apprezzare un'attività senza volerla ripetere ogni settimana."
+  },
+  "reserve_luteal_009": {
+    "cue": "Se vuole mattine più semplici prima delle mestruazioni, offriti di preparare l'occorrente della colazione comune.",
+    "support": "Chiedi cosa l'ha aiutata a sentirsi inclusa di recente.",
+    "context": "Può apprezzare un'attività senza volerla ripetere ogni settimana."
+  },
+  "reserve_menstrual_010": {
+    "cue": "Se preferisce un pasto tranquillo durante le mestruazioni, proponi di rimandare gli ospiti con il suo accordo.",
+    "support": "Chiedi se vuole compagnia mentre sbriga le pratiche.",
+    "context": "La stanchezza non è un difetto di carattere."
+  },
+  "reserve_follicular_010": {
+    "cue": "Se sceglie di rivedere un'amica o amico, offri spazio pratico per la visita.",
+    "support": "Chiedi se vuole compagnia mentre sbriga le pratiche.",
+    "context": "La stanchezza non è un difetto di carattere."
+  },
+  "reserve_mid_cycle_010": {
+    "cue": "Per un'attività di gruppo, concordate come ciascuno può andare via autonomamente.",
+    "support": "Chiedi se vuole compagnia mentre sbriga le pratiche.",
+    "context": "La stanchezza non è un difetto di carattere."
+  },
+  "reserve_luteal_010": {
+    "cue": "Se le mestruazioni previste coincidono con un viaggio, chiedi se vuole una prenotazione più flessibile.",
+    "support": "Chiedi se vuole compagnia mentre sbriga le pratiche.",
+    "context": "La stanchezza non è un difetto di carattere."
+  },
+  "reserve_menstrual_011": {
+    "cue": "Chiedi se il suo consueto oggetto di conforto mestruale va pulito prima di riporlo.",
+    "support": "Chiedi di quale scelta recente è orgogliosa.",
+    "context": "Un programma può prevedere meno di quanto il tempo consenta."
+  },
+  "reserve_follicular_011": {
+    "cue": "Se vuole organizzare uno scaffale di progetto, chiedi quali oggetti puoi maneggiare.",
+    "support": "Chiedi di quale scelta recente è orgogliosa.",
+    "context": "Un programma può prevedere meno di quanto il tempo consenta."
+  },
+  "reserve_mid_cycle_011": {
+    "cue": "Se vuole attività fisica insieme, lascia scegliere a lei l'intensità.",
+    "support": "Chiedi di quale scelta recente è orgogliosa.",
+    "context": "Un programma può prevedere meno di quanto il tempo consenta."
+  },
+  "reserve_luteal_011": {
+    "cue": "Se vuole meno decisioni stasera, chiedi il permesso di scegliere un'opzione domestica già concordata.",
+    "support": "Chiedi di quale scelta recente è orgogliosa.",
+    "context": "Un programma può prevedere meno di quanto il tempo consenta."
+  },
+  "reserve_menstrual_012": {
+    "cue": "Se durante le mestruazioni serve una sosta in bagno, aiuta a trovarlo senza annunciarne il motivo.",
+    "support": "Chiedi se un evento in arrivo ha aspetti pratici complicati.",
+    "context": "Non considerare automaticamente le lacrime una tattica."
+  },
+  "reserve_follicular_012": {
+    "cue": "Se preferisce non iniziare nulla, sostieni la normale routine di oggi.",
+    "support": "Chiedi se un evento in arrivo ha aspetti pratici complicati.",
+    "context": "Non considerare automaticamente le lacrime una tattica."
+  },
+  "reserve_mid_cycle_012": {
+    "cue": "Se sceglie tempo da sola, dedicati ai tuoi programmi senza controlli ripetuti.",
+    "support": "Chiedi se un evento in arrivo ha aspetti pratici complicati.",
+    "context": "Non considerare automaticamente le lacrime una tattica."
+  },
+  "reserve_luteal_012": {
+    "cue": "Se sta bene prima delle mestruazioni stimate, mantieni l'attività che ha scelto.",
+    "support": "Chiedi se un evento in arrivo ha aspetti pratici complicati.",
+    "context": "Non considerare automaticamente le lacrime una tattica."
+  },
+  "reserve_all_013": {
+    "cue": "Svolgi la tua parte delle faccende perché possa riposare, se vuole.",
+    "support": "Chiedi se vuole aiuto per confrontare le opzioni senza consigli.",
+    "context": "Il sostegno non dovrebbe creare un debito da ripagare."
+  },
+  "reserve_all_014": {
+    "cue": "Sistema un piccolo problema domestico che avevi già promesso di risolvere.",
+    "support": "Chiedi cosa vorrebbe finire prima di una pausa.",
+    "context": "Una richiesta chiara indica l'azione, non un giudizio sulla personalità."
+  },
+  "reserve_all_015": {
+    "cue": "Conserva gli avanzi e lascia la cucina pronta per il prossimo pasto.",
+    "support": "Chiedi se un'aspettativa familiare va discussa insieme.",
+    "context": "Non negoziare il limite altrui davanti agli ospiti."
+  },
+  "reserve_all_016": {
+    "cue": "Controlla le scorte comuni del bagno e reintegra ciò che sta finendo.",
+    "support": "Chiedi cosa vuole far sapere a un ospite prima che arrivi.",
+    "context": "I suoi obiettivi professionali meritano tempo accanto agli impegni comuni."
+  },
+  "reserve_all_017": {
+    "cue": "Proponi di cambiare le lenzuola; concorda prima il momento.",
+    "support": "Chiedi se vuole fissare un orario di fine per gli incontri di oggi.",
+    "context": "Aiutare con un modulo non ti autorizza a firmare per lei."
+  },
+  "reserve_all_018": {
+    "cue": "Proponi una breve passeggiata facile, lasciando piena libertà di rifiutare.",
+    "support": "Chiedi quale sua capacità vorrebbe fosse notata di più.",
+    "context": "Si può rifiutare di rispondere sui sintomi."
+  },
+  "reserve_all_019": {
+    "cue": "Proponi due cene semplici e chiedi quale preferisce.",
+    "support": "Chiedi se vuole un riscontro ora o dopo essersi riposata.",
+    "context": "Fare la tua parte non è fare un favore alla tua stessa casa."
+  },
+  "reserve_all_020": {
+    "cue": "Concludi una pratica amministrativa di tua responsabilità.",
+    "support": "Chiedi quale parte del progetto comune vuole guidare.",
+    "context": "Non chiederle di gestire i tuoi promemoria."
+  },
+  "reserve_all_021": {
+    "cue": "Riordina le tue scarpe e le tue cose all'ingresso.",
+    "support": "Chiedi cosa renderebbe più facile chiedere aiuto.",
+    "context": "Una preferenza può essere specifica senza essere irragionevole."
+  },
+  "reserve_all_022": {
+    "cue": "Dividete un lavoro comune in passaggi; completa la tua parte.",
+    "support": "Chiedi se ti vuole presente durante una telefonata difficile concordata.",
+    "context": "Non renderla il pubblico delle tue lamentele per averla aiutata."
+  },
+  "reserve_all_023": {
+    "cue": "Offriti di preparare uno spuntino o il pranzo da portare secondo i suoi gusti.",
+    "support": "Chiedi cosa le è sembrato equo in una recente decisione comune.",
+    "context": "Le scuse non esigono un perdono immediato."
+  },
+  "reserve_all_024": {
+    "cue": "Concludi una piccola cosa promessa e comunica che è fatta.",
+    "support": "Chiedi se un'interruzione ricorrente richiede un nuovo accordo.",
+    "context": "Non rivelare difficoltà private con un apprezzamento pubblico."
+  },
+  "reserve_all_025": {
+    "cue": "Pulisci il lavandino dopo la tua routine mattutina.",
+    "support": "Chiedi per quale scadenza serve tempo senza interruzioni.",
+    "context": "Una stima realistica include preparazione e riordino."
+  },
+  "reserve_all_026": {
+    "cue": "Togli il calcare dal bollitore se serve.",
+    "support": "Chiedi se vuole rivedere la divisione dei lavori domestici.",
+    "context": "Non interpretare un viaggio silenzioso come un verdetto sulla relazione."
+  },
+  "reserve_all_027": {
+    "cue": "Controlla i cibi scaduti nel frigo condiviso con chi li ha comprati.",
+    "support": "Chiedi cosa rende comodo il suo spazio di lavoro.",
+    "context": "La persona interessata contribuisce a definire un aiuto riuscito."
+  },
+  "reserve_all_028": {
+    "cue": "Pulisci il piano cottura quando è freddo.",
+    "support": "Chiedi se vuole aiuto per ricordare una domanda per un appuntamento.",
+    "context": "Evita battute sulla sua competenza quando chiede aiuto."
+  },
+  "reserve_all_029": {
+    "cue": "Sostituisci lo strofinaccio con uno pulito.",
+    "support": "Chiedi cosa le è piaciuto di una recente conversazione con un'amica o amico.",
+    "context": "Condividere un dispositivo non autorizza ad aprire ogni file."
+  },
+  "reserve_all_030": {
+    "cue": "Passa l'aspirapolvere in una stanza comune all'ora concordata.",
+    "support": "Chiedi se vuole sostegno nel mantenere un limite con gli ospiti.",
+    "context": "Non trasformare un interesse personale in una lezione senza invito."
+  },
+  "reserve_all_031": {
+    "cue": "Riordina i tuoi documenti sul tavolo comune.",
+    "support": "Chiedi quale passaggio della giornata sembra più frettoloso.",
+    "context": "Un preavviso tardivo ha un costo anche se il cambiamento è inevitabile."
+  },
+  "reserve_all_032": {
+    "cue": "Rimetti gli oggetti domestici presi in prestito al posto concordato.",
+    "support": "Chiedi se preferisce i dettagli di un accordo comune per iscritto.",
+    "context": "Una capacità non rende ogni compito collegato una sua responsabilità."
+  },
+  "reserve_all_033": {
+    "cue": "Controlla il calendario condiviso prima di proporre programmi per il fine settimana.",
+    "support": "Chiedi cosa vuole farti sapere del suo carico di lavoro attuale.",
+    "context": "Non pretendere una reazione positiva a una sorpresa indesiderata."
+  },
+  "reserve_all_034": {
+    "cue": "Verifica gli orari per una commissione concordata.",
+    "support": "Chiedi se un acquisto previsto richiede prima un limite di spesa.",
+    "context": "Sostenere può includere ammettere di non sapere la risposta."
+  },
+  "reserve_all_035": {
+    "cue": "Prepara la tua borsa prima di un'uscita insieme.",
+    "support": "Chiedi cosa vuole mantenere in una routine che cambia.",
+    "context": "Separa le esigenze di accessibilità dalle ipotesi sulla motivazione."
+  },
+  "reserve_all_036": {
+    "cue": "Offriti di ritirare un pacco concordato.",
+    "support": "Chiedi se vuole aiuto a trovare il primo passo di un compito bloccato.",
+    "context": "Un obiettivo comune dovrebbe permettere a entrambi di rivedere la propria parte."
+  },
+  "reserve_all_037": {
+    "cue": "Porta i materiali da riciclare concordati al punto di raccolta.",
+    "support": "Chiedi quale ambiente facilita la concentrazione.",
+    "context": "Un rifiuto precedente non deve essere contestato di nuovo oggi."
+  },
+  "reserve_all_038": {
+    "cue": "Annaffia le piante comuni secondo il programma concordato.",
+    "support": "Chiedi se vuole del tempo senza interruzioni per un interesse personale.",
+    "context": "Valuta il sostegno dalla sua esperienza, non solo dalle tue intenzioni."
+  },
+  "reserve_all_039": {
+    "cue": "Controlla i doppioni nella lista della spesa condivisa.",
+    "support": "Chiedi quale aggiornamento sui progressi sarebbe utile.",
+    "context": "Non sostituire il prodotto scelto da lei con il tuo preferito senza chiedere."
+  },
+  "reserve_all_040": {
+    "cue": "Concordate chi riceverà la consegna prevista.",
+    "support": "Chiedi se un vecchio accordo è ancora adatto alla situazione attuale.",
+    "context": "Il tempo libero non significa automaticamente disponibilità alle richieste."
+  },
+  "reserve_all_041": {
+    "cue": "Offriti di prenotare un appuntamento condiviso concordato.",
+    "support": "Chiedi cosa vorrebbe delegare e cosa vuole tenere per sé.",
+    "context": "Un compromesso richiede un accordo chiaro su chi fa cosa."
+  },
+  "reserve_all_042": {
+    "cue": "Riponi i piatti puliti a un'altezza accessibile concordata.",
+    "support": "Chiedi se vuole un piano alternativo per un impegno incerto.",
+    "context": "Non classificare le sue preoccupazioni rispetto alle esperienze più difficili altrui."
+  },
+  "reserve_all_043": {
+    "cue": "Raccogli le briciole nella zona pranzo dopo mangiato.",
+    "support": "Chiedi cosa renderebbe meno faticoso un viaggio insieme.",
+    "context": "Il suo benessere dichiarato conta più della stima del calendario."
+  },
+  "reserve_all_044": {
+    "cue": "Controlla se gli asciugamani comuni vanno lavati.",
+    "support": "Chiedi quale parte dell'ospitalità sembra un lavoro invisibile.",
+    "context": "Un cambiamento di programma non richiede spiegazioni sugli ormoni."
+  },
+  "reserve_all_045": {
+    "cue": "Offriti di preparare lo spazio per gli ospiti concordati.",
+    "support": "Chiedi se vuole che tu ricordi un nome o un dettaglio della sua giornata.",
+    "context": "Un'offerta serve solo se «no» è una possibilità reale."
+  },
+  "reserve_all_046": {
+    "cue": "Controlla il termine di reso di un acquisto comune.",
+    "support": "Chiedi cosa l'ha aiutata a recuperare dopo una recente giornata intensa.",
+    "context": "Non trasformare l'aiuto in una richiesta di elogi o intimità."
+  },
+  "reserve_all_047": {
+    "cue": "Archivia la ricevuta di una spesa comune.",
+    "support": "Chiedi se preferisce le domande dopo aver finito il pensiero.",
+    "context": "Chiedi prima di toccare o spostare oggetti personali."
+  },
+  "reserve_all_048": {
+    "cue": "Imposta la tua sveglia senza affidarti a lei.",
+    "support": "Chiedi quale piccola spesa richiede una decisione comune.",
+    "context": "Preferenze diverse non significano che qualcuno abbia torto."
+  },
+  "reserve_all_049": {
+    "cue": "Offriti di controllare i trasporti per una visita insieme.",
+    "support": "Chiedi se vuole mantenere privato un traguardo personale.",
+    "context": "Non dedurre l'umore dalla fase stimata del ciclo."
+  },
+  "reserve_all_050": {
+    "cue": "Rimuovi i tuoi download o documenti di lavoro dal dispositivo condiviso.",
+    "support": "Chiedi cosa renderebbe più semplice la sua mattina.",
+    "context": "Non condividere informazioni sul suo ciclo senza il suo consenso."
+  },
+  "reserve_all_051": {
+    "cue": "Chiedi prima di regolare riscaldamento o ventilazione condivisi.",
+    "support": "Chiedi se vuole aiuto per fissare un punto di arresto realistico oggi.",
+    "context": "Una promessa è più credibile con un tempo realistico."
+  },
+  "reserve_all_052": {
+    "cue": "Proponi un percorso più tranquillo per l'uscita concordata.",
+    "support": "Chiedi quale aspettativa vuole chiarire prima di accettare.",
+    "context": "Completa il compito senza lasciare a lei l'organizzazione."
+  },
+  "reserve_all_053": {
+    "cue": "Pulisci gli attrezzi dopo la tua riparazione.",
+    "support": "Chiedi se un cambiamento in arrivo influisce sul suo tempo personale.",
+    "context": "Fai una domanda chiara invece di controllare continuamente."
+  },
+  "reserve_all_054": {
+    "cue": "Controlla la scadenza di una bolletta comune e la tua quota concordata.",
+    "support": "Chiedi di quale fonte si fiderebbe per questa decisione.",
+    "context": "Il silenzio può essere piacevole; chiedi prima di riempirlo."
+  },
+  "reserve_all_055": {
+    "cue": "Offriti di misurare lo spazio prima di comprare un mobile insieme.",
+    "support": "Chiedi se vuole scrivere il problema prima di discutere soluzioni.",
+    "context": "Puoi ascoltare con attenzione senza concordare su ogni dettaglio."
+  },
+  "reserve_all_056": {
+    "cue": "Lava le borse riutilizzabili se serve.",
+    "support": "Chiedi cosa rende accogliente lo spazio comune per lei.",
+    "context": "Interrompete una discussione tesa e concordate quando riprenderla."
+  },
+  "reserve_all_057": {
+    "cue": "Riempi il dispenser di sapone comune vuoto.",
+    "support": "Chiedi se vuole sostegno per rifiutare un invito senza spiegazioni.",
+    "context": "Non usare l'app per vincere una discussione."
+  },
+  "reserve_all_058": {
+    "cue": "Offriti di scrivere la lista bagagli concordata.",
+    "support": "Chiedi quale dettaglio devi confermare prima di occuparti della sua richiesta.",
+    "context": "Nelle scuse nomina la tua azione e come rimedierai."
+  },
+  "reserve_all_059": {
+    "cue": "Conferma un appuntamento concordato senza farti rincorrere.",
+    "support": "Chiedi se vuole un rientro tranquillo dopo l'uscita di oggi.",
+    "context": "Stare bene non obbliga a socializzare o all'intimità."
+  },
+  "reserve_all_060": {
+    "cue": "Silenzia le notifiche di lavoro durante il pasto concordato.",
+    "support": "Chiedi cosa vuole sia riconosciuto nell'imparare qualcosa di difficile.",
+    "context": "Puoi sostenere senza prendere decisioni al suo posto."
+  },
+  "reserve_all_061": {
+    "cue": "Offriti di verificare l'accessibilità del luogo previsto.",
+    "support": "Chiedi se vuole scegliere l'ordine delle commissioni comuni.",
+    "context": "Rispetta un limite anche se non ne comprendi il motivo."
+  },
+  "reserve_all_062": {
+    "cue": "Pulisci la macchina del caffè dopo l'uso.",
+    "support": "Chiedi se vuole che riassumi l'accordo prima di agire.",
+    "context": "Non raccontare la sua esperienza personale come una battuta."
+  },
+  "reserve_all_063": {
+    "cue": "Offriti di portare le donazioni concordate al punto di raccolta.",
+    "support": "Chiedi quale parte della settimana vuole lasciare senza programmi.",
+    "context": "Nota cosa è stato utile e chiedi prima di ripeterlo un altro giorno."
+  },
+  "reserve_all_064": {
+    "cue": "Controlla che gli ombrelli comuni siano asciutti prima di riporli.",
+    "support": "Chiedi cosa preferisce che tu non cerchi di risolvere oggi.",
+    "context": "Mantieni chiare e gestibili le tue responsabilità."
+  },
+  "reserve_all_065": {
+    "cue": "Offriti di caricare un dispositivo condiviso prima del viaggio insieme.",
+    "support": "Chiedi se un obiettivo comune le sembra ancora anche una sua scelta.",
+    "context": "Se non hai capito, chiedi con calma senza indovinare le intenzioni."
+  },
+  "reserve_all_066": {
+    "cue": "Organizza i tuoi farmaci o prodotti personali.",
+    "support": "Chiedi se vuole aiuto per verificare le condizioni di un nuovo impegno.",
+    "context": "Piccoli gesti affidabili contano più di una grande promessa."
+  },
+  "reserve_all_067": {
+    "cue": "Offriti di essere presente nella fascia di consegna domestica concordata.",
+    "support": "Chiedi: «Vuoi essere ascoltata, avere idee o un aiuto pratico?»",
+    "context": "Il lavoro domestico comprende accorgersi di cosa va fatto."
+  },
+  "reserve_all_068": {
+    "cue": "Togli i tuoi capelli dallo scarico dopo la doccia.",
+    "support": "Metti via il telefono e ascolta senza preparare la risposta.",
+    "context": "Un budget comune richiede l'accordo di entrambi."
+  },
+  "reserve_all_069": {
+    "cue": "Offriti di spostare a un altro momento un tuo lavoro rumoroso.",
+    "support": "Chiedi: «Cosa renderebbe più facile la tua serata?»",
+    "context": "Il permesso di aiutare non autorizza a leggere messaggi privati."
+  },
+  "reserve_all_070": {
+    "cue": "Controlla gli ingredienti prima di cucinare il pasto concordato.",
+    "support": "Riassumi ciò che hai sentito e verifica di aver capito.",
+    "context": "Una scadenza di lavoro non cancella il bisogno di riposo."
+  },
+  "reserve_all_071": {
+    "cue": "Offriti di stampare o ordinare i documenti di viaggio condivisi concordati.",
+    "support": "Di': «Possiamo cambiare programma se non ti va più bene».",
+    "context": "Le sue amicizie non richiedono la tua supervisione."
+  },
+  "reserve_all_072": {
+    "cue": "Togli i tuoi contenitori vuoti dal frigo condiviso.",
+    "support": "Chiedi se preferisce compagnia o un po' di tempo da sola.",
+    "context": "Invitare ospiti cambia il tempo a casa di entrambi."
+  },
+  "reserve_all_073": {
+    "cue": "Offriti di confrontare due preventivi concordati.",
+    "support": "Nomina un impegno che hai notato e ringraziala in modo preciso.",
+    "context": "Un messaggio senza risposta non prova un rifiuto."
+  },
+  "reserve_all_074": {
+    "cue": "Imposta un promemoria per il tuo compito domestico ricorrente.",
+    "support": "Chiedi quale parte della giornata è stata più difficile; lascia decidere quanto raccontare.",
+    "context": "Una stima dell'app non può stabilire un giorno fertile."
+  },
+  "reserve_all_075": {
+    "cue": "Offriti di gestire il rinnovo dell'abbonamento condiviso concordato.",
+    "support": "Di': «Non devi spiegare tutto adesso».",
+    "context": "Un consenso passato non sostituisce una risposta attuale."
+  },
+  "reserve_all_076": {
+    "cue": "Chiedi quale illuminazione va bene ora nella stanza comune.",
+    "support": "Chiedi se le va un abbraccio e accogli con affetto entrambe le risposte.",
+    "context": "Un riscontro è più utile se indica un'azione osservabile."
+  },
+  "reserve_all_077": {
+    "cue": "Metti le tue tazze usate in lavastoviglie o lavale.",
+    "support": "Chiedi cosa vorrebbe che ricordassi per la prossima volta.",
+    "context": "Non annunciare i suoi successi senza chiedere."
+  },
+  "reserve_all_078": {
+    "cue": "Offriti di cercare come smaltire un oggetto rotto concordato.",
+    "support": "Riconosci ciò che prova senza dirle come dovrebbe sentirsi.",
+    "context": "Un compito svolto diversamente non è automaticamente svolto male."
+  },
+  "reserve_all_079": {
+    "cue": "Libera il suo spazio di lavoro spostando le tue cose sparse.",
+    "support": "Di': «Mi occupo della mia parte; non devi ricordarmelo».",
+    "context": "Non impegnare il suo tempo con parenti o amici."
+  },
+  "reserve_all_080": {
+    "cue": "Offriti di controllare il meteo prima di confermare programmi all'aperto insieme.",
+    "support": "Chiedi se preferisce un tuo messaggio più tardi o farsi sentire lei.",
+    "context": "Un hobby personale non richiede un obiettivo produttivo."
+  },
+  "reserve_all_081": {
+    "cue": "Offriti di aggiornare i contatti di emergenza condivisi con il consenso.",
+    "support": "Nomina una qualità che ammiri e un esempio recente.",
+    "context": "L'urgenza va dichiarata, non suggerita con messaggi ripetuti."
+  },
+  "reserve_all_082": {
+    "cue": "Offriti di preparare una porzione separata per un'esigenza alimentare concordata.",
+    "support": "Ringraziala per un gesto quotidiano che spesso passa inosservato.",
+    "context": "Non correggere dettagli innocui mentre racconta."
+  },
+  "reserve_all_083": {
+    "cue": "Controlla di avere le tue chiavi prima di uscire insieme.",
+    "support": "Chiedi: «C'è qualcosa che vuoi festeggiare oggi?»",
+    "context": "L'equità considera tempo e fatica, non solo il numero di compiti."
+  },
+  "reserve_all_084": {
+    "cue": "Offriti di occuparti della tua parte concordata del riordino dopo gli ospiti.",
+    "support": "Lasciale finire la frase prima della prossima domanda.",
+    "context": "Un'offerta senza risposta può aspettare senza pressioni."
+  },
+  "reserve_all_085": {
+    "cue": "Offriti di provare la videochiamata prima della chiamata familiare concordata.",
+    "support": "Di': «Capisco che per te è importante».",
+    "context": "Evita argomenti riservati dove altri possono sentire."
+  },
+  "reserve_all_086": {
+    "cue": "Togli la lanugine dal filtro dell'asciugatrice dopo l'uso.",
+    "support": "Chiedi se vuole rassicurazione o tempo per pensare.",
+    "context": "Un inizio rimandato può richiedere meno ostacoli, non critiche."
+  },
+  "reserve_all_087": {
+    "cue": "Offriti di organizzare un posto a sedere per una lunga attesa prevista.",
+    "support": "Ricorda un momento in cui la sua premura ti ha aiutato.",
+    "context": "Una preoccupazione economica merita una discussione senza derisione."
+  },
+  "reserve_all_088": {
+    "cue": "Segna la data di preparazione sugli avanzi condivisi concordati.",
+    "support": "Dille cosa apprezzi del vostro tempo insieme.",
+    "context": "Organizzare un viaggio include un modo praticabile per andare via prima."
+  },
+  "reserve_all_089": {
+    "cue": "Offriti di controllare le condizioni di cancellazione prima di pagare una prenotazione.",
+    "support": "Chiedi quale tipo di aiuto non vuole oggi.",
+    "context": "Non trasformare il calendario condiviso in uno strumento di controllo."
+  },
+  "reserve_all_090": {
+    "cue": "Offriti di controllare il ritorno prima dell'ultimo mezzo.",
+    "support": "Indica quando sei disponibile a parlare e tieni libero quel momento.",
+    "context": "La sua descrizione del dolore non richiede una tua prova."
   }
 }
