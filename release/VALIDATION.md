@@ -5,9 +5,16 @@
 - Measured original default 28/5 scenario over 90 days starting 2026-02-13: 33 DO, 24 SUPPORT, 24 KEEP IN MIND texts. New fresh-history tests yield 90/90/90 in all eleven locales.
 - `npm ci --ignore-scripts --no-audit --no-fund`, `npm run content:check`, `npm run content:validate`, ESLint and TypeScript pass. **50 tests across 10 files pass.**
 - New tests cover 180 onboarding plus six accepted edge cycle settings, held phases, daily phase changes, multiple starting dates, leap day, local-date DST boundaries, exactly one gratitude reminder, legacy digest identity and persisted version-3 selections.
-- Offline iOS and Android Hermes exports pass (1,419 / 1,565 modules). This verifies bundling only; no signed native build or device test.
-- CI's first run passed content, lint, type-check and all 50 tests, then required six newer Expo SDK 57 patches. Those six packages and their lockfile are now aligned with the reported SDK versions.
+- Offline iOS and Android Hermes exports of PR #4 content passed (1,419 / 1,565 modules); exports of the combined preview also passed before the SDK patch update.
+- Six Expo SDK 57 patch dependencies were aligned after CI requested newer compatibility versions.
 - Native-language and Baba Malay community reviews remain pending in release/content-review.json and readiness.json. Scope and exhaustion/legacy-history limits are in docs/CONTENT.md.
+
+## Updated content in accelerated preview (PR #5)
+- Integrated the PR #4 component reserve without changing the selector/store API or real/demo history separation. Resolved three documentation conflicts; preview code merged without source conflicts.
+- **73 tests across 14 files pass**, plus content validation, source/output checks, ESLint and TypeScript, after the six Expo SDK patch updates. Expo Doctor reports **21/21 checks passed**.
+- Added a direct `buildDemoDays` integration regression: all 30 displayed DO/SUPPORT/KEEP IN MIND texts are distinct in each of eleven locales, cue IDs match across locales and every day retains one gratitude reminder. Existing notification and real-history isolation tests remain passing.
+- Offline Hermes exports after the patch updates pass: iOS 1,401 modules, Android 1,574 modules.
+- This verifies source behavior and buildability; signed installation, locked-phone notification delivery and device visuals remain unverified.
 
 ## Historical validation — 2 November 2026
 
@@ -61,3 +68,15 @@
 - No native simulator/device tests, signed IPA/AAB, App Store Connect submission, Google Play submission, or paid advertising performed.
 
 See DEVICE_QA.md for the remaining native checks. New translations, especially Baba Malay, require native-language editorial review before release.
+# Accelerated preview — 2026-11-03
+
+Source implementation adds a preview-only 30-day/5-minute trial, isolated local state, native scheduling and validated notification navigation.
+
+- GitHub Actions [run 41676014811](https://github.com/Pryshvitsyn/tune-into-her/actions/runs/41676014811) passes on source commit `6efcd50a9fb1b007c5f072051a63634f6a42bc1e`.
+- Clean dependency installation, content validation (484 bundles, eleven locales), ESLint and TypeScript pass.
+- Vitest: **65 tests across 13 files pass**, including demo timing, catalog isolation, scheduler rollback/cleanup and notification navigation.
+- Expo Doctor: **21/21 checks pass**. This is project health verification, not a signed native build.
+- Read-only review confirmed the two notification-flow fixes: revisiting demo screens refreshes persisted state, and transient storage failures preserve a validated notification target for retry.
+- Local offline dependency installation was unavailable because the npm cache was incomplete; the full-suite evidence above comes from GitHub Actions.
+- Signed IPA, actual iPhone notification delivery/tap behavior, visual/device QA and the full 150-minute device run remain unverified. No native build, installation link, store submission or paid operation is claimed.
+

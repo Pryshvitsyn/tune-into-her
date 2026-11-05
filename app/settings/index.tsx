@@ -5,7 +5,9 @@ import { Alert, StyleSheet, Text, View } from "react-native";
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import { SettingsRow } from "../../src/components/SettingsRow";
+import { acceleratedDemoEnabled } from "../../src/config/acceleratedDemo";
 import { useApp } from "../../src/context/AppContext";
+import { getDemoCopy } from "../../src/i18n/acceleratedDemo";
 import releaseCopy from "../../src/i18n/releaseCopy.json";
 import { useInterface } from "../../src/i18n/useInterface";
 import { radius, spacing } from "../../src/theme";
@@ -38,6 +40,11 @@ export default function SettingsScreen() {
   return (
     <Screen>
       <Header title={t("settings.title")} />
+      {acceleratedDemoEnabled ? (
+        <Section title={getDemoCopy(preferences.language).title}>
+          <SettingsRow label={getDemoCopy(preferences.language).title} onPress={() => router.push("/demo")} />
+        </Section>
+      ) : null}
       <Section title={t("settings.cycle")}>
         <SettingsRow
           label={t("settings.cycleDetails")}

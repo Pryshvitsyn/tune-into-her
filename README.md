@@ -12,6 +12,8 @@ Expo SDK 57, React Native, TypeScript, Expo Router, Vitest, i18next, SecureStore
 Release gate: `npm run release:check`.
 ## Deploy
 Existing profiles: [eas.json](eas.json). See [STORE_SETUP.md](STORE_SETUP.md) and [release guide](release/RELEASE_GUIDE_RU.md). Signed builds/submission unverified. No verified production/staging URL.
+## Accelerated iPhone preview
+Preview builds open a labelled 30-day demonstration before setup/purchase. Tap Start once: the next demo day appears every five minutes, with native reminders while the app is closed. Stop cancels only this trial. Personal cycle data is not used or changed. See [preview installation and checks](docs/ACCELERATED_PREVIEW.md). A signed native build is still required for installation.
 ## Structure
 app/ routes; src/ implementation; content/ catalog; tests/; release/ evidence.
 ## Project brain

@@ -5,6 +5,7 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
+import { DemoNotificationNavigation } from "../src/components/DemoNotificationNavigation";
 import { AppProvider } from "../src/context/AppContext";
 import { useTheme } from "../src/theme/useTheme";
 
@@ -39,6 +40,7 @@ function Navigation() {
           animation: "slide_from_right",
         }}
       />
+      <DemoNotificationNavigation />
     </>
   );
 }

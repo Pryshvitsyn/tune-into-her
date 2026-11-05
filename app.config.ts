@@ -42,6 +42,7 @@ const config: ExpoConfig = {
     typedRoutes: true,
   },
   extra: {
+    acceleratedDemo: process.env.EAS_BUILD_PROFILE !== 'production' && process.env.EXPO_PUBLIC_ACCELERATED_DEMO === 'true',
     brand,
     eas: {
       projectId: 'dc8938e7-7163-413a-9003-479d0afc8a17',

@@ -1,5 +1,11 @@
 # TASKS
 ## NOW
+- [x] Integrate the expanded reserve into PR #5; verify actual demo blocks in all locales and preserve history isolation.
+- [x] Align six Expo SDK 57 patch packages required by the current CI health check.
+- [x] Implement installed accelerated preview: 30 sample days, five minutes each, isolated history, one-tap Start/Stop and 29 native reminders.
+- [x] Add preview-only first launch and eleven-language demo controls, without requiring a purchase entitlement.
+- [x] Complete full lint/type/test/Expo CI for the accelerated-preview delta: run 41676014811 on 6efcd50 passes; 65 tests, 21/21 Expo Doctor checks.
+- [ ] Install the signed preview and verify background notification/tap delivery and the full 150-minute trial on iPhone.
 - [x] Audit v3 component repetition and expand each locale from 88 to 318 authored texts.
 - [x] Add first-90-days constituent nonrepetition, phase-transition, legacy compatibility and gratitude tests.
 - [x] Add generated-output drift checking to CI and per-locale pending review status.
@@ -26,7 +32,7 @@
 - [ ] Prepare actual publisher/support/legal pages and store configuration.
 ## BLOCKED
 - [ ] Build and install iPhone preview, then test native flows.
-  Blocked by: Apple Developer Program enrollment, Apple signing/device registration; test billing access needs configuration.
+  Blocked by: usable Apple signing/device registration and access to produce/install the native preview. The accelerated-demo route has separate preview access; ordinary billing still needs configuration.
 - [ ] Activate Explore THEA.
   Blocked by: confirmed website URL.
 - [ ] Submit signed store builds.

@@ -10,6 +10,7 @@ import { NumberStepper } from "../src/components/NumberStepper";
 import { PaywallCard } from "../src/components/PaywallCard";
 import { PhaseSphere } from "../src/components/PhaseSphere";
 import { Screen } from "../src/components/Screen";
+import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
 import { SUPPORTED_LANGUAGES } from "../src/config/constants";
 import { useApp, notificationScheduler } from "../src/context/AppContext";
 import {
@@ -18,6 +19,7 @@ import {
 } from "../src/domain/content/contentRepository";
 import { estimateCycle } from "../src/domain/cycle/cycleEngine";
 import { toDateOnly } from "../src/domain/cycle/dateOnly";
+import { getDemoCopy } from "../src/i18n/acceleratedDemo";
 import releaseCopy from "../src/i18n/releaseCopy.json";
 import { useInterface } from "../src/i18n/useInterface";
 import { radius, spacing } from "../src/theme";
@@ -115,6 +117,9 @@ export default function OnboardingScreen() {
           <PhaseSphere small />
           <Text style={styles.hero}>{t("onboarding.welcomeTitle")}</Text>
           <Text style={styles.body}>{`${c.do} · ${c.support} · ${c.mind}`}</Text>
+          {acceleratedDemoEnabled ? (
+            <Button label={getDemoCopy(preferences.language).title} variant="secondary" onPress={() => router.push("/demo")} />
+          ) : null}
           {preferences.language === "mbf" ? (
             <Text style={styles.noteText}>{releaseCopy.mbf.beta}</Text>
           ) : null}
