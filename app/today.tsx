@@ -15,8 +15,8 @@ import { Screen } from "../src/components/Screen";
 import { useApp } from "../src/context/AppContext";
 import { getLocalizedCue } from "../src/domain/content/contentRepository";
 import { selectDailyCue } from "../src/domain/content/dailyCueService";
+import { guidanceDate } from "../src/domain/content/guidanceDate";
 import { estimateCycle } from "../src/domain/cycle/cycleEngine";
-import { toDateOnly } from "../src/domain/cycle/dateOnly";
 import { useInterface } from "../src/i18n/useInterface";
 import { AsyncSelectionStore } from "../src/storage/AsyncSelectionStore";
 import { useTheme } from "../src/theme/useTheme";
@@ -26,7 +26,10 @@ export default function TodayScreen() {
   const c = useInterface();
   const { colors } = useTheme();
   const { cycleSettings, preferences, entitlement } = useApp();
-  const [today, setToday] = useState(() => toDateOnly(new Date()));
+  const [clockDate, setClockDate] = useState(() => guidanceDate(new Date()));
+  const today = cycleSettings && cycleSettings.lastKnownPeriodStart > clockDate
+    ? guidanceDate(new Date(), cycleSettings.lastKnownPeriodStart)
+    : clockDate;
   const [selection, setSelection] = useState<{
     key: string;
     id: string | null;
@@ -34,7 +37,7 @@ export default function TodayScreen() {
   } | null>(null);
   const [retry, setRetry] = useState(0);
   useEffect(() => {
-    const update = () => setToday(toDateOnly(new Date()));
+    const update = () => setClockDate(guidanceDate(new Date()));
     const timer = setInterval(update, 30000);
     const sub = AppState.addEventListener("change", (s) => {
       if (s === "active") update();

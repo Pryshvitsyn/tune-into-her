@@ -1,4 +1,11 @@
 # DECISIONS
+## D-006 — Release owner and start
+Date: 2026-11-08 (Sunday, Europe/Rome)
+Status: APPROVED
+Decision: The founder is the publisher and account holder. Enroll Apple as Individual. Google account ownership remains with the founder; resolve Personal versus Organization eligibility before registration/payment because the app uses menstrual-cycle data and Google's current account rules require Organization for health apps. Do not equate a personally owned account with the Personal account type. Use the exact legal Latin name from the identity document/account verification; speech transcription is not a verified legal spelling. THEA remains the product's parent brand, not a separate legal seller.
+Reason: Explicit Founder instruction to start release preparation using the existing content and register both stores in his own name.
+Open external requirements: verified legal spelling, account activation/status, support contact, legal URLs, store payment configuration and device QA. Today's instruction authorizes preparation; it does not prove any of these completed.
+
 ## D-001 — Parent identity
 Date: 2026-10-28
 Status: APPROVED

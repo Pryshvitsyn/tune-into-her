@@ -40,7 +40,7 @@ export default function OnboardingScreen() {
   const [reminderEnabled, setReminderEnabled] = useState(true);
   const [reminderTime, setReminderTime] = useState(() => {
     const value = new Date();
-    value.setHours(8, 30, 0, 0);
+    value.setHours(preferences.reminderHour, preferences.reminderMinute, 0, 0);
     return value;
   });
   const settings = useMemo(
