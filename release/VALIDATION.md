@@ -80,3 +80,14 @@ Source implementation adds a preview-only 30-day/5-minute trial, isolated local 
 - Local offline dependency installation was unavailable because the npm cache was incomplete; the full-suite evidence above comes from GitHub Actions.
 - Signed IPA, actual iPhone notification delivery/tap behavior, visual/device QA and the full 150-minute device run remain unverified. No native build, installation link, store submission or paid operation is claimed.
 
+# Release preparation — 8 November 2026
+
+- Base: PR #5 source `c4cfb79f77e64145929fa9c97efa6194af4554d5`; working branch `release/prepare-20261108`.
+- Re-ran baseline before edits: 73 tests, lint, TypeScript, generated-content consistency and catalog validation pass.
+- After the morning-rollover change: lint, TypeScript and **81 tests in 15 files** pass with `TZ=Europe/Rome`. Regressions cover 07:59/08:00, year/leap-day boundaries, calendar dates around Rome DST changes, first-day entry before 08:00 and preservation of existing reminder preferences.
+- `content:check` and `content:validate` pass: 610 bundles in each of 11 locales, 318 source texts per locale and 90-day fresh-history component reserve.
+- All **3,498** phrase texts match the 11 source tabs of the 7 November Google Sheet in order. Per-file hashes and scope are recorded in [content-source-check.json](content-source-check.json). The rules sheet and editorial review status are not runtime proof or native-language approval.
+- Offline Expo exports for iOS and Android pass. Existing installed dependencies were reused from the same PR #5 source; this was not a fresh dependency installation or a signed native build.
+- `release:check` intentionally fails for missing verified publisher/support/legal URLs, RevenueCat keys and nine readiness-evidence items. These items were not marked complete.
+- No Apple/Google account registration, payment, signed IPA/AAB, device QA, store submission or advertising purchase was performed. Google account-type eligibility remains an external prerequisite because of health/cycle-data functionality.
+

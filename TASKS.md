@@ -1,5 +1,12 @@
 # TASKS
 ## NOW
+- [x] Record founder as personal publisher/account holder (8 November); keep exact legal spelling pending document/account verification.
+- [x] Compare every phrase in all 11 Google Sheets source tabs with the repository: 3,498 exact matches in order; preserve editorial status separately.
+- [x] Correct daily guidance rollover to 08:00 and new-install reminder default to 08:00; preserve existing custom reminder times.
+- [ ] Confirm Apple Individual membership activation; verify Google's required account type for cycle-data features before registration/payment, then complete account verification and authorized signing access.
+- [ ] Set verified publisher spelling, monitored support email and live legal URLs.
+- [ ] Reconcile the 7 November rules sheet: 2–3 useful action alternatives, day history, editable feedback and phase-aware editorial coverage; do not claim these shipped because they appear in a spreadsheet.
+- [ ] Verify the new 08:00 boundary, first-day-before-08:00 behavior and daylight-saving handling on iPhone/Android.
 - [x] Integrate the expanded reserve into PR #5; verify actual demo blocks in all locales and preserve history isolation.
 - [x] Align six Expo SDK 57 patch packages required by the current CI health check.
 - [x] Implement installed accelerated preview: 30 sample days, five minutes each, isolated history, one-tap Start/Stop and 29 native reminders.

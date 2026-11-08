@@ -4,6 +4,7 @@ import {
   SUPPORTED_LANGUAGES,
   type SupportedLanguage,
 } from "../config/constants";
+import { GUIDANCE_REFRESH_HOUR } from "../domain/content/guidanceDate";
 
 import { storageKeys } from "./keys";
 
@@ -21,8 +22,8 @@ export const defaultPreferences: Preferences = {
   onboardingComplete: false,
   language: "en",
   reminderEnabled: false,
-  reminderHour: 8,
-  reminderMinute: 30,
+  reminderHour: GUIDANCE_REFRESH_HOUR,
+  reminderMinute: 0,
 };
 
 export async function loadPreferences(): Promise<Preferences | null> {

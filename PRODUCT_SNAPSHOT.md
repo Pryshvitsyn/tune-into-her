@@ -1,5 +1,8 @@
 # PRODUCT SNAPSHOT
-Updated: 2026-11-05
+Updated: 2026-11-08
+## RELEASE PREPARATION
+Working branch: release/prepare-20261108, based on verified PR #5 head c4cfb79. Founder confirmed personal publisher/account ownership. Legal Latin spelling and actual Apple/Google activation remain unverified. All 3,498 phrases in the 11-language Google Sheets audit match content/editorial exactly and in order; see release/content-source-check.json. That is source alignment, not editorial approval. The separate rules sheet still calls for choice-based daily actions, persistent feedback/history and phase-sensitive editorial review.
+Today now retains the previous guidance date until 08:00 local time. New reminders default to 08:00; saved user times remain intact. A period recorded as starting today before 08:00 uses day one so the cycle engine does not receive an invalid future start. Device delivery and screen behavior still need verification. See release/RELEASE_GUIDE_RU.md for the current owner steps.
 ## CURRENT STATE
 Native Expo iOS/Android baseline a09ba11 has dual themes, THEA/app emblems, calendar, cycle editing, appearance and About THEA. No signed store build or device QA. New daily content is local and offline.
 ## LATEST DELTA
@@ -13,7 +16,7 @@ Native review remains pending separately for all eleven locales in release/conte
 ## BLOCKERS
 Signed iPhone preview/device registration and native verification remain required. The dedicated accelerated preview no longer depends on a purchase entitlement; ordinary paid access still needs proper RevenueCat/store configuration. Publisher/legal/support details and release evidence remain missing. THEA URL unknown.
 ## NEXT BEST MOVE
-Build/sign the standalone preview and verify Start, the five-minute locked-phone reminder, tap navigation, Stop and the full 150-minute run on iPhone. Native-language review continues separately.
+Confirm Apple Individual membership activation and resolve Google account-type eligibility for cycle-data features before registration/payment, then build/sign the standalone preview and verify Start, the five-minute locked-phone reminder, tap navigation, Stop and the full 150-minute run on iPhone. Configure ordinary purchase access for store testing. Native-language and latest editorial-rule review continue separately.
 ## PARALLEL
 Editorial review, legal/store preparation and device-build preparation.
 ## REFERENCES

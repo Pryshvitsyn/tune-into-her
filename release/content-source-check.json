@@ -1,0 +1,96 @@
+{
+  "checkedOn": "2026-11-08",
+  "sourceCommit": "c4cfb79f77e64145929fa9c97efa6194af4554d5",
+  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Zae_XP5SqWRa8Eq2IOgU_Gb5O66ERBe5hqCGy5MZJKA/edit",
+  "scope": "Exact phrase text and ordering from all 11 ФРАЗЫ tabs; not translation/editorial approval or runtime/device QA. Separate rules sheet contains requirements still needing implementation.",
+  "checks": [
+    {
+      "locale": "ru",
+      "sourcePath": "content/editorial/ru.json",
+      "sha256": "1f674acfc2cb1d60db34a6e2bd9453652f55627f73bab14e3ade934d14a11db5",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "en",
+      "sourcePath": "content/editorial/en.json",
+      "sha256": "01c37c8fcd4ec0b83cabe96c30e0df7778ee4d6d1954e1a9f34fe8bcc552bbef",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "it",
+      "sourcePath": "content/editorial/it.json",
+      "sha256": "9b4d03c4bf26acd12920b407da130e9080efe61f6d65a881f20bd3f13f39a6ca",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "fr",
+      "sourcePath": "content/editorial/fr.json",
+      "sha256": "6813ab94e1ec2c4a7a1eb866721efeea1a6cc10692c744f6ca375df345b1f3a6",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "es",
+      "sourcePath": "content/editorial/es.json",
+      "sha256": "e71521bedbbc45da695e2c5fcb138fe9eb4e06b50ef9f4aacc7ec21ad120eb60",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "de",
+      "sourcePath": "content/editorial/de.json",
+      "sha256": "45c8111cfea10ac50b566c01ba5dc09f587c49e705f0ed2754b29f94b247ad0b",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "uk",
+      "sourcePath": "content/editorial/uk.json",
+      "sha256": "04bcfbc3157a9d9448e619dffbc8540873100c5aaed925618cfa763e9512d049",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "hi",
+      "sourcePath": "content/editorial/hi.json",
+      "sha256": "88a7bbb623d9e874780205f93ed2a16b75bf2eee3dd53d003f6a808131597bca",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "zh-Hans",
+      "sourcePath": "content/editorial/zh-Hans.json",
+      "sha256": "b15e931f81b322333083c5a01d5f50cdb05a01f042b0e6e127f054b5f618fba3",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "ms",
+      "sourcePath": "content/editorial/ms.json",
+      "sha256": "097bda3c5ecd535baa56081f3fa94ac0fa25c3f8143186f8d2ece24a14731d0b",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    },
+    {
+      "locale": "mbf",
+      "sourcePath": "content/editorial/mbf.json",
+      "sha256": "1546ed47f46fc89937fc92ce8de3f6d558cb1b76a3b141d6ca9743aa39b58e0e",
+      "phraseCount": 318,
+      "matchesSheetInOrder": true,
+      "nonemptyEditorialComments": 0
+    }
+  ]
+}

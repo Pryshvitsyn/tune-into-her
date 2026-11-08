@@ -14,8 +14,8 @@ These are external owner actions and are not completed by this repository.
 
 ## Apple
 
-- Enroll in Apple Developer Program and choose the final brand-neutral bundle identifier.
-- Replace `ios.bundleIdentifier` in `app.config.ts`, create the App Store Connect app, and complete agreements/tax/banking.
+- Enroll the founder in Apple Developer Program as Individual (owner decision: 8 November 2026).
+- Verify/register the existing `com.pryshvitsyn.tuneintoher` identifier, create the App Store Connect app, and complete agreements/tax/banking. Do not rename the identifier merely because the publisher is confirmed.
 - Create one subscription group and a monthly auto-renewable subscription with product ID `monthly_access` (or record the exact alternate ID).
 - Select the nearest supported regional price point to the business target; the app never hardcodes a price.
 - Add a free introductory offer of the desired one-month-style duration for eligible new subscribers.
@@ -25,7 +25,7 @@ These are external owner actions and are not completed by this repository.
 
 ## Google Play
 
-- Create the Play Console app and choose the final brand-neutral package identifier; replace `android.package` in `app.config.ts`.
+- Resolve whether Google's health-app/business rules require an Organization account before payment. The founder remains the account owner; use his verified business details if that route is required. Then create the app and verify the existing `com.pryshvitsyn.tuneintoher` package before the first upload.
 - Complete payments profile and required policy/data-safety declarations.
 - Create monthly subscription `monthly_access`, an auto-renewing monthly base plan, regional pricing, and a new-subscriber free-trial offer.
 - Add localized subscription metadata and terms in all supported locales.
@@ -46,7 +46,7 @@ These are external owner actions and are not completed by this repository.
 
 ## EAS and device testing
 
-- Replace the EAS project ID, run `eas build:configure`, and register test devices when prompted.
+- Preserve the existing verified EAS project ID and account; verify current access and register test devices when prompted. Do not create a replacement project as part of ordinary release setup.
 - Build an iOS development client with `eas build --profile development --platform ios`, install from the EAS link, then run `npx expo start --dev-client`.
 - Build an Android development client with `eas build --profile development --platform android` and distribute through the authorized testing path.
 - Create preview builds for stakeholder QA, then production builds. Do not submit until product assets, legal copy, owner identity, privacy URL, store screenshots, review notes, and subscription review screenshots are complete.
