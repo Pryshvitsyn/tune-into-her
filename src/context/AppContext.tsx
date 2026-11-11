@@ -111,7 +111,7 @@ export function AppProvider({ children }: PropsWithChildren) {
     await stopDemoSession();
     await notificationScheduler.cancelAll();
     await SecureStore.deleteItemAsync(storageKeys.cycleSettings);
-    await AsyncStorage.multiRemove([storageKeys.preferences, storageKeys.selections, storageKeys.entitlement]);
+    await AsyncStorage.multiRemove([storageKeys.preferences, storageKeys.selections, storageKeys.guidanceFeedback, storageKeys.entitlement]);
     setCycleSettingsState(null);
     setPreferencesState({ ...defaultPreferences, language: preferences.language });
   }, [preferences.language]);

@@ -75,11 +75,13 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
         ))}
         {cells.map((date) => {
           const key = toDateOnly(date);
-          const phase =
+          const estimate =
             cycleSettings && key >= cycleSettings.lastKnownPeriodStart
               ? estimateCycle({ ...cycleSettings, currentLocalDate: key })
-                  .estimatedPhase
               : null;
+          const phase = estimate && !estimate.requiresPeriodConfirmation
+            ? estimate.estimatedPhase
+            : null;
           return (
             <View
               key={key}

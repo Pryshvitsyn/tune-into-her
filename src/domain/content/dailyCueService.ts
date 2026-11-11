@@ -20,7 +20,7 @@ function stableHash(value: string): number {
 
 export async function selectDailyCue(options: {
   date: DateOnly;
-  phase: CueMetadata['phases'][number];
+  phase: CueMetadata['phases'][number] | 'unconfirmed';
   settings: CycleSettings;
   store: SelectionStore;
   catalog?: CueMetadata[];
@@ -31,7 +31,15 @@ export async function selectDailyCue(options: {
   if (existing) return existing.cueId;
 
   const catalog = options.catalog ?? getCatalog();
-  const candidates = catalog.filter((item) => item.phases.includes(options.phase));
+  // Never attach a phase-specific cue to an overdue, unconfirmed calendar
+  // projection. Only the authored all-phase entries remain eligible.
+  let candidates: CueMetadata[];
+  if (options.phase === 'unconfirmed') {
+    candidates = catalog.filter((item) => item.phases.length === 4);
+  } else {
+    const phase = options.phase;
+    candidates = catalog.filter((item) => item.phases.includes(phase));
+  }
   if (!candidates.length) throw new Error(`NO_CUES_FOR_PHASE:${options.phase}`);
   const used = new Set(history.map((item) => item.cueId));
   const offset = stableHash(`${options.date}:${fingerprint}`) % candidates.length;

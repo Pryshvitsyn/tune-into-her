@@ -4,11 +4,11 @@ import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Alert, Pressable, StyleSheet, Switch, Text, View } from "react-native";
 
+import { TuneIntoHerSphereV4 } from "../TuneIntoHerSphereV4";
 import { AdviceBlocks } from "../src/components/AdviceBlocks";
 import { Button } from "../src/components/Button";
 import { NumberStepper } from "../src/components/NumberStepper";
 import { PaywallCard } from "../src/components/PaywallCard";
-import { PhaseSphere } from "../src/components/PhaseSphere";
 import { Screen } from "../src/components/Screen";
 import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
 import { SUPPORTED_LANGUAGES } from "../src/config/constants";
@@ -114,7 +114,9 @@ export default function OnboardingScreen() {
       </View>
       {step === 1 ? (
         <View style={styles.center}>
-          <PhaseSphere small />
+          <View accessible={false} style={{ alignItems: "center", marginBottom: 12 }}>
+            <TuneIntoHerSphereV4 size={132} />
+          </View>
           <Text style={styles.hero}>{t("onboarding.welcomeTitle")}</Text>
           <Text style={styles.body}>{`${c.do} · ${c.support} · ${c.mind}`}</Text>
           {acceleratedDemoEnabled ? (

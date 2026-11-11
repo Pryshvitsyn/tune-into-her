@@ -39,3 +39,34 @@ Reopen only if: Founder changes the trial timing or installation experience.
 
 ## 2026-11-05 — Component-level ninety-day reserve
 Append aligned editorial texts and new reserve IDs rather than rewrite persisted v3 advice. Reserve slots couple support/context identities across phases so fresh histories can select 90 distinct blocks per section; use the previous 89 selections instead of a seven-selection preference. Keep deterministic fallback for legacy/depleted histories. Gratitude is intentionally separate from uniqueness. Native approval remains pending per locale. See docs/CONTENT.md.
+
+## D-007 — Approved V4 visual artifact integration
+Date: 2026-11-11 (Europe/Rome)
+Status: APPROVED
+
+Decision: Use the preserved `TuneIntoHerSphereV4.tsx`, its clean texture, and its
+phase-zero poster as immutable approved visual artifacts. Today and onboarding import
+the renderer directly; resource preloading may occur outside it, but no shader, texture,
+loop duration, phase algorithm, deformation, wrapper-driven opacity, or alternative
+renderer may reinterpret the V4 motion.
+
+Reason: The founder repeatedly required restoration and preservation of the canonical
+V4 behavior. Hash assertions protect the exact supplied assets.
+
+Reopen only if: the founder explicitly supplies a replacement renderer/artifact or an
+actual platform defect requires a narrowly documented implementation fix.
+
+## D-008 — Unconfirmed-cycle guard
+Date: 2026-11-11 (Europe/Rome)
+Status: APPROVED
+
+Decision: After 40 elapsed days from the known cycle start, do not use modulo arithmetic
+to present a projected new cycle as a factual day one. Require a cycle update and select
+only all-phase content while confirmation is due. Presentation-stage menstruation maps
+to the follicular physiological estimate rather than creating two competing systems.
+
+Reason: The prior indefinite projection could create an unsupported apparent new-cycle
+boundary. The guard is a product safety constraint, not medical validation.
+
+Reopen only if: a reviewed, explicit user-confirmed event/provenance model replaces this
+temporary boundary with a safer documented rule.

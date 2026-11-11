@@ -19,7 +19,7 @@ const config: ExpoConfig = {
   ios: {
     supportsTablet: false,
     infoPlist: { ITSAppUsesNonExemptEncryption: false },
-    bundleIdentifier: 'com.pryshvitsyn.tuneintoher',
+    bundleIdentifier: 'com.eliogenesis.tuneintoher',
   },
   android: {
     package: 'com.pryshvitsyn.tuneintoher',

@@ -1,23 +1,79 @@
 # PRODUCT SNAPSHOT
-Updated: 2026-11-08
-## RELEASE PREPARATION
-Working branch: release/prepare-20261108, based on verified PR #5 head c4cfb79. Founder confirmed personal publisher/account ownership. Legal Latin spelling and actual Apple/Google activation remain unverified. All 3,498 phrases in the 11-language Google Sheets audit match content/editorial exactly and in order; see release/content-source-check.json. That is source alignment, not editorial approval. The separate rules sheet still calls for choice-based daily actions, persistent feedback/history and phase-sensitive editorial review.
-Today now retains the previous guidance date until 08:00 local time. New reminders default to 08:00; saved user times remain intact. A period recorded as starting today before 08:00 uses day one so the cycle engine does not receive an invalid future start. Device delivery and screen behavior still need verification. See release/RELEASE_GUIDE_RU.md for the current owner steps.
-## CURRENT STATE
-Native Expo iOS/Android baseline a09ba11 has dual themes, THEA/app emblems, calendar, cycle editing, appearance and About THEA. No signed store build or device QA. New daily content is local and offline.
-## LATEST DELTA
-Accelerated preview is implemented in source: first-launch demo route, one Start action, 30 sample days at five-minute intervals, persistent elapsed-time clock and 29 native local notifications. The existing three-part catalog and gratitude rotation are reused in eleven languages. Trial state/history is separate from personal cycle data, daily reminder schedules and purchase access. Preview/development enable the route; production forces it off. GitHub Actions run 41676014811 on 6efcd50 passes content validation, lint, type-check, all 65 tests and 21/21 Expo Doctor checks. Native iPhone installation/delivery proof remains open.
-Content version 4 appends a ninety-slot component reserve in all eleven locales: 90 general actions, 90 support prompts, 90 context principles and 12 actions per phase (318 authored texts per locale). The catalog has 610 distinct bundles; all 484 v3 metadata records and translations remain unchanged. Selection prefers fresh components across 89 prior selections, with deterministic fallback for depleted or legacy histories.
-## WORKING
-Combined content/preview checks pass: 73 tests, lint, TypeScript, source consistency and 21/21 Expo Doctor checks after six SDK patch updates. The actual 30-day demo builder now has all-locale constituent uniqueness and gratitude regression coverage.
-New tests check individual DO/SUPPORT/KEEP IN MIND text in all eleven locales over 90 days for 180 onboarding and six edge settings, varied starts, held phases and daily phase switching. Gratitude remains exactly one separate daily habit. Source/output drift is checked in CI. See docs/CONTENT.md for the fresh-history scope and release/VALIDATION.md for check evidence.
-## BROKEN / MISSING
-Native review remains pending separately for all eleven locales in release/content-review.json; Baba Malay needs community review. Exact-text uniqueness does not certify semantic independence or native quality. Device purchase/notification/visual QA remains incomplete.
-## BLOCKERS
-Signed iPhone preview/device registration and native verification remain required. The dedicated accelerated preview no longer depends on a purchase entitlement; ordinary paid access still needs proper RevenueCat/store configuration. Publisher/legal/support details and release evidence remain missing. THEA URL unknown.
+
+Updated: 2026-11-11
+
+## GOAL
+
+Prepare a controlled Tune Into Her release candidate: a local-first practical partner
+guidance app with respectful estimated-cycle context, preserved daily history, approved
+V4 sphere presentation, and explicit safety/release boundaries. It is not a medical,
+fertility, or mood-prediction product.
+
+## STATE
+
+- Branch: `codex/tune-into-her-release-candidate-20261111`, created from open PR #6
+  head `25c8505`; `main` remains untouched.
+- Recovery points: `archive/github-release-baseline-20261111` → `25c8505`; local V4
+  preservation branch → `1147292`.
+- V4 renderer is directly used by Today and onboarding. Its renderer, clean texture,
+  and phase-zero poster hashes are guarded in a test; no shader, texture, or animation
+  rewrite is part of this consolidation.
+- The content source contains 318 authored texts per locale across 11 locales and
+  produces 610 daily bundles. That is structural/source evidence only: native review is
+  pending in all locales and `mbf` needs community review.
+- Local feedback and guidance history are implemented separately from selected cue
+  history. Existing same-date guidance is retained rather than rewritten.
+- The cycle engine requests confirmation after 40 elapsed days rather than projecting
+  a new cycle indefinitely. It falls back to all-phase guidance while confirmation is
+  due.
+- At the prior candidate checkpoint, typecheck, lint, 88 tests, content checks, Debug
+  build, and standard Release Simulator build passed; the normal Release app launches
+  to onboarding on iPhone 17. A repeat of the source checks is required before the
+  integration commit.
+- Debug-only QA access is explicit: it requires both `__DEV__` and
+  `EXPO_PUBLIC_USE_MOCK_BILLING=true`, displays a localized development-mock label,
+  and is unit-tested to be unavailable in a production bundle. It does not change the
+  normal Release paywall.
+- Using that QA access, unlocked Today was observed on iPhone 17 in light and dark
+  appearance: the approved V4 renderer moved continuously for more than 12 seconds,
+  the three content blocks, gratitude, feedback selection, and scrolling all worked.
+  This is Simulator evidence, not store or physical-device proof. Compact and
+  large-text completion evidence remains open.
+
+## PRESERVED
+
+- The approved V4 visual artifacts:
+  - renderer SHA-256 `7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39`
+  - clean texture SHA-256 `50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c`
+  - phase-zero poster SHA-256 `70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87`
+- PR #6's generated editorial baseline, accelerated-preview isolation, and local-first
+  storage model.
+- Persisted daily choice identity and historical rendering behavior.
+
+## GAP / DEPENDENCIES / RISK
+
+| Area | Current boundary |
+| --- | --- |
+| Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass. Debug-only unlocked Today/V4/light-dark/feedback/scroll passed on iPhone 17. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
+| Apple / Google | No verified signing, physical device, store account, listing, or store approval. This environment has 0 valid code-signing identities, no provisioning profiles, and no connected physical iPhone. |
+| Billing | Source is currently monthly (`monthly_access`, P1M). The owner must choose canonical term and trial duration before store configuration. |
+| Legal/support | Real seller spelling, support contact, terms/privacy URLs/text, and privacy declarations remain open. |
+| Product identifiers | iOS is `com.eliogenesis.tuneintoher`; Android is `com.pryshvitsyn.tuneintoher`; explicit owner decision required. |
+| Content | All 30 current Founder column-G comments are mapped as unapproved editorial drafts; no translation update is authorized or claimed native-reviewed. |
+| Safety | No explicit user-confirmed bleeding-event provenance or clinical/localized copy review. The product also has no explicit unknown-cycle-length state: onboarding supplies defaults (28/5), which needs an owner decision if uncertainty must be preserved. |
+| Visual assets | Current vector brand marks have no verified supplied-original provenance. |
+
 ## NEXT BEST MOVE
-Confirm Apple Individual membership activation and resolve Google account-type eligibility for cycle-data features before registration/payment, then build/sign the standalone preview and verify Start, the five-minute locked-phone reminder, tap navigation, Stop and the full 150-minute run on iPhone. Configure ordinary purchase access for store testing. Native-language and latest editorial-rule review continue separately.
-## PARALLEL
-Editorial review, legal/store preparation and device-build preparation.
+
+Rerun all source checks, safely inspect staged files, then save the integration branch
+without force-pushing or touching `main`. Resolve the explicit store, billing, legal,
+identifier, editorial, unknown-cycle-length, and physical-device gates in
+`release/STORE_CHECKLIST.md`. Do not deploy, submit, or claim store readiness merely
+from source or Simulator checks.
+
 ## REFERENCES
-Accelerated preview: feat/accelerated-preview-20261103, draft PR #5, based on content PR #4 / feat/three-month-content-20261102. Earlier native-interface PR #3 and bootstrap PR #2 remain in the stack. docs/CONTENT.md defines reserve scope and proof; docs/UX.md governs visuals; docs/ACCELERATED_PREVIEW.md defines trial behavior and device checks. No native build/update/submission was published in this task.
+
+[Master audit](docs/MASTER_AUDIT.md) · [Version map](docs/VERSION_MAP.md) ·
+[Content audit](docs/CONTENT_AUDIT.md) · [Cycle safety](docs/CYCLE_SAFETY.md) ·
+[UX final](docs/UX_FINAL.md) · [Build proof](release/BUILD_PROOF.md) ·
+[Store checklist](release/STORE_CHECKLIST.md)

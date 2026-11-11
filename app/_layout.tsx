@@ -5,6 +5,7 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
+import { prepareSphereResources } from "../TuneIntoHerSphereV4";
 import { DemoNotificationNavigation } from "../src/components/DemoNotificationNavigation";
 import { AppProvider } from "../src/context/AppContext";
 import { useTheme } from "../src/theme/useTheme";
@@ -17,6 +18,10 @@ Notifications.setNotificationHandler({
     shouldSetBadge: false,
   }),
 });
+
+// Start decoding the exact phase-zero poster and renderer texture before the
+// Today screen needs them. The component keeps the same module-level promise.
+void prepareSphereResources();
 
 export default function RootLayout() {
   return (

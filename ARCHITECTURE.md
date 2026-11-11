@@ -1,15 +1,15 @@
 # ARCHITECTURE
-Updated: 2026-11-02; native interface baseline a09ba11.
+Updated: 2026-11-11; release-candidate integration base 25c8505.
 ## Frontend
-Expo SDK 57 / React Native / TypeScript / Expo Router under app/. AppContext composes services and state. src/theme holds light/dark palettes; useTheme reads persisted AppContext appearance. Existing screen styles are palette factories. Shared Screen provides header, gray mist and tabs.
+Expo SDK 57 / React Native / TypeScript / Expo Router under app/. AppContext composes services and state. src/theme holds light/dark palettes; useTheme reads persisted AppContext appearance. Existing screen styles are palette factories. Shared Screen provides header, gray mist and tabs. Today and onboarding directly use the approved `TuneIntoHerSphereV4` renderer; `_layout` preloads its image resources but does not alter V4's renderer/shader/clock contract.
 ## Backend / database / auth
 No application backend, remote database or user accounts. No runtime AI or remote content fetch.
 ## Storage
-SecureStore cycle settings; AsyncStorage preferences and cue history. Cycle engine uses date-only calculations.
+SecureStore cycle settings; AsyncStorage preferences, selected-cue history, and separate date/cue feedback records. Cycle engine uses date-only calculations. No migration deletes historical selections merely to refresh content.
 ## Services
 Local Expo Notifications. RevenueCat purchase abstraction; mock only in development. Stores process purchases; RevenueCat resolves entitlement. Never embed secret keys.
 ## Data flow
-Onboarding → local settings → estimated phase/date → history-aware daily cue → localized lookup → Today. content/editorial/<locale>.json is the authored source. content:generate produces catalog metadata and three-part localized entries. AdviceBlocks renders cue/support/context from that same selected entry, including onboarding. Selection prefers unused IDs, then minimises component repetition against the latest seven historical selections. All previous 400 IDs remain resolvable; content version is 3. dailyGuidance selects date-stable reminder identities independent of locale/theme.
+Onboarding → local settings → date-only estimate → history-aware daily cue → localized lookup → Today. `content/editorial/<locale>.json` is the authored source. `content:generate` produces catalog metadata and three-part localized entries. AdviceBlocks renders the same selected entry in the order KEEP IN MIND → sphere → SUPPORT → DO. Selection preserves an existing same-date choice, prefers fresh components against the latest 89 historical selections, then uses deterministic least-recent fallback. `CONTENT_VERSION` is 4 and prior versioned IDs remain resolvable. If the estimate reaches the 40-day unconfirmed boundary, Today requests an update and selects all-phase content rather than extrapolating a new phase.
 ## Deployment
 eas.json development/preview/production; release checker and build guard. Native signing/device testing/store products externally configured.
 ## Boundaries

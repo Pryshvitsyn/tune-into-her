@@ -30,6 +30,14 @@ describe('notification scheduler', () => {
     expect(backend.scheduled.every((item) => item.content.data.language === 'it')).toBe(true);
     expect(backend.scheduled.every((item) => item.date.getHours() === 9 && item.date.getMinutes() === 15)).toBe(true);
   });
+
+  it('keeps one local-clock reminder per calendar day across a daylight-saving boundary', async () => {
+    const backend = new FakeBackend();
+    const scheduler = new NotificationScheduler(backend, new MemoryStore());
+    await scheduler.rebuild(base, new Date(2026, 9, 24, 7));
+    expect(new Set(backend.scheduled.map((item) => item.content.data.date)).size).toBe(backend.scheduled.length);
+    expect(backend.scheduled.every((item) => item.date.getHours() === 8 && item.date.getMinutes() === 30)).toBe(true);
+  });
 });
 
 

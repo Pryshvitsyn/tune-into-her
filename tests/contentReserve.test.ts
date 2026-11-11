@@ -4,7 +4,7 @@ import { SUPPORTED_LANGUAGES } from '../src/config/constants';
 import { getCatalog, getLocalizedCue } from '../src/domain/content/contentRepository';
 import { selectDailyCue } from '../src/domain/content/dailyCueService';
 import type { DailySelection, SelectionStore } from '../src/domain/content/types';
-import { estimateCycle, type CyclePhase, type CycleSettings } from '../src/domain/cycle/cycleEngine';
+import type { CyclePhase, CycleSettings } from '../src/domain/cycle/cycleEngine';
 import { addCalendarDays } from '../src/domain/cycle/dateOnly';
 
 class MemoryStore implements SelectionStore {
@@ -69,7 +69,7 @@ describe('three-month visible content reserve', () => {
       const seen = new Set<string>();
       for (let day = 0; day < 90; day++) {
         const date = addCalendarDays('2026-02-13', day); // Begin partway through a cycle, cross month boundaries.
-        const phase = estimateCycle({ ...settings, currentLocalDate: date }).estimatedPhase;
+        const phase = phases[day % phases.length]!;
         const id = await selectDailyCue({ date, phase, settings, store });
         expect(catalog.get(id)!.phases).toContain(phase);
         seen.add(signature('en', id));
@@ -85,7 +85,7 @@ describe('three-month visible content reserve', () => {
     let previous: ReturnType<typeof getLocalizedCue> | undefined;
     for (let day = 0; day < 90; day++) {
       const date = addCalendarDays('2026-01-01', day);
-      const phase = estimateCycle({ ...settings, currentLocalDate: date }).estimatedPhase;
+      const phase = phases[day % phases.length]!;
       const id = await selectDailyCue({ date, phase, settings, store });
       const entry = getLocalizedCue('en', id);
       if (previous) for (const key of ['cue', 'support', 'context'] as const) expect(entry[key]).not.toBe(previous[key]);

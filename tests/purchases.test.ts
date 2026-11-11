@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { MockPurchaseService } from '../src/services/purchases/MockPurchaseService';
+import { isMockBillingEnabled } from '../src/services/purchases/mockBilling';
 
 describe('purchase service states', () => {
   it.each([
@@ -19,5 +20,12 @@ describe('purchase service states', () => {
   it('restores the current store entitlement', async () => {
     const service = new MockPurchaseService({ status: 'active_paid', isActive: true, isMock: true });
     expect((await service.restore()).isActive).toBe(true);
+  });
+
+  it('never enables mock billing outside development', () => {
+    expect(isMockBillingEnabled(false, 'true')).toBe(false);
+    expect(isMockBillingEnabled(true, undefined)).toBe(false);
+    expect(isMockBillingEnabled(true, 'false')).toBe(false);
+    expect(isMockBillingEnabled(true, 'true')).toBe(true);
   });
 });

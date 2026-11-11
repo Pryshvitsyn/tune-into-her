@@ -6,7 +6,7 @@ import { getCatalog, getLocalizedCue } from '../src/domain/content/contentReposi
 import { selectDailyCue } from '../src/domain/content/dailyCueService';
 import { dailyReminders } from '../src/domain/content/dailyGuidance';
 import type { DailySelection, SelectionStore } from '../src/domain/content/types';
-import { estimateCycle, type CyclePhase, type CycleSettings } from '../src/domain/cycle/cycleEngine';
+import type { CyclePhase, CycleSettings } from '../src/domain/cycle/cycleEngine';
 import { addCalendarDays, type DateOnly } from '../src/domain/cycle/dateOnly';
 
 import legacy from './fixtures/content-v3-digests.json';
@@ -25,7 +25,7 @@ async function simulate(settings: CycleSettings, start: DateOnly, heldPhase?: Cy
   const ids: string[] = [];
   for (let day = 0; day < 90; day++) {
     const date = addCalendarDays(start, day);
-    const phase = heldPhase ?? estimateCycle({ ...settings, currentLocalDate: date }).estimatedPhase;
+    const phase = heldPhase ?? phases[day % phases.length]!;
     ids.push(await selectDailyCue({ date, phase, settings, store }));
   }
   return ids;

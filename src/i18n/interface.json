@@ -22,7 +22,14 @@
     "follicular": "After her period",
     "mid_cycle": "Estimated ovulation",
     "luteal": "After ovulation",
-    "before": "Before her period"
+    "before": "Before her period",
+    "feedbackPrompt": "Did this fit today?",
+    "feedbackHelpful": "Helpful",
+    "feedbackNotHelpful": "Not helpful",
+    "feedbackNotTried": "Didn't try it",
+    "history": "Previous days",
+    "historyTitle": "Previous guidance",
+    "historyEmpty": "No previous guidance yet."
   },
   "ru": {
     "advice": "Советы",
@@ -47,7 +54,14 @@
     "follicular": "После менструации",
     "mid_cycle": "Предполагаемая овуляция",
     "luteal": "После овуляции",
-    "before": "Перед менструацией"
+    "before": "Перед менструацией",
+    "feedbackPrompt": "Как вам эта рекомендация?",
+    "feedbackHelpful": "Подошло",
+    "feedbackNotHelpful": "Не подошло",
+    "feedbackNotTried": "Не пробовал",
+    "history": "Предыдущие дни",
+    "historyTitle": "Предыдущие рекомендации",
+    "historyEmpty": "Предыдущих рекомендаций пока нет."
   },
   "uk": {
     "advice": "Поради",
@@ -72,7 +86,14 @@
     "follicular": "Після менструації",
     "mid_cycle": "Орієнтовна овуляція",
     "luteal": "Після овуляції",
-    "before": "Перед менструацією"
+    "before": "Перед менструацією",
+    "feedbackPrompt": "Як вам ця рекомендація?",
+    "feedbackHelpful": "Підійшло",
+    "feedbackNotHelpful": "Не підійшло",
+    "feedbackNotTried": "Не пробував",
+    "history": "Попередні дні",
+    "historyTitle": "Попередні рекомендації",
+    "historyEmpty": "Попередніх рекомендацій поки немає."
   },
   "it": {
     "advice": "Consigli",
@@ -97,7 +118,14 @@
     "follicular": "Dopo le mestruazioni",
     "mid_cycle": "Ovulazione stimata",
     "luteal": "Dopo l’ovulazione",
-    "before": "Prima delle mestruazioni"
+    "before": "Prima delle mestruazioni",
+    "feedbackPrompt": "Com'è stato questo consiglio oggi?",
+    "feedbackHelpful": "Utile",
+    "feedbackNotHelpful": "Non utile",
+    "feedbackNotTried": "Non l'ho provato",
+    "history": "Giorni precedenti",
+    "historyTitle": "Consigli precedenti",
+    "historyEmpty": "Non ci sono ancora consigli precedenti."
   },
   "fr": {
     "advice": "Conseils",
@@ -122,7 +150,14 @@
     "follicular": "Après ses règles",
     "mid_cycle": "Ovulation estimée",
     "luteal": "Après l’ovulation",
-    "before": "Avant ses règles"
+    "before": "Avant ses règles",
+    "feedbackPrompt": "Ce conseil vous a-t-il convenu aujourd’hui ?",
+    "feedbackHelpful": "Utile",
+    "feedbackNotHelpful": "Pas utile",
+    "feedbackNotTried": "Je ne l’ai pas essayé",
+    "history": "Jours précédents",
+    "historyTitle": "Conseils précédents",
+    "historyEmpty": "Il n’y a pas encore de conseils précédents."
   },
   "es": {
     "advice": "Consejos",
@@ -147,7 +182,14 @@
     "follicular": "Después de su período",
     "mid_cycle": "Ovulación estimada",
     "luteal": "Después de la ovulación",
-    "before": "Antes de su período"
+    "before": "Antes de su período",
+    "feedbackPrompt": "¿Cómo te resultó esta recomendación hoy?",
+    "feedbackHelpful": "Me ayudó",
+    "feedbackNotHelpful": "No me ayudó",
+    "feedbackNotTried": "No la probé",
+    "history": "Días anteriores",
+    "historyTitle": "Recomendaciones anteriores",
+    "historyEmpty": "Aún no hay recomendaciones anteriores."
   },
   "de": {
     "advice": "Tipps",
@@ -172,7 +214,14 @@
     "follicular": "Nach ihrer Periode",
     "mid_cycle": "Geschätzter Eisprung",
     "luteal": "Nach dem Eisprung",
-    "before": "Vor ihrer Periode"
+    "before": "Vor ihrer Periode",
+    "feedbackPrompt": "Wie hat dieser Hinweis heute für dich gepasst?",
+    "feedbackHelpful": "Hilfreich",
+    "feedbackNotHelpful": "Nicht hilfreich",
+    "feedbackNotTried": "Nicht ausprobiert",
+    "history": "Frühere Tage",
+    "historyTitle": "Frühere Hinweise",
+    "historyEmpty": "Noch keine früheren Hinweise vorhanden."
   },
   "hi": {
     "advice": "सुझाव",
@@ -197,7 +246,14 @@
     "follicular": "मासिक धर्म के बाद",
     "mid_cycle": "अनुमानित अंडोत्सर्ग",
     "luteal": "अंडोत्सर्ग के बाद",
-    "before": "मासिक धर्म से पहले"
+    "before": "मासिक धर्म से पहले",
+    "feedbackPrompt": "यह सुझाव आज आपके लिए कैसा रहा?",
+    "feedbackHelpful": "उपयोगी",
+    "feedbackNotHelpful": "उपयोगी नहीं",
+    "feedbackNotTried": "आजमाया नहीं",
+    "history": "पिछले दिन",
+    "historyTitle": "पिछले सुझाव",
+    "historyEmpty": "अभी तक कोई पिछला सुझाव नहीं है।"
   },
   "zh-Hans": {
     "advice": "建议",
@@ -222,7 +278,14 @@
     "follicular": "经期后",
     "mid_cycle": "预计排卵期",
     "luteal": "排卵后",
-    "before": "经期前"
+    "before": "经期前",
+    "feedbackPrompt": "这条建议今天适合你吗？",
+    "feedbackHelpful": "有帮助",
+    "feedbackNotHelpful": "没有帮助",
+    "feedbackNotTried": "没有尝试",
+    "history": "此前几天",
+    "historyTitle": "此前建议",
+    "historyEmpty": "还没有此前建议。"
   },
   "ms": {
     "advice": "Nasihat",
@@ -247,7 +310,14 @@
     "follicular": "Selepas haid",
     "mid_cycle": "Anggaran ovulasi",
     "luteal": "Selepas ovulasi",
-    "before": "Sebelum haid"
+    "before": "Sebelum haid",
+    "feedbackPrompt": "Bagaimana cadangan ini untuk anda hari ini?",
+    "feedbackHelpful": "Membantu",
+    "feedbackNotHelpful": "Tidak membantu",
+    "feedbackNotTried": "Belum cuba",
+    "history": "Hari sebelumnya",
+    "historyTitle": "Cadangan sebelumnya",
+    "historyEmpty": "Belum ada cadangan sebelumnya."
   },
   "mbf": {
     "advice": "Nasihat",
@@ -272,6 +342,13 @@
     "follicular": "Lepas haid",
     "mid_cycle": "Anggaran ovulasi",
     "luteal": "Lepas ovulasi",
-    "before": "Sebelum haid"
+    "before": "Sebelum haid",
+    "feedbackPrompt": "Macam mana nasihat ini untuk lu hari ini?",
+    "feedbackHelpful": "Boleh tolong",
+    "feedbackNotHelpful": "Tak boleh tolong",
+    "feedbackNotTried": "Belum cuba",
+    "history": "Hari dulu",
+    "historyTitle": "Nasihat dulu",
+    "historyEmpty": "Belum ada nasihat dulu."
   }
 }

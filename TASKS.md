@@ -1,51 +1,76 @@
 # TASKS
-## NOW
-- [x] Record founder as personal publisher/account holder (8 November); keep exact legal spelling pending document/account verification.
-- [x] Compare every phrase in all 11 Google Sheets source tabs with the repository: 3,498 exact matches in order; preserve editorial status separately.
-- [x] Correct daily guidance rollover to 08:00 and new-install reminder default to 08:00; preserve existing custom reminder times.
-- [ ] Confirm Apple Individual membership activation; verify Google's required account type for cycle-data features before registration/payment, then complete account verification and authorized signing access.
-- [ ] Set verified publisher spelling, monitored support email and live legal URLs.
-- [ ] Reconcile the 7 November rules sheet: 2–3 useful action alternatives, day history, editable feedback and phase-aware editorial coverage; do not claim these shipped because they appear in a spreadsheet.
-- [ ] Verify the new 08:00 boundary, first-day-before-08:00 behavior and daylight-saving handling on iPhone/Android.
-- [x] Integrate the expanded reserve into PR #5; verify actual demo blocks in all locales and preserve history isolation.
-- [x] Align six Expo SDK 57 patch packages required by the current CI health check.
-- [x] Implement installed accelerated preview: 30 sample days, five minutes each, isolated history, one-tap Start/Stop and 29 native reminders.
-- [x] Add preview-only first launch and eleven-language demo controls, without requiring a purchase entitlement.
-- [x] Complete full lint/type/test/Expo CI for the accelerated-preview delta: run 41676014811 on 6efcd50 passes; 65 tests, 21/21 Expo Doctor checks.
-- [ ] Install the signed preview and verify background notification/tap delivery and the full 150-minute trial on iPhone.
-- [x] Audit v3 component repetition and expand each locale from 88 to 318 authored texts.
-- [x] Add first-90-days constituent nonrepetition, phase-transition, legacy compatibility and gratitude tests.
-- [x] Add generated-output drift checking to CI and per-locale pending review status.
 
-- [x] Authenticate as eliogenesis and verify the existing EAS project identity/access.
-- [x] Prepare expo-updates, fingerprint runtime compatibility and separate preview/production channels.
-- [ ] Verify update delivery on an installed preview build.
-- [x] Diagnose failed CI and align Expo SDK 57 patch dependencies; verify clean installation and 21/21 health checks.
-- [x] Publish CI fix to PR #3 and verify GitHub Actions run 41296523081 (all steps pass).
-- [x] Publish prepared documentation branch and open PR #2 (2026-11-01).
-- [x] Implement shared dual themes and two-logo header on Today.
-- [x] Create shared vector THEA/app emblems.
-- [ ] Visually verify emblem geometry and small-size rendering on devices.
-- [x] Implement centered DO/SUPPORT/KEEP IN MIND and daily gratitude rotation.
-- [x] Expand all three daily sections across 11 locales; verify 90-day visible-bundle coverage and constituent rotation. See docs/CONTENT.md.
-## NEXT
-- [x] Apply visual system to existing routes; implement Appearance and About THEA.
-- [ ] Verify cycle editing, onboarding, language/theme persistence, deletion and notification denial.
-- [ ] Verify same-day stability, next-day changes, timezone and locale switching.
-- [x] Run lint/types/tests and native iOS/Android exports after changes.
-- [ ] Complete native device and purchase/restore/cancel QA.
-## PARALLEL
-- [ ] Native-language editorial review including Baba Malay community review.
-- [ ] Prepare actual publisher/support/legal pages and store configuration.
-## BLOCKED
-- [ ] Build and install iPhone preview, then test native flows.
-  Blocked by: usable Apple signing/device registration and access to produce/install the native preview. The accelerated-demo route has separate preview access; ordinary billing still needs configuration.
-- [ ] Activate Explore THEA.
-  Blocked by: confirmed website URL.
-- [ ] Submit signed store builds.
-  Blocked by: implementation, readiness evidence, signing/store access and publication authorization.
-## DONE
-- [x] Recover remote baseline and inspect source/configuration.
-- [x] Reconcile latest decisions against older artifacts.
-- [x] Create project brain and validate document links.
-- [x] Run content validator (pass) and release checker (expected failure recorded).
+Updated: 2026-11-11
+
+## NOW — release-candidate proof
+
+- [x] Run `npm run typecheck`, `npm run lint`, `npm test`, `npm run content:check`, and
+  `npm run content:validate`; exact outcomes are recorded in `release/BUILD_PROOF.md`.
+- [x] Build Debug and normal Release iOS Simulator products from
+  `ios/TuneIntoHer.xcworkspace` / `TuneIntoHer`; install and launch a completed normal
+  Release product on iPhone 17.
+- [x] In a Debug-only mock-billing run, observe unlocked Today on iPhone 17 for more
+  than one V4 eight-second cycle. The V4 renderer visibly moved for 12+ seconds with
+  no normal-use static overlay; light/dark appearance, feedback selection, gratitude,
+  and scrolling also passed. The mock guard requires `__DEV__` plus
+  `EXPO_PUBLIC_USE_MOCK_BILLING=true`, displays a visible QA label, and cannot enable
+  a production bundle.
+- [ ] Record reproducible compact-iPhone and large-text visual evidence. Do not
+  substitute the Debug Simulator observation for physical-device or store proof.
+- [ ] Review the final diff for generated files, credentials, signing material, and
+  unintended asset changes before creating any local checkpoint.
+
+## OWNER DECISIONS REQUIRED
+
+- [ ] Choose and document canonical subscription term and eligible trial duration.
+  Current source is monthly P1M / `monthly_access`; prior drafts with annual or
+  differing trial durations are not a decision.
+- [ ] Confirm the intended iOS and Android application identifiers or authorize a
+  deliberate alignment.
+- [ ] Provide verified seller/legal spelling, support address, Terms and Privacy
+  destinations, and platform privacy declarations.
+- [ ] Confirm Apple/Google account activation, signing access, and the current Google
+  policy/account-type route for a cycle-context app.
+- [ ] Confirm whether current procedural/vector `BrandMark` assets are approved
+  originals, or provide approved source assets.
+
+## EDITORIAL / SAFETY
+
+- [ ] Decide the 30 founder-commented Russian entries in
+  `docs/CONTENT_AUDIT.md`; do not edit source or translations from comments alone.
+- [ ] Obtain native-language review for all 11 locales; `mbf` needs community review.
+- [ ] Decide whether an explicit unknown-cycle-length state is required. Current
+  onboarding defaults to 28/5 rather than preserving an unknown value.
+- [ ] Add explicit user-confirmed bleeding-event provenance and a corresponding UI flow
+  before treating phase-state safety as release-ready.
+- [ ] Obtain clinical/editorial review of health-adjacent and phase-related wording.
+- [ ] Test time zone, travel, skipped-period, and DST behavior on physical iOS/Android.
+
+## STORE / DEVICE GATES
+
+- [ ] Configure RevenueCat and store products only after the owner billing decision;
+  sandbox-test purchase, restore, billing issue, cancellation, and localized offers.
+- [ ] Perform physical iOS and Android notification/permission/tap-routing QA.
+- [ ] Complete compact/regular visual QA in both appearance modes and all locales.
+- [ ] Update `release/readiness.json` only with real final evidence; run
+  `npm run release:check` after all external facts are supplied.
+
+## DONE IN THIS CANDIDATE (source-level)
+
+- [x] Select PR #6 `25c8505` as integration base and create local recovery pointers.
+- [x] Preserve the pre-consolidation V4 working tree in local commit `1147292`.
+- [x] Directly wire the approved V4 renderer into Today and onboarding and add hash/use
+  integrity coverage.
+- [x] Remove the retired `PhaseSphere` from the active render path while retaining the
+  archival recovery path.
+- [x] Add local per-cue feedback and history without rewriting persisted daily choices.
+- [x] Introduce the 40-day unconfirmed-cycle safety guard and all-phase fallback.
+- [x] Write the audit, version map, content ledger, UX, safety, build-proof, and store
+  readiness documentation.
+
+## NOT AUTHORIZED BY THIS LIST
+
+The Founder authorized a checked, non-force push of this integration branch only. No
+merge, deployment, store submission, or production billing configuration is implied by
+these tasks. Do not erase user data, generated history, or archival recovery points to
+obtain a green check.

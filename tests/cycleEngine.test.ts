@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { estimateCycle } from '../src/domain/cycle/cycleEngine';
+import { estimateCycle, MAX_UNCONFIRMED_CYCLE_DAYS } from '../src/domain/cycle/cycleEngine';
 import { calendarDayDifference, toDateOnly } from '../src/domain/cycle/dateOnly';
 
 describe('cycle engine', () => {
@@ -10,13 +10,27 @@ describe('cycle engine', () => {
     ['2026-01-01', '2026-01-28', 28, 28],
     ['2026-01-01', '2026-01-29', 28, 1],
     ['2026-01-01', '2026-01-22', 21, 1],
-    ['2026-01-01', '2026-02-10', 40, 1],
   ] as const)('maps %s to %s for a %i-day cycle', (start, current, length, day) => {
     expect(estimateCycle({ lastKnownPeriodStart: start, currentLocalDate: current, typicalCycleLength: length, typicalPeriodLength: 5 }).estimatedCycleDay).toBe(day);
   });
 
   it('marks a projected new-cycle boundary', () => {
     expect(estimateCycle({ lastKnownPeriodStart: '2026-01-01', currentLocalDate: '2026-01-29', typicalCycleLength: 28, typicalPeriodLength: 5 }).isProjectedNewCycleBoundary).toBe(true);
+  });
+
+  it('keeps menstruation as a presentation sub-stage of the follicular phase', () => {
+    const estimate = estimateCycle({ lastKnownPeriodStart: '2026-01-01', currentLocalDate: '2026-01-02', typicalCycleLength: 28, typicalPeriodLength: 5 });
+    expect(estimate.estimatedPhase).toBe('menstrual');
+    expect(estimate.estimatedPhysiologicalPhase).toBe('follicular');
+  });
+
+  it('does not invent a new cycle after forty unconfirmed calendar days', () => {
+    const estimate = estimateCycle({ lastKnownPeriodStart: '2026-01-01', currentLocalDate: '2026-02-10', typicalCycleLength: 28, typicalPeriodLength: 5 });
+    expect(estimate.daysFromKnownStart).toBe(MAX_UNCONFIRMED_CYCLE_DAYS);
+    expect(estimate.requiresPeriodConfirmation).toBe(true);
+    expect(estimate.estimatedCycleDay).toBe(41);
+    expect(estimate.estimatedCycleStart).toBe('2026-01-01');
+    expect(estimate.isProjectedNewCycleBoundary).toBe(false);
   });
 
   it('rejects a future known date', () => {

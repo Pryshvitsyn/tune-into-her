@@ -9,7 +9,7 @@
       "@/*": ["./src/*"],
       "@content/*": ["./content/*"]
     },
-    "types": ["vitest/globals"]
+    "types": ["node", "vitest/globals"]
   },
   "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }

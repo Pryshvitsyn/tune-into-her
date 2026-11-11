@@ -1,33 +1,49 @@
 # Store and RevenueCat setup checklist
 
-These are external owner actions and are not completed by this repository.
+These are external owner actions and are not completed by this repository. This file
+distinguishes a **current source expectation** from an **externally confirmed store
+record**. A value in code or this checklist is never proof that Apple, Google Play, or
+RevenueCat has accepted, registered, or configured it.
 
 ## Identifiers to keep aligned
 
-- RevenueCat entitlement: `full_access`
-- Store product concept: `monthly_access` (use the exact same neutral ID on both stores if available)
-- RevenueCat offering: default offering with its monthly package pointing to the monthly product
-- Configured iOS bundle ID: `com.pryshvitsyn.tuneintoher` (verify registration)
-- Configured Android package: `com.pryshvitsyn.tuneintoher` (verify registration)
+- Current source entitlement expectation: `full_access` (externally unconfirmed)
+- Current source product route: monthly package / `monthly_access` / P1M (externally
+  unconfirmed; it is not a founder-approved business term or a live store product)
+- Current source offering expectation: default offering with a monthly package pointing
+  to the confirmed product (externally unconfirmed)
+- Configured iOS bundle ID: `com.eliogenesis.tuneintoher` (verify/create the intended
+  Apple identifier; do not rely on an older document)
+- Configured Android package: `com.pryshvitsyn.tuneintoher` (verify/create the intended
+  Play identifier)
 - Existing EAS project ID: `dc8938e7-7163-413a-9003-479d0afc8a17`
 - Current release handoff: [release/RELEASE_GUIDE_RU.md](release/RELEASE_GUIDE_RU.md)
 
 ## Apple
 
 - Enroll the founder in Apple Developer Program as Individual (owner decision: 8 November 2026).
-- Verify/register the existing `com.pryshvitsyn.tuneintoher` identifier, create the App Store Connect app, and complete agreements/tax/banking. Do not rename the identifier merely because the publisher is confirmed.
-- Create one subscription group and a monthly auto-renewable subscription with product ID `monthly_access` (or record the exact alternate ID).
+- Verify whether `com.eliogenesis.tuneintoher` is the intended and available Apple
+  identifier before creating or changing any App Store Connect record. The source value
+  is not registration evidence.
+- Before creating a subscription, obtain the founder's written decision on billing term
+  and eligible trial duration. If the current monthly source route is retained, create
+  the product as `monthly_access`; if a different term or ID is approved, make a reviewed
+  source change first rather than silently using an alternate external product.
 - Select the nearest supported regional price point to the business target; the app never hardcodes a price.
-- Add a free introductory offer of the desired one-month-style duration for eligible new subscribers.
+- Add an introductory offer only after its exact eligibility and duration are approved;
+  no 14-day, 30-day, monthly, or annual offer is assumed by this checklist.
 - Add localized product name, description, subscription terms, privacy URL, and review notes in all supported store locales.
 - Create a sandbox tester and test new, returning/ineligible, cancellation, renewal, billing-retry, and restore paths.
 - In RevenueCat, add the iOS app and complete the current App Store Connect API/in-app purchase integration steps shown by RevenueCat.
 
 ## Google Play
 
-- Resolve whether Google's health-app/business rules require an Organization account before payment. The founder remains the account owner; use his verified business details if that route is required. Then create the app and verify the existing `com.pryshvitsyn.tuneintoher` package before the first upload.
+- Resolve whether Google's health-app/business rules require an Organization account before payment. The founder remains the account owner; use verified business details if that route is required. Then verify the intended `com.pryshvitsyn.tuneintoher` package before the first upload; the source value is not Play Console evidence.
 - Complete payments profile and required policy/data-safety declarations.
-- Create monthly subscription `monthly_access`, an auto-renewing monthly base plan, regional pricing, and a new-subscriber free-trial offer.
+- Only after the owner confirms the current source route, create the matching
+  `monthly_access` auto-renewing monthly base plan. Otherwise, first approve and review
+  the necessary source/configuration change. Configure regional pricing and any trial
+  from actual approved store terms.
 - Add localized subscription metadata and terms in all supported locales.
 - Add license testers/internal-testing users and test eligible, ineligible, cancellation, grace/billing issue, expiration, and restore paths.
 - In RevenueCat, add the Android app and complete its current Google Play service-account/subscription integration steps.
@@ -35,9 +51,11 @@ These are external owner actions and are not completed by this repository.
 ## RevenueCat
 
 - Create the project, then iOS and Android apps.
-- Import both monthly store products.
-- Create entitlement exactly `full_access` and attach both products.
-- Create/set the default offering and add the monthly package.
+- After both platform records are externally confirmed, import the matching store
+  products into RevenueCat.
+- Create/confirm entitlement `full_access` and attach only the verified products.
+- Create/set the default offering and add the package that matches the approved source
+  billing term. Do not label an alternate product as monthly merely to fit this document.
 - Copy only the public platform SDK keys into EAS environment variables:
   - `EXPO_PUBLIC_REVENUECAT_IOS_API_KEY`
   - `EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY`

@@ -39,14 +39,18 @@ describe('content catalog', () => {
     }
   });
 
-  it('provides a year of default-cycle IDs without repeats', async () => {
+  it('provides a year of IDs without repeats when each new cycle is confirmed', async () => {
     const store = new MemoryStore();
     const settings: CycleSettings = { lastKnownPeriodStart: '2026-01-01', typicalCycleLength: 28, typicalPeriodLength: 5 };
     const seen = new Set<string>();
     for (let offset = 0; offset < 365; offset += 1) {
       const date = addCalendarDays('2026-01-01', offset);
-      const phase = estimateCycle({ ...settings, currentLocalDate: date }).estimatedPhase;
-      seen.add(await selectDailyCue({ date, phase, settings, store }));
+      const confirmedSettings = {
+        ...settings,
+        lastKnownPeriodStart: addCalendarDays('2026-01-01', Math.floor(offset / settings.typicalCycleLength) * settings.typicalCycleLength),
+      };
+      const phase = estimateCycle({ ...confirmedSettings, currentLocalDate: date }).estimatedPhase;
+      seen.add(await selectDailyCue({ date, phase, settings: confirmedSettings, store }));
     }
     expect(seen.size).toBe(365);
   });

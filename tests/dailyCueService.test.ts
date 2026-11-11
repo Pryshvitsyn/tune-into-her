@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
+import { getCatalog } from '../src/domain/content/contentRepository';
 import { invalidateFutureSelections, selectDailyCue } from '../src/domain/content/dailyCueService';
 import type { DailySelection, SelectionStore } from '../src/domain/content/types';
 
@@ -23,6 +24,13 @@ describe('daily cue state', () => {
     const first = await selectDailyCue({ date: '2026-01-05', phase: 'menstrual', settings, store });
     const second = await selectDailyCue({ date: '2026-01-06', phase: 'menstrual', settings, store });
     expect(second).not.toBe(first);
+  });
+
+  it('uses only all-phase guidance when a cycle start needs confirmation', async () => {
+    const store = new MemoryStore();
+    const id = await selectDailyCue({ date: '2026-02-10', phase: 'unconfirmed', settings, store });
+    const cue = getCatalog().find((item) => item.id === id);
+    expect(cue?.phases).toHaveLength(4);
   });
 
   it('keeps history through today and invalidates only future choices', async () => {
