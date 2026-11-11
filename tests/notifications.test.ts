@@ -30,4 +30,10 @@ describe('notification scheduler', () => {
     expect(backend.scheduled.every((item) => item.content.data.language === 'it')).toBe(true);
     expect(backend.scheduled.every((item) => item.date.getHours() === 9 && item.date.getMinutes() === 15)).toBe(true);
   });
+
+  it('keeps cycle information and cues off the lock screen', async () => {
+    const backend = new FakeBackend(); const scheduler = new NotificationScheduler(backend, new MemoryStore());
+    await scheduler.rebuild(base, new Date(2026, 0, 2, 7));
+    expect(backend.scheduled.every((item) => item.title === 'Test Brand' && item.body === 'A little context for today.')).toBe(true);
+  });
 });

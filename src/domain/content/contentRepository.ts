@@ -1,15 +1,19 @@
 import catalogJson from '../../../content/catalog.json';
 import en from '../../../content/locales/en.json';
 import es from '../../../content/locales/es.json';
+import fr from '../../../content/locales/fr.json';
 import it from '../../../content/locales/it.json';
 import ru from '../../../content/locales/ru.json';
 import uk from '../../../content/locales/uk.json';
+import ms from '../../../content/locales/ms.json';
+import msBaba from '../../../content/locales/ms-baba.json';
+import hi from '../../../content/locales/hi.json';
 import type { SupportedLanguage } from '../../config/constants';
 
 import type { CueMetadata, LocalizedCue } from './types';
 
 const catalog = catalogJson as CueMetadata[];
-const locales = { en, it, ru, uk, es } as Record<SupportedLanguage, Record<string, LocalizedCue>>;
+const locales = { en, it, ru, uk, es, fr, ms, 'ms-baba': msBaba, hi } as Record<SupportedLanguage, Record<string, LocalizedCue>>;
 
 export function getCatalog(): CueMetadata[] {
   return catalog;

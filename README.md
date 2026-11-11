@@ -1,3 +1,5 @@
+> Status correction (2026-09-14): native identifiers and the EAS project ID are configured in app.config.ts; old placeholder-only wording below is SUPERSEDED for those fields. Store readiness still requires its checklist. The earlier five-language description is historical; additional working-tree locales need separate verification. Start at [Product HQ](docs/HQ.md).
+
 # Tune Into Her
 
 **Don't guess. Tune in.**

@@ -7,9 +7,11 @@ import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../config/constants
 import { resources } from './resources';
 
 const deviceCode = Localization.getLocales()[0]?.languageCode;
-const initialLanguage: SupportedLanguage = SUPPORTED_LANGUAGES.includes(deviceCode as SupportedLanguage)
-  ? (deviceCode as SupportedLanguage)
-  : 'en';
+const initialLanguage: SupportedLanguage = deviceCode === 'ms'
+  ? 'ms'
+  : SUPPORTED_LANGUAGES.includes(deviceCode as SupportedLanguage)
+    ? (deviceCode as SupportedLanguage)
+    : 'en';
 
 const i18n = createInstance();
 

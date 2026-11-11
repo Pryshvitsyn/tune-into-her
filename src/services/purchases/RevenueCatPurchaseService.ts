@@ -1,24 +1,31 @@
-import { Linking, Platform } from 'react-native';
+import { Linking, Platform } from "react-native";
 
-import { ENTITLEMENT_ID } from '../../config/constants';
+import { ENTITLEMENT_ID, YEARLY_SUBSCRIPTION_PRODUCT_ID } from "../../config/constants";
 
-import type { EntitlementState, PurchaseResult, PurchaseService, StoreOffer } from './types';
+import type { EntitlementState, PurchaseResult, PurchaseService, StoreOffer } from "./types";
 
-type RevenueCatModule = typeof import('react-native-purchases');
-type CustomerInfo = Awaited<ReturnType<RevenueCatModule['default']['getCustomerInfo']>>;
+type RevenueCatModule = typeof import("react-native-purchases");
+type CustomerInfo = Awaited<ReturnType<RevenueCatModule["default"]["getCustomerInfo"]>>;
 
 function stateFromCustomerInfo(info: CustomerInfo): EntitlementState {
   const entitlement = info.entitlements.active[ENTITLEMENT_ID];
-  if (!entitlement) return { status: 'inactive', isActive: false, isMock: false };
+  if (!entitlement) {
+    const previous = info.entitlements.all[ENTITLEMENT_ID];
+    return previous?.expirationDate && Date.parse(previous.expirationDate) <= Date.now()
+      ? { status: "expired", isActive: false, expirationDate: previous.expirationDate, isMock: false }
+      : { status: "inactive", isActive: false, isMock: false };
+  }
+  if (entitlement.productIdentifier !== YEARLY_SUBSCRIPTION_PRODUCT_ID) {
+    return { status: "error", isActive: false, isMock: false, error: "YEARLY_PRODUCT_MISMATCH" };
+  }
   const expirationDate = entitlement.expirationDate ?? undefined;
-  if (entitlement.billingIssueDetectedAt) return { status: 'billing_issue', isActive: true, expirationDate, isMock: false };
-  if (!entitlement.willRenew && expirationDate) return { status: 'active_ending', isActive: true, expirationDate, isMock: false };
-  return {
-    status: entitlement.periodType === 'TRIAL' ? 'active_trial' : 'active_paid',
-    isActive: true,
-    expirationDate,
-    isMock: false,
-  };
+  if (!expirationDate) {
+    return { status: "error", isActive: false, isMock: false, error: "YEARLY_SUBSCRIPTION_EXPIRATION_MISSING" };
+  }
+  if (Date.parse(expirationDate) <= Date.now()) {
+    return { status: "expired", isActive: false, expirationDate, isMock: false };
+  }
+  return { status: "active", isActive: true, expirationDate, willRenew: entitlement.willRenew, isTrial: entitlement.periodType === "TRIAL", isMock: false };
 }
 
 export class RevenueCatPurchaseService implements PurchaseService {
@@ -26,7 +33,7 @@ export class RevenueCatPurchaseService implements PurchaseService {
   private configured = false;
 
   private async getModule(): Promise<RevenueCatModule> {
-    this.module ??= await import('react-native-purchases');
+    this.module ??= await import("react-native-purchases");
     return this.module;
   }
 
@@ -36,7 +43,7 @@ export class RevenueCatPurchaseService implements PurchaseService {
       ios: process.env.EXPO_PUBLIC_REVENUECAT_IOS_API_KEY,
       android: process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY,
     });
-    if (!apiKey) throw new Error('REVENUECAT_API_KEY_MISSING');
+    if (!apiKey) throw new Error("REVENUECAT_API_KEY_MISSING");
     const { default: Purchases } = await this.getModule();
     Purchases.configure({ apiKey });
     this.configured = true;
@@ -48,7 +55,7 @@ export class RevenueCatPurchaseService implements PurchaseService {
       const { default: Purchases } = await this.getModule();
       return stateFromCustomerInfo(await Purchases.getCustomerInfo());
     } catch (error) {
-      return { status: 'error', isActive: false, isMock: false, error: error instanceof Error ? error.message : 'UNKNOWN_PURCHASE_ERROR' };
+      return { status: "error", isActive: false, isMock: false, error: error instanceof Error ? error.message : "UNKNOWN_PURCHASE_ERROR" };
     }
   }
 
@@ -56,32 +63,35 @@ export class RevenueCatPurchaseService implements PurchaseService {
     await this.configure();
     const { default: Purchases } = await this.getModule();
     const offering = (await Purchases.getOfferings()).current;
-    const monthly = offering?.monthly ?? offering?.availablePackages[0];
-    if (!monthly) return null;
-    const intro = monthly.product.introPrice;
-    const androidFreePhase = monthly.product.defaultOption?.freePhase;
+    const yearlyPackage = offering?.availablePackages.find(({ product }) =>
+      product.identifier === YEARLY_SUBSCRIPTION_PRODUCT_ID
+      && product.productType === "AUTO_RENEWABLE_SUBSCRIPTION"
+      && product.subscriptionPeriod === "P1Y"
+    );
+    if (!yearlyPackage) return null;
+
+    const intro = yearlyPackage.product.introPrice;
+    const androidFreePhase = yearlyPackage.product.defaultOption?.freePhase;
+    const hasFourteenDayTrial = Platform.OS === "android"
+      ? androidFreePhase?.billingPeriod.iso8601 === "P14D"
+      : intro?.price === 0 && intro.periodNumberOfUnits === 14 && intro.periodUnit === "DAY";
     let trialEligible = false;
-    let trialDuration: string | undefined;
-    if (Platform.OS === 'android' && androidFreePhase) {
-      // Google Play filters the selected subscription option to offers available to this user.
+    if (hasFourteenDayTrial && Platform.OS === "android") {
       trialEligible = true;
-      trialDuration = androidFreePhase.billingPeriod.iso8601;
-    } else if (intro?.price === 0) {
-      const eligibility = await Purchases.checkTrialOrIntroductoryPriceEligibility([monthly.product.identifier]);
-      trialEligible = eligibility[monthly.product.identifier]?.status === Purchases.INTRO_ELIGIBILITY_STATUS.INTRO_ELIGIBILITY_STATUS_ELIGIBLE;
-      if (trialEligible) {
-        const unit = intro.periodUnit === 'DAY' ? 'D' : intro.periodUnit === 'WEEK' ? 'W' : intro.periodUnit === 'MONTH' ? 'M' : intro.periodUnit === 'YEAR' ? 'Y' : '';
-        trialDuration = unit ? `P${intro.periodNumberOfUnits}${unit}` : undefined;
-      }
+    } else if (hasFourteenDayTrial) {
+      const eligibility = await Purchases.checkTrialOrIntroductoryPriceEligibility([yearlyPackage.product.identifier]);
+      trialEligible = eligibility[yearlyPackage.product.identifier]?.status === Purchases.INTRO_ELIGIBILITY_STATUS.INTRO_ELIGIBILITY_STATUS_ELIGIBLE;
     }
+
     return {
-      packageIdentifier: monthly.identifier,
-      productIdentifier: monthly.product.identifier,
-      localizedPrice: monthly.product.priceString,
-      billingPeriod: monthly.product.subscriptionPeriod ?? 'P1M',
-      trialDuration,
+      packageIdentifier: yearlyPackage.identifier,
+      productIdentifier: yearlyPackage.product.identifier,
+      localizedPrice: yearlyPackage.product.priceString,
+      billingPeriod: "P1Y",
+      isAutoRenewing: true,
+      trialDuration: hasFourteenDayTrial ? "P14D" : undefined,
       trialEligible,
-      rawPackage: monthly,
+      rawPackage: yearlyPackage,
     };
   }
 
@@ -90,10 +100,10 @@ export class RevenueCatPurchaseService implements PurchaseService {
     const { default: Purchases, PURCHASES_ERROR_CODE } = await this.getModule();
     try {
       const result = await Purchases.purchasePackage(offer.rawPackage as Parameters<typeof Purchases.purchasePackage>[0]);
-      if (!stateFromCustomerInfo(result.customerInfo).isActive) throw new Error('ENTITLEMENT_NOT_ACTIVE');
-      return 'purchased';
+      if (!stateFromCustomerInfo(result.customerInfo).isActive) throw new Error("YEARLY_SUBSCRIPTION_ENTITLEMENT_NOT_ACTIVE");
+      return "purchased";
     } catch (error) {
-      if (typeof error === 'object' && error && 'code' in error && error.code === PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) return 'cancelled';
+      if (typeof error === "object" && error && "code" in error && error.code === PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) return "cancelled";
       throw error;
     }
   }
@@ -110,9 +120,9 @@ export class RevenueCatPurchaseService implements PurchaseService {
       const { default: Purchases } = await this.getModule();
       await Purchases.showManageSubscriptions();
     } catch {
-      const url = Platform.OS === 'ios'
-        ? 'https://apps.apple.com/account/subscriptions'
-        : 'https://play.google.com/store/account/subscriptions';
+      const url = Platform.OS === "ios"
+        ? "https://apps.apple.com/account/subscriptions"
+        : "https://play.google.com/store/account/subscriptions";
       await Linking.openURL(url);
     }
   }

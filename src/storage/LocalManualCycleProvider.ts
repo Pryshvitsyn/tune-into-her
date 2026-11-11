@@ -8,7 +8,8 @@ import { storageKeys } from './keys';
 export class LocalManualCycleProvider implements CycleDataProvider {
   async get(): Promise<CycleSettings | null> {
     const value = await SecureStore.getItemAsync(storageKeys.cycleSettings);
-    return value ? (JSON.parse(value) as CycleSettings) : null;
+    if (!value) return null;
+    try { return JSON.parse(value) as CycleSettings; } catch { return null; }
   }
 
   async save(settings: CycleSettings): Promise<void> {
@@ -16,4 +17,6 @@ export class LocalManualCycleProvider implements CycleDataProvider {
       keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY,
     });
   }
+
+  async clear(): Promise<void> { await SecureStore.deleteItemAsync(storageKeys.cycleSettings); }
 }

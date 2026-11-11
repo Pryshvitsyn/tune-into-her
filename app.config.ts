@@ -11,10 +11,11 @@ const config: ExpoConfig = {
   userInterfaceStyle: 'light',
   ios: {
     supportsTablet: false,
-    bundleIdentifier: 'com.placeholder.partnercyclecontext',
+    bundleIdentifier: 'com.eliogenesis.tuneintoher',
+    infoPlist: { ITSAppUsesNonExemptEncryption: false },
   },
   android: {
-    package: 'com.placeholder.partnercyclecontext',
+    package: 'com.pryshvitsyn.tuneintoher',
   },
   plugins: [
     'expo-router',
@@ -24,7 +25,7 @@ const config: ExpoConfig = {
       'expo-notifications',
       {
         defaultChannel: 'daily-cue',
-        color: '#52675B',
+        color: '#344F70',
       },
     ],
   ],

@@ -7,8 +7,8 @@ These are external owner actions and are not completed by this repository.
 - RevenueCat entitlement: `full_access`
 - Store product concept: `monthly_access` (use the exact same neutral ID on both stores if available)
 - RevenueCat offering: default offering with its monthly package pointing to the monthly product
-- Placeholder iOS bundle ID to replace: `com.placeholder.partnercyclecontext`
-- Placeholder Android package to replace: `com.placeholder.partnercyclecontext`
+- Placeholder iOS bundle ID to replace: `com.pryshvitsyn.tuneintoher`
+- Placeholder Android package to replace: `com.pryshvitsyn.tuneintoher`
 - EAS project ID to replace: `00000000-0000-0000-0000-000000000000`
 
 ## Apple

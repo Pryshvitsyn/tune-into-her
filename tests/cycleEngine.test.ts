@@ -15,6 +15,13 @@ describe('cycle engine', () => {
     expect(estimateCycle({ lastKnownPeriodStart: start, currentLocalDate: current, typicalCycleLength: length, typicalPeriodLength: 5 }).estimatedCycleDay).toBe(day);
   });
 
+  it('recalculates phase from the confirmed cycle date at phase boundaries', () => {
+    const base = { typicalCycleLength: 28, typicalPeriodLength: 5, currentLocalDate: '2026-01-15' as const };
+    expect(estimateCycle({ ...base, lastKnownPeriodStart: '2026-01-11' }).estimatedPhase).toBe('menstrual');
+    expect(estimateCycle({ ...base, lastKnownPeriodStart: '2026-01-10' }).estimatedPhase).toBe('follicular');
+    expect(estimateCycle({ ...base, lastKnownPeriodStart: '2026-01-03' }).estimatedPhase).toBe('mid_cycle');
+  });
+
   it('marks a projected new-cycle boundary', () => {
     expect(estimateCycle({ lastKnownPeriodStart: '2026-01-01', currentLocalDate: '2026-01-29', typicalCycleLength: 28, typicalPeriodLength: 5 }).isProjectedNewCycleBoundary).toBe(true);
   });
@@ -34,5 +41,12 @@ describe('cycle engine', () => {
 
   it('stores local calendar dates without UTC conversion', () => {
     expect(toDateOnly(new Date(2026, 6, 4, 23, 30))).toBe('2026-07-04');
+  });
+
+  it('softens confidence when regularity is unknown or variable', () => {
+    const base = { lastKnownPeriodStart: '2026-01-01' as const, currentLocalDate: '2026-01-10' as const, typicalCycleLength: 28, typicalPeriodLength: 5 };
+    expect(estimateCycle({ ...base, regularity: 'regular' }).confidence).toBe('higher');
+    expect(estimateCycle({ ...base, regularity: 'varies' }).confidence).toBe('lower');
+    expect(estimateCycle({ ...base, regularity: 'unknown' }).confidence).toBe('limited');
   });
 });

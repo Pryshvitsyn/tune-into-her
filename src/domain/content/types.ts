@@ -9,8 +9,9 @@ export interface CueMetadata {
 }
 
 export interface LocalizedCue {
-  context: string;
-  cue: string;
+  howSheMayFeel: string;
+  whatYouCanDo: string;
+  practicalMoves: string[];
 }
 
 export interface DailySelection {

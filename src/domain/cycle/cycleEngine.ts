@@ -1,12 +1,15 @@
 import { addCalendarDays, calendarDayDifference, type DateOnly } from './dateOnly';
 
 export type CyclePhase = 'menstrual' | 'follicular' | 'mid_cycle' | 'luteal';
+export type CycleRegularity = 'regular' | 'varies' | 'unknown';
+export type CycleConfidence = 'higher' | 'lower' | 'limited';
 
 export interface CycleInput {
   lastKnownPeriodStart: DateOnly;
   typicalCycleLength: number;
   typicalPeriodLength: number;
   currentLocalDate: DateOnly;
+  regularity?: CycleRegularity;
 }
 
 export interface CycleEstimate {
@@ -16,12 +19,14 @@ export interface CycleEstimate {
   daysFromKnownStart: number;
   isEstimated: true;
   isProjectedNewCycleBoundary: boolean;
+  confidence: CycleConfidence;
 }
 
 export interface CycleSettings {
   lastKnownPeriodStart: DateOnly;
   typicalCycleLength: number;
   typicalPeriodLength: number;
+  regularity?: CycleRegularity;
 }
 
 export function validateCycleSettings(settings: CycleSettings, today: DateOnly): string[] {
@@ -58,5 +63,6 @@ export function estimateCycle(input: CycleInput): CycleEstimate {
     daysFromKnownStart,
     isEstimated: true,
     isProjectedNewCycleBoundary: daysFromKnownStart > 0 && estimatedCycleDay === 1,
+    confidence: input.regularity === 'regular' || !input.regularity ? 'higher' : input.regularity === 'varies' ? 'lower' : 'limited',
   };
 }

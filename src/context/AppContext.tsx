@@ -12,7 +12,7 @@ import { NotificationScheduler } from '../services/notifications/NotificationSch
 import { purchaseService, type EntitlementState } from '../services/purchases';
 import { AsyncSelectionStore } from '../storage/AsyncSelectionStore';
 import { LocalManualCycleProvider } from '../storage/LocalManualCycleProvider';
-import { defaultPreferences, loadPreferences, savePreferences, type Preferences } from '../storage/preferences';
+import { clearPreferences, defaultPreferences, loadPreferences, savePreferences, type Preferences } from '../storage/preferences';
 
 const cycleProvider = new LocalManualCycleProvider();
 const selectionStore = new AsyncSelectionStore();
@@ -28,6 +28,7 @@ interface AppContextValue {
   updatePreferences(update: Partial<Preferences>, rebuildNotifications?: boolean): Promise<void>;
   completeOnboarding(): Promise<void>;
   rebuildNotifications(): Promise<void>;
+  resetAllData(): Promise<void>;
 }
 
 const AppContext = createContext<AppContextValue | null>(null);
@@ -102,7 +103,15 @@ export function AppProvider({ children }: PropsWithChildren) {
 
   const completeOnboarding = useCallback(() => updatePreferences({ onboardingComplete: true }, true), [updatePreferences]);
 
-  const value = useMemo(() => ({ ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
+  const resetAllData = useCallback(async () => {
+    await notificationScheduler.rebuild({ settings: cycleSettings ?? { lastKnownPeriodStart: toDateOnly(new Date()), typicalCycleLength: 28, typicalPeriodLength: 5 }, language: preferences.language, reminder: { enabled: false, hour: 8, minute: 0 }, brandName: brand.displayName });
+    await Promise.all([cycleProvider.clear(), clearPreferences(), selectionStore.writeAll([])]);
+    setCycleSettingsState(null);
+    setPreferencesState({ ...defaultPreferences, language: initialLanguage });
+    await i18n.changeLanguage(initialLanguage);
+  }, [cycleSettings, preferences.language]);
+
+  const value = useMemo(() => ({ ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications, resetAllData }), [ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications, resetAllData]);
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 

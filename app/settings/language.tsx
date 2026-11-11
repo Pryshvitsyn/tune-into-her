@@ -11,6 +11,6 @@ import { colors, radius, spacing } from '../../src/theme';
 export default function LanguageScreen() {
   const { t } = useTranslation();
   const { preferences, updatePreferences } = useApp();
-  return <Screen><Header title={t('language.title')} /><View style={styles.card}>{SUPPORTED_LANGUAGES.map((language) => <SettingsRow key={language} label={t(`language.${language}`)} value={preferences.language === language ? '✓' : undefined} onPress={() => void updatePreferences({ language }, true)} />)}</View><Text style={styles.note}>{t('today.estimated')}</Text></Screen>;
+  return <Screen><Header title={t('language.title')} /><View style={styles.card}>{SUPPORTED_LANGUAGES.map((language) => <SettingsRow key={language} label={t(`languageNames.${language}`)} value={preferences.language === language ? '✓' : undefined} onPress={() => void updatePreferences({ language }, true)} />)}</View><Text style={styles.note}>{t('today.estimated')}</Text></Screen>;
 }
 const styles = StyleSheet.create({ card: { backgroundColor: colors.card, borderRadius: radius.md, paddingHorizontal: spacing.md }, note: { color: colors.secondary, fontSize: 13, marginTop: spacing.lg } });

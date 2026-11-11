@@ -22,8 +22,12 @@ export const defaultPreferences: Preferences = {
 
 export async function loadPreferences(): Promise<Preferences | null> {
   const value = await AsyncStorage.getItem(storageKeys.preferences);
-  return value ? { ...defaultPreferences, ...(JSON.parse(value) as Partial<Preferences>) } : null;
+  if (!value) return null;
+  try { return { ...defaultPreferences, ...(JSON.parse(value) as Partial<Preferences>) }; }
+  catch { return null; }
 }
+
+export async function clearPreferences(): Promise<void> { await AsyncStorage.removeItem(storageKeys.preferences); }
 
 export async function savePreferences(preferences: Preferences): Promise<void> {
   await AsyncStorage.setItem(storageKeys.preferences, JSON.stringify(preferences));

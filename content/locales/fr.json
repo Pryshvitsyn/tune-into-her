@@ -1,0 +1,3602 @@
+{
+  "menstrual_001": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_002": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_003": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_004": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_005": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_006": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_007": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_008": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_009": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_010": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_011": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_012": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_013": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_014": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_015": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_016": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_017": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_018": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_019": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_020": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_021": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_022": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_023": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_024": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_025": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_026": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_027": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_028": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_029": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_030": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_031": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_032": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_033": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_034": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_035": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_036": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_037": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_038": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_039": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_040": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_041": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_042": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_043": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_044": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_045": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_046": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_047": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_048": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_049": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_050": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_051": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_052": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_053": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_054": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_055": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_056": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_057": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_058": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_059": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_060": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_061": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_062": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_063": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_064": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_065": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_066": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_067": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_068": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_069": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "menstrual_070": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "menstrual_071": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "menstrual_072": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_001": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_002": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_003": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_004": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_005": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_006": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_007": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_008": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_009": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_010": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_011": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_012": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_013": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_014": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_015": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_016": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_017": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_018": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_019": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_020": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_021": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_022": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_023": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_024": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_025": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_026": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_027": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_028": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_029": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_030": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_031": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_032": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_033": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_034": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_035": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_036": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_037": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_038": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_039": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_040": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_041": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_042": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_043": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_044": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_045": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_046": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_047": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_048": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_049": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_050": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_051": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_052": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_053": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_054": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_055": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_056": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_057": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_058": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_059": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_060": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_061": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_062": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_063": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_064": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_065": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_066": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_067": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_068": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_069": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_070": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_071": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_072": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_073": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_074": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_075": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_076": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_077": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_078": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_079": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_080": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_081": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_082": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_083": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_084": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_085": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_086": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_087": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_088": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_089": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_090": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_091": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_092": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_093": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_094": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_095": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_096": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_097": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_098": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_099": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_100": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_101": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "follicular_102": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "follicular_103": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "follicular_104": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_001": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_002": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_003": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_004": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_005": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_006": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_007": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_008": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_009": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_010": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_011": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_012": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_013": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_014": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_015": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_016": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_017": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_018": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_019": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_020": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_021": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_022": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_023": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_024": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_025": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_026": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_027": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_028": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_029": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_030": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_031": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_032": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_033": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_034": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_035": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_036": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_037": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_038": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_039": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_040": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_041": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "mid_cycle_042": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "mid_cycle_043": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "mid_cycle_044": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_001": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_002": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_003": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_004": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_005": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_006": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_007": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_008": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_009": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_010": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_011": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_012": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_013": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_014": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_015": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_016": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_017": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_018": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_019": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_020": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_021": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_022": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_023": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_024": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_025": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_026": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_027": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_028": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_029": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_030": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_031": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_032": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_033": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_034": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_035": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_036": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_037": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_038": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_039": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_040": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_041": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_042": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_043": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_044": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_045": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_046": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_047": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_048": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_049": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_050": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_051": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_052": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_053": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_054": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_055": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_056": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_057": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_058": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_059": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_060": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_061": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_062": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_063": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_064": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_065": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_066": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_067": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_068": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_069": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_070": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_071": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_072": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_073": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_074": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_075": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_076": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_077": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_078": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_079": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_080": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_081": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_082": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_083": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_084": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_085": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_086": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_087": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_088": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_089": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_090": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_091": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_092": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_093": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_094": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_095": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_096": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_097": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_098": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_099": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_100": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_101": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_102": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_103": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_104": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_105": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_106": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_107": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_108": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_109": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_110": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_111": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_112": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_113": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_114": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_115": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_116": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_117": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_118": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_119": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_120": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_121": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_122": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_123": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_124": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_125": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_126": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_127": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_128": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_129": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_130": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_131": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_132": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_133": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_134": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_135": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_136": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_137": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_138": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_139": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_140": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_141": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_142": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_143": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_144": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_145": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_146": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_147": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_148": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_149": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_150": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_151": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_152": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_153": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_154": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_155": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_156": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_157": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_158": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_159": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_160": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_161": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_162": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_163": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_164": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_165": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_166": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_167": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_168": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_169": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_170": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_171": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_172": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_173": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_174": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_175": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_176": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_177": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  },
+  "luteal_178": {
+    "howSheMayFeel": "Elle peut se sentir plus ouverte et énergique aujourd’hui.",
+    "whatYouCanDo": "Suivez son élan sans remplir la journée à sa place.",
+    "practicalMoves": [
+      "Proposez un plan simple et laissez-la choisir.",
+      "Laissez de la place au rythme qu’elle préfère.",
+      "Demandez avant d’ajouter autre chose à la journée."
+    ]
+  },
+  "luteal_179": {
+    "howSheMayFeel": "Elle peut avoir moins d’énergie pour les demandes en plus aujourd’hui.",
+    "whatYouCanDo": "Laissez un peu de marge pour que les plans puissent changer.",
+    "practicalMoves": [
+      "Gardez les plans de ce soir flexibles.",
+      "Retirez une petite tâche de sa liste.",
+      "Demandez ce qui rendrait la soirée plus simple."
+    ]
+  },
+  "luteal_180": {
+    "howSheMayFeel": "Elle peut avoir envie de plus de calme ou d’espace que d’habitude.",
+    "whatYouCanDo": "Laissez-la donner davantage le rythme aujourd’hui.",
+    "practicalMoves": [
+      "Choisissez un plan plus calme si elle semble fatiguée.",
+      "Demandez si elle préfère de la compagnie ou du calme.",
+      "Gardez les messages et les demandes simples."
+    ]
+  }
+}

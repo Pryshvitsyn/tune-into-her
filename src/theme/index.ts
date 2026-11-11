@@ -1,16 +1,16 @@
 export const colors = {
-  background: '#F7F5F0',
-  text: '#202421',
-  secondary: '#626965',
+  background: '#F6F9FD',
+  text: '#1B2431',
+  secondary: '#667487',
   card: '#FFFFFF',
-  primary: '#52675B',
-  sage: '#7D9185',
-  lavender: '#9B93AA',
-  sand: '#D4C3A4',
-  rose: '#B98684',
-  border: '#DDD9D0',
+  primary: '#344F70',
+  sage: '#6B8794',
+  lavender: '#A9B9D2',
+  sand: '#C9D8E8',
+  rose: '#9BAFC5',
+  border: '#DCE5F0',
   danger: '#9A4E49',
-  overlay: '#ECE9E2',
+  overlay: '#ECF2F9',
 } as const;
 
 export const spacing = { xs: 6, sm: 10, md: 16, lg: 24, xl: 32, xxl: 48 } as const;

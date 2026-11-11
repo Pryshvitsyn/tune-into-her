@@ -7,10 +7,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { AppProvider } from '../src/context/AppContext';
 import { colors } from '../src/theme';
+import { prepareSphereResources } from '../TuneIntoHerSphereV4';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({ shouldShowBanner: true, shouldShowList: true, shouldPlaySound: false, shouldSetBadge: false }),
 });
+
+void prepareSphereResources();
 
 export default function RootLayout() {
   return (

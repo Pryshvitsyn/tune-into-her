@@ -4,12 +4,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { colors, spacing } from '../theme';
 
-export function Screen({ children, footer, scroll = true }: PropsWithChildren<{ footer?: ReactNode; scroll?: boolean }>) {
+export function Screen({ children, footer, scroll = true, backgroundColor }: PropsWithChildren<{ footer?: ReactNode; scroll?: boolean; backgroundColor?: string }>) {
   const content = scroll
     ? <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">{children}</ScrollView>
     : <View style={styles.content}>{children}</View>;
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+    <SafeAreaView style={[styles.safe, backgroundColor ? { backgroundColor } : null]} edges={['top', 'bottom']}>
       <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         {content}
         {footer ? <View style={styles.footer}>{footer}</View> : null}

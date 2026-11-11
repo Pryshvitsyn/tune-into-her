@@ -1,4 +1,9 @@
-export const resources = {
+import { additionalTranslations } from './additionalTranslations';
+import { accessTranslations } from './accessTranslations';
+import { fr } from './fr';
+import { makeExpandedLocales, supportedLanguageNames } from './newLocales';
+
+const baseResources = {
   en: {
     translation: {
       brand: { dailyContext: 'A little context for today.' },
@@ -74,5 +79,27 @@ export const resources = {
       settings: { title: 'Налаштування', cycle: 'Цикл', cycleDetails: 'Дані циклу', reminder: 'Щоденне нагадування', language: 'Мова', subscription: 'Підписка', information: 'Інформація', privacy: 'Приватність', disclaimer: 'Застереження', about: 'Про застосунок', permission: 'Дозвіл', enabledAt: 'Увімкнено на {{time}}', disabled: 'Вимкнено' }, cycle: { title: 'Оновити цикл', lastPeriod: 'Початок останньої відомої менструації', saved: 'Дані циклу оновлено.', invalid: 'Перевірте тривалість циклу й менструації.', saveError: 'Не вдалося зберегти дані.' }, reminder: { title: 'Щоденне нагадування', description: 'Планується не більше одного локального сповіщення на день.', permissionGranted: 'Дозволено', permissionDenied: 'Заборонено', permissionUnknown: 'Не запитувалося', deniedHelp: 'Сповіщення вимкнено в системних налаштуваннях. Застосунок однаково працює.', saveError: 'Не вдалося оновити нагадування.' }, language: { title: 'Мова', en: 'English', it: 'Italiano', ru: 'Русский', uk: 'Українська', es: 'Español' },
       paywall: { title: 'Одна корисна підказка щодня.', body: 'Відкрийте повну щоденну підказку й контекст етапу.', trial: '{{duration}} безкоштовно', afterTrial: 'Після пробного періоду — {{price}}, поновлення {{period}}.', regular: '{{price}}, поновлення {{period}}.', monthly: 'щомісяця', duration: { day: '{{count}} дн.', week: '{{count}} тиж.', month: '{{count}} міс.', year: '{{count}} р.' }, automatic: 'Можна скасувати будь-коли. Підписка поновлюється автоматично, якщо її не скасувати.', startTrial: 'Почати безкоштовний період', continue: 'Продовжити', restore: 'Відновити покупки', loading: 'Завантаження пропозиції магазину…', unavailable: 'Не вдалося завантажити пропозицію. Ціну й пробний період не підставлено.', cancelled: 'Покупку скасовано.', purchaseError: 'Не вдалося завершити покупку.', restored: 'Покупки відновлено.', nothingToRestore: 'Активних покупок для відновлення немає.', mock: 'ТЕСТОВА ОПЛАТА ДЛЯ РОЗРОБКИ', terms: 'Умови', privacy: 'Приватність' }, subscription: { title: 'Підписка', activeTrial: 'Пробний період активний', activePaid: 'Підписка активна', activeEnding: 'Активна до {{date}}', inactive: 'Неактивна', expired: 'Завершилася', billingIssue: 'Проблема з оплатою', unknown: 'Перевірка статусу', restore: 'Відновити покупки', manage: 'Керувати підпискою', manageError: 'Не вдалося відкрити керування підпискою.' }, privacy: { title: 'Приватність', body: 'Дані циклу залишаються на цьому пристрої й не надсилаються в RevenueCat. Тут немає акаунта, реклами, аналітики, збору геолокації чи контактів і власного сервера. Apple або Google і RevenueCat обробляють дані транзакцій; застосунок не передає їм налаштування циклу.' }, disclaimer: { title: 'Застереження', body: 'Цей застосунок — інформаційний інструмент для стосунків. Він не є медичним пристроєм і не надає медичних порад, діагнозів або лікування. Час і відчуття циклу різняться між людьми й циклами. Оцінки базуються лише на введених даних.\n\nНе використовуйте застосунок для контрацепції, рішень щодо фертильності, планування вагітності, діагностики, лікування чи екстрених медичних рішень. Застосунок не може знати чи передбачати самопочуття партнера.' }, about: { title: 'Про застосунок', description: 'Спокійний інструмент для стосунків: один день, одна підказка, жодних здогадок під виглядом фактів.', version: 'Версія {{version}}', support: 'Контакт підтримки потрібно налаштувати до публікації.' }, accessibility: { decrease: 'Зменшити: {{label}}', increase: 'Збільшити: {{label}}', selectLanguage: 'Обрати {{language}}', phaseIndicator: 'Індикатор фази: {{phase}}' }
     }
-  }
+  },
+  fr
 } as const;
+
+for (const language of Object.keys(baseResources) as (keyof typeof baseResources)[]) {
+  Object.assign(baseResources[language].translation, additionalTranslations[language] ?? {}, accessTranslations[language] ?? {});
+}
+
+const expandedLocaleTranslations = makeExpandedLocales(baseResources.en.translation);
+
+export const resources = {
+  ...baseResources,
+  ms: { translation: expandedLocaleTranslations.ms },
+  'ms-baba': { translation: expandedLocaleTranslations['ms-baba'] },
+  hi: { translation: expandedLocaleTranslations.hi },
+};
+
+const headerSettingsLabels: Record<string, string> = { en: 'Settings', it: 'Impostazioni', ru: 'Настройки', uk: 'Налаштування', es: 'Ajustes', fr: 'Réglages', ms: 'Tetapan', 'ms-baba': 'Setting', hi: 'सेटिंग्स' };
+
+for (const [language, resource] of Object.entries(resources)) {
+  const translation = resource.translation as Record<string, unknown>;
+  Object.assign(translation.languageNames as Record<string, string>, supportedLanguageNames);
+  Object.assign(translation.today as Record<string, string>, { settings: headerSettingsLabels[language] });
+}
