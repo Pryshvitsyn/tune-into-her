@@ -7,7 +7,7 @@ import { Button } from '../src/components/Button';
 import { Screen } from '../src/components/Screen';
 import { acceleratedDemoEnabled } from '../src/config/acceleratedDemo';
 import { useApp } from '../src/context/AppContext';
-import { buildDemoDays, getDemoProgress, type DemoDay } from '../src/domain/demo/acceleratedDemo';
+import { buildDemoDays, DEMO_DAY_COUNT, getDemoProgress, nextDemoTestDay, type DemoDay } from '../src/domain/demo/acceleratedDemo';
 import { demoNotificationTarget } from '../src/domain/navigation/demoNotificationTarget';
 import { getDemoCopy } from '../src/i18n/acceleratedDemo';
 import { useInterface } from '../src/i18n/useInterface';
@@ -31,6 +31,7 @@ export default function DemoScreen() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<ErrorKind>(null);
   const [notice, setNotice] = useState<'stopped' | null>(null);
+  const [manualTest, setManualTest] = useState<{ runId: string; day: number } | null>(null);
   const completedRun = useRef<string | null>(null);
   const mounted = useRef(true);
   const operation = useRef(false);
@@ -75,6 +76,7 @@ export default function DemoScreen() {
   }, [preferences.language]);
 
   const progress = session ? getDemoProgress(session.startedAt, now) : null;
+  const manualTestControlsEnabled = __DEV__ && acceleratedDemoEnabled;
 
   useEffect(() => {
     if (!session || !progress?.completed || completedRun.current === session.runId) return;
@@ -134,11 +136,15 @@ export default function DemoScreen() {
   if (!ready) return <Screen><ActivityIndicator color={colors.primary} /></Screen>;
 
   const liveDay = progress?.day ?? 1;
+  const manualDay = manualTestControlsEnabled && session && manualTest?.runId === session.runId
+    ? manualTest.day
+    : null;
+  const previewDay = manualDay ? Math.max(liveDay, manualDay) : liveDay;
   const pending = demoNotificationTarget({ kind: 'accelerated-demo', runId: params.runId, demoDay: params.day }, session ?? null, now);
   const receivedAt = params.receivedAt && /^\d+$/.test(params.receivedAt) ? Number(params.receivedAt) : NaN;
   const receivedOnDay = session && Number.isSafeInteger(receivedAt) && receivedAt >= session.startedAt && receivedAt <= now
     ? getDemoProgress(session.startedAt, receivedAt).day : null;
-  const shownDay = pending && receivedOnDay === liveDay ? Number(pending.params.day) : liveDay;
+  const shownDay = pending && receivedOnDay === liveDay ? Number(pending.params.day) : previewDay;
   const days = content?.language === preferences.language ? content.days : null;
   const day = days?.[shownDay - 1];
   const remainingSeconds = progress?.nextChangeAt ? Math.max(0, Math.ceil((progress.nextChangeAt - now) / 1000)) : 0;
@@ -162,6 +168,17 @@ export default function DemoScreen() {
       <View style={styles.controls}>
         {session && !progress?.completed ? <Button label={copy.stop} disabled={busy} variant="secondary" onPress={() => { void stop(); }} />
           : <Button label={busy ? copy.preparing : session ? copy.restart : copy.start} disabled={busy || !days || session === undefined || error === 'load'} onPress={() => { void start(); }} />}
+        {manualTestControlsEnabled && session && !progress?.completed ? <>
+          <Text style={styles.testOnly}>{copy.manualTestOnly}</Text>
+          <Button
+            label={copy.nextTestDay}
+            disabled={busy || !days || previewDay >= DEMO_DAY_COUNT}
+            variant="secondary"
+            onPress={() => {
+              setManualTest({ runId: session.runId, day: nextDemoTestDay(previewDay) });
+            }}
+          />
+        </> : null}
         {error === 'cleanup' ? <Button label={copy.retry} disabled={busy} variant="secondary" onPress={() => { void stop(); }} /> : null}
         <Button label={copy.close} disabled={busy} variant="ghost" onPress={close} />
       </View>
@@ -176,6 +193,7 @@ const makeStyles = (colors: Palette) => StyleSheet.create({
   day: { color: colors.text, fontSize: 25, lineHeight: 34, fontWeight: '600', textAlign: 'center' },
   phase: { color: colors.text, fontSize: 18, textAlign: 'center' },
   body: { color: colors.secondary, fontSize: 15, lineHeight: 22, textAlign: 'center' },
+  testOnly: { color: colors.secondary, fontSize: 13, lineHeight: 18, textAlign: 'center' },
   controls: { gap: 8, marginVertical: 12 },
   status: { gap: 10, marginVertical: 12 },
   error: { color: colors.danger, fontSize: 15, lineHeight: 22, textAlign: 'center' },

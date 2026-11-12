@@ -1,8 +1,9 @@
 # Founder comment audit — Russian phrases
 
-Updated: 2026-11-11
+Updated: 2026-11-12
 Scope: read-only comparison of the live `ФРАЗЫ RU` sheet's column G with the
-current local editorial source and generated catalog.
+current local editorial source and generated catalog. On 2026-11-12 the live range
+`A1:G95` was re-read; all 30 listed `DO_*` comments still match this ledger.
 
 ## Result
 

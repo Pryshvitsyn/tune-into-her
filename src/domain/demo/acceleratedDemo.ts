@@ -28,6 +28,18 @@ export interface DemoDay {
 }
 
 /**
+ * Advances only an in-memory QA view of the synthetic demonstration.  It never
+ * changes the wall-clock demo session, notification schedule, personal cycle,
+ * or persisted guidance history.
+ */
+export function nextDemoTestDay(day: number): number {
+  if (!Number.isInteger(day) || day < 1 || day > DEMO_DAY_COUNT) {
+    throw new Error('INVALID_DEMO_DAY');
+  }
+  return Math.min(DEMO_DAY_COUNT, day + 1);
+}
+
+/**
  * Uses elapsed wall time so returning from the background catches up immediately.
  * Day 1 is visible at start, day 30 at 145 minutes, completion at 150 minutes.
  * A backwards clock is clamped to day 1; a completed demo never wraps to day 1.

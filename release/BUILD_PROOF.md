@@ -1,6 +1,6 @@
 # Build proof — release candidate
 
-Updated: 2026-11-11
+Updated: 2026-11-13
 Candidate branch: `codex/tune-into-her-release-candidate-20261111`
 Selected base: `25c8505` (open PR #6)
 
@@ -45,6 +45,19 @@ was synchronized with `pod update … --no-repo-update`: it completed with 120
 dependencies and 122 installed pods, including current Expo modules, `EXUpdates`, and
 `RNSVG`. Both Debug and normal Release Simulator builds then passed. This is build
 evidence only; it is not signing or store evidence.
+
+## 2026-11-13 checkpoint
+
+| Check | Current result |
+| --- | --- |
+| TypeScript | PASS — `npm run typecheck` |
+| Lint | PASS — 0 errors, 13 existing import/generated warnings |
+| Unit/integration tests | PASS — 17 files, 91 tests |
+| Content checks | PASS — 610 bundles, 11 locales, 90-day reserve; native review remains PENDING |
+| Deep Intro V2 package checks | PASS — 32 checks, including actual V4 GLSL/loop and oval-mask safeguards |
+| Android JavaScript export | PASS — Hermes Android bundle with 29 assets exported; this is not a Gradle/emulator/device result |
+| SVG dependency diagnosis | `react-native-svg` only changed from 15.15.4 to exact 15.16.0, then `pod install --no-repo-update` succeeded. A single Debug rebuild stalled after compiling RNSVG sources and produced no fresh app; no post-update Simulator claim is made. |
+| Expo Doctor | 19/21 checks passed. It flags the pre-existing managed-config/native-folder synchronization condition and Expo's expected 15.15.4 versus targeted 15.16.0 RNSVG version, plus existing Expo patch-version drift. No broad dependency upgrade was made. |
 
 ## Runtime observation boundary
 

@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-12
+Updated: 2026-11-13
 
 ## GOAL
 
@@ -55,6 +55,16 @@ fertility, or mood-prediction product.
   `Unimplemented` placeholders in the final header/footer. The V2 WebView/PNG logo
   path and V4 sphere render, but this blocks calling the surrounding intro chrome
   visually accepted until the native SVG integration is diagnosed.
+- The isolated accelerated-demo selector now has a labelled `__DEV__`-only
+  next-test-day control. It changes only an in-memory synthetic view and has no
+  cycle, history, notification, entitlement, or wall-clock write path. A real
+  selector run covers 7, 30, and 90 synthetic days across all 11 locales; see
+  `release/DAILY_QA_20261112.md`.
+- The SVG diagnosis found React Native 0.86.3 paired with `react-native-svg` 15.15.4,
+  below the library's documented 15.16.0 minimum for that RN range. Only RNSVG was
+  updated to exact 15.16.0 and Pods synchronized. Source checks and Android JS export
+  pass, but the sole post-update iOS Debug build stalled after RNSVG compilation with
+  no fresh app artifact, so the Simulator runtime repair is deliberately unverified.
 
 ## PRESERVED
 
@@ -70,7 +80,8 @@ fertility, or mood-prediction product.
 
 | Area | Current boundary |
 | --- | --- |
-| Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass. Debug-only unlocked Today/V4/light-dark/feedback/scroll passed on iPhone 17. Deep Intro V2's fresh Debug build and 16+ second V4 motion check pass, but `AnimatedToday` SVG marks/icons display `Unimplemented` placeholders, so its chrome visual QA is blocked. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
+| Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass predate the RNSVG update. The former Debug preview showed `Unimplemented` SVG placeholders. The RNSVG 15.16.0 update lacks post-update runtime proof because the one target build stalled without a fresh `.app`. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
+| Android | Android JS export passes, but no `android/` native project, Gradle build, emulator/device, SVG/WebView/splash/navigation runtime proof, or standalone APK/AAB exists. |
 | Apple / Google | No verified signing, physical device, store account, listing, or store approval. This environment has 0 valid code-signing identities, no provisioning profiles, and no connected physical iPhone. |
 | Billing | Source is currently monthly (`monthly_access`, P1M). The owner must choose canonical term and trial duration before store configuration. |
 | Legal/support | Real seller spelling, support contact, terms/privacy URLs/text, and privacy declarations remain open. |
@@ -81,15 +92,16 @@ fertility, or mood-prediction product.
 
 ## NEXT BEST MOVE
 
-Rerun all source checks, safely inspect staged files, then save the integration branch
-without force-pushing or touching `main`. Resolve the explicit store, billing, legal,
-identifier, editorial, unknown-cycle-length, and physical-device gates in
-`release/STORE_CHECKLIST.md`. Do not deploy, submit, or claim store readiness merely
-from source or Simulator checks.
+Run the next iOS native rebuild with a captured log to resolve the post-RNSVG-build
+stall, then visually verify the actual marks/icons and the dev-only test-day control.
+Resolve the explicit store, billing, legal, identifier, editorial, unknown-cycle-length,
+Android, and physical-device gates in `release/STORE_CHECKLIST.md`. Do not deploy,
+submit, or claim store readiness merely from source or Simulator checks.
 
 ## REFERENCES
 
 [Master audit](docs/MASTER_AUDIT.md) · [Version map](docs/VERSION_MAP.md) ·
 [Content audit](docs/CONTENT_AUDIT.md) · [Cycle safety](docs/CYCLE_SAFETY.md) ·
 [UX final](docs/UX_FINAL.md) · [Build proof](release/BUILD_PROOF.md) ·
+[Daily QA](release/DAILY_QA_20261112.md) · [Roadmap](release/ROADMAP.md) ·
 [Store checklist](release/STORE_CHECKLIST.md)

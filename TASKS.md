@@ -1,6 +1,6 @@
 # TASKS
 
-Updated: 2026-11-12
+Updated: 2026-11-13
 
 ## NOW — release-candidate proof
 
@@ -21,10 +21,17 @@ Updated: 2026-11-12
   vector brand source, and oval-mask fix remain unchanged. Typecheck, lint (0
   errors), 89 app tests, content check, 32 V2 checks, browser-preview export, and a
   fresh Debug iPhone 17 build passed. V4 motion was observed for 16+ seconds.
-- [ ] Diagnose the native `react-native-svg` `Unimplemented` placeholders observed
-  in the existing `AnimatedToday` header/footer marks and icons before accepting the
-  surrounding Deep Intro chrome visually. Do not replace the approved V4 sphere,
-  texture, official emblem source, or Linux Libertine O outlines as a workaround.
+- [x] Preserve preintegration sources in a separate local archive branch and save the
+  reviewed Deep Intro V2 checkpoint without changing either requested archive branch.
+- [x] Exercise the existing daily selector for synthetic 7/30/90-day evidence across
+  eleven locales and add the explicitly labelled dev-only in-memory next-test-day
+  control. See `release/DAILY_QA_20261112.md`.
+- [ ] Complete post-update iOS visual verification for the native `react-native-svg`
+  `Unimplemented` placeholders. The narrow 15.16.0 update and Pod sync are complete,
+  but the single fresh Debug build stalled after RNSVG compilation; do not claim the
+  official marks/icons repaired or replace them with substitute assets.
+- [ ] Create a real Android native build/emulator or device evidence. Android JS
+  export passes only; it does not prove SVG, WebView, splash, navigation, or billing.
 - [ ] Record reproducible compact-iPhone and large-text visual evidence. Do not
   substitute the Debug Simulator observation for physical-device or store proof.
 - [ ] Review the final diff for generated files, credentials, signing material, and

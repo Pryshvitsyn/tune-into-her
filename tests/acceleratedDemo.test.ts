@@ -8,11 +8,22 @@ import {
   DEMO_DAY_COUNT,
   DEMO_DAY_DURATION_MS,
   getDemoProgress,
+  nextDemoTestDay,
 } from '../src/domain/demo/acceleratedDemo';
+import { getDemoCopy } from '../src/i18n/acceleratedDemo';
 
 const startedAt = Date.UTC(2026, 10, 3, 3);
 
 describe('accelerated demonstration clock', () => {
+  it('advances the isolated QA view one synthetic day without wrapping', () => {
+    expect(nextDemoTestDay(1)).toBe(2);
+    expect(nextDemoTestDay(29)).toBe(30);
+    expect(nextDemoTestDay(30)).toBe(30);
+    for (const invalid of [0, 31, 1.5, NaN, Infinity]) {
+      expect(() => nextDemoTestDay(invalid)).toThrow('INVALID_DEMO_DAY');
+    }
+  });
+
   it('shows day 1 immediately and changes only at each five-minute boundary', () => {
     expect(DEMO_DAY_COUNT).toBe(30);
     expect(DEMO_DAY_DURATION_MS).toBe(300000);
@@ -61,6 +72,14 @@ describe('accelerated demonstration clock', () => {
 });
 
 describe('accelerated demonstration content', () => {
+  it('has explicit isolated-QA labels for the manual test-day control in every locale', () => {
+    for (const language of SUPPORTED_LANGUAGES) {
+      const copy = getDemoCopy(language);
+      expect(copy.nextTestDay.trim(), `${language}:nextTestDay`).not.toBe('');
+      expect(copy.manualTestOnly.trim(), `${language}:manualTestOnly`).not.toBe('');
+    }
+  });
+
   it('provides 30 distinct three-card days and exactly one gratitude reminder in all eleven locales', async () => {
     const catalog = new Map(getCatalog().map(item => [item.id, item]));
     const plans = await Promise.all(SUPPORTED_LANGUAGES.map(language => buildDemoDays(language)));
