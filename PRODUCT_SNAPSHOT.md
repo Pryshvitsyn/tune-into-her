@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-11
+Updated: 2026-11-12
 
 ## GOAL
 
@@ -39,6 +39,22 @@ fertility, or mood-prediction product.
   the three content blocks, gratitude, feedback selection, and scrolling all worked.
   This is Simulator evidence, not store or physical-device proof. Compact and
   large-text completion evidence remains open.
+- Deep Intro V2 was manually merged only after its strict installer stopped on a
+  generated-wrapper comment difference. The actual vertex and fragment GLSL literals
+  in the root V4 renderer and `src/intro/v4Shaders.generated.ts` were compared
+  byte-for-byte; the root V4 renderer, clean texture, V4 wrapper, and vector brand
+  source remain unchanged. The six intended V2 files match the supplied payload.
+- The V2 intro has six temporary depth planes and a nine-second entry sequence; its
+  V4 material phase remains absolute-time based on an eight-second loop. Package
+  math checks confirm the inserted travel segment keeps the original local zoom
+  speed rather than stretching it. Typecheck, lint (0 errors; 13 existing style
+  warnings), 89 app tests, 610-bundle content check, and 32 V2 checks pass. A fresh
+  Debug iPhone 17 build succeeded and its V4 surface was observed for 16+ seconds.
+- That Debug visual run also exposed a separate existing native issue: the
+  `react-native-svg` marks/icons used by `AnimatedToday` render pink
+  `Unimplemented` placeholders in the final header/footer. The V2 WebView/PNG logo
+  path and V4 sphere render, but this blocks calling the surrounding intro chrome
+  visually accepted until the native SVG integration is diagnosed.
 
 ## PRESERVED
 
@@ -54,7 +70,7 @@ fertility, or mood-prediction product.
 
 | Area | Current boundary |
 | --- | --- |
-| Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass. Debug-only unlocked Today/V4/light-dark/feedback/scroll passed on iPhone 17. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
+| Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass. Debug-only unlocked Today/V4/light-dark/feedback/scroll passed on iPhone 17. Deep Intro V2's fresh Debug build and 16+ second V4 motion check pass, but `AnimatedToday` SVG marks/icons display `Unimplemented` placeholders, so its chrome visual QA is blocked. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
 | Apple / Google | No verified signing, physical device, store account, listing, or store approval. This environment has 0 valid code-signing identities, no provisioning profiles, and no connected physical iPhone. |
 | Billing | Source is currently monthly (`monthly_access`, P1M). The owner must choose canonical term and trial duration before store configuration. |
 | Legal/support | Real seller spelling, support contact, terms/privacy URLs/text, and privacy declarations remain open. |

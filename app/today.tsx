@@ -1,3 +1,7 @@
+import { IntroLoading } from "../src/intro/IntroLoading";
+import { AnimatedToday } from "../src/intro/AnimatedToday";
+import { introDateLabel } from "../src/intro/formatDate";
+import { dailyReminders as introDailyReminders } from "../src/domain/content/dailyGuidance";
 import { router } from "expo-router";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -28,7 +32,7 @@ const selectionStore = new AsyncSelectionStore();
 export default function TodayScreen() {
   const { t } = useTranslation();
   const c = useInterface();
-  const { colors } = useTheme();
+  const { colors, dark } = useTheme();
   const { width } = useWindowDimensions();
   const { cycleSettings, preferences, entitlement } = useApp();
   const [clockDate, setClockDate] = useState(() => guidanceDate(new Date()));
@@ -98,6 +102,42 @@ export default function TodayScreen() {
     ? getLocalizedCue(preferences.language, current.id)
     : null;
   const sphereSize = Math.max(216, Math.min(280, width - 56));
+
+  // INTRO_V1: presentation only. Preserve the existing entitlement and cycle gates.
+  if (entitlement.isActive && !failed && !cue) return <IntroLoading dark={dark}/>;
+  if (entitlement.isActive && cue && current?.id && !failed) {
+    const notes = introDailyReminders(today, preferences.language);
+    const russian = preferences.language === "ru";
+    return <AnimatedToday
+      dark={dark}
+      dateLine={[
+        introDateLabel(today, preferences.language),
+        estimate.requiresPeriodConfirmation ? "" : t("today.day", { day: estimate.estimatedCycleDay }),
+      ].filter(Boolean).join(" · ")}
+      phaseTitle={estimate.requiresPeriodConfirmation
+        ? c.wellbeing
+        : cycleSettings && cycleSettings.typicalCycleLength - estimate.estimatedCycleDay < 5
+          ? c.before : c[estimate.estimatedPhase]}
+      phaseDescription={t("today.estimated")}
+      mind={{label:c.mind,text:cue.context,note:notes[0]?.text ?? ""}}
+      support={{label:c.support,text:cue.support,note:notes[1]?.text ?? ""}}
+      action={{label:c.do,text:cue.cue,note:notes[2]?.text ?? ""}}
+      disclosure={useMockBilling ? t("paywall.mock") : undefined}
+      labels={{
+        info:russian ? "Больше о фазе" : t("today.learnMore"),
+        update:russian ? "Изменить фазу" : t("today.update"),
+        settings:t("today.settings",{defaultValue:"Settings"}),
+        skip:russian ? "Пропустить заставку" : "Skip intro",
+        close:t("common.back",{defaultValue:russian ? "Назад" : "Back"}),
+      }}
+      onInfo={() => estimate.requiresPeriodConfirmation
+        ? router.push("/cycle")
+        : router.push({pathname:"/learn/[phase]",params:{phase:estimate.estimatedPhase}})}
+      onUpdate={() => router.push("/cycle")}
+      onSettings={() => router.push("/settings")}
+      onAbout={() => router.push("/thea")}
+    />;
+  }
   return (
     <Screen>
       {useMockBilling ? (

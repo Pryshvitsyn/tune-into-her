@@ -1,6 +1,6 @@
 # TASKS
 
-Updated: 2026-11-11
+Updated: 2026-11-12
 
 ## NOW — release-candidate proof
 
@@ -15,6 +15,16 @@ Updated: 2026-11-11
   and scrolling also passed. The mock guard requires `__DEV__` plus
   `EXPO_PUBLIC_USE_MOCK_BILLING=true`, displays a visible QA label, and cannot enable
   a production bundle.
+- [x] Safely integrate Deep Intro V2 after comparing actual root-V4 and generated
+  GLSL literals rather than accepting the installer's stale generated-wrapper hash.
+  The six intended V2 files match the supplied payload; the renderer, clean texture,
+  vector brand source, and oval-mask fix remain unchanged. Typecheck, lint (0
+  errors), 89 app tests, content check, 32 V2 checks, browser-preview export, and a
+  fresh Debug iPhone 17 build passed. V4 motion was observed for 16+ seconds.
+- [ ] Diagnose the native `react-native-svg` `Unimplemented` placeholders observed
+  in the existing `AnimatedToday` header/footer marks and icons before accepting the
+  surrounding Deep Intro chrome visually. Do not replace the approved V4 sphere,
+  texture, official emblem source, or Linux Libertine O outlines as a workaround.
 - [ ] Record reproducible compact-iPhone and large-text visual evidence. Do not
   substitute the Debug Simulator observation for physical-device or store proof.
 - [ ] Review the final diff for generated files, credentials, signing material, and
