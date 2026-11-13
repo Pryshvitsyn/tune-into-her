@@ -61,20 +61,20 @@ fertility, or mood-prediction product.
   `release/DAILY_QA_20261112.md`.
 - The SVG diagnosis found React Native 0.86.3 paired with `react-native-svg` 15.15.4,
   below the library's documented 15.16.0 minimum for that RN range. Only RNSVG was
-  updated to exact 15.16.0 and Pods synchronized. Source checks and Android JS export
-  pass, but the sole post-update iOS Debug build stalled after RNSVG compilation with
-  no fresh app artifact, so the Simulator runtime repair is deliberately unverified.
+  updated to exact 15.16.0 and Pods synchronized. The earlier Debug rebuild stalled.
+  The monetization arm64 Release build now passes; actual native header SVG marks render
+  on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 ## MONETIZATION — 2026-11-13
 
-- Separate server-controlled14×24h guest app access, explicit start after completed onboarding; no store subscription or automatic charge. Trial identity/credential survives local content reset.
+- Separate server-controlled 14×24h guest app access, explicit start after completed onboarding; no store subscription or automatic charge. Trial identity/credential survives local content reset.
 - Monthly/annual plans, exact store periods/base plans, actual localized total prices, immediate-charge/renewal disclosure, pending/cancel/restore and source-aware management.
-- Signed RevenueCat paid access and separate app-trial access, bounded24h caches, server anchors, rollback/monotonic/deadline checks, foreground/listener refresh and serialized purchase actions. Existing anonymous RC identity retained.
+- Signed RevenueCat paid access and separate app-trial access, bounded 24h caches, server anchors, rollback/monotonic/deadline checks, foreground/listener refresh and serialized purchase actions. Existing anonymous RC identity retained.
 - Isolated Worker/D1 backend with permanent local SQLite runner and optional authenticated/HMAC durable RC event journal. Cycle/relationship data remains local.
 - Official web redemption routing is prepared; the actual dashboard scheme, hosted RC Billing checkout, Stripe sandbox connection and portal remain external configuration. No external payment CTA is enabled in the native global release.
-- Billing/privacy strings cover all11 existing locale IDs structurally; native-language/community and device layout review remain pending.
-- Final monetization verification: typecheck,161 tests/24 files, lint0errors/13existingwarnings, content checks and Android JS export pass. The normal arm64 iOS Release Simulator build/install passes; the real unconfigured paywall was observed in Light/Dark with no mock/prices invented. Real store/web transactions and Android AAB remain BLOCKED.
-- Exact proof and remaining platform boundaries are in [BILLING_QA](BILLING_QA.md); one canonical owner action table is in [STORE_SETUP](STORE_SETUP.md). Expo Doctor currently reports19/21 (existing native-config sync and package-version warnings); no stack-wide upgrade was performed.
+- Billing/privacy strings cover all 11 existing locale IDs structurally; native-language/community and device layout review remain pending.
+- Final monetization verification: typecheck, 161 tests/24 files, lint 0 errors / 13 existing warnings, content checks and Android JS export pass. The normal arm64 iOS Release Simulator build/install passes; the real unconfigured paywall was observed in Light/Dark with no mock/prices invented. Real store/web transactions and Android AAB remain BLOCKED.
+- Exact proof and remaining platform boundaries are in [BILLING_QA](BILLING_QA.md); one canonical owner action table is in [STORE_SETUP](STORE_SETUP.md). Expo Doctor currently reports 19/21 (existing native-config sync and package-version warnings); no stack-wide upgrade was performed.
 
 ## PRESERVED
 
@@ -90,7 +90,7 @@ fertility, or mood-prediction product.
 
 | Area | Current boundary |
 | --- | --- |
-| Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass predate the RNSVG update. The former Debug preview showed `Unimplemented` SVG placeholders. The RNSVG 15.16.0 update lacks post-update runtime proof because the one target build stalled without a fresh `.app`. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
+| Native build and visual QA | Current arm64 Release Simulator build/install and unconfigured paywall in Light/Dark pass; its header SVG marks render. Earlier unlocked Today proof predates RNSVG update; full current intro/Today, compact, large-text, all-locale, physical-device and store QA remain open. |
 | Android | Android JS export passes, but no `android/` native project, Gradle build, emulator/device, SVG/WebView/splash/navigation runtime proof, or standalone APK/AAB exists. |
 | Apple / Google | No verified signing, physical device, store account, listing, or store approval. Current audit observes one Apple Development identity; distribution signing/provisioning and physical/store proof remain unverified. |
 | Billing | Owner approved14-day app access + voluntary €3.99 monthly / €24.99 annual base targets on2026-11-13. Native service/UI, trial Worker/D1 and web redemption source implemented; external catalogs/keys/deployment and real sandbox transactions remain BLOCKED. See BILLING_QA.md and STORE_SETUP.md. |

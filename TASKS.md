@@ -26,10 +26,10 @@ Updated: 2026-11-13
 - [x] Exercise the existing daily selector for synthetic 7/30/90-day evidence across
   eleven locales and add the explicitly labelled dev-only in-memory next-test-day
   control. See `release/DAILY_QA_20261112.md`.
-- [ ] Complete post-update iOS visual verification for the native `react-native-svg`
-  `Unimplemented` placeholders. The narrow 15.16.0 update and Pod sync are complete,
-  but the single fresh Debug build stalled after RNSVG compilation; do not claim the
-  official marks/icons repaired or replace them with substitute assets.
+- [ ] Finish post-update unlocked Today/intro/icon regression. The narrow RNSVG15.16.0
+  update and Pod sync are complete, and the current arm64 Release build/install now
+  passes with actual paywall header SVG marks visible in Light/Dark. That limited proof
+  does not complete the whole native journey; preserve original assets.
 - [ ] Create a real Android native build/emulator or device evidence. Android JS
   export passes only; it does not prove SVG, WebView, splash, navigation, or billing.
 - [ ] Record reproducible compact-iPhone and large-text visual evidence. Do not
