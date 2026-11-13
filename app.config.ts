@@ -2,10 +2,14 @@ import type { ExpoConfig } from 'expo/config';
 
 import brand from './src/config/brand.json';
 
+// Copy the actual unique scheme from RevenueCat Web Billing; never invent it.
+const redemptionScheme = process.env.EXPO_PUBLIC_REVENUECAT_REDEMPTION_SCHEME;
+if (redemptionScheme && !/^rc-[a-z0-9-]+$/i.test(redemptionScheme)) throw new Error('INVALID_REDEMPTION_SCHEME');
+
 const config: ExpoConfig = {
   name: brand.displayName,
   slug: 'tune-into-her',
-  scheme: 'tuneintoher',
+  scheme: redemptionScheme ? ['tuneintoher', redemptionScheme] : 'tuneintoher',
   version: '1.0.0',
   runtimeVersion: { policy: 'fingerprint' },
   updates: {

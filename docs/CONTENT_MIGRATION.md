@@ -45,7 +45,7 @@ selection records.
 | Legacy active `PhaseSphere` path | Removed from the release-candidate render path; recoverable in the local V4 archive. |
 | Current PR #6 editorial source and generated catalog | Retained as the content baseline. |
 | Founder sheet comments | Recorded as editorial drafts only; not copied into the catalog or translations. |
-| Billing / trial term | Not migrated or rewritten. Current source remains monthly; owner decision is required before store configuration. |
+| Billing / trial term | Not part of the content migration. The later 2026-11-13 owner decision supersedes undecided monthly-only terms: standalone 14-day app access, then monthly/annual plans. See [MONETIZATION](../MONETIZATION.md). |
 
 ## Safe future editorial update sequence
 

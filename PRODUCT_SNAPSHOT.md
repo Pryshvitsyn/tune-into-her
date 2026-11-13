@@ -11,8 +11,7 @@ fertility, or mood-prediction product.
 
 ## STATE
 
-- Branch: `codex/tune-into-her-release-candidate-20261111`, created from open PR #6
-  head `25c8505`; `main` remains untouched.
+- Current work branch: `codex/monetization-20261113`, based on clean local candidate `eb5b0f0`; original release-candidate branch and `main` remain untouched. Original consolidation was based on PR #6 `25c8505`.
 - Recovery points: `archive/github-release-baseline-20261111` → `25c8505`; local V4
   preservation branch → `1147292`.
 - V4 renderer is directly used by Today and onboarding. Its renderer, clean texture,
@@ -66,6 +65,17 @@ fertility, or mood-prediction product.
   pass, but the sole post-update iOS Debug build stalled after RNSVG compilation with
   no fresh app artifact, so the Simulator runtime repair is deliberately unverified.
 
+## MONETIZATION — 2026-11-13
+
+- Separate server-controlled14×24h guest app access, explicit start after completed onboarding; no store subscription or automatic charge. Trial identity/credential survives local content reset.
+- Monthly/annual plans, exact store periods/base plans, actual localized total prices, immediate-charge/renewal disclosure, pending/cancel/restore and source-aware management.
+- Signed RevenueCat paid access and separate app-trial access, bounded24h caches, server anchors, rollback/monotonic/deadline checks, foreground/listener refresh and serialized purchase actions. Existing anonymous RC identity retained.
+- Isolated Worker/D1 backend with permanent local SQLite runner and optional authenticated/HMAC durable RC event journal. Cycle/relationship data remains local.
+- Official web redemption routing is prepared; the actual dashboard scheme, hosted RC Billing checkout, Stripe sandbox connection and portal remain external configuration. No external payment CTA is enabled in the native global release.
+- Billing/privacy strings cover all11 existing locale IDs structurally; native-language/community and device layout review remain pending.
+- Final monetization verification: typecheck,161 tests/24 files, lint0errors/13existingwarnings, content checks and Android JS export pass. The normal arm64 iOS Release Simulator build/install passes; the real unconfigured paywall was observed in Light/Dark with no mock/prices invented. Real store/web transactions and Android AAB remain BLOCKED.
+- Exact proof and remaining platform boundaries are in [BILLING_QA](BILLING_QA.md); one canonical owner action table is in [STORE_SETUP](STORE_SETUP.md). Expo Doctor currently reports19/21 (existing native-config sync and package-version warnings); no stack-wide upgrade was performed.
+
 ## PRESERVED
 
 - The approved V4 visual artifacts:
@@ -82,8 +92,8 @@ fertility, or mood-prediction product.
 | --- | --- |
 | Native build and visual QA | Debug + normal Release Simulator builds and onboarding launch pass predate the RNSVG update. The former Debug preview showed `Unimplemented` SVG placeholders. The RNSVG 15.16.0 update lacks post-update runtime proof because the one target build stalled without a fresh `.app`. Compact, large-text, all-locale, physical-device, and store QA remain open; no Simulator run is store evidence. |
 | Android | Android JS export passes, but no `android/` native project, Gradle build, emulator/device, SVG/WebView/splash/navigation runtime proof, or standalone APK/AAB exists. |
-| Apple / Google | No verified signing, physical device, store account, listing, or store approval. This environment has 0 valid code-signing identities, no provisioning profiles, and no connected physical iPhone. |
-| Billing | Source is currently monthly (`monthly_access`, P1M). The owner must choose canonical term and trial duration before store configuration. |
+| Apple / Google | No verified signing, physical device, store account, listing, or store approval. Current audit observes one Apple Development identity; distribution signing/provisioning and physical/store proof remain unverified. |
+| Billing | Owner approved14-day app access + voluntary €3.99 monthly / €24.99 annual base targets on2026-11-13. Native service/UI, trial Worker/D1 and web redemption source implemented; external catalogs/keys/deployment and real sandbox transactions remain BLOCKED. See BILLING_QA.md and STORE_SETUP.md. |
 | Legal/support | Real seller spelling, support contact, terms/privacy URLs/text, and privacy declarations remain open. |
 | Product identifiers | iOS is `com.eliogenesis.tuneintoher`; Android is `com.pryshvitsyn.tuneintoher`; explicit owner decision required. |
 | Content | All 30 current Founder column-G comments are mapped as unapproved editorial drafts; no translation update is authorized or claimed native-reviewed. |
@@ -92,11 +102,7 @@ fertility, or mood-prediction product.
 
 ## NEXT BEST MOVE
 
-Run the next iOS native rebuild with a captured log to resolve the post-RNSVG-build
-stall, then visually verify the actual marks/icons and the dev-only test-day control.
-Resolve the explicit store, billing, legal, identifier, editorial, unknown-cycle-length,
-Android, and physical-device gates in `release/STORE_CHECKLIST.md`. Do not deploy,
-submit, or claim store readiness merely from source or Simulator checks.
+Complete the canonical [owner billing checklist](STORE_SETUP.md): first provision the isolated sandbox trial endpoint and verify native products/RevenueCat public keys, then install the billing-test builds for real Apple/Google sandbox and RC web redemption/portal QA. Android AAB is locally blocked by missing JDK/SDK. Preserve the remaining visual/content/legal/device gates; source tests and Simulator builds are not store readiness.
 
 ## REFERENCES
 

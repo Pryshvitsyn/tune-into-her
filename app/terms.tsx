@@ -20,7 +20,9 @@ export default function TermsScreen() {
   return (
     <Screen>
       <Header title={copy.termsTitle} />
-      <Text style={styles.body}>{copy.termsBody}</Text>
+      <Text style={styles.body}>{t("billing.trialPolicy")}</Text>
+      <Text style={styles.body}>{t("billing.chargeNow")}</Text>
+      <Text style={styles.body}>{t("billing.renewal", { source: "Apple / Google Play / RevenueCat" })}</Text>
       <Text style={styles.body}>{t("disclaimer.body")}</Text>
       {brand.termsUrl ? (
         <Button

@@ -13,7 +13,7 @@ describe('purchase service states', () => {
 
   it('models user cancellation without granting access', async () => {
     const service = new MockPurchaseService(undefined, true);
-    expect(await service.purchase(await service.getOffer())).toBe('cancelled');
+    expect(await service.purchase((await service.getOffer())[0]!)).toBe('cancelled');
     expect((await service.getEntitlement()).isActive).toBe(false);
   });
 

@@ -18,7 +18,8 @@ export default function PrivacyScreen() {
   return (
     <Screen>
       <Header title={t("privacy.title")} />
-      <Text style={styles.body}>{t("privacy.body")}</Text>
+      <Text style={styles.body}>{t("billing.privacyBody")}</Text>
+      <Text style={styles.body}>{t("billing.guestLimit")}</Text>
       <Text style={styles.body}>
         {releaseCopy[preferences.language].deleteBody}
       </Text>

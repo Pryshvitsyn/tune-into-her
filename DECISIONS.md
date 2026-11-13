@@ -70,3 +70,10 @@ boundary. The guard is a product safety constraint, not medical validation.
 
 Reopen only if: a reviewed, explicit user-confirmed event/provenance model replaces this
 temporary boundary with a safer documented rule.
+
+## 2026-11-13 — voluntary purchase after server app access
+Status: APPROVED by the owner's attached monetization request; IMPLEMENTED in `codex/monetization-20261113`; external store/web verification remains BLOCKED as recorded in BILLING_QA.md.
+Decision: free download; explicit14×24h full access after onboarding without card/account/store subscription, no automatic charge at expiry. Then voluntary monthly €3.99 or annual €24.99 eurozone base targets, equal `full_access`, with actual localized provider prices. This supersedes previous undecided/monthly-only and other trial-duration product drafts for new configuration. Existing live products/contracts are preserved pending external catalog/migration audit.
+Decision: keep existing platform IDs and RC anonymous identity; separate random SecureStore guest credential for the isolated Worker/D1 trial backend. Access is paid OR app trial; cache is bounded and known expiry never extended. Guest mode cannot guarantee one trial across erased identities/devices.
+Decision: prepare RevenueCat Billing + Stripe processor + hosted Web Purchase Links + RC Customer Portal. If an existing Stripe Billing catalog is discovered, preserve it and review the official integration before creating another engine. Native global purchases stay in platform stores; no external payment CTA enabled without verified program/storefront eligibility.
+Proof: see [BILLING_QA](BILLING_QA.md), [product policy](MONETIZATION.md), [external setup](STORE_SETUP.md). No live catalog, charge, deployment or store submission was performed.

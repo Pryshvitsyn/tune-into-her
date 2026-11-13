@@ -7,18 +7,39 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "env": { "EXPO_PUBLIC_ACCELERATED_DEMO": "true" }
+      "env": {
+        "EXPO_PUBLIC_ACCELERATED_DEMO": "true"
+      }
     },
     "preview": {
       "distribution": "internal",
       "channel": "preview",
       "environment": "preview",
-      "env": { "EXPO_PUBLIC_ACCELERATED_DEMO": "true" }
+      "env": {
+        "EXPO_PUBLIC_ACCELERATED_DEMO": "true"
+      }
     },
     "production": {
       "autoIncrement": true,
       "channel": "production",
-      "environment": "production"
+      "environment": "production",
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "billing-test": {
+      "distribution": "store",
+      "environment": "preview",
+      "channel": "billing-test",
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_ACCELERATED_DEMO": "false",
+        "EXPO_PUBLIC_USE_MOCK_BILLING": "false",
+        "EXPO_PUBLIC_BILLING_ENVIRONMENT": "sandbox"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
   },
   "submit": {

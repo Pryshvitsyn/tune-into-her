@@ -6,6 +6,7 @@ import { Screen } from '../src/components/Screen';
 import { useApp } from '../src/context/AppContext';
 import { getLocalizedCue } from '../src/domain/content/contentRepository';
 import type { GuidanceFeedback } from '../src/domain/content/feedback';
+import { guidanceDate } from '../src/domain/content/guidanceDate';
 import type { DailySelection } from '../src/domain/content/types';
 import { useInterface } from '../src/i18n/useInterface';
 import { AsyncFeedbackStore } from '../src/storage/AsyncFeedbackStore';
@@ -30,6 +31,7 @@ export default function GuidanceHistoryScreen() {
       const ratingByKey = new Map(ratings.map((entry) => [`${entry.date}:${entry.cueId}`, entry]));
       setItems(
         [...stored]
+          .filter(entry => entry.date <= guidanceDate(new Date()))
           .sort((a, b) => b.date.localeCompare(a.date))
           .map((entry) => ({ ...entry, feedback: ratingByKey.get(`${entry.date}:${entry.cueId}`) ?? null })),
       );

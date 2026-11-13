@@ -14,4 +14,4 @@ export const purchaseService: PurchaseService = useMockBilling
 
 export { useMockBilling };
 export { isMockBillingEnabled } from './mockBilling';
-export type { EntitlementState, StoreOffer } from './types';
+export type { EntitlementState, StoreOffer, PurchaseResult, PlanChangeResult, RedemptionResult, PurchaseSource } from './types';

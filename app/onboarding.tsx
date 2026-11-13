@@ -8,7 +8,6 @@ import { TuneIntoHerSphereV4 } from "../TuneIntoHerSphereV4";
 import { AdviceBlocks } from "../src/components/AdviceBlocks";
 import { Button } from "../src/components/Button";
 import { NumberStepper } from "../src/components/NumberStepper";
-import { PaywallCard } from "../src/components/PaywallCard";
 import { Screen } from "../src/components/Screen";
 import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
 import { SUPPORTED_LANGUAGES } from "../src/config/constants";
@@ -68,7 +67,7 @@ export default function OnboardingScreen() {
       return;
     }
     if (step === 5) await setCycleSettings(settings);
-    setStep((current) => Math.min(7, current + 1));
+    setStep((current) => Math.min(6, current + 1));
   };
   const finish = async () => {
     let enabled = reminderEnabled;
@@ -82,7 +81,7 @@ export default function OnboardingScreen() {
       },
       true,
     );
-    router.replace("/today");
+    router.replace("/paywall");
   };
 
   return (
@@ -109,7 +108,7 @@ export default function OnboardingScreen() {
     >
       <View style={styles.progress}>
         <View
-          style={[styles.progressFill, { width: `${(step / 7) * 100}%` }]}
+          style={[styles.progressFill, { width: `${(step / 6) * 100}%` }]}
         />
       </View>
       {step === 1 ? (
@@ -226,12 +225,6 @@ export default function OnboardingScreen() {
       {step === 6 ? (
         <View style={styles.stack}>
           <Text style={styles.eyebrow}>06</Text>
-          <PaywallCard onUnlocked={() => setStep(7)} />
-        </View>
-      ) : null}
-      {step === 7 ? (
-        <View style={styles.stack}>
-          <Text style={styles.eyebrow}>07</Text>
           <Text style={styles.hero}>{t("onboarding.reminderTitle")}</Text>
           <Text style={styles.body}>{t("onboarding.reminderBody")}</Text>
           <View style={styles.switchRow}>

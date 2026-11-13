@@ -34,7 +34,7 @@ export default function TodayScreen() {
   const c = useInterface();
   const { colors, dark } = useTheme();
   const { width } = useWindowDimensions();
-  const { cycleSettings, preferences, entitlement } = useApp();
+  const { cycleSettings, preferences, hasAccess } = useApp();
   const [clockDate, setClockDate] = useState(() => guidanceDate(new Date()));
   const today = cycleSettings && cycleSettings.lastKnownPeriodStart > clockDate
     ? guidanceDate(new Date(), cycleSettings.lastKnownPeriodStart)
@@ -69,7 +69,7 @@ export default function TodayScreen() {
   const selectionKey = JSON.stringify([today, cycleSettings, retry]);
   useEffect(() => {
     let active = true;
-    if (cycleSettings && guidancePhase)
+    if (hasAccess && cycleSettings && guidancePhase)
       void selectDailyCue({
         date: today,
         phase: guidancePhase,
@@ -86,7 +86,7 @@ export default function TodayScreen() {
     return () => {
       active = false;
     };
-  }, [cycleSettings, guidancePhase, today, retry, selectionKey]);
+  }, [hasAccess, cycleSettings, guidancePhase, today, retry, selectionKey]);
   useEffect(() => {
     if (!cycleSettings) router.replace("/onboarding");
   }, [cycleSettings]);
@@ -104,8 +104,8 @@ export default function TodayScreen() {
   const sphereSize = Math.max(216, Math.min(280, width - 56));
 
   // INTRO_V1: presentation only. Preserve the existing entitlement and cycle gates.
-  if (entitlement.isActive && !failed && !cue) return <IntroLoading dark={dark}/>;
-  if (entitlement.isActive && cue && current?.id && !failed) {
+  if (hasAccess && !failed && !cue) return <IntroLoading dark={dark}/>;
+  if (hasAccess && cue && current?.id && !failed) {
     const notes = introDailyReminders(today, preferences.language);
     const russian = preferences.language === "ru";
     return <AnimatedToday
@@ -181,7 +181,7 @@ export default function TodayScreen() {
           </Text>
         )}
       </View>
-      {!entitlement.isActive ? (
+      {!hasAccess ? (
         <View style={{ gap: 20, paddingVertical: 30 }}>
           <Text
             style={{ color: colors.text, fontSize: 20, textAlign: "center" }}

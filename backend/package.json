@@ -1,0 +1,7 @@
+{
+  "name": "tune-into-her-trial-backend",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": { "start": "node local.mjs" }
+}

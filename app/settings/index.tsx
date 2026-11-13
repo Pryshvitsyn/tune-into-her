@@ -16,7 +16,7 @@ import { useTheme } from "../../src/theme/useTheme";
 
 export default function SettingsScreen() {
   const { t } = useTranslation();
-  const { preferences, entitlement, deleteLocalData } = useApp();
+  const { preferences, entitlement, appTrial, deleteLocalData } = useApp();
   const ui = useInterface();
   const copy = releaseCopy[preferences.language];
   const confirmDelete = () =>
@@ -36,7 +36,9 @@ export default function SettingsScreen() {
     ? t(
         `subscription.${entitlement.status === "active_trial" ? "activeTrial" : "activePaid"}`,
       )
-    : t("subscription.inactive");
+    : appTrial.isActive && appTrial.expiresAt
+      ? t('billing.trialActive', { date: new Date(appTrial.expiresAt).toLocaleDateString(preferences.language === 'mbf' ? 'ms' : preferences.language) })
+      : t("subscription.inactive");
   return (
     <Screen>
       <Header title={t("settings.title")} />

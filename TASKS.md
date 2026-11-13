@@ -37,11 +37,23 @@ Updated: 2026-11-13
 - [ ] Review the final diff for generated files, credentials, signing material, and
   unintended asset changes before creating any local checkpoint.
 
+## MONETIZATION — implemented locally, external QA pending
+
+- [x] Extend existing PurchaseService with monthly/annual exact mapping, base-plan purchase, verified paid entitlement, source management, explicit Google base-plan change, restore, pending/cancel, serialized actions/listeners and bounded offline access.
+- [x] Implement independent server UTC14-day AppTrialService with pseudonymous SecureStore credential, permanent Worker/D1/local SQLite persistence, idempotency and managed-clock tests.
+- [x] Integrate explicit post-onboarding trial, paid OR trial Today access, expiry/foreground checks, eleven-locale billing/privacy copy and safe official web redemption routing.
+- [x] Prepare RevenueCat Billing+Stripe hosted-channel setup, optional authenticated durable RC webhook journal, product table, privacy/disclosures and one owner action checklist.
+- [x] Pin purchases10.8.0 and ExpoCrypto57.0.4; synchronize iOS Pods; configure separate billing-test EAS AAB/store profile and production config guards.
+- [x] Verify source checks161/24, lint0errors, content checks, final Android JS export, and actual arm64 iOS Release build/install. Observe current unconfigured paywall in Light/Dark; store transactions remain unverified. See BILLING_QA.md.
+- [ ] Deploy authorized sandbox trial service and supply actual platform SDK keys/catalog/offering; no secrets in chat/git.
+- [ ] Complete actual Apple sandbox/TestFlight, Play-installed both-plan/pending/restore/lifecycle and RC hosted checkout/redemption/portal tests. **BLOCKED** exact values/actions: STORE_SETUP.md.
+- [ ] Produce and verify release Android AAB/manifest/dependency graph/signing/16KB artifact after JDK/SDK and upload signing are available. Local isolated prebuild passed; no AAB exists.
+- [ ] Resolve Expo Doctor's19/21 native-config-sync and version-advice checks with reviewed native regeneration/compatibility decisions; do not undo intentional RNSVG/RN compatibility or upgrade the entire stack blindly.
+- [ ] Native-language/community review and device layouts for billing strings; structural locale checks do not establish translation acceptance.
+
 ## OWNER DECISIONS REQUIRED
 
-- [ ] Choose and document canonical subscription term and eligible trial duration.
-  Current source is monthly P1M / `monthly_access`; prior drafts with annual or
-  differing trial durations are not a decision.
+- [x] Owner approved2026-11-13: explicit14-day app access without card/account/subscription; voluntary monthly €3.99 and annual €24.99 eurozone base targets, equal full access. See MONETIZATION.md.
 - [ ] Confirm the intended iOS and Android application identifiers or authorize a
   deliberate alignment.
 - [ ] Provide verified seller/legal spelling, support address, Terms and Privacy
@@ -65,7 +77,7 @@ Updated: 2026-11-13
 
 ## STORE / DEVICE GATES
 
-- [ ] Configure RevenueCat and store products only after the owner billing decision;
+- [ ] Configure verified RevenueCat and store products per the now-approved model;
   sandbox-test purchase, restore, billing issue, cancellation, and localized offers.
 - [ ] Perform physical iOS and Android notification/permission/tap-routing QA.
 - [ ] Complete compact/regular visual QA in both appearance modes and all locales.

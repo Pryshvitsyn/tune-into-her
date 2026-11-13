@@ -13,6 +13,7 @@ import { ExpoNotificationBackend } from '../services/notifications/ExpoNotificat
 import { NotificationScheduler } from '../services/notifications/NotificationScheduler';
 import { stopDemoSession } from '../services/notifications/acceleratedDemo';
 import { purchaseService, type EntitlementState } from '../services/purchases';
+import { appTrialService, type AppTrialState } from '../services/trial';
 import { AsyncSelectionStore } from '../storage/AsyncSelectionStore';
 import { LocalManualCycleProvider } from '../storage/LocalManualCycleProvider';
 import { storageKeys } from '../storage/keys';
@@ -28,6 +29,9 @@ interface AppContextValue {
   preferences: Preferences;
   cycleSettings: CycleSettings | null;
   entitlement: EntitlementState;
+  appTrial: AppTrialState;
+  hasAccess: boolean;
+  startAppTrial(): Promise<AppTrialState>;
   refreshEntitlement(): Promise<void>;
   setCycleSettings(settings: CycleSettings): Promise<void>;
   updatePreferences(update: Partial<Preferences>, rebuildNotifications?: boolean): Promise<void>;
@@ -43,19 +47,60 @@ export function AppProvider({ children }: PropsWithChildren) {
   const [cycleSettings, setCycleSettingsState] = useState<CycleSettings | null>(null);
   const [entitlement, setEntitlement] = useState<EntitlementState>({ status: 'loading', isActive: false, isMock: false });
 
-  const refreshEntitlement = useCallback(async () => setEntitlement(await purchaseService.getEntitlement()), []);
+  const [appTrial, setAppTrial] = useState<AppTrialState>({ status: 'unavailable', isActive: false, verification: 'unavailable' });
+  const applyEntitlement = useCallback((next: EntitlementState) => {
+    setEntitlement(previous => previous.checkedAt && next.checkedAt && Date.parse(previous.checkedAt) > Date.parse(next.checkedAt) ? previous : next);
+  }, []);
+  const refreshEntitlement = useCallback(async () => {
+    await Promise.all([
+      purchaseService.getEntitlement().then(applyEntitlement),
+      appTrialService.getState().then(setAppTrial),
+    ]);
+  }, [applyEntitlement]);
+  const startAppTrial = useCallback(async () => {
+    if (!preferences.onboardingComplete || !cycleSettings) throw new Error('ONBOARDING_REQUIRED');
+    const trial = await appTrialService.start();
+    setAppTrial(trial);
+    return trial;
+  }, [preferences.onboardingComplete, cycleSettings]);
 
   useEffect(() => {
-    void Promise.all([loadPreferences(), cycleProvider.get(), purchaseService.getEntitlement()]).then(([savedPreferences, savedCycle, access]) => {
+    let disposed = false;
+    void Promise.all([loadPreferences(), cycleProvider.get()]).then(([savedPreferences, savedCycle]) => {
+      if (disposed) return;
       const nextPreferences = savedPreferences ?? { ...defaultPreferences, language: initialLanguage };
       setPreferencesState(nextPreferences);
       setCycleSettingsState(savedCycle);
-      setEntitlement(access);
       void i18n.changeLanguage(nextPreferences.language);
       setReady(true);
     });
-    return purchaseService.addEntitlementListener(setEntitlement);
-  }, []);
+    // A slow trial request must never overwrite a newer SDK purchase/refund event.
+    void purchaseService.getEntitlement().then(state => { if (!disposed) applyEntitlement(state); });
+    void appTrialService.getState().then(state => { if (!disposed) setAppTrial(state); });
+    const removeListener = purchaseService.addEntitlementListener(applyEntitlement);
+    return () => { disposed = true; removeListener(); };
+  }, [applyEntitlement]);
+
+  useEffect(() => {
+    if (!appTrial.isActive || !appTrial.validForMs) return;
+    const timer = setTimeout(() => { void appTrialService.getCachedState().then(state => { setAppTrial(state); void appTrialService.getState().then(setAppTrial); }); }, Math.min(appTrial.validForMs, 2_147_483_647));
+    return () => clearTimeout(timer);
+  }, [appTrial]);
+
+  useEffect(() => {
+    if (!entitlement.isActive || !entitlement.validForMs) return;
+    const timer = setTimeout(() => { void purchaseService.getCachedEntitlement().then(state => { applyEntitlement(state); void purchaseService.getEntitlement().then(applyEntitlement); }); }, Math.min(entitlement.validForMs, 2_147_483_647));
+    return () => clearTimeout(timer);
+  }, [entitlement, applyEntitlement]);
+
+  useEffect(() => {
+    // Also detect clock changes while the app remains open, without network polling.
+    const timer = setInterval(() => {
+      void purchaseService.getCachedEntitlement().then(applyEntitlement);
+      void appTrialService.getCachedState().then(setAppTrial);
+    }, 30_000);
+    return () => clearInterval(timer);
+  }, [applyEntitlement]);
 
   const rebuildNotifications = useCallback(async () => {
     if (!cycleSettings) return;
@@ -116,7 +161,8 @@ export function AppProvider({ children }: PropsWithChildren) {
     setPreferencesState({ ...defaultPreferences, language: preferences.language });
   }, [preferences.language]);
 
-  const value = useMemo(() => ({ deleteLocalData, ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, preferences, cycleSettings, entitlement, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
+  const hasAccess = entitlement.isActive || appTrial.isActive;
+  const value = useMemo(() => ({ deleteLocalData, ready, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 

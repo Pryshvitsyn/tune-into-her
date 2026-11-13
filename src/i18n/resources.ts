@@ -1,5 +1,6 @@
 import languages from '../config/languages.json';
 
+import billing from './billing.json';
 import de from './locales/de.json';
 import fr from './locales/fr.json';
 import hi from './locales/hi.json';
@@ -89,3 +90,9 @@ const originalResources = {
 
 export const resources = { ...originalResources, fr: { translation: fr }, de: { translation: de }, hi: { translation: hi }, "zh-Hans": { translation: zhHans }, ms: { translation: ms }, mbf: { translation: mbf } };
 for (const resource of Object.values(resources)) Object.assign(resource.translation.language, languages.labels);
+
+for (const [language, resource] of Object.entries(resources)) {
+  Object.assign(resource.translation, { billing: billing[language as keyof typeof billing] });
+  // Retire the earlier no-backend privacy copy in every existing locale.
+  Object.assign(resource.translation.privacy, { body: billing[language as keyof typeof billing].privacyBody });
+}

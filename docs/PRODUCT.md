@@ -10,6 +10,6 @@ English, Italian, French, Spanish, German, Russian, Ukrainian, Hindi, Simplified
 Thoughtful Hearts Empower All. Personal growth, responsible upbringing with clear rules, consent, boundaries, empathy, prevention of sexual violence through education, equal dignity across race/gender/age. Mission is not guaranteed efficacy.
 About THEA briefly describes mission and products; TRUTHBACK marked in development. Explore THEA opens confirmed website in browser with notice. URL unknown.
 ## Commercial intent
-Previously proposed $1/month and 30-day trial; actual price/trial eligibility must come from store configuration. Do not hardcode unverified offers.
+Approved 2026-11-13: free download and an explicit 14 × 24 hour server-recorded app-access period, without a card, mandatory account or subscription. No charge at expiry. Voluntary monthly/annual subscriptions grant the same full access; eurozone base targets are €3.99/month and €24.99/year, billed annually in full. Display actual localized store prices/currencies, renewal/cancellation and immediate-charge timing. Prior $1/month / 30-day proposals are superseded. See [monetization contract](../MONETIZATION.md) and [catalog/owner checklist](../STORE_SETUP.md). Existing paid agreements require migration review.
 ## Historical sources
 August Library snapshot and Secret_Bronze_Brand_Requirements.txt are superseded where conflicting with latest Founder decisions. The old 400-cue baseline is superseded by the three-part reserve documented in [CONTENT](CONTENT.md).

@@ -39,13 +39,15 @@ an authorization to merge, deploy, configure production billing, or publish.
 
 ## BLOCKED — owner or external evidence required
 
-- [BLOCKED] Confirm the canonical subscription term and eligible trial duration;
-  source `monthly_access` / `P1M` and mock values are not an approved store decision.
+- [APPROVED 2026-11-13] Standalone 14-day app access; monthly/annual subscriptions
+  with EUR 3.99/24.99 base targets. [Billing setup](../STORE_SETUP.md) lists actual
+  catalog/configuration and sandbox-test blockers; source IDs are not console evidence.
 - [BLOCKED] Provide Apple/Google/RevenueCat account access, configured app records,
   products, entitlement, offering, and sandbox/license-tester identities. No store
   purchase, restore, cancellation, or trial result is claimed without these.
 - [BLOCKED] Provide Apple signing/provisioning and an authorized physical iPhone;
-  there are currently no local code-signing identities.
+  one local development identity is now observed (2026-11-13), but distribution
+  provisioning and physical-device authorization remain unverified.
 - [BLOCKED] Confirm the intended platform identifiers, seller/support/legal details,
   privacy declarations, and the required unknown-cycle-length product behavior.
 - [BLOCKED] Remote push is not performed until explicit confirmation permits

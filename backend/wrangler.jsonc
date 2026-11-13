@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "tune-into-her-trial-sandbox",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-11-13",
+  "workers_dev": false,
+  "observability": { "enabled": false },
+  "vars": { "ENVIRONMENT": "sandbox" },
+  "d1_databases": [{ "binding": "DB", "database_name": "tune-into-her-trial-sandbox", "database_id": "REPLACE_WITH_SANDBOX_D1_ID", "migrations_dir": "migrations" }],
+  "env": {
+    "production": {
+      "name": "tune-into-her-trial-production",
+      "vars": { "ENVIRONMENT": "production" },
+      "d1_databases": [{ "binding": "DB", "database_name": "tune-into-her-trial-production", "database_id": "REPLACE_WITH_PRODUCTION_D1_ID", "migrations_dir": "migrations" }]
+    }
+  }
+}
