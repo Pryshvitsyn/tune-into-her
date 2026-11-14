@@ -1,0 +1,6014 @@
+{
+  "sourceSha256": {
+    "src/intro/sphereHtml.ts": "8d0a37109e9c6938069d148b38ff034ea4ea3e441fdfdc23347cd17c9e6d2f27",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+    "src/intro/brand.generated.ts": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5",
+    "src/intro/brandTexture.generated.ts": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe",
+    "src/intro/brandBackground.generated.ts": "7e468afb668edf6a74f0b512e98c3c5c6d4e57ac0ce36bb0aaee983da2b34ebd",
+    "src/intro/introPresentation.ts": "8711b79437b12597a625aac60d2697ab781969561eb03e0877a79b6c6eda9f97",
+    "assets/tune_into_her_sphere_source_clean.png": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c"
+  },
+  "sourceCommit": "2c77ba01e1d654b225adab5ccb60820da71a2154",
+  "workingTreeDirty": true,
+  "capturedAt": "2026-11-14T19:31:55.430Z",
+  "engine": "Chromium headless WebGL / ANGLE SwiftShader; not iOS or Android native evidence",
+  "frames": [
+    {
+      "file": "iphone-se-00000.png",
+      "ms": 0,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "b7555e85e740661848c371ff466e959c50833130dc9154aff0b8495316b6973d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-00100.png",
+      "ms": 100,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "e285cf2146ea08bc53e9a8561edc8e3f83088139dfbceb80e576db68ed2c67c1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 100,
+        "draws": 4,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-00300.png",
+      "ms": 300,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "34721a2fa439bd93fa44024e2f92b9d4bd15adaa043e444b73456c5a7b890c01",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 300,
+        "draws": 5,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-00500.png",
+      "ms": 500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "a98f41834a5f1da93bad08bf713d8693896c4ae2168c662805ab344cded8bd2f",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 6,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-00600.png",
+      "ms": 600,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "b2041144978d6fc7ac779a1670c0f3eecbe6297adec956555eb3fa48623d8f10",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 600,
+        "draws": 7,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01000.png",
+      "ms": 1000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "b38a79d83094cc589a922f991915ebe86fb496e162d97ba72a5668882ac2d851",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 8,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 693.2918898007463,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223035,
+          "logoWidth": 276.35584253443096,
+          "logoOpacity": 1,
+          "camera": 0.13292943037803803,
+          "layers": 0.1262002743484225
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01350.png",
+      "ms": 1350,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "f29638e7cf0238c0d37c10638d57cd67680ed21b1001029c0bbd8a0e4a1bc486",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 9,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 648.4438355078889,
+          "shell": 0.20863016486871566,
+          "depth": 0.076815609586908,
+          "logoWidth": 253.50663649486944,
+          "logoOpacity": 1,
+          "camera": 0.4843034023964194,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01500.png",
+      "ms": 1500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "577664ce52e931739010c708b7851ee811a8072537a4034e77b65ca1822a4e42",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1500,
+        "draws": 10,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 624.5454575232615,
+          "shell": 0.3267860777529005,
+          "depth": 0.14039794406321385,
+          "logoWidth": 241.33088057430456,
+          "logoOpacity": 1,
+          "camera": 0.6715415809452839,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01800.png",
+      "ms": 1800,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "e0d0b0c5f03bed270c2798243d185dfa5dbdf877a0e6f64f14fc7989d3075718",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 11,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 576.7487015540063,
+          "shell": 0.5878282108691227,
+          "depth": 0.30523850130545593,
+          "logoWidth": 216.97936873317465,
+          "logoOpacity": 1,
+          "camera": 1.0460179380430148,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02000.png",
+      "ms": 2000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "31da1a2aacd93bbe03fa016e9a4e4e0841c018c0fc558a6faf2b7f0e45fc426c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 12,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 544.8841975745029,
+          "shell": 0.7537146346427845,
+          "depth": 0.43211786799007,
+          "logoWidth": 200.74502750575473,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748353,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02350.png",
+      "ms": 2350,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "fdb23044881ec0af8e4800f756a4ac754aad1782464a81f61b1abce9b7b6d7cf",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 13,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 489.12131561037194,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038461,
+          "logoWidth": 172.33493035776985,
+          "logoOpacity": 1,
+          "camera": 1.7325579260555206,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02500.png",
+      "ms": 2500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "9648a6b6d5ae70938d33e804818e85656a3f4f9144fec50454f2e989bdfe2c38",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 14,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 463.61515638259255,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 159.34004135617025,
+          "logoOpacity": 1,
+          "camera": 1.9323926930283541,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02850.png",
+      "ms": 2850,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "d08b937b91bb0fa99a9030979ca3b130b0af0f9d4c1d5ac929c12ef6e206c660",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 15,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 394.6834653610408,
+          "shell": 1,
+          "depth": 0.9520033285530201,
+          "logoWidth": 124.22069369123324,
+          "logoOpacity": 1,
+          "camera": 2.472456302344041,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-03200.png",
+      "ms": 3200,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "ba30ab9635317e6abae100dc970fcac79401bba74b80927c20c9963ec885f7c8",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 16,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 319.9161239013823,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 86.12819632476292,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.058240862235614,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-03500.png",
+      "ms": 3500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "65b6a09ed7965fef2ad2418918fbe6353ba01ed46f0e22af3d63067e818a5b0b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 17,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 258.06616891791106,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.61685459014473,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.542820732965069,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-03800.png",
+      "ms": 3800,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "2aae59799c04f848b2d492d05c39bbccb41ce674c77a7715310ac0e404c394e9",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 18,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 204.31466760364907,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626832,
+          "layers": 0.68359375
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04000.png",
+      "ms": 4000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "284293182c3fcd103f346ed74dfc0abef7d3f877c93efa268514c6b004d19232",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 19,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 175.80246470726058,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0.15625,
+          "camera": 4.18733753435605,
+          "layers": 0.31640625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04150.png",
+      "ms": 4150,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "87b44d0fbfbcbfdf9b456025668a903760647aa571984b673ccef8f0d6e67879",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 20,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 159.46661331079184,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04300.png",
+      "ms": 4300,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "a2a2ff212e4aa776c41a790d1ae4c415bd3455e0c8779dbccb4e7e024af63f68",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 21,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 148.25184291102892,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.403190185374177,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04500.png",
+      "ms": 4500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "ff36f9664973379061f848044c1e8b5bc0ae8664ad83d674c27585616501a8fa",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 22,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-06500.png",
+      "ms": 6500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "391d251314a62977fb8c71efcfe9f5de372bd387e4e61b0d08677e1af579c7c7",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 23,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-09000.png",
+      "ms": 9000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "19f48b90c83b481931bd3827a49ba17ba55cd80f86ccfb9fcf114a0114d65746",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 24,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-09360.png",
+      "ms": 9360,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "e653a95991cf3de1ec879d84b30035e055cdf9d90a10e3ac8f972a55b49341b7",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 25,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-tall-00000.png",
+      "ms": 0,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "913983c040427da378065df16c9012ff35d9f2b9430c3f49b0de924a1af4277e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-00100.png",
+      "ms": 100,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "65727fe08341112797bb097238dfc2e2b75a02ac80e5f16cb822f91db6ab1efb",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 100,
+        "draws": 4,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-00300.png",
+      "ms": 300,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "4c5ed752aed59200a0dc4d04216dc1c448f2bf06e6e033ec1aa247eb65bc6be7",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 300,
+        "draws": 5,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-00500.png",
+      "ms": 500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "90f29e7a4e49e141c713f2b3b0abd37bada35729198a1b78273ffe9a329609fa",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 6,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-00600.png",
+      "ms": 600,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "fed9a48ba976d441bff93f58a0456fe134db155d76990d88c377c2ff82385fed",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 600,
+        "draws": 7,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01000.png",
+      "ms": 1000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "25afc6e54a1e1d3e1b5304016369bd1ee734a135790c229fa9b6d516dbabd90d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 8,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 858.9619344558132,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223069,
+          "logoWidth": 289.62092297608365,
+          "logoOpacity": 1,
+          "camera": 0.1329294303780384,
+          "layers": 0.1262002743484225
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01350.png",
+      "ms": 1350,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "ffc99ddca9a0a1a73a056cc3b06967fb52f330cd39c2f905358a78cc3286cf4c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 9,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 801.1811943374544,
+          "shell": 0.20863016486871566,
+          "depth": 0.07681560958690774,
+          "logoWidth": 265.67495504662327,
+          "logoOpacity": 1,
+          "camera": 0.48430340239641856,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01500.png",
+      "ms": 1500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "68f61b034ccdeacbcc11986f5689a3097bc2abfac2607fbec4a3f07a4ad0a7bb",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1500,
+        "draws": 10,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 770.3913197408211,
+          "shell": 0.3267860777529005,
+          "depth": 0.14039794406321382,
+          "logoWidth": 252.91476284187118,
+          "logoOpacity": 1,
+          "camera": 0.6715415809452837,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01800.png",
+      "ms": 1800,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "57fe975aad1dcec45cbcf0ac587ab543d8846df779c67058d393e09dccd9687b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 11,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 708.8115705475545,
+          "shell": 0.5878282108691227,
+          "depth": 0.3052385013054558,
+          "logoWidth": 227.39437843236706,
+          "logoOpacity": 1,
+          "camera": 1.0460179380430146,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02000.png",
+      "ms": 2000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "4bc445f9f12598cf5895bd07db86328e219921ed49e7d034769de2366375418e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 12,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 667.7584044187103,
+          "shell": 0.7537146346427845,
+          "depth": 0.4321178679900695,
+          "logoWidth": 210.380788826031,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748344,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02350.png",
+      "ms": 2350,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "3a6b3678083fb08a57fc5fac6400a3c1f3505c41cef658d83de8764cb46b60e7",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 13,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 595.9153636932326,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038459,
+          "logoWidth": 180.6070070149429,
+          "logoOpacity": 1,
+          "camera": 1.73255792605552,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02500.png",
+      "ms": 2500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "c13514a2b947799ff54fa6ccd7f08b2b2533f51759979d45f92e26a557d35243",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 14,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 563.0540772674238,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 166.98836334126642,
+          "logoOpacity": 1,
+          "camera": 1.932392693028354,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02850.png",
+      "ms": 2850,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "ad0974e16256ac9b9173e1d1cbf082453a9d583c9c7d0dec32178e95a5c00502",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 15,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 474.24478135400807,
+          "shell": 1,
+          "depth": 0.9520033285530201,
+          "logoWidth": 130.18328698841242,
+          "logoOpacity": 1,
+          "camera": 2.472456302344041,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-03200.png",
+      "ms": 3200,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "02c444d5334a85b028eeb25c64891cba3ff9bf044faf42767437532ed99dd35b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 16,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 377.91702769025164,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 90.26234974835158,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.0582408622356136,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-03500.png",
+      "ms": 3500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "d64dd30c40e15d589cc6b04d510dcb86728eeca91edc8f6d217569937ac19248",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 17,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 298.2316047308586,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 57.23846361047168,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.5428207329650685,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-03800.png",
+      "ms": 3800,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "0281626b9733198561639cf936df9a080cd2c82dd3c05bf18d8d6ddb9663008b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 18,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 228.9799598739791,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626823,
+          "layers": 0.68359375
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04000.png",
+      "ms": 4000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "cd8afcf4e1cfb9ec29a636564111dcc982517ba8b04d49cd1dcab294823eb7d9",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 19,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 192.24578685946494,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0.15625,
+          "camera": 4.18733753435605,
+          "layers": 0.31640625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04150.png",
+      "ms": 4150,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "8fd0610475c1e4f59172724b214c7375aebcab61447392810b834cd6f64d1d4e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 20,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 171.19921975562022,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04300.png",
+      "ms": 4300,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "9fd24d628109ed31abd00bfa9e453f8cc5b09c42a3907725427c875c362a4b73",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 21,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 156.75048292248255,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.403190185374177,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04500.png",
+      "ms": 4500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "0c8dc4d158686290c2d2ef28383749c22d91fd51707813a7aaf770c1da8bd733",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 22,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-06500.png",
+      "ms": 6500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "94338d33dc3b91ea17a6fb0366f2e7df66dd38e6bf6d5d4cd7c6aa9b333b14e1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 23,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-09000.png",
+      "ms": 9000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "4febb68bc8abbd585d2c951bd589f8c3d4bfed237e32b42352f181cb61c45c56",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 24,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-09360.png",
+      "ms": 9360,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "8cc50df4c3e1995bbdd784f93dfc389682d0ba3ea34e871c72d9881babd7c93c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 25,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "android-compact-00000.png",
+      "ms": 0,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "a80ad13f73b4420d0204298c1afb2cd8a0587bfa0ad04235e016d6a5a0cec4f0",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-00100.png",
+      "ms": 100,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "adfd347eda4b6596c7d80109b4a7c53b02d11a89bfc591550e5cab1018070e26",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 100,
+        "draws": 4,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-00300.png",
+      "ms": 300,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "e6b578e701cac6abc27adbf8e171d820b20b42f179ee39bc67f4ad94b7ac4a87",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 300,
+        "draws": 5,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-00500.png",
+      "ms": 500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "2208849d16f15ba13b2a7ddc054dce7a1610f18e5186d7eab96ca1243480af57",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 6,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-00600.png",
+      "ms": 600,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "acdb207ccfbb9588a74a8317ac8e46a20f016eae6abf4ad47f2a6a6e58a2bd48",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 600,
+        "draws": 7,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01000.png",
+      "ms": 1000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "e167b5d6270fab61847d421ba785edd3b99e1dcfbe3e98c58ec4c06d974e87fa",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 8,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 804.1020641988189,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223032,
+          "logoWidth": 265.30160883305376,
+          "logoOpacity": 1,
+          "camera": 0.132929430378038,
+          "layers": 0.1262002743484225
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01350.png",
+      "ms": 1350,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "605884da56efaa7cb4cb9c7fdb069d4474dc37115352a639726208da12ca3379",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 9,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 749.7672060444064,
+          "shell": 0.20863016486871566,
+          "depth": 0.07681560958690774,
+          "logoWidth": 243.36637103507476,
+          "logoOpacity": 1,
+          "camera": 0.48430340239641856,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01500.png",
+      "ms": 1500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "c24aa4736dc1b670715c7042f741a8b343a1b3a4af7368541cec82984c75185f",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1500,
+        "draws": 10,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 720.8135535752049,
+          "shell": 0.3267860777529005,
+          "depth": 0.1403979440632137,
+          "logoWidth": 231.67764535133244,
+          "logoOpacity": 1,
+          "camera": 0.6715415809452835,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01800.png",
+      "ms": 1800,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "311e7785f2ac1593359f5b98b0a2bac8aa553f4f74cbb3f7b16e134444a4d40f",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 11,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 662.9062486368017,
+          "shell": 0.5878282108691227,
+          "depth": 0.30523850130545555,
+          "logoWidth": 208.30019398384772,
+          "logoOpacity": 1,
+          "camera": 1.0460179380430141,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02000.png",
+      "ms": 2000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "2161007ccf0392e28f0a42a9762cf08d00b00e2fb4830416790e584c1d1c9bc1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 12,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 624.3013786778663,
+          "shell": 0.7537146346427845,
+          "depth": 0.4321178679900695,
+          "logoWidth": 192.7152264055246,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748344,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02350.png",
+      "ms": 2350,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "ee766bc2c76c964af5b4b9dbb4e78ee27990b2d42df043e223e7e0101e324953",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 13,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 556.7428562497292,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038459,
+          "logoWidth": 165.4415331434591,
+          "logoOpacity": 1,
+          "camera": 1.7325579260555202,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02500.png",
+      "ms": 2500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "3b39a8928986ebef00e4eb91ffa75d71106b6686cc96bde7640e2a3ed8e354c0",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 14,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 525.8413251675664,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 152.96643970192346,
+          "logoOpacity": 1,
+          "camera": 1.9323926930283541,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02850.png",
+      "ms": 2850,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "43be538c94dab11f2ae6fbe7e8a0319672840d5f1c202c3325d3a005951addaf",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 15,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 442.32836762558645,
+          "shell": 1,
+          "depth": 0.95200332855302,
+          "logoWidth": 119.25186594358398,
+          "logoOpacity": 1,
+          "camera": 2.4724563023440407,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-03200.png",
+      "ms": 3200,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "8dcc04f962be2caa9a055bb5b5fb4805e99a24a995ca1f673c0852fb34bf733c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 16,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 351.7453321550804,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 82.68306847177242,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.058240862235614,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-03500.png",
+      "ms": 3500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "b9c55db11b6993de4d6832cfdd741b984887445d68350a1ffe47b5a83b1afd6d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 17,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 276.8121252663494,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 52.43218040653895,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.542820732965069,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-03800.png",
+      "ms": 3800,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "dbc0ed72fc485b08e04ea379c9fef16ad23ade8ec427366ab19fa797b06bec9d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 18,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 211.69045509475654,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626832,
+          "layers": 0.68359375
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04000.png",
+      "ms": 4000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "3606e4f670666222bcd10ed581ebdda21619b80a6d5e819071e17ed43c58d715",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 19,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 177.14700556339454,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0.15625,
+          "camera": 4.187337534356051,
+          "layers": 0.31640625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04150.png",
+      "ms": 4150,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "d79e2bed0c6cb5b8df2de0a3ea6477ef474dcc4479e4aed0f350d324d631cc4d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 20,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 157.35559694034407,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04300.png",
+      "ms": 4300,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "09be1fd912ddcf088f385380916f006a2e555a921f03abfd8b8ff175410baac1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 21,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 143.76854241783667,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.403190185374178,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04500.png",
+      "ms": 4500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "d41d37c38f57e23271685306523d1c887bb3cca695e4cfc57ab1495792409e16",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 22,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-06500.png",
+      "ms": 6500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "596bb89a46fca409bcfa66d752afee5870989647277af33046e360f51655ce80",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 23,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-09000.png",
+      "ms": 9000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "ec44917de20cbcc9abfc2420c7963eb2ce19236c4f0b3c62a3d0b0e26e5b9a23",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 24,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-09360.png",
+      "ms": 9360,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "05520bd3a9c2772221836c8048607b13b3c50470114a8b0a56de364fa8335a23",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 25,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-tall-00000.png",
+      "ms": 0,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "1ef7551b758d48b234cba06efd9b2b514725152553ee6bc008303afae6219e3c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-00100.png",
+      "ms": 100,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "b5dc340dd8c0ed7dadcd11a94fbcc98e9ab650568cbbef1c2b88abf2556508b1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 100,
+        "draws": 4,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-00300.png",
+      "ms": 300,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "d302988c0af3b9f0cd598487a9bd4910c6caf3f2db68572c3482b1498308b450",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 300,
+        "draws": 5,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-00500.png",
+      "ms": 500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "e2d57c35e379b1eeaffd1c8316594fe63df897890c25e3aa90972f233cbfe3aa",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 6,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-00600.png",
+      "ms": 600,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "ee701b68af0c5872f520ea9802afdc4110628125fed0b0bd101b742b24e0bbe3",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 600,
+        "draws": 7,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01000.png",
+      "ms": 1000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "3945a8b7124e4b1a365096069b79902e1e68399132e363a9b1c563a5be0ffc35",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 8,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 919.7582605644246,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223016,
+          "logoWidth": 303.6229523311615,
+          "logoOpacity": 1,
+          "camera": 0.1329294303780378,
+          "layers": 0.1262002743484225
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01350.png",
+      "ms": 1350,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "eec2ef64433d8fcaad73bc3c40e578c6668698fee0eedfec4b0be6c886e31eeb",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 9,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 857.6150851476809,
+          "shell": 0.20863016486871566,
+          "depth": 0.07681560958690774,
+          "logoWidth": 278.51929129569663,
+          "logoOpacity": 1,
+          "camera": 0.48430340239641856,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01500.png",
+      "ms": 1500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "a507b2e24ef1a6c1b3dd85959a73104a3cd5897b6ec559dd8d331587d40e0536",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1500,
+        "draws": 10,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 824.5005806571064,
+          "shell": 0.3267860777529005,
+          "depth": 0.14039794406321365,
+          "logoWidth": 265.14219412430265,
+          "logoOpacity": 1,
+          "camera": 0.6715415809452834,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01800.png",
+      "ms": 1800,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "d87c10ffa56e4c963e4fd36027b1ede4bc57da07182b1a0aa83731efb74d1879",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 11,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 758.2715716759571,
+          "shell": 0.5878282108691227,
+          "depth": 0.3052385013054555,
+          "logoWidth": 238.38799978151462,
+          "logoOpacity": 1,
+          "camera": 1.046017938043014,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02000.png",
+      "ms": 2000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "3f2b4dd2e0048ee3870a08c367beab5eb5d7fe3c74e0f0e581a999a8a421c9cb",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 12,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 714.1188990218576,
+          "shell": 0.7537146346427845,
+          "depth": 0.4321178679900697,
+          "logoWidth": 220.55187021965588,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748346,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02350.png",
+      "ms": 2350,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "b08b6b0b72af3424e46042216ab77c216be856a64f9bd066752df72a90b5e513",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 13,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 636.8517218771835,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038459,
+          "logoWidth": 189.3386434864032,
+          "logoOpacity": 1,
+          "camera": 1.73255792605552,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02500.png",
+      "ms": 2500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "3cc668bd032a01c6a3443fe2ba2aac05c8ca42291d8c2f9cf4b016c3417a478e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 14,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 601.5094143436384,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 175.0615921033124,
+          "logoOpacity": 1,
+          "camera": 1.932392693028354,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02850.png",
+      "ms": 2850,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "060f2925b7914360ec0ea4d21e8111de99d79f379b5d77ec1691fc561276c778",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 15,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 505.9950328511218,
+          "shell": 1,
+          "depth": 0.95200332855302,
+          "logoWidth": 136.47713546876832,
+          "logoOpacity": 1,
+          "camera": 2.4724563023440407,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-03200.png",
+      "ms": 3200,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "50f9750bf92d47228877ebe697ee3339747cf2c39ec93d3d573e3cbff947bbec",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 16,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 402.3945514248602,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 94.62617836213958,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.0582408622356136,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-03500.png",
+      "ms": 3500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "26c72f07c1f695e62d93c044144c16493ec478f3e79d2ce48d5ff200f8dca7e6",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 17,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 316.69289362367203,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 60.00571757637235,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.542820732965069,
+          "layers": 1
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-03800.png",
+      "ms": 3800,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "f229fceaf3dc618f80b38e622b80cef420f55c3598779127f426fb8828819805",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 18,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 242.21276226115043,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626823,
+          "layers": 0.68359375
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04000.png",
+      "ms": 4000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "4bb4b9e3201fda5e39f6bf91564e4fe7a84980d85c78b7d4b744bb97dca04910",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 19,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 202.70516591063836,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0.15625,
+          "camera": 4.1873375343560495,
+          "layers": 0.31640625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04150.png",
+      "ms": 4150,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "bf74e0dd728ddab6502303c8b7ee20e37ca2277b6571bca58718a984edec7e94",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 20,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 180.06958684440679,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04300.png",
+      "ms": 4300,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "e525726b7734fd9bb014bb63aa0e748d24ccd11ff0bae7694e70dafea1dc004e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 21,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 164.5299730261554,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.403190185374177,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04500.png",
+      "ms": 4500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "8945c23f634b79841eb4c62f390014690252838388c4db138d80a4504e3da768",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 22,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-06500.png",
+      "ms": 6500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "e7b7948e6c0d881cbb77df1553bb14e539787f45742ff2e05c94bfe04b6c963d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 23,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-09000.png",
+      "ms": 9000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "64f55b531d60d2e5261584770052be45dfa2be0938e1b0a953509ea037bb8587",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 24,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-09360.png",
+      "ms": 9360,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "0b45a990e55c2652568674ca4126319c8e52a25ba5098e944e493e60dba7bc59",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 25,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    }
+  ],
+  "events": [
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x11c00596600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "timestamp": 1794684718863.407,
+          "url": "file:///tmp/tih-handoff-qa/GPU/final/renderer.html",
+          "lineNumber": 252
+        }
+      }
+    },
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x11c00596600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "timestamp": 1794684718956.209,
+          "url": "file:///tmp/tih-handoff-qa/GPU/final/renderer.html"
+        }
+      }
+    },
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x11c00596600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "timestamp": 1794684718956.363,
+          "url": "file:///tmp/tih-handoff-qa/GPU/final/renderer.html"
+        }
+      }
+    },
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x11c00596600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+          "timestamp": 1794684718956.387,
+          "url": "file:///tmp/tih-handoff-qa/GPU/final/renderer.html"
+        }
+      }
+    }
+  ],
+  "v4Comparison": {
+    "baselineCommit": "71504ac77a33f888fe65a49c60069a27153f1bea",
+    "method": "Exact raw straight-color RGBA readPixels: current test-only straightReference versus untouched historical production, preserving the original V4 calculation guard; no background pixels",
+    "samples": [
+      {
+        "label": "iphone-se",
+        "width": 375,
+        "height": 667,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 254375,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "b3fca1faec2c6c3ce5b3d5971dafd451429f703336d552b8e09e963a3ab615bf",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 254375,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "b3fca1faec2c6c3ce5b3d5971dafd451429f703336d552b8e09e963a3ab615bf",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-se",
+        "width": 375,
+        "height": 667,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 254518,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "225b9c9b0b8d37862e896661d579c1d91173a1b6f26daedadf9770bf9734a26a",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 254518,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "225b9c9b0b8d37862e896661d579c1d91173a1b6f26daedadf9770bf9734a26a",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-tall",
+        "width": 393,
+        "height": 852,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 279341,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "44e0fbaca4b0dacd648e094f304adb1267f858a52ac765a27df56b041fad1e3f",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 279341,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "44e0fbaca4b0dacd648e094f304adb1267f858a52ac765a27df56b041fad1e3f",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-tall",
+        "width": 393,
+        "height": 852,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 279493,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "514263ed075eb41c2d77cae606afa1eb55c8caf78f7a75a2c01ef4a39ce04b72",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 279493,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "514263ed075eb41c2d77cae606afa1eb55c8caf78f7a75a2c01ef4a39ce04b72",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-compact",
+        "width": 360,
+        "height": 800,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 234409,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "da1596fb35c2e4f43b2d7e53420e11eb69cc2ec2f14ddabb5a90ec6010d3a770",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 234409,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "da1596fb35c2e4f43b2d7e53420e11eb69cc2ec2f14ddabb5a90ec6010d3a770",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-compact",
+        "width": 360,
+        "height": 800,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 234543,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "0758975498a2a3c5d9ef8f670c1bf85e6ced7178627fc6500b43e979e2b15e0d",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 234543,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "0758975498a2a3c5d9ef8f670c1bf85e6ced7178627fc6500b43e979e2b15e0d",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-tall",
+        "width": 412,
+        "height": 915,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 307065,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "3a8a64ff09ba687edcf0863939cf37a6712f47e45e7a7c0cec36d4ec1fe6e107",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 307065,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "3a8a64ff09ba687edcf0863939cf37a6712f47e45e7a7c0cec36d4ec1fe6e107",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-tall",
+        "width": 412,
+        "height": 915,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 307236,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "fe2c1c9c472af694c095afc2f7c1b13488d42b2284b4a84ad32d6a4226ee769f",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 307236,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "fe2c1c9c472af694c095afc2f7c1b13488d42b2284b4a84ad32d6a4226ee769f",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "exact": true
+      }
+    ]
+  },
+  "associatedPresentationComparison": {
+    "baselineCommit": "71504ac77a33f888fe65a49c60069a27153f1bea",
+    "method": "Exact associated RGBA readPixels: current production versus historical production with only the same final associated-alpha presentation adapter; no V4 or timeline calculation changes",
+    "samples": [
+      {
+        "label": "iphone-se",
+        "width": 375,
+        "height": 667,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 254375,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "953f9225c8415065c54a6ac883b06b7059539e232da5d45ee638085e8631caa4",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 254375,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "953f9225c8415065c54a6ac883b06b7059539e232da5d45ee638085e8631caa4",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-se",
+        "width": 375,
+        "height": 667,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 254518,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "92be6438cea8181972c13cef304f7606e6fcdf311bab9350b1adb89c5ae270f1",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 254518,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "92be6438cea8181972c13cef304f7606e6fcdf311bab9350b1adb89c5ae270f1",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-tall",
+        "width": 393,
+        "height": 852,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 279341,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "f33738d57072627115aa75aeee623697459076cbd8b790215991a59d5779d191",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 279341,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "f33738d57072627115aa75aeee623697459076cbd8b790215991a59d5779d191",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-tall",
+        "width": 393,
+        "height": 852,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 279493,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "55b3a1875b868041465f4395743480867c834a86e6befb798b96940378bfcbd2",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 279493,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "55b3a1875b868041465f4395743480867c834a86e6befb798b96940378bfcbd2",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-compact",
+        "width": 360,
+        "height": 800,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 234409,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "04b7090a9ad46e7573aed5e6e7a8ad1ad48a3361c3700586f25e8d92bda38345",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 234409,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "04b7090a9ad46e7573aed5e6e7a8ad1ad48a3361c3700586f25e8d92bda38345",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-compact",
+        "width": 360,
+        "height": 800,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 234543,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "7359a0df80a6b1c881c52c29c6e6de0483790a3e4b29a9c35d2904f463355fa0",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 234543,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "7359a0df80a6b1c881c52c29c6e6de0483790a3e4b29a9c35d2904f463355fa0",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-tall",
+        "width": 412,
+        "height": 915,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 307065,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "ce2dde849ecdc21d93bc8cb7c14ee558a2af8b26f34992a70d4771f44a8d9dc3",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 307065,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "ce2dde849ecdc21d93bc8cb7c14ee558a2af8b26f34992a70d4771f44a8d9dc3",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-tall",
+        "width": 412,
+        "height": 915,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 307236,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "8cb85fe0507dae12b20e061c9b4a8c3197175c5cfb8d5ad70342cbde18e1e02d",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 307236,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "8cb85fe0507dae12b20e061c9b4a8c3197175c5cfb8d5ad70342cbde18e1e02d",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "exact": true
+      }
+    ]
+  },
+  "offscreenScissors": [
+    {
+      "target": [
+        200,
+        -200
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        116,
+        1830,
+        568,
+        0
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        200,
+        1500
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        116,
+        0,
+        568,
+        0
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        -500,
+        400
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        0,
+        746,
+        0,
+        568
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        1500,
+        400
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        824,
+        746,
+        0,
+        568
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        0,
+        0
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        0,
+        1546,
+        284,
+        284
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        200,
+        400
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        116,
+        746,
+        568,
+        568
+      ],
+      "glError": 0
+    }
+  ]
+}

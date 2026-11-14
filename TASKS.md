@@ -2,7 +2,17 @@
 
 Updated: 2026-11-14 (Europe/Rome)
 
-## NOW — Premium Intro V5 and first-start black-screen correction
+## NOW — Exact approved photographic opening, preserving corrected V5
+
+- [x] Diagnose and fix WK alpha compositing and native/GPU ownership; preserve safe checkpoint.
+- [x] Pass395 application tests, source/raster/content checks,92GPU frames and16V4 comparisons.
+- [x] Record actual corrected iPhone handoff and no-Metro Simulator CPU-pressure startup.
+- [ ] Complete remaining native Home/accessibility checks and preserve their actual boundaries.
+- [ ] Use byte-exact archived Founder photograph for native/RN/Home opening; reveal existing scene smoothly.
+- [ ] Verify final photographic opening on iPhone without Metro and record complete clean journey.
+- [ ] Review final diff/secrets, commit and push authorized feature branch; no stores/production.
+
+## PREVIOUS — Premium Intro V5 and first-start black-screen correction
 
 - [x] Archive approved reference; derive one metallic foreground/steel background pipeline
   with exact Linux Libertine O glyphs/rings and shared native/fallback/GPU placement.

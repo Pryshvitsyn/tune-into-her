@@ -1,0 +1,92 @@
+{
+  "oldAndDiagnosticContexts": {
+    "native": {
+      "mode": "native",
+      "view": [
+        375,
+        667
+      ]
+    },
+    "tiles": {
+      "javascriptJSON": "{\"straight\":{\"attrs\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":false,\"preserveDrawingBuffer\":true,\"stencil\":false},\"raw\":[51,77,102,64]},\"associated\":{\"attrs\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":true,\"stencil\":false},\"raw\":[13,19,26,64]},\"referenceRaw\":[52,76,104,64],\"dpr\":2,\"viewport\":[375,667]}",
+      "mode": "tiles",
+      "system": "26.5",
+      "view": [
+        375,
+        667
+      ]
+    },
+    "production": {
+      "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":false,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":0,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+      "mode": "production",
+      "system": "26.5",
+      "view": [
+        375,
+        667
+      ]
+    },
+    "associatedCorrected": {
+      "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":0,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+      "mode": "associatedCorrected",
+      "system": "26.5",
+      "view": [
+        375,
+        667
+      ]
+    }
+  },
+  "currentProductionNativeUnderlayContext": {
+    "method": "Current production HTML unmodified, testMode true seek(0), native UIImage underlay identical to reference",
+    "report": {
+      "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":0,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+      "mode": "associatedCorrected",
+      "system": "26.5",
+      "view": [
+        375,
+        667
+      ]
+    },
+    "state": {
+      "context": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "default",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false
+      },
+      "state": {
+        "loaded": true,
+        "started": false,
+        "preparedToken": null,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 2,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "dpr": 2,
+      "viewport": [
+        375,
+        667
+      ],
+      "canvas": [
+        750,
+        1334
+      ]
+    }
+  }
+}

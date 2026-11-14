@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 
 import { FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_WIDTH_FRACTION } from '../src/intro/brandBackground.generated';
 import { createLaunchState, reduceLaunch, shouldAnimateLaunch } from '../src/intro/launchState';
-import { makeSceneFragment, makeSphereHtml } from '../src/intro/sphereHtml';
+import { makeAssociatedAlphaFragment, makeSceneFragment, makeSphereHtml } from '../src/intro/sphereHtml';
 import { INTRO_MS, sceneAt } from '../src/intro/timeline';
 import { V4_FRAGMENT } from '../src/intro/v4Shaders.generated';
 
@@ -93,11 +93,23 @@ async function bootRuntime() {
 
 function start(runtime: Awaited<ReturnType<typeof bootRuntime>>, animate = true, reducedMotion = false) {
   runtime.command({ type: 'configure', target: { x: 200, y: 470, radius: 100 }, ink: [.16, .27, .35] });
-  runtime.command({ type: 'start', animate, reducedMotion });
+  runtime.command({ type: 'prepare', token: 1, animate, reducedMotion });
+  runtime.command({ type: 'release', token: 1 });
   runtime.step(1); // first RAF establishes its monotonic anchor
 }
 
 describe('V5 intro presentation boundaries', () => {
+  it('associates only the final canvas output, retaining the original straight V4/scene calculations', () => {
+    const straight = makeSceneFragment();
+    const associated = makeAssociatedAlphaFragment(straight);
+    expect(associated.slice(0, associated.indexOf('\nvoid main() {')))
+      .toBe(straight.replace('void main() {', 'void composeScene() {'));
+    expect(associated).toContain('clamp(gl_FragColor.rgb, 0.0, 1.0) * gl_FragColor.a');
+    expect(makeSphereHtml('AAAA')).toContain('"associatedAlpha":true');
+    expect(makeSphereHtml('AAAA', true, true)).toContain('"associatedAlpha":false');
+    expect(() => makeSphereHtml('AAAA', false, true)).toThrow('restricted');
+  });
+
   it('uploads the original V4 texture unchanged and premultiplies only the metallic foreground', async () => {
     const runtime = await bootRuntime();
     expect(runtime.uploads).toEqual([
@@ -151,13 +163,71 @@ describe('V5 intro presentation boundaries', () => {
 });
 
 describe('shared scene runtime lifecycle', () => {
+  it('keeps the prepared GPU frame frozen until the matching native visibility acknowledgment', async () => {
+    const runtime = await bootRuntime();
+    runtime.command({ type: 'configure', target: { x: 200, y: 470, radius: 100 } });
+    runtime.command({ type: 'prepare', token: 7, animate: true, reducedMotion: false });
+    const prepared = runtime.state();
+    expect(runtime.messages.at(-1)).toMatchObject({ type: 'prepared', elapsed: 0, started: false, running: false });
+    expect(runtime.frames.size).toBe(0);
+    runtime.step(80_000);
+    expect(runtime.state()).toEqual(prepared);
+    runtime.command({ type: 'release', token: 6 });
+    runtime.command({ type: 'start', animate: true }); // obsolete one-step protocol cannot run unseen
+    expect(runtime.frames.size).toBe(0);
+    runtime.command({ type: 'release', token: 7 });
+    runtime.step(1); runtime.step(600);
+    expect(runtime.state().elapsed).toBe(600);
+    runtime.command({ type: 'prepare', token: 8, animate: true });
+    runtime.command({ type: 'release', token: 7 });
+    expect(runtime.state().elapsed).toBe(600); // duplicate/stale bridge commands never replay
+  });
+
+  it('keeps a prepared reduced-motion final sphere still until visibility commits', async () => {
+    const runtime = await bootRuntime();
+    runtime.command({ type: 'prepare', token: 'reduced', animate: true, reducedMotion: true });
+    expect(runtime.state()).toMatchObject({ elapsed: INTRO_MS, reduced: true });
+    runtime.step(90_000);
+    expect(runtime.frames.size).toBe(0);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    runtime.command({ type: 'release', token: 'reduced' });
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+    expect(runtime.frames.size).toBe(0);
+  });
+
+  it('commits a live accessibility skip before release without hidden completion or replay', async () => {
+    const runtime = await bootRuntime();
+    runtime.command({ type: 'prepare', token: 1, animate: true });
+    runtime.command({ type: 'reduce-motion', value: true });
+    runtime.command({ type: 'reduce-motion', value: false });
+    expect(runtime.state().elapsed).toBe(INTRO_MS);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    expect(runtime.frames.size).toBe(0);
+    runtime.command({ type: 'release', token: 1 }); runtime.step(1); runtime.step(1000);
+    expect(runtime.state().elapsed).toBe(INTRO_MS);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+  });
+
+  it('does not start a prepared frame in the background or count time before foreground presentation', async () => {
+    const runtime = await bootRuntime();
+    runtime.command({ type: 'prepare', token: 1, animate: true });
+    runtime.command({ type: 'active', value: false });
+    runtime.command({ type: 'release', token: 1 });
+    runtime.step(90_000);
+    expect(runtime.state().elapsed).toBe(0);
+    expect(runtime.frames.size).toBe(0);
+    runtime.command({ type: 'active', value: true }); runtime.step(1); runtime.step(300);
+    expect(runtime.state().elapsed).toBe(300);
+  });
+
   it.each([
     [200, -200], [200, 1200], [-500, 400], [1000, 400],
     [0, 0], [400, 800], [200, 400],
   ])('intersects the completed sphere scissor with its viewport at (%s,%s)', async (x, y) => {
     const runtime = await bootRuntime();
     runtime.command({ type: 'configure', target: { x, y, radius: 140 } });
-    runtime.command({ type: 'start', animate: false, reducedMotion: false });
+    runtime.command({ type: 'prepare', token: 1, animate: false, reducedMotion: false });
+    runtime.command({ type: 'release', token: 1 });
     const [left, bottom, width, height] = runtime.values.scissor as [number, number, number, number];
     expect([left, bottom, width, height].every(Number.isFinite)).toBe(true);
     expect(left).toBeGreaterThanOrEqual(0);

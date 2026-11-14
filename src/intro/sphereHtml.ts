@@ -124,7 +124,22 @@ function json(value: unknown): string {
   return JSON.stringify(value).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
 }
 
-export function makeSphereHtml(sourceBase64: string, testMode = false): string {
+/** Presentation adapter only: retain the straight-color scene/V4 calculations above.
+ * Cocoa WebView compositors on affected iOS versions treat a transparent WebGL
+ * IOSurface as associated alpha even when the false context option is reported.
+ * Use the unambiguous associated contract on every platform, exactly once.
+ */
+export function makeAssociatedAlphaFragment(fragment: string): string {
+  return replaceOnce(fragment, 'void main() {', 'void composeScene() {') + `
+void main() {
+  composeScene();
+  gl_FragColor = vec4(clamp(gl_FragColor.rgb, 0.0, 1.0) * gl_FragColor.a, gl_FragColor.a);
+}
+`;
+}
+
+export function makeSphereHtml(sourceBase64: string, testMode = false, straightReference = false): string {
+  if (straightReference && !testMode) throw new Error('Straight reference is restricted to GPU regression capture');
   if (!/^[a-zA-Z0-9+/=\r\n]+$/.test(sourceBase64)) throw new Error('Invalid local sphere texture');
   const config = {
     source: `data:image/png;base64,${sourceBase64}`,
@@ -136,7 +151,8 @@ export function makeSphereHtml(sourceBase64: string, testMode = false): string {
       centerY: FIRST_FRAME_LOGO_CENTER_Y,
     },
     vertex: V4_VERTEX,
-    fragment: makeSceneFragment(),
+    fragment: straightReference ? makeSceneFragment() : makeAssociatedAlphaFragment(makeSceneFragment()),
+    associatedAlpha: !straightReference,
     duration: INTRO_MS,
     testMode,
   };
@@ -155,7 +171,7 @@ const WEB_RUNTIME = String.raw`
   let gl, program, frame = 0, last = 0, motionMs = 0, elapsed = 0;
   let loaded = false, started = false, active = true, reduced = false, failed = false, ended = false;
   let visible = !document.hidden;
-  let target = null, draws = 0;
+  let target = null, draws = 0, preparedToken = null, forceFinished = false;
   const textures = [], shaders = [];
   let buffer;
   const post = (type, extra = {}) => {
@@ -238,9 +254,16 @@ const WEB_RUNTIME = String.raw`
     if (!frame) frame = requestAnimationFrame(tick);
   }
   function finish() {
+    forceFinished = true;
     elapsed = C.duration;
     draw();
     if (loaded) gl.finish();
+    // A skip/reduced-motion preference can arrive during preparation. It must
+    // update the frozen frame without completing an as-yet hidden presentation.
+    if (!started) {
+      if (preparedToken !== null) post('prepared', {token: preparedToken});
+      return;
+    }
     post('clock');
     if (!ended) {ended=true; post('complete');}
     schedule();
@@ -252,12 +275,23 @@ const WEB_RUNTIME = String.raw`
         const t = command.target;
         if(t && [t.x,t.y,t.radius].every(Number.isFinite) && t.radius>0) target = t;
         draw();
-      } else if (command.type === 'start' && !started && loaded) {
+      } else if (command.type === 'prepare' && !started && loaded && preparedToken === null
+                 && (typeof command.token === 'number' || typeof command.token === 'string')) {
+        // Draw the configured first frame without advancing either scene or V4 time.
+        // RN exposes this frozen surface behind its opaque native cover, then releases
+        // it only after the UI-thread visibility commit. A bridge message is not paint.
+        preparedToken = command.token;
         reduced = !!command.reducedMotion;
-        started = true;
-        elapsed = (!command.animate || reduced) ? C.duration : 0;
+        elapsed = (!command.animate || reduced || forceFinished) ? C.duration : 0;
         motionMs = 0; ended = false; last = 0;
-        draw(); gl.finish(); post('clock');
+        draw(); gl.finish();
+        const error = gl.getError();
+        if(error !== gl.NO_ERROR) throw new Error('GPU first frame failed: '+error);
+        post('prepared', {token: preparedToken});
+      } else if (command.type === 'release' && !started && loaded
+                 && preparedToken !== null && command.token === preparedToken) {
+        started = true; last = 0;
+        post('clock');
         if(elapsed>=C.duration) {ended=true; post('complete');}
         schedule();
       } else if (command.type === 'active') {
@@ -274,7 +308,7 @@ const WEB_RUNTIME = String.raw`
   };
   if(C.testMode) window.__TIH_TEST__ = {
     seek(ms) {stop(); elapsed=Math.max(0,Math.min(C.duration,ms)); motionMs=ms; draw();},
-    state() {return {loaded,started,active,reduced,failed,elapsed,draws,scene:sceneAt(elapsed,size(),safeTarget())};},
+    state() {return {loaded,started,preparedToken,active,reduced,failed,elapsed,draws,scene:sceneAt(elapsed,size(),safeTarget())};},
   };
   document.addEventListener('visibilitychange',()=>{
     // Visibility and RN focus are independent. Returning to a visible WebView must
@@ -290,7 +324,7 @@ const WEB_RUNTIME = String.raw`
   });
   async function boot() {
     try {
-      gl=canvas.getContext('webgl',{alpha:true,antialias:true,premultipliedAlpha:false});
+      gl=canvas.getContext('webgl',{alpha:true,antialias:true,premultipliedAlpha:C.associatedAlpha});
       if(!gl) throw new Error('WebGL unavailable');
       const compile=(type,source)=>{
         const shader=gl.createShader(type); if(!shader) throw new Error('Shader allocation failed');

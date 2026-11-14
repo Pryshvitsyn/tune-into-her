@@ -1,0 +1,110 @@
+{
+  "scope": "Actual foreground standalone UIKit WK host, guarded owned iOS26.5 Simulator; production Tune app and data untouched",
+  "sourceFiles": [
+    "Host.swift",
+    "prepare.cjs",
+    "run-host.cjs"
+  ],
+  "screen": {
+    "width": 750,
+    "height": 1334,
+    "viewport": [
+      375,
+      667
+    ],
+    "dpr": 2
+  },
+  "tiles": {
+    "actualContextReportedFalseRaw": [
+      51,
+      77,
+      102,
+      64
+    ],
+    "reportedFalseButNativeCompositedRGB": [
+      145,
+      181,
+      223,
+      255
+    ],
+    "sameCanvas2DCopy": [
+      107,
+      123,
+      147,
+      255
+    ],
+    "matchedAssociatedContextAndOutput": [
+      107,
+      123,
+      147,
+      255
+    ],
+    "nativeUIKitBackground": [
+      126,
+      139,
+      161,
+      255
+    ]
+  },
+  "comparisons": {
+    "production": {
+      "meanAbsoluteRGB": 2.2546904129009393,
+      "rmse": 10.124348037239733,
+      "psnrDb": 28.02346228540541,
+      "maxChannelError": 107,
+      "pixelsOver2LSB": 64260
+    },
+    "associatedCorrected": {
+      "meanAbsoluteRGB": 0.054283182704235336,
+      "rmse": 0.255194484076698,
+      "psnrDb": 59.993377947582324,
+      "maxChannelError": 2,
+      "pixelsOver2LSB": 0,
+      "scope": "Earlier diagnostic coupled context/output control; current production source parity is recorded separately and uses the current makeSphereHtml output."
+    }
+  },
+  "conclusion": "The actual iOS WK/Cocoa presentation compositor treats straight-color WebGL output as associated alpha despite reporting premultipliedAlpha=false. Explicit associated context and associated output restores the native static appearance. Texture upload is not the cause.",
+  "primarySources": [
+    "https://bugs.webkit.org/show_bug.cgi?id=200026",
+    "https://github.com/WebKit/WebKit/commit/3e12766ced21f82a68008cfaf3114e0dd57c8e2c"
+  ],
+  "invalidAttempts": [
+    {
+      "file": "native-compositor.xcresult",
+      "reason": "Temporary Swift helper compile error, corrected"
+    },
+    {
+      "file": "native-compositor-v2.xcresult",
+      "reason": "Optional WK.takeSnapshot hung; runner cancelled"
+    },
+    {
+      "file": "native-compositor-v3.xcresult",
+      "reason": "UI-test runner WK view was offscreen320x480; screenshots showed foreground Tune app instead. PASS was execution only, rejected as visual evidence"
+    }
+  ],
+  "limitations": [
+    "Standalone native WK host reproduces the compositor cause; corrected production app launch/handoff and physical-device runtime need separate final build verification",
+    "Native comparison excludes the top40pt status bar; no image alignment/warping/color correction was applied",
+    "Corrected comparison uses only coupled context/output conversion on the pre-fix production HTML; original V4 calculations, source assets, shaders, timeline and font remain unchanged"
+  ],
+  "files": {
+    "native-static.png": "30a438a91ee16e35d59f93fd18f7bedb5ca7c33a9fec0e945ed854285f8de47c",
+    "old-straight-wk.png": "a166a6d1eee8c72e8bcf0e48bc07a654baeddeb47a63a5b7aa1b9a8062d28521",
+    "compositor-alpha-tiles.png": "9cf81b5df84efbf03e8846139b35c4b650263f5a908e97e9590b760fd6f62fcf",
+    "diagnostic-associated-output-control.png": "f720bf5b33e563fd83c52cf604054b6203beb68dcfa3b89017d42cbc37cb3c3f",
+    "current-associated-wk0-native-underlay.png": "2f5105a57d9cda69178efe232f83c99295100d6e8abd76195afadba76428b7c6",
+    "actual-contexts.json": "a7378d2ebb06ac806b2333fbb8f80a6506f0b583f6061c76b17a4c20a476946b"
+  },
+  "currentProductionSameNativeUnderlayParity": {
+    "method": "Current production HTML/shader at explicit testMode seek(0), with the same native UIImage underlay as the reference. Identical 750×1334 screens; no alignment, resizing or color correction. Excludes the top 40pt system status bar.",
+    "meanAbsoluteRGB": 0.054283182704235336,
+    "rmse": 0.255194484076698,
+    "psnrDb": 59.993377947582324,
+    "maxChannelError": 2,
+    "pixelsOver2LSB": 0
+  },
+  "currentProductionSourceSHA256": "8d0a37109e9c6938069d148b38ff034ea4ea3e441fdfdc23347cd17c9e6d2f27",
+  "currentProductionFragmentSHA256": "bd9f1b0b8665a9fe14159294933b44410423a3be4b82d29c02b65d8333bc827d",
+  "firstFrameOwnershipBoundary": "Native UIImage reference versus actual foreground WK standalone host, not the production-app handoff. Final app ownership/physical validation is separate.",
+  "preFixCompositorSourceEqualsCommitted2c77ba0": true
+}

@@ -1,0 +1,121 @@
+{
+  "kind": "before-correction actual physical handoff evidence",
+  "repositoryContextReviewedAgainst": "2c77ba0",
+  "captureSourceRevisionLimit": "Recording has no embedded Git revision; exact signed native and embedded JavaScript checksums identify the measured artifact.",
+  "sourceRecording": {
+    "sha256": "a8d59d0e726b461fd779f58d2b8a4ec5e339399fd4985c470a865a02334b2c39",
+    "originalFrameCount": 1361,
+    "durationSeconds": 24.076683,
+    "artifactType": "explicit native-QA pressure Release; not normal production binary",
+    "nativeSHA256": "f7257336fe3f6d6f01a12ea9370250ffc2284bedbe65c64f5585a3ab4d25ff07",
+    "embeddedJSSHA256": "7caa32a0780a33022f5962a762f83709441f2d3fb5593ac4a0b3fdd97f9137b0",
+    "nativePressureArgumentRequested": true,
+    "localMetroPortsClosed": true
+  },
+  "frames": [
+    {
+      "originalIndex": 336,
+      "moviePTSSeconds": 6.214717,
+      "observedAppearance": "correct metallic static foreground",
+      "producer": "Native/Expo/RN static copy indistinguishable without producer logs"
+    },
+    {
+      "originalIndex": 337,
+      "moviePTSSeconds": 6.266317,
+      "observedAppearance": "foreground absent; steel background remains",
+      "recordedBackgroundOnlyFrameSpanMilliseconds": 33.416,
+      "producer": "transient between static copy and visible GPU; exact native present timing was not logged"
+    },
+    {
+      "originalIndex": 338,
+      "moviePTSSeconds": 6.299733,
+      "observedAppearance": "white-blue halo and washed foreground matching the isolated wrong-associated control signature",
+      "producer": "GPU-visible appearance inferred from runtime order and subsequent animation"
+    }
+  ],
+  "sameRecordingCrop": {
+    "left": 40,
+    "top": 750,
+    "width": 1046,
+    "height": 750
+  },
+  "sameRecordingMetrics": {
+    "nativeToMissingForeground": {
+      "meanAbsoluteRGBDifference": 8.573328234544295,
+      "fractionPixelMeanChangeAbove8": 0.2242727852135118,
+      "newBrightBluePixels": 0,
+      "newBrightBlueFraction": 0
+    },
+    "nativeToGPU": {
+      "meanAbsoluteRGBDifference": 6.772639898024219,
+      "fractionPixelMeanChangeAbove8": 0.2031485022307202,
+      "newBrightBluePixels": 94403,
+      "newBrightBlueFraction": 0.12033524537922244
+    }
+  },
+  "diagnosticControl": {
+    "type": "deliberately incorrect associated-context/straight-output isolated Chromium control, static t0; not an approved candidate",
+    "normalization": {
+      "uniformScale": 1.4325699745547074,
+      "verticalOffsetPixels": 2,
+      "source": [
+        786,
+        1704
+      ],
+      "physical": [
+        1126,
+        2436
+      ]
+    },
+    "nativeToControl": {
+      "meanAbsoluteRGBDifference": 8.650102400679838,
+      "fractionPixelMeanChangeAbove8": 0.21344933078393882,
+      "newBrightBluePixels": 97200,
+      "newBrightBlueFraction": 0.12390057361376673
+    },
+    "gpuToControl": {
+      "meanAbsoluteRGBDifference": 3.3306607180794563,
+      "fractionPixelMeanChangeAbove8": 0.11607648183556406,
+      "newBrightBluePixels": 30351,
+      "newBrightBlueFraction": 0.03868833652007648
+    }
+  },
+  "causalLimits": [
+    "The foreground disappearance and appearance change are directly observed; the old movie does not report actual renderer producer or GPU elapsed at these exact frames.",
+    "Similarity to the deliberate association-mismatch control supports the alpha-compositing diagnosis; it is not a measurement of WebKit internal IOSurface flags.",
+    "Different viewport,DPR,codec and material clock prevent interpreting cross-engine absolute pixel error as equality.",
+    "Existing0black-frame results did not test foreground continuity and do not negate the observed background-only frame."
+  ],
+  "privacy": {
+    "onlyCleanIntroCropsIncluded": true,
+    "noDeviceIDsProcessIDsNamesHomeOtherAppsOrDestinationIncluded": true,
+    "rawRecordingAndPrivateLateFootageExcluded": true
+  },
+  "copyFiles": [
+    {
+      "file": "before-static-frame336-logo.png",
+      "sha256": "593f5e54956fdf6b332a6ce896eb7146af65b4de455f6ce4771e527003b8fccb",
+      "bytes": 649447
+    },
+    {
+      "file": "before-foreground-gap-frame337-logo.png",
+      "sha256": "777aa75ce5da67cbe5d33113947f7e4e5741c468a6914916b4f4ea1a865283c1",
+      "bytes": 240342
+    },
+    {
+      "file": "before-halo-frame338-logo.png",
+      "sha256": "648fc184e54734c81d1abd6021d47dbc8613c61e8992c9b40e5cf8846043fe8f",
+      "bytes": 751049
+    },
+    {
+      "file": "diagnostic-wrong-associated-control-logo.png",
+      "sha256": "b1a06dfa7800180b189e3d55a886e5a6ec5f5eade8ce8f6707fc14fa7df4c677",
+      "bytes": 804071
+    },
+    {
+      "file": "before-static-gap-gpu-control-contact.png",
+      "sha256": "68b9cc1bfb1bfecf84486c9afcbae663debeafd4efc4275a3cfcf472c9ec990b",
+      "bytes": 908219
+    }
+  ]
+}

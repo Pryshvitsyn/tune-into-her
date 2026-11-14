@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "kind": "Physical normal Release correction checkpoint before subsequent exact-photo artwork change",
+  "sourceRecording": {
+    "sha256": "4a393068c18bbe32fd46a123f8d30a578fe7bc67e8e7622a1ce23e6b57336341",
+    "durationSeconds": 19.284417,
+    "decodedDisplayedFrameCount": 1004,
+    "containerDeclaredSamples": 1192,
+    "videoPixels": [
+      1126,
+      2436
+    ],
+    "sampleCountLimit": "MOV header declares1192 samples; independent FFprobe decoded-frame timestamps and decoded RGB/gray streams agree1004 displayed frames. Metrics use every decoded original frame, never a resampled frame rate."
+  },
+  "artifact": {
+    "nativeBinarySHA256": "62b7aeff157d4903318dd2c0a0753b25a2320ba97a6d18514ad0146ca8db9141",
+    "embeddedJavaScriptSHA256": "cded57cc5076bd325d7f009b0d7bf48cb08830af7cc0dc4c185d106b4b7a0436",
+    "codesignVerified": true,
+    "normalRelease": true,
+    "noAppDeletion": true,
+    "sourceSHA256": {
+      "src/intro/SphereIntroSurface.tsx": "67614cb04e8bc6f5cff062d81ef80386455d9403ffb00738ba59051cf92c7d32",
+      "src/intro/surfaceHandoff.ts": "3524e61acb41d257340eb280ebd3a121c6f93603f58979cdb629d43185624709",
+      "src/intro/sphereHtml.ts": "8d0a37109e9c6938069d148b38ff034ea4ea3e441fdfdc23347cd17c9e6d2f27"
+    }
+  },
+  "environment": {
+    "physicalDevice": true,
+    "signedNormalRelease": true,
+    "localMetroPortsClosed": true,
+    "screenSourcePinnedMuxed": true,
+    "ownerUnlockConfirmedByGuard": true,
+    "dataPreservingUpdate": true,
+    "noAppDeletionResetBillingOrSettingsActions": true,
+    "nativePressureRequested": false
+  },
+  "allDecodedFrameBlackAnalysis": {
+    "method": "All original frames central80percent ROI area64x64 gray; black>=98percent luma<=18; nearblack>=98percent luma<=30",
+    "blackFrameCount": 0,
+    "nearBlackFrameCount": 0
+  },
+  "manualForegroundWindow": {
+    "startSeconds": 13.35,
+    "endSeconds": 14.2,
+    "frameCount": 50,
+    "backgroundOnlyGapFrames": [],
+    "haloSignatureFrames": [],
+    "minimumPresenceRatio": 0.9897417757339931,
+    "limits": "Tiny32px area-average metric calibrated to old static/gap/halo crops; used only while logo expected, not for deliberate later animation."
+  },
+  "adjacentOwnershipCandidate": [
+    {
+      "decodedOriginalFrame": 667,
+      "moviePTSSeconds": 13.5704,
+      "observed": "static-like premium metallic appearance",
+      "producer": "Native/Expo/RN static copies cannot be distinguished from pixels alone"
+    },
+    {
+      "decodedOriginalFrame": 668,
+      "moviePTSSeconds": 13.5871,
+      "observed": "same metallic geometry/material retained; OS status-bar style switches; then smooth scene motion",
+      "producer": "GPU-like ownership boundary inferred from visual change and subsequent animation; actual GPU-present log unavailable"
+    }
+  ],
+  "alignedCropPixels": {
+    "left": 40,
+    "top": 750,
+    "width": 1046,
+    "height": 750
+  },
+  "comparison": {
+    "beforeStaticToGPU": {
+      "meanAbsoluteRGBDifference": 6.772639898024219,
+      "newBrightBluePixels": 94403,
+      "newBrightBlueFraction": 0.12033524537922244
+    },
+    "afterStaticToGPU": {
+      "meanAbsoluteRGBDifference": 1.7519120458891013,
+      "newBrightBluePixels": 3,
+      "newBrightBlueFraction": 0.000003824091778202677
+    },
+    "oldStaticToCorrectedStatic": {
+      "meanAbsoluteRGBDifference": 1.3452526025069047,
+      "newBrightBluePixels": 7,
+      "newBrightBlueFraction": 0.000008922880815806247
+    }
+  },
+  "requestedTimingSamples": [
+    {
+      "requestedRelativeMilliseconds": 0,
+      "originalDecodedFrame": 668,
+      "moviePTSSeconds": 13.5871,
+      "actualRelativeMilliseconds": 0,
+      "file": "after-timing-0000ms-frame668-logo.png"
+    },
+    {
+      "requestedRelativeMilliseconds": 100,
+      "originalDecodedFrame": 674,
+      "moviePTSSeconds": 13.687333,
+      "actualRelativeMilliseconds": 100.233,
+      "file": "after-timing-0100ms-frame674-logo.png"
+    },
+    {
+      "requestedRelativeMilliseconds": 300,
+      "originalDecodedFrame": 685,
+      "moviePTSSeconds": 13.887783,
+      "actualRelativeMilliseconds": 300.683,
+      "file": "after-timing-0300ms-frame685-logo.png"
+    },
+    {
+      "requestedRelativeMilliseconds": 600,
+      "originalDecodedFrame": 703,
+      "moviePTSSeconds": 14.188617,
+      "actualRelativeMilliseconds": 601.517,
+      "file": "after-timing-0600ms-frame703-logo.png"
+    },
+    {
+      "requestedRelativeMilliseconds": 1000,
+      "originalDecodedFrame": 724,
+      "moviePTSSeconds": 14.589533,
+      "actualRelativeMilliseconds": 1002.433,
+      "file": "after-timing-1000ms-frame724-logo.png"
+    },
+    {
+      "requestedRelativeMilliseconds": 1500,
+      "originalDecodedFrame": 754,
+      "moviePTSSeconds": 15.090833,
+      "actualRelativeMilliseconds": 1503.733,
+      "file": "after-timing-1500ms-frame754-logo.png"
+    },
+    {
+      "requestedRelativeMilliseconds": 2000,
+      "originalDecodedFrame": 783,
+      "moviePTSSeconds": 15.592017,
+      "actualRelativeMilliseconds": 2004.917,
+      "file": "after-timing-2000ms-frame783-logo.png"
+    }
+  ],
+  "observedSequence": {
+    "privatePreludeExcluded": true,
+    "firstCleanFullAppPlateauEstimateSeconds": 13.35,
+    "approximateStaticToMotionBoundarySeconds": 13.5871,
+    "depthTravelSeen": true,
+    "originalV4Seen": true,
+    "completedNineSecondAnimationAndDestinationCaptured": false,
+    "limit": "Recording ends during sphere stage. It proves this visible handoff only; full9s/destination acceptance requires the separate complete Simulator film and later complete physical run."
+  },
+  "privacy": {
+    "rawVideoExcluded": true,
+    "onlyReviewedIntroCrops": true,
+    "noDeviceIDsNamesProcessIDsHomePrivateChatOrDestination": true
+  },
+  "approval": "Technical before/after evidence only. Founder visual approval is not claimed. This is the intermediate SVG-metallic artwork checkpoint, not proof for the later exact-reference-photo opening."
+}

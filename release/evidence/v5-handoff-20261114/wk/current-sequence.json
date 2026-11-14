@@ -1,0 +1,693 @@
+{
+  "method": "Actual foreground standalone WK host; current production GPU shader unchanged; only test seek hook fixed at checkpoint plus diagnostic underlay matching the app shared curve",
+  "sourceCommit": "2c77ba01e1d654b225adab5ccb60820da71a2154",
+  "productionHtmlSHA256": "ce4454ccf209d6ab4ac1b6e329fba5df2806f3d2fc97652ca5dadc16fe83b0d5",
+  "productionFragmentSHA256": "bd9f1b0b8665a9fe14159294933b44410423a3be4b82d29c02b65d8333bc827d",
+  "sourceSHA256": "8d0a37109e9c6938069d148b38ff034ea4ea3e441fdfdc23347cd17c9e6d2f27",
+  "frames": [
+    {
+      "ms": 0,
+      "file": "wk-current-00000.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":0,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 0,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 710.2585031115381,
+            "shell": 0,
+            "depth": 0,
+            "logoWidth": 285,
+            "logoOpacity": 1,
+            "camera": 0,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "6d9905eba54109d86fd61786ca390d9832cb7307c13baabc7a5a36aab2279d94"
+    },
+    {
+      "ms": 100,
+      "file": "wk-current-00100.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":100,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 100,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 710.2585031115381,
+            "shell": 0,
+            "depth": 0,
+            "logoWidth": 285,
+            "logoOpacity": 1,
+            "camera": 0,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "2a500a67a82428acdff7a078ccdbf0f698c775098eedb2f15614731c7e9127b5"
+    },
+    {
+      "ms": 300,
+      "file": "wk-current-00300.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":300,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 300,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 710.2585031115381,
+            "shell": 0,
+            "depth": 0,
+            "logoWidth": 285,
+            "logoOpacity": 1,
+            "camera": 0,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "d6fbdcf8005368033e68081deb2b792a20b4313159a55f6aab8e10476e03e8da"
+    },
+    {
+      "ms": 500,
+      "file": "wk-current-00500.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":500,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 500,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 710.2585031115381,
+            "shell": 0,
+            "depth": 0,
+            "logoWidth": 285,
+            "logoOpacity": 1,
+            "camera": 0,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "ee460e6723fa49cc68068ba4fb9e758d42fa17da1f3d703343e2d90100b6af1b"
+    },
+    {
+      "ms": 600,
+      "file": "wk-current-00600.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":600,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":710.2585031115381,\"shell\":0,\"depth\":0,\"logoWidth\":285,\"logoOpacity\":1,\"camera\":0,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 600,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 710.2585031115381,
+            "shell": 0,
+            "depth": 0,
+            "logoWidth": 285,
+            "logoOpacity": 1,
+            "camera": 0,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "39f2ce7c754e5c834bf37f95ea687187af127e3928856c0f9571cf60d73d793e"
+    },
+    {
+      "ms": 1000,
+      "file": "wk-current-01000.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":1000,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":693.2918898007463,\"shell\":0.02198249542031346,\"depth\":0.006323466133223035,\"logoWidth\":276.35584253443096,\"logoOpacity\":1,\"camera\":0.13292943037803803,\"layers\":0.1262002743484225}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 1000,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 693.2918898007463,
+            "shell": 0.02198249542031346,
+            "depth": 0.006323466133223035,
+            "logoWidth": 276.35584253443096,
+            "logoOpacity": 1,
+            "camera": 0.13292943037803803,
+            "layers": 0.1262002743484225
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "7ab4192a35d9de5e4b43dae2e19b090806c417a91db570327bdc9b0f4564d6eb"
+    },
+    {
+      "ms": 1500,
+      "file": "wk-current-01500.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":1500,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":624.5454575232615,\"shell\":0.3267860777529005,\"depth\":0.14039794406321385,\"logoWidth\":241.33088057430456,\"logoOpacity\":1,\"camera\":0.6715415809452839,\"layers\":1}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 1500,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 624.5454575232615,
+            "shell": 0.3267860777529005,
+            "depth": 0.14039794406321385,
+            "logoWidth": 241.33088057430456,
+            "logoOpacity": 1,
+            "camera": 0.6715415809452839,
+            "layers": 1
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "e26393f6d577f75e2233688cf5af1b948e1080cafe43a06adb878d112ef550f8"
+    },
+    {
+      "ms": 2000,
+      "file": "wk-current-02000.png",
+      "backgroundOpacity": 1,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":2000,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":544.8841975745029,\"shell\":0.7537146346427845,\"depth\":0.43211786799007,\"logoWidth\":200.74502750575473,\"logoOpacity\":1,\"camera\":1.2956688427748353,\"layers\":1}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 2000,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 544.8841975745029,
+            "shell": 0.7537146346427845,
+            "depth": 0.43211786799007,
+            "logoWidth": 200.74502750575473,
+            "logoOpacity": 1,
+            "camera": 1.2956688427748353,
+            "layers": 1
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "9e4011d1a8b40880d3a6234e1d4b3007e288876d8eb7438393d2210187f2648a"
+    },
+    {
+      "ms": 3500,
+      "file": "wk-current-03500.png",
+      "backgroundOpacity": 0.7407407407407407,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":3500,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":258.06616891791106,\"shell\":1,\"depth\":1,\"logoWidth\":54.61685459014473,\"logoOpacity\":0.7407407407407407,\"camera\":3.542820732965069,\"layers\":1}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 3500,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 258.06616891791106,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 54.61685459014473,
+            "logoOpacity": 0.7407407407407407,
+            "camera": 3.542820732965069,
+            "layers": 1
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "d3b1ec964b2ebc3b382864aea9973eaa75f425ffb602bc50515c4ebf147ca772"
+    },
+    {
+      "ms": 4500,
+      "file": "wk-current-04500.png",
+      "backgroundOpacity": 0.41700960219478733,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":4500,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":142.5,\"shell\":1,\"depth\":1,\"logoWidth\":54.149999999999984,\"logoOpacity\":0,\"camera\":4.448254523659101,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 4500,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 142.5,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 54.149999999999984,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "7840c316194fbcbd8e22564763309916e481084ff68535ecf06660c7d8df3fba"
+    },
+    {
+      "ms": 6500,
+      "file": "wk-current-06500.png",
+      "backgroundOpacity": 0,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":6500,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":142.5,\"shell\":1,\"depth\":1,\"logoWidth\":54.149999999999984,\"logoOpacity\":0,\"camera\":4.448254523659101,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 6500,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 142.5,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 54.149999999999984,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "820b1a2d2a7eab642fc242003537ba5148f1d1123052284b512045d449e87ce4"
+    },
+    {
+      "ms": 9000,
+      "file": "wk-current-09000.png",
+      "backgroundOpacity": 0,
+      "report": {
+        "javascriptJSON": "{\"context\":{\"alpha\":true,\"antialias\":true,\"depth\":true,\"failIfMajorPerformanceCaveat\":false,\"powerPreference\":\"default\",\"premultipliedAlpha\":true,\"preserveDrawingBuffer\":false,\"stencil\":false},\"state\":{\"loaded\":true,\"started\":false,\"preparedToken\":null,\"active\":true,\"reduced\":false,\"failed\":false,\"elapsed\":9000,\"draws\":2,\"scene\":{\"x\":187.5,\"y\":333.5,\"radius\":142.5,\"shell\":1,\"depth\":1,\"logoWidth\":54.149999999999984,\"logoOpacity\":0,\"camera\":4.448254523659101,\"layers\":0}},\"dpr\":2,\"viewport\":[375,667],\"canvas\":[750,1334]}",
+        "mode": "associatedCorrected",
+        "system": "26.5",
+        "view": [
+          375,
+          667
+        ]
+      },
+      "state": {
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false
+        },
+        "state": {
+          "loaded": true,
+          "started": false,
+          "preparedToken": null,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 9000,
+          "draws": 2,
+          "scene": {
+            "x": 187.5,
+            "y": 333.5,
+            "radius": 142.5,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 54.149999999999984,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "dpr": 2,
+        "viewport": [
+          375,
+          667
+        ],
+        "canvas": [
+          750,
+          1334
+        ]
+      },
+      "screenshotSHA256": "df0025165b63d154b9c07ba5ff226278d70f2ce71d9971b3dec7efcd1caacf55"
+    }
+  ]
+}

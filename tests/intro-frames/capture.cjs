@@ -9,7 +9,7 @@ const vm = require('node:vm');
 const repo = path.resolve(__dirname, '../..');
 const ts = require(path.join(repo,'node_modules/typescript'));
 require.extensions['.ts'] = (module, name) => module._compile(ts.transpileModule(fs.readFileSync(name,'utf8'), {compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText, name);
-const {makeSphereHtml} = require(path.join(repo,'src/intro/sphereHtml.ts'));
+const {makeAssociatedAlphaFragment,makeSphereHtml} = require(path.join(repo,'src/intro/sphereHtml.ts'));
 const {INTRO_BACKGROUND_URI} = require(path.join(repo,'src/intro/brandBackground.generated.ts'));
 const {introBackgroundOpacity} = require(path.join(repo,'src/intro/introPresentation.ts'));
 // Load the historical production module graph, without rewriting either shader.
@@ -42,7 +42,18 @@ const historicalTexture=cp.execFileSync('git',['show',`${baselineCommit}:assets/
 if(!texture.equals(historicalTexture))throw new Error('Protected V4 texture differs from the baseline');
 fs.writeFileSync(htmlPath,makeSphereHtml(texture.toString('base64'),true));
 const baselineHtmlPath=path.join(out,'baseline-renderer.html');
-fs.writeFileSync(baselineHtmlPath,baselineMakeSphereHtml(historicalTexture.toString('base64'),true));
+const baselineHtml=baselineMakeSphereHtml(historicalTexture.toString('base64'),true);
+fs.writeFileSync(baselineHtmlPath,baselineHtml);
+const straightHtmlPath=path.join(out,'straight-reference-renderer.html');
+fs.writeFileSync(straightHtmlPath,makeSphereHtml(texture.toString('base64'),true,true));
+// Apply only the same final presentation adapter to the historical production
+// shader; its protected V4 calculations and original scene remain untouched.
+const baselineConfig=baselineHtml.match(/const C=([^\n]+);\nconst sceneAt=/);
+if(!baselineConfig)throw new Error('Historical renderer configuration boundary changed');
+const config=JSON.parse(baselineConfig[1]);
+config.fragment=makeAssociatedAlphaFragment(config.fragment);
+const baselineAssociatedHtmlPath=path.join(out,'baseline-associated-renderer.html');
+fs.writeFileSync(baselineAssociatedHtmlPath,baselineHtml.replace(baselineConfig[1],JSON.stringify(config)).replace('premultipliedAlpha:false','premultipliedAlpha:true'));
 const sleep = ms => new Promise(resolve => setTimeout(resolve,ms));
 const profile=fs.mkdtempSync('/tmp/tih-brand-chrome-');
 const log=fs.openSync(path.join(out,'chrome.log'),'w');
@@ -64,14 +75,15 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
   const rendererFiles=['src/intro/sphereHtml.ts','src/intro/timeline.ts','src/intro/sceneRuntime.generated.ts','src/intro/v4Shaders.generated.ts','src/intro/brand.generated.ts','src/intro/brandTexture.generated.ts','src/intro/brandBackground.generated.ts','src/intro/introPresentation.ts','assets/tune_into_her_sphere_source_clean.png'];
   const sourceSha256=Object.fromEntries(rendererFiles.map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync(path.join(repo,file))).digest('hex')]));
   const metadata={sourceSha256,sourceCommit:cp.execFileSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8'}).trim(),workingTreeDirty:!!cp.execFileSync('git',['status','--porcelain'],{cwd:repo,encoding:'utf8'}).trim(),capturedAt:new Date().toISOString(),engine:'Chromium headless WebGL / ANGLE SwiftShader; not iOS or Android native evidence',frames:[],events};
-  const times=[0,500,1000,1350,1800,2000,2350,2500,2850,3200,3500,3800,4000,4150,4300,4500,6500,9000,9360];
+  const times=[0,100,300,500,600,1000,1350,1500,1800,2000,2350,2500,2850,3200,3500,3800,4000,4150,4300,4500,6500,9000,9360];
   const waitForReady=async()=>{
    let state;
    for(let i=0;i<300;i++){state=await evaluate('window.__TIH_TEST__?.state()');if(state?.failed)throw new Error(`Renderer failed: ${JSON.stringify(state)}`);if(state?.loaded)return state;await sleep(50);}
    throw new Error('Renderer never ready');
   };
   const framebuffer=async ms=>evaluate(`(async()=>{window.__TIH_TEST__.seek(${ms});const canvas=document.querySelector('canvas');const gl=canvas.getContext('webgl');gl.finish();const pixels=new Uint8Array(canvas.width*canvas.height*4);gl.readPixels(0,0,canvas.width,canvas.height,gl.RGBA,gl.UNSIGNED_BYTE,pixels);const glError=gl.getError();let nonzeroAlphaPixels=0;for(let i=3;i<pixels.length;i+=4)if(pixels[i])nonzeroAlphaPixels++;const hash=await crypto.subtle.digest('SHA-256',pixels);return {nonzeroAlphaPixels,renderer:gl.getParameter(gl.RENDERER),version:gl.getParameter(gl.VERSION),sha256:Array.from(new Uint8Array(hash),x=>x.toString(16).padStart(2,'0')).join(''),byteCount:pixels.length,canvas:[canvas.width,canvas.height],glError};})()`);
-  metadata.v4Comparison={baselineCommit,method:'Exact SHA-256 equality of raw RGBA framebuffer readPixels at identical material-clock checkpoints; no background pixels',samples:[]};
+  metadata.v4Comparison={baselineCommit,method:'Exact raw straight-color RGBA readPixels: current test-only straightReference versus untouched historical production, preserving the original V4 calculation guard; no background pixels',samples:[]};
+  metadata.associatedPresentationComparison={baselineCommit,method:'Exact associated RGBA readPixels: current production versus historical production with only the same final associated-alpha presentation adapter; no V4 or timeline calculation changes',samples:[]};
   for(const [label,width,height] of [['iphone-se',375,667],['iphone-tall',393,852],['android-compact',360,800],['android-tall',412,915]]) {
    await cdp('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:2,mobile:true});
    await cdp('Page.navigate',{url:`file://${htmlPath}`});
@@ -81,7 +93,7 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
    for(const ms of times){
     const backgroundOpacity=introBackgroundOpacity(ms);
     await evaluate(`document.getElementById('intro-background').style.opacity=${backgroundOpacity};true`);
-    const info=await evaluate(`window.__TIH_TEST__.seek(${ms});(()=>{const canvas=document.querySelector('canvas');const gl=canvas.getContext('webgl');gl.finish();return {state:window.__TIH_TEST__.state(),canvas:[canvas.width,canvas.height],viewport:Array.from(gl.getParameter(gl.VIEWPORT)),glError:gl.getError(),devicePixelRatio,innerWidth,innerHeight};})()`);
+    const info=await evaluate(`window.__TIH_TEST__.seek(${ms});(()=>{const canvas=document.querySelector('canvas');const gl=canvas.getContext('webgl');gl.finish();return {state:window.__TIH_TEST__.state(),context:gl.getContextAttributes(),canvas:[canvas.width,canvas.height],viewport:Array.from(gl.getParameter(gl.VIEWPORT)),glError:gl.getError(),devicePixelRatio,innerWidth,innerHeight};})()`);
     if(info.glError) throw new Error(`WebGL error ${info.glError} at ${label}/${ms}`);
     const shot=await cdp('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
     const file=`${label}-${String(ms).padStart(5,'0')}.png`;
@@ -89,14 +101,24 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
     const visibleDepthLayers=Array.from({length:6},(_,layer)=>({layer,z:info.state.scene.camera+.62-layer*.68})).filter(item=>info.state.scene.layers>0&&item.z>.08&&item.z<2.30).map(item=>item.layer);
     metadata.frames.push({file,ms,width,height,backgroundOpacity,visibleDepthLayers,sha256:crypto.createHash('sha256').update(data).digest('hex'),...info});
    }
-   const currentPixels=new Map();
-   for(const ms of [9000,9360])currentPixels.set(ms,await framebuffer(ms));
+   const associatedPixels=new Map();
+   for(const ms of [9000,9360])associatedPixels.set(ms,await framebuffer(ms));
+   await cdp('Page.navigate',{url:`file://${baselineAssociatedHtmlPath}`}); await waitForReady(); await evaluate(configure);
+   for(const ms of [9000,9360]){
+    const baseline=await framebuffer(ms); const current=associatedPixels.get(ms);
+    const exact=baseline.sha256===current.sha256 && baseline.byteCount===current.byteCount && baseline.nonzeroAlphaPixels>0 && current.nonzeroAlphaPixels>0 && !baseline.glError && !current.glError;
+    metadata.associatedPresentationComparison.samples.push({label,width,height,ms,baseline,current,exact});
+    if(!exact){fs.writeFileSync(path.join(out,'frames.json'),JSON.stringify(metadata,null,2)+'\n');throw new Error(`Associated V4 presentation mismatch: ${label}/${ms}`);}
+   }
+   await cdp('Page.navigate',{url:`file://${straightHtmlPath}`}); await waitForReady(); await evaluate(configure);
+   const protectedPixels=new Map();
+   for(const ms of [9000,9360])protectedPixels.set(ms,await framebuffer(ms));
    await cdp('Page.navigate',{url:`file://${baselineHtmlPath}`}); await waitForReady(); await evaluate(configure);
    for(const ms of [9000,9360]){
-    const baseline=await framebuffer(ms); const current=currentPixels.get(ms);
+    const baseline=await framebuffer(ms); const current=protectedPixels.get(ms);
     const exact=baseline.sha256===current.sha256 && baseline.byteCount===current.byteCount && baseline.nonzeroAlphaPixels>0 && current.nonzeroAlphaPixels>0 && !baseline.glError && !current.glError;
     metadata.v4Comparison.samples.push({label,width,height,ms,baseline,current,exact});
-    if(!exact){fs.writeFileSync(path.join(out,'frames.json'),JSON.stringify(metadata,null,2)+'\n');throw new Error(`Original V4 framebuffer mismatch: ${label}/${ms}`);}
+    if(!exact){fs.writeFileSync(path.join(out,'frames.json'),JSON.stringify(metadata,null,2)+'\n');throw new Error(`Original V4 raw calculation mismatch: ${label}/${ms}`);}
    }
   }
   // Restore the current renderer for the actual-GPU offscreen-scissor probes.
@@ -109,7 +131,7 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
   }
   fs.writeFileSync(path.join(out,'frames.json'),JSON.stringify(metadata,null,2)+'\n');
   if(events.some(event=>event.method==='Runtime.exceptionThrown')) throw new Error('JavaScript runtime exception; inspect frames.json');
-  console.log(JSON.stringify({out,frames:metadata.frames.length,exceptions:events.filter(x=>x.method==='Runtime.exceptionThrown').length,glErrors:metadata.frames.filter(x=>x.glError).length,exactV4Comparisons:metadata.v4Comparison.samples.filter(x=>x.exact).length}));
+  console.log(JSON.stringify({out,frames:metadata.frames.length,exceptions:events.filter(x=>x.method==='Runtime.exceptionThrown').length,glErrors:metadata.frames.filter(x=>x.glError).length,exactV4Comparisons:metadata.v4Comparison.samples.filter(x=>x.exact).length,exactAssociatedPresentationComparisons:metadata.associatedPresentationComparison.samples.filter(x=>x.exact).length}));
  } finally {
   if(ws)ws.close();
   chrome.kill('SIGTERM');

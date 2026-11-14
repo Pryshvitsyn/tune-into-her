@@ -66,7 +66,22 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
-## CURRENT PREMIUM INTRO V5 / NATIVE STARTUP — 2026-11-14
+## CURRENT V5 HANDOFF / EXACT PHOTO CONTINUATION — 2026-11-14
+
+- Actual visible WK confirmed that its Cocoa compositor interprets straight output as
+  associated despite reporting false. Final-output association fixes halos without
+  changing source V4/material/geometry; native first-frame max channel difference2/255.
+- Frozen prepare→native UI commit→release removes the physical one-frame foreground gap
+  and hidden clock advancement.395 tests pass;92GPU frames preserve all six ribbons;
+  original raw and associated V4 comparisons both8/8 exact.
+- Signed no-Metro Simulator pressure capture663frames/0black and physical partial
+  handoff1004frames/0black are retained with explicit timing/coverage limits.
+- Founder then requested the exact archived photograph as the opening, rather than
+  the reconstructed SVG artwork. This targeted continuation is in progress; technical
+  handoff success does not imply photographic fidelity or Founder approval.
+- Evidence and boundaries: [V5 handoff QA](docs/PREMIUM_V5_HANDOFF_QA.md).
+
+## PREVIOUS PREMIUM INTRO V5 / NATIVE STARTUP — 2026-11-14
 
 - Founder reference archived immutable. One authored metallic SVG/steel atmosphere supplies
   native launch, fallback, GPU opening and Home; exact approved OTF/glyphs/rings retained.

@@ -101,6 +101,13 @@ all six ribbons, timeline and eight-second material loop are unchanged. The root
 Stack consumes a threshold-only intro contrast signal for dark/light clock readability
 while preserving saved destination themes and all routing/access handlers.
 
+The shared GPU presentation uses an explicitly associated-alpha context and a final
+output adapter; protected V4/scene functions remain straight-color calculations. Native
+ownership is two-phase: prepare draws a frozen configured frame, UI-thread covered
+paints/reveal commit its visibility, then release starts the original9s/8s clocks.
+An opaque cover prevents independently blended fallback and GPU logos. No clock advances
+on a hidden/prepared surface; inactive transfers are re-presented on foreground.
+
 ## Shared emblem source
 
 `assets/brand/official-mark.svg` owns the open-arc geometry and exact OTF wordmark
