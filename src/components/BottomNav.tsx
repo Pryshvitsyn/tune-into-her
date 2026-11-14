@@ -1,5 +1,5 @@
 import { router, usePathname } from "expo-router";
-import { Pressable, View } from 'react-native';
+import { Pressable, useWindowDimensions, View } from 'react-native';
 
 
 import { useInterface } from "../i18n/useInterface";
@@ -10,11 +10,13 @@ export function BottomNav() {
   const { colors } = useTheme();
   const path = usePathname();
   const c = useInterface();
+  const { fontScale } = useWindowDimensions();
+  const stacked = fontScale > 1.35;
   return (
     <View
       accessibilityRole="tablist"
       style={{
-        flexDirection: "row",
+        flexDirection: stacked ? "column" : "row",
         paddingBottom: 6,
         backgroundColor: colors.background,
       }}
@@ -32,11 +34,15 @@ export function BottomNav() {
             router.replace(item.route as "/today" | "/cycle" | "/settings")
           }
           style={{
-            flex: 1,
+            flex: stacked ? undefined : 1,
+            width: stacked ? "100%" : undefined,
+            flexDirection: stacked ? "row" : "column",
             minHeight: 60,
             alignItems: "center",
-            justifyContent: "center",
-            gap: 4, paddingVertical: 6,
+            justifyContent: stacked ? "flex-start" : "center",
+            gap: stacked ? 10 : 4,
+            paddingHorizontal: stacked ? 12 : 0,
+            paddingVertical: stacked ? 8 : 6,
           }}
         >
           <Text systemFont accessible={false} allowFontScaling={false}
@@ -50,6 +56,9 @@ export function BottomNav() {
           <Text
             style={{
               fontSize: 14, lineHeight: 20,
+              flex: stacked ? 1 : undefined,
+              flexShrink: stacked ? 1 : undefined,
+              textAlign: stacked ? "left" : undefined,
               color: path === item.route ? colors.primary : colors.secondary,
             }}
           >
@@ -57,7 +66,11 @@ export function BottomNav() {
           </Text>
           {path === item.route ? (
             <View
+              accessible={false}
               style={{
+                position: stacked ? "absolute" : "relative",
+                left: stacked ? 47 : undefined,
+                bottom: stacked ? 2 : undefined,
                 height: 3,
                 width: 28,
                 borderRadius: 3,
