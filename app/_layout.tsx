@@ -7,9 +7,10 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { prepareSphereResources } from "../TuneIntoHerSphereV4";
 import { DemoNotificationNavigation } from "../src/components/DemoNotificationNavigation";
-import { AppProvider } from "../src/context/AppContext";
+import { AppProvider, useApp } from "../src/context/AppContext";
 import { GlobalLaunch } from "../src/intro/GlobalLaunch";
 import { useLaunchPresentation } from "../src/intro/LaunchPresentation";
+import { typographyForLanguage } from "../src/theme/typography";
 import { useTheme } from "../src/theme/useTheme";
 
 // Keep the native static bridge until the first compatible RN/GPU frame is painted.
@@ -41,12 +42,16 @@ export default function RootLayout() {
 
 function Navigation() {
   const { colors, dark } = useTheme();
+  const { preferences } = useApp();
+  const typography = typographyForLanguage(preferences.language);
   const { blocking } = useLaunchPresentation();
   return (
     <>
       <Stack
         screenOptions={{
           headerShown: false,
+          headerTitleStyle: { ...typography, fontSize: 22 },
+          headerBackTitleStyle: { fontFamily: typography.fontFamily, fontSize: 17 },
           statusBarStyle: blocking ? "dark" : dark ? "light" : "dark",
           contentStyle: { backgroundColor: colors.background },
           animation: "slide_from_right",

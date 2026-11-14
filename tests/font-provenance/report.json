@@ -1,0 +1,151 @@
+{
+  "font" : {
+    "family" : "Linux Libertine O",
+    "matchesTrustedUnmodifiedFile" : true,
+    "path" : "assets/fonts/LinuxLibertineO-Regular.otf",
+    "postScript" : "LinLibertineO",
+    "sha256" : "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+    "style" : "Regular",
+    "unitsPerEm" : 1000,
+    "version" : "Version 5.3.0"
+  },
+  "licenseFiles" : {
+    "oflPath" : "assets/fonts/OFL.txt",
+    "oflSha256" : "d3d88da77e2a10e475e0b8c16404d8ffb765a02ebad35abcb3d65d8c71714c7a",
+    "originalDistributionNoticePath" : "assets/fonts/LICENCE.txt",
+    "originalDistributionNoticeSha256" : "95e77ee9617df439760875ebf86c855c42ab1546a299f3eafa203648448488b1"
+  },
+  "limits" : [
+    "Establishes equivalence of these existing wordmark glyphs to the trusted font, within explicit numeric tolerance.",
+    "Does not identify the original generating font file byte-for-byte; different font files can share these glyphs.",
+    "Does not prove that the original numbered Variant #8 comparison/approval sample was made with this exact file, style or layout.",
+    "Does not establish native rasterization, visual approval, all-script glyph coverage or store/legal readiness."
+  ],
+  "method" : "CoreText glyph paths loaded directly from existing OTF; SVG H/V normalized to L; glyph Y inverted; no system font lookup or font installation",
+  "passed" : true,
+  "schemaVersion" : 1,
+  "wordmark" : {
+    "appliedTrackingOrPairAdjustmentUnits" : 0,
+    "commandShapesMatch" : true,
+    "contourCount" : 14,
+    "coordinateToleranceUnits" : 0.0001,
+    "extraStrokeApplied" : false,
+    "glyphCount" : 11,
+    "glyphs" : [
+      {
+        "advanceUnits" : 597,
+        "character" : "T",
+        "commandCount" : 25,
+        "glyphId" : 53,
+        "maxCoordinateDeviationUnits" : 0,
+        "naturalOriginUnits" : 0,
+        "originUnits" : 0
+      },
+      {
+        "advanceUnits" : 531,
+        "character" : "u",
+        "commandCount" : 29,
+        "glyphId" : 86,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 597,
+        "originUnits" : 597
+      },
+      {
+        "advanceUnits" : 542,
+        "character" : "n",
+        "commandCount" : 31,
+        "glyphId" : 79,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 1128,
+        "originUnits" : 1128
+      },
+      {
+        "advanceUnits" : 447,
+        "character" : "e",
+        "commandCount" : 18,
+        "glyphId" : 70,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 1670,
+        "originUnits" : 1670
+      },
+      {
+        "advanceUnits" : 297,
+        "character" : "I",
+        "commandCount" : 16,
+        "glyphId" : 42,
+        "maxCoordinateDeviationUnits" : 0,
+        "naturalOriginUnits" : 2367,
+        "originUnits" : 2367
+      },
+      {
+        "advanceUnits" : 542,
+        "character" : "n",
+        "commandCount" : 31,
+        "glyphId" : 79,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 2664,
+        "originUnits" : 2664
+      },
+      {
+        "advanceUnits" : 316,
+        "character" : "t",
+        "commandCount" : 25,
+        "glyphId" : 85,
+        "maxCoordinateDeviationUnits" : 3.0517578125e-05,
+        "naturalOriginUnits" : 3206,
+        "originUnits" : 3206
+      },
+      {
+        "advanceUnits" : 504,
+        "character" : "o",
+        "commandCount" : 14,
+        "glyphId" : 80,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 3522,
+        "originUnits" : 3522
+      },
+      {
+        "advanceUnits" : 730,
+        "character" : "H",
+        "commandCount" : 34,
+        "glyphId" : 41,
+        "maxCoordinateDeviationUnits" : 3.0517578125e-05,
+        "naturalOriginUnits" : 4276,
+        "originUnits" : 4276
+      },
+      {
+        "advanceUnits" : 447,
+        "character" : "e",
+        "commandCount" : 18,
+        "glyphId" : 70,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 5006,
+        "originUnits" : 5006
+      },
+      {
+        "advanceUnits" : 372,
+        "character" : "r",
+        "commandCount" : 23,
+        "glyphId" : 83,
+        "maxCoordinateDeviationUnits" : 1.52587890625e-05,
+        "naturalOriginUnits" : 5453,
+        "originUnits" : 5453
+      }
+    ],
+    "matchedFontCommandCount" : 264,
+    "maxCoordinateDeviationUnits" : 3.0517578125e-05,
+    "maxOriginDeviationFromUnkernedAdvancesUnits" : 0,
+    "naturalAdvanceDesignUnits" : 500.00000075000003,
+    "naturalAdvanceUnits" : 5825,
+    "path" : "src/intro/brand.generated.ts",
+    "sourceSha256" : "00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee",
+    "svgCommandCount" : 264,
+    "text" : "Tune Into Her",
+    "transform" : "translate(70 224) scale(0.08583691)",
+    "translation" : [
+      70,
+      224
+    ],
+    "uniformScale" : 0.085836910000000002
+  }
+}

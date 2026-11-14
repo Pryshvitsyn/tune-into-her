@@ -3,12 +3,13 @@ import { useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import {
   AccessibilityInfo, AppState, Modal, Pressable, ScrollView,
-  StyleSheet, Text, View, type LayoutChangeEvent, type ViewStyle,
+  StyleSheet, useWindowDimensions, View, type LayoutChangeEvent, type ViewStyle,
 } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, type SharedValue } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
+import { AppText as Text } from '../components/AppText';
 import { BrandMark } from '../components/BrandMark';
 
 import { useLaunchPresentation } from './LaunchPresentation';
@@ -70,6 +71,7 @@ function FooterIcon({kind,color}: {kind:'info'|'update'|'settings';color:string}
 /** Presentation only. No purchase, phase-estimation, history or notification logic. */
 export function AnimatedToday(props: AnimatedTodayProps) {
   const insets = useSafeAreaInsets();
+  const { fontScale } = useWindowDimensions();
   const { reportScreenReady } = useLaunchPresentation();
   const palette = props.dark?DARK:LIGHT;
   const [play] = useState(() => !!props.replay || !hasConsumedAppIntro());
@@ -82,6 +84,8 @@ export function AnimatedToday(props: AnimatedTodayProps) {
   const [view,setView] = useState({width:0,height:0});
   const [slot,setSlot] = useState<{x:number;y:number;width:number;height:number}|null>(null);
   const [detail,setDetail] = useState<AdvicePart|null>(null);
+  const [scrollY,setScrollY] = useState(0);
+  const [footerHeight,setFooterHeight] = useState(0);
 
   useFocusEffect(useCallback(() => {setFocus(true); return () => setFocus(false);}, []));
   useEffect(() => {
@@ -101,9 +105,9 @@ export function AnimatedToday(props: AnimatedTodayProps) {
   }, []);
   const target = useMemo(() => slot ? {
     x:slot.x+slot.width/2,
-    y:slot.y+slot.height/2,
+    y:slot.y+slot.height/2-scrollY,
     radius:Math.max(1,Math.min(slot.width,slot.height,360)/2),
-  }:null,[slot]);
+  }:null,[slot,scrollY]);
   const onRootLayout = useCallback((event: LayoutChangeEvent) => {
     const {width,height}=event.nativeEvent.layout;
     setView(old=>old.width===width && old.height===height?old:{width,height});
@@ -112,17 +116,16 @@ export function AnimatedToday(props: AnimatedTodayProps) {
     const {x,y,width,height}=event.nativeEvent.layout;
     setSlot(old=>old && old.x===x && old.y===y && old.width===width && old.height===height?old:{x,y,width,height});
   }, []);
-  const compact = view.height>0 && view.height<740;
-  const bodySize = compact?14:15.5;
+  const sphereSize = Math.max(216,Math.min(280,view.width-56));
+  const stackedFooter = fontScale > 1.35;
 
   function advice(part: AdvicePart, stage: 'mind'|'support'|'action') {
-    return <Reveal clock={clock} name={stage} done={done} style={{marginTop:stage==='mind'?(compact?16:22):compact?8:12}}>
+    return <Reveal clock={clock} name={stage} done={done} style={{marginTop:stage==='mind'?22:20}}>
       <Pressable onPress={()=>setDetail(part)} accessibilityRole="button"
         accessibilityLabel={`${part.label}. ${part.text}. ${part.note}`}>
-        <Text style={[styles.label,{color:palette.ink}]} maxFontSizeMultiplier={1.2}>{part.label}</Text>
-        <Text style={[styles.body,{color:palette.ink,fontSize:bodySize,lineHeight:bodySize*1.36}]}
-          numberOfLines={2} ellipsizeMode="tail" maxFontSizeMultiplier={1.25}>{part.text}</Text>
-        <Text style={[styles.note,{color:palette.secondary}]} numberOfLines={1} ellipsizeMode="tail" maxFontSizeMultiplier={1.2}>
+        <Text style={[styles.label,{color:palette.ink}]}>{part.label}</Text>
+        <Text style={[styles.body,{color:palette.ink}]}>{part.text}</Text>
+        <Text style={[styles.note,{color:palette.secondary}]}>
           ↳ {part.note}
         </Text>
       </Pressable>
@@ -134,53 +137,62 @@ export function AnimatedToday(props: AnimatedTodayProps) {
     {kind:'settings' as const,label:props.labels.settings,onPress:props.onSettings},
   ];
   return <View onLayout={onRootLayout} style={[styles.root,{
-    backgroundColor:palette.edge,paddingTop:insets.top+6,paddingBottom:Math.max(insets.bottom,8),
+    backgroundColor:palette.edge,
   }]}>
     <LinearGradient pointerEvents="none" colors={[palette.edge,palette.center,palette.edge]}
       start={{x:0,y:.5}} end={{x:1,y:.5}} locations={[0,.5,1]} style={StyleSheet.absoluteFill}/>
-    {target && view.width>0 ? <SphereIntroSurface
+    {target && view.width>0 ? <View pointerEvents="none" style={[styles.surfaceClip,{
+      width:view.width,height:done?Math.max(0,view.height-footerHeight):view.height,
+    }]}><View style={{width:view.width,height:view.height}}><SphereIntroSurface
       ref={surface} view={view} target={target} elapsed={clock} animate={play}
       active={focus && appActive && !detail} preferencesReady={access.ready}
       reducedMotion={access.reduce || access.reader} ink={palette.ink}
       onFirstFrame={() => reportScreenReady('/today')} onComplete={finish} onError={message=>{props.onIntroError?.(message);if(__DEV__) console.warn('[Tune Into Her intro]',message);}}
-    /> : null}
+    /></View></View> : null}
 
+    <ScrollView style={styles.scroll} scrollEnabled={done} scrollEventThrottle={16}
+      onScroll={event=>setScrollY(event.nativeEvent.contentOffset.y)}>
+    <View style={[styles.content,{minHeight:Math.max(0,view.height-footerHeight),paddingTop:insets.top+6}]}>
     <Reveal clock={clock} name="chrome" done={done} style={styles.header}>
       <Pressable onPress={props.onAbout} accessibilityRole="button" accessibilityLabel="THEA" style={styles.brandHit}>
         <BrandMark corporate size={27} color={palette.secondary}/>
       </Pressable>
-      <Text style={[styles.date,{color:palette.ink}]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={.8} maxFontSizeMultiplier={1.2}>{props.dateLine}</Text>
+      <Text style={[styles.date,{color:palette.ink}]}>{props.dateLine}</Text>
       <View style={styles.brandHit}><BrandMark size={34} color={palette.ink}/></View>
     </Reveal>
-    <Reveal clock={clock} name="phase" done={done} style={{marginTop:compact?8:12}}>
-      <Text style={[styles.phase,{color:palette.ink}]} numberOfLines={2} maxFontSizeMultiplier={1.2}>{props.phaseTitle}</Text>
-      {props.phaseDescription ? <Text style={[styles.description,{color:palette.secondary}]} numberOfLines={2} maxFontSizeMultiplier={1.2}>{props.phaseDescription}</Text>:null}
+    <Reveal clock={clock} name="phase" done={done} style={{marginTop:12}}>
+      <Text style={[styles.phase,{color:palette.ink}]}>{props.phaseTitle}</Text>
+      {props.phaseDescription ? <Text style={[styles.description,{color:palette.secondary}]}>{props.phaseDescription}</Text>:null}
       {props.disclosure ? <Text style={styles.disclosure}>{props.disclosure}</Text>:null}
     </Reveal>
     {advice(props.mind,'mind')}
-    {/* This slot is measured once in the FINAL layout. Sphere is painted behind it. */}
-    <View pointerEvents="none" onLayout={onSlotLayout} style={styles.sphereSlot}/>
+    {/* Text keeps its natural height; the unchanged surface follows this measured scroll slot. */}
+    <View pointerEvents="none" onLayout={onSlotLayout} style={[styles.sphereSlot,{height:sphereSize}]}/>
     {advice(props.support,'support')}
     {advice(props.action,'action')}
-    <Reveal clock={clock} name="chrome" done={done} style={{marginTop:compact?8:12}}>
-      <View style={styles.footer}>{footer.map(item=><Pressable key={item.kind} onPress={item.onPress}
-        accessibilityRole="button" accessibilityLabel={item.label} style={styles.footerButton}>
+    </View>
+    </ScrollView>
+    <View onLayout={event=>setFooterHeight(event.nativeEvent.layout.height)}>
+    <Reveal clock={clock} name="chrome" done={done} style={{paddingBottom:Math.max(insets.bottom,8),backgroundColor:palette.edge}}>
+      <View style={[styles.footer,stackedFooter && styles.footerStack]}>{footer.map(item=><Pressable key={item.kind} onPress={item.onPress}
+        accessibilityRole="button" accessibilityLabel={item.label} style={[styles.footerButton,stackedFooter && styles.footerButtonStack]}>
         <FooterIcon kind={item.kind} color={palette.ink}/>
-        <Text style={{fontSize:11,color:palette.ink,marginLeft:5}} numberOfLines={1} maxFontSizeMultiplier={1.1}>{item.label}</Text>
+        <Text style={[styles.footerLabel,{color:palette.ink}]}>{item.label}</Text>
       </Pressable>)}</View>
     </Reveal>
+    </View>
 
     {!done ? <Pressable onPress={()=>surface.current?.finish()} style={StyleSheet.absoluteFill}
       accessibilityRole="button" accessibilityLabel={props.labels.skip}/>:null}
 
-    {/* Main screen never scrolls. Longer original texts remain available, not discarded. */}
+    {/* The same full content remains available as an accessible focused reading view. */}
     <Modal visible={detail!==null} transparent animationType={access.reduce?'none':'fade'} onRequestClose={()=>setDetail(null)}>
       <View style={[styles.modal,{backgroundColor:palette.edge,paddingTop:insets.top+20,paddingBottom:insets.bottom+16}]}>
         <Pressable onPress={()=>setDetail(null)} style={styles.close} accessibilityRole="button">
           <Text style={{fontSize:16,color:palette.ink}}>{props.labels.close}</Text>
         </Pressable>
         <ScrollView contentContainerStyle={{padding:24}}>
-          <Text style={{fontSize:18,fontWeight:'700',color:palette.ink,marginBottom:18}}>{detail?.label}</Text>
+          <Text style={{fontSize:22,lineHeight:29,color:palette.ink,marginBottom:18}}>{detail?.label}</Text>
           <Text style={{fontSize:19,lineHeight:29,color:palette.ink}}>{detail?.text}</Text>
           <Text style={{fontSize:16,lineHeight:25,color:palette.secondary,marginTop:20}}>↳ {detail?.note}</Text>
         </ScrollView>
@@ -190,18 +202,24 @@ export function AnimatedToday(props: AnimatedTodayProps) {
 }
 
 const styles=StyleSheet.create({
-  root:{flex:1,paddingHorizontal:18,overflow:'hidden'},
-  header:{height:44,flexDirection:'row',alignItems:'center',justifyContent:'space-between'},
+  root:{flex:1,overflow:'hidden'},
+  surfaceClip:{position:'absolute',left:0,top:0,overflow:'hidden'},
+  scroll:{flex:1},
+  content:{paddingHorizontal:18,paddingBottom:24},
+  header:{minHeight:44,flexDirection:'row',alignItems:'center',justifyContent:'space-between'},
   brandHit:{width:44,height:44,justifyContent:'center',alignItems:'center'},
-  date:{flex:1,textAlign:'center',fontSize:12.5,fontWeight:'600',marginHorizontal:4},
-  phase:{fontSize:19,lineHeight:25,fontWeight:'700',textAlign:'center'},
-  description:{fontSize:13,lineHeight:18,textAlign:'center',marginTop:5},
-  label:{fontSize:11.5,lineHeight:16,fontWeight:'700',letterSpacing:1.8,textAlign:'center',marginBottom:4},
-  body:{textAlign:'center'},
-  note:{fontSize:12,lineHeight:17,textAlign:'center',marginTop:4},
-  sphereSlot:{flex:1,minHeight:48,marginTop:8,marginBottom:2},
-  footer:{height:44,flexDirection:'row',alignItems:'center'},
-  footerButton:{flex:1,minHeight:44,flexDirection:'row',alignItems:'center',justifyContent:'center'},
-  disclosure:{fontSize:10,textAlign:'center',color:'#AA3344',marginTop:4},
+  date:{flex:1,textAlign:'center',fontSize:14,lineHeight:20,marginHorizontal:4},
+  phase:{fontSize:22,lineHeight:29,textAlign:'center'},
+  description:{fontSize:15,lineHeight:22,textAlign:'center',marginTop:5},
+  label:{fontSize:15,lineHeight:21,letterSpacing:0.3,textAlign:'center',marginBottom:4},
+  body:{fontSize:17,lineHeight:25,textAlign:'center'},
+  note:{fontSize:14,lineHeight:21,textAlign:'center',marginTop:4},
+  sphereSlot:{marginTop:16,marginBottom:2},
+  footer:{minHeight:48,flexDirection:'row',alignItems:'center',paddingHorizontal:18,gap:8},
+  footerStack:{flexDirection:'column',alignItems:'stretch'},
+  footerButtonStack:{flex:0},
+  footerLabel:{fontSize:14,lineHeight:20,marginLeft:6,flexShrink:1,textAlign:'center'},
+  footerButton:{flex:1,minHeight:48,paddingVertical:8,flexDirection:'row',alignItems:'center',justifyContent:'center'},
+  disclosure:{fontSize:13,lineHeight:19,textAlign:'center',color:'#AA3344',marginTop:4},
   modal:{flex:1},close:{minHeight:44,justifyContent:'center',alignItems:'flex-end',paddingHorizontal:24},
 });

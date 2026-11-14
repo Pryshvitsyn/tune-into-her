@@ -6,7 +6,6 @@ import { dailyReminders } from "../domain/content/dailyGuidance";
 import type { LocalizedCue } from "../domain/content/types";
 import type { DateOnly } from "../domain/cycle/dateOnly";
 import { useInterface } from "../i18n/useInterface";
-import { typographyForLanguage } from "../theme/typography";
 import { useTheme } from "../theme/useTheme";
 
 import { AppText as Text } from "./AppText";
@@ -15,7 +14,6 @@ export function AdviceBlocks({
   advice,
   date,
   sphere,
-  presentation,
 }: {
   advice: LocalizedCue;
   date: DateOnly;
@@ -31,7 +29,6 @@ export function AdviceBlocks({
     { title: c.do, body: advice.cue },
   ];
   const reminders = dailyReminders(date, preferences.language);
-  const premium = presentation === "onboarding" ? typographyForLanguage(preferences.language) : undefined;
   return (
     <View>
       {blocks.map((b, i) => (
@@ -42,8 +39,7 @@ export function AdviceBlocks({
                 textAlign: "center",
                 fontSize: 18,
                 lineHeight: 24,
-                fontWeight: premium ? "400" : "700",
-                fontFamily: premium?.fontFamily,
+                fontWeight: "400",
                 color: colors.text,
                 marginBottom: 8,
               }}
@@ -53,9 +49,8 @@ export function AdviceBlocks({
             <Text
               style={{
                 textAlign: "center",
-                fontSize: 16,
-                lineHeight: premium ? 24 : 23,
-                fontFamily: premium?.fontFamily,
+                fontSize: 17,
+                lineHeight: 25,
                 color: colors.text,
               }}
             >
@@ -65,9 +60,8 @@ export function AdviceBlocks({
           <Text
             style={{
               textAlign: "center",
-              fontSize: 13,
-              lineHeight: premium ? 20 : 19,
-              fontFamily: premium?.fontFamily,
+              fontSize: 14,
+              lineHeight: 21,
               color: colors.secondary,
               marginBottom: i === 0 && sphere ? 8 : 4,
             }}

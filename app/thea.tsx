@@ -1,7 +1,8 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { Linking, Text, View } from "react-native";
+import { Linking, View } from 'react-native';
 
+import { AppText as Text } from '../src/components/AppText';
 import { BrandMark } from "../src/components/BrandMark";
 import { Button } from "../src/components/Button";
 import { Header } from "../src/components/Header";

@@ -1,15 +1,20 @@
 import { useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, ScrollView, useWindowDimensions, View } from 'react-native';
+
 
 import { useApp } from "../context/AppContext";
 import { estimateCycle } from "../domain/cycle/cycleEngine";
 import { toDateOnly } from "../domain/cycle/dateOnly";
 import { useInterface } from "../i18n/useInterface";
 import { useTheme } from "../theme/useTheme";
+
+import { AppText as Text } from './AppText';
 export function CycleCalendar({ onEdit }: { onEdit(): void }) {
   const { cycleSettings, preferences } = useApp();
   const { colors } = useTheme();
   const c = useInterface();
+  const { width, fontScale } = useWindowDimensions();
+  const gridWidth = Math.max(width - 48, (width - 48) * fontScale);
   const [offset, setOffset] = useState(0);
   const now = new Date();
   const month = new Date(now.getFullYear(), now.getMonth() + offset, 1);
@@ -43,9 +48,9 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
           onPress={() => setOffset((n) => n - 1)}
           style={{ padding: 15 }}
         >
-          <Text style={{ color: colors.text, fontSize: 28 }}>‹</Text>
+          <Text accessible={false} allowFontScaling={false} style={{ color: colors.text, fontSize: 28 }}>‹</Text>
         </Pressable>
-        <Text style={{ color: colors.text, fontSize: 18 }}>
+        <Text style={{ color: colors.text, fontSize: 20, lineHeight: 28, flex: 1, textAlign: "center" }}>
           {month.toLocaleDateString(locale, { month: "long", year: "numeric" })}
         </Text>
         <Pressable
@@ -54,10 +59,12 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
           onPress={() => setOffset((n) => n + 1)}
           style={{ padding: 15 }}
         >
-          <Text style={{ color: colors.text, fontSize: 28 }}>›</Text>
+          <Text accessible={false} allowFontScaling={false} style={{ color: colors.text, fontSize: 28 }}>›</Text>
         </Pressable>
       </View>
-      <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={fontScale > 1}
+        contentContainerStyle={{ minWidth: gridWidth }}>
+      <View style={{ width: gridWidth, flexDirection: "row", flexWrap: "wrap" }}>
         {Array.from({ length: 7 }, (_, i) => (
           <Text
             key={i}
@@ -87,7 +94,7 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
               key={key}
               style={{
                 width: "14.2857%",
-                height: 46,
+                minHeight: 46,
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -104,7 +111,8 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
                   padding: 9,
                   backgroundColor:
                     phase === "menstrual" ? colors.overlay : "transparent",
-                  fontWeight: key === toDateOnly(now) ? "800" : "400",
+                  fontWeight: "400",
+                  textDecorationLine: key === toDateOnly(now) ? "underline" : "none",
                 }}
               >
                 {date.getDate()}
@@ -113,6 +121,7 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
           );
         })}
       </View>
+      </ScrollView>
       <Text
         style={{
           color: colors.secondary,
@@ -134,7 +143,7 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
           alignItems: "center",
         }}
       >
-        <Text style={{ color: colors.background, fontWeight: "700" }}>
+        <Text style={{ color: colors.background, fontWeight: '400' }}>
           {c.editCycle}
         </Text>
       </Pressable>

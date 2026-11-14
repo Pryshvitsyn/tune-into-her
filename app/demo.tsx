@@ -1,8 +1,9 @@
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, AppState, Linking, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, AppState, Linking, StyleSheet, View } from 'react-native';
 
 import { AdviceBlocks } from '../src/components/AdviceBlocks';
+import { AppText as Text } from '../src/components/AppText';
 import { Button } from '../src/components/Button';
 import { Screen } from '../src/components/Screen';
 import { acceleratedDemoEnabled } from '../src/config/acceleratedDemo';
@@ -190,7 +191,7 @@ export default function DemoScreen() {
 const makeStyles = (colors: Palette) => StyleSheet.create({
   heading: { gap: 10, alignItems: 'center', marginTop: 12, marginBottom: 20 },
   label: { color: colors.secondary, fontSize: 14, textAlign: 'center' },
-  day: { color: colors.text, fontSize: 25, lineHeight: 34, fontWeight: '600', textAlign: 'center' },
+  day: { color: colors.text, fontSize: 25, lineHeight: 34, fontWeight: '400', textAlign: 'center' },
   phase: { color: colors.text, fontSize: 18, textAlign: 'center' },
   body: { color: colors.secondary, fontSize: 15, lineHeight: 22, textAlign: 'center' },
   testOnly: { color: colors.secondary, fontSize: 13, lineHeight: 18, textAlign: 'center' },

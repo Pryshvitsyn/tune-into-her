@@ -1,7 +1,8 @@
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, Text, View } from "react-native";
+import { Alert, StyleSheet, View } from 'react-native';
 
+import { AppText as Text } from '../../src/components/AppText';
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import { SettingsRow } from "../../src/components/SettingsRow";
@@ -131,9 +132,10 @@ const makeStyles = (colors: Palette) =>
     section: { marginBottom: spacing.lg },
     sectionTitle: {
       color: colors.secondary,
-      fontSize: 12,
-      fontWeight: "800",
-      letterSpacing: 1.1,
+      fontSize: 13,
+      lineHeight: 20,
+      fontWeight: '400',
+      letterSpacing: 0.45,
       textTransform: "uppercase",
       marginBottom: spacing.sm,
       marginLeft: spacing.sm,

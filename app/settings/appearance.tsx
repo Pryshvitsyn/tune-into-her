@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, Pressable, Text } from "react-native";
+import { Alert, Pressable } from 'react-native';
 
+import { AppText as Text } from '../../src/components/AppText';
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import { useApp } from "../../src/context/AppContext";

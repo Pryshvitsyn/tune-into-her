@@ -5,13 +5,14 @@ import {
   ActivityIndicator,
   AppState,
   Pressable,
-  Text,
   useWindowDimensions,
   View,
-} from "react-native";
+} from 'react-native';
+
 
 import { TuneIntoHerSphereV4 } from "../TuneIntoHerSphereV4";
 import { AdviceBlocks } from "../src/components/AdviceBlocks";
+import { AppText as Text } from '../src/components/AppText';
 import { Button } from "../src/components/Button";
 import { FeedbackControl } from "../src/components/FeedbackControl";
 import { Screen } from "../src/components/Screen";
@@ -156,7 +157,7 @@ export default function TodayScreen() {
           style={{
             color: colors.danger,
             fontSize: 12,
-            fontWeight: "800",
+            fontWeight: '400',
             letterSpacing: 0.4,
             marginBottom: 8,
             textAlign: "center",
@@ -166,7 +167,7 @@ export default function TodayScreen() {
         </Text>
       ) : null}
       <View style={{ alignItems: "center", marginTop: 12, marginBottom: 28 }}>
-        <Text style={{ color: colors.text, fontSize: 18, lineHeight: 24, textAlign: "center", fontWeight: "700" }}>
+        <Text style={{ color: colors.text, fontSize: 18, lineHeight: 24, textAlign: "center", fontWeight: '400' }}>
           {estimate.requiresPeriodConfirmation
             ? c.wellbeing
             : cycleSettings && cycleSettings.typicalCycleLength - estimate.estimatedCycleDay < 5

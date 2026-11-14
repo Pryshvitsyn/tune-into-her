@@ -1,8 +1,9 @@
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, Switch, Text, View } from "react-native";
+import { Alert, StyleSheet, Switch, View } from 'react-native';
 
+import { AppText as Text } from '../../src/components/AppText';
 import { Button } from "../../src/components/Button";
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
@@ -117,7 +118,7 @@ const makeStyles = (colors: Palette) =>
       borderRadius: radius.md,
       padding: spacing.md,
     },
-    smallLabel: { color: colors.secondary, fontSize: 13, fontWeight: "700" },
+    smallLabel: { color: colors.secondary, fontSize: 13, fontWeight: '400' },
     permission: { marginTop: spacing.lg, padding: spacing.md },
     permissionValue: {
       color: colors.text,

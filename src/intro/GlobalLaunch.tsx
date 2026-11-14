@@ -203,8 +203,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
           active={state.active} preferencesReady={state.accessibilityReady} reducedMotion={state.reducedMotion} ink={SILVER.ink}
           onFirstFrame={onFirstFrame} onComplete={onIntroComplete} onError={() => dispatch({ type: 'renderer-failed' })} />}
         {phase === 'error' && <View style={styles.error} accessibilityLiveRegion="polite">
-          <Text accessibilityRole="alert" style={styles.errorText}>{copy.error}</Text>
-          <Pressable onPress={retry} accessibilityRole="button" style={styles.retry}><Text style={styles.retryText}>{t('common.retry')}</Text></Pressable>
+          <Text systemFont={font !== 'ready'} accessibilityRole="alert" style={styles.errorText}>{copy.error}</Text>
+          <Pressable onPress={retry} accessibilityRole="button" style={styles.retry}><Text systemFont={font !== 'ready'} style={styles.retryText}>{t('common.retry')}</Text></Pressable>
         </View>}
       </Animated.View>}
     </View>

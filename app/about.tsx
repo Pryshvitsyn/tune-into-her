@@ -1,7 +1,8 @@
 import Constants from "expo-constants";
 import { useTranslation } from "react-i18next";
-import { Linking, Text, StyleSheet } from "react-native";
+import { Linking, StyleSheet } from 'react-native';
 
+import { AppText as Text } from '../src/components/AppText';
 import { Button } from "../src/components/Button";
 import { Header } from "../src/components/Header";
 import { Screen } from "../src/components/Screen";

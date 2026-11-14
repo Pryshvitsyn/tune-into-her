@@ -1,7 +1,8 @@
 import { useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from 'react-native';
 
+import { AppText as Text } from '../../src/components/AppText';
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import type { CyclePhase } from "../../src/domain/cycle/cycleEngine";
@@ -43,7 +44,7 @@ const makeStyles = (colors: Palette) =>
       padding: spacing.lg,
       gap: spacing.md,
     },
-    heading: { color: colors.text, fontSize: 28, fontWeight: "800" },
+    heading: { color: colors.text, fontSize: 28, fontWeight: '400' },
     body: { color: colors.text, fontSize: 17, lineHeight: 27 },
     source: {
       color: colors.secondary,

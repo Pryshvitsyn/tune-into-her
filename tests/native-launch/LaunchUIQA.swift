@@ -449,3 +449,108 @@ extension LaunchUIQA {
     try completeOnboardingAssertions(in: app)
   }
 }
+
+extension LaunchUIQA {
+  /// Read-only navigation on the isolated simulator's existing English/no-access fixture.
+  /// Never selects a theme/language, changes cycle data, or invokes subscription controls.
+  func testTypographySettingsHistoryAndScriptHeadersNoWrites() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning, "Requires the already running English QA app on locked Today")
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    let locked = app.staticTexts["An active trial or subscription unlocks today’s context."].firstMatch
+    XCTAssertTrue(locked.waitForExistence(timeout: 10), "Open the existing locked Today route before this read-only scenario")
+    XCTAssertFalse(app.staticTexts["KEEP IN MIND"].firstMatch.exists)
+    let initial = app.debugDescription
+    let initialProcessRange = try XCTUnwrap(initial.range(of: "pid: [0-9]+", options: .regularExpression))
+    let process = String(initial[initialProcessRange])
+
+    func requireFullyVisible(_ element: XCUIElement, _ message: String) {
+      for _ in 0..<12 {
+        let scroll = app.scrollViews.firstMatch
+        let visible = scroll.exists ? scroll.frame.intersection(app.frame) : app.frame
+        if element.exists && element.isHittable && visible.contains(element.frame) { break }
+        if element.exists && element.frame.minY < visible.minY { scroll.swipeDown(velocity: .slow) }
+        else { scroll.swipeUp(velocity: .slow) }
+      }
+      XCTAssertTrue(element.exists, message)
+      XCTAssertTrue(element.isHittable, message)
+      XCTAssertTrue(app.frame.contains(element.frame), message)
+      if app.scrollViews.firstMatch.exists {
+        XCTAssertTrue(app.scrollViews.firstMatch.frame.contains(element.frame), message)
+      }
+    }
+    func tapBottomTab(_ label: String, x: CGFloat) {
+      let tab = app.buttons.matching(NSPredicate(format: "label CONTAINS[cd] %@", label)).firstMatch
+      if tab.exists && tab.isHittable { tab.tap() }
+      else {
+        // Same isolated-simulator tab fallback as the existing warm-navigation case.
+        print("TIH_TYPOGRAPHY_TAB_COORDINATE_FALLBACK \(label)")
+        app.coordinate(withNormalizedOffset: CGVector(dx: x, dy: 0.95)).tap()
+      }
+    }
+    func returnToSettings() {
+      let back = app.buttons["Back"].firstMatch
+      requireFullyVisible(back, "Native Back control must remain visible and accessible")
+      back.tap()
+      XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch.waitForExistence(timeout: 5))
+    }
+
+    capture(app, "33-typography-locked-today")
+    tapBottomTab("Settings", x: 0.83)
+    let cycleDetails = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
+    XCTAssertTrue(cycleDetails.waitForExistence(timeout: 5))
+    let settingsTitle = app.staticTexts["Settings"].firstMatch
+    requireFullyVisible(settingsTitle, "Settings title must have complete native text bounds")
+    capture(app, "34-typography-settings")
+
+    let appearance = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Appearance")).firstMatch
+    requireFullyVisible(appearance, "Appearance navigation row must be fully reachable")
+    appearance.tap()
+    let appearanceTitle = app.staticTexts["Appearance"].firstMatch
+    XCTAssertTrue(appearanceTitle.waitForExistence(timeout: 5))
+    requireFullyVisible(appearanceTitle, "Appearance title must have complete native text bounds")
+    XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label ENDSWITH %@", "Light")).firstMatch.exists)
+    XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label ENDSWITH %@", "Dark")).firstMatch.exists)
+    capture(app, "35-typography-appearance-no-selection")
+    returnToSettings()
+
+    let english = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "English")).firstMatch
+    requireFullyVisible(english, "Existing English language preference must remain visible")
+    english.tap()
+    let languageTitle = app.staticTexts["Language"].firstMatch
+    XCTAssertTrue(languageTitle.waitForExistence(timeout: 5))
+    requireFullyVisible(languageTitle, "Language title must have complete native text bounds")
+    capture(app, "36-typography-language-latin-header")
+    let hindi = app.staticTexts["हिन्दी"].firstMatch
+    let chinese = app.staticTexts["简体中文"].firstMatch
+    requireFullyVisible(hindi, "Hindi option must be readable without selecting it")
+    requireFullyVisible(chinese, "Chinese option must be readable without selecting it")
+    capture(app, "37-typography-language-script-fallbacks-no-selection")
+    returnToSettings()
+    requireFullyVisible(english, "Read-only language inspection must preserve saved English")
+
+    tapBottomTab("Advice", x: 0.16)
+    XCTAssertTrue(locked.waitForExistence(timeout: 5))
+    let previousDays = app.buttons["Previous days"].firstMatch
+    requireFullyVisible(previousDays, "Previous days navigation must remain reachable")
+    previousDays.tap()
+    let historyTitle = app.staticTexts["Previous guidance"].firstMatch
+    XCTAssertTrue(historyTitle.waitForExistence(timeout: 5))
+    requireFullyVisible(historyTitle, "History title must have complete native text bounds")
+    let emptyHistory = app.staticTexts["No previous guidance yet."].firstMatch
+    XCTAssertTrue(emptyHistory.waitForExistence(timeout: 5), "Requires the existing no-access QA fixture with no guidance history")
+    requireFullyVisible(emptyHistory, "Empty-history typography must be fully visible")
+    capture(app, "38-typography-history-empty-no-access")
+    let back = app.buttons["Back"].firstMatch
+    requireFullyVisible(back, "History Back control must remain reachable")
+    back.tap()
+    XCTAssertTrue(locked.waitForExistence(timeout: 5))
+    XCTAssertFalse(app.staticTexts["KEEP IN MIND"].firstMatch.exists)
+    let final = app.debugDescription
+    let finalProcessRange = try XCTUnwrap(final.range(of: "pid: [0-9]+", options: .regularExpression))
+    XCTAssertEqual(String(final[finalProcessRange]), process, "Navigation must reuse the existing process without a cold intro")
+    capture(app, "39-typography-returned-locked-today-no-writes")
+  }
+}

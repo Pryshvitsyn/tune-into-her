@@ -1,8 +1,9 @@
 import { router } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Text } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 
+import { AppText as Text } from '../src/components/AppText';
 import { Button } from '../src/components/Button';
 import { Header } from '../src/components/Header';
 import { Screen } from '../src/components/Screen';

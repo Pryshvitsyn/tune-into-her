@@ -1,8 +1,11 @@
 import { router, usePathname } from "expo-router";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, View } from 'react-native';
+
 
 import { useInterface } from "../i18n/useInterface";
 import { useTheme } from "../theme/useTheme";
+
+import { AppText as Text } from './AppText';
 export function BottomNav() {
   const { colors } = useTheme();
   const path = usePathname();
@@ -33,10 +36,10 @@ export function BottomNav() {
             minHeight: 60,
             alignItems: "center",
             justifyContent: "center",
-            gap: 3,
+            gap: 4, paddingVertical: 6,
           }}
         >
-          <Text
+          <Text systemFont accessible={false} allowFontScaling={false}
             style={{
               fontSize: 25,
               color: path === item.route ? colors.primary : colors.secondary,
@@ -46,7 +49,7 @@ export function BottomNav() {
           </Text>
           <Text
             style={{
-              fontSize: 13,
+              fontSize: 14, lineHeight: 20,
               color: path === item.route ? colors.primary : colors.secondary,
             }}
           >

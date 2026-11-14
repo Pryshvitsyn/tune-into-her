@@ -1,27 +1,34 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, View } from 'react-native';
 
+
+import type { SupportedLanguage } from "../config/constants";
 import { spacing } from "../theme";
 import type { Palette } from "../theme";
 import { useTheme } from "../theme/useTheme";
+
+import { AppText as Text } from './AppText';
 
 export function SettingsRow({
   label,
   value,
   onPress,
+  language,
 }: {
   label: string;
   value?: string;
   onPress(): void;
+  language?: SupportedLanguage;
 }) {
   const { colors } = useTheme();
   const styles = makeStyles(colors);
+  const selectedLanguage = value === "✓";
   return (
-    <Pressable accessibilityRole="button" onPress={onPress} style={styles.row}>
+    <Pressable accessibilityRole="button" accessibilityState={{ selected: selectedLanguage ? true : undefined }} onPress={onPress} style={styles.row}>
       <View style={styles.copy}>
-        <Text style={styles.label}>{label}</Text>
-        {value ? <Text style={styles.value}>{value}</Text> : null}
+        <Text language={language} style={styles.label}>{label}</Text>
+        {value ? <Text systemFont={selectedLanguage} accessible={!selectedLanguage} allowFontScaling={!selectedLanguage} style={styles.value}>{value}</Text> : null}
       </View>
-      <Text style={styles.chevron}>›</Text>
+      <Text accessible={false} allowFontScaling={false} style={styles.chevron}>›</Text>
     </Pressable>
   );
 }
@@ -37,7 +44,7 @@ const makeStyles = (colors: Palette) =>
       borderBottomColor: colors.border,
     },
     copy: { flex: 1 },
-    label: { color: colors.text, fontSize: 17 },
-    value: { color: colors.secondary, fontSize: 13, marginTop: 3 },
+    label: { color: colors.text, fontSize: 18, lineHeight: 26 },
+    value: { color: colors.secondary, fontSize: 14, lineHeight: 21, marginTop: 3 },
     chevron: { color: colors.secondary, fontSize: 27 },
   });

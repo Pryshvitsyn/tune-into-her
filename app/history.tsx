@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 
+import { AppText as Text } from '../src/components/AppText';
 import { Header } from '../src/components/Header';
 import { Screen } from '../src/components/Screen';
 import { useApp } from '../src/context/AppContext';
@@ -50,7 +51,7 @@ export default function GuidanceHistoryScreen() {
     <Screen>
       <Header title={copy.historyTitle} />
       {!items ? null : items.length === 0 ? (
-        <Text style={{ color: colors.secondary, fontSize: 16, lineHeight: 23, textAlign: 'center', marginTop: 36 }}>
+        <Text style={{ color: colors.secondary, fontSize: 17, lineHeight: 25, textAlign: 'center', marginTop: 36 }}>
           {copy.historyEmpty}
         </Text>
       ) : (
@@ -60,20 +61,20 @@ export default function GuidanceHistoryScreen() {
             const rating = labelForFeedback(item.feedback);
             return (
               <View key={`${item.date}:${item.cueId}`} style={{ paddingBottom: 20 }}>
-                <Text style={{ color: colors.secondary, fontSize: 12, lineHeight: 17, fontWeight: '700', textAlign: 'center', marginBottom: 8 }}>
+                <Text style={{ color: colors.secondary, fontSize: 14, lineHeight: 21, fontWeight: '400', textAlign: 'center', marginBottom: 8 }}>
                   {item.date}
                 </Text>
-                <Text style={{ color: colors.text, fontSize: 16, lineHeight: 23, textAlign: 'center' }}>
+                <Text style={{ color: colors.text, fontSize: 17, lineHeight: 25, textAlign: 'center' }}>
                   {cue.context}
                 </Text>
-                <Text style={{ color: colors.text, fontSize: 16, lineHeight: 23, textAlign: 'center', marginTop: 10 }}>
+                <Text style={{ color: colors.text, fontSize: 17, lineHeight: 25, textAlign: 'center', marginTop: 10 }}>
                   {cue.support}
                 </Text>
-                <Text style={{ color: colors.text, fontSize: 16, lineHeight: 23, textAlign: 'center', marginTop: 10 }}>
+                <Text style={{ color: colors.text, fontSize: 17, lineHeight: 25, textAlign: 'center', marginTop: 10 }}>
                   {cue.cue}
                 </Text>
                 {rating ? (
-                  <Text style={{ color: colors.secondary, fontSize: 13, lineHeight: 19, textAlign: 'center', marginTop: 12 }}>
+                  <Text style={{ color: colors.secondary, fontSize: 14, lineHeight: 21, textAlign: 'center', marginTop: 12 }}>
                     {rating}
                   </Text>
                 ) : null}

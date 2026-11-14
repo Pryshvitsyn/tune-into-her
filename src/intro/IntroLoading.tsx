@@ -1,5 +1,6 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { Image, StyleSheet, useWindowDimensions, View } from 'react-native';
+
 import { BRAND_TEXTURE_URI, PADDED_LOGO_WIDTH_SCALE, PADDED_LOGO_HEIGHT_SCALE } from './brandTexture.generated';
 
 /** Match the first animation frame while real settings/content are loading. */

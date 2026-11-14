@@ -9,7 +9,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../config/constants';
 import languages from '../config/languages.json';
 import { spacing, type Palette } from '../theme';
-import { fontFamilyForLanguage, typographyForLanguage } from '../theme/typography';
+import { typographyForLanguage } from '../theme/typography';
 import { useTheme } from '../theme/useTheme';
 
 import { AppText as Text } from './AppText';
@@ -139,14 +139,14 @@ export function LanguagePicker({ value, onConfirm, disabled = false }: {
     accessibilityLanguage={language === 'mbf' ? 'ms' : language}
     accessibilityLabel={languages.labels[language]} accessibilityState={{ checked: selection.draft === language, disabled: selection.confirming }}
     style={[styles.option, { height: rowHeight }, !wheel && selection.draft === language && styles.optionSelected]}>
-    <Text key={measurementKey} accessible={false} allowFontScaling
+    <Text key={measurementKey} language={language} accessible={false} allowFontScaling
       onLayout={event => measure(language, measurementKey, event.nativeEvent.layout.height)}
       onTextLayout={event => {
         const lines = event.nativeEvent.lines;
         if (lines.length) measure(language, measurementKey,
           Math.max(...lines.map(line => line.y + line.height)) - Math.min(...lines.map(line => line.y)));
       }}
-      style={[styles.optionLabel, { fontFamily: fontFamilyForLanguage(language) }, selection.draft !== language && styles.unselected]}>
+      style={[styles.optionLabel, selection.draft !== language && styles.unselected]}>
       {languages.labels[language]}
     </Text>
   </Pressable>);
@@ -193,7 +193,7 @@ export function LanguagePicker({ value, onConfirm, disabled = false }: {
       accessibilityRole="button" accessibilityLabel={t('accessibility.selectLanguage', { language: label })}
       accessibilityState={{ expanded: selection.visible, disabled }}
       style={({ pressed }) => [styles.closed, pressed && styles.closedPressed, disabled && styles.disabled]}>
-      <Text style={[styles.selected, { fontFamily: fontFamilyForLanguage(value) }]}>{label}</Text>
+      <Text language={value} style={styles.selected}>{label}</Text>
       <Text accessible={false} allowFontScaling={false} style={styles.arrow}>▾</Text>
     </Pressable>
     <Modal visible={selection.visible} transparent animationType="none" onRequestClose={cancel}

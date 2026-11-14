@@ -1,9 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from 'react-native';
+
 
 import { radius, spacing } from "../theme";
 import type { Palette } from "../theme";
 import { useTheme } from "../theme/useTheme";
 
+import { AppText as Text } from './AppText';
 import { Header } from "./Header";
 import { Screen } from "./Screen";
 

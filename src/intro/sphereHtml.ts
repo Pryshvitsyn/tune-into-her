@@ -171,11 +171,14 @@ const WEB_RUNTIME = String.raw`
     gl.clearColor(0,0,0,0); gl.clear(gl.COLOR_BUFFER_BIT);
     if (elapsed >= C.duration) {
       const sx = canvas.width/view.width, sy = canvas.height/view.height;
-      const left = Math.max(0,Math.floor((scene.x-scene.radius-2)*sx));
-      const bottom = Math.max(0,Math.floor((view.height-scene.y-scene.radius-2)*sy));
+      // Today may scroll its reserved sphere slot completely outside the viewport.
+      // Intersect both edges: an offscreen origin must never yield a negative extent.
+      const left = Math.max(0,Math.min(canvas.width,Math.floor((scene.x-scene.radius-2)*sx)));
+      const right = Math.max(left,Math.min(canvas.width,Math.ceil((scene.x+scene.radius+2)*sx)));
+      const bottom = Math.max(0,Math.min(canvas.height,Math.floor((view.height-scene.y-scene.radius-2)*sy)));
+      const top = Math.max(bottom,Math.min(canvas.height,Math.ceil((view.height-scene.y+scene.radius+2)*sy)));
       gl.enable(gl.SCISSOR_TEST);
-      gl.scissor(left,bottom,Math.min(canvas.width-left,Math.ceil((scene.radius*2+4)*sx)),
-                              Math.min(canvas.height-bottom,Math.ceil((scene.radius*2+4)*sy)));
+      gl.scissor(left,bottom,right-left,top-bottom);
     }
     gl.uniform2f(uniforms.u_view, view.width,view.height);
     gl.uniform2f(uniforms.u_center, scene.x,scene.y);

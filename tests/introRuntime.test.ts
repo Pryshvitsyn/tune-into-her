@@ -34,7 +34,7 @@ async function bootRuntime() {
     getUniformLocation: (_program: object, key: string) => key,
     getParameter: () => 4096, createTexture: () => ({}), activeTexture() {}, bindTexture() {},
     texParameteri() {}, pixelStorei() {}, texImage2D() {}, getError: () => 0,
-    uniform1i() {}, viewport() {}, disable() {}, clearColor() {}, clear() {}, enable() {}, scissor() {},
+    uniform1i() {}, viewport() {}, disable() {}, clearColor() {}, clear() {}, enable() {}, scissor: (...box: number[]) => { values.scissor = box; },
     uniform1f: (key: string, value: number) => { values[key] = value; },
     uniform2f: (key: string, ...value: number[]) => { values[key] = value; },
     uniform3f: (key: string, ...value: number[]) => { values[key] = value; },
@@ -92,6 +92,27 @@ function start(runtime: Awaited<ReturnType<typeof bootRuntime>>, animate = true,
 }
 
 describe('shared scene runtime lifecycle', () => {
+  it.each([
+    [200, -200], [200, 1200], [-500, 400], [1000, 400],
+    [0, 0], [400, 800], [200, 400],
+  ])('intersects the completed sphere scissor with its viewport at (%s,%s)', async (x, y) => {
+    const runtime = await bootRuntime();
+    runtime.command({ type: 'configure', target: { x, y, radius: 140 } });
+    runtime.command({ type: 'start', animate: false, reducedMotion: false });
+    const [left, bottom, width, height] = runtime.values.scissor as [number, number, number, number];
+    expect([left, bottom, width, height].every(Number.isFinite)).toBe(true);
+    expect(left).toBeGreaterThanOrEqual(0);
+    expect(bottom).toBeGreaterThanOrEqual(0);
+    expect(width).toBeGreaterThanOrEqual(0);
+    expect(height).toBeGreaterThanOrEqual(0);
+    expect(left + width).toBeLessThanOrEqual(800);
+    expect(bottom + height).toBeLessThanOrEqual(1600);
+    if (x < -140 || x > 540 || y < -140 || y > 940) {
+      expect(width * height).toBe(0);
+    } else {
+      expect(width * height).toBeGreaterThan(0);
+    }
+  });
   it('completes the unchanged nine-second sequence once, then keeps V4 internally animated', async () => {
     const runtime = await bootRuntime();
     expect(runtime.messages.filter(message => message.type === 'ready')).toHaveLength(1);

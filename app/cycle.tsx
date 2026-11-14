@@ -1,8 +1,9 @@
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, Text, View } from "react-native";
+import { Alert, StyleSheet, View } from 'react-native';
 
+import { AppText as Text } from '../src/components/AppText';
 import { Button } from "../src/components/Button";
 import { CycleCalendar } from "../src/components/CycleCalendar";
 import { Header } from "../src/components/Header";
@@ -95,7 +96,7 @@ const makeStyles = (colors: Palette) =>
     label: {
       color: colors.secondary,
       fontSize: 13,
-      fontWeight: "700",
+      fontWeight: '400',
       marginBottom: spacing.sm,
     },
     picker: {

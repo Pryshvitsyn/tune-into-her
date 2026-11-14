@@ -5,7 +5,13 @@ import { describe, expect, it } from 'vitest';
 
 import { SUPPORTED_LANGUAGES } from '../src/config/constants';
 import languages from '../src/config/languages.json';
+import { dailyReminders } from '../src/domain/content/dailyGuidance';
+import { addCalendarDays } from '../src/domain/cycle/dateOnly';
+import { getDemoCopy } from '../src/i18n/acceleratedDemo';
+import interfaceCopy from '../src/i18n/interface.json';
+import releaseCopy from '../src/i18n/releaseCopy.json';
 import { resources } from '../src/i18n/resources';
+import theaCopy from '../src/i18n/thea.json';
 import { fontFamilyForLanguage, LIBERTINE_FAMILY } from '../src/theme/typography';
 
 const bytes = readFileSync(new URL('../assets/fonts/LinuxLibertineO-Regular.otf', import.meta.url));
@@ -89,7 +95,17 @@ describe('bundled original Linux Libertine O', () => {
       return;
     }
     expect(fontFamilyForLanguage(language)).toBe(LIBERTINE_FAMILY);
-    const characters = new Set(textValues(resources[language].translation).join(''));
+    const content = JSON.parse(readFileSync(new URL(`../content/locales/${language}.json`, import.meta.url), 'utf8')) as unknown;
+    const calendarLocale = language === 'mbf' ? 'ms' : language;
+    const dates = Array.from({ length: 12 }, (_, month) => new Date(2026, month, 15)
+      .toLocaleDateString(calendarLocale, { month: 'long', year: 'numeric' }));
+    const weekdays = Array.from({ length: 7 }, (_, day) => new Date(2026, 10, day + 2)
+      .toLocaleDateString(calendarLocale, { weekday: 'short' }));
+    const guidance = Array.from({ length: 90 }, (_, index) => dailyReminders(
+      addCalendarDays('2026-01-01', index), language));
+    const ui = [resources[language].translation, interfaceCopy[language], releaseCopy[language],
+      theaCopy[language], getDemoCopy(language), content, guidance, dates, weekdays];
+    const characters = new Set(ui.flatMap(textValues).join(''));
     const missing = [...characters].filter(character => !/\s/u.test(character) && !glyphIndex(character.codePointAt(0)!));
     expect(missing, `${language}: missing actual font glyphs`).toEqual([]);
     expect([...languages.labels[language]].every(character => /\s/u.test(character) || glyphIndex(character.codePointAt(0)!))).toBe(true);

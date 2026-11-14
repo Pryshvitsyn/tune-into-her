@@ -1,4 +1,5 @@
 import { Redirect, router } from 'expo-router';
+
 import { AnimatedToday } from '../src/intro/AnimatedToday';
 import { useTheme } from '../src/theme/useTheme';
 

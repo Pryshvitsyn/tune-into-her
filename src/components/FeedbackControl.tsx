@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { Pressable, View } from 'react-native';
+
 
 import type { FeedbackStatus } from '../domain/content/feedback';
 import type { DateOnly } from '../domain/cycle/dateOnly';
 import { useInterface } from '../i18n/useInterface';
 import { AsyncFeedbackStore } from '../storage/AsyncFeedbackStore';
 import { useTheme } from '../theme/useTheme';
+
+import { AppText as Text } from './AppText';
 
 const feedbackStore = new AsyncFeedbackStore();
 
@@ -35,7 +38,7 @@ export function FeedbackControl({ date, cueId }: { date: DateOnly; cueId: string
 
   return (
     <View accessibilityRole="radiogroup" style={{ alignItems: 'center', marginTop: 12, marginBottom: 12 }}>
-      <Text style={{ color: colors.secondary, fontSize: 13, lineHeight: 18, textAlign: 'center', marginBottom: 10 }}>
+      <Text style={{ color: colors.secondary, fontSize: 14, lineHeight: 20, textAlign: 'center', marginBottom: 10 }}>
         {copy.feedbackPrompt}
       </Text>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 8 }}>
@@ -48,14 +51,14 @@ export function FeedbackControl({ date, cueId }: { date: DateOnly; cueId: string
               accessibilityState={{ selected: active }}
               onPress={() => choose(choice.status)}
               style={{
-                minHeight: 38,
+                minHeight: 44,
                 justifyContent: 'center',
                 paddingHorizontal: 12,
                 borderRadius: 19,
                 backgroundColor: active ? colors.primary : colors.card,
               }}
             >
-              <Text style={{ color: active ? colors.background : colors.text, fontSize: 13, fontWeight: '600', textAlign: 'center' }}>
+              <Text style={{ color: active ? colors.background : colors.text, fontSize: 14, lineHeight: 20, fontWeight: '400', textAlign: 'center' }}>
                 {choice.label}
               </Text>
             </Pressable>

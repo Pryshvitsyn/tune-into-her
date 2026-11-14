@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from 'react-native';
 
+import { AppText as Text } from '../../src/components/AppText';
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import { SettingsRow } from "../../src/components/SettingsRow";
@@ -25,6 +26,7 @@ export default function LanguageScreen() {
       <View style={styles.card}>
         {SUPPORTED_LANGUAGES.map((language) => (
           <SettingsRow
+            language={language}
             key={language}
             label={t(`language.${language}`)}
             value={preferences.language === language ? "✓" : undefined}
