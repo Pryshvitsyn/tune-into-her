@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24093.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EXPO-VIEWCONTROLLER-1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24053.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="EXPO-SCENE-1">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="EXPO-VIEWCONTROLLER-1" sceneMemberID="viewController">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EXPO-ContainerView" userLabel="ContainerView">
+                        <rect key="frame" x="0" y="0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="LaunchSilverGradient" translatesAutoresizingMaskIntoConstraints="NO" id="TIH-SilverBackground">
+                                <rect key="frame" x="0" y="0" width="393" height="852"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EXPO-SplashScreen" userLabel="Approved launch logo">
+                                <rect key="frame" x="9.825" y="295.3275" width="373.35" height="261.345"/>
+                                <accessibility key="accessibilityConfiguration" label="Tune Into Her">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EXPO-SplashScreen" secondAttribute="height" multiplier="10:7" id="TIH-LogoAspect"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="525" id="TIH-LogoCap"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rmq-lb-GrQ"/>
+                        <constraints>
+                            <constraint firstItem="TIH-SilverBackground" firstAttribute="leading" secondItem="EXPO-ContainerView" secondAttribute="leading" id="TIH-BGLeading"/>
+                            <constraint firstItem="TIH-SilverBackground" firstAttribute="trailing" secondItem="EXPO-ContainerView" secondAttribute="trailing" id="TIH-BGTrailing"/>
+                            <constraint firstItem="TIH-SilverBackground" firstAttribute="top" secondItem="EXPO-ContainerView" secondAttribute="top" id="TIH-BGTop"/>
+                            <constraint firstItem="TIH-SilverBackground" firstAttribute="bottom" secondItem="EXPO-ContainerView" secondAttribute="bottom" id="TIH-BGBottom"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="centerY" secondItem="EXPO-ContainerView" secondAttribute="centerY" id="0VC-Wk-OaO"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="centerX" secondItem="EXPO-ContainerView" secondAttribute="centerX" id="zR4-NK-mVN"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="width" secondItem="EXPO-ContainerView" secondAttribute="width" multiplier="0.95" priority="999" id="TIH-LogoResponsiveWidth"/>
+                        </constraints>
+                        <color key="backgroundColor" red="0.9764705882352941" green="0.984313725490196" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXPO-PLACEHOLDER-1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchLogo" width="800" height="560"/>
+        <image name="LaunchSilverGradient" width="1024" height="1"/>
+    </resources>
+</document>

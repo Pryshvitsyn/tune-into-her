@@ -77,3 +77,43 @@ Decision: free download; explicit14×24h full access after onboarding without ca
 Decision: keep existing platform IDs and RC anonymous identity; separate random SecureStore guest credential for the isolated Worker/D1 trial backend. Access is paid OR app trial; cache is bounded and known expiry never extended. Guest mode cannot guarantee one trial across erased identities/devices.
 Decision: prepare RevenueCat Billing + Stripe processor + hosted Web Purchase Links + RC Customer Portal. If an existing Stripe Billing catalog is discovered, preserve it and review the official integration before creating another engine. Native global purchases stay in platform stores; no external payment CTA enabled without verified program/storefront eligibility.
 Proof: see [BILLING_QA](BILLING_QA.md), [product policy](MONETIZATION.md), [external setup](STORE_SETUP.md). No live catalog, charge, deployment or store submission was performed.
+
+
+## D-009 — Global cold-launch Deep Intro V2
+Date recorded: 2026-11-14 (Europe/Rome)
+Status: APPROVED by the Founder's global app launch request; IMPLEMENTED in source;
+final independent platform/runtime verification remains open in [LAUNCH_QA](docs/LAUNCH_QA.md).
+
+Decision: Use the already approved Deep Intro V2 as the global genuine cold-launch
+experience on iOS and Android. Preserve its six layers, original motion speed, nine-second
+timeline, official logo geometry and V4 material. After the scene, show only the original
+animated sphere for a further second, then fade to the correct existing onboarding,
+normal-entry or locked destination when ready. Initialize in parallel and keep the sphere
+moving if readiness takes longer. Do not reveal daily content or bypass access checks.
+
+Decision: Bridge native startup with the existing Expo splash mechanism and a compatible
+static first frame; do not claim WebGL before React Native starts. Play one global intro
+per process, avoid a second Today intro and skip full motion for Reduced Motion users.
+Respect screen-reader access, backgrounding and Android Back, with recoverable init errors.
+
+Reason: Explicit Founder request to implement the approved launch experience for the
+complete application, without redesign, submission or publication.
+
+## D-010 — Silver Chrome onboarding and original typeface
+Date recorded: 2026-11-14 (Europe/Rome)
+Status: APPROVED by the attached onboarding V2 brief and explicit confirmation that both
+onboarding and global-launch scopes apply; IMPLEMENTED in source; native accessibility,
+locale/layout and final runtime checks remain open.
+
+Decision: Apply the approved Silver Chrome onboarding/pre-purchase presentation and use
+the actual original Linux Libertine O Regular font where its script coverage permits,
+with system script fonts for Hindi and Simplified Chinese. Retain the existing eleven
+locale IDs, original V4 renderer, daily content/translations, cycle calculations,
+onboarding information and persistence, and RevenueCat/trial/subscription logic.
+
+Decision: Present the language selector as one compact control with a confirmable local
+draft and platform-appropriate modal selection. Typography/layout must accommodate text
+scaling and accessible controls rather than clipping content.
+
+Reason: The Founder requested the attached onboarding redesign alongside global startup;
+this supersedes earlier visual drafts only within the approved presentation scope.

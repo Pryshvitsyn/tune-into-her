@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-13
+Updated: 2026-11-14 (Europe/Rome)
 
 ## GOAL
 
@@ -11,7 +11,7 @@ fertility, or mood-prediction product.
 
 ## STATE
 
-- Current work branch: `codex/monetization-20261113`, based on clean local candidate `eb5b0f0`; original release-candidate branch and `main` remain untouched. Original consolidation was based on PR #6 `25c8505`.
+- Current work branch: `codex/monetization-20261113`, based on clean local candidate `eb5b0f0`; global launch and onboarding V2 extend the reviewed local monetization checkpoint. Original release-candidate branch and `main` remain untouched. Original consolidation was based on PR #6 `25c8505`.
 - Recovery points: `archive/github-release-baseline-20261111` → `25c8505`; local V4
   preservation branch → `1147292`.
 - V4 renderer is directly used by Today and onboarding. Its renderer, clean texture,
@@ -65,6 +65,49 @@ fertility, or mood-prediction product.
   The monetization arm64 Release build now passes; actual native header SVG marks render
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
+
+## GLOBAL LAUNCH / ONBOARDING V2 — 2026-11-14
+
+- Implemented the approved shared Deep Intro V2 as the global cold-launch presentation:
+  original nine-second/six-layer scene, one further1000ms foreground animated-sphere
+  hold, parallel initialization and readiness-based fade. Existing onboarding and
+  paid/app-trial gates remain authoritative. Retry, background timing, Reduced Motion,
+  screen-reader skipping and one-runtime intro consumption are integrated.
+- V4 renderer/texture/poster, approved timeline/shaders/logo, content, translations,
+  cycle calculations, purchase/trial services and persistence sources have no diff.
+- Onboarding/pre-purchase uses Silver Chrome and the real original licensed Linux
+  Libertine O OTF. Nine Latin/Cyrillic locales use it; Hindi/Chinese use native script
+  fonts. One draft/confirm/cancel picker preserves all11 locale IDs. Canonical notices
+  are included in the installed app through the selectable Terms appendix.
+- Actual native review corrected live Dynamic Type stale measurements, wrapped picker
+  header/action geometry, decorative-icon clipping and Dark status-bar contrast.
+  Readable text scales fully; only graphical glyphs keep icon size. Native Stack owns
+  status-bar color with the corresponding native/Expo controller policy, preserving geometry.
+- Final checks: typecheck PASS;254 tests/33 files PASS; lint0 errors/3 prior warnings;
+  610 bundles/11 locales/318 texts per locale and90-day reserve PASS; font notices match.
+  Expo Doctor remains19/21 for existing native-config-sync/version advice.
+- Final signed standalone iOS Simulator Release passes on compact SE3. Exact-final-binary
+  clean installation and existing locked entry are recorded. Native final Light/Dark
+  six-step flows pass the same29 assertions; Dark also passes9 clock-pixel checks.
+  All11 picker values, Hindi/Chinese glyphs, MAX text/picker/checkbox/stepper layout,
+  foreground/no-replay, background-during-motion and Reduced Motion have actual evidence.
+  The matrix distinguishes earlier unchanged-controller checkpoints from final UI proof.
+- Final generic iphoneos artifact passes existing signing/profile, original font/notices,
+  refreshed production JS and exact official Expo manifest/fingerprint checks. An earlier
+  data-preserving phone update/cold launch survived+39.68s. Final update is pending the
+  owner's phone unlock; no locked retry, signing change or data reset is performed.
+  Physical visual/speech proof remains unavailable through this session's CUA root issue.
+- Final Android production export and isolated native generation pass. Actual Gradle
+  assembly stops before compilation because JRE/SDK/adb/emulator are unavailable; no
+  APK/AAB or Android runtime success is claimed. Configured valid-access, slow/offline
+  native init, successful native Retry/fault injection and spoken screen-reader proof
+  remain explicit validation gates. No mock paid access was used to obtain screenshots.
+- Reviewed work remains local on the existing branch. No push,
+  merge, store submission or publication is performed.
+
+[Actual QA matrix](docs/LAUNCH_QA.md) · [Videos/screens/files](release/evidence/launch-20261114/README.md) ·
+[Native splash/platform limits](docs/NATIVE_LAUNCH_SPLASH.md).
+
 ## MONETIZATION — 2026-11-13
 
 - Separate server-controlled 14×24h guest app access, explicit start after completed onboarding; no store subscription or automatic charge. Trial identity/credential survives local content reset.
@@ -90,19 +133,19 @@ fertility, or mood-prediction product.
 
 | Area | Current boundary |
 | --- | --- |
-| Native build and visual QA | Current arm64 Release Simulator build/install and unconfigured paywall in Light/Dark pass; its header SVG marks render. Earlier unlocked Today proof predates RNSVG update; full current intro/Today, compact, large-text, all-locale, physical-device and store QA remain open. |
-| Android | Android JS export passes, but no `android/` native project, Gradle build, emulator/device, SVG/WebView/splash/navigation runtime proof, or standalone APK/AAB exists. |
-| Apple / Google | No verified signing, physical device, store account, listing, or store approval. Current audit observes one Apple Development identity; distribution signing/provisioning and physical/store proof remain unverified. |
+| Native build and visual QA | Final signed Simulator build passes. Compact first-install/cold launch, locked entry/navigation, background/resume and Reduced Motion have native checkpoint evidence; exact final UI/scenario statuses are in LAUNCH_QA.md. Configured valid access, delayed/offline native services, successful native Retry, spoken screen-reader and final physical visual/runtime proof remain unverified. |
+| Android | Isolated native generation and final post-font-fix production JS export pass, including exact OTF bytes and full canonical font notices. Actual Gradle attempt stops at missing Java Runtime; SDK/adb/emulator are absent. No APK/AAB or native splash/WebView/navigation/billing runtime proof exists. |
+| Apple / Google | Pre-font-fix physical development-signed Release build, update-install and cold launch pass; same process survives at +39.68 seconds. Final status-bar-corrected generic iphoneos app-only build passes, including fresh official Expo Updates resources and the existing profile for this phone; update awaits unlock. Physical visual/accessibility capture is blocked by the CUA runtime root error. Distribution signing, store account/listing/approval and real transactions remain unverified. No account, Team, identifier or profile was changed. |
 | Billing | Owner approved14-day app access + voluntary €3.99 monthly / €24.99 annual base targets on2026-11-13. Native service/UI, trial Worker/D1 and web redemption source implemented; external catalogs/keys/deployment and real sandbox transactions remain BLOCKED. See BILLING_QA.md and STORE_SETUP.md. |
 | Legal/support | Real seller spelling, support contact, terms/privacy URLs/text, and privacy declarations remain open. |
-| Product identifiers | iOS is `com.eliogenesis.tuneintoher`; Android is `com.pryshvitsyn.tuneintoher`; explicit owner decision required. |
+| Product identifiers | Existing iOS `com.eliogenesis.tuneintoher` and Android `com.pryshvitsyn.tuneintoher` are preserved as instructed. External store/RevenueCat records still need verification; no identifier alignment is part of this change. |
 | Content | All 30 current Founder column-G comments are mapped as unapproved editorial drafts; no translation update is authorized or claimed native-reviewed. |
 | Safety | No explicit user-confirmed bleeding-event provenance or clinical/localized copy review. The product also has no explicit unknown-cycle-length state: onboarding supplies defaults (28/5), which needs an owner decision if uncertainty must be preserved. |
-| Visual assets | Current vector brand marks have no verified supplied-original provenance. |
+| Visual assets | The Founder-approved Deep Intro V2/logo geometry, original V4 renderer/texture/poster, timeline and scene/shader data are preserved and integrity-tested. Broader archival/vector-asset provenance is not established by that approval. |
 
 ## NEXT BEST MOVE
 
-Complete the canonical [owner billing checklist](STORE_SETUP.md): first provision the isolated sandbox trial endpoint and verify native products/RevenueCat public keys, then install the billing-test builds for real Apple/Google sandbox and RC web redemption/portal QA. Android AAB is locally blocked by missing JDK/SDK. Preserve the remaining visual/content/legal/device gates; source tests and Simulator builds are not store readiness.
+Finish the final native runtime matrix in [LAUNCH_QA](docs/LAUNCH_QA.md), then update and cold-launch the prepared physical artifact when the paired phone is unlocked. Obtain physical visual/accessibility evidence when an enabled capture route is available. Use a JDK/SDK-equipped host for an independent Android release/runtime check; final Android JS packaging is verified. Preserve the separate [owner billing checklist](STORE_SETUP.md): sandbox trial endpoint, real store/RevenueCat configuration and actual Apple/Google/web transactions remain external gates. Source checks and Simulator proof do not establish store readiness.
 
 ## REFERENCES
 
@@ -110,4 +153,5 @@ Complete the canonical [owner billing checklist](STORE_SETUP.md): first provisio
 [Content audit](docs/CONTENT_AUDIT.md) · [Cycle safety](docs/CYCLE_SAFETY.md) ·
 [UX final](docs/UX_FINAL.md) · [Build proof](release/BUILD_PROOF.md) ·
 [Daily QA](release/DAILY_QA_20261112.md) · [Roadmap](release/ROADMAP.md) ·
-[Store checklist](release/STORE_CHECKLIST.md)
+[Store checklist](release/STORE_CHECKLIST.md) · [Launch QA](docs/LAUNCH_QA.md) ·
+[Native launch bridge](docs/NATIVE_LAUNCH_SPLASH.md)

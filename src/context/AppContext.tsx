@@ -25,6 +25,10 @@ export const notificationScheduler = new NotificationScheduler(new ExpoNotificat
 
 interface AppContextValue {
   ready: boolean;
+  accessReady: boolean;
+  initializationError: boolean;
+  initializationAttempt: number;
+  retryInitialization(): void;
   deleteLocalData(): Promise<void>;
   preferences: Preferences;
   cycleSettings: CycleSettings | null;
@@ -43,6 +47,13 @@ const AppContext = createContext<AppContextValue | null>(null);
 
 export function AppProvider({ children }: PropsWithChildren) {
   const [ready, setReady] = useState(false);
+  const [accessReady, setAccessReady] = useState(false);
+  const [initializationError, setInitializationError] = useState(false);
+  const [initializationAttempt, setInitializationAttempt] = useState(0);
+  const retryInitialization = useCallback(() => {
+    setReady(false); setAccessReady(false); setInitializationError(false);
+    setInitializationAttempt(value => value + 1);
+  }, []);
   const [preferences, setPreferencesState] = useState<Preferences>({ ...defaultPreferences, language: initialLanguage });
   const [cycleSettings, setCycleSettingsState] = useState<CycleSettings | null>(null);
   const [entitlement, setEntitlement] = useState<EntitlementState>({ status: 'loading', isActive: false, isMock: false });
@@ -66,20 +77,32 @@ export function AppProvider({ children }: PropsWithChildren) {
 
   useEffect(() => {
     let disposed = false;
-    void Promise.all([loadPreferences(), cycleProvider.get()]).then(([savedPreferences, savedCycle]) => {
+    void Promise.all([loadPreferences(), cycleProvider.get()]).then(async ([savedPreferences, savedCycle]) => {
       if (disposed) return;
       const nextPreferences = savedPreferences ?? { ...defaultPreferences, language: initialLanguage };
+      await i18n.changeLanguage(nextPreferences.language);
+      if (disposed) return;
       setPreferencesState(nextPreferences);
       setCycleSettingsState(savedCycle);
-      void i18n.changeLanguage(nextPreferences.language);
       setReady(true);
+    }).catch(() => {
+      if (!disposed) setInitializationError(true);
     });
-    // A slow trial request must never overwrite a newer SDK purchase/refund event.
-    void purchaseService.getEntitlement().then(state => { if (!disposed) applyEntitlement(state); });
-    void appTrialService.getState().then(state => { if (!disposed) setAppTrial(state); });
+    // Services retain their existing access/cache policy. Readiness only coordinates presentation.
+    const paid = purchaseService.getEntitlement().then(state => {
+      if (!disposed) applyEntitlement(state);
+    }).catch(() => {
+      if (!disposed) applyEntitlement({ status: 'error', isActive: false, isMock: false, verification: 'unavailable' });
+    });
+    const trial = appTrialService.getState().then(state => {
+      if (!disposed) setAppTrial(state);
+    }).catch(() => {
+      if (!disposed) setAppTrial({ status: 'unavailable', isActive: false, verification: 'unavailable' });
+    });
+    void Promise.all([paid, trial]).then(() => { if (!disposed) setAccessReady(true); });
     const removeListener = purchaseService.addEntitlementListener(applyEntitlement);
     return () => { disposed = true; removeListener(); };
-  }, [applyEntitlement]);
+  }, [applyEntitlement, initializationAttempt]);
 
   useEffect(() => {
     if (!appTrial.isActive || !appTrial.validForMs) return;
@@ -162,7 +185,7 @@ export function AppProvider({ children }: PropsWithChildren) {
   }, [preferences.language]);
 
   const hasAccess = entitlement.isActive || appTrial.isActive;
-  const value = useMemo(() => ({ deleteLocalData, ready, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
+  const value = useMemo(() => ({ deleteLocalData, ready, accessReady, initializationError, initializationAttempt, retryInitialization, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, accessReady, initializationError, initializationAttempt, retryInitialization, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 

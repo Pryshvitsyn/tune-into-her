@@ -1,20 +1,26 @@
 import type { ReactNode } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 import { useApp } from "../context/AppContext";
 import { dailyReminders } from "../domain/content/dailyGuidance";
 import type { LocalizedCue } from "../domain/content/types";
 import type { DateOnly } from "../domain/cycle/dateOnly";
 import { useInterface } from "../i18n/useInterface";
+import { typographyForLanguage } from "../theme/typography";
 import { useTheme } from "../theme/useTheme";
+
+import { AppText as Text } from "./AppText";
+
 export function AdviceBlocks({
   advice,
   date,
   sphere,
+  presentation,
 }: {
   advice: LocalizedCue;
   date: DateOnly;
   sphere?: ReactNode;
+  presentation?: "onboarding";
 }) {
   const c = useInterface();
   const { preferences } = useApp();
@@ -25,6 +31,7 @@ export function AdviceBlocks({
     { title: c.do, body: advice.cue },
   ];
   const reminders = dailyReminders(date, preferences.language);
+  const premium = presentation === "onboarding" ? typographyForLanguage(preferences.language) : undefined;
   return (
     <View>
       {blocks.map((b, i) => (
@@ -35,7 +42,8 @@ export function AdviceBlocks({
                 textAlign: "center",
                 fontSize: 18,
                 lineHeight: 24,
-                fontWeight: "700",
+                fontWeight: premium ? "400" : "700",
+                fontFamily: premium?.fontFamily,
                 color: colors.text,
                 marginBottom: 8,
               }}
@@ -46,7 +54,8 @@ export function AdviceBlocks({
               style={{
                 textAlign: "center",
                 fontSize: 16,
-                lineHeight: 23,
+                lineHeight: premium ? 24 : 23,
+                fontFamily: premium?.fontFamily,
                 color: colors.text,
               }}
             >
@@ -57,7 +66,8 @@ export function AdviceBlocks({
             style={{
               textAlign: "center",
               fontSize: 13,
-              lineHeight: 19,
+              lineHeight: premium ? 20 : 19,
+              fontFamily: premium?.fontFamily,
               color: colors.secondary,
               marginBottom: i === 0 && sphere ? 8 : 4,
             }}

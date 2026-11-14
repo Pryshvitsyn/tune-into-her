@@ -1,8 +1,40 @@
 # TASKS
 
-Updated: 2026-11-13
+Updated: 2026-11-14 (Europe/Rome)
 
-## NOW — release-candidate proof
+## NOW — global launch and onboarding V2
+
+- [x] Integrate one shared approved nine-second/six-layer global cold intro, animated
+  extra-second hold and readiness fade; preserve V4/logo/shaders and suppress Today replay.
+- [x] Initialize in parallel, keep content/controls hidden, preserve existing onboarding/
+  paid/trial gates, and implement Retry, foreground timing and Reduced Motion/reader skipping.
+- [x] Bridge with Expo/native static splash; verify original alpha, responsive iOS layout,
+  both-platform isolated generation and Android system-icon safe area without claiming parity.
+- [x] Implement Silver Chrome onboarding/pre-purchase, original Linux Libertine O and
+  script fallback, all11 picker values/draft semantics, preview order and canonical notices.
+- [x] Correct observed live font measurements, picker geometry, decorative icons and native
+  status-bar ownership; retain full readable-text scaling and existing form/save handlers.
+- [x] Pass final typecheck,254 tests/33 files, lint0 errors/3 prior warnings, content/
+  90-day reserve, font notice and protected-source checks. Doctor remains existing19/21.
+- [x] Build signed standalone iOS Release and record final clean first installation and
+  locked cold entry. Run native final Light/Dark six-step29-assertion flows,9 Dark clock
+  checks, all11 picker values and strongest MAX-text bounds/glyph checks. Save actual media.
+- [x] Record foreground/no global replay, Settings→Today and background-during-choreography;
+  verify native Reduced Motion ON/OFF. Explicit case/build boundaries are in LAUNCH_QA.
+- [x] Prepare/verify final generic iphoneos artifact using existing signing and fresh official
+  SDK resources. Earlier phone update/cold launch survived+39.68s without reset or billing.
+- [ ] Install and cold-test the exact final phone artifact after owner unlock. Fresh lock
+  checks still require passcode; no unlock, uninstall, pairing or provisioning change is made.
+- [ ] Obtain physical visual/route/motion/speech proof; CUA cannot start with this session's
+  symlinked root. Process survival alone does not establish visual behavior.
+- [x] Produce final Android JS/assets export with exact font/full notices and attempt Gradle.
+- [ ] Complete independent Android Release/emulator/device validation on a JRE/SDK/adb host.
+- [ ] Complete configured native valid-access, slow/offline, successful Retry/GPU fault and
+  spoken VoiceOver/TalkBack cases. Do not disable gates or introduce a production fixture.
+- [x] Review the complete diff for protected assets/credentials/signing material and make
+  the requested safe local commit on this working branch. No publication/submission/merge.
+
+## PRIOR CANDIDATE CHECKPOINT — historical proof
 
 - [x] Run `npm run typecheck`, `npm run lint`, `npm test`, `npm run content:check`, and
   `npm run content:validate`; exact outcomes are recorded in `release/BUILD_PROOF.md`.
@@ -54,14 +86,16 @@ Updated: 2026-11-13
 ## OWNER DECISIONS REQUIRED
 
 - [x] Owner approved2026-11-13: explicit14-day app access without card/account/subscription; voluntary monthly €3.99 and annual €24.99 eurozone base targets, equal full access. See MONETIZATION.md.
-- [ ] Confirm the intended iOS and Android application identifiers or authorize a
-  deliberate alignment.
+- [ ] Verify external store/RevenueCat records for the preserved existing platform
+  identifiers. Do not align or change application IDs during this task.
 - [ ] Provide verified seller/legal spelling, support address, Terms and Privacy
   destinations, and platform privacy declarations.
 - [ ] Confirm Apple/Google account activation, signing access, and the current Google
   policy/account-type route for a cycle-context app.
-- [ ] Confirm whether current procedural/vector `BrandMark` assets are approved
-  originals, or provide approved source assets.
+- [x] Founder approved the existing Deep Intro V2 animation and current launch logo;
+  reuse them without redesign or geometry changes.
+- [ ] Establish any remaining archival/vector-asset provenance needed for release;
+  current animation approval is not a broader provenance audit.
 
 ## EDITORIAL / SAFETY
 
@@ -99,7 +133,7 @@ Updated: 2026-11-13
 
 ## NOT AUTHORIZED BY THIS LIST
 
-The Founder authorized a checked, non-force push of this integration branch only. No
-merge, deployment, store submission, or production billing configuration is implied by
-these tasks. Do not erase user data, generated history, or archival recovery points to
+The current launch request authorizes a safe local commit after review and explicitly
+excludes submission/publication. No merge, deployment, store submission or production
+billing configuration is implied by these tasks. Do not erase user data, generated history, or archival recovery points to
 obtain a green check.

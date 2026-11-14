@@ -12,7 +12,7 @@ import type { Palette } from "../../src/theme";
 import { useTheme } from "../../src/theme/useTheme";
 
 export default function ReminderScreen() {
-  const { colors } = useTheme();
+  const { colors, dark } = useTheme();
   const styles = makeStyles(colors);
   const { t } = useTranslation();
   const { preferences, updatePreferences } = useApp();
@@ -73,7 +73,7 @@ export default function ReminderScreen() {
         <View style={styles.picker}>
           <Text style={styles.smallLabel}>{t("onboarding.reminderTime")}</Text>
           <DateTimePicker
-            themeVariant={colors.background === "#FFFFFF" ? "light" : "dark"}
+            themeVariant={dark ? "dark" : "light"}
             value={time}
             mode="time"
             display="spinner"

@@ -1,20 +1,23 @@
 import { useTranslation } from "react-i18next";
-import { Linking, Text, StyleSheet } from "react-native";
+import { Linking, StyleSheet } from "react-native";
 
+import { AppText as Text } from "../src/components/AppText";
 import { Button } from "../src/components/Button";
 import { Header } from "../src/components/Header";
 import { Screen } from "../src/components/Screen";
 import brand from "../src/config/brand.json";
+import type { SupportedLanguage } from "../src/config/constants";
 import { useApp } from "../src/context/AppContext";
 import releaseCopy from "../src/i18n/releaseCopy.json";
 import { spacing } from "../src/theme";
 import type { Palette } from "../src/theme";
+import { typographyForLanguage } from "../src/theme/typography";
 import { useTheme } from "../src/theme/useTheme";
 export default function PrivacyScreen() {
   const { colors } = useTheme();
-  const styles = makeStyles(colors);
   const { t } = useTranslation();
   const { preferences } = useApp();
+  const styles = makeStyles(colors, preferences.language);
   return (
     <Screen>
       <Header title={t("privacy.title")} />
@@ -34,9 +37,10 @@ export default function PrivacyScreen() {
     </Screen>
   );
 }
-const makeStyles = (colors: Palette) =>
+const makeStyles = (colors: Palette, language: SupportedLanguage) =>
   StyleSheet.create({
     body: {
+      ...typographyForLanguage(language),
       fontSize: 17,
       lineHeight: 26,
       color: colors.text,

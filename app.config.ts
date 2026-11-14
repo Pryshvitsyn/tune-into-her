@@ -22,7 +22,7 @@ const config: ExpoConfig = {
   userInterfaceStyle: 'automatic',
   ios: {
     supportsTablet: false,
-    infoPlist: { ITSAppUsesNonExemptEncryption: false },
+    infoPlist: { ITSAppUsesNonExemptEncryption: false, UIViewControllerBasedStatusBarAppearance: true },
     bundleIdentifier: 'com.eliogenesis.tuneintoher',
   },
   android: {
@@ -34,6 +34,19 @@ const config: ExpoConfig = {
     'expo-router',
     'expo-localization',
     'expo-secure-store',
+    // The custom storyboard mod must precede the official provider.
+    './plugins/with-approved-launch-splash.cjs',
+    [
+      'expo-splash-screen',
+      {
+        image: './assets/launch/official-launch-mark.png',
+        backgroundColor: '#F9FBFC',
+        imageWidth: 300,
+        resizeMode: 'contain',
+        dark: { image: './assets/launch/official-launch-mark.png', backgroundColor: '#F9FBFC' },
+        android: { imageWidth: 288 },
+      },
+    ],
     [
       'expo-notifications',
       {

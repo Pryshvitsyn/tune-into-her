@@ -33,7 +33,7 @@ describe("daily reminder contract", () => {
     const keys = Object.keys(copy.en);
     for (const lang of SUPPORTED_LANGUAGES)
       expect(Object.keys(copy[lang])).toEqual(keys);
-    expect(colors.background).toBe("#FFFFFF");
-    expect(darkColors.background).toBe("#101113");
+    expect(colors.background).toBe("#F5F8FA");
+    expect(darkColors.background).toBe("#10171E");
   });
 });

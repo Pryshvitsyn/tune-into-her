@@ -1,5 +1,5 @@
-import { useFocusEffect } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import {
   AccessibilityInfo, AppState, Modal, Pressable, ScrollView,
@@ -10,8 +10,11 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
 import { BrandMark } from '../components/BrandMark';
+
+import { useLaunchPresentation } from './LaunchPresentation';
 import { SphereIntroSurface, type SphereIntroHandle } from './SphereIntroSurface';
-import { REVEAL, type RevealName } from './timeline';
+import { hasConsumedAppIntro, markAppIntroConsumed } from './introSession';
+import { INTRO_MS, REVEAL, type RevealName } from './timeline';
 
 export interface AdvicePart { label: string; text: string; note: string }
 export interface AnimatedTodayProps {
@@ -35,7 +38,6 @@ export interface AnimatedTodayProps {
   onIntroError?(message: string): void;
 }
 
-let completedThisSession = false;
 const LIGHT = {ink:'#294458',secondary:'#62788B',edge:'#DCE3E9',center:'#F9FBFC'};
 const DARK = {ink:'#E5EDF4',secondary:'#A1B3C3',edge:'#10171E',center:'#26313D'};
 
@@ -68,11 +70,12 @@ function FooterIcon({kind,color}: {kind:'info'|'update'|'settings';color:string}
 /** Presentation only. No purchase, phase-estimation, history or notification logic. */
 export function AnimatedToday(props: AnimatedTodayProps) {
   const insets = useSafeAreaInsets();
+  const { reportScreenReady } = useLaunchPresentation();
   const palette = props.dark?DARK:LIGHT;
-  const clock = useSharedValue(0);
+  const [play] = useState(() => !!props.replay || !hasConsumedAppIntro());
+  const clock = useSharedValue(play ? 0 : INTRO_MS);
   const surface = useRef<SphereIntroHandle>(null);
-  const [play] = useState(() => !!props.replay || !completedThisSession);
-  const [done,setDone] = useState(false);
+  const [done,setDone] = useState(!play);
   const [focus,setFocus] = useState(true);
   const [appActive,setAppActive] = useState(AppState.currentState !== 'background');
   const [access,setAccess] = useState({ready:false,reduce:false,reader:false});
@@ -93,7 +96,7 @@ export function AnimatedToday(props: AnimatedTodayProps) {
     return ()=>{alive=false;appSub.remove();reduceSub.remove();readerSub.remove();};
   }, []);
   const finish = useCallback(() => {
-    completedThisSession=true;
+    markAppIntroConsumed();
     setDone(true);
   }, []);
   const target = useMemo(() => slot ? {
@@ -139,7 +142,7 @@ export function AnimatedToday(props: AnimatedTodayProps) {
       ref={surface} view={view} target={target} elapsed={clock} animate={play}
       active={focus && appActive && !detail} preferencesReady={access.ready}
       reducedMotion={access.reduce || access.reader} ink={palette.ink}
-      onComplete={finish} onError={message=>{props.onIntroError?.(message);if(__DEV__) console.warn('[Tune Into Her intro]',message);}}
+      onFirstFrame={() => reportScreenReady('/today')} onComplete={finish} onError={message=>{props.onIntroError?.(message);if(__DEV__) console.warn('[Tune Into Her intro]',message);}}
     /> : null}
 
     <Reveal clock={clock} name="chrome" done={done} style={styles.header}>

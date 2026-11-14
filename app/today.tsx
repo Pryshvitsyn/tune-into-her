@@ -1,9 +1,5 @@
-import { IntroLoading } from "../src/intro/IntroLoading";
-import { AnimatedToday } from "../src/intro/AnimatedToday";
-import { introDateLabel } from "../src/intro/formatDate";
-import { dailyReminders as introDailyReminders } from "../src/domain/content/dailyGuidance";
 import { router } from "expo-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   ActivityIndicator,
@@ -22,9 +18,14 @@ import { Screen } from "../src/components/Screen";
 import { useApp } from "../src/context/AppContext";
 import { getLocalizedCue } from "../src/domain/content/contentRepository";
 import { selectDailyCue } from "../src/domain/content/dailyCueService";
+import { dailyReminders as introDailyReminders } from "../src/domain/content/dailyGuidance";
 import { guidanceDate } from "../src/domain/content/guidanceDate";
 import { estimateCycle } from "../src/domain/cycle/cycleEngine";
 import { useInterface } from "../src/i18n/useInterface";
+import { AnimatedToday } from "../src/intro/AnimatedToday";
+import { IntroLoading } from "../src/intro/IntroLoading";
+import { useLaunchPresentation } from "../src/intro/LaunchPresentation";
+import { introDateLabel } from "../src/intro/formatDate";
 import { useMockBilling } from "../src/services/purchases";
 import { AsyncSelectionStore } from "../src/storage/AsyncSelectionStore";
 import { useTheme } from "../src/theme/useTheme";
@@ -33,8 +34,9 @@ export default function TodayScreen() {
   const { t } = useTranslation();
   const c = useInterface();
   const { colors, dark } = useTheme();
+  const { reportScreenReady, reportScreenNotReady } = useLaunchPresentation();
   const { width } = useWindowDimensions();
-  const { cycleSettings, preferences, hasAccess } = useApp();
+  const { ready, cycleSettings, preferences, hasAccess } = useApp();
   const [clockDate, setClockDate] = useState(() => guidanceDate(new Date()));
   const today = cycleSettings && cycleSettings.lastKnownPeriodStart > clockDate
     ? guidanceDate(new Date(), cycleSettings.lastKnownPeriodStart)
@@ -88,8 +90,16 @@ export default function TodayScreen() {
     };
   }, [hasAccess, cycleSettings, guidancePhase, today, retry, selectionKey]);
   useEffect(() => {
-    if (!cycleSettings) router.replace("/onboarding");
-  }, [cycleSettings]);
+    if (ready && !cycleSettings) router.replace("/onboarding");
+  }, [ready, cycleSettings]);
+  const selectionFailed = selection?.key === selectionKey && selection.failed;
+  const selectionPending = hasAccess && (selection?.key !== selectionKey || (!selection.id && !selection.failed));
+  useLayoutEffect(() => {
+    if (!estimate) return;
+    // Midnight/cycle changes can replace the selected day without changing the route.
+    if (selectionPending) reportScreenNotReady('/today');
+    else if (!hasAccess || selectionFailed) reportScreenReady('/today');
+  }, [estimate, hasAccess, selectionFailed, selectionPending, reportScreenReady, reportScreenNotReady]);
   if (!estimate)
     return (
       <Screen>

@@ -1,7 +1,7 @@
 import { BRAND_RATIO } from './brand.generated';
 import { BRAND_TEXTURE_URI } from './brandTexture.generated';
-import { INTRO_MS } from './timeline';
 import { SCENE_AT_SOURCE } from './sceneRuntime.generated';
+import { INTRO_MS } from './timeline';
 import { V4_FRAGMENT, V4_VERTEX } from './v4Shaders.generated';
 
 function replaceOnce(value: string, from: string, to: string): string {
@@ -137,11 +137,12 @@ const WEB_RUNTIME = String.raw`
   const canvas = document.getElementById('sphere');
   let gl, program, frame = 0, last = 0, motionMs = 0, elapsed = 0;
   let loaded = false, started = false, active = true, reduced = false, failed = false, ended = false;
+  let visible = !document.hidden;
   let target = null, ink = [.16,.27,.35], draws = 0;
   const textures = [], shaders = [];
   let buffer;
   const post = (type, extra = {}) => {
-    const message = {type, elapsed, wallClock: Date.now(), running: active && started && elapsed < C.duration, ...extra};
+    const message = {type, elapsed, wallClock: Date.now(), running: active && visible && started && elapsed < C.duration, started, ...extra};
     if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(message));
     if (C.testMode) window.dispatchEvent(new CustomEvent('tih-message', {detail: message}));
   };
@@ -192,7 +193,7 @@ const WEB_RUNTIME = String.raw`
   }
   function tick(now) {
     frame = 0;
-    if (!active || failed || !loaded || !started) return;
+    if (!active || !visible || failed || !loaded || !started) return;
     const dt = last ? Math.max(0,now-last) : 0;
     last = now;
     motionMs += dt;
@@ -202,13 +203,14 @@ const WEB_RUNTIME = String.raw`
     if (!reduced) frame = requestAnimationFrame(tick);
   }
   function schedule() {
-    if (!active || failed || !loaded || !started) return;
+    if (!active || !visible || failed || !loaded || !started) return;
     if (reduced) {draw(); return;}
     if (!frame) frame = requestAnimationFrame(tick);
   }
   function finish() {
     elapsed = C.duration;
     draw();
+    if (loaded) gl.finish();
     post('clock');
     if (!ended) {ended=true; post('complete');}
     schedule();
@@ -227,7 +229,7 @@ const WEB_RUNTIME = String.raw`
         started = true;
         elapsed = (!command.animate || reduced) ? C.duration : 0;
         motionMs = 0; ended = false; last = 0;
-        draw(); post('clock');
+        draw(); gl.finish(); post('clock');
         if(elapsed>=C.duration) {ended=true; post('complete');}
         schedule();
       } else if (command.type === 'active') {
@@ -247,8 +249,9 @@ const WEB_RUNTIME = String.raw`
     state() {return {loaded,started,active,reduced,failed,elapsed,draws,scene:sceneAt(elapsed,size(),safeTarget())};},
   };
   document.addEventListener('visibilitychange',()=>{
-    // RN also sends AppState/focus changes. Do not restart or advance hidden time.
-    if(document.hidden) {active=false; stop(); post('clock');}
+    // Visibility and RN focus are independent. Returning to a visible WebView must
+    // resume only if RN still requested activity, without counting hidden time.
+    visible=!document.hidden; stop(); post('clock'); schedule();
   });
   window.addEventListener('resize',()=>{draw();});
   canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();fail('WebGL context lost');});

@@ -16,7 +16,7 @@ import type { Palette } from "../src/theme";
 import { useTheme } from "../src/theme/useTheme";
 
 export default function CycleScreen() {
-  const { colors } = useTheme();
+  const { colors, dark } = useTheme();
   const styles = makeStyles(colors);
   const { t } = useTranslation();
   const ui = useInterface();
@@ -61,7 +61,7 @@ export default function CycleScreen() {
       <Text style={styles.label}>{t("cycle.lastPeriod")}</Text>
       <View style={styles.picker}>
         <DateTimePicker
-          themeVariant={colors.background === "#FFFFFF" ? "light" : "dark"}
+          themeVariant={dark ? "dark" : "light"}
           value={date}
           mode="date"
           display="spinner"

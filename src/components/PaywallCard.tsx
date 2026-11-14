@@ -1,20 +1,23 @@
 import { router } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Alert, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Alert, Platform, Pressable, StyleSheet, View } from 'react-native';
 
+import type { SupportedLanguage } from '../config/constants';
 import { useApp } from '../context/AppContext';
 import { purchaseService, type StoreOffer, useMockBilling } from '../services/purchases';
-import { radius, spacing, type Palette } from '../theme';
+import { spacing, type Palette } from '../theme';
+import { typographyForLanguage } from '../theme/typography';
 import { useTheme } from '../theme/useTheme';
 
+import { AppText as Text } from './AppText';
 import { Button } from './Button';
 
 export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
   const { colors } = useTheme();
-  const styles = makeStyles(colors);
   const { t } = useTranslation();
   const { entitlement, appTrial, startAppTrial, refreshEntitlement, preferences } = useApp();
+  const styles = makeStyles(colors, preferences.language);
   const [offers, setOffers] = useState<StoreOffer[]>([]);
   const [selected, setSelected] = useState<'monthly' | 'annual'>('annual');
   const [loading, setLoading] = useState(true);
@@ -75,8 +78,13 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
   };
   const changeable = entitlement.isActive && entitlement.source === 'google' && Platform.OS === 'android';
   const planChoices = offers.map(offer => <Pressable key={offer.plan} accessibilityRole="radio" accessibilityState={{ checked: selected === offer.plan, disabled: working }} disabled={working} onPress={() => setSelected(offer.plan)} style={[styles.plan, selected === offer.plan && { borderColor: colors.primary }]}>
-    <Text style={styles.price}>{t(`billing.${offer.plan}`)}</Text>
-    <Text style={styles.price}>{offer.localizedPrice} / {t(`billing.${offer.plan}`)}</Text>
+    <View style={styles.planIdentity}>
+      <View style={styles.radio} accessible={false}>
+        {selected === offer.plan ? <View style={styles.radioDot} /> : null}
+      </View>
+      <Text style={styles.planLabel}>{t(`billing.${offer.plan}`)}</Text>
+    </View>
+    <Text style={[styles.price, styles.planPrice]}>{offer.localizedPrice} / {t(`billing.${offer.plan}`)}</Text>
   </Pressable>);
   const changePlan = async () => {
     const offer = offers.find(item => item.plan === selected);
@@ -130,19 +138,28 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
     <Button disabled={working} label={t('paywall.restore')} variant="ghost" onPress={() => void act(restore)} />
     <Text style={styles.meta}>{t('billing.restoreWeb')}</Text>
     <View style={styles.links}>
-      <Pressable accessibilityRole="link" onPress={() => router.push('/terms')}><Text style={styles.link}>{t('paywall.terms')}</Text></Pressable>
-      <Pressable accessibilityRole="link" onPress={() => router.push('/privacy')}><Text style={styles.link}>{t('paywall.privacy')}</Text></Pressable>
+      <Pressable accessibilityRole="link" style={styles.legalHit} onPress={() => router.push('/terms')}><Text style={styles.link}>{t('paywall.terms')}</Text></Pressable>
+      <Pressable accessibilityRole="link" style={styles.legalHit} onPress={() => router.push('/privacy')}><Text style={styles.link}>{t('paywall.privacy')}</Text></Pressable>
     </View>
   </View>;
 }
-const makeStyles = (colors: Palette) => StyleSheet.create({
-  card: { backgroundColor: colors.card, borderRadius: radius.lg, padding: spacing.lg, gap: spacing.md },
-  mock: { color: colors.danger, fontSize: 12, fontWeight: '800' },
-  title: { color: colors.text, fontSize: 28, lineHeight: 34, fontWeight: '800' },
-  body: { color: colors.secondary, fontSize: 16, lineHeight: 24 },
-  price: { color: colors.text, fontSize: 17, fontWeight: '600', textAlign: 'center' },
-  meta: { color: colors.secondary, fontSize: 13, lineHeight: 19, textAlign: 'center' },
-  plan: { borderWidth: 2, borderColor: colors.border, borderRadius: radius.lg, padding: spacing.md, gap: spacing.sm },
-  links: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: spacing.lg },
-  link: { color: colors.primary, textDecorationLine: 'underline' },
-});
+const makeStyles = (colors: Palette, language: SupportedLanguage) => {
+  const typography = typographyForLanguage(language);
+  return StyleSheet.create({
+    card: { alignSelf: 'stretch', backgroundColor: 'transparent', paddingTop: spacing.sm, paddingBottom: spacing.lg, gap: 20 },
+    mock: { ...typography, color: colors.danger, fontSize: 12, lineHeight: 18, letterSpacing: 0.5, textAlign: 'center' },
+    title: { ...typography, color: colors.text, fontSize: 32, lineHeight: 39, textAlign: 'center', marginBottom: 2 },
+    body: { ...typography, color: colors.secondary, fontSize: 17, lineHeight: 25, textAlign: 'center' },
+    price: { ...typography, color: colors.text, fontSize: 20, lineHeight: 27, textAlign: 'center' },
+    meta: { ...typography, color: colors.secondary, fontSize: 14, lineHeight: 21, textAlign: 'center' },
+    plan: { minHeight: 88, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.border, paddingVertical: spacing.md, gap: 12, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center' },
+    planIdentity: { flexDirection: 'row', alignItems: 'center', gap: 10, flexShrink: 1 },
+    planLabel: { ...typography, color: colors.text, fontSize: 18, lineHeight: 25, flexShrink: 1 },
+    planPrice: { flexGrow: 1, flexShrink: 1, flexBasis: 150, textAlign: 'right' },
+    radio: { width: 20, height: 20, borderRadius: 10, borderWidth: 1, borderColor: colors.primary, alignItems: 'center', justifyContent: 'center' },
+    radioDot: { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.primary },
+    links: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', columnGap: spacing.lg, rowGap: spacing.xs },
+    legalHit: { minHeight: 44, minWidth: 88, maxWidth: '100%', flexShrink: 1, justifyContent: 'center', alignItems: 'center', paddingHorizontal: spacing.sm, paddingVertical: spacing.xs },
+    link: { ...typography, color: colors.primary, fontSize: 16, lineHeight: 23, textDecorationLine: 'underline', textAlign: 'center' },
+  });
+};
