@@ -1,0 +1,70 @@
+{
+  "baselineCommit": "1dfa1e7",
+  "implementationCommit": "55bbd9b",
+  "allImmutableSourcesUnchanged": true,
+  "allowedChange": "sphereHtml.ts post-intro framebuffer/scissor intersection only; no shader/formula changes",
+  "files": [
+    {
+      "file": "TuneIntoHerSphereV4.tsx",
+      "before": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39",
+      "after": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39",
+      "immutable": true
+    },
+    {
+      "file": "assets/tune_into_her_sphere_source_clean.png",
+      "before": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c",
+      "after": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c",
+      "immutable": true
+    },
+    {
+      "file": "assets/tune_into_her_sphere_phase0_poster.png",
+      "before": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87",
+      "after": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87",
+      "immutable": true
+    },
+    {
+      "file": "src/intro/v4Shaders.generated.ts",
+      "before": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+      "after": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+      "immutable": true
+    },
+    {
+      "file": "src/intro/timeline.ts",
+      "before": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+      "after": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+      "immutable": true
+    },
+    {
+      "file": "src/intro/sceneRuntime.generated.ts",
+      "before": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+      "after": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+      "immutable": true
+    },
+    {
+      "file": "src/intro/brand.generated.ts",
+      "before": "00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee",
+      "after": "00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee",
+      "immutable": true
+    },
+    {
+      "file": "src/intro/brandTexture.generated.ts",
+      "before": "b081f98ca837efde52545822bfeb5c617e6cdede1c5345a1608ea67e100b2910",
+      "after": "b081f98ca837efde52545822bfeb5c617e6cdede1c5345a1608ea67e100b2910",
+      "immutable": true
+    },
+    {
+      "file": "assets/fonts/LinuxLibertineO-Regular.otf",
+      "before": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+      "after": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+      "immutable": true
+    },
+    {
+      "file": "src/intro/sphereHtml.ts",
+      "before": "a2702c2bcd364badef1438f69622d82cda87b2893c91792b44fda4f2427ada3c",
+      "after": "7ec807c372a42aa4deba65de1c9098ba3f88d239a118e9dc49b26b36fa16cf80",
+      "immutable": false
+    }
+  ],
+  "typographyImplementationCommit": "f5a8628",
+  "navigationAccessibilityCommit": "55bbd9b"
+}

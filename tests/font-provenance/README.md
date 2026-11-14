@@ -105,3 +105,20 @@ text remain in `assets/fonts/`; their hashes are included in the generated repor
 The existing Terms transport/bundle notice tests preserve these notices in the app.
 This audit introduces no font download or replacement and does not certify merchant
 legal or store readiness.
+
+## Delivered WebGL/native PNG trace
+
+A final read-only comparison also verified the image that users actually see:
+
+- Current `brandTexture.generated.ts` matches the delivered Deep Intro V2 payload
+  byte-for-byte, SHA-256
+  `b081f98ca837efde52545822bfeb5c617e6cdede1c5345a1608ea67e100b2910`.
+- Its decoded PNG matches both that payload and the co-delivered `proof/brand_padded.png`,
+  SHA-256 `347cb7e26f2f9006b1655fbbb5768e2129e4cfb3975a31a83e8adef4eb57517b`.
+- The first Intro Code delivery used the same Variant #8 SVG directly; Deep Intro V2
+  added the documented transparent padding (`-80 -80 800 560`, rendered at2x).
+  The co-delivered vector is the same byte-verified source audited above.
+
+This establishes delivered-byte provenance for the padded raster as well as the
+outlined reference. The original rasterization program is unavailable; no independent
+SVG-to-PNG rerender/pixel-equivalence claim is made. No current graphic was regenerated.

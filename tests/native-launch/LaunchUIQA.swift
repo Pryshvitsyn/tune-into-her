@@ -1,4 +1,5 @@
 import XCTest
+import UIKit
 
 final class LaunchUIQA: XCTestCase {
   override func setUpWithError() throws {
@@ -50,22 +51,43 @@ final class LaunchUIQA: XCTestCase {
 extension LaunchUIQA {
   func openMotionSettings(in settings: XCUIApplication) -> XCUIElement {
     let reduce = settings.switches["Reduce Motion"].firstMatch
-    if !reduce.exists {
-      let accessibility = settings.staticTexts["Accessibility"].firstMatch
-      for _ in 0..<8 {
-        if accessibility.isHittable { break }
-        settings.swipeUp(velocity: .slow)
+    if reduce.waitForExistence(timeout: 2) { return reduce }
+    func reveal(_ element: XCUIElement) {
+      let scroll = settings.scrollViews.firstMatch.exists ? settings.scrollViews.firstMatch : settings.tables.firstMatch.exists ? settings.tables.firstMatch : settings.collectionViews.firstMatch
+      for _ in 0..<16 {
+        let bounds = scroll.exists ? scroll.frame.intersection(settings.frame) : settings.frame
+        let navigation = settings.navigationBars.firstMatch
+        let top = max(bounds.minY, navigation.exists ? navigation.frame.maxY : bounds.minY) + 12
+        let bottom = bounds.maxY - 12
+        if element.exists && element.isHittable && element.frame.minY >= top && element.frame.maxY <= bottom { return }
+        let needed = element.exists && element.frame.minY < top
+          ? top - element.frame.minY : element.exists ? bottom - element.frame.maxY : -bounds.height * 0.3
+        let distance = max(-bounds.height * 0.3, min(bounds.height * 0.3, needed))
+        let start = settings.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.55))
+        start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: distance)), withVelocity: .slow, thenHoldForDuration: 0.1)
       }
-      XCTAssertTrue(accessibility.isHittable)
-      accessibility.tap()
-      let motion = settings.staticTexts["Motion"].firstMatch
-      for _ in 0..<6 {
-        if motion.isHittable { break }
-        settings.swipeUp(velocity: .slow)
-      }
-      XCTAssertTrue(motion.isHittable)
-      motion.tap()
+      XCTAssertTrue(element.isHittable, "Native Settings row must be revealed before tapping")
     }
+    let motion = settings.buttons["MOTION_TITLE"].firstMatch
+    // Recover an unrelated retained Settings subpage (for example Apps) through its
+    // native BackButton. Select actual row buttons, not their label/image children.
+    for _ in 0..<8 {
+      if motion.exists || reduce.exists { break }
+      let back = settings.navigationBars.buttons["BackButton"].firstMatch
+      if !back.exists { break }
+      back.tap()
+    }
+    if reduce.exists { return reduce }
+    if !motion.exists {
+      let accessibility = settings.buttons["Accessibility"].firstMatch
+      reveal(accessibility)
+      accessibility.tap()
+      capture(settings, "44-motion-accessibility-page-discovery", checkStatusBar: false)
+    }
+    reveal(motion)
+    print("TIH_NATIVE_MOTION_BUTTON frame=\(motion.frame) enabled=\(motion.isEnabled)")
+    motion.tap()
+    capture(settings, "12-motion-page-after-native-row-tap", checkStatusBar: false)
     return reduce
   }
   func capture(_ app: XCUIApplication, _ name: String, checkStatusBar: Bool = true) {
@@ -184,6 +206,8 @@ extension LaunchUIQA {
     }
     let enabled = NSPredicate(format: "value == %@", "1")
     XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: enabled, object: reduce)], timeout: 5), .completed)
+    XCTAssertTrue(UIAccessibility.isReduceMotionEnabled, "UIKit must observe the enabled native preference")
+    print("TIH_REDUCED_MOTION_ENABLED_UIKIT \(UIAccessibility.isReduceMotionEnabled)")
     capture(settings, "13-qa-reduce-motion-enabled", checkStatusBar: false)
   }
 }
@@ -216,6 +240,8 @@ extension LaunchUIQA {
     let restored = isOffWithin(5)
     capture(settings, "14-qa-reduce-motion-restored-off", checkStatusBar: false)
     XCTAssertTrue(restored, "The native Reduce Motion switch must report OFF")
+    XCTAssertFalse(UIAccessibility.isReduceMotionEnabled, "UIKit must observe the restored OFF preference")
+    print("TIH_REDUCED_MOTION_RESTORED_UIKIT \(UIAccessibility.isReduceMotionEnabled)")
   }
 }
 
@@ -471,8 +497,18 @@ extension LaunchUIQA {
         let scroll = app.scrollViews.firstMatch
         let visible = scroll.exists ? scroll.frame.intersection(app.frame) : app.frame
         if element.exists && element.isHittable && visible.contains(element.frame) { break }
-        if element.exists && element.frame.minY < visible.minY { scroll.swipeDown(velocity: .slow) }
-        else { scroll.swipeUp(velocity: .slow) }
+        guard scroll.exists else { break }
+        let distance: CGFloat
+        if element.exists {
+          let needed = element.frame.minY < visible.minY
+            ? visible.minY - element.frame.minY + 12
+            : visible.maxY - element.frame.maxY - 12
+          distance = max(-visible.height * 0.4, min(visible.height * 0.4, needed))
+        } else { distance = -visible.height * 0.4 }
+        // Small measured drags avoid bouncing a near-edge row between both scroll ends.
+        let start = scroll.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        let end = start.withOffset(CGVector(dx: 0, dy: distance))
+        start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.1)
       }
       XCTAssertTrue(element.exists, message)
       XCTAssertTrue(element.isHittable, message)
@@ -481,14 +517,15 @@ extension LaunchUIQA {
         XCTAssertTrue(app.scrollViews.firstMatch.frame.contains(element.frame), message)
       }
     }
-    func tapBottomTab(_ label: String, x: CGFloat) {
-      let tab = app.buttons.matching(NSPredicate(format: "label CONTAINS[cd] %@", label)).firstMatch
-      if tab.exists && tab.isHittable { tab.tap() }
-      else {
-        // Same isolated-simulator tab fallback as the existing warm-navigation case.
-        print("TIH_TYPOGRAPHY_TAB_COORDINATE_FALLBACK \(label)")
-        app.coordinate(withNormalizedOffset: CGVector(dx: x, dy: 0.95)).tap()
-      }
+    func tapBottomTab(_ label: String) {
+      // The actual RN tab AX nodes are Other (e.g. "⚙, Settings"), not Button.
+      let tab = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", \(label)")).firstMatch
+      XCTAssertTrue(tab.waitForExistence(timeout: 5), "Expected the existing native \(label) tab")
+      print("TIH_TYPOGRAPHY_NATIVE_TAB \(label) frame=\(tab.frame) hittable=\(tab.isHittable)")
+      XCTAssertTrue(tab.isHittable)
+      XCTAssertTrue(app.frame.contains(tab.frame))
+      tab.tap()
+      capture(app, "33a-typography-after-\(label)-tab")
     }
     func returnToSettings() {
       let back = app.buttons["Back"].firstMatch
@@ -498,7 +535,7 @@ extension LaunchUIQA {
     }
 
     capture(app, "33-typography-locked-today")
-    tapBottomTab("Settings", x: 0.83)
+    tapBottomTab("Settings")
     let cycleDetails = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
     XCTAssertTrue(cycleDetails.waitForExistence(timeout: 5))
     let settingsTitle = app.staticTexts["Settings"].firstMatch
@@ -511,8 +548,8 @@ extension LaunchUIQA {
     let appearanceTitle = app.staticTexts["Appearance"].firstMatch
     XCTAssertTrue(appearanceTitle.waitForExistence(timeout: 5))
     requireFullyVisible(appearanceTitle, "Appearance title must have complete native text bounds")
-    XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label ENDSWITH %@", "Light")).firstMatch.exists)
-    XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label ENDSWITH %@", "Dark")).firstMatch.exists)
+    XCTAssertTrue(app.descendants(matching: .any).matching(NSPredicate(format: "label ENDSWITH %@", "Light")).firstMatch.exists)
+    XCTAssertTrue(app.descendants(matching: .any).matching(NSPredicate(format: "label ENDSWITH %@", "Dark")).firstMatch.exists)
     capture(app, "35-typography-appearance-no-selection")
     returnToSettings()
 
@@ -523,15 +560,15 @@ extension LaunchUIQA {
     XCTAssertTrue(languageTitle.waitForExistence(timeout: 5))
     requireFullyVisible(languageTitle, "Language title must have complete native text bounds")
     capture(app, "36-typography-language-latin-header")
-    let hindi = app.staticTexts["हिन्दी"].firstMatch
-    let chinese = app.staticTexts["简体中文"].firstMatch
+    let hindi = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "हिन्दी")).firstMatch
+    let chinese = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "简体中文")).firstMatch
     requireFullyVisible(hindi, "Hindi option must be readable without selecting it")
     requireFullyVisible(chinese, "Chinese option must be readable without selecting it")
     capture(app, "37-typography-language-script-fallbacks-no-selection")
     returnToSettings()
     requireFullyVisible(english, "Read-only language inspection must preserve saved English")
 
-    tapBottomTab("Advice", x: 0.16)
+    tapBottomTab("Advice")
     XCTAssertTrue(locked.waitForExistence(timeout: 5))
     let previousDays = app.buttons["Previous days"].firstMatch
     requireFullyVisible(previousDays, "Previous days navigation must remain reachable")
@@ -552,5 +589,118 @@ extension LaunchUIQA {
     let finalProcessRange = try XCTUnwrap(final.range(of: "pid: [0-9]+", options: .regularExpression))
     XCTAssertEqual(String(final[finalProcessRange]), process, "Navigation must reuse the existing process without a cold intro")
     capture(app, "39-typography-returned-locked-today-no-writes")
+  }
+}
+
+extension LaunchUIQA {
+  /// Requires the guarded QA app already on /cycle, English, maximum system text.
+  /// Inspects the existing synthetic calendar without Edit, Save or month navigation.
+  func testLargestTypeCalendarNoWrites() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning)
+    app.activate()
+    clearExistingOpenConfirmation(for: app)
+    let outer = app.scrollViews.firstMatch
+    XCTAssertTrue(outer.waitForExistence(timeout: 10))
+    let grid = outer.scrollViews.firstMatch
+    XCTAssertTrue(grid.waitForExistence(timeout: 5), "Expected the native horizontal calendar viewport")
+    XCTAssertGreaterThan(grid.frame.width, 0)
+    XCTAssertLessThanOrEqual(grid.frame.width, outer.frame.width + 1)
+
+    func moveVerticallyTo(_ element: XCUIElement) {
+      for _ in 0..<16 {
+        let visible = outer.frame.intersection(app.frame)
+        if element.exists && element.frame.minY >= visible.minY && element.frame.maxY <= visible.maxY { return }
+        let delta = element.exists
+          ? (element.frame.minY < visible.minY ? visible.minY - element.frame.minY + 12 : visible.maxY - element.frame.maxY - 12)
+          : -visible.height * 0.35
+        let distance = max(-visible.height * 0.35, min(visible.height * 0.35, delta))
+        let start = outer.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: distance)), withVelocity: .slow, thenHoldForDuration: 0.1)
+      }
+    }
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "en_US")
+    formatter.dateFormat = "MMMM yyyy"
+    let monthName = formatter.string(from: Date())
+    let monthTitle = app.staticTexts[monthName].firstMatch
+    XCTAssertTrue(monthTitle.waitForExistence(timeout: 5), "Inspect only the existing current month")
+    moveVerticallyTo(monthTitle)
+    XCTAssertTrue(outer.frame.contains(monthTitle.frame))
+    capture(app, "40-largest-type-calendar-current-month-no-change")
+
+    let parts = Calendar(identifier: .gregorian).dateComponents([.month, .year], from: Date())
+    let month = try XCTUnwrap(parts.month), year = try XCTUnwrap(parts.year)
+    let dateLabel = "\(month)/28/\(year)"
+    let day = grid.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", dateLabel)).firstMatch
+    XCTAssertTrue(day.waitForExistence(timeout: 5), "The current month's existing 28th must be present")
+    moveVerticallyTo(day)
+    var horizontalDrags = 0
+    for _ in 0..<18 {
+      let visible = grid.frame.intersection(outer.frame).intersection(app.frame)
+      if day.isHittable && visible.contains(day.frame) { break }
+      let delta = day.frame.minX < visible.minX
+        ? visible.minX - day.frame.minX + 12 : visible.maxX - day.frame.maxX - 12
+      let distance = max(-visible.width * 0.35, min(visible.width * 0.35, delta))
+      let origin = app.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+      let start = origin.withOffset(CGVector(dx: visible.midX - app.frame.minX, dy: visible.midY - app.frame.minY))
+      start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: distance, dy: 0)), withVelocity: .slow, thenHoldForDuration: 0.1)
+      horizontalDrags += 1
+    }
+    let visible = grid.frame.intersection(outer.frame).intersection(app.frame)
+    print("TIH_MAX_CALENDAR date=\(dateLabel) viewport=\(grid.frame) visible=\(visible) day=\(day.frame) horizontalDrags=\(horizontalDrags)")
+    capture(app, "41-largest-type-calendar-complete-two-digit-28")
+    XCTAssertTrue(day.isHittable)
+    XCTAssertTrue(visible.contains(day.frame), "The entire two-digit date must fit inside both native scroll viewports")
+    XCTAssertGreaterThan(day.frame.height, 50, "Requires maximum system text rather than a default-size calendar")
+    XCTAssertGreaterThan(day.frame.width, 60, "Both large digits and existing padding must fit without squeezing into the old narrow column")
+    XCTAssertTrue(monthTitle.exists, "Horizontal inspection must retain the original month")
+    XCTAssertFalse(app.buttons["Save"].exists, "Calendar inspection must never enter the editing flow")
+    capture(app, "41a-largest-type-calendar-readable-stacked-tabs")
+    var previousBottom = -CGFloat.greatestFiniteMagnitude
+    for label in ["Advice", "Cycle", "Settings"] {
+      let tab = app.otherElements.matching(NSPredicate(format: "label == %@ OR label ENDSWITH %@", label, ", \(label)")).firstMatch
+      XCTAssertTrue(tab.exists, "Expected the actual native \(label) tab")
+      print("TIH_MAX_CALENDAR_TAB label=\(tab.label) frame=\(tab.frame) hittable=\(tab.isHittable)")
+      XCTAssertTrue(tab.isHittable, "Each maximum-text navigation row must be reachable")
+      XCTAssertTrue(app.frame.contains(tab.frame), "The complete \(label) tab must remain visible")
+      XCTAssertGreaterThanOrEqual(tab.frame.width, app.frame.width * 0.9, "Maximum-text tabs need full-width rows for readable labels")
+      XCTAssertGreaterThan(tab.frame.height, 0)
+      XCTAssertGreaterThanOrEqual(tab.frame.minY, previousBottom - 0.5, "Maximum-text tabs must stack vertically without overlapping")
+      previousBottom = tab.frame.maxY
+    }
+  }
+}
+
+
+extension LaunchUIQA {
+  /// Requires the QA simulator's native Reduce Motion preference already confirmed ON.
+  func testReducedMotionColdLaunchShowsLockedEntry() throws {
+    continueAfterFailure = false
+    XCTAssertTrue(UIAccessibility.isReduceMotionEnabled, "The native QA preference must actually be ON")
+    print("TIH_REDUCED_MOTION_UIKIT true")
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    print("TIH_REDUCED_MOTION_COLD_BEGIN \(Date().timeIntervalSince1970)")
+    app.terminate()
+    app.launch()
+    let locked = app.staticTexts["An active trial or subscription unlocks today’s context."].firstMatch
+    XCTAssertTrue(locked.waitForExistence(timeout: 15))
+    print("TIH_REDUCED_MOTION_COLD_LOCKED \(Date().timeIntervalSince1970)")
+    XCTAssertFalse(app.staticTexts["KEEP IN MIND"].firstMatch.exists)
+    capture(app, "42-reduced-motion-cold-locked-entry-no-full-intro")
+  }
+}
+
+
+extension LaunchUIQA {
+  func testDiscoverSettingsForMotion() throws {
+    continueAfterFailure = false
+    let settings = XCUIApplication(bundleIdentifier: "com.apple.Preferences")
+    settings.activate()
+    XCTAssertTrue(settings.wait(for: .runningForeground, timeout: 10))
+    XCTAssertTrue(settings.navigationBars.firstMatch.waitForExistence(timeout: 10))
+    capture(settings, "43-motion-native-settings-discovery", checkStatusBar: false)
+    print("TIH_NATIVE_UIKIT_MOTION_DISCOVERY \(UIAccessibility.isReduceMotionEnabled)")
   }
 }

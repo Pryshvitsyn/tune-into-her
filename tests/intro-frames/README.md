@@ -15,7 +15,9 @@ retain the final scene geometry while advancing the original material clock.
 Four 2x-DPR viewports cover compact/tall iPhone and compact/tall Android aspect
 ratios. Each PNG is a full viewport. `frames.json` records actual scene values,
 framebuffer/viewport dimensions, SHA-256, WebGL errors and JavaScript exceptions.
-A silver CSS gradient supplies the same backdrop as the native launch cover.
+A silver CSS gradient supplies the same backdrop as the native launch cover. Six
+additional actual-GPU probes verify completed-sphere scissor bounds outside and across
+the viewport edges; any GL error or JavaScript exception fails the capture.
 The renderer HTML and temporary Chrome profile stay outside the repository.
 Chrome is launched with a fresh task profile and terminated after capture.
 

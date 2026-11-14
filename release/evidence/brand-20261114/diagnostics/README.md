@@ -1,0 +1,1 @@
+The before image is the f5a8628 MAX-text navigation defect found during final visual review. It is rejected intermediate evidence. Accepted final labels are in ../native/41a-largest-type-calendar-readable-stacked-tabs-final.png (55bbd9b). No bad image is presented as final acceptance.

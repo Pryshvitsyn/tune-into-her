@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-14T09:15:15.967Z",
+  "port8081Listening": false,
+  "preexistingProjectServerStopped": true,
+  "port8081ListeningAfterColdLaunch": false,
+  "checkedAfterColdAt": "2026-11-14T09:20:17.452Z",
+  "noMetroNormalColdVideo": "cold-final-no-metro.mp4",
+  "noMetroReducedMotionVideo": "reduced-motion-no-metro.mp4",
+  "nativeReducedMotionBatchPassed": true,
+  "finalImplementationCommit": "55bbd9b",
+  "finalColdVideo": "cold-final-no-metro.mp4",
+  "port8081AfterFinalCold": false,
+  "finalColdCheckedAt": "2026-11-14T09:38:09.131Z",
+  "finalReducedMotionCommit": "55bbd9b",
+  "finalReducedMotionNativeTestsPassed": 3
+}

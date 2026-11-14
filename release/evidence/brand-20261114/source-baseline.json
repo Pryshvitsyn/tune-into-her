@@ -1,0 +1,15 @@
+{
+  "commit": "1dfa1e7",
+  "sha256": {
+    "TuneIntoHerSphereV4.tsx": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39",
+    "assets/tune_into_her_sphere_source_clean.png": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c",
+    "assets/tune_into_her_sphere_phase0_poster.png": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87",
+    "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/brand.generated.ts": "00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee",
+    "src/intro/brandTexture.generated.ts": "b081f98ca837efde52545822bfeb5c617e6cdede1c5345a1608ea67e100b2910",
+    "assets/fonts/LinuxLibertineO-Regular.otf": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+    "src/intro/sphereHtml.ts": "a2702c2bcd364badef1438f69622d82cda87b2893c91792b44fda4f2427ada3c"
+  }
+}

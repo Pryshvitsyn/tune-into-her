@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "55bbd9b",
+  "port8081ListeningBefore": false,
+  "port8081ListeningAfter": false,
+  "recorderAcknowledged": true,
+  "nativeSwitchOn": true,
+  "uikitOn": true,
+  "nativeSwitchRestoredOff": true,
+  "uikitRestoredOff": true,
+  "testsSeconds": {
+    "on": 5.992,
+    "cold": 7.83,
+    "off": 6.016
+  },
+  "coldLockedScreenshot": "native/42-reduced-motion-cold-locked-entry-no-full-intro.png",
+  "video": "reduced-motion-no-metro.mp4",
+  "scope": "Guarded simulator, exact final independent Release. Native UIImage evidence plus UIKit state checks; no billing, app-data reset or host-setting changes.",
+  "timingLimit": "XCTest launch synchronization is included; these test durations are not app startup benchmarks."
+}

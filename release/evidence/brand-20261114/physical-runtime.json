@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "55bbd9b",
+  "dataPreservingInstall": true,
+  "installSeconds": 11.545928042,
+  "launchCommandSeconds": 0.7468266249999997,
+  "startedAt": "2026-11-14T09:37:03.663Z",
+  "processSurvives": true,
+  "survivalSeconds": 155.5,
+  "installReceiptMatchesRunningExecutable": true,
+  "visualEvidence": false,
+  "spokenAccessibilityEvidence": false,
+  "appDataReset": false
+}

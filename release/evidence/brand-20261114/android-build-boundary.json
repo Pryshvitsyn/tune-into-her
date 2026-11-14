@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "55bbd9b",
+  "javascriptExport": true,
+  "hermesBytes": 6737814,
+  "hermesSHA256": "9830135ab9f1206a4dcfb843240459b81b52cd027f40e27c188907dbe6cfc397",
+  "nativeReleaseBuild": false,
+  "emulatorRun": false,
+  "reason": "No installed JDK (java is a macOS shim reporting no Runtime), Android SDK, adb or emulator. Android-shaped WebGL captures are Chromium only.",
+  "exportContainsOriginalOTF": true,
+  "jdkAvailable": false,
+  "adbAvailable": false,
+  "emulatorAvailable": false
+}

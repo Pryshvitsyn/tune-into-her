@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "55bbd9b",
+  "configuration": "Release",
+  "platform": "iOS Simulator",
+  "buildSucceeded": true,
+  "appBundleID": "com.eliogenesis.tuneintoher",
+  "manifestSHA256": "877a8fc0809a088c4d6fe982ce1ba35e36e790d8636a8516826c92a1d855d2d6",
+  "officialManifestSHA256": "877a8fc0809a088c4d6fe982ce1ba35e36e790d8636a8516826c92a1d855d2d6",
+  "fingerprintSHA256": "152bd6bbbdeba1fd5e0fa6f0e2ab53ef143c2fed1a37a43466cce3326268b3e2",
+  "officialFingerprintSHA256": "152bd6bbbdeba1fd5e0fa6f0e2ab53ef143c2fed1a37a43466cce3326268b3e2",
+  "signatureValid": true,
+  "statusBarControllerPolicy": true,
+  "embeddedFontSHA256": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+  "hermesSHA256": "698e5830e7a0d7453a0f41f4741e8ad4059f16e50e97846ad7660851faff8a3b",
+  "hermesBytes": 6517833,
+  "freshOfficialManifest": true,
+  "freshOfficialFingerprint": true,
+  "fontUnmodified": true
+}

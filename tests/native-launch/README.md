@@ -96,3 +96,51 @@ Final Dark full-flow attachments were exported under `/tmp/tih-launch-native-uiq
 Final Light screenshots were manually inspected: clock text is black and readable on Silver, date wheels/preview/paywall are readable, and all 9 capture logs report dark=false as expected. Named files are `/tmp/tih-launch-native-uiqa/statusbar-final-light-named/light-{picker,welcome,context,date,typical,preview,preview-scrolled,reminders-off,paywall}.png`. The final QA app remains Theme Light, no-access paywall, synthetic 28/5, reminders OFF; no purchase/restore/trial activation occurred.
 
 This proves native UI semantics and screen rendering, not VoiceOver spoken navigation. It does not prove Android, physical-device behavior, paid-access routing, offline entitlement behavior, or final rebuild regression by itself. Independent simulator video must establish actual Reduced Motion launch timing because XCUITest launch synchronization includes automation startup time.
+
+## Final typography regression — 2026-11-14
+
+The new `testTypographySettingsHistoryAndScriptHeadersNoWrites` uses the same guarded
+QA simulator, existing English/no-access fixture and default system text size. It
+navigates locked Today → Settings → Appearance → Language → Settings → Today → empty
+History → Today, without selecting a preference or invoking billing. Complete native
+bounds and the same PID are required. Native role=tab nodes are `Other`, radio labels
+are queried by their actual accessibility type, and small measured scroll drags avoid
+overshooting a row near the viewport boundary.
+
+Actual run on fresh standalone Release implementation `f5a8628`: **PASS32.195s**, zero
+failures. Result `/tmp/tih-brand-qa/main-typography-measured-scroll.xcresult`; named
+screenshots are committed under `release/evidence/brand-20261114/native/`.
+Three earlier new-case attempts failed on harness assumptions: a Button/coordinate tab
+fallback did not activate the tab; a StaticText-only radio query missed the existing
+radio; full-screen scroll gestures oscillated an English row past the viewport edge.
+The measured/exact-node run retained the full-bounds assertions and passed. These are
+not passes and do not establish a production touch bug. One earlier cold-launch CLI
+attempt for the phone also misplaced options after the variadic app argument; the
+corrected public devicectl launch passed and its exact installed process survived.
+
+The diagnostic source maps and private xcresult/device metadata stay in `/tmp`.
+Physical launch/process proof does not establish screen pixels or VoiceOver speech.
+
+Final MAX regression: Context/checkbox/steppers PASS42.360s and complete picker action
+bounds PASS6.500s on `f5a8628`. The separate calendar case PASS26.034s: current month was
+unchanged, the native “28” text box measured64.5×75pt and fit the intersection of both
+scroll viewports after six horizontal drags. No editing/save/month control was tapped.
+One earlier combined attempt could not navigate native Settings at MAX size, then the
+calendar setup queried the background app before activation and hit
+`kAXErrorServerNotFound`; neither was counted as a pass. The calendar rerun activates
+the app before querying its window. Reduced Motion is tested separately at default
+system text size, and the QA text-size setting is restored to `large` afterward.
+
+Final accessibility follow-up `55bbd9b`: the original MAX date-only screenshot revealed
+character-broken BottomNav labels, so it is diagnostic evidence only. The responsive
+full-width-row fix was rebuilt and verified by the strengthened calendar/tab case:
+PASS23.003s, three375×87.5pt fully visible non-overlapping rows.
+
+Final Reduce Motion on the exact55bbd9b Release with8081 absent: enable/actualUIKitON
+PASS5.992s; true-guarded cold locked entry PASS7.830s; nativeOFF/actualUIKitOFF restore
+PASS6.016s. These are XCTest durations, not boot benchmarks. Evidence is
+`/tmp/tih-brand-qa/motion-final-source.{xcresult,log,mp4}`. Earlier helper attempts at
+retained Settings pages failed and are excluded: iOS26 root now uses CollectionView,
+row labels/icons are not interchangeable with their actual native Buttons, and a
+background app must be activated before querying its window. The final helper reads
+the actual hierarchy and preserves the simulator-only guard.

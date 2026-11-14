@@ -50,12 +50,14 @@ The native `UIViewControllerBasedStatusBarAppearance` flag is true in both Info.
 and app.config.ts. A separate Expo StatusBar JSX owner is not mounted. This resolves the
 observed dark-destination status-bar ownership conflict without changing signing.
 
-## Onboarding and pre-purchase presentation
+## Shared app typography and presentation
 
 The shared Silver Chrome UI palette is independent of the approved Deep Intro V2
 horizontal launch palette. Original V4 colors/material are unchanged. Root startup loads
 the local original Linux Libertine O Regular OTF through Expo Font before application
-text mounts. `typographyForLanguage` uses that family for the nine Latin/Cyrillic locales
+text mounts. AppText applies the locale-aware regular family after caller styles across
+onboarding, Today, History, paywall, Settings, shared controls and navigation; undefined
+caller family values cannot erase the policy. Language options carry their own locale. `typographyForLanguage` uses that family for the nine Latin/Cyrillic locales
 and the system script font for Hindi and Simplified Chinese. No remote font is fetched.
 
 Native QA observed stale text boxes after a live large→largest-accessibility-size change,
@@ -87,13 +89,24 @@ must be ready before wheel gestures can alter the draft. This avoids treating au
 recentering or old geometry as a user selection. Live/cold and largest-size native UI
 reachability remain required verification, independent of source tests.
 
-Onboarding preview reuses AdviceBlocks with optional typography; default Today content
-and typography remain unchanged. Pre-purchase Header, PaywallCard and legal surfaces use
+Onboarding preview and fallback Today share AdviceBlocks typography. AnimatedToday
+retains all original text with natural wrapping and Dynamic Type in a scrollable content
+viewport. Its measured sphere slot accounts for scroll offset; the same full-root
+WebView projection is clipped above the measured fixed footer after the intro. The
+post-intro scissor intersects both framebuffer edges, including completely offscreen
+slots. Large calendar typography expands the seven-column grid horizontally for
+scrolling rather than squeezing digits. BottomNav keeps its normal three-column
+layout, switching above fontScale1.35 to three full-width icon/label rows with a
+separate absolute selection underline, so large words remain complete. No route
+handler or cycle/date logic changes. Pre-purchase Header, PaywallCard and legal surfaces use
 the same shared presentation primitives. No purchase/restore/plan-change handler,
 onboarding acknowledgment, cycle range/date validation, completion persistence or
 reminder default is changed by these styles.
 
-The exact bundled font, provenance and canonical notices live in `assets/fonts/`.
+The exact bundled font and canonical notices live in `assets/fonts/`. The delivered
+Variant #8 reference and direct-file CoreText outline audit are recorded in
+[font provenance](tests/font-provenance/README.md); current evidence is in
+[brand/type QA](docs/BRAND_TYPOGRAPHY_QA.md).
 `scripts/generate-font-license.mjs` transports OFL.txt and LICENCE.txt verbatim into
 `license.generated.json`, imported by Terms as a selectable appendix so notices are in
 the application bundle. This packaging adds no consent or payment action and establishes

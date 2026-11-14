@@ -2,7 +2,30 @@
 
 Updated: 2026-11-14 (Europe/Rome)
 
-## NOW — global launch and onboarding V2
+## NOW — final brand and typography correction
+
+- [x] Verify the delivered Variant #8 source and exact OTF/CoreText outline equivalence;
+  preserve original emblem, font bytes and licensed notices.
+- [x] Apply one regular locale-aware AppText policy across the complete interface;
+  explicitly select Hindi/Chinese option fallback, natural wrapping and Dynamic Type.
+- [x] Keep full Today text scrollable with one shared sphere projection; clip above
+  fixed navigation and intersect completely offscreen post-intro scissors safely.
+- [x] Add arc/stroke/texture/sampling bounds checks every10ms across nine screen shapes;
+  capture44 exact shared-WebGL checkpoints and six real-GPU offscreen scissor probes.
+- [x] Typecheck,264 tests/34files, lint0errors/1existing generated warning, content checks.
+- [x] Build fresh signed Simulator and generic iphoneos Release artifacts with original
+  font and matching official Expo manifest/fingerprint; cold launch without Metro.
+- [x] Data-preserving physical update and cold launch after owner unlock; exact installed
+  executable survives155.500s (final update11.546s, launch0.747s). Physical pixels/speech remain unverified.
+- [x] Finish native UI proof and evidence matrix, including final MAX navigation and
+  no-Metro normal/Reduced Motion launches; review changes and prepare logical commits
+  for the explicitly authorized GitHub branch push.
+- [ ] Reproduce the reported physical transient arc loss if it remains present. Current
+  source/captures do not reproduce it; no speculative logo redesign is accepted.
+
+See [brand/type QA](docs/BRAND_TYPOGRAPHY_QA.md).
+
+## Previous checkpoint — global launch and onboarding V2
 
 - [x] Integrate one shared approved nine-second/six-layer global cold intro, animated
   extra-second hold and readiness fade; preserve V4/logo/shaders and suppress Today replay.
@@ -134,7 +157,7 @@ Updated: 2026-11-14 (Europe/Rome)
 
 ## NOT AUTHORIZED BY THIS LIST
 
-The current launch request authorizes a safe local commit after review and explicitly
-excludes submission/publication. No merge, deployment, store submission or production
+The current final typography request explicitly authorizes logical commits and pushing
+the working feature branch to GitHub. It does not authorize app publication. No merge, deployment, store submission or production
 billing configuration is implied by these tasks. Do not erase user data, generated history, or archival recovery points to
 obtain a green check.

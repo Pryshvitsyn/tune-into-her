@@ -66,6 +66,32 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
+## FINAL BRAND / TYPOGRAPHY — 2026-11-14
+
+- Implementation `f5a8628`, followed by final MAX navigation fix `55bbd9b`, applies the existing real Linux Libertine O Regular across
+  native UI through AppText, including Today/History/Settings/navigation. Hindi/Chinese
+  options use their own native script policy; body text scales and wraps naturally.
+- The delivered package explicitly identifies the existing outlined wordmark as Variant
+  #8.264 CoreText/SVG commands match the trusted OTF; the original comparison image and
+  historic generator font binary are unavailable. No font or brand asset was replaced.
+- Transient top/bottom emblem clipping is not reproduced in current baseline captures;
+  exact stroke/texture/sampling bounds and every10ms across nine phone shapes pass.
+  Forty-four real shared-WebGL checkpoint captures are recorded across four ratios.
+- Today retains complete readable text in a scroll viewport; the original shared sphere
+  tracks its measured slot and clips above fixed navigation. A separately confirmed
+  offscreen negative-scissor defect is fixed in display infrastructure only.
+-264 tests/34files, typecheck and content checks pass; lint has0errors/1existing generated
+  warning. Original V4, clean texture, poster, timeline, six-layer runtime, GLSL, logo,
+  OTF, business logic, translations and content have no changes.
+- Fresh signed Simulator and iphoneos Release builds pass embedded font and exact official
+  Expo-resource checks. Updated physical app launches without Metro and its process
+  survives155.500s, matching the update receipt (final install11.546s, launch0.747s). Physical visual/speech proof remains open.
+- Final independent Release verifies MAX calendar and full-width navigation labels,
+  normal cold entry, and UIKit-confirmed Reduced Motion cold entry/restoredOFF with
+  Metro absent. Onboarding, all11picker values and native fallback scripts also pass.
+- See [current proof and limits](docs/BRAND_TYPOGRAPHY_QA.md). Android native tools,
+  physical pixels/speech and real protected-Today native review remain unavailable.
+
 ## GLOBAL LAUNCH / ONBOARDING V2 — 2026-11-14
 
 - Implemented the approved shared Deep Intro V2 as the global cold-launch presentation:

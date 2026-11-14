@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "55bbd9b",
+  "configuration": "Release",
+  "platform": "generic iphoneos",
+  "buildSucceeded": true,
+  "appBundleID": "com.eliogenesis.tuneintoher",
+  "manifestSHA256": "080e28a5146528ee5789f65d5cbd3345ff3477f5af9fad7dbd9a2d5939f0a36c",
+  "officialManifestSHA256": "080e28a5146528ee5789f65d5cbd3345ff3477f5af9fad7dbd9a2d5939f0a36c",
+  "fingerprintSHA256": "152bd6bbbdeba1fd5e0fa6f0e2ab53ef143c2fed1a37a43466cce3326268b3e2",
+  "officialFingerprintSHA256": "152bd6bbbdeba1fd5e0fa6f0e2ab53ef143c2fed1a37a43466cce3326268b3e2",
+  "signatureValid": true,
+  "statusBarControllerPolicy": true,
+  "embeddedFontSHA256": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+  "hermesSHA256": "50d063d66ec94814de70bf0666d3d86313604d183087afe42d1be63d9c490dd2",
+  "hermesBytes": 6517770,
+  "freshOfficialManifest": true,
+  "freshOfficialFingerprint": true,
+  "fontUnmodified": true
+}
