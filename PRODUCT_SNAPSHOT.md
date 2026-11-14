@@ -66,6 +66,32 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
+## FINAL UX / INTERNAL QA — 2026-11-14
+
+- Existing header emblem now replays the shared approved scene in-app then opens Today,
+  retaining paid/trial gates and saved theme. Duplicate taps cannot queue intros; a foreign
+  route during handoff is recovered to Today. No native restart or shader/timeline change.
+- Fresh date draft is null until explicit confirmation in the existing step/editor.
+  Current cycle day uses the local date; guidance retains its08:00 boundary. Genuine saved
+  dates and historical selections remain intact. Calendar Update is fixed above primary tabs.
+- Shared secondary screens have a single fixed lower Back/Settings footer. Primary tabs
+  remain unchanged; screen ownership keeps retained-page footers stable while navigating.
+- Retry independently refreshes trial and offerings; SDK offering timeout and transient
+  trial-storage initialization failures recover. Actual trial/backend/RevenueCat build
+  configuration is absent locally, so real verification/transactions remain blocked.
+- Development-only explicit QA sessions reuse MockPurchaseService/AppTrialService with private
+  storage, simulated time and scenario data. Normal sessions retain real services. Scope-keyed
+  forms/stores and stale callback guards prevent synthetic edits/prices leaking into real data;
+  real billing/notification polling pauses during QA. No public QA tab or production bypass.
+-367 source tests, typecheck, lint0errors/1existing generated warning pass. Physical Debug
+  build/signature/modules and data-preserving installation pass; Simulator Release and Android
+  production JS export pass. Current signed Release cold entry is recorded with Metro absent
+  and official update resources matched. Native Home/calendar/documents/theme/fresh-cycle and
+  isolated cycle/08:00/history/trial/paid/Retry/Restore/End-QA cases pass. Native Reduced Motion
+  Home skips the full scene (1.524s) and restores the OS setting; complete cold video reaches
+  locked Today. Final source/evidence review passes; changes follow the authorized feature-branch commit/push workflow. No app/store publication.
+- [Current proof and limitations](docs/UX_TEST_READINESS.md) · [QA workflow](docs/INTERNAL_QA.md).
+
 ## FINAL BRAND / TYPOGRAPHY — 2026-11-14
 
 - Implementation `f5a8628`, followed by final MAX navigation fix `55bbd9b`, applies the existing real Linux Libertine O Regular across

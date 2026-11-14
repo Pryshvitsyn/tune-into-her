@@ -1,6 +1,6 @@
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { router } from 'expo-router';
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Alert, Pressable, StyleSheet, Switch, useWindowDimensions, View } from 'react-native';
 
@@ -8,14 +8,16 @@ import { TuneIntoHerSphereV4 } from "../TuneIntoHerSphereV4";
 import { AdviceBlocks } from '../src/components/AdviceBlocks';
 import { AppText as Text } from '../src/components/AppText';
 import { Button } from '../src/components/Button';
+import { CycleDateField } from '../src/components/CycleDateField';
 import { LanguagePicker } from '../src/components/LanguagePicker';
 import { NumberStepper } from '../src/components/NumberStepper';
 import { Screen } from '../src/components/Screen';
 import { acceleratedDemoEnabled } from '../src/config/acceleratedDemo';
 import { useApp, notificationScheduler } from '../src/context/AppContext';
 import { getCatalog, getLocalizedCue } from '../src/domain/content/contentRepository';
+import { cycleDraftFromSaved, cycleSettingsFromDraft } from '../src/domain/cycle/cycleDraft';
 import { estimateCycle } from '../src/domain/cycle/cycleEngine';
-import { toDateOnly } from '../src/domain/cycle/dateOnly';
+import { toDateOnly, type DateOnly } from '../src/domain/cycle/dateOnly';
 import { getDemoCopy } from '../src/i18n/acceleratedDemo';
 import releaseCopy from '../src/i18n/releaseCopy.json';
 import { useInterface } from '../src/i18n/useInterface';
@@ -24,9 +26,14 @@ import { type Palette } from '../src/theme';
 import { typographyForLanguage } from '../src/theme/typography';
 import { useTheme } from '../src/theme/useTheme';
 
-export default function OnboardingScreen() {
+export default function OnboardingScreenRoute() {
+  const { dataScope } = useApp();
+  return <OnboardingScreen key={dataScope} />;
+}
+
+function OnboardingScreen() {
   const { colors, dark } = useTheme();
-  const { preferences, updatePreferences, setCycleSettings } = useApp();
+  const { preferences, cycleSettings, updatePreferences, setCycleSettings, now, qaActive } = useApp();
   const styles = makeStyles(colors);
   const type = typographyForLanguage(preferences.language);
   const { fontScale } = useWindowDimensions();
@@ -35,9 +42,18 @@ export default function OnboardingScreen() {
   const c = useInterface();
   const [step, setStep] = useState(1);
   const [acknowledged, setAcknowledged] = useState(false);
-  const [date, setDate] = useState(new Date());
-  const [cycleLength, setCycleLength] = useState(28);
-  const [periodLength, setPeriodLength] = useState(5);
+  const initialDraft = cycleDraftFromSaved(cycleSettings);
+  const [date, setDate] = useState<DateOnly | null>(initialDraft.lastKnownPeriodStart);
+  const [cycleLength, setCycleLength] = useState(initialDraft.typicalCycleLength);
+  const [periodLength, setPeriodLength] = useState(initialDraft.typicalPeriodLength);
+  const draftTouched = useRef(false);
+  useEffect(() => {
+    if (draftTouched.current) return;
+    const saved = cycleDraftFromSaved(cycleSettings);
+    setDate(saved.lastKnownPeriodStart);
+    setCycleLength(saved.typicalCycleLength);
+    setPeriodLength(saved.typicalPeriodLength);
+  }, [cycleSettings]);
   const [reminderEnabled, setReminderEnabled] = useState(true);
   const [working, setWorking] = useState(false);
   const busy = useRef(false);
@@ -46,21 +62,23 @@ export default function OnboardingScreen() {
     value.setHours(preferences.reminderHour, preferences.reminderMinute, 0, 0);
     return value;
   });
-  const settings = useMemo(() => ({
-    lastKnownPeriodStart: toDateOnly(date), typicalCycleLength: cycleLength, typicalPeriodLength: periodLength,
-  }), [date, cycleLength, periodLength]);
-  const estimate = useMemo(() => estimateCycle({ ...settings, currentLocalDate: toDateOnly(new Date()) }), [settings]);
-  const previewCue = getLocalizedCue(preferences.language,
-    getCatalog().find(item => item.phases.includes(estimate.estimatedPhase))?.id ?? 'luteal_001');
+  const settings = useMemo(() => date ? cycleSettingsFromDraft({
+    lastKnownPeriodStart: date, typicalCycleLength: cycleLength, typicalPeriodLength: periodLength,
+  }, toDateOnly(now())) : null, [date, cycleLength, periodLength, now]);
+  const estimate = useMemo(() => settings ? estimateCycle({ ...settings, currentLocalDate: toDateOnly(now()) }) : null, [settings, now]);
+  const previewId = estimate ? getCatalog().find(item => estimate.requiresPeriodConfirmation
+    ? item.phases.length === 4 : item.phases.includes(estimate.estimatedPhase))?.id : null;
+  const previewCue = previewId ? getLocalizedCue(preferences.language, previewId) : null;
 
   const next = async () => {
     if (step === 2 && !acknowledged) { Alert.alert(t('onboarding.required')); return; }
-    if (step === 5) await setCycleSettings(settings);
+    if (step >= 3 && !settings) return;
+    if (step === 5 && settings) await setCycleSettings(settings);
     setStep(current => Math.min(6, current + 1));
   };
   const finish = async () => {
     let enabled = reminderEnabled;
-    if (enabled) enabled = await notificationScheduler.requestPermission();
+    if (enabled && !qaActive) enabled = await notificationScheduler.requestPermission();
     await updatePreferences({
       onboardingComplete: true, reminderEnabled: enabled,
       reminderHour: reminderTime.getHours(), reminderMinute: reminderTime.getMinutes(),
@@ -77,7 +95,7 @@ export default function OnboardingScreen() {
 
   return <Screen footer={<View style={styles.footer}>
     <Button label={t(working ? 'common.loading' : step === 6 ? 'onboarding.finish' : 'common.continue')}
-      disabled={working} onPress={() => void advance()} />
+      disabled={working || (step >= 3 && !settings)} onPress={() => void advance()} />
     {step > 1 ? <Button label={t('common.back')} variant="ghost" disabled={working} onPress={() => setStep(step - 1)} />
       : <View accessible={false} style={[styles.backSpace, { minHeight: backHeight }]} />}
   </View>}>
@@ -111,22 +129,22 @@ export default function OnboardingScreen() {
       <Text style={[styles.hero, type]}>{t('onboarding.dateTitle')}</Text>
       <Text style={[styles.body, type]}>{t('onboarding.dateBody')}</Text>
       <View style={styles.picker}>
-        <DateTimePicker themeVariant={dark ? 'dark' : 'light'} value={date} mode="date" display="spinner"
-          maximumDate={new Date()} onChange={(_, selected) => selected && setDate(selected)} />
+        <CycleDateField value={date} maximumDate={now()} disabled={working}
+          onChange={selected => { draftTouched.current = true; setDate(selected); }} />
       </View>
     </View> : null}
     {step === 4 ? <View style={styles.stack}>
       <Text style={[styles.hero, type]}>{t('onboarding.typicalTitle')}</Text>
       <Text style={[styles.body, type]}>{t('onboarding.typicalBody')}</Text>
       <View>
-        <NumberStepper label={t('onboarding.cycleLength')} value={cycleLength} min={21} max={40} onChange={setCycleLength} />
-        <NumberStepper label={t('onboarding.periodLength')} value={periodLength} min={2} max={10} onChange={setPeriodLength} />
+        <NumberStepper label={t('onboarding.cycleLength')} value={cycleLength} min={21} max={40} onChange={value => { draftTouched.current = true; setCycleLength(value); }} />
+        <NumberStepper label={t('onboarding.periodLength')} value={periodLength} min={2} max={10} onChange={value => { draftTouched.current = true; setPeriodLength(value); }} />
       </View>
     </View> : null}
     {step === 5 ? <View style={styles.preview}>
       <Text style={[styles.hero, type]}>{t('onboarding.previewTitle')}</Text>
       <Text style={[styles.body, type]}>{t('onboarding.previewBody')}</Text>
-      <AdviceBlocks advice={previewCue} date={toDateOnly(new Date())} presentation="onboarding" />
+      {previewCue ? <AdviceBlocks advice={previewCue} date={toDateOnly(now())} presentation="onboarding" /> : null}
     </View> : null}
     {step === 6 ? <View style={styles.stack}>
       <Text style={[styles.hero, type]}>{t('onboarding.reminderTitle')}</Text>

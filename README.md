@@ -15,6 +15,9 @@ Existing profiles: [eas.json](eas.json). See [STORE_SETUP.md](STORE_SETUP.md) an
 ## Monetization
 Explicit **14-day full app access without card, account or subscription**, followed by a voluntary monthly or annual purchase. Eurozone base targets are €3.99/month and €24.99/year; the UI uses actual store prices. Trial expiry never charges the user. Native RevenueCat purchases and official web redemption share `full_access`; RevenueCat Billing with Stripe is the prepared web engine.
 The isolated trial backend is source-complete and locally tested; external products, keys, hosting and native sandbox transactions remain unconfigured/unverified. See [MONETIZATION](MONETIZATION.md), [owner setup](STORE_SETUP.md), [billing QA](BILLING_QA.md), and [local backend](backend/README.md). Cycle/relationship content remains on-device; billing services receive only their separate identity/transaction data.
+## Isolated internal QA
+Development-only scenarios, clock, trial/restore/store recovery and iPhone dev-client instructions: [INTERNAL_QA](docs/INTERNAL_QA.md). Actual checks and limits: [UX test readiness](docs/UX_TEST_READINESS.md).
+
 ## Accelerated iPhone preview
 Preview builds open a labelled 30-day demonstration before setup/purchase. Tap Start once: the next demo day appears every five minutes, with native reminders while the app is closed. Stop cancels only this demonstration. It is separate from the14-day free app access. Personal cycle data is not used or changed. See [preview installation and checks](docs/ACCELERATED_PREVIEW.md). A signed native build is still required for installation.
 ## Structure

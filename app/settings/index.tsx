@@ -8,6 +8,7 @@ import { Screen } from "../../src/components/Screen";
 import { SettingsRow } from "../../src/components/SettingsRow";
 import { acceleratedDemoEnabled } from "../../src/config/acceleratedDemo";
 import { useApp } from "../../src/context/AppContext";
+import { internalQAEnabled } from '../../src/devQA/session';
 import { getDemoCopy } from "../../src/i18n/acceleratedDemo";
 import releaseCopy from "../../src/i18n/releaseCopy.json";
 import { useInterface } from "../../src/i18n/useInterface";
@@ -48,6 +49,9 @@ export default function SettingsScreen() {
           <SettingsRow label={getDemoCopy(preferences.language).title} onPress={() => router.push("/demo")} />
         </Section>
       ) : null}
+      {internalQAEnabled ? <Section title={t("paywall.mock")}>
+        <SettingsRow label="Internal QA" onPress={() => router.push('/dev-qa')} />
+      </Section> : null}
       <Section title={t("settings.cycle")}>
         <SettingsRow
           label={t("settings.cycleDetails")}

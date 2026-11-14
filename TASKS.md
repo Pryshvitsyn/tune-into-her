@@ -2,7 +2,37 @@
 
 Updated: 2026-11-14 (Europe/Rome)
 
-## NOW — final brand and typography correction
+## NOW — final UX correction and test readiness
+
+- [x] Reuse the approved globe for the existing header emblem's one-tap return to Today;
+  deduplicate gestures, retain access gates, motion preferences, themes and application process.
+- [x] Require explicit cycle date confirmation in the existing onboarding/editor; retain
+  genuine saved data, local-day/08:00 separation and November3 regression coverage.
+- [x] Fix one calendar Update action above the original tabs; share fixed Back/Settings
+  across secondary documents/details with safe previous-destination and hardware Back logic.
+- [x] Make trial/offering Retry recoverable without changing the independent14-day policy,
+  prices or real entitlement rules; document missing local backend/RevenueCat configuration.
+- [x] Add explicit development-only QA scenarios using existing services and a private clock,
+  preferences/history/feedback/storage; isolate scope transitions and suppress native side effects.
+- [x] Pass367 source tests, typecheck and lint (0errors/1existing generated warning).
+- [x] Build/sign/install current physical Debug client without data reset; build standalone
+  Simulator Release and Android production JS export. No paid service/store activation.
+- [x] Record Simulator Release cold entry without Metro, native Home single/double-tap
+  same-process/access regression and fixed calendar/editor behavior.
+- [x] Verify native documents, saved Light/Dark through Home/cold restart, explicit empty-date
+  onboarding and all internal QA cycle/08:00/trial/paid/store/Restore paths. Each End QA restores
+  the exact synthetic baseline; real phone data is preserved.
+- [x] Build/sign current-source Simulator Release, match official update resources and record
+  a fresh standalone cold launch with Metro ports closed; export final Android production JS.
+- [x] Confirm native Reduced Motion Home (Privacy→locked Today in1.524s/same process,
+  UIKit ON then restored OFF), inspect complete no-Metro cold video and review safe evidence.
+- [x] Review the diff/evidence and secrets; commit and push the working feature branch. No app/store publication.
+- [ ] Android native navigation, hardware Back and safe-area proof require JDK/SDK/emulator.
+- [ ] Real trial/store sandbox transactions require the verified configuration in STORE_SETUP.
+
+See [current UX and test report](docs/UX_TEST_READINESS.md) and [isolated QA workflow](docs/INTERNAL_QA.md).
+
+## Previous checkpoint — final brand and typography correction
 
 - [x] Verify the delivered Variant #8 source and exact OTF/CoreText outline equivalence;
   preserve original emblem, font bytes and licensed notices.

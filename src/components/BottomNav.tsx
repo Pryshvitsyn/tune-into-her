@@ -6,9 +6,10 @@ import { useInterface } from "../i18n/useInterface";
 import { useTheme } from "../theme/useTheme";
 
 import { AppText as Text } from './AppText';
-export function BottomNav() {
+export function BottomNav({ ownerPath }: { ownerPath?: string }) {
   const { colors } = useTheme();
-  const path = usePathname();
+  const currentPath = usePathname();
+  const path = ownerPath ?? currentPath;
   const c = useInterface();
   const { fontScale } = useWindowDimensions();
   const stacked = fontScale > 1.35;

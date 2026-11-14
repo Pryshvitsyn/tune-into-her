@@ -20,28 +20,33 @@ import { useApp } from "../src/context/AppContext";
 import { getLocalizedCue } from "../src/domain/content/contentRepository";
 import { selectDailyCue } from "../src/domain/content/dailyCueService";
 import { dailyReminders as introDailyReminders } from "../src/domain/content/dailyGuidance";
-import { guidanceDate } from "../src/domain/content/guidanceDate";
-import { estimateCycle } from "../src/domain/cycle/cycleEngine";
+import { cycleToday } from "../src/domain/cycle/cycleToday";
+import { todayEntry } from "../src/domain/navigation/todayEntry";
 import { useInterface } from "../src/i18n/useInterface";
 import { AnimatedToday } from "../src/intro/AnimatedToday";
 import { IntroLoading } from "../src/intro/IntroLoading";
 import { useLaunchPresentation } from "../src/intro/LaunchPresentation";
 import { introDateLabel } from "../src/intro/formatDate";
-import { useMockBilling } from "../src/services/purchases";
-import { AsyncSelectionStore } from "../src/storage/AsyncSelectionStore";
 import { useTheme } from "../src/theme/useTheme";
-const selectionStore = new AsyncSelectionStore();
-export default function TodayScreen() {
+export default function TodayScreenRoute() {
+  const { dataScope } = useApp();
+  return <TodayScreen key={dataScope} />;
+}
+
+function TodayScreen() {
   const { t } = useTranslation();
   const c = useInterface();
   const { colors, dark } = useTheme();
   const { reportScreenReady, reportScreenNotReady } = useLaunchPresentation();
   const { width } = useWindowDimensions();
-  const { ready, cycleSettings, preferences, hasAccess } = useApp();
-  const [clockDate, setClockDate] = useState(() => guidanceDate(new Date()));
-  const today = cycleSettings && cycleSettings.lastKnownPeriodStart > clockDate
-    ? guidanceDate(new Date(), cycleSettings.lastKnownPeriodStart)
-    : clockDate;
+  const { ready, cycleSettings, preferences, hasAccess, entitlement, qaActive, dataScope, now, selectionStore } = useApp();
+  const entry = todayEntry({ ready, onboardingComplete: preferences.onboardingComplete, hasCycleSettings: Boolean(cycleSettings), hasAccess });
+  const guidanceAllowed = entry === 'guidance';
+  const [wallClock, setWallClock] = useState(now);
+  const clock = useMemo(() => qaActive ? now() : wallClock, [now, qaActive, wallClock]);
+  const { localDate, adviceDate: today, estimate, guidanceEstimate } = useMemo(
+    () => cycleToday(cycleSettings, clock), [cycleSettings, clock],
+  );
   const [selection, setSelection] = useState<{
     key: string;
     id: string | null;
@@ -49,7 +54,8 @@ export default function TodayScreen() {
   } | null>(null);
   const [retry, setRetry] = useState(0);
   useEffect(() => {
-    const update = () => setClockDate(guidanceDate(new Date()));
+    if (qaActive) return;
+    const update = () => setWallClock(now());
     const timer = setInterval(update, 30000);
     const sub = AppState.addEventListener("change", (s) => {
       if (s === "active") update();
@@ -58,21 +64,14 @@ export default function TodayScreen() {
       clearInterval(timer);
       sub.remove();
     };
-  }, []);
-  const estimate = useMemo(
-    () =>
-      cycleSettings
-        ? estimateCycle({ ...cycleSettings, currentLocalDate: today })
-        : null,
-    [cycleSettings, today],
-  );
-  const guidancePhase = estimate
-    ? estimate.requiresPeriodConfirmation ? "unconfirmed" : estimate.estimatedPhase
+  }, [qaActive, now]);
+  const guidancePhase = guidanceEstimate
+    ? guidanceEstimate.requiresPeriodConfirmation ? "unconfirmed" : guidanceEstimate.estimatedPhase
     : null;
-  const selectionKey = JSON.stringify([today, cycleSettings, retry]);
+  const selectionKey = JSON.stringify([dataScope, today, cycleSettings, retry]);
   useEffect(() => {
     let active = true;
-    if (hasAccess && cycleSettings && guidancePhase)
+    if (guidanceAllowed && cycleSettings && guidancePhase)
       void selectDailyCue({
         date: today,
         phase: guidancePhase,
@@ -89,22 +88,25 @@ export default function TodayScreen() {
     return () => {
       active = false;
     };
-  }, [hasAccess, cycleSettings, guidancePhase, today, retry, selectionKey]);
-  useEffect(() => {
-    if (ready && !cycleSettings) router.replace("/onboarding");
-  }, [ready, cycleSettings]);
+  }, [guidanceAllowed, cycleSettings, guidancePhase, today, retry, selectionKey, selectionStore]);
   const selectionFailed = selection?.key === selectionKey && selection.failed;
-  const selectionPending = hasAccess && (selection?.key !== selectionKey || (!selection.id && !selection.failed));
+  const selectionPending = guidanceAllowed && Boolean(estimate) && (selection?.key !== selectionKey || (!selection.id && !selection.failed));
   useLayoutEffect(() => {
-    if (!estimate) return;
+    if (!ready) return;
+    if (!estimate || entry === 'setup') { reportScreenReady('/today'); return; }
     // Midnight/cycle changes can replace the selected day without changing the route.
     if (selectionPending) reportScreenNotReady('/today');
     else if (!hasAccess || selectionFailed) reportScreenReady('/today');
-  }, [estimate, hasAccess, selectionFailed, selectionPending, reportScreenReady, reportScreenNotReady]);
-  if (!estimate)
+  }, [ready, estimate, entry, hasAccess, selectionFailed, selectionPending, reportScreenReady, reportScreenNotReady]);
+  if (!estimate || entry === "setup" || entry === "loading")
     return (
       <Screen>
-        <ActivityIndicator color={colors.primary} />
+        {ready ? <View style={{ gap: 20, paddingVertical: 30 }}>
+          <Text style={{ color: colors.text, fontSize: 24, lineHeight: 32, textAlign: "center" }}>{c.wellbeing}</Text>
+          <Text style={{ color: colors.secondary, fontSize: 17, lineHeight: 25, textAlign: "center" }}>{t("cycle.lastPeriod")}: {cycleSettings?.lastKnownPeriodStart ?? t("common.notSet")}</Text>
+          <Text style={{ color: colors.secondary, fontSize: 17, lineHeight: 25, textAlign: "center" }}>{t(cycleSettings ? "onboarding.contextBody" : "onboarding.dateBody")}</Text>
+          <Button label={t(preferences.onboardingComplete ? "cycle.title" : "common.continue")} onPress={() => router.push(preferences.onboardingComplete ? "/cycle" : "/onboarding")} />
+        </View> : <ActivityIndicator color={colors.primary} />}
       </Screen>
     );
   const current = selection?.key === selectionKey ? selection : null;
@@ -122,7 +124,7 @@ export default function TodayScreen() {
     return <AnimatedToday
       dark={dark}
       dateLine={[
-        introDateLabel(today, preferences.language),
+        introDateLabel(localDate, preferences.language),
         estimate.requiresPeriodConfirmation ? "" : t("today.day", { day: estimate.estimatedCycleDay }),
       ].filter(Boolean).join(" · ")}
       phaseTitle={estimate.requiresPeriodConfirmation
@@ -133,7 +135,7 @@ export default function TodayScreen() {
       mind={{label:c.mind,text:cue.context,note:notes[0]?.text ?? ""}}
       support={{label:c.support,text:cue.support,note:notes[1]?.text ?? ""}}
       action={{label:c.do,text:cue.cue,note:notes[2]?.text ?? ""}}
-      disclosure={useMockBilling ? t("paywall.mock") : undefined}
+      disclosure={(qaActive || entitlement.isMock) ? t("paywall.mock") : undefined}
       labels={{
         info:russian ? "Больше о фазе" : t("today.learnMore"),
         update:russian ? "Изменить фазу" : t("today.update"),
@@ -145,27 +147,12 @@ export default function TodayScreen() {
         ? router.push("/cycle")
         : router.push({pathname:"/learn/[phase]",params:{phase:estimate.estimatedPhase}})}
       onUpdate={() => router.push("/cycle")}
-      onSettings={() => router.push("/settings")}
+      onSettings={() => router.dismissTo("/settings")}
       onAbout={() => router.push("/thea")}
     />;
   }
   return (
     <Screen>
-      {useMockBilling ? (
-        <Text
-          accessibilityRole="text"
-          style={{
-            color: colors.danger,
-            fontSize: 12,
-            fontWeight: '400',
-            letterSpacing: 0.4,
-            marginBottom: 8,
-            textAlign: "center",
-          }}
-        >
-          {t("paywall.mock")}
-        </Text>
-      ) : null}
       <View style={{ alignItems: "center", marginTop: 12, marginBottom: 28 }}>
         <Text style={{ color: colors.text, fontSize: 18, lineHeight: 24, textAlign: "center", fontWeight: '400' }}>
           {estimate.requiresPeriodConfirmation
@@ -216,7 +203,7 @@ export default function TodayScreen() {
             date={today}
             sphere={<TuneIntoHerSphereV4 size={sphereSize} />}
           />
-          <FeedbackControl date={today} cueId={current.id} />
+          <FeedbackControl key={dataScope} date={today} cueId={current.id} />
         </>
       ) : (
         <ActivityIndicator color={colors.primary} />

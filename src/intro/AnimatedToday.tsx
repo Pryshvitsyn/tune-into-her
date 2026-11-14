@@ -1,5 +1,5 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { useFocusEffect } from 'expo-router';
+import { useFocusEffect, useNavigation } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import {
   AccessibilityInfo, AppState, Modal, Pressable, ScrollView,
@@ -10,8 +10,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
 import { AppText as Text } from '../components/AppText';
+import { BrandHomeButton } from '../components/BrandHomeButton';
 import { BrandMark } from '../components/BrandMark';
 
+import { useHomeTransition } from './HomeTransitionContext';
 import { useLaunchPresentation } from './LaunchPresentation';
 import { SphereIntroSurface, type SphereIntroHandle } from './SphereIntroSurface';
 import { hasConsumedAppIntro, markAppIntroConsumed } from './introSession';
@@ -71,6 +73,9 @@ function FooterIcon({kind,color}: {kind:'info'|'update'|'settings';color:string}
 /** Presentation only. No purchase, phase-estimation, history or notification logic. */
 export function AnimatedToday(props: AnimatedTodayProps) {
   const insets = useSafeAreaInsets();
+  const navigation = useNavigation();
+  const { pauseDestination } = useHomeTransition();
+  const [surfaceReady, setSurfaceReady] = useState(false);
   const { fontScale } = useWindowDimensions();
   const { reportScreenReady } = useLaunchPresentation();
   const palette = props.dark?DARK:LIGHT;
@@ -78,7 +83,7 @@ export function AnimatedToday(props: AnimatedTodayProps) {
   const clock = useSharedValue(play ? 0 : INTRO_MS);
   const surface = useRef<SphereIntroHandle>(null);
   const [done,setDone] = useState(!play);
-  const [focus,setFocus] = useState(true);
+  const [focus,setFocus] = useState(() => navigation.isFocused());
   const [appActive,setAppActive] = useState(AppState.currentState !== 'background');
   const [access,setAccess] = useState({ready:false,reduce:false,reader:false});
   const [view,setView] = useState({width:0,height:0});
@@ -90,13 +95,13 @@ export function AnimatedToday(props: AnimatedTodayProps) {
   useFocusEffect(useCallback(() => {setFocus(true); return () => setFocus(false);}, []));
   useEffect(() => {
     const appSub=AppState.addEventListener('change',state=>setAppActive(state==='active'));
-    const reduceSub=AccessibilityInfo.addEventListener('reduceMotionChanged',value=>setAccess(old=>({...old,reduce:value})));
-    const readerSub=AccessibilityInfo.addEventListener('screenReaderChanged',value=>setAccess(old=>({...old,reader:value})));
-    let alive=true;
+    let alive=true, reduceChanged=false, readerChanged=false;
+    const reduceSub=AccessibilityInfo.addEventListener('reduceMotionChanged',value=>{reduceChanged=true;setAccess(old=>({...old,reduce:value}));});
+    const readerSub=AccessibilityInfo.addEventListener('screenReaderChanged',value=>{readerChanged=true;setAccess(old=>({...old,reader:value}));});
     Promise.all([AccessibilityInfo.isReduceMotionEnabled(),AccessibilityInfo.isScreenReaderEnabled()])
-      .then(([reduce,reader])=>{if(alive) setAccess({ready:true,reduce,reader});})
+      .then(([reduce,reader])=>{if(alive) setAccess(old=>({ready:true,reduce:reduceChanged?old.reduce:reduce,reader:readerChanged?old.reader:reader}));})
       // On an accessibility-query failure, choose the safer static presentation.
-      .catch(()=>{if(alive) setAccess({ready:true,reduce:true,reader:false});});
+      .catch(()=>{if(alive) setAccess(old=>({...old,ready:true,reduce:true}));});
     return ()=>{alive=false;appSub.remove();reduceSub.remove();readerSub.remove();};
   }, []);
   const finish = useCallback(() => {
@@ -116,6 +121,12 @@ export function AnimatedToday(props: AnimatedTodayProps) {
     const {x,y,width,height}=event.nativeEvent.layout;
     setSlot(old=>old && old.x===x && old.y===y && old.width===width && old.height===height?old:{x,y,width,height});
   }, []);
+  useEffect(() => {
+    if (!surfaceReady || !focus || !appActive || pauseDestination || !target) return;
+    let second: number | undefined;
+    const first = requestAnimationFrame(() => { second = requestAnimationFrame(() => reportScreenReady('/today')); });
+    return () => { cancelAnimationFrame(first); if (second !== undefined) cancelAnimationFrame(second); };
+  }, [surfaceReady, focus, appActive, pauseDestination, target, reportScreenReady, props.dateLine, props.phaseTitle, props.mind.text, props.support.text, props.action.text]);
   const sphereSize = Math.max(216,Math.min(280,view.width-56));
   const stackedFooter = fontScale > 1.35;
 
@@ -145,9 +156,9 @@ export function AnimatedToday(props: AnimatedTodayProps) {
       width:view.width,height:done?Math.max(0,view.height-footerHeight):view.height,
     }]}><View style={{width:view.width,height:view.height}}><SphereIntroSurface
       ref={surface} view={view} target={target} elapsed={clock} animate={play}
-      active={focus && appActive && !detail} preferencesReady={access.ready}
+      active={focus && appActive && !detail && !pauseDestination} preferencesReady={access.ready}
       reducedMotion={access.reduce || access.reader} ink={palette.ink}
-      onFirstFrame={() => reportScreenReady('/today')} onComplete={finish} onError={message=>{props.onIntroError?.(message);if(__DEV__) console.warn('[Tune Into Her intro]',message);}}
+      onFirstFrame={() => setSurfaceReady(true)} onComplete={finish} onError={message=>{props.onIntroError?.(message);if(__DEV__) console.warn('[Tune Into Her intro]',message);}}
     /></View></View> : null}
 
     <ScrollView style={styles.scroll} scrollEnabled={done} scrollEventThrottle={16}
@@ -158,7 +169,7 @@ export function AnimatedToday(props: AnimatedTodayProps) {
         <BrandMark corporate size={27} color={palette.secondary}/>
       </Pressable>
       <Text style={[styles.date,{color:palette.ink}]}>{props.dateLine}</Text>
-      <View style={styles.brandHit}><BrandMark size={34} color={palette.ink}/></View>
+      <BrandHomeButton size={34} color={palette.ink} style={styles.brandHit}/>
     </Reveal>
     <Reveal clock={clock} name="phase" done={done} style={{marginTop:12}}>
       <Text style={[styles.phase,{color:palette.ink}]}>{props.phaseTitle}</Text>
@@ -174,7 +185,7 @@ export function AnimatedToday(props: AnimatedTodayProps) {
     </ScrollView>
     <View onLayout={event=>setFooterHeight(event.nativeEvent.layout.height)}>
     <Reveal clock={clock} name="chrome" done={done} style={{paddingBottom:Math.max(insets.bottom,8),backgroundColor:palette.edge}}>
-      <View style={[styles.footer,stackedFooter && styles.footerStack]}>{footer.map(item=><Pressable key={item.kind} onPress={item.onPress}
+      <View style={[styles.footer,stackedFooter && styles.footerStack]}>{footer.map(item=><Pressable key={item.kind} pointerEvents="box-only" onPress={() => item.onPress()}
         accessibilityRole="button" accessibilityLabel={item.label} style={[styles.footerButton,stackedFooter && styles.footerButtonStack]}>
         <FooterIcon kind={item.kind} color={palette.ink}/>
         <Text style={[styles.footerLabel,{color:palette.ink}]}>{item.label}</Text>

@@ -3,20 +3,20 @@ import { Pressable, ScrollView, useWindowDimensions, View } from 'react-native';
 
 
 import { useApp } from "../context/AppContext";
-import { estimateCycle } from "../domain/cycle/cycleEngine";
+import { isEstimatedPeriodDate } from "../domain/cycle/calendarPeriodEstimate";
 import { toDateOnly } from "../domain/cycle/dateOnly";
 import { useInterface } from "../i18n/useInterface";
 import { useTheme } from "../theme/useTheme";
 
 import { AppText as Text } from './AppText';
-export function CycleCalendar({ onEdit }: { onEdit(): void }) {
-  const { cycleSettings, preferences } = useApp();
+export function CycleCalendar() {
+  const { cycleSettings, preferences, now: currentTime } = useApp();
   const { colors } = useTheme();
   const c = useInterface();
   const { width, fontScale } = useWindowDimensions();
   const gridWidth = Math.max(width - 48, (width - 48) * fontScale);
   const [offset, setOffset] = useState(0);
-  const now = new Date();
+  const now = currentTime();
   const month = new Date(now.getFullYear(), now.getMonth() + offset, 1);
   const locale =
     preferences.language === "mbf"
@@ -75,20 +75,14 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
               paddingVertical: 10,
             }}
           >
-            {new Date(2026, 10, 2 + i).toLocaleDateString(locale, {
+            {cells[i]!.toLocaleDateString(locale, {
               weekday: "short",
             })}
           </Text>
         ))}
         {cells.map((date) => {
           const key = toDateOnly(date);
-          const estimate =
-            cycleSettings && key >= cycleSettings.lastKnownPeriodStart
-              ? estimateCycle({ ...cycleSettings, currentLocalDate: key })
-              : null;
-          const phase = estimate && !estimate.requiresPeriodConfirmation
-            ? estimate.estimatedPhase
-            : null;
+          const estimatedPeriod = isEstimatedPeriodDate(cycleSettings, key);
           return (
             <View
               key={key}
@@ -100,7 +94,7 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
               }}
             >
               <Text
-                accessibilityLabel={`${date.toLocaleDateString(locale)}${phase === "menstrual" ? `, ${c.estimatedPeriod}` : ""}`}
+                accessibilityLabel={`${date.toLocaleDateString(locale)}${estimatedPeriod ? `, ${c.estimatedPeriod}` : ""}`}
                 style={{
                   color:
                     date.getMonth() !== month.getMonth()
@@ -110,7 +104,7 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
                   borderRadius: 18,
                   padding: 9,
                   backgroundColor:
-                    phase === "menstrual" ? colors.overlay : "transparent",
+                    estimatedPeriod ? colors.overlay : "transparent",
                   fontWeight: "400",
                   textDecorationLine: key === toDateOnly(now) ? "underline" : "none",
                 }}
@@ -132,21 +126,6 @@ export function CycleCalendar({ onEdit }: { onEdit(): void }) {
       >
         {c.estimatedPeriod} · {c.wellbeing}
       </Text>
-      <Pressable
-        accessibilityRole="button"
-        onPress={onEdit}
-        style={{
-          minHeight: 52,
-          backgroundColor: colors.primary,
-          borderRadius: 26,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Text style={{ color: colors.background, fontWeight: '400' }}>
-          {c.editCycle}
-        </Text>
-      </Pressable>
     </View>
   );
 }

@@ -12,11 +12,16 @@ import { radius, spacing } from "../../src/theme";
 import type { Palette } from "../../src/theme";
 import { useTheme } from "../../src/theme/useTheme";
 
-export default function ReminderScreen() {
+export default function ReminderScreenRoute() {
+  const { dataScope } = useApp();
+  return <ReminderScreen key={dataScope} />;
+}
+
+function ReminderScreen() {
   const { colors, dark } = useTheme();
   const styles = makeStyles(colors);
   const { t } = useTranslation();
-  const { preferences, updatePreferences } = useApp();
+  const { preferences, updatePreferences, qaActive } = useApp();
   const [enabled, setEnabled] = useState(preferences.reminderEnabled);
   const [time, setTime] = useState(() => {
     const date = new Date();
@@ -25,6 +30,7 @@ export default function ReminderScreen() {
   });
   const [permission, setPermission] = useState("permissionUnknown");
   useEffect(() => {
+    if (qaActive) return;
     void notificationScheduler
       .permissionStatus()
       .then((status) =>
@@ -36,11 +42,11 @@ export default function ReminderScreen() {
               : "permissionUnknown",
         ),
       );
-  }, []);
+  }, [qaActive]);
   const save = async () => {
     try {
       let nextEnabled = enabled;
-      if (enabled)
+      if (enabled && !qaActive)
         nextEnabled = await notificationScheduler.requestPermission();
       await updatePreferences(
         {
@@ -51,7 +57,7 @@ export default function ReminderScreen() {
         true,
       );
       setEnabled(nextEnabled);
-      setPermission(nextEnabled ? "permissionGranted" : "permissionDenied");
+      setPermission(qaActive ? "permissionUnknown" : nextEnabled ? "permissionGranted" : "permissionDenied");
     } catch {
       Alert.alert(t("reminder.saveError"));
     }

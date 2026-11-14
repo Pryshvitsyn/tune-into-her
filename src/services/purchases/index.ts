@@ -1,4 +1,3 @@
-import { MockPurchaseService } from './MockPurchaseService';
 import { RevenueCatPurchaseService } from './RevenueCatPurchaseService';
 import { isMockBillingEnabled } from './mockBilling';
 import type { PurchaseService } from './types';
@@ -8,9 +7,9 @@ const useMockBilling = isMockBillingEnabled(
   process.env.EXPO_PUBLIC_USE_MOCK_BILLING,
 );
 
-export const purchaseService: PurchaseService = useMockBilling
-  ? new MockPurchaseService()
-  : new RevenueCatPurchaseService();
+// Only an explicit, isolated QA session selects MockPurchaseService. Enabling the
+// panel must never grant mock access against real user history or billing caches.
+export const purchaseService: PurchaseService = new RevenueCatPurchaseService();
 
 export { useMockBilling };
 export { isMockBillingEnabled } from './mockBilling';

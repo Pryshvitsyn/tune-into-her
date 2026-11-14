@@ -5,6 +5,7 @@ import { useApp } from "../context/AppContext";
 import thea from "../i18n/thea.json";
 import { useTheme } from "../theme/useTheme";
 
+import { BrandHomeButton } from "./BrandHomeButton";
 import { BrandMark } from "./BrandMark";
 export function BrandHeader() {
   const { colors } = useTheme();
@@ -26,7 +27,7 @@ export function BrandHeader() {
       >
         <BrandMark corporate size={24} color={colors.secondary} />
       </Pressable>
-      <BrandMark color={colors.primary} size={36} />
+      <BrandHomeButton color={colors.primary} size={36} style={{ alignItems: "flex-end" }} />
     </View>
   );
 }

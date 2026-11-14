@@ -120,7 +120,7 @@ extension LaunchUIQA {
     app.launch()
     try completeOnboardingAssertions(in: app)
   }
-  func completeOnboardingAssertions(in app: XCUIApplication) throws {
+  func completeOnboardingAssertions(in app: XCUIApplication, expectFreshDate: Bool = true) throws {
     for _ in 0..<6 {
       if app.buttons["Select English"].exists { break }
       if app.buttons["Back"].exists { app.buttons["Back"].tap() }
@@ -158,7 +158,8 @@ extension LaunchUIQA {
     acknowledgement.tap()
     app.buttons["Continue"].tap()
     XCTAssertTrue(app.staticTexts["When did the last period begin?"].firstMatch.waitForExistence(timeout: 5))
-    capture(app, "06-synthetic-date-default")
+    try confirmSyntheticDraftDateIfNeeded(in: app, expectFresh: expectFreshDate)
+    capture(app, "06-synthetic-date-explicitly-confirmed")
     app.buttons["Continue"].tap()
     XCTAssertTrue(app.staticTexts["What is typical?"].firstMatch.waitForExistence(timeout: 5))
     XCTAssertTrue(app.staticTexts["28 days"].firstMatch.exists)
@@ -384,7 +385,8 @@ extension LaunchUIQA {
     capture(app, "24-largest-type-context-checked")
     app.buttons["Continue"].tap()
     XCTAssertTrue(app.staticTexts["When did the last period begin?"].firstMatch.waitForExistence(timeout: 5))
-    capture(app, "25-largest-type-date-no-change")
+    try confirmSyntheticDraftDateIfNeeded(in: app)
+    capture(app, "25-largest-type-date-explicit-draft-no-save")
     app.buttons["Continue"].tap()
     XCTAssertTrue(app.staticTexts["What is typical?"].firstMatch.waitForExistence(timeout: 5))
     let controls = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Cycle length"))
@@ -472,7 +474,7 @@ extension LaunchUIQA {
     let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
     clearExistingOpenConfirmation(for: app)
     app.activate()
-    try completeOnboardingAssertions(in: app)
+    try completeOnboardingAssertions(in: app, expectFreshDate: false)
   }
 }
 
@@ -702,5 +704,686 @@ extension LaunchUIQA {
     XCTAssertTrue(settings.navigationBars.firstMatch.waitForExistence(timeout: 10))
     capture(settings, "43-motion-native-settings-discovery", checkStatusBar: false)
     print("TIH_NATIVE_UIKIT_MOTION_DISCOVERY \(UIAccessibility.isReduceMotionEnabled)")
+  }
+}
+
+
+extension LaunchUIQA {
+  /// Scroll only the existing app body; footer controls are checked separately.
+  func requireBodyElementFullyVisible(_ element: XCUIElement, in app: XCUIApplication) {
+    func ownerScroll() -> XCUIElement {
+      if element.exists {
+        let owner = app.scrollViews.containing(NSPredicate(format: "label == %@", element.label)).firstMatch
+        if owner.exists { return owner }
+      }
+      return app.scrollViews.allElementsBoundByIndex.last ?? app.scrollViews.firstMatch
+    }
+    for _ in 0..<30 {
+      let scroll = ownerScroll()
+      let viewport = scroll.exists ? scroll.frame.intersection(app.frame) : app.frame
+      if element.exists && element.isHittable && viewport.contains(element.frame) {
+        // React's new card can precede completion of the native stack transition.
+        Thread.sleep(forTimeInterval: 0.4)
+        let settled = ownerScroll()
+        if element.isHittable && (!settled.exists || settled.frame.contains(element.frame)) { break }
+        continue
+      }
+      guard scroll.exists else { break }
+      let distance: CGFloat
+      if element.exists {
+        let needed = element.frame.minY < viewport.minY
+          ? viewport.minY - element.frame.minY + 12
+          : viewport.maxY - element.frame.maxY - 12
+        distance = max(-viewport.height * 0.7, min(viewport.height * 0.7, needed))
+      } else { distance = -viewport.height * 0.7 }
+      let start = scroll.coordinate(withNormalizedOffset: CGVector(dx: app.datePickers.firstMatch.exists ? 0.07 : 0.4, dy: distance < 0 ? 0.85 : 0.15))
+      start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: distance)), withVelocity: .slow, thenHoldForDuration: 0.1)
+    }
+    XCTAssertTrue(element.exists)
+    XCTAssertTrue(element.isHittable)
+    XCTAssertTrue(app.frame.contains(element.frame), "The complete native control must fit the app viewport")
+    let scroll = ownerScroll()
+    if scroll.exists { XCTAssertTrue(scroll.frame.contains(element.frame), "Control \(element.frame) must fit its owning scroll viewport \(scroll.frame)") }
+  }
+
+  func confirmSyntheticDraftDateIfNeeded(in app: XCUIApplication, expectFresh: Bool? = nil) throws {
+    let field = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Last known period start:")).firstMatch
+    XCTAssertTrue(field.waitForExistence(timeout: 5))
+    let unset = field.label.hasSuffix("Not set")
+    if let expectFresh = expectFresh {
+      XCTAssertEqual(unset, expectFresh, "Only genuine saved data may prefill the existing date step")
+    }
+    let next = app.buttons["Continue"].firstMatch
+    if !unset {
+      XCTAssertTrue(next.isEnabled, "A genuine saved date remains usable")
+      return
+    }
+    XCTAssertFalse(next.isEnabled, "A fresh date must not silently default to today")
+    capture(app, "06a-date-not-set-continue-disabled")
+    requireBodyElementFullyVisible(field, in: app)
+    field.tap()
+    XCTAssertTrue(app.datePickers.firstMatch.waitForExistence(timeout: 5))
+    let cancel = app.buttons["Cancel"].firstMatch
+    requireBodyElementFullyVisible(cancel, in: app)
+    cancel.tap()
+    XCTAssertTrue(field.waitForExistence(timeout: 5))
+    XCTAssertTrue(field.label.hasSuffix("Not set"), "Cancelling the native candidate must preserve an empty draft")
+    XCTAssertFalse(next.isEnabled)
+    requireBodyElementFullyVisible(field, in: app)
+    field.tap()
+    XCTAssertTrue(app.datePickers.firstMatch.waitForExistence(timeout: 5))
+    let done = app.buttons["Done"].firstMatch
+    requireBodyElementFullyVisible(done, in: app)
+    done.tap() // Explicitly confirms this isolated simulator's synthetic candidate.
+    XCTAssertFalse(field.label.hasSuffix("Not set"))
+    XCTAssertTrue(next.isEnabled)
+  }
+
+  func nativeProcess(in app: XCUIApplication) throws -> String {
+    let description = app.debugDescription
+    let range = try XCTUnwrap(description.range(of: "pid: [0-9]+", options: .regularExpression))
+    return String(description[range])
+  }
+
+  func nativePrimaryTab(_ label: String, in app: XCUIApplication) -> XCUIElement {
+    let tab = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", \(label)")).firstMatch
+    XCTAssertTrue(tab.waitForExistence(timeout: 5))
+    XCTAssertTrue(tab.isHittable)
+    XCTAssertTrue(app.frame.contains(tab.frame))
+    return tab
+  }
+
+  func assertLockedToday(in app: XCUIApplication, timeout: TimeInterval = 5) {
+    XCTAssertTrue(app.staticTexts["An active trial or subscription unlocks today’s context."].firstMatch.waitForExistence(timeout: timeout))
+    XCTAssertTrue(app.buttons["View subscription"].exists)
+    XCTAssertFalse(app.staticTexts["KEEP IN MIND"].firstMatch.exists, "Home must not create protected access")
+  }
+
+  /// Requires the existing English, saved-28/5, no-access synthetic fixture and native RM OFF.
+  func testHomeSingleAndDoubleTapStaysLockedSameProcess() throws {
+    continueAfterFailure = false
+    XCTAssertFalse(UIAccessibility.isReduceMotionEnabled, "Full-motion timing requires the isolated simulator's Reduce Motion OFF")
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning)
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    assertLockedToday(in: app)
+    let process = try nativeProcess(in: app)
+    for doubleTap in [false, true] {
+      nativePrimaryTab("Settings", in: app).tap()
+      XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch.waitForExistence(timeout: 5))
+      let home = app.buttons["brand-home"].firstMatch
+      XCTAssertTrue(home.waitForExistence(timeout: 5))
+      XCTAssertTrue(home.isHittable)
+      let started = ProcessInfo.processInfo.systemUptime
+      if doubleTap { home.doubleTap() } else { home.tap() }
+      let cover = app.otherElements["home-transition"].firstMatch
+      XCTAssertTrue(cover.waitForExistence(timeout: 2), "The explicit Home gesture must show the shared intro cover")
+      capture(app, doubleTap ? "47-home-double-tap-one-cover" : "45-home-single-tap-cover")
+      let gone = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: cover)
+      XCTAssertEqual(XCTWaiter.wait(for: [gone], timeout: 17), .completed)
+      let duration = ProcessInfo.processInfo.systemUptime - started
+      print("TIH_HOME_GESTURE double=\(doubleTap) seconds=\(duration)")
+      XCTAssertGreaterThanOrEqual(duration, 8.5, "Full-motion Home must retain the existing nine-second choreography")
+      XCTAssertLessThan(duration, 17.5, "A double tap must not queue two consecutive full intros")
+      assertLockedToday(in: app)
+      XCTAssertEqual(try nativeProcess(in: app), process, "Home must not restart the application")
+      capture(app, doubleTap ? "48-home-double-tap-returned-locked-today" : "46-home-single-tap-returned-locked-today")
+    }
+  }
+
+  /// Opens/cancels the existing editor only. Does not choose a date, change a length or Save.
+  func testCalendarFixedUpdateOpensSavedEditorWithoutWrites() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning)
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    assertLockedToday(in: app)
+    let process = try nativeProcess(in: app)
+    nativePrimaryTab("Cycle", in: app).tap()
+    let editQuery = app.buttons.matching(NSPredicate(format: "label == %@", "Edit cycle details"))
+    let edit = editQuery.firstMatch
+    XCTAssertTrue(edit.waitForExistence(timeout: 5))
+    XCTAssertEqual(editQuery.count, 1, "Reuse one calendar update action")
+    let originalFrame = edit.frame
+    func requireFixedUpdate() {
+      XCTAssertTrue(edit.isHittable)
+      XCTAssertTrue(app.frame.contains(edit.frame))
+      XCTAssertGreaterThanOrEqual(edit.frame.minY, app.scrollViews.firstMatch.frame.maxY - 1)
+      let tabs = ["Advice", "Cycle", "Settings"].map { nativePrimaryTab($0, in: app) }
+      XCTAssertLessThanOrEqual(edit.frame.maxY, tabs.map { $0.frame.minY }.min()! + 1, "Update must stay above the existing primary navigation")
+      XCTAssertEqual(edit.frame.minY, originalFrame.minY, accuracy: 1)
+    }
+    requireFixedUpdate()
+    capture(app, "49-calendar-update-fixed-above-tabs")
+    app.scrollViews.firstMatch.swipeUp(velocity: .slow)
+    requireFixedUpdate()
+    capture(app, "50-calendar-update-still-fixed-after-scroll")
+    edit.tap()
+    let field = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Last known period start:")).firstMatch
+    XCTAssertTrue(field.waitForExistence(timeout: 5))
+    let savedLabel = field.label
+    XCTAssertFalse(savedLabel.hasSuffix("Not set"), "The existing saved cycle must prefill the existing editor")
+    XCTAssertTrue(app.staticTexts["28 days"].firstMatch.exists)
+    XCTAssertTrue(app.staticTexts["5 days"].firstMatch.exists)
+    XCTAssertTrue(app.buttons["Save"].firstMatch.isEnabled)
+    capture(app, "51-calendar-existing-saved-editor-no-save")
+    app.buttons["Back"].firstMatch.tap()
+    XCTAssertTrue(edit.waitForExistence(timeout: 5))
+    edit.tap()
+    XCTAssertTrue(field.waitForExistence(timeout: 5))
+    XCTAssertEqual(field.label, savedLabel, "Cancelling and reopening must retain the genuine saved date")
+    app.buttons["Back"].firstMatch.tap()
+    nativePrimaryTab("Advice", in: app).tap()
+    assertLockedToday(in: app)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+  }
+
+  /// Reads the existing documents. No external URL, billing or destructive row is tapped.
+  func testLongDocumentsFixedSecondaryControlsNoWrites() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning)
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    assertLockedToday(in: app)
+    let process = try nativeProcess(in: app)
+    nativePrimaryTab("Settings", in: app).tap()
+    capture(app, "52a-settings-before-documents")
+    let cycleDetails = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
+    XCTAssertTrue(cycleDetails.waitForExistence(timeout: 5))
+    for (title, lastPrefix, useSettings) in [
+      ("Privacy", "Remove cycle details, preferences and cue history", false),
+      ("Subscription terms", "- Lizenz / Licence -", true),
+    ] {
+      let row = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", title)).firstMatch
+      requireBodyElementFullyVisible(row, in: app)
+      row.tap()
+      XCTAssertTrue(app.staticTexts[title].firstMatch.waitForExistence(timeout: 5))
+      let backQuery = app.buttons.matching(identifier: "secondary-back")
+      let settingsQuery = app.buttons.matching(identifier: "secondary-settings")
+      let back = backQuery.firstMatch
+      let settings = settingsQuery.firstMatch
+      let initialFrame = back.frame
+      func requireFixedSecondary() {
+        XCTAssertEqual(backQuery.count, 1, "There must be one shared secondary Back control")
+        XCTAssertEqual(settingsQuery.count, 1, "There must be one shared secondary Settings control")
+        for control in [back, settings] {
+          XCTAssertTrue(control.isHittable)
+          XCTAssertTrue(app.frame.contains(control.frame))
+          XCTAssertGreaterThanOrEqual(control.frame.minY, app.scrollViews.firstMatch.frame.maxY - 1)
+        }
+        XCTAssertEqual(back.frame.minY, initialFrame.minY, accuracy: 1)
+        XCTAssertLessThan(back.frame.minX, settings.frame.minX, "At default text size Back stays left and Settings stays right")
+      }
+      requireFixedSecondary()
+      capture(app, title == "Privacy" ? "52-privacy-fixed-controls-at-start" : "54-terms-fixed-controls-at-start")
+      let last = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", lastPrefix)).firstMatch
+      let scroll = app.scrollViews.firstMatch
+      for _ in 0..<30 {
+        if last.exists && last.frame.maxY <= scroll.frame.maxY + 1 { break }
+        scroll.swipeUp(velocity: .fast)
+      }
+      XCTAssertTrue(last.exists)
+      XCTAssertLessThanOrEqual(last.frame.maxY, scroll.frame.maxY + 1, "Reach the document's actual final text, rather than claiming a partial scroll reached the bottom")
+      requireFixedSecondary()
+      capture(app, title == "Privacy" ? "53-privacy-fixed-controls-at-end" : "55-terms-fixed-controls-at-end")
+      if useSettings { settings.tap() } else { back.tap() }
+      capture(app, useSettings ? "55a-after-secondary-settings" : "53a-after-secondary-back")
+      // A real Back retains Settings' prior scroll position; reveal its upper row.
+      requireBodyElementFullyVisible(cycleDetails, in: app)
+      XCTAssertTrue(cycleDetails.exists, "Back must return to its real previous Settings page; Settings must open the existing Settings screen")
+    }
+    nativePrimaryTab("Advice", in: app).tap()
+    assertLockedToday(in: app)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+  }
+}
+
+
+extension LaunchUIQA {
+  /// Persists only the existing QA theme preference, deliberately cold-launches once,
+  /// and restores Light through the same native Appearance controls before returning.
+  func testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning)
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    assertLockedToday(in: app)
+    let originalProcess = try nativeProcess(in: app)
+    func appearanceFromLockedToday() {
+      nativePrimaryTab("Settings", in: app).tap()
+      let appearance = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Appearance")).firstMatch
+      requireBodyElementFullyVisible(appearance, in: app)
+      appearance.tap()
+      XCTAssertTrue(app.staticTexts["Appearance"].firstMatch.waitForExistence(timeout: 5))
+    }
+    func selectTheme(_ name: String) {
+      let option = app.descendants(matching: .any).matching(NSPredicate(format: "label ENDSWITH %@", name)).firstMatch
+      requireBodyElementFullyVisible(option, in: app)
+      option.tap()
+      let saved = NSPredicate(format: "enabled == true AND label CONTAINS %@", "●")
+      XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: saved, object: option)], timeout: 5), .completed)
+    }
+    func requireDarkPixels(_ name: String) throws {
+      capture(app, name)
+      let image = try XCTUnwrap(app.screenshot().image.cgImage)
+      let pixels = try XCTUnwrap(statusBarReadability(in: image))
+      XCTAssertTrue(pixels.darkBackground, "This capture must actually show the persisted Graphite appearance")
+      XCTAssertGreaterThan(pixels.whiteClockPixels, 80, "Dark Home and entry need a white readable system clock")
+    }
+    appearanceFromLockedToday()
+    selectTheme("Dark")
+    try requireDarkPixels("56-dark-theme-saved-before-home")
+    let back = app.buttons["secondary-back"].firstMatch
+    XCTAssertTrue(back.isHittable)
+    back.tap()
+    let home = app.buttons["brand-home"].firstMatch
+    requireBodyElementFullyVisible(home, in: app)
+    home.tap()
+    let cover = app.otherElements["home-transition"].firstMatch
+    XCTAssertTrue(cover.waitForExistence(timeout: 2))
+    try requireDarkPixels("57-dark-home-cover-white-clock")
+    let gone = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: cover)
+    XCTAssertEqual(XCTWaiter.wait(for: [gone], timeout: 17), .completed)
+    assertLockedToday(in: app)
+    XCTAssertEqual(try nativeProcess(in: app), originalProcess, "Home preserves the running process")
+    try requireDarkPixels("58-dark-theme-preserved-after-home")
+    app.terminate() // Intentional cold restart, unlike the preceding Home assertion.
+    app.launch()
+    assertLockedToday(in: app, timeout: 30)
+    try requireDarkPixels("59-dark-theme-persisted-after-cold-launch")
+    appearanceFromLockedToday()
+    let dark = app.descendants(matching: .any).matching(NSPredicate(format: "label ENDSWITH %@", "Dark")).firstMatch
+    XCTAssertTrue(dark.label.contains("●"), "Cold startup must retain the saved theme radio state")
+    selectTheme("Light")
+    capture(app, "60-light-theme-restored-after-dark-cold-test")
+    let lightImage = try XCTUnwrap(app.screenshot().image.cgImage)
+    XCTAssertFalse(try XCTUnwrap(statusBarReadability(in: lightImage)).darkBackground)
+    app.buttons["secondary-settings"].firstMatch.tap()
+    nativePrimaryTab("Advice", in: app).tap()
+    assertLockedToday(in: app)
+    capture(app, "61-light-locked-today-restored-no-billing")
+  }
+
+  /// DESTRUCTIVE TO SYNTHETIC QA CONTENT ONLY. Explicitly authorized for the one
+  /// guarded SE3 fixture; never invokes simctl erase, a store action or trial start.
+  func testExplicitlyDeleteOwnedSyntheticFixtureThenFreshCycleOnboardingNoBilling() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning, "Requires the already running owned synthetic fixture")
+    let pending = app.alerts.firstMatch
+    if pending.exists && pending.buttons["Delete data"].exists && pending.buttons["Cancel"].exists { pending.buttons["Cancel"].tap() }
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    let advice = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", Advice")).firstMatch
+    if advice.exists && advice.isHittable { advice.tap() }
+    assertLockedToday(in: app)
+    let process = try nativeProcess(in: app)
+    nativePrimaryTab("Cycle", in: app).tap()
+    let edit = app.buttons["Edit cycle details"].firstMatch
+    XCTAssertTrue(edit.waitForExistence(timeout: 5))
+    edit.tap()
+    let date = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Last known period start:")).firstMatch
+    XCTAssertTrue(date.waitForExistence(timeout: 5))
+    XCTAssertFalse(date.label.hasSuffix("Not set"), "Verify the parent-provided existing synthetic setup before its explicit deletion")
+    XCTAssertTrue(app.staticTexts["28 days"].firstMatch.exists)
+    XCTAssertTrue(app.staticTexts["5 days"].firstMatch.exists)
+    capture(app, "62-owned-synthetic-fixture-before-explicit-delete")
+    app.buttons["Back"].firstMatch.tap()
+    nativePrimaryTab("Settings", in: app).tap()
+    let delete = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Delete local data")).firstMatch
+    requireBodyElementFullyVisible(delete, in: app)
+    print("TIH_EXPLICIT_SYNTHETIC_DELETE simulator=32C5B1E9-BE95-4BC1-8B76-4CE7D2A9979B bundle=com.eliogenesis.tuneintoher")
+    delete.tap()
+    let confirmation = app.alerts.firstMatch
+    XCTAssertTrue(confirmation.waitForExistence(timeout: 5))
+    XCTAssertTrue(confirmation.staticTexts.matching(NSPredicate(format: "label == %@", "Remove cycle details, preferences and cue history from this device? This does not cancel your subscription or delete store transaction records. Manage your subscription separately.")).firstMatch.exists)
+    XCTAssertTrue(confirmation.buttons["Cancel"].exists)
+    XCTAssertTrue(confirmation.buttons["Delete data"].exists)
+    confirmation.buttons["Delete data"].tap() // Existing app action; isolated synthetic data only.
+    XCTAssertTrue(app.buttons["Select English"].waitForExistence(timeout: 15))
+    XCTAssertEqual(try nativeProcess(in: app), process, "Content reset must not restart the app")
+    capture(app, "63-explicit-reset-returned-fresh-onboarding")
+    try completeOnboardingAssertions(in: app, expectFreshDate: true)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    XCTAssertFalse(app.staticTexts["KEEP IN MIND"].firstMatch.exists)
+    capture(app, "64-explicit-fresh-cycle-flow-ended-locked-paywall-no-trial")
+    let home = app.buttons["brand-home"].firstMatch
+    requireBodyElementFullyVisible(home, in: app)
+    home.tap()
+    let cover = app.otherElements["home-transition"].firstMatch
+    XCTAssertTrue(cover.waitForExistence(timeout: 2))
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: cover)], timeout: 17), .completed)
+    assertLockedToday(in: app)
+  }
+}
+
+
+extension LaunchUIQA {
+  // These helpers require the development-only panel before selecting any fixture.
+  // Financial controls below are touched only after an explicit active mock scenario.
+  func internalQAApp() throws -> XCUIApplication {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+    let devIntro = app.staticTexts["This is the developer menu. It gives you access to useful tools in development builds."].firstMatch
+    if devIntro.waitForExistence(timeout: 2) {
+      // Match the observed Expo tutorial paragraph before touching its Continue;
+      // this is never the product onboarding's similarly named control.
+      capture(app, "86-qa-expo-developer-menu-tutorial-before", checkStatusBar: false)
+      let menuContinue = app.buttons["Continue"].firstMatch
+      let scrolls = app.scrollViews
+      XCTAssertGreaterThan(scrolls.count, 0)
+      let nativeTutorialScroll = scrolls.element(boundBy: scrolls.count - 1)
+      for _ in 0..<12 {
+        if menuContinue.exists && menuContinue.isHittable && app.frame.contains(menuContinue.frame) { break }
+        nativeTutorialScroll.swipeUp(velocity: .slow)
+      }
+      XCTAssertTrue(menuContinue.isHittable)
+      XCTAssertTrue(app.frame.contains(menuContinue.frame))
+      menuContinue.tap()
+      let close = app.buttons.matching(NSPredicate(format: "identifier == %@ AND label == %@", "xmark", "Close")).firstMatch
+      XCTAssertTrue(close.waitForExistence(timeout: 5))
+      close.tap()
+      capture(app, "87-qa-expo-developer-menu-closed", checkStatusBar: false)
+    }
+    let existingQA = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Internal QA")).firstMatch
+    if existingQA.exists && existingQA.isHittable { existingQA.tap() }
+    else if app.buttons["View subscription"].firstMatch.exists || app.buttons["secondary-settings"].firstMatch.exists || app.buttons["Open settings"].firstMatch.exists {
+      internalQAReturnToPanel(in: app)
+    }
+    XCTAssertTrue(app.buttons["qa-scenario-fresh"].firstMatch.waitForExistence(timeout: 30), "Requires the flag-enabled Debug project, not a Release/real billing screen")
+    requireBodyElementFullyVisible(app.buttons["qa-scenario-fresh"].firstMatch, in: app)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    return app
+  }
+  func internalQATap(_ identifier: String, in app: XCUIApplication) {
+    let button = app.buttons[identifier].firstMatch
+    requireBodyElementFullyVisible(button, in: app)
+    let enabled = XCTNSPredicateExpectation(predicate: NSPredicate(format: "enabled == true"), object: button)
+    XCTAssertEqual(XCTWaiter.wait(for: [enabled], timeout: 5), .completed)
+    button.tap()
+  }
+  func internalQAStart(_ scenario: String, in app: XCUIApplication) {
+    internalQATap("qa-scenario-\(scenario)", in: app)
+    let active = app.staticTexts["Active: \(scenario)"].firstMatch
+    XCTAssertTrue(active.waitForExistence(timeout: 5))
+    requireBodyElementFullyVisible(active, in: app)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+  }
+  func internalQAOpen(_ route: String, in app: XCUIApplication) {
+    internalQATap("qa-open-" + route.replacingOccurrences(of: "/", with: "-"), in: app)
+  }
+  func internalQAReturnToPanel(in app: XCUIApplication) {
+    let secondary = app.buttons["secondary-settings"].firstMatch
+    let todaySettings = app.buttons["Open settings"].firstMatch
+    if secondary.exists { secondary.tap() }
+    else if todaySettings.exists { todaySettings.tap() }
+    else { nativePrimaryTab("Settings", in: app).tap() }
+    let row = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Internal QA")).firstMatch
+    if !row.waitForExistence(timeout: 5) { capture(app, "90-qa-settings-navigation-did-not-arrive") }
+    XCTAssertTrue(row.exists, "A single Settings tap must reach the existing Settings screen")
+    requireBodyElementFullyVisible(row, in: app)
+    row.tap()
+    XCTAssertTrue(app.buttons["qa-scenario-fresh"].firstMatch.waitForExistence(timeout: 5))
+  }
+  func internalQAMind(in app: XCUIApplication, day: Int) -> XCUIElement {
+    XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label ENDSWITH %@", "DAY \(day)")).firstMatch.waitForExistence(timeout: 15))
+    let mind = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "KEEP IN MIND.")).firstMatch
+    XCTAssertTrue(mind.waitForExistence(timeout: 15), "Expected actual authored guidance in the mock session")
+    requireBodyElementFullyVisible(mind, in: app)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    return mind
+  }
+  func internalQARequireLocked(in app: XCUIApplication) {
+    assertLockedToday(in: app, timeout: 15)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "KEEP IN MIND.")).firstMatch.exists)
+  }
+  func internalQAEndAndVerifyOwnedBase(in app: XCUIApplication, process: String, captureName: String) throws {
+    internalQATap("qa-end", in: app)
+    let reminder = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Daily reminder")).firstMatch
+    requireBodyElementFullyVisible(reminder, in: app)
+    XCTAssertTrue(reminder.label.contains("Disabled"))
+    let appearance = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Appearance")).firstMatch
+    requireBodyElementFullyVisible(appearance, in: app)
+    XCTAssertTrue(appearance.label.contains("Light"))
+    let english = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "English")).firstMatch
+    requireBodyElementFullyVisible(english, in: app)
+    nativePrimaryTab("Cycle", in: app).tap()
+    let edit = app.buttons["Edit cycle details"].firstMatch
+    XCTAssertTrue(edit.waitForExistence(timeout: 5))
+    edit.tap()
+    let date = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Last known period start:")).firstMatch
+    XCTAssertTrue(date.waitForExistence(timeout: 5))
+    XCTAssertEqual(date.label, "Last known period start: November 14, 2026", "QA must preserve the exact existing synthetic base date")
+    XCTAssertTrue(app.staticTexts["28 days"].firstMatch.exists)
+    XCTAssertTrue(app.staticTexts["5 days"].firstMatch.exists)
+    XCTAssertFalse(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    capture(app, captureName + "-base-saved-details")
+    app.buttons["Back"].firstMatch.tap()
+    nativePrimaryTab("Advice", in: app).tap()
+    assertLockedToday(in: app, timeout: 15)
+    XCTAssertFalse(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists, "Ending QA must not leave a mocked access label on real Today")
+    XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "KEEP IN MIND.")).firstMatch.exists)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    capture(app, captureName + "-base-locked-today")
+  }
+
+  /// Requires the initial flag-enabled Debug dev-qa screen; never changes base data.
+  func testInternalQAFreshAndFiveConfirmedCycleDays() throws {
+    let app = try internalQAApp(), process = try nativeProcess(in: app)
+    internalQAStart("fresh", in: app)
+    internalQAOpen("/today", in: app)
+    XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "Last known period start: Not set")).firstMatch.waitForExistence(timeout: 10))
+    XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label MATCHES %@", ".*DAY [0-9]+.*")).firstMatch.exists)
+    XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "KEEP IN MIND.")).firstMatch.exists)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    capture(app, "65-qa-fresh-today-no-date-day-or-phase")
+    internalQAReturnToPanel(in: app)
+    for day in [1, 7, 14, 21, 28] {
+      internalQAStart("cycle-\(day)", in: app)
+      internalQAOpen("/today", in: app)
+      _ = internalQAMind(in: app, day: day)
+      capture(app, "66-qa-confirmed-november3-cycle-day-\(day)")
+      if day == 14 {
+        let before = internalQAMind(in: app, day: day).label
+        let home = app.buttons["brand-home"].firstMatch
+        requireBodyElementFullyVisible(home, in: app)
+        home.tap()
+        let cover = app.otherElements["home-transition"].firstMatch
+        XCTAssertTrue(cover.waitForExistence(timeout: 2))
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: cover)], timeout: 17), .completed)
+        XCTAssertEqual(internalQAMind(in: app, day: day).label, before)
+        capture(app, "66a-qa-protected-today-home-keeps-guidance")
+      }
+      internalQAReturnToPanel(in: app)
+    }
+    try internalQAEndAndVerifyOwnedBase(in: app, process: process, captureName: "67-qa-cycle-scenarios-ended")
+  }
+
+  func testInternalQA0800BoundaryChangesAdviceAndHistoryNotLocalCycleDay() throws {
+    let app = try internalQAApp(), process = try nativeProcess(in: app)
+    internalQAStart("before-0800", in: app)
+    internalQAOpen("/today", in: app)
+    let before = internalQAMind(in: app, day: 8).label
+    capture(app, "68-qa-0759-local-day8-prior-guidance")
+    internalQAReturnToPanel(in: app)
+    internalQATap("qa-next-0800", in: app)
+    internalQAOpen("/today", in: app)
+    let after = internalQAMind(in: app, day: 8).label
+    XCTAssertNotEqual(after, before, "The real daily selector must refresh the authored guidance at synthetic local08:00")
+    capture(app, "69-qa-0800-still-local-day8-new-guidance")
+    internalQAReturnToPanel(in: app)
+    internalQAOpen("/history", in: app)
+    for date in ["2026-11-10", "2026-11-09"] {
+      let entry = app.staticTexts[date].firstMatch
+      requireBodyElementFullyVisible(entry, in: app)
+      capture(app, "70-qa-history-real-guidance-key-\(date)")
+    }
+    internalQAReturnToPanel(in: app)
+    try internalQAEndAndVerifyOwnedBase(in: app, process: process, captureName: "71-qa-0800-ended")
+  }
+
+  /// Includes a real tap of the existing app-trial CTA, but ONLY within its private mock service.
+  func testInternalQAAppTrialFixturesExplicitCardFreeStartAndExactExpiry() throws {
+    let app = try internalQAApp(), process = try nativeProcess(in: app)
+    for (scenario, active) in [("trial-begin", true), ("trial-middle", true), ("trial-expired", false)] {
+      internalQAStart(scenario, in: app)
+      internalQAOpen("/today", in: app)
+      if active { _ = internalQAMind(in: app, day: 7) } else { internalQARequireLocked(in: app) }
+      capture(app, "72-qa-\(scenario)-today")
+      internalQAReturnToPanel(in: app)
+    }
+    internalQAStart("trial-not-started", in: app)
+    XCTAssertTrue(app.staticTexts["App access: not_started · Store access: inactive"].firstMatch.exists)
+    internalQAOpen("/settings/subscription", in: app)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.waitForExistence(timeout: 5))
+    let start = app.buttons["billing-start-trial"].firstMatch
+    requireBodyElementFullyVisible(start, in: app)
+    XCTAssertTrue(start.isEnabled)
+    capture(app, "73-qa-explicit-card-free-start-before-tap")
+    start.tap() // Private AppTrialService fixture; no store purchase/subscription action.
+    _ = internalQAMind(in: app, day: 7)
+    capture(app, "74-qa-explicit-card-free-start-unlocked")
+    internalQAReturnToPanel(in: app)
+    let granted = app.staticTexts["App access: active · Store access: inactive"].firstMatch
+    requireBodyElementFullyVisible(granted, in: app)
+    internalQATap("qa-expiry", in: app)
+    let expired = app.staticTexts["App access: expired · Store access: inactive"].firstMatch
+    requireBodyElementFullyVisible(expired, in: app)
+    capture(app, "75-qa-exact-app-access-expiry-no-store-subscription")
+    internalQAOpen("/today", in: app)
+    internalQARequireLocked(in: app)
+    capture(app, "76-qa-exact-expiry-locked-no-automatic-charge")
+    internalQAReturnToPanel(in: app)
+    try internalQAEndAndVerifyOwnedBase(in: app, process: process, captureName: "77-qa-app-trial-ended")
+  }
+
+  func testInternalQAPaidActiveCancelledAndExpiredFixtures() throws {
+    let app = try internalQAApp(), process = try nativeProcess(in: app)
+    for (scenario, active) in [("paid-active", true), ("paid-cancelled", true), ("paid-expired", false)] {
+      internalQAStart(scenario, in: app)
+      internalQAOpen("/today", in: app)
+      if active { _ = internalQAMind(in: app, day: 7) } else { internalQARequireLocked(in: app) }
+      capture(app, "78-qa-\(scenario)-today")
+      internalQAReturnToPanel(in: app)
+      internalQAOpen("/settings/subscription", in: app)
+      XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.waitForExistence(timeout: 5))
+      let status = scenario == "paid-active"
+        ? app.staticTexts["Active subscription"].firstMatch
+        : scenario == "paid-cancelled"
+          ? app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "Active until ")).firstMatch
+          : app.staticTexts["Your 14 free days have ended. Your saved data remains available."].firstMatch
+      requireBodyElementFullyVisible(status, in: app)
+      XCTAssertEqual(app.buttons["Manage subscription"].exists, active)
+      capture(app, "79-qa-\(scenario)-subscription-status")
+      internalQAReturnToPanel(in: app)
+    }
+    try internalQAEndAndVerifyOwnedBase(in: app, process: process, captureName: "80-qa-paid-fixtures-ended")
+  }
+
+  /// RUN FIRST from the initial Debug dev-qa stack (before an existing Settings route).
+  /// The THEA detour retains the failed card while the private mock store is recovered.
+  func testInternalQAStoreRetryAndMockRestoreNoRealBilling() throws {
+    let app = try internalQAApp(), process = try nativeProcess(in: app)
+    internalQAStart("store-unavailable", in: app)
+    internalQAOpen("/settings/subscription", in: app)
+    let unavailable = app.staticTexts["The store offer could not be loaded. No price or trial has been assumed."].firstMatch
+    requireBodyElementFullyVisible(unavailable, in: app)
+    let retry = app.buttons["billing-retry"].firstMatch
+    requireBodyElementFullyVisible(retry, in: app)
+    XCTAssertTrue(retry.isEnabled)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    capture(app, "81-qa-mock-store-unavailable-retry-visible")
+    let thea = app.buttons["About THEA"].firstMatch
+    requireBodyElementFullyVisible(thea, in: app)
+    thea.tap()
+    let settings = app.buttons["secondary-settings"].firstMatch
+    XCTAssertTrue(settings.waitForExistence(timeout: 5))
+    settings.tap() // No prior Settings route: replaces THEA, retaining Subscription below it.
+    let qaRow = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Internal QA")).firstMatch
+    requireBodyElementFullyVisible(qaRow, in: app)
+    qaRow.tap()
+    XCTAssertTrue(app.staticTexts["Active: store-unavailable"].firstMatch.waitForExistence(timeout: 5))
+    internalQATap("qa-store-online", in: app)
+    for _ in 0..<2 {
+      let back = app.buttons["Back"].firstMatch
+      requireBodyElementFullyVisible(back, in: app)
+      back.tap()
+    }
+    XCTAssertTrue(unavailable.waitForExistence(timeout: 5), "Return to the same failed card, not a remounted successful offering")
+    requireBodyElementFullyVisible(retry, in: app)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.exists)
+    retry.tap() // Existing Retry; selects only MockPurchaseService in this active session.
+    let price = app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", "€3.99")).firstMatch
+    requireBodyElementFullyVisible(price, in: app)
+    XCTAssertFalse(retry.exists)
+    capture(app, "82-qa-existing-retry-recovered-mock-offerings")
+    internalQAReturnToPanel(in: app)
+    internalQAStart("restore", in: app)
+    XCTAssertTrue(app.staticTexts["App access: expired · Store access: inactive"].firstMatch.exists)
+    internalQAOpen("/settings/subscription", in: app)
+    XCTAssertTrue(app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch.waitForExistence(timeout: 5))
+    let restore = app.buttons["billing-restore"].firstMatch
+    requireBodyElementFullyVisible(restore, in: app)
+    restore.tap() // Explicit fixture Restore, never the real base service.
+    XCTAssertTrue(app.alerts.staticTexts["Purchases restored."].firstMatch.waitForExistence(timeout: 5))
+    app.alerts.buttons["OK"].firstMatch.tap()
+    XCTAssertTrue(app.staticTexts["Active subscription"].firstMatch.waitForExistence(timeout: 5))
+    capture(app, "83-qa-explicit-mock-restore-active-subscription")
+    internalQAReturnToPanel(in: app)
+    internalQAOpen("/today", in: app)
+    _ = internalQAMind(in: app, day: 7)
+    capture(app, "84-qa-mock-restore-unlocked-guidance")
+    internalQAReturnToPanel(in: app)
+    try internalQAEndAndVerifyOwnedBase(in: app, process: process, captureName: "85-qa-store-restore-ended")
+  }
+}
+
+extension LaunchUIQA {
+  func testReducedMotionHomeReturnsFromPrivacyWithoutFullScene() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    let settings = XCUIApplication(bundleIdentifier: "com.apple.Preferences")
+    settings.activate()
+    let reduce = openMotionSettings(in: settings)
+    XCTAssertTrue(reduce.waitForExistence(timeout: 5))
+    XCTAssertEqual(reduce.value as? String, "0", "Owned fixture must begin with the previously restored Reduce Motion OFF")
+    let control = reduce.descendants(matching: .switch).firstMatch
+    XCTAssertTrue(control.exists)
+    control.tap()
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value == %@", "1"), object: reduce)], timeout: 5), .completed)
+    XCTAssertTrue(UIAccessibility.isReduceMotionEnabled)
+    defer {
+      settings.activate()
+      if reduce.value as? String != "0" { reduce.descendants(matching: .switch).firstMatch.tap() }
+      XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value == %@", "0"), object: reduce)], timeout: 5), .completed)
+      XCTAssertFalse(UIAccessibility.isReduceMotionEnabled)
+      app.activate()
+    }
+    app.activate()
+    assertLockedToday(in: app, timeout: 30)
+    let process = try nativeProcess(in: app)
+    nativePrimaryTab("Settings", in: app).tap()
+    let privacy = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Privacy")).firstMatch
+    requireBodyElementFullyVisible(privacy, in: app)
+    privacy.tap()
+    XCTAssertTrue(app.buttons["secondary-back"].firstMatch.waitForExistence(timeout: 5))
+    let home = app.buttons["brand-home"].firstMatch
+    requireBodyElementFullyVisible(home, in: app)
+    let start = ProcessInfo.processInfo.systemUptime
+    home.tap()
+    assertLockedToday(in: app, timeout: 4)
+    let elapsed = ProcessInfo.processInfo.systemUptime - start
+    XCTAssertLessThan(elapsed, 6, "Reduced Motion must skip the full nine-second Home scene")
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_REDUCED_MOTION_HOME_SECONDS \(elapsed)")
+    capture(app, "91-reduced-motion-home-quick-locked-today")
   }
 }

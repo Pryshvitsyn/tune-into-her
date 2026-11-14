@@ -66,8 +66,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   }, [ready, accessReady, initializationError, initializationAttempt, preferences.onboardingComplete, cycleSettings, font]);
 
   useEffect(() => {
-    if (routeState === 'onboarding' && font === 'ready' && navigation?.key) router.replace('/onboarding');
-  }, [routeState, navigation?.key, font]);
+    if (blocking && routeState === 'onboarding' && font === 'ready' && navigation?.key) router.replace('/onboarding');
+  }, [blocking, routeState, navigation?.key, font]);
 
   const reportScreenReady = useCallback((ownerPath?: string) => {
     // Kept-alive screens must not paint or invalidate a different current route.

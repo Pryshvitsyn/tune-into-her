@@ -68,7 +68,12 @@ export class AppTrialService {
           if (value.version === 1 && this.validResponse(value.response) && Number.isFinite(value.requestDurationMs) && value.requestDurationMs >= 0 && Number.isFinite(value.deviceAt) && Number.isFinite(value.lastDeviceAt) && typeof value.invalidClock === 'boolean') this.cache = value;
         } catch { /* Invalid cache never grants access; refresh from authenticated server. */ }
       }
-    })();
+    })().catch(error => {
+      // A transient SecureStore failure must not poison every later Retry. Known
+      // malformed credentials still fail closed; they are never silently replaced.
+      this.initialized = undefined;
+      throw error;
+    });
     return this.initialized;
   }
   private validResponse(value: TrialResponse): boolean {

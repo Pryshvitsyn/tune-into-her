@@ -10,35 +10,32 @@ import type { GuidanceFeedback } from '../src/domain/content/feedback';
 import { guidanceDate } from '../src/domain/content/guidanceDate';
 import type { DailySelection } from '../src/domain/content/types';
 import { useInterface } from '../src/i18n/useInterface';
-import { AsyncFeedbackStore } from '../src/storage/AsyncFeedbackStore';
-import { AsyncSelectionStore } from '../src/storage/AsyncSelectionStore';
 import { useTheme } from '../src/theme/useTheme';
 
-const selections = new AsyncSelectionStore();
-const feedback = new AsyncFeedbackStore();
 
 type HistoryItem = DailySelection & { feedback: GuidanceFeedback | null };
 
 export default function GuidanceHistoryScreen() {
-  const { preferences } = useApp();
+  const { preferences, selectionStore: selections, feedbackStore: feedback, dataScope, now } = useApp();
   const copy = useInterface();
   const { colors } = useTheme();
-  const [items, setItems] = useState<HistoryItem[] | null>(null);
+  const [loaded, setLoaded] = useState<{ scope: string; items: HistoryItem[] } | null>(null);
+  const items = loaded?.scope === dataScope ? loaded.items : null;
 
   useEffect(() => {
     let mounted = true;
     void Promise.all([selections.readAll(), feedback.readAll()]).then(([stored, ratings]) => {
       if (!mounted) return;
       const ratingByKey = new Map(ratings.map((entry) => [`${entry.date}:${entry.cueId}`, entry]));
-      setItems(
+      setLoaded({ scope: dataScope, items:
         [...stored]
-          .filter(entry => entry.date <= guidanceDate(new Date()))
+          .filter(entry => entry.date <= guidanceDate(now()))
           .sort((a, b) => b.date.localeCompare(a.date))
           .map((entry) => ({ ...entry, feedback: ratingByKey.get(`${entry.date}:${entry.cueId}`) ?? null })),
-      );
+      });
     });
     return () => { mounted = false; };
-  }, []);
+  }, [selections, feedback, dataScope, now]);
 
   const labelForFeedback = (entry: GuidanceFeedback | null) => {
     if (!entry) return null;

@@ -52,6 +52,16 @@ describe('exact full-price plan mapping', () => {
     Object.assign(value.product, { subscriptionOptions: [{ isBasePlan: false, freePhase: {}, billingPeriod: { iso8601: 'P1M' } }, { isBasePlan: true, isPrepaid: false, freePhase: null, introPhase: null, billingPeriod: { iso8601: 'P1M' }, fullPricePhase: { price: { formatted: '€3.99', amountMicros: 3990000, currencyCode: 'EUR' } } }] });
     expect(offerFromPackage(value, 'monthly', 'android')).toMatchObject({ price: 3.99, rawSubscriptionOption: { isBasePlan: true } });
   });
+  it('settles a stalled offering request and allows a later retry without a purchase', async () => {
+    sdk.getOfferings.mockImplementationOnce(() => new Promise(() => undefined));
+    const service = new RevenueCatPurchaseService();
+    const failed = expect(service.getOffer()).rejects.toThrow('STORE_OFFERING_TIMEOUT');
+    await vi.advanceTimersByTimeAsync(15_000);
+    await failed;
+    expect(await service.getOffer()).toHaveLength(1);
+    expect(sdk.purchasePackage).not.toHaveBeenCalled();
+    expect(sdk.purchaseSubscriptionOption).not.toHaveBeenCalled();
+  });
   it('never uses an arbitrary available package', async () => {
     sdk.getOfferings.mockResolvedValue({ current: { availablePackages: [pkg()], monthly: null, annual: null } });
     expect(await new RevenueCatPurchaseService().getOffer()).toEqual([]);

@@ -139,7 +139,12 @@ export class RevenueCatPurchaseService implements PurchaseService {
   async getOffer(): Promise<StoreOffer[]> {
     await this.configure();
     const { default: Purchases } = await this.getModule();
-    const offerings = await Purchases.getOfferings();
+    const offerings = await new Promise<Awaited<ReturnType<typeof Purchases.getOfferings>>>((resolve, reject) => {
+      // Native SDK/network failure must settle the paywall into a retryable state.
+      // A late SDK response is discarded by this promise and cannot replace a retry.
+      const timer = setTimeout(() => reject(new Error('STORE_OFFERING_TIMEOUT')), 15_000);
+      void Promise.resolve().then(() => Purchases.getOfferings()).then(resolve, reject).finally(() => clearTimeout(timer));
+    });
     const chosenID = process.env.EXPO_PUBLIC_REVENUECAT_OFFERING_ID;
     const offering = chosenID ? offerings.all[chosenID] : offerings.current;
     return [offerFromPackage(offering?.monthly, 'monthly', Platform.OS), offerFromPackage(offering?.annual, 'annual', Platform.OS)].filter((value): value is StoreOffer => value !== null);

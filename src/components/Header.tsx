@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, View } from "react-native";
 
 import type { SupportedLanguage } from "../config/constants";
 import { useApp } from "../context/AppContext";
+import { useScreenNavigation } from "../navigation/ScreenNavigationContext";
 import { spacing } from "../theme";
 import type { Palette } from "../theme";
 import { typographyForLanguage } from "../theme/typography";
@@ -21,12 +22,13 @@ export function Header({
   onBack?: () => void;
 }) {
   const { colors } = useTheme();
+  const secondary = useScreenNavigation() === "secondary";
   const { preferences } = useApp();
   const styles = makeStyles(colors, preferences.language);
   const { t } = useTranslation();
   return (
     <View style={styles.row}>
-      {back ? (
+      {back && !secondary ? (
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={t("common.back")}

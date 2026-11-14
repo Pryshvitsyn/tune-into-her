@@ -5,15 +5,21 @@ import { AppState, type AppStateStatus } from 'react-native';
 
 import brand from '../config/brand.json';
 import type { SupportedLanguage } from '../config/constants';
+import { scopeAppContext } from '../devQA/appScope';
+import { internalQAEnabled, internalQASession } from '../devQA/session';
+import { useInternalQASession } from '../devQA/useInternalQA';
 import { invalidateFutureSelections } from '../domain/content/dailyCueService';
-import type { CycleSettings } from '../domain/cycle/cycleEngine';
+import type { SelectionStore } from '../domain/content/types';
+import { validateCycleSettings, type CycleSettings } from '../domain/cycle/cycleEngine';
 import { toDateOnly } from '../domain/cycle/dateOnly';
 import { i18n, initialLanguage } from '../i18n';
 import { ExpoNotificationBackend } from '../services/notifications/ExpoNotificationBackend';
 import { NotificationScheduler } from '../services/notifications/NotificationScheduler';
 import { stopDemoSession } from '../services/notifications/acceleratedDemo';
 import { purchaseService, type EntitlementState } from '../services/purchases';
-import { appTrialService, type AppTrialState } from '../services/trial';
+import type { PurchaseService } from '../services/purchases/types';
+import { appTrialService, type AppTrialState, type AppTrialService } from '../services/trial';
+import { AsyncFeedbackStore } from '../storage/AsyncFeedbackStore';
 import { AsyncSelectionStore } from '../storage/AsyncSelectionStore';
 import { LocalManualCycleProvider } from '../storage/LocalManualCycleProvider';
 import { storageKeys } from '../storage/keys';
@@ -21,9 +27,19 @@ import { defaultPreferences, loadPreferences, savePreferences, type Preferences 
 
 const cycleProvider = new LocalManualCycleProvider();
 const selectionStore = new AsyncSelectionStore();
+const feedbackStore = new AsyncFeedbackStore();
+const now = () => new Date();
+const activeQA = () => internalQAEnabled && internalQASession.getSnapshot().active;
 export const notificationScheduler = new NotificationScheduler(new ExpoNotificationBackend(), selectionStore);
 
-interface AppContextValue {
+export interface AppContextValue {
+  qaActive: boolean;
+  dataScope: string;
+  now(): Date;
+  purchases: PurchaseService;
+  trial: AppTrialService;
+  selectionStore: SelectionStore;
+  feedbackStore: Pick<AsyncFeedbackStore, 'readAll' | 'read' | 'set'>;
   ready: boolean;
   accessReady: boolean;
   initializationError: boolean;
@@ -46,6 +62,10 @@ interface AppContextValue {
 const AppContext = createContext<AppContextValue | null>(null);
 
 export function AppProvider({ children }: PropsWithChildren) {
+  const qaSnapshot = useInternalQASession();
+  const qaActive = internalQAEnabled && qaSnapshot.active;
+  const qaEpoch = internalQAEnabled && !qaActive ? qaSnapshot.revision : 0;
+  const [verifiedAccessEpoch, setVerifiedAccessEpoch] = useState(-1);
   const [ready, setReady] = useState(false);
   const [accessReady, setAccessReady] = useState(false);
   const [initializationError, setInitializationError] = useState(false);
@@ -63,12 +83,14 @@ export function AppProvider({ children }: PropsWithChildren) {
     setEntitlement(previous => previous.checkedAt && next.checkedAt && Date.parse(previous.checkedAt) > Date.parse(next.checkedAt) ? previous : next);
   }, []);
   const refreshEntitlement = useCallback(async () => {
+    if (activeQA()) return internalQASession.refreshAccess();
     await Promise.all([
       purchaseService.getEntitlement().then(applyEntitlement),
       appTrialService.getState().then(setAppTrial),
     ]);
   }, [applyEntitlement]);
   const startAppTrial = useCallback(async () => {
+    if (activeQA()) return internalQASession.startAppTrial();
     if (!preferences.onboardingComplete || !cycleSettings) throw new Error('ONBOARDING_REQUIRED');
     const trial = await appTrialService.start();
     setAppTrial(trial);
@@ -76,11 +98,12 @@ export function AppProvider({ children }: PropsWithChildren) {
   }, [preferences.onboardingComplete, cycleSettings]);
 
   useEffect(() => {
+    if (qaActive) return;
     let disposed = false;
     void Promise.all([loadPreferences(), cycleProvider.get()]).then(async ([savedPreferences, savedCycle]) => {
       if (disposed) return;
       const nextPreferences = savedPreferences ?? { ...defaultPreferences, language: initialLanguage };
-      await i18n.changeLanguage(nextPreferences.language);
+      if (!activeQA()) await i18n.changeLanguage(nextPreferences.language);
       if (disposed) return;
       setPreferencesState(nextPreferences);
       setCycleSettingsState(savedCycle);
@@ -99,34 +122,36 @@ export function AppProvider({ children }: PropsWithChildren) {
     }).catch(() => {
       if (!disposed) setAppTrial({ status: 'unavailable', isActive: false, verification: 'unavailable' });
     });
-    void Promise.all([paid, trial]).then(() => { if (!disposed) setAccessReady(true); });
+    void Promise.all([paid, trial]).then(() => { if (!disposed) { setAccessReady(true); setVerifiedAccessEpoch(qaEpoch); } });
     const removeListener = purchaseService.addEntitlementListener(applyEntitlement);
     return () => { disposed = true; removeListener(); };
-  }, [applyEntitlement, initializationAttempt]);
+  }, [applyEntitlement, initializationAttempt, qaActive, qaEpoch]);
 
   useEffect(() => {
-    if (!appTrial.isActive || !appTrial.validForMs) return;
-    const timer = setTimeout(() => { void appTrialService.getCachedState().then(state => { setAppTrial(state); void appTrialService.getState().then(setAppTrial); }); }, Math.min(appTrial.validForMs, 2_147_483_647));
+    if (qaActive || !appTrial.isActive || !appTrial.validForMs) return;
+    const timer = setTimeout(() => { if (activeQA()) return; void appTrialService.getCachedState().then(state => { setAppTrial(state); if (!activeQA()) void appTrialService.getState().then(setAppTrial); }); }, Math.min(appTrial.validForMs, 2_147_483_647));
     return () => clearTimeout(timer);
-  }, [appTrial]);
+  }, [appTrial, qaActive]);
 
   useEffect(() => {
-    if (!entitlement.isActive || !entitlement.validForMs) return;
-    const timer = setTimeout(() => { void purchaseService.getCachedEntitlement().then(state => { applyEntitlement(state); void purchaseService.getEntitlement().then(applyEntitlement); }); }, Math.min(entitlement.validForMs, 2_147_483_647));
+    if (qaActive || !entitlement.isActive || !entitlement.validForMs) return;
+    const timer = setTimeout(() => { if (activeQA()) return; void purchaseService.getCachedEntitlement().then(state => { applyEntitlement(state); if (!activeQA()) void purchaseService.getEntitlement().then(applyEntitlement); }); }, Math.min(entitlement.validForMs, 2_147_483_647));
     return () => clearTimeout(timer);
-  }, [entitlement, applyEntitlement]);
+  }, [entitlement, applyEntitlement, qaActive]);
 
   useEffect(() => {
-    // Also detect clock changes while the app remains open, without network polling.
+    // QA has its own clock/cache; never poll real services using simulated state.
+    if (qaActive) return;
     const timer = setInterval(() => {
+      if (activeQA()) return;
       void purchaseService.getCachedEntitlement().then(applyEntitlement);
       void appTrialService.getCachedState().then(setAppTrial);
     }, 30_000);
     return () => clearInterval(timer);
-  }, [applyEntitlement]);
+  }, [applyEntitlement, qaActive]);
 
   const rebuildNotifications = useCallback(async () => {
-    if (!cycleSettings) return;
+    if (activeQA() || !cycleSettings) return;
     await notificationScheduler.rebuild({
       settings: cycleSettings,
       language: preferences.language,
@@ -137,16 +162,18 @@ export function AppProvider({ children }: PropsWithChildren) {
 
   useEffect(() => {
     const onStateChange = (state: AppStateStatus) => {
-      if (state === 'active' && ready) {
+      if (state === 'active' && ready && !activeQA()) {
         void refreshEntitlement();
         void rebuildNotifications();
       }
     };
     const subscription = AppState.addEventListener('change', onStateChange);
     return () => subscription.remove();
-  }, [ready, rebuildNotifications, refreshEntitlement]);
+  }, [ready, rebuildNotifications, refreshEntitlement, qaActive]);
 
   const setCycleSettings = useCallback(async (settings: CycleSettings) => {
+    if (activeQA()) return internalQASession.setCycleSettings(settings);
+    if (validateCycleSettings(settings, toDateOnly(now())).length) throw new Error('INVALID_CYCLE_SETTINGS');
     await cycleProvider.save(settings);
     await invalidateFutureSelections(selectionStore, toDateOnly(new Date()));
     setCycleSettingsState(settings);
@@ -159,11 +186,12 @@ export function AppProvider({ children }: PropsWithChildren) {
   }, [preferences]);
 
   const updatePreferences = useCallback(async (update: Partial<Preferences>, rebuild = false) => {
+    if (activeQA()) return internalQASession.updatePreferences(update);
     const next = { ...preferences, ...update };
     await savePreferences(next);
     setPreferencesState(next);
-    if (update.language) await i18n.changeLanguage(update.language as SupportedLanguage);
-    if (rebuild && cycleSettings) {
+    if (update.language && !activeQA()) await i18n.changeLanguage(update.language as SupportedLanguage);
+    if (!activeQA() && rebuild && cycleSettings) {
       await notificationScheduler.rebuild({
         settings: cycleSettings,
         language: next.language,
@@ -176,6 +204,7 @@ export function AppProvider({ children }: PropsWithChildren) {
   const completeOnboarding = useCallback(() => updatePreferences({ onboardingComplete: true }, true), [updatePreferences]);
 
   const deleteLocalData = useCallback(async () => {
+    if (activeQA()) { await internalQASession.startScenario('fresh'); return; }
     await stopDemoSession();
     await notificationScheduler.cancelAll();
     await SecureStore.deleteItemAsync(storageKeys.cycleSettings);
@@ -184,9 +213,13 @@ export function AppProvider({ children }: PropsWithChildren) {
     setPreferencesState({ ...defaultPreferences, language: preferences.language });
   }, [preferences.language]);
 
-  const hasAccess = entitlement.isActive || appTrial.isActive;
-  const value = useMemo(() => ({ deleteLocalData, ready, accessReady, initializationError, initializationAttempt, retryInitialization, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, accessReady, initializationError, initializationAttempt, retryInitialization, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  // On QA exit, deny stale access until the real services have checked their clocks.
+  const realAccessReady = accessReady && (!internalQAEnabled || verifiedAccessEpoch === qaEpoch);
+  const hasAccess = realAccessReady && (entitlement.isActive || appTrial.isActive);
+  const value = useMemo<AppContextValue>(() => ({ qaActive: false, dataScope: 'real', now, purchases: purchaseService, trial: appTrialService, selectionStore, feedbackStore, deleteLocalData, ready, accessReady: realAccessReady, initializationError, initializationAttempt, retryInitialization, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications }), [deleteLocalData, ready, realAccessReady, initializationError, initializationAttempt, retryInitialization, preferences, cycleSettings, entitlement, appTrial, hasAccess, startAppTrial, refreshEntitlement, setCycleSettings, updatePreferences, completeOnboarding, rebuildNotifications]);
+  const effective = useMemo(() => scopeAppContext(value, internalQASession, qaSnapshot), [value, qaSnapshot]);
+  useEffect(() => { void i18n.changeLanguage(effective.preferences.language); }, [effective.preferences.language]);
+  return <AppContext.Provider value={effective}>{children}</AppContext.Provider>;
 }
 
 export function useApp(): AppContextValue {

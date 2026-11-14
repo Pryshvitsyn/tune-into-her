@@ -4,6 +4,7 @@ import { ActivityIndicator, StyleSheet, View } from "react-native";
 
 import { acceleratedDemoEnabled } from "../src/config/acceleratedDemo";
 import { useApp } from "../src/context/AppContext";
+import { internalQAEnabled } from '../src/devQA/session';
 import { getDemoProgress } from "../src/domain/demo/acceleratedDemo";
 import { loadDemoSession } from "../src/services/notifications/acceleratedDemo";
 import type { Palette } from "../src/theme";
@@ -13,9 +14,9 @@ export default function Index() {
   const { colors } = useTheme();
   const styles = makeStyles(colors);
   const { ready, preferences, cycleSettings } = useApp();
-  const [demoState, setDemoState] = useState<'loading' | 'active' | 'empty' | 'failed'>(acceleratedDemoEnabled ? 'loading' : 'empty');
+  const [demoState, setDemoState] = useState<'loading' | 'active' | 'empty' | 'failed'>(acceleratedDemoEnabled && !internalQAEnabled ? 'loading' : 'empty');
   useEffect(() => {
-    if (!acceleratedDemoEnabled) return;
+    if (!acceleratedDemoEnabled || internalQAEnabled) return;
     let active = true;
     void loadDemoSession().then(session => {
       if (active) setDemoState(session && !getDemoProgress(session.startedAt, Date.now()).completed ? 'active' : 'empty');
@@ -31,7 +32,7 @@ export default function Index() {
   return (
     <Redirect
       href={
-        acceleratedDemoEnabled && (!preferences.onboardingComplete || demoState === 'active' || demoState === 'failed')
+        internalQAEnabled ? '/dev-qa' : acceleratedDemoEnabled && (!preferences.onboardingComplete || demoState === 'active' || demoState === 'failed')
           ? '/demo'
           : preferences.onboardingComplete && cycleSettings
           ? "/today"

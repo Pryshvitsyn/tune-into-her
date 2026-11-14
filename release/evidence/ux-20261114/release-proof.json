@@ -1,0 +1,12 @@
+{
+  "signatureVerified": true,
+  "officialManifestAndFingerprintMatch": true,
+  "metroListening": false,
+  "coldLaunchSuccess": true,
+  "recordingExit": 0,
+  "embeddedHbcSha256": "30c405b5a96caa4fc00c93bd12113fa1cd2854f1733e5a19a14de34bebd97b77",
+  "reducedMotionRestoredOffBeforeRecording": true,
+  "recordingWallSeconds": 42.08585387500352,
+  "visualColdDestinationVerified": true,
+  "mediaTimingIsNotStartupWallTime": true
+}

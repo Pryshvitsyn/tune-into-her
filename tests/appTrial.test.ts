@@ -95,6 +95,25 @@ describe('server-authoritative app trial', () => {
     const x = setup(); x.memory.set('partner-cycle:entitlement-cache:v1', JSON.stringify({ isPremium: true })); x.setOnline(false);
     expect((await x.service.getState()).isActive).toBe(false);
   });
+  it('recovers from a transient SecureStore failure on an explicit retry', async () => {
+    const x = setup(); let fail = true;
+    const service = new AppTrialService({ ...x.options, storage: {
+      async getItem(key) { if (fail) { fail = false; throw new Error('temporarily locked'); } return x.options.storage.getItem(key); },
+      setItem: x.options.storage.setItem,
+    } });
+    expect((await service.getState()).isActive).toBe(false);
+    expect(await service.getState()).toMatchObject({ status: 'not_started', isActive: false });
+    expect(x.starts()).toBe(0);
+    expect((await service.start()).isActive).toBe(true);
+    expect(x.starts()).toBe(1);
+  });
+  it('does not replace malformed stored credentials or silently start a new guest trial', async () => {
+    const x = setup(); x.memory.set('tih.trial-credential.v1.sandbox', '{broken');
+    expect((await x.service.getState()).isActive).toBe(false);
+    expect((await x.service.start()).isActive).toBe(false);
+    expect(x.memory.get('tih.trial-credential.v1.sandbox')).toBe('{broken');
+    expect(x.requests).toHaveLength(0);
+  });
   it('rejects wrong environment and invalid server durations', async () => {
     const x = setup();
     const badFetch = (async () => Response.json({ environment: 'production', serverNow: new Date(initial).toISOString(), startedAt: new Date(initial).toISOString(), expiresAt: new Date(initial + APP_TRIAL_MS * 2).toISOString() })) as typeof fetch;

@@ -10,6 +10,36 @@ Shared Screen provides header, mist and tabs. Today and onboarding retain the ap
 `TuneIntoHerSphereV4` renderer; resource loading does not alter its renderer/shader/clock
 contract.
 
+## Explicit Home and secondary navigation
+
+`HomeTransition` wraps the existing route stack inside GlobalLaunch. BrandHomeButton reuses
+one SphereIntroSurface/approved WebView scene. Its independent reducer accepts one replay,
+clears its paint latch per gesture, waits for current focused Today paint, then fades without restarting native startup or altering
+access. Surface readiness is reported only after focus, foreground and two committed frames.
+It pauses hidden destination rendering, protects route/scope changes and respects
+foreground/motion/reader state. The genuine cold-launch latch remains separate.
+
+Screen classifies its own stable Expo route through screenNavigation: Today/Cycle/Settings
+retain BottomNav; secondary routes share fixed SecondaryNav below scroll content. Header
+hides the redundant top Back only on those secondary routes. Back reads the owning
+navigation stack at gesture time; Expo's generated root wrapper is not that stack. Calendar's existing editor
+is reached by the one Screen footer action. CycleDateField holds only a transient picker
+candidate until explicit confirmation; null drafts cannot produce a saved date or estimate.
+
+## Isolated development QA
+
+The existing development/mock flag enables `/dev-qa`; it grants no access by itself.
+InternalQASession supplies explicit private scenarios, a managed clock and memory stores.
+scopeAppContext selects the existing MockPurchaseService and real AppTrialService evaluator
+with injected no-network trial transport. Ordinary sessions use RevenueCat and original
+storage. No global Date patch or alternate billing evaluator is introduced.
+
+AppContext pauses real access polling/foreground notification work while QA owns the facade,
+and rechecks real access on exit. Today/History/feedback consume scope-specific stores;
+forms/paywall remount on dataScope change. Session generations reject stale callbacks;
+demo notifications and real web redemption cannot consume private scenario data. Details
+and evidence limits: [INTERNAL_QA](docs/INTERNAL_QA.md).
+
 ## Startup presentation
 
 `GlobalLaunch` in the root layout owns presentation, independently of access policy.
@@ -45,7 +75,8 @@ generation. Android12+ OS icon/background constraints are documented separately 
 scenarios are maintained in [LAUNCH_QA](docs/LAUNCH_QA.md).
 
 The root native Stack is the sole status-bar style owner: dark icons while the silver
-launch blocks, then light icons for a dark destination or dark icons for a light one.
+cold launch blocks; explicit Home uses the saved theme, with light icons on graphite and
+dark icons on silver. Destinations retain their corresponding style.
 The native `UIViewControllerBasedStatusBarAppearance` flag is true in both Info.plist
 and app.config.ts. A separate Expo StatusBar JSX owner is not mounted. This resolves the
 observed dark-destination status-bar ownership conflict without changing signing.

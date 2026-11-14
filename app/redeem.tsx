@@ -1,4 +1,4 @@
-import { router } from 'expo-router';
+import { Redirect, router } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator } from 'react-native';
@@ -13,7 +13,13 @@ import { purchaseService } from '../src/services/purchases';
 import type { RedemptionResult } from '../src/services/purchases/types';
 import { useTheme } from '../src/theme/useTheme';
 
-export default function RedeemScreen() {
+export default function RedeemRoute() {
+  const { qaActive, dataScope } = useApp();
+  // A real redemption link must never be consumed by a synthetic session.
+  return qaActive ? <Redirect href="/dev-qa" /> : <RedeemScreen key={dataScope} />;
+}
+
+function RedeemScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const { ready, refreshEntitlement } = useApp();

@@ -144,3 +144,130 @@ retained Settings pages failed and are excluded: iOS26 root now uses CollectionV
 row labels/icons are not interchangeable with their actual native Buttons, and a
 background app must be activated before querying its window. The final helper reads
 the actual hierarchy and preserves the simulator-only guard.
+
+
+## Current UX correction harness
+
+The updated helper requires an empty date on the fresh-install flow: **Not set**,
+Continue disabled, opening/cancelling the transient native candidate leaves it empty,
+then an explicit native Done makes Continue available. Only the later existing preview
+Continue persists the isolated synthetic date. `testFinalLightRevisitFullOnboardingNoReset`
+passes `expectFreshDate: false` and preserves the genuinely saved date; it does not
+pretend a revisit is a fresh install. The MAX draft inspection uses the same helper
+without saving. Earlier 29-assertion runs above describe the earlier source checkpoint;
+the changed date-choice flow has additional assertions and needs its own final-binary run.
+
+Three new individually selectable cases are ready for the same simulator UUID only:
+
+- `testHomeSingleAndDoubleTapStaysLockedSameProcess`: existing English/saved-cycle/no-access
+  fixture, default text, native Reduce Motion OFF. From Settings, a single emblem tap
+  and then a separate double-tap each show one cover, retain the approved full-motion
+  duration (8.5–17.5s bounded native observation), return to locked Today and retain PID.
+  The upper bound excludes two consecutive nine-second intros. It captures each cover
+  and result; video remains the choreography proof. No purchase controls are touched.
+- `testCalendarFixedUpdateOpensSavedEditorWithoutWrites`: existing synthetic saved28/5,
+  verifies the single update action is fully visible outside the scroll body and above
+  all primary tabs before/after scrolling, opens the saved date/lengths, cancels,
+  reopens unchanged, returns to locked Today. Never taps Save or selects a date.
+- `testLongDocumentsFixedSecondaryControlsNoWrites`: from existing locked Today reads
+  Privacy and Subscription terms to their actual final text. Exactly one Back and one
+  Settings remain fully visible outside the body at start/end, at the same vertical
+  position. Back returns to the known previous Settings page; the right Settings
+  control opens that existing page. Missing-history fallback is covered by the pure
+  navigation tests, not falsely claimed by this known-history native flow.
+
+Select each via `-only-testing:LaunchUIQA/LaunchUIQA/<method>` using the guarded command
+above. Run only after the source-matching Release build is installed and the isolated
+simulator is available. Current execution outcomes and exact build boundaries are recorded
+in [UX_TEST_READINESS](../../docs/UX_TEST_READINESS.md) and its evidence index.
+These cases inject no JavaScript, real fixture, entitlement, clock or data reset;
+only the fresh onboarding helper later persists the explicitly chosen synthetic date.
+
+
+Two additional methods require explicit execution on the guarded synthetic fixture:
+
+- `testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight` selects existing Dark,
+  verifies actual graphite pixels and a readable white status clock during Home,
+  verifies locked Today/same PID after Home, deliberately cold-launches once and checks
+  persisted Dark pixels/radio state, then restores Light through Appearance and ends
+  on locked Today. This intentionally changes only the isolated QA theme preference.
+- `testExplicitlyDeleteOwnedSyntheticFixtureThenFreshCycleOnboardingNoBilling` is an
+  explicitly destructive **synthetic-fixture** test. It inherits the exact simulator
+  UUID/physical-device exclusion, additionally requires the existing locked English
+  setup with a genuine saved date and synthetic28/5, and uses only the app's existing
+  Delete local data confirmation. It never erases a simulator or calls a store/trial
+  action. It then runs the fresh-date Cancel/Done/disabled-Continue assertions and the
+  existing six-step onboarding, disables reminders and ends on the existing paywall.
+  Its fresh state is an explicit local-content reset, **not** a new installation or
+  fresh billing identity. Run only when the parent releases that synthetic fixture;
+  it must never be selected incidentally as part of the whole suite.
+
+Both additions were syntax-parsed only. No UI interaction, native build or execution
+was performed by the adding agent; no existing run results are attributed to them.
+
+
+## Internal QA native matrix
+
+These five methods require the flag-enabled **Debug** project already opened in the
+owned simulator through its normal dev-client URL. Preflight clears the existing OS
+Open confirmation, activates the app and waits up to30s for the guarded panel's native
+`qa-scenario-fresh` ID. A Release or real-only screen fails that precondition before
+any mock financial action. Use default text, English, Light, and the existing synthetic
+real-base fixture: November14,2026,28/5, remindersDisabled, no access.
+
+Run `testInternalQAStoreRetryAndMockRestoreNoRealBilling` **first**, from the initial
+Debug `index → dev-qa` stack without an older Settings route. The test retains the failed
+Subscription card using its existing THEA→Settings→InternalQA navigation, toggles only
+the private mock store online, then Back twice reaches that same failed card and its
+existing Retry. It checks recovered mock prices and explicitly invokes only the guarded
+mock Restore, then checks actual guidance. No Buy, real Restore or real trial is used.
+If the required stack is absent, the retained-card assertion fails; no remount is counted
+as proof that Retry recovered.
+
+Then select each remaining method deliberately after opening the existing `/dev-qa`
+route through the normal native URL/Settings entry:
+
+- `testInternalQAFreshAndFiveConfirmedCycleDays`: fresh Today has NotSet/noDAY/no advice;
+  confirmed November3 scenarios show actualDAY1/7/14/21/28, authored KEEP IN MIND and
+  the development disclosure.
+- `testInternalQA0800BoundaryChangesAdviceAndHistoryNotLocalCycleDay`: 07:59→08:00 changes
+  the actual authored advice label while the local header staysDAY8. Private History
+  then visibly contains both real selector keys2026-11-09 and2026-11-10.
+- `testInternalQAAppTrialFixturesExplicitCardFreeStartAndExactExpiry`: seeded beginning,
+  middle and expired access; then explicitly taps `billing-start-trial` **only after**
+  selecting `trial-not-started` and checking active mock disclosure. It advances the
+  private14-day grant to its exact expiry, requires inactive store access and locked
+  Today. This is native mock-path proof, not a server/store transaction or charge proof.
+- `testInternalQAPaidActiveCancelledAndExpiredFixtures`: active/cancelled-within-term
+  retain mock guidance; expired locks. Existing Subscription statuses and Manage
+  availability must agree; no Manage/Buy action is invoked.
+
+Each case ends QA through its existing control and verifies the exact real-base saved
+start label `Last known period start: November 14, 2026`,28/5, remindersDisabled,
+English/Light, locked Today, no mock label on that Today, and the same PID. It never
+saves base data, erases app/simulator content or changes device time. The mock-only
+AppTrial start and Restore are explicitly requested native tests; they are never
+invoked unless the panel's active scenario and disclosure were established first.
+
+The accessible protected advice is a native Button labelled `KEEP IN MIND. <text>.
+<note>`, not a StaticText-only heading; the selectors use that actual rendered contract.
+These additions are executed on the Debug host. Passing cases, earlier failures and final
+source boundaries are recorded in UX_TEST_READINESS and its evidence index.
+
+
+The Debug preflight additionally handles the actually observed first Expo developer-menu
+welcome sheet **only** when its exact paragraph is present: “This is the developer menu.
+It gives you access to useful tools in development builds.” It scrolls the last native
+ScrollView until that sheet's Continue is completely visible, taps it, then taps the
+observed native button with identifier `xmark` and label `Close`. Before/after captures
+are named86/87 and skip the product status-bar pixel assertion. This conditional path
+cannot select the application's onboarding Continue from a generic label match.
+
+
+`testReducedMotionHomeReturnsFromPrivacyWithoutFullScene` changes only the guarded
+Simulator's native Reduce Motion switch, confirms UIKit observes it, opens existing
+Privacy, taps the product emblem and requires same-process locked Today within6s.
+Its defer restores native Reduce Motion OFF. It never toggles accessibility on a phone.
+For repeated Debug starts, launch the most recent project once; do not race a separate
+native app launch with a second development-client URL load. The optional Tools-button
+launch argument affects only the development host's process preferences.

@@ -1,4 +1,4 @@
-import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
+import { Redirect, router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, AppState, Linking, StyleSheet, View } from 'react-native';
 
@@ -19,7 +19,12 @@ import { useTheme } from '../src/theme/useTheme';
 
 type ErrorKind = 'permission' | 'schedule' | 'cleanup' | 'load' | null;
 
-export default function DemoScreen() {
+export default function DemoRoute() {
+  const { qaActive } = useApp();
+  return qaActive ? <Redirect href="/dev-qa" /> : <DemoScreen />;
+}
+
+function DemoScreen() {
   const { ready, preferences, cycleSettings } = useApp();
   const { colors } = useTheme();
   const styles = makeStyles(colors);

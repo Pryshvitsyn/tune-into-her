@@ -2,17 +2,17 @@ import { useEffect, useState } from 'react';
 import { Pressable, View } from 'react-native';
 
 
+import { useApp } from '../context/AppContext';
 import type { FeedbackStatus } from '../domain/content/feedback';
 import type { DateOnly } from '../domain/cycle/dateOnly';
 import { useInterface } from '../i18n/useInterface';
-import { AsyncFeedbackStore } from '../storage/AsyncFeedbackStore';
 import { useTheme } from '../theme/useTheme';
 
 import { AppText as Text } from './AppText';
 
-const feedbackStore = new AsyncFeedbackStore();
 
 export function FeedbackControl({ date, cueId }: { date: DateOnly; cueId: string }) {
+  const { feedbackStore, dataScope } = useApp();
   const copy = useInterface();
   const { colors } = useTheme();
   const [selected, setSelected] = useState<FeedbackStatus | null>(null);
@@ -23,7 +23,7 @@ export function FeedbackControl({ date, cueId }: { date: DateOnly; cueId: string
       if (mounted) setSelected(entry?.status ?? null);
     });
     return () => { mounted = false; };
-  }, [date, cueId]);
+  }, [date, cueId, feedbackStore, dataScope]);
 
   const choices: { status: FeedbackStatus; label: string }[] = [
     { status: 'helpful', label: copy.feedbackHelpful },

@@ -1,5 +1,3 @@
-import { router } from "expo-router";
-import { useTranslation } from "react-i18next";
 import { Linking, View } from 'react-native';
 
 import { AppText as Text } from '../src/components/AppText';
@@ -14,7 +12,6 @@ import { useTheme } from "../src/theme/useTheme";
 export default function TheaScreen() {
   const { colors } = useTheme();
   const { preferences } = useApp();
-  const { t } = useTranslation();
   const c = copy[preferences.language];
   const body = {
     color: colors.secondary,
@@ -55,11 +52,6 @@ export default function TheaScreen() {
           <Text style={body}>{c[7]}</Text>
         </>
       ) : null}
-      <Button
-        label={t("common.back")}
-        variant="ghost"
-        onPress={() => router.back()}
-      />
     </Screen>
   );
 }

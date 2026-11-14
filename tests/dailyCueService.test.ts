@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { getCatalog } from '../src/domain/content/contentRepository';
-import { invalidateFutureSelections, selectDailyCue } from '../src/domain/content/dailyCueService';
+import { cycleFingerprint, invalidateFutureSelections, selectDailyCue } from '../src/domain/content/dailyCueService';
 import type { DailySelection, SelectionStore } from '../src/domain/content/types';
 
 class MemoryStore implements SelectionStore {
@@ -39,4 +39,20 @@ describe('daily cue state', () => {
     await invalidateFutureSelections(store, '2026-01-05');
     expect(store.values.map((item) => item.date)).toEqual(['2026-01-04', '2026-01-05']);
   });
+
+  it('regenerates future advice after a saved correction while retaining existing history', async () => {
+    const store = new MemoryStore();
+    const original = { ...settings, lastKnownPeriodStart: '2026-11-03' as const };
+    const historicalId = await selectDailyCue({ date: '2026-11-14', phase: 'follicular', settings: original, store });
+    await selectDailyCue({ date: '2026-11-16', phase: 'mid_cycle', settings: original, store });
+    const corrected = { ...original, lastKnownPeriodStart: '2026-11-13' as const };
+    await invalidateFutureSelections(store, '2026-11-14');
+    expect(store.values.map(item => item.date)).toEqual(['2026-11-14']);
+    const newId = await selectDailyCue({ date: '2026-11-16', phase: 'menstrual', settings: corrected, store });
+    expect(getCatalog().find(item => item.id === newId)?.phases).toContain('menstrual');
+    expect(store.values.find(item => item.date === '2026-11-16')?.cycleFingerprint).toBe(cycleFingerprint(corrected));
+    expect(store.values.find(item => item.date === '2026-11-14')?.cueId).toBe(historicalId);
+    expect(store.values.find(item => item.date === '2026-11-14')?.cycleFingerprint).toBe(cycleFingerprint(original));
+  });
+
 });

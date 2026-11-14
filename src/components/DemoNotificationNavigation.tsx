@@ -8,13 +8,13 @@ import { demoNotificationCandidate, demoNotificationTarget } from '../domain/nav
 import { loadDemoSession } from '../services/notifications/acceleratedDemo';
 
 export function DemoNotificationNavigation() {
-  const { ready } = useApp();
+  const { ready, qaActive } = useApp();
   const navigation = useRootNavigationState();
   const response = Notifications.useLastNotificationResponse();
   const handled = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!acceleratedDemoEnabled || !ready || !navigation?.key || !response) return;
+    if (qaActive || !acceleratedDemoEnabled || !ready || !navigation?.key || !response) return;
     const request = response.notification.request;
     if (request.content.data?.kind !== 'accelerated-demo' || handled.current === request.identifier) return;
     let active = true;
@@ -34,7 +34,7 @@ export function DemoNotificationNavigation() {
       }
     });
     return () => { active = false; };
-  }, [navigation?.key, ready, response]);
+  }, [navigation?.key, ready, response, qaActive]);
 
   return null;
 }

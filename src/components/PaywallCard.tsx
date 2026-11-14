@@ -5,7 +5,7 @@ import { ActivityIndicator, Alert, Platform, Pressable, StyleSheet, View } from 
 
 import type { SupportedLanguage } from '../config/constants';
 import { useApp } from '../context/AppContext';
-import { purchaseService, type StoreOffer, useMockBilling } from '../services/purchases';
+import { type StoreOffer } from '../services/purchases';
 import { spacing, type Palette } from '../theme';
 import { typographyForLanguage } from '../theme/typography';
 import { useTheme } from '../theme/useTheme';
@@ -13,10 +13,15 @@ import { useTheme } from '../theme/useTheme';
 import { AppText as Text } from './AppText';
 import { Button } from './Button';
 
-export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
+export function PaywallCard(props: { onUnlocked?(): void }) {
+  const { dataScope } = useApp();
+  return <ScopedPaywallCard key={dataScope} {...props} />;
+}
+
+function ScopedPaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
   const { colors } = useTheme();
   const { t } = useTranslation();
-  const { entitlement, appTrial, startAppTrial, refreshEntitlement, preferences } = useApp();
+  const { entitlement, appTrial, startAppTrial, refreshEntitlement, preferences, purchases } = useApp();
   const styles = makeStyles(colors, preferences.language);
   const [offers, setOffers] = useState<StoreOffer[]>([]);
   const [selected, setSelected] = useState<'monthly' | 'annual'>('annual');
@@ -25,24 +30,30 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
   const [error, setError] = useState(false);
   const locked = useRef(false);
   const mounted = useRef(true);
+  const offerRequest = useRef(0);
   const proceed = () => onUnlocked ? onUnlocked() : router.replace('/today');
   const date = (value: string) => new Date(value).toLocaleString(preferences.language === 'mbf' ? 'ms' : preferences.language);
   const source = entitlement.source === 'web' ? 'RevenueCat' : entitlement.source === 'apple' ? 'Apple' : entitlement.source === 'google' ? 'Google Play' : t('common.notSet');
 
   const loadOffers = useCallback(async () => {
+    const request = ++offerRequest.current;
     setLoading(true);
     setError(false);
+    // An earlier price must not remain purchasable after a failed reload.
+    setOffers([]);
     try {
-      const result = await purchaseService.getOffer();
-      if (mounted.current) { setOffers(result); setError(result.length === 0); }
-    } catch { if (mounted.current) setError(true); }
-    finally { if (mounted.current) setLoading(false); }
-  }, []);
+      const result = await purchases.getOffer();
+      if (mounted.current && request === offerRequest.current) {
+        setOffers(result);
+        setError(result.length === 0);
+        setSelected(previous => result.some(offer => offer.plan === previous) ? previous : result[0]?.plan ?? previous);
+      }
+    } catch { if (mounted.current && request === offerRequest.current) setError(true); }
+    finally { if (mounted.current && request === offerRequest.current) setLoading(false); }
+  }, [purchases]);
   useEffect(() => {
     mounted.current = true;
-    void purchaseService.getOffer().then(result => {
-      if (mounted.current) { setOffers(result); setError(result.length === 0); }
-    }).catch(() => { if (mounted.current) setError(true); }).finally(() => { if (mounted.current) setLoading(false); });
+    void Promise.resolve().then(loadOffers);
     return () => { mounted.current = false; };
   }, [loadOffers]);
 
@@ -52,27 +63,32 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
     locked.current = true;
     setWorking(true);
     try { await action(); }
-    catch (error) { Alert.alert(t(error instanceof Error && error.message === 'WEB_PORTAL_EMAIL_REQUIRED' ? 'billing.webPortalHelp' : 'paywall.purchaseError')); }
+    catch (error) { if (mounted.current) Alert.alert(t(error instanceof Error && error.message === 'WEB_PORTAL_EMAIL_REQUIRED' ? 'billing.webPortalHelp' : 'paywall.purchaseError')); }
     finally { locked.current = false; if (mounted.current) setWorking(false); }
   };
   const buy = async () => {
     const offer = offers.find(item => item.plan === selected);
     if (!offer) return;
-    const result = await purchaseService.purchase(offer);
+    const result = await purchases.purchase(offer);
+    if (!mounted.current) return;
     await refreshEntitlement();
+    if (!mounted.current) return;
     if (result === 'purchased') proceed();
-    if (result === 'already_active') await purchaseService.manageSubscription();
+    if (result === 'already_active') await purchases.manageSubscription();
     if (result === 'pending') Alert.alert(t('billing.pending'));
     // A cancelled native purchase is a normal dismissal.
   };
   const restore = async () => {
-    const state = await purchaseService.restore();
+    const state = await purchases.restore();
+    if (!mounted.current) return;
     await refreshEntitlement();
+    if (!mounted.current) return;
     Alert.alert(t(state.isActive ? 'paywall.restored' : 'paywall.nothingToRestore'));
     if (state.isActive && onUnlocked) onUnlocked();
   };
   const begin = async () => {
     const state = await startAppTrial();
+    if (!mounted.current) return;
     if (state.isActive) proceed();
     else Alert.alert(t('billing.trialUnavailable'));
   };
@@ -89,15 +105,25 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
   const changePlan = async () => {
     const offer = offers.find(item => item.plan === selected);
     if (!offer) return;
-    const result = await purchaseService.changePlan(offer);
+    const result = await purchases.changePlan(offer);
+    if (!mounted.current) return;
     await refreshEntitlement();
+    if (!mounted.current) return;
     if (result === 'pending') Alert.alert(t('billing.pending'));
     else if (result !== 'cancelled') Alert.alert(t('billing.changeTerms'));
   };
+  const retry = async () => { await Promise.all([loadOffers(), refreshEntitlement()]); };
+  const offeringStatus = <>
+    {loading && <ActivityIndicator color={colors.primary} accessibilityLabel={t('paywall.loading')} />}
+    {error && <>
+      <Text style={styles.meta}>{t('paywall.unavailable')}</Text>
+    </>}
+    {(error || (!entitlement.isActive && appTrial.status === 'unavailable')) && <Button testID="billing-retry" label={t('common.retry')} disabled={working} variant="secondary" onPress={() => void act(retry)} />}
+  </>;
   const status = entitlement.status === 'active_ending' ? 'activeEnding' : entitlement.status === 'billing_issue' ? 'billingIssue' : entitlement.status === 'active_trial' ? 'activeTrial' : 'activePaid';
 
   return <View style={styles.card}>
-    {useMockBilling && <Text style={styles.mock}>{t('paywall.mock')}</Text>}
+    {entitlement.isMock && <Text style={styles.mock}>{t('paywall.mock')}</Text>}
     <Text style={styles.title}>{t('paywall.title')}</Text>
     <Text style={styles.body}>{t('paywall.body')}</Text>
     {entitlement.isActive ? <>
@@ -105,8 +131,9 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
       {entitlement.expirationDate && <Text style={styles.meta}>{t('billing.paidUntil', { date: date(entitlement.expirationDate) })}</Text>}
       <Text style={styles.meta}>{t('billing.source', { source })}</Text>
       {entitlement.verification === 'cached' && <Text style={styles.meta}>{t('billing.cached')}</Text>}
-      <Button disabled={working} label={t('subscription.manage')} onPress={() => void act(() => purchaseService.manageSubscription())} />
+      <Button disabled={working} label={t('subscription.manage')} onPress={() => void act(() => purchases.manageSubscription())} />
       <Text style={styles.meta}>{t('billing.renewal', { source })}</Text>
+      {changeable && offeringStatus}
       {changeable && offers.length > 0 && <>
         {planChoices}
         <Text style={styles.meta}>{t('billing.changeTerms')}</Text>
@@ -120,14 +147,12 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
         {appTrial.verification === 'cached' && <Text style={styles.meta}>{t('billing.cached')}</Text>}
         <Button disabled={working} label={t('common.continue')} onPress={proceed} />
       </> : appTrial.status === 'expired' ? <Text style={styles.body}>{t('billing.trialExpired')}</Text> : <>
-        {appTrial.status === 'unavailable' && <Text style={styles.meta}>{t('billing.trialUnavailable')}</Text>}
-        <Button disabled={working || !preferences.onboardingComplete} label={t('billing.start')} onPress={() => void act(begin)} />
+        {appTrial.status === 'unavailable' && <>
+          <Text style={styles.meta}>{t('billing.trialUnavailable')}</Text>
+        </>}
+        <Button testID="billing-start-trial" disabled={working || !preferences.onboardingComplete} label={t('billing.start')} onPress={() => void act(begin)} />
       </>}
-      {loading && <ActivityIndicator color={colors.primary} accessibilityLabel={t('paywall.loading')} />}
-      {error && <>
-        <Text style={styles.meta}>{t('paywall.unavailable')}</Text>
-        <Button label={t('common.retry')} disabled={working || loading} variant="secondary" onPress={() => void loadOffers()} />
-      </>}
+      {offeringStatus}
       {planChoices}
       {offers.length > 0 && <>
         <Text style={styles.meta}>{t('billing.chargeNow')}</Text>
@@ -135,7 +160,7 @@ export function PaywallCard({ onUnlocked }: { onUnlocked?(): void }) {
         <Button label={t('paywall.continue')} disabled={working || !offers.some(offer => offer.plan === selected)} onPress={() => void act(buy)} />
       </>}
     </>}
-    <Button disabled={working} label={t('paywall.restore')} variant="ghost" onPress={() => void act(restore)} />
+    <Button testID="billing-restore" disabled={working} label={t('paywall.restore')} variant="ghost" onPress={() => void act(restore)} />
     <Text style={styles.meta}>{t('billing.restoreWeb')}</Text>
     <View style={styles.links}>
       <Pressable accessibilityRole="link" style={styles.legalHit} onPress={() => router.push('/terms')}><Text style={styles.link}>{t('paywall.terms')}</Text></Pressable>
