@@ -75,7 +75,7 @@ not to suppress an application failure or change persistence code.
 | Compact / Light / Dark | PASS — actual six-step flows and pre-purchase screenshots | BLOCKED |
 | All11 picker values | PASS — all exact native values observed, including Hindi/Chinese; Cancel preserves English | BLOCKED |
 | Largest Dynamic Type | PASS — full picker-action bounds, scrollability, checked checkbox and stepper glyphs visually verified | BLOCKED |
-| Physical iPhone | Earlier Release update/cold-launch PID34402 survived+39.68s; final signed artifact verified, final installation pending phone unlock | Unavailable |
+| Physical iPhone | PASS — exact final Release update8.58s, launch command0.69s, PID34933 alive at+54.18s; installed app/executable matches receipt. Visual/route/speech NOT VERIFIED | Unavailable |
 
 Native full-flow results on the frozen final controller-policy build:
 
@@ -151,11 +151,17 @@ Physical iPhone11Pro/iOS26.6: full workspace Release and initial data-preserving
 cold launch passed. Final generic app-only Release passed68.38s, with20 artifact guards:
 existing valid signing/current-phone profile, updated JS/controller flag, exact font/full
 notices and fresh official manifest/fingerprint. No account/profile/Team changes or
-provisioning-update flags. Final update remains pending: the selected-device preparation/
-installation service failed and fresh lock checks require the owner's passcode. No unlock
-or further locked install was attempted. Earlier PID survival is pre-accessibility-fix
-process evidence, not visual proof of this latest artifact. CUA cannot start with the
-configured symlinked root, so physical visual/route/speech proof remains unavailable.
+provisioning-update flags. After the owner unlocked the phone, fresh wired/paired/DDI
+readiness passed. The exact final artifact updated the existing app in8.58s without
+uninstall/reset, then cold-launched (device command0.69s) (PID34933) without Metro. The same process was
+alive at+54.18s; its executable is inside the updated app, whose path matches the install
+receipt. Final physical embedded JS SHA256:
+`dc7a7e49755397b73a44a1f17b05ebf698e92ad09cf41f4bfbab0bf757963c08`.
+The0.69s measures the device launch command, not animation duration or UI readiness.
+No financial/notification interaction or real cycle-data inspection occurred. This closes
+the final install/process gate; it does not prove physical visual choreography, destination
+routing or speech. [Sanitized physical proof](../release/evidence/launch-20261114/physical-runtime.json).
+CUA cannot start with the configured symlinked root; no permissions or roots were changed.
 Raw device/signing metadata stays outside Git.
 
 Android production JS/assets export PASS:

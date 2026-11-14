@@ -94,9 +94,10 @@ fertility, or mood-prediction product.
   The matrix distinguishes earlier unchanged-controller checkpoints from final UI proof.
 - Final generic iphoneos artifact passes existing signing/profile, original font/notices,
   refreshed production JS and exact official Expo manifest/fingerprint checks. An earlier
-  data-preserving phone update/cold launch survived+39.68s. Final update is pending the
-  owner's phone unlock; no locked retry, signing change or data reset is performed.
-  Physical visual/speech proof remains unavailable through this session's CUA root issue.
+  data-preserving phone update/cold launch survived+39.68s. After owner unlock, the exact
+  final Release update passes8.58s and launch command0.69s; PID34933 survives+54.18s, with
+  executable/app path matching the install receipt. No reset, financial/notification
+  action or real cycle-data inspection. Physical visual/speech proof remains unavailable.
 - Final Android production export and isolated native generation pass. Actual Gradle
   assembly stops before compilation because JRE/SDK/adb/emulator are unavailable; no
   APK/AAB or Android runtime success is claimed. Configured valid-access, slow/offline
@@ -133,9 +134,9 @@ fertility, or mood-prediction product.
 
 | Area | Current boundary |
 | --- | --- |
-| Native build and visual QA | Final signed Simulator build passes. Compact first-install/cold launch, locked entry/navigation, background/resume and Reduced Motion have native checkpoint evidence; exact final UI/scenario statuses are in LAUNCH_QA.md. Configured valid access, delayed/offline native services, successful native Retry, spoken screen-reader and final physical visual/runtime proof remain unverified. |
+| Native build and visual QA | Final signed Simulator build passes. Compact first-install/cold launch, locked entry/navigation, background/resume and Reduced Motion have native checkpoint evidence; exact final UI/scenario statuses are in LAUNCH_QA.md. Configured valid access, delayed/offline native services, successful native Retry, spoken screen-reader and physical visual/route proof remain unverified. |
 | Android | Isolated native generation and final post-font-fix production JS export pass, including exact OTF bytes and full canonical font notices. Actual Gradle attempt stops at missing Java Runtime; SDK/adb/emulator are absent. No APK/AAB or native splash/WebView/navigation/billing runtime proof exists. |
-| Apple / Google | Pre-font-fix physical development-signed Release build, update-install and cold launch pass; same process survives at +39.68 seconds. Final status-bar-corrected generic iphoneos app-only build passes, including fresh official Expo Updates resources and the existing profile for this phone; update awaits unlock. Physical visual/accessibility capture is blocked by the CUA runtime root error. Distribution signing, store account/listing/approval and real transactions remain unverified. No account, Team, identifier or profile was changed. |
+| Apple / Google | Pre-font-fix physical development-signed Release build, update-install and cold launch pass; same process survives at +39.68 seconds. Final status-bar-corrected generic iphoneos app-only build passes, including fresh official Expo Updates resources and the existing profile for this phone; final update passes8.58s after owner unlock, launch command0.69s and same PID34933 at+54.18s match the install receipt. Physical visual/accessibility capture remains unverified. Distribution signing, store account/listing/approval and real transactions remain unverified. No account, Team, identifier or profile was changed. |
 | Billing | Owner approved14-day app access + voluntary €3.99 monthly / €24.99 annual base targets on2026-11-13. Native service/UI, trial Worker/D1 and web redemption source implemented; external catalogs/keys/deployment and real sandbox transactions remain BLOCKED. See BILLING_QA.md and STORE_SETUP.md. |
 | Legal/support | Real seller spelling, support contact, terms/privacy URLs/text, and privacy declarations remain open. |
 | Product identifiers | Existing iOS `com.eliogenesis.tuneintoher` and Android `com.pryshvitsyn.tuneintoher` are preserved as instructed. External store/RevenueCat records still need verification; no identifier alignment is part of this change. |
@@ -145,7 +146,7 @@ fertility, or mood-prediction product.
 
 ## NEXT BEST MOVE
 
-Finish the final native runtime matrix in [LAUNCH_QA](docs/LAUNCH_QA.md), then update and cold-launch the prepared physical artifact when the paired phone is unlocked. Obtain physical visual/accessibility evidence when an enabled capture route is available. Use a JDK/SDK-equipped host for an independent Android release/runtime check; final Android JS packaging is verified. Preserve the separate [owner billing checklist](STORE_SETUP.md): sandbox trial endpoint, real store/RevenueCat configuration and actual Apple/Google/web transactions remain external gates. Source checks and Simulator proof do not establish store readiness.
+Finish remaining cases in [LAUNCH_QA](docs/LAUNCH_QA.md); the exact final physical update/cold-launch/process gate now passes. Obtain physical visual/route/accessibility evidence when an enabled capture route is available. Use a JDK/SDK-equipped host for an independent Android release/runtime check; final Android JS packaging is verified. Preserve the separate [owner billing checklist](STORE_SETUP.md): sandbox trial endpoint, real store/RevenueCat configuration and actual Apple/Google/web transactions remain external gates. Source checks and Simulator proof do not establish store readiness.
 
 ## REFERENCES
 

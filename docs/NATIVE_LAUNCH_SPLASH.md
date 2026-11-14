@@ -91,12 +91,18 @@ manifest/fingerprint copies. No provisioning-update/device-registration flags or
 overrides were used. Log: `/tmp/tih-global-launch-ios-statusbar-physical-final.log`.
 Raw artifact guards/device/signing results remain outside Git.
 
-The final phone update is pending unlock. A prior install service failed (CoreDevice3002,
-IXRemoteErrorDomain5/device83); selected-device preparation also requested unlock. Fresh
-read-only lock checks continue to report passcodeRequired=true. No unlock, locked retry,
-uninstall/reset, pairing repair or permission change was attempted. Final phone route,
-animation, visual and screen-reader proof is not claimed. CUA fails before app access
-because this session's configured writable root is symlinked; the root was not changed.
+After the owner unlocked the phone, fresh wired/paired/DDI readiness passed. The final
+signed artifact updated the existing app in8.58s without uninstall/reset. Cold launch
+command passed in0.69s, PID34933; the same process remained alive at+54.18s and its executable/app
+path matches the successful install receipt. Final embedded JS SHA256:
+`dc7a7e49755397b73a44a1f17b05ebf698e92ad09cf41f4bfbab0bf757963c08`.
+[Sanitized proof](../release/evidence/launch-20261114/physical-runtime.json).
+Raw install/launch/survival results stay under `/tmp/tih-global-launch-final-phone-*`.
+The prior locked-service failure is resolved for this update; no unlock attempt, pairing
+repair, provisioning/permission change, financial/notification action or cycle-data
+inspection was performed by the agent. Physical visual/route/speech proof is still not
+claimed: process survival is separate evidence. CUA's configured symlink-root failure
+remains unchanged.
 
 ## References
 

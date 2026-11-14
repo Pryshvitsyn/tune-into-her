@@ -59,8 +59,10 @@ were visually checked for black clock contrast. [Locked final entry](locked-toda
   [font README](../../../assets/fonts/README.md), [font tests](../../../tests/fontCoverage.test.ts).
 
 Full spoken VoiceOver/TalkBack, configured native valid-access/slow/offline scenarios,
-Android native runtime and final physical-phone update/visual proof remain unverified.
-The final phone artifact is signed and ready; installation is pending owner unlock.
+Android native runtime and physical-phone visual/route/speech proof remain unverified.
+The exact final phone Release update, cold launch and+54.18s process check PASS after
+owner unlock; [sanitized physical proof](physical-runtime.json). No uninstall/reset or
+financial action was performed.
 Raw build/device/signing logs, xcresults and app binaries stay outside Git.
 
 ## Changed files

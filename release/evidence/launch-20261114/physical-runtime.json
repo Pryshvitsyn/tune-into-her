@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-14",
+  "timezone": "Europe/Rome",
+  "sourceCommit": "8c529f70c011cc98b6efc6ffd92e0a0dbb3861bd",
+  "deviceModel": "iPhone 11 Pro",
+  "osVersion": "iOS 26.6",
+  "configuration": "Release",
+  "runtimeRequiresMetro": false,
+  "bundleIdentifier": "com.eliogenesis.tuneintoher",
+  "embeddedJavaScriptSha256": "dc7a7e49755397b73a44a1f17b05ebf698e92ad09cf41f4bfbab0bf757963c08",
+  "updateInstallation": {
+    "result": "PASS",
+    "durationSeconds": 8.58,
+    "uninstallOrDataReset": false
+  },
+  "coldLaunch": {
+    "result": "PASS",
+    "pid": 34933,
+    "commandDurationSeconds": 0.69,
+    "durationMeaning": "Device launch command completion; not end-to-end UI readiness or animation duration."
+  },
+  "processSurvival": {
+    "result": "PASS",
+    "elapsedSeconds": 54.18,
+    "samePid": true,
+    "executableInsideUpdatedApp": true,
+    "appPathMatchesInstallReceipt": true
+  },
+  "actions": {
+    "purchases": false,
+    "trialActivation": false,
+    "notificationInteraction": false,
+    "realCycleDataInspection": false,
+    "signingOrPermissionChanges": false
+  },
+  "boundary": "Installation and process evidence only; physical visual choreography, destination route and spoken screen-reader behavior are not verified.",
+  "screenCapture": {
+    "clearIosScreenSource": false,
+    "devicesActivated": false
+  }
+}

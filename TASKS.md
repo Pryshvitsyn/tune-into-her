@@ -23,8 +23,9 @@ Updated: 2026-11-14 (Europe/Rome)
   verify native Reduced Motion ON/OFF. Explicit case/build boundaries are in LAUNCH_QA.
 - [x] Prepare/verify final generic iphoneos artifact using existing signing and fresh official
   SDK resources. Earlier phone update/cold launch survived+39.68s without reset or billing.
-- [ ] Install and cold-test the exact final phone artifact after owner unlock. Fresh lock
-  checks still require passcode; no unlock, uninstall, pairing or provisioning change is made.
+- [x] Update-install the exact final Release after owner unlock (8.58s); cold-launch
+  without Metro (launch command0.69s), confirm PID34933 survives+54.18s and matches the install receipt.
+  No uninstall/reset, financial action, pairing, provisioning or permission change.
 - [ ] Obtain physical visual/route/motion/speech proof; CUA cannot start with this session's
   symlinked root. Process survival alone does not establish visual behavior.
 - [x] Produce final Android JS/assets export with exact font/full notices and attempt Gradle.
