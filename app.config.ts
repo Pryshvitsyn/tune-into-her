@@ -39,11 +39,11 @@ const config: ExpoConfig = {
     [
       'expo-splash-screen',
       {
-        image: './assets/launch/official-launch-mark.png',
+        image: './assets/launch/approved-opening.png',
         backgroundColor: '#7E8BA1',
         imageWidth: 300,
         resizeMode: 'contain',
-        dark: { image: './assets/launch/official-launch-mark.png', backgroundColor: '#7E8BA1' },
+        dark: { image: './assets/launch/approved-opening.png', backgroundColor: '#7E8BA1' },
         android: { imageWidth: 288 },
       },
     ],

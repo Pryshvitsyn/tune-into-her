@@ -66,20 +66,26 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
-## CURRENT V5 HANDOFF / EXACT PHOTO CONTINUATION — 2026-11-14
+## CURRENT EXACT PHOTOGRAPH / VERIFIED V5 — 2026-11-14
 
-- Actual visible WK confirmed that its Cocoa compositor interprets straight output as
-  associated despite reporting false. Final-output association fixes halos without
-  changing source V4/material/geometry; native first-frame max channel difference2/255.
-- Frozen prepare→native UI commit→release removes the physical one-frame foreground gap
-  and hidden clock advancement.395 tests pass;92GPU frames preserve all six ribbons;
-  original raw and associated V4 comparisons both8/8 exact.
-- Signed no-Metro Simulator pressure capture663frames/0black and physical partial
-  handoff1004frames/0black are retained with explicit timing/coverage limits.
-- Founder then requested the exact archived photograph as the opening, rather than
-  the reconstructed SVG artwork. This targeted continuation is in progress; technical
-  handoff success does not imply photographic fidelity or Founder approval.
-- Evidence and boundaries: [V5 handoff QA](docs/PREMIUM_V5_HANDOFF_QA.md).
+- Original approved PNG supplies native iOS, RN loading and Home. All3 source copies
+  are byte-identical; the header/vector/material/font sources remain unchanged.
+- Fixed real851×1847POINT RN static-Image crop using100% container dimensions. Actual
+  physical wrong-crop control is quantified and retained; it is not blamed on shaders.
+- Explicit associated canvas output fixes independently proven WK/Cocoa halos. Native
+  hide is queued before4UI commitment frames and release; clock/preparation/retry are safe.
+-408tests/46files, TypeScript and lint0errors/one prior warning pass.104GPU frames retain
+ 6ribbons and both sets of8exact protected-V4 comparisons. No9s/camera/8s-loop change.
+- Accepted final Simulator:697frames under CPU pressure,0black/white, samephoto native/RN,
+ 48gradual dissolve frames and correct destination. Native Dark/Home/cold+2.124sRMHome
+  pass; Light and native Reduce Motion OFF restored.
+- Final signed normal iPhone Release is installed with data intact. Continuous physical
+  capture is waiting for a working USB data connection; Mac currently sees Wi-Fi only.
+  An AVFoundation host DiskFull failure is retained; it is not accepted runtime proof.
+- Exact-photo Android resources pass isolated checks; Android12+ native icon/full-screen
+  limits and absent SDK/JDK/runtime remain explicit. No billing/service configuration work.
+- Report/evidence/limits: [APPROVED_OPENING_QA](docs/APPROVED_OPENING_QA.md).
+  Founder implementation approval and final physical video remain pending, separately.
 
 ## PREVIOUS PREMIUM INTRO V5 / NATIVE STARTUP — 2026-11-14
 

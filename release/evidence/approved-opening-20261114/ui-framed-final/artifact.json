@@ -1,0 +1,18 @@
+{
+  "nativeBinarySHA256": "bbdfe1c06d0000d5bb84fa3f7b7702a9b39e60811daba0bb9cf091aecadd9c4b",
+  "embeddedJavaScriptSHA256": "f9777bda670cb4ef76af219ceefe4fed291fcdad2c7e2995033f225d6041081b",
+  "codesignVerified": true,
+  "updatesResourcesMatch": true,
+  "nativeUpdatesEnabled": false,
+  "normalReleasePressureMarkerAbsent": true,
+  "sourceSHA256": {
+    "src/intro/GlobalLaunch.tsx": "1dbb19db515e84f3c4f9c8f63585eba4f34f9d882be9e70756c4d0e77517eaad",
+    "src/intro/SphereIntroSurface.tsx": "26d604c62e797501746b308816314d1a7610533b4cb6caf548e74e66ca645c97",
+    "src/intro/nativeSplashGate.ts": "49e4b45ef7352f94547d5b5a27c5442f63432b4232132a3d1a527254984aa737",
+    "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+    "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+    "src/intro/sphereHtml.ts": "695a145bfa73ec335e04cf74d3ee4aa068f310ac20ef6fa3389ece651de43425",
+    "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+    "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+  }
+}

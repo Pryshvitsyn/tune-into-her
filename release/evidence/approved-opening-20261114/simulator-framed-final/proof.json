@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "status": "Verified final-framing Simulator photo handoff and full scene; Founder visual approval not claimed",
+  "sourceMovie": {
+    "sha256": "d6ec180e4adefe6bcc00376d6ff024747de93d73968a2754675f6ee6d9a4e9e3",
+    "videoPixels": [
+      750,
+      1334
+    ],
+    "decodedOriginalFrames": 697,
+    "mediaDurationSeconds": 26.531667,
+    "requestedWallRecordingSeconds": 40
+  },
+  "artifact": {
+    "nativeBinarySHA256": "bbdfe1c06d0000d5bb84fa3f7b7702a9b39e60811daba0bb9cf091aecadd9c4b",
+    "embeddedJavaScriptSHA256": "f9777bda670cb4ef76af219ceefe4fed291fcdad2c7e2995033f225d6041081b",
+    "codesignVerified": true,
+    "updatesResourcesMatch": true,
+    "nativeUpdatesEnabled": false,
+    "normalReleasePressureMarkerAbsent": true,
+    "sourceSHA256": {
+      "src/intro/GlobalLaunch.tsx": "1dbb19db515e84f3c4f9c8f63585eba4f34f9d882be9e70756c4d0e77517eaad",
+      "src/intro/SphereIntroSurface.tsx": "26d604c62e797501746b308816314d1a7610533b4cb6caf548e74e66ca645c97",
+      "src/intro/nativeSplashGate.ts": "49e4b45ef7352f94547d5b5a27c5442f63432b4232132a3d1a527254984aa737",
+      "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+      "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+      "src/intro/sphereHtml.ts": "695a145bfa73ec335e04cf74d3ee4aa068f310ac20ef6fa3389ece651de43425",
+      "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+      "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    }
+  },
+  "approvedReference": {
+    "source": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+    "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "sourcePixels": [
+      851,
+      1847
+    ],
+    "framing": "Uniform centered cover to750x1334; no redraw/recolor/stretch"
+  },
+  "comparisonROI": {
+    "left": 0,
+    "top": 70,
+    "width": 750,
+    "height": 1230
+  },
+  "pixelComparison": {
+    "framedReferenceToNative": {
+      "meanAbsoluteRGB": 2.298309665763324,
+      "rmsRGB": 3.1171223381804216,
+      "p99ChannelDifference": 8
+    },
+    "framedReferenceToRN": {
+      "meanAbsoluteRGB": 2.1343967479674797,
+      "rmsRGB": 2.7438921577645385,
+      "p99ChannelDifference": 8
+    },
+    "nativeToRN": {
+      "meanAbsoluteRGB": 1.6254110207768744,
+      "rmsRGB": 2.1919454262323343,
+      "p99ChannelDifference": 6
+    },
+    "limits": "Actual movie is lossy YUV; reference uses vips rather than UIKit interpolation. Native resource remains byte-exact. RGB values are0..255 channel units."
+  },
+  "recordedNativeRNHandoff": {
+    "manualWindowSeconds": [
+      16.655,
+      17.308333
+    ],
+    "frameCount": 40,
+    "maximumReferencePhotoRGBError": 2.2932942708333335,
+    "maximumConsecutiveRGBDelta": 0.25,
+    "foregroundDropoutObserved": false,
+    "wrongIntrinsicCropObserved": false,
+    "producerLimit": "Native versus identical RN photo pixels cannot individually identify exact native-present timing. Source gates, image bounds, status-bar ownership and subsequent continuous dissolve corroborate this handoff; no new native ACK API is claimed."
+  },
+  "photoDissolve": {
+    "windowSeconds": [
+      17.338,
+      18.108333
+    ],
+    "originalFrames": 48,
+    "maximumConsecutiveRGBDelta": 3.4287109375,
+    "fittedPhotoProfile": [
+      {
+        "frame": 174,
+        "moviePTSSeconds": 17.308333,
+        "fittedPhotographContribution": 1.000691953616375
+      },
+      {
+        "frame": 179,
+        "moviePTSSeconds": 17.393333,
+        "fittedPhotographContribution": 0.9556082840607188
+      },
+      {
+        "frame": 185,
+        "moviePTSSeconds": 17.491667,
+        "fittedPhotographContribution": 0.8428280204124323
+      },
+      {
+        "frame": 191,
+        "moviePTSSeconds": 17.593333,
+        "fittedPhotographContribution": 0.6816971488519852
+      },
+      {
+        "frame": 197,
+        "moviePTSSeconds": 17.691667,
+        "fittedPhotographContribution": 0.5125099032122401
+      },
+      {
+        "frame": 204,
+        "moviePTSSeconds": 17.81,
+        "fittedPhotographContribution": 0.34371948399802427
+      },
+      {
+        "frame": 209,
+        "moviePTSSeconds": 17.891667,
+        "fittedPhotographContribution": 0.2340607886237242
+      },
+      {
+        "frame": 215,
+        "moviePTSSeconds": 17.991667,
+        "fittedPhotographContribution": 0.06022509031789386
+      },
+      {
+        "frame": 222,
+        "moviePTSSeconds": 18.108333,
+        "fittedPhotographContribution": 0.008716222643155132
+      }
+    ],
+    "limits": "Least-squares contribution between recorded pre-fade photo and post-fade scene samples, not exact alpha telemetry. Background/depth moves during the fade. Multiple intermediate frames prove gradual transition rather than the earlier one-frame crop switch."
+  },
+  "requestedTimingSamples": {
+    "estimatedSceneStartMovieSeconds": 16.688333,
+    "limit": "Timing base inferred from correct RN-photo handoff and subsequent650ms fade onset; not logged GPU elapsed/presentation timestamps.",
+    "samples": [
+      {
+        "requestedRelativeMilliseconds": 0,
+        "file": "actual-rn-photo-frame137.png",
+        "frame": 137,
+        "moviePTSSeconds": 16.688333,
+        "label": "rn-photo",
+        "actualRelativeMilliseconds": 0
+      },
+      {
+        "requestedRelativeMilliseconds": 100,
+        "file": "actual-timing-0100ms-frame143.png",
+        "frame": 143,
+        "moviePTSSeconds": 16.791667,
+        "label": "timing-0100ms",
+        "actualRelativeMilliseconds": 103.334
+      },
+      {
+        "requestedRelativeMilliseconds": 300,
+        "file": "actual-timing-0300ms-frame155.png",
+        "frame": 155,
+        "moviePTSSeconds": 16.99,
+        "label": "timing-0300ms",
+        "actualRelativeMilliseconds": 301.667
+      },
+      {
+        "requestedRelativeMilliseconds": 600,
+        "file": "actual-timing-0600ms-frame173.png",
+        "frame": 173,
+        "moviePTSSeconds": 17.29,
+        "label": "timing-0600ms",
+        "actualRelativeMilliseconds": 601.667
+      },
+      {
+        "requestedRelativeMilliseconds": 1000,
+        "file": "actual-mid-dissolve-1000ms-frame197.png",
+        "frame": 197,
+        "moviePTSSeconds": 17.691667,
+        "label": "mid-dissolve-1000ms",
+        "actualRelativeMilliseconds": 1003.334
+      },
+      {
+        "requestedRelativeMilliseconds": 1500,
+        "file": "actual-timing-1500ms-frame226.png",
+        "frame": 226,
+        "moviePTSSeconds": 18.175,
+        "label": "timing-1500ms",
+        "actualRelativeMilliseconds": 1486.667
+      },
+      {
+        "requestedRelativeMilliseconds": 2000,
+        "file": "actual-timing-2000ms-frame252.png",
+        "frame": 252,
+        "moviePTSSeconds": 18.691667,
+        "label": "timing-2000ms",
+        "actualRelativeMilliseconds": 2003.334
+      }
+    ]
+  },
+  "flashCheck": {
+    "method": "Every decoded original frame, central80percent ROI area64x64 gray; black/nearblack>=98percent pixels<=18/30,white>=98percent>=245",
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0
+  },
+  "runtime": {
+    "signedNormalReleaseWithoutMetro": true,
+    "hostPressure": {
+      "workers": 6,
+      "workerMs": 6000,
+      "nativeQA": false
+    },
+    "nativeBridgeOrderingPass": true,
+    "sameProcessAliveAtEnd": true,
+    "fullPhotoThenDepthTravelThenOriginalV4Observed": true,
+    "lockedDestinationObservedPrivately": {
+      "frame": 696,
+      "moviePTSSeconds": 26.318333
+    },
+    "sixLayersAnd9000msProtectedBySourceTests": true,
+    "photoAndV4OnlyDuringBlockingIntro": true
+  },
+  "samples": [
+    {
+      "file": "actual-native-photo-frame96.png",
+      "frame": 96,
+      "moviePTSSeconds": 5.861667,
+      "label": "native-photo"
+    },
+    {
+      "file": "actual-last-static-photo-frame135.png",
+      "frame": 135,
+      "moviePTSSeconds": 16.655,
+      "label": "last-static-photo"
+    },
+    {
+      "file": "actual-rn-photo-frame137.png",
+      "frame": 137,
+      "moviePTSSeconds": 16.688333,
+      "label": "rn-photo"
+    },
+    {
+      "file": "actual-timing-0100ms-frame143.png",
+      "frame": 143,
+      "moviePTSSeconds": 16.791667,
+      "label": "timing-0100ms"
+    },
+    {
+      "file": "actual-timing-0300ms-frame155.png",
+      "frame": 155,
+      "moviePTSSeconds": 16.99,
+      "label": "timing-0300ms"
+    },
+    {
+      "file": "actual-timing-0600ms-frame173.png",
+      "frame": 173,
+      "moviePTSSeconds": 17.29,
+      "label": "timing-0600ms"
+    },
+    {
+      "file": "actual-mid-dissolve-1000ms-frame197.png",
+      "frame": 197,
+      "moviePTSSeconds": 17.691667,
+      "label": "mid-dissolve-1000ms"
+    },
+    {
+      "file": "actual-timing-1500ms-frame226.png",
+      "frame": 226,
+      "moviePTSSeconds": 18.175,
+      "label": "timing-1500ms"
+    },
+    {
+      "file": "actual-timing-2000ms-frame252.png",
+      "frame": 252,
+      "moviePTSSeconds": 18.691667,
+      "label": "timing-2000ms"
+    },
+    {
+      "file": "actual-depth-travel-frame270.png",
+      "frame": 270,
+      "moviePTSSeconds": 18.995,
+      "label": "depth-travel"
+    },
+    {
+      "file": "actual-depth-travel-frame300.png",
+      "frame": 300,
+      "moviePTSSeconds": 19.491667,
+      "label": "depth-travel"
+    },
+    {
+      "file": "actual-original-v4-frame672.png",
+      "frame": 672,
+      "moviePTSSeconds": 25.706667,
+      "label": "original-v4"
+    }
+  ],
+  "privacy": {
+    "rawMovieOSPreludeAndDestinationExcluded": true,
+    "noDeviceIDsProcessIDsNames": true,
+    "onlyReviewedIntroSamplesPublished": true
+  },
+  "limits": [
+    "Recording has sparse timing gaps during startup pressure; continuous16–17ms samples exist across the decisive fade.",
+    "Later photo disappearance is intentional opacity, not a foreground dropout. No claim is made about pixels between unrecorded samples.",
+    "Visual proof does not replace the separate unchanged-V4 GPU equality/integrity checks.",
+    "Physical final-framing verification is separate; this report does not claim it."
+  ],
+  "publishedClips": [
+    {
+      "file": "actual-photo-through-original-v4.mp4",
+      "sha256": "cca211838e26899026d87de59b069f586af897c53113b74304ad197c887ea4c1",
+      "sourceTrimStartSeconds": 5.861667,
+      "sourceTrimEndSeconds": 25.721667,
+      "durationSeconds": 19.870201,
+      "audioAndSourceMetadataRemoved": true,
+      "onlyReviewedCleanIntro": true
+    },
+    {
+      "file": "actual-nine-second-photo-depth-v4.mp4",
+      "sha256": "93cf31e4d3cceb037b63c472aa6e471ca7e742b9b4c5eb796488addd052d3480",
+      "sourceTrimStartSeconds": 16.655,
+      "sourceTrimEndSeconds": 25.721667,
+      "durationSeconds": 9.097659,
+      "audioAndSourceMetadataRemoved": true,
+      "onlyReviewedCleanIntro": true
+    }
+  ],
+  "outputValidation": {
+    "allPublishedPNGFilesFullyDecoded": 16,
+    "partialCopiesRegeneratedAfterENOSPC": true,
+    "publishedMP4sProbed": true
+  }
+}

@@ -11,7 +11,11 @@ const ts = require(path.join(repo,'node_modules/typescript'));
 require.extensions['.ts'] = (module, name) => module._compile(ts.transpileModule(fs.readFileSync(name,'utf8'), {compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText, name);
 const {makeAssociatedAlphaFragment,makeSphereHtml} = require(path.join(repo,'src/intro/sphereHtml.ts'));
 const {INTRO_BACKGROUND_URI} = require(path.join(repo,'src/intro/brandBackground.generated.ts'));
-const {introBackgroundOpacity} = require(path.join(repo,'src/intro/introPresentation.ts'));
+const {approvedOpeningOpacity,introBackgroundOpacity} = require(path.join(repo,'src/intro/introPresentation.ts'));
+const approvedPhoto=fs.readFileSync(path.join(repo,'assets/launch/approved-opening.png'));
+const referencePhoto=fs.readFileSync(path.join(repo,'assets/brand/reference/founder-approved-premium-v5-20261114.png'));
+if(!approvedPhoto.equals(referencePhoto))throw new Error('Opening image must be the exact archived Founder photograph');
+const approvedPhotoURI='data:image/png;base64,'+approvedPhoto.toString('base64');
 // Load the historical production module graph, without rewriting either shader.
 // A raw framebuffer comparison is independent of the new CSS background.
 const baselineRef=process.argv[3] || '71504ac77a33f888fe65a49c60069a27153f1bea';
@@ -72,16 +76,17 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
   const cdp=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
   const evaluate=async expression=>{const r=await cdp('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
   await cdp('Page.enable');await cdp('Runtime.enable');await cdp('Log.enable');
-  const rendererFiles=['src/intro/sphereHtml.ts','src/intro/timeline.ts','src/intro/sceneRuntime.generated.ts','src/intro/v4Shaders.generated.ts','src/intro/brand.generated.ts','src/intro/brandTexture.generated.ts','src/intro/brandBackground.generated.ts','src/intro/introPresentation.ts','assets/tune_into_her_sphere_source_clean.png'];
+  const rendererFiles=['src/intro/sphereHtml.ts','src/intro/timeline.ts','src/intro/sceneRuntime.generated.ts','src/intro/v4Shaders.generated.ts','src/intro/brand.generated.ts','src/intro/brandTexture.generated.ts','src/intro/brandBackground.generated.ts','src/intro/introPresentation.ts','src/intro/ApprovedOpening.tsx','src/intro/GlobalLaunch.tsx','src/intro/SphereIntroSurface.tsx','src/intro/nativeSplashGate.ts','assets/launch/approved-opening.png','assets/brand/reference/founder-approved-premium-v5-20261114.png','assets/tune_into_her_sphere_source_clean.png'];
   const sourceSha256=Object.fromEntries(rendererFiles.map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync(path.join(repo,file))).digest('hex')]));
   const metadata={sourceSha256,sourceCommit:cp.execFileSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8'}).trim(),workingTreeDirty:!!cp.execFileSync('git',['status','--porcelain'],{cwd:repo,encoding:'utf8'}).trim(),capturedAt:new Date().toISOString(),engine:'Chromium headless WebGL / ANGLE SwiftShader; not iOS or Android native evidence',frames:[],events};
-  const times=[0,100,300,500,600,1000,1350,1500,1800,2000,2350,2500,2850,3200,3500,3800,4000,4150,4300,4500,6500,9000,9360];
+  const times=[0,100,300,500,600,650,850,1000,1150,1350,1500,1800,2000,2350,2500,2850,3200,3500,3800,4000,4150,4300,4500,6500,9000,9360];
   const waitForReady=async()=>{
    let state;
    for(let i=0;i<300;i++){state=await evaluate('window.__TIH_TEST__?.state()');if(state?.failed)throw new Error(`Renderer failed: ${JSON.stringify(state)}`);if(state?.loaded)return state;await sleep(50);}
    throw new Error('Renderer never ready');
   };
   const framebuffer=async ms=>evaluate(`(async()=>{window.__TIH_TEST__.seek(${ms});const canvas=document.querySelector('canvas');const gl=canvas.getContext('webgl');gl.finish();const pixels=new Uint8Array(canvas.width*canvas.height*4);gl.readPixels(0,0,canvas.width,canvas.height,gl.RGBA,gl.UNSIGNED_BYTE,pixels);const glError=gl.getError();let nonzeroAlphaPixels=0;for(let i=3;i<pixels.length;i+=4)if(pixels[i])nonzeroAlphaPixels++;const hash=await crypto.subtle.digest('SHA-256',pixels);return {nonzeroAlphaPixels,renderer:gl.getParameter(gl.RENDERER),version:gl.getParameter(gl.VERSION),sha256:Array.from(new Uint8Array(hash),x=>x.toString(16).padStart(2,'0')).join(''),byteCount:pixels.length,canvas:[canvas.width,canvas.height],glError};})()`);
+  metadata.approvedOpening={imageSHA256:crypto.createHash('sha256').update(approvedPhoto).digest('hex'),byteIdenticalToArchivedReference:true,framing:'Uniform centered cover, no stretching/recoloring or separate logo',clock:'Actual prepare token1 photographicOpening:true remains frozen; existing test seek selects each checkpoint without releasing RAF',fade:'Production approvedOpeningOpacity: opaque through650ms, smoothstep to0by1350ms'};
   metadata.v4Comparison={baselineCommit,method:'Exact raw straight-color RGBA readPixels: current test-only straightReference versus untouched historical production, preserving the original V4 calculation guard; no background pixels',samples:[]};
   metadata.associatedPresentationComparison={baselineCommit,method:'Exact associated RGBA readPixels: current production versus historical production with only the same final associated-alpha presentation adapter; no V4 or timeline calculation changes',samples:[]};
   for(const [label,width,height] of [['iphone-se',375,667],['iphone-tall',393,852],['android-compact',360,800],['android-tall',412,915]]) {
@@ -89,17 +94,19 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
    await cdp('Page.navigate',{url:`file://${htmlPath}`});
    await waitForReady();
    const configure=`window.__TIH_CONTROL__({type:'configure',target:{x:${width/2},y:${height/2},radius:${Math.min(width*.38,height*.25)}},ink:[${41/255},${68/255},${88/255}]});true`;
-   await evaluate(`(async()=>{const image=new Image();image.src=${JSON.stringify(INTRO_BACKGROUND_URI)};await image.decode();document.body.style.background='linear-gradient(90deg,#DCE3E9 0%,#F9FBFC 50%,#DCE3E9 100%)';const backdrop=document.createElement('div');backdrop.id='intro-background';backdrop.style.cssText='position:fixed;inset:0;pointer-events:none;background-position:center;background-size:cover';backdrop.style.backgroundImage='url('+${JSON.stringify(INTRO_BACKGROUND_URI)}+')';document.body.prepend(backdrop);document.querySelector('canvas').style.position='relative';${configure}})()`);
+   await evaluate(`(async()=>{const image=new Image();image.src=${JSON.stringify(INTRO_BACKGROUND_URI)};await image.decode();const photo=new Image();photo.id='approved-opening-photo';photo.src=${JSON.stringify(approvedPhotoURI)};await photo.decode();photo.style.cssText='position:fixed;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;pointer-events:none;z-index:2';document.body.append(photo);document.body.style.background='linear-gradient(90deg,#DCE3E9 0%,#F9FBFC 50%,#DCE3E9 100%)';const backdrop=document.createElement('div');backdrop.id='intro-background';backdrop.style.cssText='position:fixed;inset:0;pointer-events:none;background-position:center;background-size:cover';backdrop.style.backgroundImage='url('+${JSON.stringify(INTRO_BACKGROUND_URI)}+')';document.body.prepend(backdrop);document.querySelector('canvas').style.position='relative';${configure};window.__TIH_CONTROL__({type:'prepare',token:1,animate:true,reducedMotion:false,photographicOpening:true});return true;})()`);
    for(const ms of times){
     const backgroundOpacity=introBackgroundOpacity(ms);
-    await evaluate(`document.getElementById('intro-background').style.opacity=${backgroundOpacity};true`);
-    const info=await evaluate(`window.__TIH_TEST__.seek(${ms});(()=>{const canvas=document.querySelector('canvas');const gl=canvas.getContext('webgl');gl.finish();return {state:window.__TIH_TEST__.state(),context:gl.getContextAttributes(),canvas:[canvas.width,canvas.height],viewport:Array.from(gl.getParameter(gl.VIEWPORT)),glError:gl.getError(),devicePixelRatio,innerWidth,innerHeight};})()`);
+    const openingPhotoOpacity=approvedOpeningOpacity(ms);
+    await evaluate(`document.getElementById('intro-background').style.opacity=${backgroundOpacity};document.getElementById('approved-opening-photo').style.opacity=${openingPhotoOpacity};true`);
+    const info=await evaluate(`window.__TIH_TEST__.seek(${ms});(()=>{const canvas=document.querySelector('canvas');const gl=canvas.getContext('webgl');gl.finish();const program=gl.getParameter(gl.CURRENT_PROGRAM);return {state:window.__TIH_TEST__.state(),logoOpacityUniform:gl.getUniform(program,gl.getUniformLocation(program,'u_logoOpacity')),context:gl.getContextAttributes(),canvas:[canvas.width,canvas.height],viewport:Array.from(gl.getParameter(gl.VIEWPORT)),glError:gl.getError(),devicePixelRatio,innerWidth,innerHeight};})()`);
+    if(info.state.preparedToken!==1 || info.logoOpacityUniform!==0)throw new Error(`Photographic opening must own the emblem without a second GPU logo: ${label}/${ms}`);
     if(info.glError) throw new Error(`WebGL error ${info.glError} at ${label}/${ms}`);
     const shot=await cdp('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
     const file=`${label}-${String(ms).padStart(5,'0')}.png`;
     const data=Buffer.from(shot.data,'base64');fs.writeFileSync(path.join(out,file),data);
     const visibleDepthLayers=Array.from({length:6},(_,layer)=>({layer,z:info.state.scene.camera+.62-layer*.68})).filter(item=>info.state.scene.layers>0&&item.z>.08&&item.z<2.30).map(item=>item.layer);
-    metadata.frames.push({file,ms,width,height,backgroundOpacity,visibleDepthLayers,sha256:crypto.createHash('sha256').update(data).digest('hex'),...info});
+    metadata.frames.push({file,ms,width,height,backgroundOpacity,openingPhotoOpacity,visibleDepthLayers,sha256:crypto.createHash('sha256').update(data).digest('hex'),...info});
    }
    const associatedPixels=new Map();
    for(const ms of [9000,9360])associatedPixels.set(ms,await framebuffer(ms));

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "kind": "Intermediate actual signed Release Simulator photo opening before RN intrinsic-image framing fix",
+  "sourceMovie": {
+    "sha256": "95ce82b45e62d157ad394c2f56ff030063b6f492720dfd040a5c41e98be7eb8d",
+    "videoPixels": [
+      750,
+      1334
+    ],
+    "decodedFrames": 715,
+    "mediaDurationSeconds": 22.406667,
+    "wallRecordingSeconds": 40
+  },
+  "artifact": {
+    "nativeBinarySHA256": "764826cfb84c9d87c47f3d3ce6fe689212eefd4debe9769c1b08897f2af96ba0",
+    "embeddedJavaScriptSHA256": "1a61e13aabb81de8e867396f69471aa213ff53ad68ae205b86a034302207d2fd",
+    "codesignVerified": true,
+    "updatesResourcesMatch": true,
+    "normalReleasePressureMarkerAbsent": true,
+    "sourceSHA256": {
+      "src/intro/SphereIntroSurface.tsx": "3720b0da471eb0e45c1b4eaca1f6506d3996b9f3152576d616b843c18ec63037",
+      "src/intro/ApprovedOpening.tsx": "229b0c974f5077204c394c2360e5956d75aadd927385659ac473a90b693e5f0a",
+      "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+      "src/intro/sphereHtml.ts": "695a145bfa73ec335e04cf74d3ee4aa068f310ac20ef6fa3389ece651de43425",
+      "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+      "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    }
+  },
+  "approvedReference": {
+    "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "sourcePixels": [
+      851,
+      1847
+    ],
+    "framing": "Centered aspect-fill, uniform scale and centered crop to750x1334; unchanged photograph"
+  },
+  "actualFrameSamples": [
+    {
+      "file": "actual-native-approved-photo-frame63.png",
+      "originalDecodedFrame": 63,
+      "moviePTSSeconds": 2.8,
+      "description": "Actual native photo \u00b7frame63 /2.800s"
+    },
+    {
+      "file": "actual-opening-after-handoff-frame120.png",
+      "originalDecodedFrame": 120,
+      "moviePTSSeconds": 10.695,
+      "description": "Actual last correct static/native photograph before wrong RN framing"
+    },
+    {
+      "file": "actual-transition-metal-frame138.png",
+      "originalDecodedFrame": 138,
+      "moviePTSSeconds": 10.995,
+      "description": "Actual wrong intrinsic RN photograph crop; previously misidentified as entering metal"
+    },
+    {
+      "file": "actual-depth-travel-frame243.png",
+      "originalDecodedFrame": 243,
+      "moviePTSSeconds": 14.508333,
+      "description": "Actual visible depth travel \u00b7frame243 /14.508333s"
+    },
+    {
+      "file": "actual-depth-travel-frame290.png",
+      "originalDecodedFrame": 290,
+      "moviePTSSeconds": 15.295,
+      "description": "Actual visible depth travel \u00b7frame290 /15.295s"
+    },
+    {
+      "file": "actual-original-v4-frame422.png",
+      "originalDecodedFrame": 422,
+      "moviePTSSeconds": 17.495,
+      "description": "Actual original V4 \u00b7frame422 /17.495s"
+    }
+  ],
+  "imageComparison": {
+    "excludedOSStatusRegionPixels": {
+      "left": 0,
+      "top": 70,
+      "width": 750,
+      "height": 1264
+    },
+    "referenceFramedToActualNative": {
+      "meanAbsoluteRGB": 2.031661040787623,
+      "rmsRGB": 2.596158987977806,
+      "maxChannelDifference": 54,
+      "p99ChannelDifference": 7
+    },
+    "actualNativeToVisiblePhotoAfterHandoff": {
+      "meanAbsoluteRGB": 0.7705288326300984,
+      "rmsRGB": 1.2621499528646247,
+      "maxChannelDifference": 15,
+      "p99ChannelDifference": 4
+    },
+    "limits": "Actual movie is lossy YUV. Reference fitting uses libvips rather than UIKit sampling; small raster/codec differences are expected. Source/native asset bytes are exact. The two correct photo samples may both be native static coverage; they do not prove correct RN framing."
+  },
+  "runtime": {
+    "all715OriginalFramesBlackCount": 0,
+    "nativeBridgeStageOrderingPass": true,
+    "sameProcessAliveAtEnd": true,
+    "releaseWithoutMetro": true,
+    "noNativePressureCompileFlag": true,
+    "hostPressure": "Existing capture metadata: bounded6 host workers for6000ms; not a measured iPhone CPU benchmark",
+    "photoToMetalTravelObserved": true,
+    "sixLayerSceneProtectedBySourceAndGPUChecks": true,
+    "originalV4Visible": true,
+    "lockedEntryObserved": {
+      "originalDecodedFrame": 710,
+      "moviePTSSeconds": 22.293333,
+      "privateDestinationImageNotCopied": true
+    },
+    "nativeToRNExactProducerBoundary": "Not individually distinguishable from identical photograph pixels. Native stage ordering and actual first/after photo samples corroborate handoff; no exact GPU-present timestamp was captured."
+  },
+  "privacy": {
+    "onlyReviewedIntroFramesAndClip": true,
+    "OSHomePreludeExcluded": true,
+    "destinationPixelsExcluded": true,
+    "noDeviceIDsProcessIDsNames": true
+  },
+  "limits": [
+    "Frame timestamps are recorded mediaPTS, not GPU elapsed or exact wall timing; sparse frames under host pressure create temporal gaps.",
+    "The source retains9000ms/six-depth-layer choreography and original V4; single video cannot count hidden planes at every time.",
+    "No Founder visual approval is claimed. Physical iPhone final-photo proof is separate and pending this checkpoint."
+  ],
+  "publishedClip": {
+    "file": "actual-photo-through-original-v4.mp4",
+    "sha256": "465fc0a1119dd24ee5ce47dd46a6a272204d3b7dc439264659420736f18ad60e",
+    "sourceTrimStartSeconds": 2.8,
+    "sourceTrimEndSeconds": 21.85,
+    "encodedDurationSeconds": 19.053501,
+    "audioRemoved": true,
+    "metadataRemoved": true,
+    "OSPreludeAndPrivateDestinationExcluded": true,
+    "continuousSourceTime": true,
+    "limits": "Pressure capture preserves a long real native/photo initialization plateau; it is not a shortened or idealized9s mockup. Locked entry was reviewed privately outside the public clip."
+  },
+  "smoothPhotoTransitionAcceptance": {
+    "passed": false,
+    "status": "FAILED shared RN intrinsic Image sizing; native source correct, subsequent RN photo is oversized. Supersedes the initial metal-shell inference; requires corrected build and capture."
+  }
+}

@@ -27,6 +27,7 @@ function withApprovedLaunchSplash(config) {
     for (const [name, filename, scale] of [
       ['LaunchLogo', 'official-launch-mark.png', '2x'],
       ['LaunchSteelBackground', 'steel-background.png', '1x'],
+      ['LaunchApprovedOpening', 'approved-opening.png', '1x'],
     ]) {
       const target = path.join(images, `${name}.imageset`);
       await fs.mkdir(target, { recursive: true });

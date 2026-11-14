@@ -93,11 +93,17 @@ The cover/link are released. Debug launcher behavior is retained. A compile-only
 QA flag permits bounded explicit pressure work; normal Release contains no such work.
 The existing config plugin emits the canonical helper idempotently into AppDelegate.
 
-V5 uses a full-RGBA metallic foreground and separately authored steel background, never
-a stretched reference photograph. Shared generated constants align native/RN/GPU first
-frames. IntroAtmosphere fades from2000–6500ms using the same pure function on the UI clock;
-intro-only shader light fades with the original logo. V4/direct final shader return,
-all six ribbons, timeline and eight-second material loop are unchanged. The root native
+The immutable Founder PNG now owns the opening: one native aspect-fill image and the
+shared ApprovedOpening RN component use the same bytes. RN explicitly sets100% width
+and height to override static Image's intrinsic851×1847 point defaults. After preparation,
+Global queues the native splash hide, then the existing four active UI-frame ownership
+barrier precedes GPU release. The promise acknowledges queueing, not a native paint API.
+A deduplicated controller bounds/retries hide failures without replaying the intro.
+
+The photo yields650–1350ms into the existing metal/depth scene. Its SVG emblem uniform
+is zero during this presentation, preventing two mismatched logos from crossfading.
+IntroAtmosphere still fades2000–6500ms; all six ribbons, protected V4 calculations,
+texture, camera/timeline and eight-second material loop remain unchanged. The root native
 Stack consumes a threshold-only intro contrast signal for dark/light clock readability
 while preserving saved destination themes and all routing/access handlers.
 

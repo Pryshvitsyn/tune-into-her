@@ -8,18 +8,35 @@ node tests/intro-frames/capture.cjs /tmp/tih-intro-frames 71504ac77a33f888fe65a4
 
 This loads `makeSphereHtml` from the actual TypeScript module graph, original V4
 texture and approved scene runtime. The renderer's existing test-only `seek` hook
-selects 23 checkpoints from 0 through 9360ms, including 100/300/600/1500ms
-handoff samples, the camera/depth joins,
+selects 26 checkpoints from 0 through 9360ms, including 100/300/600/1500ms
+handoff samples and the 650/850/1000/1150/1350ms photographic transition, the camera/depth joins,
 all six ribbons, the 6500ms background fade completion and the 9000ms scene end.
-No replacement shader, scene, logo or motion is drawn. The 9360ms sample retains
+No replacement shader, scene or motion is drawn. The 9360ms sample retains
 the final scene geometry while advancing the original material clock.
 
 Four 2x-DPR viewports cover compact/tall iPhone and compact/tall Android aspect
 ratios. Each PNG is a full viewport. `frames.json` records actual scene values,
 framebuffer/viewport dimensions, SHA-256, WebGL errors and JavaScript exceptions.
+Source hashes include the actual ApprovedOpening component, GlobalLaunch,
+SphereIntroSurface and nativeSplashGate so pixels correlate with the complete
+framing/handoff source revision. CSS cover does not execute React Native Image
+layout: the explicit 100% width/height regression and actual native capture must
+verify that separate boundary.
 The generated steel-blue background covers the original silver CSS gradient and
 uses the same `introBackgroundOpacity` function as the app: opaque through 2000ms,
-then smoothly removed by 6500ms. The native WebView itself stays transparent. Six
+then smoothly removed by 6500ms. Above WebGL, the exact archived Founder PNG is
+centered with CSS `object-fit:cover`, corresponding to the app's native/RN Image
+layer. Its bytes must equal `assets/launch/approved-opening.png`. The production
+`approvedOpeningOpacity` function keeps it opaque through 650ms and fades it out
+by 1350ms. No photograph is redrawn, tinted or stretched.
+
+The tool sends the actual renderer `prepare` command with token1 and
+`photographicOpening:true`, then keeps it frozen with the existing test-only seek
+hook. Every captured GPU uniform must report `u_logoOpacity=0`, proving the
+reconstructed emblem cannot appear alongside the photograph. `frames.json` records
+the photo/background opacity and preparation token at every checkpoint. This is a
+deterministic rendering test, not an assertion that a native visibility commit or
+release acknowledgement has been exercised. The native WebView itself stays transparent. Six
 additional actual-GPU probes verify completed-sphere scissor bounds outside and across
 the viewport edges; any GL error or JavaScript exception fails the capture.
 The renderer HTML and temporary Chrome profile stay outside the repository.

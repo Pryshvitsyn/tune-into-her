@@ -5,9 +5,9 @@ import { WebView, type WebViewMessageEvent } from 'react-native-webview';
 
 import { prepareSphereAsset } from '../../TuneIntoHerSphereV4';
 
+import { ApprovedOpening } from './ApprovedOpening';
 import { DestinationSphere, useLaunchPresentation } from './LaunchPresentation';
-import { FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y, INTRO_BACKGROUND_COLOR, INTRO_BACKGROUND_URI } from './brandBackground.generated';
-import { BRAND_TEXTURE_URI, PADDED_LOGO_WIDTH_SCALE, PADDED_LOGO_HEIGHT_SCALE } from './brandTexture.generated';
+import { approvedOpeningOpacity } from './introPresentation';
 import { makeSphereHtml } from './sphereHtml';
 import { advanceSurfaceHandoff, type SurfaceHandoffStage } from './surfaceHandoff';
 import { INTRO_MS, type Circle, type Size, validCircle } from './timeline';
@@ -20,6 +20,8 @@ interface Props {
   elapsed: SharedValue<number>;
   animate: boolean;
   active: boolean;
+  /** Cold launch waits for the native splash hide request; Home is already visible. */
+  playbackAllowed?: boolean;
   preferencesReady: boolean;
   reducedMotion: boolean;
   ink: string;
@@ -38,7 +40,7 @@ function rgb(hex: string): number[] {
 
 /** Shared launch/Today surface. The same WebView keeps animating V4 after completion. */
 export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function SphereIntroSurface(
-  {view, target, elapsed, animate, active, preferencesReady, reducedMotion, ink, launch = false, onFirstFrame, onComplete, onError}, forwardedRef,
+  {target, elapsed, animate, active, playbackAllowed = true, preferencesReady, reducedMotion, ink, launch = false, onFirstFrame, onComplete, onError}, forwardedRef,
 ) {
   const { prepareDestinationSpheres } = useLaunchPresentation();
   const preparationAllowed = launch || prepareDestinationSpheres;
@@ -50,8 +52,7 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   const [preparedForCommit, setPreparedForCommit] = useState(false);
   const [failed, setFailed] = useState(false);
   const [finished, setFinished] = useState(false);
-  const [coverBackgroundLoaded, setCoverBackgroundLoaded] = useState(false);
-  const [coverForegroundLoaded, setCoverForegroundLoaded] = useState(false);
+  const [coverLoaded, setCoverLoaded] = useState(false);
   const [posterLoaded, setPosterLoaded] = useState(false);
   const [posterFailed, setPosterFailed] = useState(false);
   const posterFailureReported = useRef(false);
@@ -62,11 +63,12 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   const failedRef = useRef(false);
   const prepared = useRef(false);
   const released = useRef(false);
-  const activeRef = useRef(active);
-  activeRef.current = active;
+  const playbackActive = active && playbackAllowed;
+  const activeRef = useRef(playbackActive);
+  activeRef.current = playbackActive;
   const opening = animate && !reducedMotion && !finished && !skipped.current;
   const handoffStage = useSharedValue<SurfaceHandoffStage>(0);
-  const uiActive = useSharedValue(active);
+  const uiActive = useSharedValue(playbackActive);
   const uiAlive = useSharedValue(true);
   const uiCoverReady = useSharedValue(false);
   const callbacks = useRef({onFirstFrame,onComplete,onError});
@@ -90,7 +92,7 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   const releasePrepared = useCallback((token: number) => {
     if (!alive.current || failedRef.current || !prepared.current || released.current || token !== 1) return;
     if (!activeRef.current) {
-      // The app may become inactive after the worklet queued this JS callback.
+      // Activity or native splash ownership may change after this callback was queued.
       // Re-present the opaque cover before retrying; a backgrounded display
       // callback is not proof that its pending reveal reached the screen.
       handoffStage.value = 1;
@@ -110,6 +112,9 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   const handoffFrames = useFrameCallback(onHandoffFrame, false);
   const gpuStyle = useAnimatedStyle(() => ({ opacity: handoffStage.value > 0 ? 1 : 0 }));
   const coverStyle = useAnimatedStyle(() => ({ opacity: handoffStage.value < 4 ? 1 : 0 }));
+  const photographStyle = useAnimatedStyle(() => ({
+    opacity: handoffStage.value < 4 ? 1 : approvedOpeningOpacity(elapsed.value),
+  }));
   const fail = useCallback((message: string) => {
     if (!alive.current || failedRef.current) return;
     failedRef.current = true;
@@ -146,12 +151,12 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
     };
   }, [elapsed,uiAlive]);
   useEffect(() => {
-    uiActive.value = active;
-    if (!active && prepared.current && !released.current && !failedRef.current) handoffStage.value = 1;
-  }, [active,handoffStage,uiActive]);
+    uiActive.value = playbackActive;
+    if (!playbackActive && prepared.current && !released.current && !failedRef.current) handoffStage.value = 1;
+  }, [playbackActive,handoffStage,uiActive]);
   useEffect(() => {
-    uiCoverReady.value = !opening || (coverBackgroundLoaded && coverForegroundLoaded);
-  }, [opening,coverBackgroundLoaded,coverForegroundLoaded,uiCoverReady]);
+    uiCoverReady.value = !opening || coverLoaded;
+  }, [opening,coverLoaded,uiCoverReady]);
   useEffect(() => {
     handoffFrames.setActive(preparedForCommit && !frameReady && !failed);
     return () => handoffFrames.setActive(false);
@@ -163,10 +168,11 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
     return () => {current=false;};
   }, [fail]);
   useEffect(() => {
-    if (frameReady || failed || !active || !preparationAllowed) return;
+    // A healthy prepared frame may wait indefinitely for native ownership/activity.
+    if (frameReady || preparedForCommit || failed || !active || !preparationAllowed) return;
     const timer = setTimeout(() => fail('V4 first frame timed out; using the bundled poster.'), 12000);
     return () => clearTimeout(timer);
-  }, [frameReady,failed,active,preparationAllowed,fail]);
+  }, [frameReady,preparedForCommit,failed,active,preparationAllowed,fail]);
 
   // HTML source does not change with text, theme, target rectangle, focus or animation time.
   const source = useMemo(() => texture ? {html:makeSphereHtml(texture)} : null, [texture]);
@@ -176,14 +182,14 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   }, [ready,failed,target,ink,send]);
   useEffect(() => {
     if(!ready || failed) return;
-    send({type:'active',value:active});
-    if(!active) cancelAnimation(elapsed);
-  }, [active,ready,failed,elapsed,send]);
+    send({type:'active',value:playbackActive});
+    if(!playbackActive) cancelAnimation(elapsed);
+  }, [playbackActive,ready,failed,elapsed,send]);
   useEffect(() => {
     if(!ready || failed || !preparationAllowed || !preferencesReady || !active || !validCircle(target) || started.current) return;
     started.current = true;
     send({type:'configure',target,ink:rgb(ink)});
-    send({type:'prepare',animate:animate && !skipped.current,reducedMotion,token:1});
+    send({type:'prepare',animate:animate && !skipped.current,reducedMotion,photographicOpening:true,token:1});
   }, [ready,failed,preparationAllowed,preferencesReady,active,target,animate,reducedMotion,ink,send]);
   useEffect(() => {
     if(ready && started.current && !failed) send({type:'reduce-motion',value:reducedMotion});
@@ -191,8 +197,8 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
 
   const posterVisible = failed || (!frameReady && !opening);
   useEffect(() => {
-    if (opening && !failed && coverBackgroundLoaded && coverForegroundLoaded) firstFrame('fallback');
-  }, [opening,failed,coverBackgroundLoaded,coverForegroundLoaded,firstFrame]);
+    if (opening && !failed && coverLoaded) firstFrame('fallback');
+  }, [opening,failed,coverLoaded,firstFrame]);
   useEffect(() => {
     if (!posterVisible || (!posterLoaded && !posterFailed)) return;
     if (posterFailed && !posterFailureReported.current) {
@@ -240,9 +246,6 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
     }
   }, [complete,elapsed,fail,handoffStage,send]);
 
-  const logoWidth = Math.min(view.width*FIRST_FRAME_LOGO_WIDTH_FRACTION,FIRST_FRAME_LOGO_WIDTH_CAP);
-  const paddedWidth = logoWidth * PADDED_LOGO_WIDTH_SCALE;
-  const paddedHeight = logoWidth * PADDED_LOGO_HEIGHT_SCALE;
   const content = <View testID={frameReady && !failed ? 'intro-owner-gpu' : 'intro-owner-fallback'} pointerEvents="none" accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={StyleSheet.absoluteFill}>
     {source ? <Animated.View testID="intro-gpu-surface" style={[StyleSheet.absoluteFill,gpuStyle]}><WebView
       ref={web}
@@ -272,14 +275,9 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
         style={{position:'absolute',left:target.x-target.radius,top:target.y-target.radius,width:target.radius*2,height:target.radius*2,opacity:posterVisible?1:0}}
       />
     </Animated.View>
-    {opening && !failed ? <Animated.View testID="intro-native-cover" style={[StyleSheet.absoluteFill,{backgroundColor:INTRO_BACKGROUND_COLOR},coverStyle]}>
-      <Image source={{uri:INTRO_BACKGROUND_URI}} resizeMode="cover" fadeDuration={0} style={StyleSheet.absoluteFill}
-        onLoad={() => {if (alive.current) setCoverBackgroundLoaded(true);}}
-        onError={() => fail('Bundled launch atmosphere failed; using the V4 poster.')} />
-      <Image source={{uri:BRAND_TEXTURE_URI}} resizeMode="contain" fadeDuration={0}
-        onLoad={() => {if (alive.current) setCoverForegroundLoaded(true);}}
-        onError={() => fail('Bundled launch logo failed; using the V4 poster.')}
-        style={{position:'absolute',left:view.width*FIRST_FRAME_LOGO_CENTER_X-paddedWidth/2,top:view.height*FIRST_FRAME_LOGO_CENTER_Y-paddedHeight/2,width:paddedWidth,height:paddedHeight}} />
+    {opening && !failed ? <Animated.View testID="intro-native-cover" style={[StyleSheet.absoluteFill,photographStyle]}>
+      <ApprovedOpening onReady={() => { if (alive.current) setCoverLoaded(true); }}
+        onError={() => fail('Approved opening photograph failed; using the V4 poster.')} />
     </Animated.View> : null}
   </View>;
   return launch ? content : <DestinationSphere style={StyleSheet.absoluteFill}>{content}</DestinationSphere>;

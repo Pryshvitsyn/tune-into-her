@@ -798,6 +798,24 @@ extension LaunchUIQA {
     return tab
   }
 
+  /// Native AX hit points can target a decorative child. Verify navigation and
+  /// allow one explicit frame-center retry before reporting an application issue.
+  func tapNativePrimaryTab(_ label: String, in app: XCUIApplication, expect destination: XCUIElement) {
+    let tab = nativePrimaryTab(label, in: app)
+    print("TIH_PRIMARY_TAB_BEFORE \(label) frame=\(tab.frame) destinationExists=\(destination.exists)")
+    print("TIH_PRIMARY_TAB_AX_BEFORE \(app.debugDescription)")
+    capture(app, "tab-\(label.lowercased())-before-native-tap")
+    tab.tap()
+    if destination.waitForExistence(timeout: 2) { return }
+    capture(app, "tab-\(label.lowercased())-semantic-tap-did-not-navigate")
+    print("TIH_PRIMARY_TAB_CENTER_RETRY \(label) frame=\(tab.frame)")
+    let frame = tab.frame
+    app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+      dx: frame.midX - app.frame.minX, dy: frame.midY - app.frame.minY
+    )).tap()
+    XCTAssertTrue(destination.waitForExistence(timeout: 5), "Both native semantic and bounded center taps must reach \(label)")
+  }
+
   func assertLockedToday(in app: XCUIApplication, timeout: TimeInterval = 5) {
     XCTAssertTrue(app.staticTexts["An active trial or subscription unlocks today’s context."].firstMatch.waitForExistence(timeout: timeout))
     XCTAssertTrue(app.buttons["View subscription"].exists)
@@ -815,8 +833,8 @@ extension LaunchUIQA {
     assertLockedToday(in: app)
     let process = try nativeProcess(in: app)
     for doubleTap in [false, true] {
-      nativePrimaryTab("Settings", in: app).tap()
-      XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch.waitForExistence(timeout: 5))
+      let settingsRoot = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
+      tapNativePrimaryTab("Settings", in: app, expect: settingsRoot)
       let home = app.buttons["brand-home"].firstMatch
       XCTAssertTrue(home.waitForExistence(timeout: 5))
       XCTAssertTrue(home.isHittable)
@@ -959,7 +977,8 @@ extension LaunchUIQA {
     assertLockedToday(in: app)
     let originalProcess = try nativeProcess(in: app)
     func appearanceFromLockedToday() {
-      nativePrimaryTab("Settings", in: app).tap()
+      let settingsRoot = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
+      tapNativePrimaryTab("Settings", in: app, expect: settingsRoot)
       let appearance = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Appearance")).firstMatch
       requireBodyElementFullyVisible(appearance, in: app)
       appearance.tap()
@@ -1025,7 +1044,7 @@ extension LaunchUIQA {
     let lightImage = try XCTUnwrap(app.screenshot().image.cgImage)
     XCTAssertFalse(try XCTUnwrap(statusBarReadability(in: lightImage)).darkBackground)
     app.buttons["secondary-settings"].firstMatch.tap()
-    nativePrimaryTab("Advice", in: app).tap()
+    tapNativePrimaryTab("Advice", in: app, expect: app.staticTexts["An active trial or subscription unlocks today’s context."].firstMatch)
     assertLockedToday(in: app)
     capture(app, "61-light-locked-today-restored-no-billing")
   }
@@ -1389,7 +1408,8 @@ extension LaunchUIQA {
     app.activate()
     assertLockedToday(in: app, timeout: 30)
     let process = try nativeProcess(in: app)
-    nativePrimaryTab("Settings", in: app).tap()
+    let settingsRoot = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
+    tapNativePrimaryTab("Settings", in: app, expect: settingsRoot)
     let privacy = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Privacy")).firstMatch
     requireBodyElementFullyVisible(privacy, in: app)
     privacy.tap()

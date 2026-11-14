@@ -65,7 +65,8 @@ commands cannot replay the scene. Bridge wall-clock compensation was removed.
   The USB stream includes delayed private prelude and ends during V4, so this is
   handoff proof, not a complete9s/destination video. Private prelude/raw logs stay outside Git.
 - Native Dark/Home/cold/Light restoration passed on retry. A prior harness Settings tap
-  did not navigate; its failure is preserved. Remaining selected native checks continue.
+  did not navigate; its failure is preserved. All6 selected native cases subsequently
+  passed with native OFF/Light restored; see the separate checkpoint UI results.
 - Android SDK/JDK/adb/emulator are absent. No native Android runtime pass is claimed.
 
 No source V4, timeline, six-layer math, font, reference, brand geometry, billing, cycle,

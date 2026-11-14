@@ -1,0 +1,89 @@
+{
+  "framesCaptured": 104,
+  "sourceHashesRechecked": true,
+  "originalPNGCount": 11,
+  "contacts": 3,
+  "sourcePhase": "After explicit native/RN Image dimensions and cold-native-splash gate source fixes",
+  "files": [
+    {
+      "file": "iphone-se-00000.png",
+      "bytes": 842498,
+      "sha256": "2f883551ace414bf7fad38711bdf32dbd04ccb7b35623cd91f21609c376b7f4d"
+    },
+    {
+      "file": "android-compact-00000.png",
+      "bytes": 935662,
+      "sha256": "f325976b212d208a9d42991ddfc5e79e02819d82f2ec9787de9ce98ede08d2e4"
+    },
+    {
+      "file": "android-tall-00000.png",
+      "bytes": 1227347,
+      "sha256": "e68f33033dabdcf25deacca3acf0757a3fb13cc059e5bbb9ec9b5d0b7c17f7c7"
+    },
+    {
+      "file": "iphone-tall-00000.png",
+      "bytes": 1122764,
+      "sha256": "3de880552c21a50a27b65a299927c001ab363c14e3528974aabfd87b8fe1312a"
+    },
+    {
+      "file": "iphone-tall-00650.png",
+      "bytes": 1122759,
+      "sha256": "7a64f35425e9f2e4d91dfe7678b2d048248b7b6556e608660985af45fe24a442"
+    },
+    {
+      "file": "iphone-tall-00850.png",
+      "bytes": 1070912,
+      "sha256": "ffdfbb15f14d62d2b07848f25030d1f5f22e3734fdf28d9ec566b3c5adf78b61"
+    },
+    {
+      "file": "iphone-tall-01000.png",
+      "bytes": 924127,
+      "sha256": "0da4262e0c9bcde1804f01e6d9f4e029b674d479234cccd6b2d667080ea06744"
+    },
+    {
+      "file": "iphone-tall-01150.png",
+      "bytes": 913566,
+      "sha256": "08b1c700474e999e4b7e52856767b526263f99cc4a0dced3c9fddeb930fae3fc"
+    },
+    {
+      "file": "iphone-tall-01350.png",
+      "bytes": 825868,
+      "sha256": "8173c6a954446bf8c6babcba8064d23f9e980b02e2500ad640d8780cf4e1aa4b"
+    },
+    {
+      "file": "iphone-tall-03500.png",
+      "bytes": 1128139,
+      "sha256": "c33caebad5f32f89e0b87578c786e8efa59dfed036252571fd2807afb17f6219"
+    },
+    {
+      "file": "iphone-tall-09000.png",
+      "bytes": 637142,
+      "sha256": "d2e3384e9859554e7339dcd4f254ffbc9ce542eef18d1fc9295ed69d832cf022"
+    },
+    {
+      "file": "reference-previous-current-contact.png",
+      "bytes": 501157,
+      "sha256": "d47a8f5b9dcc448169b868537c270162beacafeab1bc37f91f02d77eeef1b364"
+    },
+    {
+      "file": "exact-photo-four-ratios-contact.png",
+      "bytes": 379472,
+      "sha256": "0a08f139b51ecf017537a8ddbc089c6fc2f91644a9ebd97dc3b477eae82503bf"
+    },
+    {
+      "file": "exact-photo-takeover-contact.png",
+      "bytes": 1329029,
+      "sha256": "f6b40ff4289dcc3b0080254e282952d90b9c6e9a9dbbc1f2a18a2c356d4a069c"
+    },
+    {
+      "file": "frames.json",
+      "bytes": 170956,
+      "sha256": "d791faa2297b9974beca411e9e7dd705572f5a60df4f6f1e81f1af5e2c9604b6"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2335,
+      "sha256": "3a0a5c8dd4b9d7ca843ca6073bc668701d9241a0dcc9b664fee8e61505e95cdd"
+    }
+  ]
+}

@@ -4,13 +4,19 @@ Updated: 2026-11-14 (Europe/Rome)
 
 ## NOW — Exact approved photographic opening, preserving corrected V5
 
-- [x] Diagnose and fix WK alpha compositing and native/GPU ownership; preserve safe checkpoint.
-- [x] Pass395 application tests, source/raster/content checks,92GPU frames and16V4 comparisons.
-- [x] Record actual corrected iPhone handoff and no-Metro Simulator CPU-pressure startup.
-- [ ] Complete remaining native Home/accessibility checks and preserve their actual boundaries.
-- [ ] Use byte-exact archived Founder photograph for native/RN/Home opening; reveal existing scene smoothly.
-- [ ] Verify final photographic opening on iPhone without Metro and record complete clean journey.
-- [ ] Review final diff/secrets, commit and push authorized feature branch; no stores/production.
+- [x] Diagnose/fix WK alpha and native/GPU ownership; preserve checkpoint38d3437.
+- [x] Use byte-exact original851×1847 photo in native/RN/loading/Home; no reconstructed overlay.
+- [x] Fix actual RN intrinsic-point-size crop with explicit100% image dimensions; add real-component regression.
+- [x] Gate clock release after native hide queue + four UI frames; keep preparation parallel/recoverable.
+- [x] Preserve9000ms, all6depth ribbons, original V4/8s loop, theme/language/access/data.
+- [x] Pass408tests/46files, TypeScript/lint/source/raster/content and104GPU checkpoints/16exactV4 comparisons.
+- [x] Verify final signed Simulator cold pressure697frames, correct native/RN framing, gradual48-frame dissolve and destination.
+- [x] Verify final native Dark/Home/cold and2.124sReduced Motion Home; restoreLight/nativeOFF.
+- [x] Build/sign/update-install final iPhone normal Release without removing data; no Metro/OTA.
+- [ ] Record final continuous physical proof: awaiting active USB data/muxed-screen connection.
+- [ ] Founder review of the actual corrected physical screenshot.
+- [x] Final source/diff/preservation/secrets review; evidence clean.
+- Feature-branch delivery is authorized; no stores, merge or production deployment.
 
 ## PREVIOUS — Premium Intro V5 and first-start black-screen correction
 

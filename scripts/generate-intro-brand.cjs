@@ -68,6 +68,10 @@ function decodeModule(file, prefix) {
   return bytes;
 }
 function verifyCopies(raster, background) {
+  const approved = fs.readFileSync(path.join(root, reference));
+  for (const file of ['assets/launch/approved-opening.png', 'ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png']) {
+    if (!fs.readFileSync(path.join(root, file)).equals(approved)) throw new Error('Exact approved opening photograph copy differs: ' + file);
+  }
   const image = PNG.sync.read(raster), atmosphere = PNG.sync.read(background);
   if (image.width !== 1600 || image.height !== 1120 || atmosphere.width !== 900 || atmosphere.height !== 1950) throw new Error('Shared brand raster bounds changed');
   for (const [file, bytes] of [['assets/launch/official-launch-mark.png', raster], ['assets/launch/steel-background.png', background]]) {

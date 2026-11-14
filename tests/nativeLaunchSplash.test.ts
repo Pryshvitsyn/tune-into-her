@@ -5,7 +5,7 @@ import { createRequire } from 'node:module';
 import { describe, expect, it } from 'vitest';
 
 import config from '../app.config';
-import { FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_CENTER_Y, INTRO_BACKGROUND_URI, INTRO_BACKGROUND_COLOR } from '../src/intro/brandBackground.generated';
+import { INTRO_BACKGROUND_URI, INTRO_BACKGROUND_COLOR } from '../src/intro/brandBackground.generated';
 import { BRAND_TEXTURE_SHA256, BRAND_TEXTURE_URI } from '../src/intro/brandTexture.generated';
 
 const { PNG } = createRequire(import.meta.url)('pngjs') as {
@@ -22,7 +22,7 @@ describe('approved native launch first frame', () => {
     expect(config.ios?.infoPlist?.UIViewControllerBasedStatusBarAppearance).toBe(nativeInfo.UIViewControllerBasedStatusBarAppearance);
   });
 
-  it('keeps every alpha pixel and bounds of the approved outlined logo', () => {
+  it('protects every old animation foreground RGBA pixel while replacing only the opening', () => {
     const originalBytes = Buffer.from(BRAND_TEXTURE_URI.split(',')[1]!, 'base64');
     expect(createHash('sha256').update(originalBytes).digest('hex')).toBe(BRAND_TEXTURE_SHA256);
     const original = PNG.sync.read(originalBytes);
@@ -52,7 +52,7 @@ describe('approved native launch first frame', () => {
     }
   });
 
-  it('uses the same opaque steel background at native and runtime startup', () => {
+  it('retains the existing opaque steel atmosphere for the animation', () => {
     const bytes = Buffer.from(INTRO_BACKGROUND_URI.split(',')[1]!, 'base64');
     expect(read('../assets/launch/steel-background.png').equals(bytes)).toBe(true);
     expect(read('../ios/TuneIntoHer/Images.xcassets/LaunchSteelBackground.imageset/steel-background.png').equals(bytes)).toBe(true);
@@ -65,15 +65,38 @@ describe('approved native launch first frame', () => {
     expect(splash[1].dark.backgroundColor).toBe(INTRO_BACKGROUND_COLOR);
   });
 
-  it('preserves centered responsive iOS layout across prebuilds', async () => {
+  it('copies the immutable approved photograph verbatim into native opening resources', () => {
+    const approved = read('../assets/brand/reference/founder-approved-premium-v5-20261114.png');
+    expect(createHash('sha256').update(approved).digest('hex')).toBe('dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58');
+    expect(read('../assets/launch/approved-opening.png').equals(approved)).toBe(true);
+    expect(read('../ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png').equals(approved)).toBe(true);
+    const image = PNG.sync.read(approved);
+    expect([image.width, image.height]).toEqual([851, 1847]);
+    let translucent = 0;
+    for (let i = 3; i < image.data.length; i += 4) if (image.data[i] !== 255) translucent += 1;
+    expect(translucent).toBe(0);
+    expect(JSON.parse(read('../ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/Contents.json').toString()).images).toEqual([
+      { idiom: 'universal', filename: 'approved-opening.png', scale: '1x' },
+    ]);
+    const splash = config.plugins!.find(value => Array.isArray(value) && value[0] === 'expo-splash-screen') as [string, { image: string; dark: { image: string } }];
+    expect(splash[1].image).toBe('./assets/launch/approved-opening.png');
+    expect(splash[1].dark.image).toBe(splash[1].image);
+  });
+
+  it('uses one full-bounds aspect-fill photograph with no reconstructed logo overlay across prebuilds', async () => {
     const storyboard = read('../assets/launch/SplashScreen.storyboard');
     expect(await parseStringPromise(read('../ios/TuneIntoHer/SplashScreen.storyboard').toString())).toEqual(await parseStringPromise(storyboard.toString()));
     const xml = storyboard.toString();
-    expect(xml).toContain(`multiplier="${FIRST_FRAME_LOGO_WIDTH_FRACTION * 1.25}"`);
-    expect(xml).toContain(`constant="${FIRST_FRAME_LOGO_WIDTH_CAP * 1.25}"`);
-    expect(xml).toContain(`secondAttribute="bottom" multiplier="${FIRST_FRAME_LOGO_CENTER_Y}"`);
-    expect(xml).toContain('multiplier="10:7"');
-    expect(xml).toContain('image="LaunchSteelBackground"');
+    expect((xml.match(/<imageView\b/g) ?? []).length).toBe(1);
+    expect(xml).toContain('contentMode="scaleAspectFill" image="LaunchApprovedOpening"');
+    expect(xml).toContain('id="EXPO-SplashScreen"');
+    for (const edge of ['leading', 'trailing', 'top', 'bottom']) {
+      expect(xml).toContain(`firstItem="EXPO-SplashScreen" firstAttribute="${edge}" secondItem="EXPO-ContainerView" secondAttribute="${edge}"`);
+    }
+    expect(xml).not.toContain('image="LaunchLogo"');
+    expect(xml).not.toContain('image="LaunchSteelBackground"');
+    expect(xml).not.toContain('TIH-LogoResponsiveWidth');
+    expect(xml).not.toContain('TIH-LogoAspect');
     const config = read('../app.config.ts').toString();
     expect(config.indexOf("'./plugins/with-approved-launch-splash.cjs'")).toBeLessThan(config.indexOf("'expo-splash-screen'"));
   });

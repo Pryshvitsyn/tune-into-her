@@ -1,0 +1,15 @@
+{
+  "nativeBinarySHA256": "764826cfb84c9d87c47f3d3ce6fe689212eefd4debe9769c1b08897f2af96ba0",
+  "embeddedJavaScriptSHA256": "1a61e13aabb81de8e867396f69471aa213ff53ad68ae205b86a034302207d2fd",
+  "codesignVerified": true,
+  "updatesResourcesMatch": true,
+  "normalReleasePressureMarkerAbsent": true,
+  "sourceSHA256": {
+    "src/intro/SphereIntroSurface.tsx": "3720b0da471eb0e45c1b4eaca1f6506d3996b9f3152576d616b843c18ec63037",
+    "src/intro/ApprovedOpening.tsx": "229b0c974f5077204c394c2360e5956d75aadd927385659ac473a90b693e5f0a",
+    "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+    "src/intro/sphereHtml.ts": "695a145bfa73ec335e04cf74d3ee4aa068f310ac20ef6fa3389ece651de43425",
+    "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+    "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+  }
+}

@@ -171,7 +171,7 @@ const WEB_RUNTIME = String.raw`
   let gl, program, frame = 0, last = 0, motionMs = 0, elapsed = 0;
   let loaded = false, started = false, active = true, reduced = false, failed = false, ended = false;
   let visible = !document.hidden;
-  let target = null, draws = 0, preparedToken = null, forceFinished = false;
+  let target = null, draws = 0, preparedToken = null, forceFinished = false, photographicOpening = false;
   const textures = [], shaders = [];
   let buffer;
   const post = (type, extra = {}) => {
@@ -231,7 +231,9 @@ const WEB_RUNTIME = String.raw`
     gl.uniform2f(uniforms.u_logoCenter,
       logoStartX+(scene.x-logoStartX)*cameraProgress,
       logoStartY+(scene.y-logoStartY)*cameraProgress);
-    gl.uniform1f(uniforms.u_logoOpacity, scene.logoOpacity);
+    // The exact photographic plate owns the opening in RN. Do not blend a
+    // reconstructed emblem under it; the unchanged metal/depth scene takes over.
+    gl.uniform1f(uniforms.u_logoOpacity, photographicOpening ? 0 : scene.logoOpacity);
     gl.uniform1f(uniforms.u_introTime, reduced ? 0 : elapsed/1000);
     gl.uniform1f(uniforms.u_phase, reduced ? 0 : ((motionMs % 8000)/8000)*Math.PI*2);
     gl.drawArrays(gl.TRIANGLES,0,6);
@@ -281,6 +283,7 @@ const WEB_RUNTIME = String.raw`
         // RN exposes this frozen surface behind its opaque native cover, then releases
         // it only after the UI-thread visibility commit. A bridge message is not paint.
         preparedToken = command.token;
+        photographicOpening = !!command.photographicOpening;
         reduced = !!command.reducedMotion;
         elapsed = (!command.animate || reduced || forceFinished) ? C.duration : 0;
         motionMs = 0; ended = false; last = 0;

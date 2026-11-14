@@ -1,5 +1,5 @@
 /* global __dirname */
-/* Native resources retain exactly the shared V5 foreground/background PNG bytes. */
+/* Preserve animation PNGs; the opening photograph is copied verbatim, never rasterized. */
 const { Buffer } = require('node:buffer');
 const crypto = require('node:crypto');
 const fs = require('node:fs');
@@ -21,4 +21,9 @@ for (const [moduleFile, prefix, output, width, height] of [
   if (image.width !== width || image.height !== height) throw new Error('Shared brand PNG bounds changed');
   fs.writeFileSync(path.join(__dirname, output), bytes);
 }
-console.log('Native foreground and atmosphere are byte-identical to shared V5 PNGs.');
+const approved = fs.readFileSync(path.join(root, 'assets/brand/reference/founder-approved-premium-v5-20261114.png'));
+if (crypto.createHash('sha256').update(approved).digest('hex') !== 'dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58') throw new Error('Immutable Founder opening photograph changed');
+const photograph = PNG.sync.read(approved);
+if (photograph.width !== 851 || photograph.height !== 1847) throw new Error('Approved opening photograph bounds changed');
+fs.writeFileSync(path.join(__dirname, 'approved-opening.png'), approved);
+console.log('Animation PNGs are unchanged; the native opening is byte-identical to the approved photograph.');

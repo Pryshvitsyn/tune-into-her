@@ -1,0 +1,212 @@
+{
+  "scope": "Installed associated-alpha/UI-frame-handoff Release checkpoint; subsequent exact-photo artwork build is separate.",
+  "sourceBaseline": "2c77ba0",
+  "branch": "codex/monetization-20261113",
+  "artifact": {
+    "embeddedJSSHA256": "4033e04a8b767c8aefc52c79b354c7153ef2f666b1334f2c80eb7301b8bb8c1f",
+    "executableSHA256": "7ee2f6d3ceb4d25a4fe9842bab65ef4683844de7ef0e1731fed0b5c597981246",
+    "platform": "iPhoneSimulator",
+    "configuration": "installed standalone Release",
+    "finalForegroundLaunchPassed": true,
+    "finalUIKitReducedMotionEnabled": false,
+    "nativeSwitchOffAsserted": true,
+    "lightRestoredInThemeCase": true
+  },
+  "cases": [
+    {
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "result": "PASS",
+      "caseDurationSeconds": 69.272,
+      "resultBundle": "ui-dark-home-cold-retry.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "boundedCenterRetryCount": 0,
+      "darkSavedAndPersistedAcrossHomeCold": true,
+      "steelDarkClockAndGraphiteWhiteClockVerified": true,
+      "LightRestoredAndLockedVerified": true
+    },
+    {
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "result": "PASS",
+      "caseDurationSeconds": 44.889,
+      "resultBundle": "ui-home-single-double.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "boundedCenterRetryCount": 0,
+      "singleHomeSeconds": 13.956061583332485,
+      "doubleHomeSeconds": 15.19961804166087,
+      "sameProcessAndLockedVerified": true
+    },
+    {
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "result": "PASS",
+      "caseDurationSeconds": 33.356,
+      "resultBundle": "ui-reduced-motion-home.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "boundedCenterRetryCount": 0,
+      "reducedMotionHomeSeconds": 1.9217714999977034,
+      "sameProcessAndLockedVerified": true,
+      "cleanupUIKitOff": true
+    },
+    {
+      "test": "testConfirmReducedMotionAtCurrentSettingsScreen",
+      "result": "PASS",
+      "caseDurationSeconds": 35.917,
+      "resultBundle": "ui-reduced-motion-enable.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "boundedCenterRetryCount": 0,
+      "UIKitOnVerified": true
+    },
+    {
+      "test": "testReducedMotionColdLaunchShowsLockedEntry",
+      "result": "PASS",
+      "caseDurationSeconds": 10.888,
+      "resultBundle": "ui-reduced-motion-cold.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "boundedCenterRetryCount": 0,
+      "UIKitOnVerified": true,
+      "launchToLockedObservationSeconds": 9.550653219223022,
+      "timingIncludesXCTestLaunchSynchronization": true
+    },
+    {
+      "test": "testRestoreReducedMotionOffAtCurrentSettingsScreen",
+      "result": "PASS",
+      "caseDurationSeconds": 7.561,
+      "resultBundle": "ui-reduced-motion-restore-off.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "boundedCenterRetryCount": 0,
+      "UIKitOffVerified": true
+    }
+  ],
+  "passedSelectedCases": 6,
+  "intermediateAttempts": [
+    {
+      "resultBundle": "ui-dark-home-cold.xcresult",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "result": "FAIL",
+      "caseDurationSeconds": 103.759,
+      "reason": "Semantic Settings tap did not navigate; later Appearance element lookup failed before theme selection. Preserved and excluded from accepted passes."
+    }
+  ],
+  "harnessCorrection": {
+    "file": "tests/native-launch/LaunchUIQA.swift",
+    "kind": "Navigation destination assertion and one bounded frame-center retry after native semantic tab tap",
+    "productionChanges": false
+  },
+  "finalState": {
+    "appForeground": true,
+    "LightRestored": true,
+    "lockedTodayVerified": true,
+    "UIKitReduceMotionEnabled": false,
+    "nativeReduceMotionValue": "0",
+    "finalBodyPixelsEqualVerifiedInitialLightLockedBelowStatusBar": true
+  },
+  "screenshots": [
+    {
+      "file": "61-light-locked-today-restored-no-billing.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "6348fec27c3bf8d78d132afc57d90a6547c8fd2324cda8ee2135fd12c041fbdc",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "60-light-theme-restored-after-dark-cold-test.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "31fd5c3ac2ce2e6850f33e21b7c6c97eba7ce820ab1794524fed2e79f97e2e26",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "59-dark-theme-persisted-after-cold-launch.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "628c02dbbc15353ac5594b9ba5579a351895cf1ddf5d280c2328c635e321c0c0",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "58-dark-theme-preserved-after-home.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "add5f348920d43b17dc43e95c07a5144323b871e4a44dc776e09f397c5cc28f3",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "57a-v5-home-faded-dark-white-clock.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "4e2a08a964e2ce35cf8c9409abbf042b9dbddab366f8554ee82e4aa421c10652",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "57-v5-steel-home-cover-dark-clock.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "fc93bb713d4d1e4074233aa5addf8b0c50e216a4c094345d882b86eb04a5eb21",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "56-dark-theme-saved-before-home.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "fe6e85c98b042a2ae594ee204c4653c55af9bc1ea3610d33be7dbf712f3104a0",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "48-home-double-tap-returned-locked-today.png",
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "sha256": "e6b640695451310348e13d809362ccb141a4c56fd72cdf30b5abcc87c35b583e",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "47-home-double-tap-one-cover.png",
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "sha256": "075434cd95c0df4b9541e7446b582d7d49a4741bbef4e17963176815bbe7ea6e",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "46-home-single-tap-returned-locked-today.png",
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "sha256": "f006819958582c5691b805e8d0f8ee61262ef040e8c97b04ffc811f242e50adc",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "45-home-single-tap-cover.png",
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "sha256": "69d958349860477a43e5060cb2ed8502c822d7fd5e351a5abc8935aa4434caea",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "91-reduced-motion-home-quick-locked-today.png",
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "sha256": "12b897ffd3f7392ee786e721431d2348aa40ec5eee09c3bfec39f1134f91e497",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "13-qa-reduce-motion-enabled.png",
+      "test": "testConfirmReducedMotionAtCurrentSettingsScreen",
+      "sha256": "96e9df5621f182fe45cb9809d875f8c194bd52ca18a53290079aed06d94eb1de",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "42-reduced-motion-cold-locked-entry-no-full-intro.png",
+      "test": "testReducedMotionColdLaunchShowsLockedEntry",
+      "sha256": "b849dfb238042e2dda9b081a51d422f357bfccabe111e25f4fa34785ff2db4cc",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "14-qa-reduce-motion-restored-off.png",
+      "test": "testRestoreReducedMotionOffAtCurrentSettingsScreen",
+      "sha256": "ae0697d789e92f5cee9308b881b0b5c5b1a1c44f74ec7cfb032940311bf19897",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "final-light-locked-foreground.png",
+      "sha256": "20942a78ae05852b74b3badd5bc72838dcd54ec85126234a28049edd9a8e4da5",
+      "originalIDATBytesPreserved": true
+    }
+  ],
+  "privacy": "No raw device identifiers, provisioning, full app hierarchy, raw logs or private result manifests published."
+}

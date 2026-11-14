@@ -6,7 +6,9 @@ import { describe, expect, it } from 'vitest';
 
 import { FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_WIDTH_FRACTION } from '../src/intro/brandBackground.generated';
 import { createLaunchState, reduceLaunch, shouldAnimateLaunch } from '../src/intro/launchState';
+import { createNativeSplashGate } from '../src/intro/nativeSplashGate';
 import { makeAssociatedAlphaFragment, makeSceneFragment, makeSphereHtml } from '../src/intro/sphereHtml';
+import { advanceSurfaceHandoff, type SurfaceHandoffStage } from '../src/intro/surfaceHandoff';
 import { INTRO_MS, sceneAt } from '../src/intro/timeline';
 import { V4_FRAGMENT } from '../src/intro/v4Shaders.generated';
 
@@ -163,6 +165,60 @@ describe('V5 intro presentation boundaries', () => {
 });
 
 describe('shared scene runtime lifecycle', () => {
+  it('keeps the real scene clock frozen behind a pending native hide and releases once after four UI frames', async () => {
+    const runtime = await bootRuntime();
+    let resolveHide!: () => void;
+    const gate = createNativeSplashGate(() => new Promise<void>(resolve => { resolveHide = resolve; }));
+    gate.subscribe(() => undefined);
+    gate.request();
+    runtime.command({ type: 'active', value: false });
+    runtime.command({ type: 'prepare', token: 1, animate: true, photographicOpening: true });
+    let stage: SurfaceHandoffStage = 1;
+    let releases = 0;
+    const uiFrame = (active = true) => {
+      const allowed = active && gate.getState().queued;
+      const next = advanceSurfaceHandoff(stage, allowed); stage = next.stage;
+      if (next.release) { releases++; runtime.command({ type: 'release', token: 1 }); }
+    };
+    await Promise.resolve();
+    for (let frame = 0; frame < 100; frame++) { uiFrame(); runtime.step(1000); }
+    expect(stage).toBe(1);
+    expect(runtime.state().elapsed).toBe(0);
+    expect(runtime.frames.size).toBe(0);
+    resolveHide();
+    // Flush the hide promise's assimilation and its queued-state continuation.
+    for (let turn = 0; turn < 5; turn++) await Promise.resolve();
+    expect(gate.getState().queued).toBe(true);
+    runtime.command({ type: 'active', value: true });
+    for (let frame = 0; frame < 3; frame++) { uiFrame(); runtime.step(1000); }
+    expect(runtime.state().elapsed).toBe(0);
+    expect(releases).toBe(0);
+    uiFrame(false); expect(releases).toBe(0);
+    uiFrame(); runtime.step(1); runtime.step(250);
+    expect(releases).toBe(1);
+    expect(runtime.state().elapsed).toBe(250);
+    uiFrame(); expect(releases).toBe(1);
+  });
+
+  it('lets the exact photograph yield to the unchanged metal scene without a reconstructed second emblem', async () => {
+    const runtime = await bootRuntime();
+    runtime.command({ type: 'configure', target: { x: 200, y: 470, radius: 100 } });
+    runtime.command({ type: 'prepare', token: 1, animate: true, photographicOpening: true });
+    expect(runtime.values.u_logoOpacity).toBe(0);
+    runtime.command({ type: 'release', token: 1 }); runtime.step(1);
+    for (const delta of [650, 200, 500, 1000, 2150, 4500]) {
+      runtime.step(delta);
+      const scene = sceneAt(runtime.state().elapsed, { width: 400, height: 800 }, { x: 200, y: 470, radius: 100 });
+      expect(runtime.values.u_logoOpacity).toBe(0);
+      expect(runtime.values.u_radius).toBe(scene.radius);
+      expect(runtime.values.u_camera).toBe(scene.camera);
+      expect(runtime.values.u_layers).toBe(scene.layers);
+      expect(runtime.values.u_shell).toBe(scene.shell);
+    }
+    expect(runtime.state().elapsed).toBe(INTRO_MS);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+  });
+
   it('keeps the prepared GPU frame frozen until the matching native visibility acknowledgment', async () => {
     const runtime = await bootRuntime();
     runtime.command({ type: 'configure', target: { x: 200, y: 470, radius: 100 } });

@@ -16,6 +16,7 @@ import { markAppIntroConsumed } from './introSession';
 import { getLaunchCopy } from './launchCopy';
 import { launchDestinationKey, launchRouteState } from './launchRouting';
 import { createLaunchState, getLaunchPhase, LAUNCH_FADE_MS, reduceLaunch, shouldAnimateLaunch } from './launchState';
+import { createNativeSplashGate } from './nativeSplashGate';
 import { loadPremiumTypeface } from './premiumFont';
 
 // A JS-runtime lifetime is a native cold launch. Navigation/AppState never resets it.
@@ -42,7 +43,19 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   const [view, setView] = useState({ width: 0, height: 0 });
   const elapsed = useSharedValue(0);
   const opacity = useAnimatedValue(completedThisRuntime ? 0 : 1);
-  const splashHidden = useRef(false);
+  const [nativeSplashGate] = useState(() => createNativeSplashGate(() => SplashScreen.hideAsync()));
+  const [nativeHideQueued, setNativeHideQueued] = useState(false);
+  const hideFrames = useRef<{ first?: number; second?: number }>({});
+  useEffect(() => {
+    const unsubscribe = nativeSplashGate.subscribe(value => setNativeHideQueued(value.queued));
+    return () => {
+      unsubscribe();
+      if (hideFrames.current.first !== undefined) cancelAnimationFrame(hideFrames.current.first);
+      if (hideFrames.current.second !== undefined) cancelAnimationFrame(hideFrames.current.second);
+      hideFrames.current = {};
+    };
+  }, [nativeSplashGate]);
+  useEffect(() => { nativeSplashGate.setActive(state.active); }, [nativeSplashGate, state.active]);
   useLayoutEffect(() => {
     dispatch({ type: 'destination-selected', attempt: initializationAttempt, key: routeKey });
   }, [initializationAttempt, routeKey]);
@@ -106,13 +119,21 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   }, []);
 
   useEffect(() => {
-    if (!blocking) return;
+    // Keep foreground recovery available if an accessibility skip completes
+    // the RN cover while a native hide request is still failing.
+    if (!blocking && nativeHideQueued) return;
     // The shared GPU runtime owns choreography time; JS tracks only lifecycle.
-    const update = (value: string) => dispatch({ type: 'active', value: value === 'active' });
+    const update = (value: string) => {
+      const active = value === 'active';
+      // The completed launch reducer intentionally ignores later events. Native
+      // hide recovery must still receive real foreground changes after an RM skip.
+      nativeSplashGate.setActive(active);
+      dispatch({ type: 'active', value: active });
+    };
     const sub = AppState.addEventListener('change', update);
     if (AppState.currentState != null) update(AppState.currentState);
     return () => sub.remove();
-  }, [blocking]);
+  }, [blocking, nativeHideQueued, nativeSplashGate]);
 
   useEffect(() => {
     if (!blocking) return;
@@ -125,13 +146,17 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
     if (!backgroundReady) return;
     dispatch({ type: 'first-frame', kind });
     // Image onLoad/GPU completion precedes the next native commit. Retain splash through that paint.
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      if (!splashHidden.current) {
-        splashHidden.current = true;
-        void SplashScreen.hideAsync().catch(() => { splashHidden.current = false; });
-      }
-    }));
-  }, [backgroundReady]);
+    // Expo resolves after queuing UIKit hide, not after a native paint ACK.
+    // Only then may Surface begin its own UI-frame ownership barrier.
+    if (nativeSplashGate.getState().queued || hideFrames.current.first !== undefined || hideFrames.current.second !== undefined) return;
+    hideFrames.current.first = requestAnimationFrame(() => {
+      hideFrames.current.first = undefined;
+      hideFrames.current.second = requestAnimationFrame(() => {
+        hideFrames.current.second = undefined;
+        nativeSplashGate.request();
+      });
+    });
+  }, [backgroundReady, nativeSplashGate]);
   useEffect(() => { if (backgroundReady && pendingFrame.current) onFirstFrame(pendingFrame.current); }, [backgroundReady, onFirstFrame]);
   const onIntroComplete = useCallback(() => {
     dispatch({ type: 'intro-complete' });
@@ -168,6 +193,7 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   }, [state.fadeComplete]);
 
   const retry = () => {
+    nativeSplashGate.retry();
     dispatch({ type: 'retry' });
     retryInitialization();
     if (font === 'error') { setFont('loading'); setFontAttempt(value => value + 1); }
@@ -189,7 +215,7 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
       {blocking && <Animated.View style={[StyleSheet.absoluteFill, styles.cover, { opacity }]}>
         <IntroAtmosphere elapsed={elapsed} onReady={() => setBackgroundReady(true)} />
         {view.width > 0 && view.height > 0 && <SphereIntroSurface launch view={view} target={target} elapsed={elapsed} animate={shouldAnimateLaunch(state)}
-          active={state.active} preferencesReady={state.accessibilityReady && backgroundReady} reducedMotion={state.reducedMotion} ink={SILVER.ink}
+          active={state.active} playbackAllowed={nativeHideQueued} preferencesReady={state.accessibilityReady && backgroundReady} reducedMotion={state.reducedMotion} ink={SILVER.ink}
           onFirstFrame={onFirstFrame} onComplete={onIntroComplete} onError={() => dispatch({ type: 'renderer-failed' })} />}
         {phase === 'error' && <View style={styles.error} accessibilityLiveRegion="polite">
           <Text systemFont={font !== 'ready'} accessibilityRole="alert" style={styles.errorText}>{copy.error}</Text>

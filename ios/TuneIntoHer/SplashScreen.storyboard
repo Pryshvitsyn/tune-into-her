@@ -15,29 +15,19 @@
                         <rect key="frame" x="0" y="0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="LaunchSteelBackground" translatesAutoresizingMaskIntoConstraints="NO" id="TIH-SilverBackground">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="LaunchApprovedOpening" translatesAutoresizingMaskIntoConstraints="NO" id="EXPO-SplashScreen" userLabel="Exact approved opening photograph">
                                 <rect key="frame" x="0" y="0" width="393" height="852"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EXPO-SplashScreen" userLabel="Approved launch logo">
-                                <rect key="frame" x="9.825" y="295.3275" width="373.35" height="261.345"/>
                                 <accessibility key="accessibilityConfiguration" label="Tune Into Her">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="EXPO-SplashScreen" secondAttribute="height" multiplier="10:7" id="TIH-LogoAspect"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="700" id="TIH-LogoCap"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmq-lb-GrQ"/>
                         <constraints>
-                            <constraint firstItem="TIH-SilverBackground" firstAttribute="leading" secondItem="EXPO-ContainerView" secondAttribute="leading" id="TIH-BGLeading"/>
-                            <constraint firstItem="TIH-SilverBackground" firstAttribute="trailing" secondItem="EXPO-ContainerView" secondAttribute="trailing" id="TIH-BGTrailing"/>
-                            <constraint firstItem="TIH-SilverBackground" firstAttribute="top" secondItem="EXPO-ContainerView" secondAttribute="top" id="TIH-BGTop"/>
-                            <constraint firstItem="TIH-SilverBackground" firstAttribute="bottom" secondItem="EXPO-ContainerView" secondAttribute="bottom" id="TIH-BGBottom"/>
-                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="centerY" secondItem="EXPO-ContainerView" secondAttribute="bottom" multiplier="0.46" id="0VC-Wk-OaO"/>
-                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="centerX" secondItem="EXPO-ContainerView" secondAttribute="centerX" id="zR4-NK-mVN"/>
-                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="width" secondItem="EXPO-ContainerView" secondAttribute="width" multiplier="1.3125" priority="999" id="TIH-LogoResponsiveWidth"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="leading" secondItem="EXPO-ContainerView" secondAttribute="leading" id="TIH-OpeningLeading"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="trailing" secondItem="EXPO-ContainerView" secondAttribute="trailing" id="TIH-OpeningTrailing"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="top" secondItem="EXPO-ContainerView" secondAttribute="top" id="TIH-OpeningTop"/>
+                            <constraint firstItem="EXPO-SplashScreen" firstAttribute="bottom" secondItem="EXPO-ContainerView" secondAttribute="bottom" id="TIH-OpeningBottom"/>
                         </constraints>
                         <color key="backgroundColor" red="0.49411764705882355" green="0.5450980392156862" blue="0.6313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -47,7 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchLogo" width="800" height="560"/>
-        <image name="LaunchSteelBackground" width="900" height="1950"/>
+        <image name="LaunchApprovedOpening" width="851" height="1847"/>
     </resources>
 </document>

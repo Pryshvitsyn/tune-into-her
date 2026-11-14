@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "kind": "Isolated offline Expo57 Android source/resource verification; no native runtime claim",
+  "prebuild": {
+    "passed": true,
+    "platform": "android",
+    "offline": true,
+    "template": "existing node_modules/expo/template.tgz",
+    "install": false,
+    "dependenciesReused": true,
+    "environmentFilesCopied": false,
+    "actualProjectAndroidDirectoryCreated": false
+  },
+  "approvedPhotograph": {
+    "source": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+    "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "inputIsByteIdentical": true,
+    "width": 851,
+    "height": 1847
+  },
+  "expoConfig": {
+    "image": "./assets/launch/approved-opening.png",
+    "darkImage": "./assets/launch/approved-opening.png",
+    "imageWidth": 288,
+    "resizeMode": "contain",
+    "backgroundColor": "#7E8BA1",
+    "darkBackgroundColor": "#7E8BA1"
+  },
+  "resources": [
+    {
+      "file": "android/app/src/main/res/drawable-mdpi/splashscreen_logo.png",
+      "width": 288,
+      "height": 288,
+      "sha256": "d45d51d3dc86609020410b38f508e66941b61e7d9d345ab9c577173624bc8241",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-night-mdpi/splashscreen_logo.png",
+      "width": 288,
+      "height": 288,
+      "sha256": "d45d51d3dc86609020410b38f508e66941b61e7d9d345ab9c577173624bc8241",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-hdpi/splashscreen_logo.png",
+      "width": 432,
+      "height": 432,
+      "sha256": "1802a8866271b00113b4ebb58203c47be946b314f9f9ca4f49a02b7e6daefb20",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-night-hdpi/splashscreen_logo.png",
+      "width": 432,
+      "height": 432,
+      "sha256": "1802a8866271b00113b4ebb58203c47be946b314f9f9ca4f49a02b7e6daefb20",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png",
+      "width": 576,
+      "height": 576,
+      "sha256": "944a2be36b767b47b4d4482e6cedaad5a35bc391419ec77941172dac5010fa3f",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-night-xhdpi/splashscreen_logo.png",
+      "width": 576,
+      "height": 576,
+      "sha256": "944a2be36b767b47b4d4482e6cedaad5a35bc391419ec77941172dac5010fa3f",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png",
+      "width": 864,
+      "height": 864,
+      "sha256": "c7677739cd7c536d3574c8b9139cccf202196b4f5905dcc97a9d0deb1894bd7f",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-night-xxhdpi/splashscreen_logo.png",
+      "width": 864,
+      "height": 864,
+      "sha256": "c7677739cd7c536d3574c8b9139cccf202196b4f5905dcc97a9d0deb1894bd7f",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png",
+      "width": 1152,
+      "height": 1152,
+      "sha256": "436703025756ada9014419714635f28bfa7ad77275c35bc63cac117ce6cfc623",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    },
+    {
+      "file": "android/app/src/main/res/drawable-night-xxxhdpi/splashscreen_logo.png",
+      "width": 1152,
+      "height": 1152,
+      "sha256": "436703025756ada9014419714635f28bfa7ad77275c35bc63cac117ce6cfc623",
+      "matchesOfficialApprovedPhotoOnlyTransform": true
+    }
+  ],
+  "generatedLayout": {
+    "parent": "Theme.SplashScreen",
+    "systemIcon": "@drawable/splashscreen_logo",
+    "legacyLayerListSinglePhotoBitmap": true,
+    "noExtraReconstructedSVGOverlay": true
+  },
+  "androidLimit": {
+    "nativeBuildOrEmulatorVerified": false,
+    "missingPrerequisites": [
+      "JDK",
+      "Android SDK",
+      "adb"
+    ],
+    "systemSplash": "Android12+ draws an OS-managed icon on a single-color background, not an arbitrary full-screen photograph. Existing Expo config renders the exact-photo input into288dp square icon assets with contain fitting; OS masking may clip image periphery. Full-screen exact artwork is owned by the shared RN opening once its runtime is ready.",
+    "withoutIconBackground": {
+      "canvasDP": 288,
+      "documentedSafeCircleDiameterDP": 192
+    },
+    "source": "https://developer.android.com/develop/ui/views/launch/splash-screen",
+    "apiSource": "https://developer.android.com/reference/androidx/core/splashscreen/SplashScreen",
+    "actualRuntimeMaskingAndTransition": "Unverified without Android device/emulator. Resource equality does not prove full-bleed native presentation."
+  },
+  "preserved": {
+    "actualRepoAndroidAbsent": true,
+    "noPackageFetchInstallOrSDKConfigChanges": true,
+    "noAppleDeviceOrSimulatorActions": true
+  },
+  "prerequisitesObserved": {
+    "javaHomeFound": false,
+    "adbFound": false,
+    "defaultMacAndroidSDKPresent": false,
+    "gradleAttempted": false,
+    "reason": "Source/resource-only verification requested; native prerequisites absent"
+  },
+  "installedVersions": {
+    "expo": "57.0.32",
+    "expo-splash-screen": "57.0.11",
+    "@expo/image-utils": "0.11.7"
+  },
+  "sourceChecksums": {
+    "app.config.ts": "89d42e9ebfb86956a143422f1a1e299d0a992f08f74055f4058c5ea9430fd1cc",
+    "assets/launch/generate.cjs": "a0652ad00ec8d4d8e8b621fa51d891352461db1aee2f5b322f32fcbc488d3fb4",
+    "plugins/with-approved-launch-splash.cjs": "69cd5963461a282ecba7771581f4835ccbd6f490eacee5618f113be2d6bab3c6",
+    "node_modules/expo-splash-screen/plugin/src/withAndroidSplashImages.ts": "5533c753be8c094828f8487329b705e521ba91e8cf6c7c139b2198ddf64af764"
+  }
+}

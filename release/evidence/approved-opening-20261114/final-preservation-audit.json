@@ -1,0 +1,247 @@
+{
+  "kind": "Independent read-only preservation and secrets audit",
+  "comparisonBase": "38d3437",
+  "protectedBase": "2c77ba0",
+  "head": "38d3437dd75485deb29aaac65135e1526bf9b952",
+  "productionFilesUnmodifiedByAuditor": true,
+  "noSimulatorDeviceOrBuildActions": true,
+  "scope": {
+    "trackedModifiedFiles": [
+      "app.config.ts",
+      "assets/launch/SplashScreen.storyboard",
+      "assets/launch/generate.cjs",
+      "ios/TuneIntoHer/SplashScreen.storyboard",
+      "plugins/with-approved-launch-splash.cjs",
+      "scripts/generate-intro-brand.cjs",
+      "src/intro/GlobalLaunch.tsx",
+      "src/intro/IntroLoading.tsx",
+      "src/intro/SphereIntroSurface.tsx",
+      "src/intro/introPresentation.ts",
+      "src/intro/sphereHtml.ts",
+      "tests/intro-frames/README.md",
+      "tests/intro-frames/capture.cjs",
+      "tests/introRuntime.test.ts",
+      "tests/native-launch/LaunchUIQA.swift",
+      "tests/nativeLaunchSplash.test.ts"
+    ],
+    "untrackedFiles": 109,
+    "newEvidenceFiles": 102,
+    "textFilesScanned": 39,
+    "appConfigOnlyTwoOpeningImagePathsChanged": true,
+    "noCycleContentSubscriptionServiceOrNavigationProductionFileChanges": true
+  },
+  "protectedFiles": [
+    {
+      "file": "TuneIntoHerSphereV4.tsx",
+      "sameBytes": true,
+      "sha256": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39"
+    },
+    {
+      "file": "assets/tune_into_her_sphere_source_clean.png",
+      "sameBytes": true,
+      "sha256": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c"
+    },
+    {
+      "file": "assets/tune_into_her_sphere_phase0_poster.png",
+      "sameBytes": true,
+      "sha256": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87"
+    },
+    {
+      "file": "src/intro/v4Shaders.generated.ts",
+      "sameBytes": true,
+      "sha256": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a"
+    },
+    {
+      "file": "src/intro/timeline.ts",
+      "sameBytes": true,
+      "sha256": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf"
+    },
+    {
+      "file": "src/intro/sceneRuntime.generated.ts",
+      "sameBytes": true,
+      "sha256": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2"
+    },
+    {
+      "file": "assets/fonts/LinuxLibertineO-Regular.otf",
+      "sameBytes": true,
+      "sha256": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114"
+    },
+    {
+      "file": "src/components/BrandMark.tsx",
+      "sameBytes": true,
+      "sha256": "04335cff6d1a20e1af4eacdb58cba9829cb79588271792bda79954543725bdb6"
+    },
+    {
+      "file": "src/intro/brand.generated.ts",
+      "sameBytes": true,
+      "sha256": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5"
+    },
+    {
+      "file": "src/intro/brandTexture.generated.ts",
+      "sameBytes": true,
+      "sha256": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe"
+    },
+    {
+      "file": "src/intro/brandBackground.generated.ts",
+      "sameBytes": true,
+      "sha256": "7e468afb668edf6a74f0b512e98c3c5c6d4e57ac0ce36bb0aaee983da2b34ebd"
+    },
+    {
+      "file": "assets/brand/official-mark.svg",
+      "sameBytes": true,
+      "sha256": "f4df61a255f22785485b5c6443969e45e99d583cd0e23209ed860003bab1129a"
+    },
+    {
+      "file": "assets/brand/steel-background.svg",
+      "sameBytes": true,
+      "sha256": "73cd4447bf72ba0f1e1872c47296b019f404df709f4be3c1cbdf9bca6668d312"
+    },
+    {
+      "file": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+      "sameBytes": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    },
+    {
+      "file": "src/intro/HomeTransition.tsx",
+      "sameBytes": true,
+      "sha256": "9259a042d28be8624dfad8dedf8e8d25e583294b03b01668cd427c504004ae11"
+    }
+  ],
+  "pureMakeSceneFragment": {
+    "sameBytes": true,
+    "sha256": "732932e023147b71fb2d239e17bc8ef02e9fb62e3284617ab6234ac8c2573492"
+  },
+  "exactPhotographCopies": [
+    {
+      "file": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+      "sameBytes": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "dimensions": [
+        851,
+        1847
+      ]
+    },
+    {
+      "file": "assets/launch/approved-opening.png",
+      "sameBytes": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "dimensions": [
+        851,
+        1847
+      ]
+    },
+    {
+      "file": "ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png",
+      "sameBytes": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "dimensions": [
+        851,
+        1847
+      ]
+    }
+  ],
+  "nativeStoryboardSourceCopyEqual": true,
+  "secretsScan": {
+    "categories": [
+      "privateKey",
+      "githubToken",
+      "awsAccess",
+      "stripeSecret",
+      "googleApiKey",
+      "revenueCatSecret"
+    ],
+    "hits": [],
+    "forbiddenNewArtifacts": []
+  },
+  "newEvidencePrivacyScan": {
+    "metadataPotentialHits": [],
+    "extensions": {
+      ".md": 7,
+      ".json": 11,
+      ".png": 81,
+      ".mp4": 3
+    }
+  },
+  "findings": [],
+  "boundaries": [
+    "Read-only source/asset/media-metadata audit; no new runtime tests or native build performed.",
+    "Parent-reported 408 tests/typecheck/lint and Simulator/native UI results are separate evidence, not rerun by this auditor.",
+    "Corrected final physical-device recording is pending parent-owned USB/device verification; no final Founder approval is claimed."
+  ],
+  "notes": [
+    "ApprovedOpening explicitly overrides both intrinsic Image dimensions with 100% width and 100% height after absoluteFill.",
+    "GlobalLaunch gates playback on actual SplashScreen.hideAsync resolution; Surface UI stage advances 1\u21922\u21923\u21924\u21925 with release only on fourth active frame, while preparation is allowed independently.",
+    "Native hide failure is bounded to three attempts and recoverable on explicit retry/foreground; activity resets prepared surface ownership before a queued release."
+  ],
+  "mediaInspection": {
+    "movies": [
+      {
+        "file": "release/evidence/approved-opening-20261114/simulator/actual-photo-through-original-v4.mp4",
+        "firstFrame": "/tmp/tih-photo-opening-diagnostic/audit-first-frame-0.png",
+        "streams": [
+          "video"
+        ],
+        "durationSeconds": 19.053501,
+        "tagKeys": [
+          "compatible_brands",
+          "encoder",
+          "major_brand",
+          "minor_version"
+        ]
+      },
+      {
+        "file": "release/evidence/approved-opening-20261114/simulator-framed-final/actual-nine-second-photo-depth-v4.mp4",
+        "firstFrame": "/tmp/tih-photo-opening-diagnostic/audit-first-frame-1.png",
+        "streams": [
+          "video"
+        ],
+        "durationSeconds": 9.097659,
+        "tagKeys": [
+          "compatible_brands",
+          "encoder",
+          "major_brand",
+          "minor_version"
+        ]
+      },
+      {
+        "file": "release/evidence/approved-opening-20261114/simulator-framed-final/actual-photo-through-original-v4.mp4",
+        "firstFrame": "/tmp/tih-photo-opening-diagnostic/audit-first-frame-2.png",
+        "streams": [
+          "video"
+        ],
+        "durationSeconds": 19.870201,
+        "tagKeys": [
+          "compatible_brands",
+          "encoder",
+          "major_brand",
+          "minor_version"
+        ]
+      }
+    ],
+    "pngTextOrExifMetadataFiles": [],
+    "note": "Movie headers contain only standard encoder/container tags and only video streams; first frames exported for direct visual inspection, no playback/device actions.",
+    "firstFramesVisuallyReviewed": true,
+    "firstFramesObservation": "All three new movie excerpts start on approved artwork inside the app; no SpringBoard, personal prelude, alerts or private data. Final corrected Home screenshot shows full emblem and wordmark."
+  },
+  "finalEvidenceProvenance": [
+    {
+      "metadataFile": "release/evidence/approved-opening-20261114/gpu/frames.json",
+      "sourceFilesCompared": 15,
+      "allCurrentSourceHashesMatch": true,
+      "mismatches": []
+    },
+    {
+      "metadataFile": "release/evidence/approved-opening-20261114/ui-framed-final/artifact.json",
+      "sourceFilesCompared": 8,
+      "allCurrentSourceHashesMatch": true,
+      "mismatches": []
+    },
+    {
+      "metadataFile": "release/evidence/approved-opening-20261114/simulator-framed-final/proof.json",
+      "sourceFilesCompared": 8,
+      "allCurrentSourceHashesMatch": true,
+      "mismatches": []
+    }
+  ],
+  "reviewResult": "No actionable preservation, business-scope, credential, new-evidence identifier, media-prelude or final-source-provenance findings."
+}

@@ -1,0 +1,120 @@
+{
+  "scope": "Final corrected full-bounds photographic-opening Simulator Release; separate from the earlier cropped-photo checkpoint.",
+  "runner": "Existing compiled arm64 XCUITest runner; xcodebuild test-without-building",
+  "runnerOrAppRebuildPerformed": false,
+  "productionSourceEditedByThisUISlice": false,
+  "installedArtifactHashesVerifiedBeforeTests": true,
+  "artifact": "artifact.json",
+  "cases": [
+    {
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "result": "PASS",
+      "caseDurationSeconds": 64.995,
+      "resultBundle": "ui-framed-dark-home-cold.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "nativeCenterRetryCount": 0,
+      "DarkPersistedAcrossHomeAndCold": true,
+      "savedDarkWhiteClockVerified": true,
+      "LightAndLockedRestored": true,
+      "HomeSameProcessVerified": true,
+      "earlyOpeningDarkClockVerified": true,
+      "completePhotographEmblemAndWordmarkVisuallyConfirmed": true,
+      "openingSampleElapsedUnknown": true,
+      "openingSampleIsFrameZeroProof": false
+    },
+    {
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "result": "PASS",
+      "caseDurationSeconds": 37.122,
+      "resultBundle": "ui-framed-reduced-motion-home.xcresult",
+      "passedTests": 1,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "nativeCenterRetryCount": 0,
+      "HomeSeconds": 2.123558958322974,
+      "sameProcessAndLockedVerified": true,
+      "UIKitOnBeforeHomeVerified": true,
+      "nativeOffAndUIKitFalseCleanup": true
+    }
+  ],
+  "selectedPassedCases": 2,
+  "finalState": {
+    "LightRestored": true,
+    "lockedTodayVerified": true,
+    "nativeReduceMotionSwitch": "0",
+    "UIKitReducedMotionEnabled": false,
+    "appReactivatedByCleanup": true
+  },
+  "screenshots": [
+    {
+      "file": "61-light-locked-today-restored-no-billing.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "2a8fc7d8706828f9316e3e53ce6941c9183a4ca4634e3459b94540aec60cabd1",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "60-light-theme-restored-after-dark-cold-test.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "e3f2cb2ff3439e5962f60235fd76d4ba62efb427b87a4098a244439dbdaa6c87",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "59-dark-theme-persisted-after-cold-launch.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "97df3960d083eec8ffaa46796723d735d71d1c7fe9839cdf52900d999dd23bbd",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "58-dark-theme-preserved-after-home.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "16c31bf5f8c153d564b06d808c196f7607f9bb31b4ab021ac46cf718388c8537",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "57a-v5-home-faded-dark-white-clock.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "ef891e5eaa75c9940c4934df1485e47c44fc6436132943fc27a7d89a2039c532",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "57-v5-steel-home-cover-dark-clock.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "d9aca5e6eb390656880e7953e910b0a8d071a96a8b88e36212a7bf744732de89",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "56-dark-theme-saved-before-home.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "24d8deed0b33e47f6216350d4c965bd48c757259c5233f5bcf39cf430732069f",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "14-qa-reduce-motion-restored-off.png",
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "sha256": "ab9ac6e93ebb870104422844b20c744283ce332b6184225363b7ac971ca9e8df",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "14a-motion-settings-before-restore.png",
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "sha256": "a9931bd1e706433deaf15ea2539f95568f60603161d173bebe5348c93da1e404",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "91-reduced-motion-home-quick-locked-today.png",
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "sha256": "e70356b13a86f1cf5330e437cb83585fc72615b26942ac515fb9a923c6e2792a",
+      "originalIDATBytesPreserved": true
+    }
+  ],
+  "noCompileActionsObservedInTestLogs": true,
+  "limits": [
+    "Case durations include UI automation, not startup benchmarks.",
+    "Early Home sample visibly contains the full photographic emblem and wordmark; exact elapsed time is unknown, so it is not frame-zero or continuous-handoff proof.",
+    "These two Simulator cases do not establish physical-device smoothness, Android runtime or screen-reader speech.",
+    "No Founder visual approval is inferred from automated passes."
+  ],
+  "privacy": "Only safe app/Motion PNGs and sanitized metadata; no raw logs, private identifiers or result manifests. PNG textual/EXIF/time metadata removed, original IDAT/color chunks preserved."
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "FAILED smooth photo-to-scene transition; retained diagnostic checkpoint before native-hide gate fix",
+  "sourceMovieSHA256": "1c6d01ea35552448e83f262bccfff9796f36f2ed928cb18d8839ba3d58c279d4",
+  "artifact": {
+    "nativeBinarySHA256": "e9918e7df99e74626343becc53c575fdce987c2a1df74a9b26d436e9daa0c8ca",
+    "embeddedJavaScriptSHA256": "0fa4896389937a366e74368df8f3354c7887786cb224c29902373ed44b61a020",
+    "codesignVerified": true,
+    "normalReleasePressureMarkerAbsent": true,
+    "updatesResourcesMatch": true,
+    "updatesResourcesSHA256": {
+      "app.manifest": "8f6d8dacc6ae6b651a2def30d39dfe6517b86149f6d29b6579ba26394bf0dea3",
+      "fingerprint": "64d7201bd7bcbad373e14fa6bf825c318fb6987bf493a97ce360da092dedadf1"
+    },
+    "noAppDeletion": true,
+    "sourceSHA256": {
+      "src/intro/SphereIntroSurface.tsx": "3720b0da471eb0e45c1b4eaca1f6506d3996b9f3152576d616b843c18ec63037",
+      "src/intro/ApprovedOpening.tsx": "229b0c974f5077204c394c2360e5956d75aadd927385659ac473a90b693e5f0a",
+      "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+      "src/intro/sphereHtml.ts": "695a145bfa73ec335e04cf74d3ee4aa068f310ac20ef6fa3389ece651de43425",
+      "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+      "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "app.config.ts": "89d42e9ebfb86956a143422f1a1e299d0a992f08f74055f4058c5ea9430fd1cc"
+    }
+  },
+  "sourceVideo": {
+    "durationSeconds": 34.605067,
+    "decodedDisplayedFrames": 2016,
+    "containerDeclaredSamples": 2312,
+    "videoPixels": [
+      1126,
+      2436
+    ]
+  },
+  "allDecodedFrameFlashCheck": {
+    "method": "Every decoded source frame, central80percent ROI area64x64 grayscale; black/nearblack when98percent samples<=18/30; white when98percent>=245",
+    "blackFrames": 0,
+    "nearBlackFrames": 0,
+    "whiteFrames": 0
+  },
+  "actualInitialReferenceComparison": {
+    "originalReferenceSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "uniformCenteredCover": [
+      1126,
+      2436
+    ],
+    "comparisonROI": {
+      "left": 0,
+      "top": 150,
+      "width": 1126,
+      "height": 2136
+    },
+    "meanAbsoluteRGB": 1.3971456638349489,
+    "limit": "Lossy physical video and UIKit/vips filtering; native photo asset bytes are separately exact."
+  },
+  "failure": {
+    "lastPhotographFrame": 535,
+    "lastPhotographPTS": 9.3103,
+    "adjacentPTSIntervalMilliseconds": 16.7,
+    "logoROI": {
+      "x": 40,
+      "y": 750,
+      "width": 1046,
+      "height": 750
+    },
+    "area32RGBMeanFrameDifference": 36.6103515625,
+    "directObservation": "Correct full-screen native photograph is followed in16.700ms by the same photograph cropped at its oversized RN intrinsic dimensions, not by an advanced GPU metal scene.",
+    "notExplainedByMissingFrames": "The two original decoded frames are consecutive at16.700ms.",
+    "diagnosis": "Confirmed intrinsic Image framing bug: React Native Image.ios.js injects source.width/source.height before props.style. Static require supplies851x1847, and absoluteFill alone supplies no width/height override. Thus the RN photo is851x1847POINTS at origin0 inside a375x812pt viewport. Explicit width/height100percent is required.",
+    "sdkLimit": "expo-splash-screen57 manager hide enqueues the hide on the main queue; hideAsync scheduling alone is not a new native presentation ACK.",
+    "previousAdvancedMetalInference": "Superseded: enlarged photographic ring and wordmark were initially mistaken for entering metal/depth. The same-photo top-left control quantitatively identifies the actual surface.",
+    "nativeHideOrdering": "A separate global native-hide/playback ordering race exists; it is not the primary artwork jump cause.",
+    "firstWrongRNPhotoFrame": 536,
+    "firstWrongRNPhotoPTS": 9.327
+  },
+  "privacy": {
+    "rawVideoAndLatePrivateInteractionExcluded": true,
+    "onlyReviewedIntroFrames": true,
+    "noDeviceIDsNamesProcessIDs": true
+  },
+  "approval": "No successful smooth-handoff or Founder approval claim. A new corrected capture is required.",
+  "neighboringReplayControl": {
+    "laterUnloggedTrigger": true,
+    "photoVisibleAroundSeconds": 26.45245,
+    "nextLargeChangeFrame": 1551,
+    "nextLargeChangePTS": 26.7365,
+    "area32RGBMeanFrameDifference": 36.599,
+    "observation": "A later in-app-looking opening has almost the same abrupt photographic framing change. Its trigger is unlogged; it is consistent with the shared RN intrinsic-size bug. No late private UI samples are published."
+  },
+  "intrinsicFramingProof": {
+    "reactNativePrimarySource": "node_modules/react-native/Libraries/Image/Image.ios.js:133",
+    "reactNativeSourceSHA256": "ba3fce09842a1af140a8f00fe0cf661cee8c5f84ebc109007f35fc100129fc5d",
+    "sourcePointDimensions": [
+      851,
+      1847
+    ],
+    "phoneViewportPoints": [
+      375,
+      812
+    ],
+    "uniformScale": 3,
+    "controlResizedPixels": [
+      2553,
+      5541
+    ],
+    "controlTopLeftCropPixels": [
+      1126,
+      2436
+    ],
+    "metricsROI": {
+      "left": 0,
+      "top": 150,
+      "width": 1125,
+      "height": 2136
+    },
+    "metrics": {
+      "properFramedOriginalToLastNativePhoto": {
+        "meanAbsoluteRGB": 1.2678938826466917,
+        "rmsRGB": 2.918476045391011,
+        "p99ChannelDifference": 11
+      },
+      "properFramedOriginalToWrongRNPhoto": {
+        "meanAbsoluteRGB": 38.97210708836177,
+        "rmsRGB": 49.443053034890696,
+        "p99ChannelDifference": 123
+      },
+      "topLeftIntrinsicCropToWrongRNPhoto": {
+        "meanAbsoluteRGB": 0.9654777361631294,
+        "rmsRGB": 1.4830798129986915,
+        "p99ChannelDifference": 3
+      },
+      "lastNativePhotoToWrongRNPhoto": {
+        "meanAbsoluteRGB": 39.09776016090997,
+        "rmsRGB": 49.53056229853543,
+        "p99ChannelDifference": 123
+      }
+    },
+    "limits": "Encoded screen is1126px wide versus375pt*3=1125. Metrics exclude extra right column, OS status and home indicator. Source scaling is uniform; lossy video and UIKit/vips interpolation explain small remaining errors."
+  }
+}
