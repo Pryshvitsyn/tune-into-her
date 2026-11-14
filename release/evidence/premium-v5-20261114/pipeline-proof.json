@@ -1,0 +1,88 @@
+{
+  "state": "FINAL frozen V5 material, cleaner raised glyph surface and attached warm-white glints",
+  "sourceSha256": {
+    "assets/brand/official-mark.svg": "f4df61a255f22785485b5c6443969e45e99d583cd0e23209ed860003bab1129a",
+    "assets/brand/steel-background.svg": "73cd4447bf72ba0f1e1872c47296b019f404df709f4be3c1cbdf9bca6668d312",
+    "assets/launch/official-launch-mark.png": "636ae2156bf8b0ffc8c8fdb53c1cafd8cf9ff773c69a1e0b76c5a611f8ced77d",
+    "assets/launch/steel-background.png": "5144238e6a52a7b083a4fea0ae4e0fbf6c6b87c2587f8bb8ae0cd69c989ad8dd",
+    "src/intro/brand.generated.ts": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5",
+    "src/intro/brandTexture.generated.ts": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe",
+    "src/intro/brandBackground.generated.ts": "7e468afb668edf6a74f0b512e98c3c5c6d4e57ac0ce36bb0aaee983da2b34ebd"
+  },
+  "foregroundByteReproduction": true,
+  "backgroundByteReproduction": true,
+  "backgroundOpaque": true,
+  "foregroundNativeRGBExact": true,
+  "immutableReferenceSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+  "renderer": {
+    "sharp": "0.35.5",
+    "vips": "8.18.7"
+  },
+  "fontAudit": true,
+  "geometryProof": {
+    "dimensions": [
+      1600,
+      1120
+    ],
+    "alphaBounds": [
+      299,
+      208,
+      1299,
+      907
+    ],
+    "transparentRimDesignUnits": 104,
+    "opaqueRGBColors": 10809,
+    "layouts": [
+      {
+        "w": 320,
+        "h": 568,
+        "minimumMargin": 28.48750000000001
+      },
+      {
+        "w": 375,
+        "h": 667,
+        "minimumMargin": 33.3837890625
+      },
+      {
+        "w": 393,
+        "h": 852,
+        "minimumMargin": 34.986210937500005
+      },
+      {
+        "w": 430,
+        "h": 932,
+        "minimumMargin": 38.280078125
+      },
+      {
+        "w": 360,
+        "h": 640,
+        "minimumMargin": 32.048437500000006
+      },
+      {
+        "w": 412,
+        "h": 915,
+        "minimumMargin": 36.67765625000001
+      },
+      {
+        "w": 667,
+        "h": 375,
+        "minimumMargin": 18.500000000000014
+      },
+      {
+        "w": 932,
+        "h": 430,
+        "minimumMargin": 43.800000000000026
+      }
+    ]
+  },
+  "staticPreview": "static-final.png",
+  "referenceComparison": "reference-vs-static-final.png",
+  "runtimeAcceptanceNotClaimed": true,
+  "fullGeneratorCheckPassed": true,
+  "independentRasterCheckPassed": true,
+  "nativeForegroundAndBackgroundCopiesMatch": true,
+  "ownedGeneratorLint": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

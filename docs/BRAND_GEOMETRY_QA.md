@@ -1,5 +1,8 @@
 # Corrected emblem, exact typography and full intro
 
+Current V5/native pre-runtime correction supersedes the old flat launch artwork and
+black-startup boundary: [PREMIUM_INTRO_V5_QA](PREMIUM_INTRO_V5_QA.md).
+
 Recorded2026-11-14, Europe/Rome. Baseline e1058c4; current working branch
 codex/monetization-20261113. This supersedes the prior extra-second hold and original
 broken-arc/rectangular-clearance policy. No app publication or production configuration change.

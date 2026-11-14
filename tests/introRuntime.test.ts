@@ -4,9 +4,11 @@ import vm from 'node:vm';
 
 import { describe, expect, it } from 'vitest';
 
+import { FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_WIDTH_FRACTION } from '../src/intro/brandBackground.generated';
 import { createLaunchState, reduceLaunch, shouldAnimateLaunch } from '../src/intro/launchState';
-import { makeSphereHtml } from '../src/intro/sphereHtml';
-import { INTRO_MS } from '../src/intro/timeline';
+import { makeSceneFragment, makeSphereHtml } from '../src/intro/sphereHtml';
+import { INTRO_MS, sceneAt } from '../src/intro/timeline';
+import { V4_FRAGMENT } from '../src/intro/v4Shaders.generated';
 
 interface RuntimeMessage { type: string; elapsed: number; started: boolean; running: boolean }
 interface RuntimeState { elapsed: number; active: boolean; reduced: boolean; draws: number; scene: { x: number; y: number; radius: number; layers: number } }
@@ -20,6 +22,9 @@ async function bootRuntime() {
   const windowEvents = new Map<string, () => void>();
   const messages: RuntimeMessage[] = [];
   const values: Record<string, number | number[]> = {};
+  const uploads: { unit: number; premultiplied: boolean }[] = [];
+  let textureUnit = -1;
+  let premultiplied = false;
   const gl = {
     VERTEX_SHADER: 1, FRAGMENT_SHADER: 2, COMPILE_STATUS: 3, LINK_STATUS: 4,
     ARRAY_BUFFER: 5, STATIC_DRAW: 6, FLOAT: 7, SCISSOR_TEST: 8, COLOR_BUFFER_BIT: 9,
@@ -32,8 +37,9 @@ async function bootRuntime() {
     useProgram() {}, createBuffer: () => ({}), bindBuffer() {}, bufferData() {},
     getAttribLocation: () => 0, enableVertexAttribArray() {}, vertexAttribPointer() {},
     getUniformLocation: (_program: object, key: string) => key,
-    getParameter: () => 4096, createTexture: () => ({}), activeTexture() {}, bindTexture() {},
-    texParameteri() {}, pixelStorei() {}, texImage2D() {}, getError: () => 0,
+    getParameter: () => 4096, createTexture: () => ({}), activeTexture(unit: number) { textureUnit = unit - 12; }, bindTexture() {},
+    texParameteri() {}, pixelStorei(_key: number, value: boolean) { premultiplied = value; },
+    texImage2D() { uploads.push({ unit: textureUnit, premultiplied }); }, getError: () => 0,
     uniform1i() {}, viewport() {}, disable() {}, clearColor() {}, clear() {}, enable() {}, scissor: (...box: number[]) => { values.scissor = box; },
     uniform1f: (key: string, value: number) => { values[key] = value; },
     uniform2f: (key: string, ...value: number[]) => { values[key] = value; },
@@ -74,7 +80,7 @@ async function bootRuntime() {
   await Promise.resolve(); await Promise.resolve(); await Promise.resolve();
   const command = (value: object) => window.__TIH_CONTROL__!(value);
   return {
-    command, messages, values, frames,
+    command, messages, values, frames, uploads,
     state: () => window.__TIH_TEST__!.state(),
     step(ms: number) {
       now += ms;
@@ -90,6 +96,59 @@ function start(runtime: Awaited<ReturnType<typeof bootRuntime>>, animate = true,
   runtime.command({ type: 'start', animate, reducedMotion });
   runtime.step(1); // first RAF establishes its monotonic anchor
 }
+
+describe('V5 intro presentation boundaries', () => {
+  it('uploads the original V4 texture unchanged and premultiplies only the metallic foreground', async () => {
+    const runtime = await bootRuntime();
+    expect(runtime.uploads).toEqual([
+      { unit: 0, premultiplied: false },
+      { unit: 1, premultiplied: true },
+    ]);
+    // Theme ink must not turn the authored metallic RGB into a monochrome logo.
+    runtime.command({ type: 'configure', ink: [1, 0, 0] });
+    expect(runtime.values).not.toHaveProperty('u_ink');
+  });
+
+  it('uses the shared native first-frame composition without changing the sphere geometry', async () => {
+    const runtime = await bootRuntime();
+    start(runtime);
+    const original = sceneAt(0, { width: 400, height: 800 }, { x: 200, y: 470, radius: 100 });
+    expect(runtime.values.u_logoWidth).toBe(Math.min(400 * FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP));
+    expect(runtime.values.u_logoCenter).toEqual([400 * FIRST_FRAME_LOGO_CENTER_X, 800 * FIRST_FRAME_LOGO_CENTER_Y]);
+    expect(runtime.values.u_introTime).toBe(0);
+    expect(runtime.values.u_center).toEqual([original.x, original.y]);
+    expect(runtime.values.u_radius).toBe(original.radius);
+  });
+
+  it('retains the original shrink and camera progress while intro light uses the paused scene clock', async () => {
+    const runtime = await bootRuntime(); start(runtime); runtime.step(2000);
+    const original = sceneAt(2000, { width: 400, height: 800 }, { x: 200, y: 470, radius: 100 });
+    const camera = Math.min(1, original.camera / 3.55);
+    const width = Math.min(400 * FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP);
+    expect(runtime.values.u_logoWidth).toBeCloseTo(width * original.logoWidth / (400 * .76));
+    expect(runtime.values.u_logoCenter).toEqual([
+      400 * FIRST_FRAME_LOGO_CENTER_X + (original.x - 400 * FIRST_FRAME_LOGO_CENTER_X) * camera,
+      800 * FIRST_FRAME_LOGO_CENTER_Y + (original.y - 800 * FIRST_FRAME_LOGO_CENTER_Y) * camera,
+    ]);
+    expect(runtime.values.u_center).toEqual([original.x, original.y]);
+    expect(runtime.values.u_radius).toBe(original.radius);
+    expect(runtime.values.u_introTime).toBe(2);
+    runtime.command({ type: 'active', value: false }); runtime.step(80_000);
+    expect(runtime.values.u_introTime).toBe(2);
+    runtime.command({ type: 'active', value: true }); runtime.step(1); runtime.step(500);
+    expect(runtime.values.u_introTime).toBe(2.5);
+  });
+
+  it('embeds the protected V4 body verbatim and bypasses intro material at the destination', () => {
+    const expected = V4_FRAGMENT
+      .replace('void main() {\n  vec2 p = v_uv * 2.0 - 1.0;', 'vec4 shadeV4(vec2 p) {')
+      .replace('gl_FragColor = vec4(0.0);\n    return;', 'return vec4(0.0);')
+      .replace('gl_FragColor = vec4(col, alpha);', 'return vec4(col, alpha);');
+    const fragment = makeSceneFragment();
+    expect(fragment.slice(0, fragment.indexOf('\nuniform sampler2D u_logo;'))).toBe(expected + '\n');
+    expect(fragment).toContain('if (u_logoOpacity <= 0. && u_shell >= 1. && u_layers <= 0.) {\n    gl_FragColor = sphere;\n    return;');
+  });
+});
 
 describe('shared scene runtime lifecycle', () => {
   it.each([
@@ -197,13 +256,13 @@ describe('shared scene runtime lifecycle', () => {
 });
 
 describe('approved Deep Intro V2 boundaries', () => {
-  it('preserves the original nine-second scene, six-layer shader and official logo sources', () => {
+  it('preserves the original scene/V4 sources and reviewed V5 material/compositor', () => {
     const approved = {
       'timeline.ts': '20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf',
       'sceneRuntime.generated.ts': 'ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2',
       'v4Shaders.generated.ts': 'ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a',
-      'brand.generated.ts': 'cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f',
-      'brandTexture.generated.ts': '9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9',
+      'brand.generated.ts': '0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5',
+      'brandTexture.generated.ts': '56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe',
     };
     for (const [name, expected] of Object.entries(approved)) {
       const data = readFileSync(new URL(`../src/intro/${name}`, import.meta.url));
@@ -211,6 +270,6 @@ describe('approved Deep Intro V2 boundaries', () => {
     }
     const html = readFileSync(new URL('../src/intro/sphereHtml.ts', import.meta.url), 'utf8');
     const shader = html.slice(html.indexOf('export function makeSceneFragment'), html.indexOf('\nfunction json'));
-    expect(createHash('sha256').update(shader).digest('hex')).toBe('7b7f2fd4836d6fbaba39d5d17715d0aa89fcb856942448a9797f84abcc41936e');
+    expect(createHash('sha256').update(shader).digest('hex')).toBe('732932e023147b71fb2d239e17bc8ef02e9fb62e3284617ab6234ac8c2573492');
   });
 });

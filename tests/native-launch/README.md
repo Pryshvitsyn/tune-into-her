@@ -271,3 +271,20 @@ Its defer restores native Reduce Motion OFF. It never toggles accessibility on a
 For repeated Debug starts, launch the most recent project once; do not race a separate
 native app launch with a second development-client URL load. The optional Tools-button
 launch argument affects only the development host's process preferences.
+
+## Premium V5 / native pre-runtime bridge checkpoint
+
+Current source/proof: [PREMIUM_INTRO_V5_QA](../../docs/PREMIUM_INTRO_V5_QA.md).
+`capture-startup.cjs --help` describes the owned-Simulator, artifact-hash and Metro guards,
+bounded host pressure, native stage ordering and all-source-frame analysis. Media PTS
+are not assumed equal to recorded wall time. First-stage string checks use the long
+NSLog format/handoff marker because Swift can encode small stage strings as immediates.
+The canonical native helper's QA branch is compiled only when explicitly requested;
+normal Release has no pressure marker or deliberate busy work.
+
+Actual V5 results: native Dark/Home/cold/Light restoration53.720s; single/double Home
+38.989s; UIKit reduced-motion cold13.190s; direct reduced Home1.493s with samePID and
+robust native OFF cleanup. The former1.922sbody had a stale/simple cleanup tap failure;
+its raw result remains private in /tmp and is not counted as a passing complete test.
+The shared restore helper now re-queries the actual switch and uses the already-tested
+inner-control/drag fallback with both native-value and UIKit assertions.

@@ -2,7 +2,26 @@
 
 Updated: 2026-11-14 (Europe/Rome)
 
-## NOW — final brand geometry and typography correction
+## NOW — Premium Intro V5 and first-start black-screen correction
+
+- [x] Archive approved reference; derive one metallic foreground/steel background pipeline
+  with exact Linux Libertine O glyphs/rings and shared native/fallback/GPU placement.
+- [x] Preserve original V4 source/texture/shaders/8sloop and9s/sixdepthlayers; verify8/8
+  actual finalRGBA equality comparisons and76clean shared-GPUframes.
+- [x] Present native storyboard window before factory/Updates/JS; retain across replacement
+  roots, hand off on actual Expo/paint readiness; keep native splash static.
+- [x] Pass signed Simulator/physical normal Release builds and actual no-Metro recordings:
+ 765frames under6worker load,1265normal physical,1361physical native pressure,0black.
+- [x] Restore exact normal Release on real iPhone with data intact; native pressure code absent.
+- [x] Preserve theme/readable clock across V5 and Home; pass Light/Dark/cold/one-replay,
+  reducedMotioncold and1.493sHome with native preference restoredOFF.
+- [x] Pass383source tests/typecheck/lint/font/raster/content checks; preserve V4 integrity.
+- [x] Review/copy only sanitized actual media; update snapshot/architecture/proof.
+- [x] Final diff/secrets review, safe feature-branch commit and authorized push.
+- [ ] Android native runtime/real screen-reader speech remain genuine equipment/tool limits.
+- [ ] Store submission, production deployment and billing setup are outside this task.
+
+## PREVIOUS — final brand geometry and typography correction
 
 - [x] Correct the marked upper fragment into one smooth open trajectory; retain both
   open rings, original bounds/stroke/caps/color; replace broad rectangle with glyph clearance.

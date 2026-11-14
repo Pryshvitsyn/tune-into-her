@@ -1,0 +1,95 @@
+{
+  "startedAtUTC": "2026-11-14T16:55:47.353Z",
+  "ownedDevice": {
+    "name": "Tune Into Her Launch QA",
+    "type": "com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation",
+    "state": "Booted",
+    "identifierSHA256": "c0fd7349cffedcb52188dddf9be80d15ec07f96e6b4c721b044d6276c2fd7896"
+  },
+  "artifact": {
+    "bundleID": "com.eliogenesis.tuneintoher",
+    "binarySHA256": "f27721a1d1e79fed0f4454acb9575932578aba83c78ade81df3281e0a51313ce",
+    "embeddedJSSHA256": "88952177fdd2c9fcc60fdf910be8c255a2a43f970fcb61a424a83a06c188a13a",
+    "installedChecksumsMatch": true
+  },
+  "source": {
+    "head": "71504ac77a33f888fe65a49c60069a27153f1bea",
+    "changedPaths": [
+      "app.config.ts",
+      "assets/brand/README.md",
+      "assets/brand/official-mark.svg",
+      "assets/launch/SplashScreen.storyboard",
+      "assets/launch/generate.cjs",
+      "assets/launch/official-launch-mark.png",
+      "ios/TuneIntoHer/AppDelegate.swift",
+      "ios/TuneIntoHer/Images.xcassets/LaunchLogo.imageset/official-launch-mark.png",
+      "ios/TuneIntoHer/SplashScreen.storyboard",
+      "plugins/with-approved-launch-splash.cjs",
+      "scripts/generate-intro-brand.cjs",
+      "src/intro/GlobalLaunch.tsx",
+      "src/intro/HomeTransition.tsx",
+      "src/intro/IntroLoading.tsx",
+      "src/intro/SphereIntroSurface.tsx",
+      "src/intro/brand.generated.ts",
+      "src/intro/brandTexture.generated.ts",
+      "src/intro/sphereHtml.ts",
+      "tests/brandGeometry.test.ts",
+      "tests/intro-frames/README.md",
+      "tests/intro-frames/capture.cjs",
+      "tests/introRuntime.test.ts",
+      "tests/launchState.test.ts",
+      "tests/nativeLaunchSplash.test.ts"
+    ],
+    "workingTreeIncludesChanges": true
+  },
+  "pressure": {
+    "workers": 6,
+    "workerMs": 6000,
+    "nativeQA": false
+  },
+  "standalone": {
+    "commonLocalMetroPortsClosed": [
+      8081,
+      8082,
+      8083,
+      8084,
+      8085,
+      19000,
+      19001
+    ]
+  },
+  "dataPolicy": "Update-install only; no uninstall/reset/preferences/history reads, navigation or billing",
+  "stageEvents": [
+    {
+      "stage": "COVER_INSTALLED",
+      "nativeMonotonicSeconds": 177075.422129
+    },
+    {
+      "stage": "COVER_FRAME_COMMITTED",
+      "nativeMonotonicSeconds": 177075.533826
+    },
+    {
+      "stage": "FACTORY_BEGIN",
+      "nativeMonotonicSeconds": 177075.534132
+    },
+    {
+      "stage": "EXPO_SPLASH_INSTALLED",
+      "nativeMonotonicSeconds": 177075.614464
+    },
+    {
+      "stage": "EARLY_COVER_HANDOFF",
+      "nativeMonotonicSeconds": 177075.667185
+    }
+  ],
+  "complete": true,
+  "launchCommandVideoEstimateSeconds": 0.5273232499999999,
+  "recordedWallSeconds": 40.248003624999996,
+  "sameProcessAliveAtEnd": true,
+  "stageOrderingPass": true,
+  "analysis": {
+    "frameCount": 765,
+    "durationSeconds": 20.59,
+    "blackFrameCount": 0,
+    "blackAfterLaunchCommandEstimate": 0
+  }
+}

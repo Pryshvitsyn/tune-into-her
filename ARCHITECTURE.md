@@ -82,6 +82,25 @@ The native `UIViewControllerBasedStatusBarAppearance` flag is true in both Info.
 and app.config.ts. A separate Expo StatusBar JSX owner is not mounted. This resolves the
 observed dark-destination status-bar ownership conflict without changing signing.
 
+## Native pre-runtime bridge and V5 presentation
+
+Release creates TIHEarlyLaunchWindow from the canonical storyboard before constructing
+ExpoReactNativeFactory. After native display callbacks, expensive initialization starts;
+the window-level opaque cover stays above root replacements. The existing Expo splash
+subscriber installs its loading view on the real root; attachment, size and two native
+callbacks permit handoff, including Expo's intentional fast hide after compatible paint.
+The cover/link are released. Debug launcher behavior is retained. A compile-only native
+QA flag permits bounded explicit pressure work; normal Release contains no such work.
+The existing config plugin emits the canonical helper idempotently into AppDelegate.
+
+V5 uses a full-RGBA metallic foreground and separately authored steel background, never
+a stretched reference photograph. Shared generated constants align native/RN/GPU first
+frames. IntroAtmosphere fades from2000–6500ms using the same pure function on the UI clock;
+intro-only shader light fades with the original logo. V4/direct final shader return,
+all six ribbons, timeline and eight-second material loop are unchanged. The root native
+Stack consumes a threshold-only intro contrast signal for dark/light clock readability
+while preserving saved destination themes and all routing/access handlers.
+
 ## Shared emblem source
 
 `assets/brand/official-mark.svg` owns the open-arc geometry and exact OTF wordmark

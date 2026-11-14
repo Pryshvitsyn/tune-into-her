@@ -6,6 +6,7 @@ import { WebView, type WebViewMessageEvent } from 'react-native-webview';
 import { prepareSphereAsset } from '../../TuneIntoHerSphereV4';
 
 import { DestinationSphere, useLaunchPresentation } from './LaunchPresentation';
+import { FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y } from './brandBackground.generated';
 import { BRAND_TEXTURE_URI, PADDED_LOGO_WIDTH_SCALE, PADDED_LOGO_HEIGHT_SCALE } from './brandTexture.generated';
 import { makeSphereHtml } from './sphereHtml';
 import { INTRO_MS, type Circle, type Size, validCircle } from './timeline';
@@ -182,7 +183,7 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
     }
   }, [complete,elapsed,fail,firstFrame,send]);
 
-  const logoWidth = Math.min(view.width*.76,420);
+  const logoWidth = Math.min(view.width*FIRST_FRAME_LOGO_WIDTH_FRACTION,FIRST_FRAME_LOGO_WIDTH_CAP);
   const paddedWidth = logoWidth * PADDED_LOGO_WIDTH_SCALE;
   const paddedHeight = logoWidth * PADDED_LOGO_HEIGHT_SCALE;
   const content = <View pointerEvents="none" accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={StyleSheet.absoluteFill}>
@@ -194,11 +195,11 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
       onError={() => {if (alive.current) setPosterFailed(true);}}
       style={{position:'absolute',left:target.x-target.radius,top:target.y-target.radius,width:target.radius*2,height:target.radius*2,opacity:posterVisible?1:0}}
     />
-    {!frameReady && ((opening && !failed) || (failed && !posterLoaded)) ? <View style={{position:'absolute',left:(view.width-paddedWidth)/2,top:(view.height-paddedHeight)/2,width:paddedWidth,height:paddedHeight}}>
+    {!frameReady && ((opening && !failed) || (failed && !posterLoaded)) ? <View style={{position:'absolute',left:view.width*FIRST_FRAME_LOGO_CENTER_X-paddedWidth/2,top:view.height*FIRST_FRAME_LOGO_CENTER_Y-paddedHeight/2,width:paddedWidth,height:paddedHeight}}>
       <Image source={{uri:BRAND_TEXTURE_URI}} resizeMode="contain" fadeDuration={0}
         onLoad={() => firstFrame('fallback')}
         onError={() => fail('Bundled launch logo failed; using the V4 poster.')}
-        style={{width:paddedWidth,height:paddedHeight,tintColor:ink}} />
+        style={{width:paddedWidth,height:paddedHeight}} />
     </View> : null}
     {source ? <WebView
       ref={web}

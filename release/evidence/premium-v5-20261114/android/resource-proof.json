@@ -1,0 +1,207 @@
+{
+  "kind": "Offline Expo Android resource prebuild and decoded RGBA checks; no native compilation or runtime",
+  "sourceCommit": "71504ac77a33f888fe65a49c60069a27153f1bea",
+  "workingTreeDirty": true,
+  "sourceSha256": {
+    "assets/brand/official-mark.svg": "f4df61a255f22785485b5c6443969e45e99d583cd0e23209ed860003bab1129a",
+    "assets/brand/steel-background.svg": "73cd4447bf72ba0f1e1872c47296b019f404df709f4be3c1cbdf9bca6668d312",
+    "src/intro/brand.generated.ts": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5",
+    "src/intro/brandTexture.generated.ts": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe",
+    "src/intro/brandBackground.generated.ts": "7e468afb668edf6a74f0b512e98c3c5c6d4e57ac0ce36bb0aaee983da2b34ebd"
+  },
+  "prebuild": {
+    "offline": true,
+    "noInstall": true,
+    "localInstalledTemplate": true,
+    "exitCode": 0
+  },
+  "inputConsistency": {
+    "app.config.ts": {
+      "sha256": "1420d0535c5e9bcdd30f10d9a0797d71ffa485d99b63b72c85f2eb21deb984ce",
+      "equal": true
+    },
+    "package.json": {
+      "sha256": "4ba91d5de6cd99d6cca30aaf195daa78a89afcf7461fc36602db8efaa1176c04",
+      "equal": true
+    },
+    "src/config/brand.json": {
+      "sha256": "ac6bbc9c89d8e6f66ebd1fa3b7c44e5b60dcf0f9e7a0fd0907484a2dd2ead283",
+      "equal": true
+    },
+    "plugins/with-approved-launch-splash.cjs": {
+      "sha256": "8d97160e0bc5701eff6492c7b48220d351af08bd52e759cf10054c65dbd379bb",
+      "equal": true
+    },
+    "assets/icon.png": {
+      "sha256": "f0f10ad05461e2e074b2ec21b4459bf49a4ffc9db49afb2181971399acc0a443",
+      "equal": true
+    },
+    "assets/adaptive-icon.png": {
+      "sha256": "29af3cdc57156fe98f2d614ea760d7068e0f04e9c3ea8071b70dbd89cf25891f",
+      "equal": true
+    },
+    "assets/launch/official-launch-mark.png": {
+      "sha256": "636ae2156bf8b0ffc8c8fdb53c1cafd8cf9ff773c69a1e0b76c5a611f8ced77d",
+      "equal": true
+    },
+    "assets/launch/steel-background.png": {
+      "sha256": "5144238e6a52a7b083a4fea0ae4e0fbf6c6b87c2587f8bb8ae0cd69c989ad8dd",
+      "equal": true
+    },
+    "assets/launch/silver-gradient.png": {
+      "sha256": "41b2dd70391b452708a37d4722906c22b8cef3173fbde5c3e818f4fa7fabd660",
+      "equal": true
+    },
+    "assets/launch/SplashScreen.storyboard": {
+      "sha256": "d7154740a11aced3c425481bd8d76e45eb447b746a22f5dac20f2651e4ebb6d9",
+      "equal": true
+    },
+    "assets/launch/EarlyLaunchWindow.swift": {
+      "sha256": "d4c11a4902b853c07ac4577d0652d678bdc23ee3faeee35424d03528e3423ee3",
+      "equal": true
+    }
+  },
+  "sourceAndroidDirectoryAbsent": true,
+  "densities": [
+    {
+      "density": "mdpi",
+      "multiplier": 1,
+      "width": 288,
+      "height": 288,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 10360,
+      "opaqueMaterialColors": 1271,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.6697303403953,
+      "sha256": {
+        "day": "2b1023b9f44defb6a34f5ba7c028313ec124a2573d6f318b269b92978cb9b69c",
+        "night": "2b1023b9f44defb6a34f5ba7c028313ec124a2573d6f318b269b92978cb9b69c"
+      }
+    },
+    {
+      "density": "hdpi",
+      "multiplier": 1.5,
+      "width": 432,
+      "height": 432,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 23176,
+      "opaqueMaterialColors": 2291,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.55385138137416,
+      "sha256": {
+        "day": "07247656709ded1bfe5ae1db4ab6324d6057f85e70d3070ad25b6325270aeb10",
+        "night": "07247656709ded1bfe5ae1db4ab6324d6057f85e70d3070ad25b6325270aeb10"
+      }
+    },
+    {
+      "density": "xhdpi",
+      "multiplier": 2,
+      "width": 576,
+      "height": 576,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 40997,
+      "opaqueMaterialColors": 3267,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.44888059008801,
+      "sha256": {
+        "day": "7046630cc709808a8432ad4746c085d169313633eb69f8e7bc6baedda8b6680f",
+        "night": "7046630cc709808a8432ad4746c085d169313633eb69f8e7bc6baedda8b6680f"
+      }
+    },
+    {
+      "density": "xxhdpi",
+      "multiplier": 3,
+      "width": 864,
+      "height": 864,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 92133,
+      "opaqueMaterialColors": 5141,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.57900173636027,
+      "sha256": {
+        "day": "9c625db1353c6bf35d49c85f1ea1a80672cf49c612787b11f0312d4840973510",
+        "night": "9c625db1353c6bf35d49c85f1ea1a80672cf49c612787b11f0312d4840973510"
+      }
+    },
+    {
+      "density": "xxxhdpi",
+      "multiplier": 4,
+      "width": 1152,
+      "height": 1152,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 163680,
+      "opaqueMaterialColors": 6850,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.52106108525243,
+      "sha256": {
+        "day": "0f058e80c84ba045c895008a9979cc8226595dcde0675841fd742c10cf653a8a",
+        "night": "0f058e80c84ba045c895008a9979cc8226595dcde0675841fd742c10cf653a8a"
+      }
+    }
+  ],
+  "osMaskSpecification": {
+    "source": "https://developer.android.com/reference/androidx/core/splashscreen/SplashScreen",
+    "theme": "Theme.SplashScreen",
+    "canvasDp": 288,
+    "innerSafeCircleDiameterDp": 192,
+    "verification": "Conservative farthest pixel corner for every alpha>0 sample, including material shadows"
+  },
+  "limitations": [
+    "Android 12+ OS splash restricts icon size and uses a solid background; full atmospheric background starts in the RN intro",
+    "No JDK/Android SDK/emulator: resources do not establish actual native splash, WebView, routing, accessibility or Metro-free Android release behavior"
+  ],
+  "generatedApplicationID": "com.pryshvitsyn.tuneintoher",
+  "generatedNamespace": "com.pryshvitsyn.tuneintoher",
+  "allowBackupDisabled": true,
+  "splashBackgroundDayAndNight": {
+    "color": "#7E8BA1",
+    "equalToSharedColor": true
+  },
+  "toolBoundary": {
+    "gradleWrapperVersionExitCode": 1,
+    "javaRuntimeAvailable": false,
+    "sdkDirectoryPresent": false,
+    "tools": {
+      "adb": false,
+      "sdkmanager": false,
+      "gradle": false
+    },
+    "environment": {
+      "ANDROID_HOME": false,
+      "ANDROID_SDK_ROOT": false,
+      "JAVA_HOME": false
+    },
+    "nativeCompilationAttempted": false,
+    "nativeRuntimeVerified": false
+  },
+  "contactSheet": {
+    "file": "resource-contact.png",
+    "rows": [
+      "day",
+      "night"
+    ],
+    "columns": [
+      "mdpi",
+      "hdpi",
+      "xhdpi",
+      "xxhdpi",
+      "xxxhdpi"
+    ],
+    "previewMethod": "Actual generated resources each sampled to288px square onsharedsolid#7E8BA1; originalfullresolutionPNGs retained separately"
+  }
+}

@@ -1,5 +1,8 @@
 # Native launch bridge and build proof
 
+Current V5/native pre-runtime correction supersedes the old flat launch artwork and
+black-startup boundary: [PREMIUM_INTRO_V5_QA](PREMIUM_INTRO_V5_QA.md).
+
 Updated: 2026-11-14 (Europe/Rome). Runtime cases and media:
 [LAUNCH_QA](LAUNCH_QA.md) · [evidence index](../release/evidence/launch-20261114/README.md).
 

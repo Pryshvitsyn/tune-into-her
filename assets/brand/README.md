@@ -1,41 +1,53 @@
-# Shared emblem source
+# Shared Premium V5 emblem
 
-The authoritative file is [official-mark.svg](official-mark.svg). Do not edit generated
-TypeScript or native PNGs independently.
+[official-mark.svg](official-mark.svg) is the authoritative foreground geometry and
+metallic appearance. [steel-background.svg](steel-background.svg) supplies the separate,
+independently authored steel-blue atmosphere. The supplied [Founder reference](reference/README.md)
+is immutable and is never used as a stretched runtime screenshot.
 
-The two open circular arcs retain the original outer bounds, radii19/15,1.5 stroke,
-round caps and composition. The former detached upper-right fragment used a different
-circle center. The left trajectory now follows its original main circle continuously;
-the lower openings remain open. A mask follows the actual letter contours with a narrow
-clearance, replacing the full-width rectangular cut. The lettering is painted last.
+The two existing open ring paths and the exact Linux Libertine O Regular outlines,
+native-default kerning, uniform scale and centering are preserved. The main glyph path
+has no added stroke. Reused geometry supplies thin polished edges, silver surface
+reflections and restrained ambient shadows; surface glints are clipped to the rings, with small connected warm-white blooms.
+The existing OTF remains unmodified. The independent
+[CoreText audit](../../tests/font-provenance/README.md) verifies actual glyph geometry.
 
-The wordmark uses the existing Linux Libertine O Regular OTF, weight400, uniform scale
-0.08583691 and baseline224. Native-default “Tu” kerning is−39 font units. Translation
-71.673819745 preserves the centered advance. Font bytes and glyph shapes are unchanged.
-The independent [CoreText audit](../../tests/font-provenance/README.md) verifies this.
+## Deterministic outputs
 
-## Regenerate
+`scripts/generate-intro-brand.cjs` renders the SVGs with existing Sharp0.35.5/libvips8.18.7:
 
-PNG rendering uses Sharp0.35.5/libvips8.18.7, also supplied through the same external
-tool-module convention as the existing repository image generators. Keep this build-time
-renderer outside application dependencies:
+- `brand.generated.ts`: exact SVG geometry/appearance and shared header arc path.
+- `brandTexture.generated.ts`: full RGB metallic foreground,1600×1120, transparent
+  padded design viewBox `-80 -80 800 560`. Never replace this material with a flat tint.
+- `brandBackground.generated.ts`:900×1950 background PNG URI, `cover` fit, palette and
+  the shared first-frame placement constants. The atmosphere is separate from the mark.
+- `assets/launch/official-launch-mark.png` and `steel-background.png`: byte-identical
+  copies of the shared foreground and background PNGs, with no native recoloring.
 
-~~~sh
-npm install --prefix /tmp/tih-brand-tools --no-save --package-lock=false sharp@0.35.5
-TIH_BRAND_TOOLS_NODE_MODULES=/tmp/tih-brand-tools/node_modules node scripts/generate-intro-brand.cjs
+The logical first-frame design width is `min(viewportWidth*1.05,560)`, with padded width
+scaled by1.25 and padded height by0.875. Its center is `(0.5*width,0.46*height)`. The
+reference foreground, native splash, loading fallback and first GPU frame share these
+constants. Intro wrappers/compositor own subsequent movement; these assets do not
+modify V4 shaders, sphere source/texture, timeline or application state.
+
+## Regenerate and check
+
+Use the existing external build-time renderer; it is not an application dependency:
+
+```sh
+TIH_BRAND_TOOLS_NODE_MODULES=/path/to/existing/node_modules node scripts/generate-intro-brand.cjs
 cp assets/launch/official-launch-mark.png ios/TuneIntoHer/Images.xcassets/LaunchLogo.imageset/official-launch-mark.png
-TIH_BRAND_TOOLS_NODE_MODULES=/tmp/tih-brand-tools/node_modules node scripts/generate-intro-brand.cjs --check --raster-check
+TIH_BRAND_TOOLS_NODE_MODULES=/path/to/existing/node_modules node scripts/generate-intro-brand.cjs --check --raster-check
 xcrun swift tests/font-provenance/audit.swift . > /tmp/tih-font-provenance.json
-~~~
+```
 
-The ordinary --check validates source metadata, exact generated SVG, PNG decoding,
-dimensions, native alpha/tint and the existing iOS copy without an external renderer.
---raster-check additionally re-renders the authoritative SVG and requires byte-identical
-texture output. Both fail on drift; protected-asset regression hashes remain enabled.
+On the current build host the existing renderer parent is
+`~/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules`.
+The existing iOS splash plugin/root native integration additionally copies the background
+into its native asset catalog. Android's existing Expo splash generator consumes the
+foreground within OS icon constraints; a resource check does not prove native runtime.
 
-The generator writes brand.generated.ts, brandTexture.generated.ts and the canonical
-native PNG through assets/launch/generate.cjs. BrandMark imports that generated arc path.
-The existing iOS config plugin copies the canonical PNG on prebuild; Expo's existing
-Android splash plugin produces its density resources from the same PNG. Android's
-system splash retains its platform icon constraints. No shader or timeline is generated
-or modified by this command.
+Ordinary `--check` verifies immutable reference bytes, authoritative source metadata,
+exact generated SVG, decoded dimensions, full-RGB foreground/background identity and
+existing iOS foreground/background copies. `--raster-check` also independently re-renders both SVGs
+and requires byte-identical PNGs. Protected renderer/shader/timeline tests remain enabled.

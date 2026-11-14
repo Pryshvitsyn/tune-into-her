@@ -1,0 +1,48 @@
+{
+  "platform": "physical iPhone, signed normal Release",
+  "standaloneWithoutMetro": true,
+  "sourceVideoSHA256": "2ce91467fa6463b938f87eb32c0d2715ad31d50e79892bccce66fdf940ae80d6",
+  "decodedOriginalFrames": 1265,
+  "sourceDurationSeconds": 21.77005,
+  "allFramePixelMetrics": {
+    "fullBlackFrames": 0,
+    "fullNearBlackFrames": 0,
+    "centralBlackFrames": 0,
+    "centralNearBlackFrames": 0,
+    "minimumFullMeanLuma": 41.46062646370024,
+    "minimumCentralMeanLuma": 46.24722222222222
+  },
+  "visualReview": {
+    "initialSystemModalOccludesOpeningUntilApproximatelySeconds": 8.9,
+    "firstUnobscuredLogoApproximatelySeconds": 9.0,
+    "depthPassageVisible": true,
+    "originalV4SingleSphereVisible": true,
+    "sphereMotionContinuesAtFinalCheckpoints": true,
+    "destination": "existing dark locked application entry; protected daily guidance withheld",
+    "destinationVisibleApproximatelySeconds": 18.5,
+    "lastFrameStable": true
+  },
+  "reviewedExcerpt": {
+    "file": "physical-normal-intro-reviewed.mp4",
+    "sourceStartSeconds": 9.0,
+    "sourceEndSeconds": 18.0,
+    "audioRemoved": true,
+    "metadataRemoved": true,
+    "excludesHomeWallpaperSystemPromptAndApplicationContent": true
+  },
+  "limitations": [
+    "The initial native frame is occluded by an iOS accessory classification prompt in this recording.",
+    "No claim of unobstructed first-native-frame acceptance is based on this run.",
+    "Six-layer count and nine-second timing are source-integrity/runtime contract evidence, not inferred by counting the visual thumbnails.",
+    "Raw phone media and private contact sheets remain outside the repository."
+  ],
+  "artifactChecksumsFromNormalBuildProof": {
+    "binarySha256": "9fe01c5342c53514e5a1e28dec1dd61c4a5b23975a035745c040e69aea127a95",
+    "jsSha256": "7caa32a0780a33022f5962a762f83709441f2d3fb5593ac4a0b3fdd97f9137b0"
+  },
+  "additionalPixelEvidence": {
+    "whiteBlankFrameCandidates": 0,
+    "lastHalfSecondSphereMeanAbsoluteLumaChange": 1.4995013960909453,
+    "sameIntervalBackgroundMeanAbsoluteLumaChange": 0.006521739130434782
+  }
+}

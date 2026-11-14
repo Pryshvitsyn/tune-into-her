@@ -1,0 +1,107 @@
+{
+  "startedAtUTC": "2026-11-14T18:05:17.222Z",
+  "ownedDevice": {
+    "name": "Tune Into Her Launch QA",
+    "type": "com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation",
+    "state": "Booted",
+    "identifierSHA256": "c0fd7349cffedcb52188dddf9be80d15ec07f96e6b4c721b044d6276c2fd7896"
+  },
+  "artifact": {
+    "bundleID": "com.eliogenesis.tuneintoher",
+    "binarySHA256": "c41d1b4930dc0731f39fcef7b4705b27d35d495d91380bbffe52ec35c56be83b",
+    "embeddedJSSHA256": "07b2f47605e734dd2b60cbf8a9411ccfb93cdb6f428a6dcfa196228d97d17fb2",
+    "installedChecksumsMatch": true
+  },
+  "source": {
+    "head": "71504ac77a33f888fe65a49c60069a27153f1bea",
+    "changedPaths": [
+      "ARCHITECTURE.md",
+      "PRODUCT_SNAPSHOT.md",
+      "TASKS.md",
+      "app.config.ts",
+      "app/_layout.tsx",
+      "assets/brand/README.md",
+      "assets/brand/official-mark.svg",
+      "assets/launch/SplashScreen.storyboard",
+      "assets/launch/generate.cjs",
+      "assets/launch/official-launch-mark.png",
+      "docs/BRAND_GEOMETRY_QA.md",
+      "docs/LAUNCH_QA.md",
+      "docs/NATIVE_LAUNCH_SPLASH.md",
+      "ios/TuneIntoHer/AppDelegate.swift",
+      "ios/TuneIntoHer/Images.xcassets/LaunchLogo.imageset/official-launch-mark.png",
+      "ios/TuneIntoHer/SplashScreen.storyboard",
+      "plugins/with-approved-launch-splash.cjs",
+      "scripts/generate-intro-brand.cjs",
+      "src/intro/GlobalLaunch.tsx",
+      "src/intro/HomeTransition.tsx",
+      "src/intro/IntroLoading.tsx",
+      "src/intro/LaunchPresentation.tsx",
+      "src/intro/SphereIntroSurface.tsx",
+      "src/intro/brand.generated.ts",
+      "src/intro/brandTexture.generated.ts",
+      "src/intro/sphereHtml.ts",
+      "tests/brandGeometry.test.ts",
+      "tests/font-provenance/report.json",
+      "tests/intro-frames/README.md",
+      "tests/intro-frames/capture.cjs",
+      "tests/introRuntime.test.ts",
+      "tests/launchState.test.ts",
+      "tests/native-launch/LaunchUIQA.swift",
+      "tests/native-launch/README.md",
+      "tests/native-launch/StatusBarPixels.swift",
+      "tests/nativeLaunchSplash.test.ts"
+    ],
+    "workingTreeIncludesChanges": true
+  },
+  "pressure": {
+    "workers": 6,
+    "workerMs": 6000,
+    "nativeQA": false
+  },
+  "standalone": {
+    "commonLocalMetroPortsClosed": [
+      8081,
+      8082,
+      8083,
+      8084,
+      8085,
+      19000,
+      19001
+    ]
+  },
+  "dataPolicy": "Update-install only; no uninstall/reset/preferences/history reads, navigation or billing",
+  "stageEvents": [
+    {
+      "stage": "COVER_INSTALLED",
+      "nativeMonotonicSeconds": 181248.959505
+    },
+    {
+      "stage": "COVER_FRAME_COMMITTED",
+      "nativeMonotonicSeconds": 181249.017993
+    },
+    {
+      "stage": "FACTORY_BEGIN",
+      "nativeMonotonicSeconds": 181249.018153
+    },
+    {
+      "stage": "EXPO_SPLASH_INSTALLED",
+      "nativeMonotonicSeconds": 181249.07869
+    },
+    {
+      "stage": "EARLY_COVER_HANDOFF",
+      "nativeMonotonicSeconds": 181249.117363
+    }
+  ],
+  "complete": true,
+  "launchCommandVideoEstimateSeconds": 0.5178451659999992,
+  "recordedWallSeconds": 40.232667,
+  "sameProcessAliveAtEnd": true,
+  "stageOrderingPass": true,
+  "analysis": {
+    "frameCount": 687,
+    "durationSeconds": 33.611667,
+    "blackFrameCount": 0,
+    "blackAfterLaunchCommandEstimate": 0
+  }
+}

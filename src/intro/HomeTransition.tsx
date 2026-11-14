@@ -1,4 +1,3 @@
-import { LinearGradient } from 'expo-linear-gradient';
 import { router, usePathname } from 'expo-router';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useReducer, useRef, useState, type PropsWithChildren } from 'react';
 import { AccessibilityInfo, Animated, AppState, BackHandler, StyleSheet, useAnimatedValue, View } from 'react-native';
@@ -9,8 +8,10 @@ import { todayEntry } from '../domain/navigation/todayEntry';
 import { useTheme } from '../theme/useTheme';
 
 import { HomeTransitionContext } from './HomeTransitionContext';
+import { IntroAtmosphere } from './IntroAtmosphere';
 import { LaunchPresentationContext, useLaunchPresentation } from './LaunchPresentation';
 import { SphereIntroSurface } from './SphereIntroSurface';
+import { INTRO_BACKGROUND_COLOR } from './brandBackground.generated';
 import { initialHomeTransition, reduceHomeTransition, type HomeTransitionEvent } from './homeTransitionState';
 import { markAppIntroConsumed } from './introSession';
 import { LAUNCH_FADE_MS } from './launchState';
@@ -31,6 +32,8 @@ export function HomeTransition({ children }: PropsWithChildren) {
   const painted = useRef<string | null>(null);
   const [paintRevision, repaint] = useState(0);
   const [view, setView] = useState({ width: 0, height: 0 });
+  const [backgroundReady, setBackgroundReady] = useState(false);
+  const [introDarkContent, setIntroDarkContent] = useState(true);
   const [foreground, setForeground] = useState(AppState.currentState !== 'background' && AppState.currentState !== 'inactive');
   const [motion, setMotion] = useState({ ready: false, reduced: true });
   const elapsed = useSharedValue(0);
@@ -56,6 +59,8 @@ export function HomeTransition({ children }: PropsWithChildren) {
   const returnHome = useCallback(() => {
     if (parent.blocking || current.current.phase !== 'idle') return;
     painted.current = null;
+    setBackgroundReady(false);
+    setIntroDarkContent(true);
     opacity.stopAnimation(); opacity.setValue(1); elapsed.set(0);
     markAppIntroConsumed();
     send({ type: 'start', id: current.current.id + 1 });
@@ -106,18 +111,19 @@ export function HomeTransition({ children }: PropsWithChildren) {
     return () => sub.remove();
   }, [active]);
   const presentation = useMemo(() => ({ ...parent, blocking: parent.blocking || active,
+    introStatusBarStyle: active ? (introDarkContent ? 'dark' as const : 'light' as const) : parent.introStatusBarStyle,
     destinationSpheresVisible: parent.destinationSpheresVisible && !active,
     reducedMotion: motion.reduced, reportScreenReady, reportScreenNotReady,
-  }), [parent, active, motion.reduced, reportScreenReady, reportScreenNotReady]);
+  }), [parent, active, introDarkContent, motion.reduced, reportScreenReady, reportScreenNotReady]);
   const home = useMemo(() => ({ active, pauseDestination: state.phase === 'playing', returnHome }), [active, state.phase, returnHome]);
   const target = { x: view.width / 2, y: view.height / 2, radius: Math.max(1, Math.min(view.width * .38, view.height * .25, 180)) };
   return <HomeTransitionContext.Provider value={home}><LaunchPresentationContext.Provider value={presentation}>
     <View style={styles.root} onLayout={event => { const { width, height } = event.nativeEvent.layout; setView(old => old.width === width && old.height === height ? old : { width, height }); }}>
       <View style={styles.root} pointerEvents={active ? 'none' : 'auto'} accessibilityElementsHidden={active} importantForAccessibility={active ? 'no-hide-descendants' : 'auto'}>{children}</View>
-      {active ? <Animated.View testID="home-transition" style={[StyleSheet.absoluteFill, { opacity, zIndex: 200, backgroundColor: palette.edge }]}>
-        <LinearGradient pointerEvents="none" colors={[palette.edge, palette.center, palette.edge]} locations={[0, .5, 1]} start={{ x: 0, y: .5 }} end={{ x: 1, y: .5 }} style={StyleSheet.absoluteFill} />
+      {active ? <Animated.View testID="home-transition" style={[StyleSheet.absoluteFill, { opacity, zIndex: 200, backgroundColor: INTRO_BACKGROUND_COLOR }]}>
+        <IntroAtmosphere elapsed={elapsed} dark={dark} onReady={() => setBackgroundReady(true)} onContrastChange={setIntroDarkContent} />
         {motion.ready && view.width > 0 && view.height > 0 ? <SphereIntroSurface key={state.id} launch view={view} target={target} elapsed={elapsed}
-          animate={!motion.reduced} active={foreground} preferencesReady={motion.ready} reducedMotion={motion.reduced} ink={palette.ink}
+          animate={!motion.reduced} active={foreground} preferencesReady={motion.ready && backgroundReady} reducedMotion={motion.reduced} ink={palette.ink}
           onComplete={complete} /> : null}
       </Animated.View> : null}
     </View>

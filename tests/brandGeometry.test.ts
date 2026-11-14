@@ -6,6 +6,7 @@ import { createRequire } from 'node:module';
 import { describe, expect, it } from 'vitest';
 
 import { BRAND_BODY, BRAND_SOURCE_SHA256, BRAND_VIEWBOX, OFFICIAL_APP_MARK_PATH } from '../src/intro/brand.generated';
+import { FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y } from '../src/intro/brandBackground.generated';
 import { BRAND_TEXTURE_URI, PADDED_LOGO_HEIGHT_SCALE, PADDED_LOGO_WIDTH_SCALE } from '../src/intro/brandTexture.generated';
 import { makeSceneFragment } from '../src/intro/sphereHtml';
 import { INTRO_MS, sceneAt, type Size } from '../src/intro/timeline';
@@ -120,8 +121,9 @@ describe('approved brand geometry has no unintended clipping', () => {
     expect(BRAND_BODY).not.toContain('clipPath');
     expect(BRAND_BODY).not.toContain('arc-cut');
     expect(BRAND_BODY).toContain('maskUnits="userSpaceOnUse"');
-    expect(BRAND_BODY).toContain('<use href="#wordmark" color="black" stroke="black"');
-    expect(BRAND_BODY.indexOf('<path id="wordmark"')).toBeGreaterThan(BRAND_BODY.indexOf('</g>'));
+    expect(BRAND_BODY).toContain('<use href="#wordmark" fill="black" stroke="black"');
+    // Definitions may precede rings, but the actual polished glyph use paints last.
+    expect(BRAND_BODY.lastIndexOf('<use href="#wordmark"')).toBeGreaterThan(BRAND_BODY.lastIndexOf('<use href="#rings"'));
   });
 
   it('keeps a fully transparent rim wider than all distortion and filter samples on every edge', () => {
@@ -154,10 +156,15 @@ describe('approved brand geometry has no unintended clipping', () => {
           const scene = sceneAt(ms, view, target);
           if (scene.logoOpacity <= 0) continue;
           const reach = scene.depth * (distort + spread);
-          const left = scene.x + (designInk.left / designWidth - .5 - reach) * scene.logoWidth;
-          const right = scene.x + (designInk.right / designWidth - .5 + reach) * scene.logoWidth;
-          const top = scene.y + (designInk.top / designHeight - .5 - reach) * scene.logoWidth * designHeight / designWidth;
-          const bottom = scene.y + (designInk.bottom / designHeight - .5 + reach) * scene.logoWidth * designHeight / designWidth;
+          const originalWidth = Math.min(view.width * .76, 420);
+          const actualWidth = Math.min(view.width * FIRST_FRAME_LOGO_WIDTH_FRACTION, FIRST_FRAME_LOGO_WIDTH_CAP) * scene.logoWidth / originalWidth;
+          const progress = Math.max(0, Math.min(1, scene.camera / 3.55));
+          const logoX = view.width * FIRST_FRAME_LOGO_CENTER_X + (scene.x - view.width * FIRST_FRAME_LOGO_CENTER_X) * progress;
+          const logoY = view.height * FIRST_FRAME_LOGO_CENTER_Y + (scene.y - view.height * FIRST_FRAME_LOGO_CENTER_Y) * progress;
+          const left = logoX + (designInk.left / designWidth - .5 - reach) * actualWidth;
+          const right = logoX + (designInk.right / designWidth - .5 + reach) * actualWidth;
+          const top = logoY + (designInk.top / designHeight - .5 - reach) * actualWidth * designHeight / designWidth;
+          const bottom = logoY + (designInk.bottom / designHeight - .5 + reach) * actualWidth * designHeight / designWidth;
           minimumMargin = Math.min(minimumMargin, left, top, view.width - right, view.height - bottom);
         }
       }

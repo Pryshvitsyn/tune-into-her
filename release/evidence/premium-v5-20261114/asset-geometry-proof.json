@@ -1,0 +1,56 @@
+{
+  "dimensions": [
+    1600,
+    1120
+  ],
+  "alphaBounds": [
+    299,
+    208,
+    1299,
+    907
+  ],
+  "transparentRimDesignUnits": 104,
+  "opaqueRGBColors": 10809,
+  "layouts": [
+    {
+      "w": 320,
+      "h": 568,
+      "minimumMargin": 28.48750000000001
+    },
+    {
+      "w": 375,
+      "h": 667,
+      "minimumMargin": 33.3837890625
+    },
+    {
+      "w": 393,
+      "h": 852,
+      "minimumMargin": 34.986210937500005
+    },
+    {
+      "w": 430,
+      "h": 932,
+      "minimumMargin": 38.280078125
+    },
+    {
+      "w": 360,
+      "h": 640,
+      "minimumMargin": 32.048437500000006
+    },
+    {
+      "w": 412,
+      "h": 915,
+      "minimumMargin": 36.67765625000001
+    },
+    {
+      "w": 667,
+      "h": 375,
+      "minimumMargin": 18.500000000000014
+    },
+    {
+      "w": 932,
+      "h": 430,
+      "minimumMargin": 43.800000000000026
+    }
+  ]
+}

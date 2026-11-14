@@ -1,0 +1,17 @@
+{
+  "gradleWrapperVersionExitCode": 1,
+  "javaRuntimeAvailable": false,
+  "sdkDirectoryPresent": false,
+  "tools": {
+    "adb": false,
+    "sdkmanager": false,
+    "gradle": false
+  },
+  "environment": {
+    "ANDROID_HOME": false,
+    "ANDROID_SDK_ROOT": false,
+    "JAVA_HOME": false
+  },
+  "nativeCompilationAttempted": false,
+  "nativeRuntimeVerified": false
+}

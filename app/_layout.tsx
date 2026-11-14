@@ -10,7 +10,6 @@ import { DemoNotificationNavigation } from "../src/components/DemoNotificationNa
 import { AppProvider, useApp } from "../src/context/AppContext";
 import { GlobalLaunch } from "../src/intro/GlobalLaunch";
 import { HomeTransition } from "../src/intro/HomeTransition";
-import { useHomeTransition } from "../src/intro/HomeTransitionContext";
 import { useLaunchPresentation } from "../src/intro/LaunchPresentation";
 import { typographyForLanguage } from "../src/theme/typography";
 import { useTheme } from "../src/theme/useTheme";
@@ -46,8 +45,7 @@ function Navigation() {
   const { colors, dark } = useTheme();
   const { preferences } = useApp();
   const typography = typographyForLanguage(preferences.language);
-  const { blocking } = useLaunchPresentation();
-  const { active: returningHome } = useHomeTransition();
+  const { introStatusBarStyle } = useLaunchPresentation();
   return (
     <>
       <Stack
@@ -55,7 +53,7 @@ function Navigation() {
           headerShown: false,
           headerTitleStyle: { ...typography, fontSize: 22 },
           headerBackTitleStyle: { fontFamily: typography.fontFamily, fontSize: 17 },
-          statusBarStyle: blocking && !returningHome ? "dark" : dark ? "light" : "dark",
+          statusBarStyle: introStatusBarStyle ?? (dark ? "light" : "dark"),
           contentStyle: { backgroundColor: colors.background },
           animation: "slide_from_right",
         }}

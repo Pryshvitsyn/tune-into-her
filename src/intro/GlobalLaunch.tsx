@@ -1,4 +1,3 @@
-import { LinearGradient } from 'expo-linear-gradient';
 import { router, usePathname, useRootNavigationState } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useReducer, useRef, useState, type PropsWithChildren } from 'react';
@@ -9,8 +8,10 @@ import { useSharedValue } from 'react-native-reanimated';
 import { AppText as Text } from '../components/AppText';
 import { useApp } from '../context/AppContext';
 
+import { IntroAtmosphere } from './IntroAtmosphere';
 import { LaunchPresentationContext } from './LaunchPresentation';
 import { SphereIntroSurface } from './SphereIntroSurface';
+import { INTRO_BACKGROUND_COLOR } from './brandBackground.generated';
 import { markAppIntroConsumed } from './introSession';
 import { getLaunchCopy } from './launchCopy';
 import { launchDestinationKey, launchRouteState } from './launchRouting';
@@ -34,6 +35,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
     attempt: initializationAttempt,
     destinationKey: routeKey,
   }));
+  const [backgroundReady, setBackgroundReady] = useState(false);
+  const pendingFrame = useRef<'gpu' | 'fallback' | null>(null);
   const [font, setFont] = useState<'loading' | 'ready' | 'error'>('loading');
   const [fontAttempt, setFontAttempt] = useState(0);
   const [view, setView] = useState({ width: 0, height: 0 });
@@ -118,6 +121,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   }, [blocking]);
 
   const onFirstFrame = useCallback((kind: 'gpu' | 'fallback') => {
+    pendingFrame.current = kind;
+    if (!backgroundReady) return;
     dispatch({ type: 'first-frame', kind });
     // Image onLoad/GPU completion precedes the next native commit. Retain splash through that paint.
     requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -126,7 +131,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
         void SplashScreen.hideAsync().catch(() => { splashHidden.current = false; });
       }
     }));
-  }, []);
+  }, [backgroundReady]);
+  useEffect(() => { if (backgroundReady && pendingFrame.current) onFirstFrame(pendingFrame.current); }, [backgroundReady, onFirstFrame]);
   const onIntroComplete = useCallback(() => {
     dispatch({ type: 'intro-complete' });
   }, []);
@@ -167,7 +173,7 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
     if (font === 'error') { setFont('loading'); setFontAttempt(value => value + 1); }
   };
   const prepareDestinationSpheres = !blocking || state.introComplete || state.reducedMotion || state.rendererFailed;
-  const presentation = useMemo(() => ({ blocking, destinationSpheresVisible: !blocking, prepareDestinationSpheres, reducedMotion: state.reducedMotion, reportScreenReady, reportScreenNotReady }), [blocking, prepareDestinationSpheres, state.reducedMotion, reportScreenReady, reportScreenNotReady]);
+  const presentation = useMemo(() => ({ blocking, introStatusBarStyle: blocking ? 'dark' as const : undefined, destinationSpheresVisible: !blocking, prepareDestinationSpheres, reducedMotion: state.reducedMotion, reportScreenReady, reportScreenNotReady }), [blocking, prepareDestinationSpheres, state.reducedMotion, reportScreenReady, reportScreenNotReady]);
   const target = useMemo(() => ({ x: view.width / 2, y: view.height / 2, radius: Math.max(1, Math.min(view.width * .38, view.height * .25, 180)) }), [view]);
 
   return <LaunchPresentationContext.Provider value={presentation}>
@@ -181,10 +187,9 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
         {font === 'ready' ? children : null}
       </View>
       {blocking && <Animated.View style={[StyleSheet.absoluteFill, styles.cover, { opacity }]}>
-        <LinearGradient pointerEvents="none" colors={[SILVER.edge, SILVER.center, SILVER.edge]} locations={[0, .5, 1]}
-          start={{ x: 0, y: .5 }} end={{ x: 1, y: .5 }} style={StyleSheet.absoluteFill} />
+        <IntroAtmosphere elapsed={elapsed} onReady={() => setBackgroundReady(true)} />
         {view.width > 0 && view.height > 0 && <SphereIntroSurface launch view={view} target={target} elapsed={elapsed} animate={shouldAnimateLaunch(state)}
-          active={state.active} preferencesReady={state.accessibilityReady} reducedMotion={state.reducedMotion} ink={SILVER.ink}
+          active={state.active} preferencesReady={state.accessibilityReady && backgroundReady} reducedMotion={state.reducedMotion} ink={SILVER.ink}
           onFirstFrame={onFirstFrame} onComplete={onIntroComplete} onError={() => dispatch({ type: 'renderer-failed' })} />}
         {phase === 'error' && <View style={styles.error} accessibilityLiveRegion="polite">
           <Text systemFont={font !== 'ready'} accessibilityRole="alert" style={styles.errorText}>{copy.error}</Text>
@@ -195,8 +200,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   </LaunchPresentationContext.Provider>;
 }
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: SILVER.edge },
-  cover: { backgroundColor: SILVER.edge, zIndex: 100 },
+  root: { flex: 1, backgroundColor: INTRO_BACKGROUND_COLOR },
+  cover: { backgroundColor: INTRO_BACKGROUND_COLOR, zIndex: 100 },
   error: { position: 'absolute', left: 24, right: 24, bottom: 56, gap: 16, alignItems: 'center' },
   errorText: { color: SILVER.ink, textAlign: 'center', fontSize: 17, lineHeight: 25 },
   retry: { minHeight: 54, minWidth: 160, backgroundColor: '#405D71', borderRadius: 20, paddingHorizontal: 24, justifyContent: 'center' },

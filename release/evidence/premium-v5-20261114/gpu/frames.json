@@ -1,0 +1,3864 @@
+{
+  "sourceSha256": {
+    "src/intro/sphereHtml.ts": "c5b7e8b18e92d5fa9989e32d02c6130e9ecb876488cf8c153c4f3b22a3b43ed4",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+    "src/intro/brand.generated.ts": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5",
+    "src/intro/brandTexture.generated.ts": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe",
+    "src/intro/brandBackground.generated.ts": "7e468afb668edf6a74f0b512e98c3c5c6d4e57ac0ce36bb0aaee983da2b34ebd",
+    "src/intro/introPresentation.ts": "217608b44a6b752cc03502f277eba34068f13c56931dff8b729f096669c3e048",
+    "assets/tune_into_her_sphere_source_clean.png": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c"
+  },
+  "sourceCommit": "71504ac77a33f888fe65a49c60069a27153f1bea",
+  "workingTreeDirty": true,
+  "capturedAt": "2026-11-14T16:42:47.249Z",
+  "engine": "Chromium headless WebGL / ANGLE SwiftShader; not iOS or Android native evidence",
+  "frames": [
+    {
+      "file": "iphone-se-00000.png",
+      "ms": 0,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "e233b0d159d6de4ee73550f80f308ccd62f04ba4eead8b68439897337b06f9da",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-00500.png",
+      "ms": 500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "c1307240ae8c04af7af5ad723df3eefee033cb500ca181bf509fe2d9dde2b305",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 4,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 710.2585031115381,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 285,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01000.png",
+      "ms": 1000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "b253f50d75424d528f5ae12c59661c9e1f8017adeda9359d0a96389946579bce",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 5,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 693.2918898007463,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223035,
+          "logoWidth": 276.35584253443096,
+          "logoOpacity": 1,
+          "camera": 0.13292943037803803,
+          "layers": 0.1262002743484225
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01350.png",
+      "ms": 1350,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "50151ea62712041dbc192b538b14641859cb8462afd031096a02dc3df5a562bb",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 6,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 648.4438355078889,
+          "shell": 0.20863016486871566,
+          "depth": 0.076815609586908,
+          "logoWidth": 253.50663649486944,
+          "logoOpacity": 1,
+          "camera": 0.4843034023964194,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-01800.png",
+      "ms": 1800,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "0cdeaaf635d53ee43951d85bde96737c0f95c4fa549b5159f0d4ba67ab1d6f10",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 7,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 576.7487015540063,
+          "shell": 0.5878282108691227,
+          "depth": 0.30523850130545593,
+          "logoWidth": 216.97936873317465,
+          "logoOpacity": 1,
+          "camera": 1.0460179380430148,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02000.png",
+      "ms": 2000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "2af9b3356196afa6e779612d6ea3dbf568092e7309df4fe9c49d7513a66bce43",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 8,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 544.8841975745029,
+          "shell": 0.7537146346427845,
+          "depth": 0.43211786799007,
+          "logoWidth": 200.74502750575473,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748353,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02350.png",
+      "ms": 2350,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "fca40cb5519dbddaf55fcb2a52aa663b505033a3f191fe490ae31eadb3a65133",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 9,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 489.12131561037194,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038461,
+          "logoWidth": 172.33493035776985,
+          "logoOpacity": 1,
+          "camera": 1.7325579260555206,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02500.png",
+      "ms": 2500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "c2c5126da963815bde76e8cd9d84eb5035e73ca39e42f92f0f695be68d8bd460",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 10,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 463.61515638259255,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 159.34004135617025,
+          "logoOpacity": 1,
+          "camera": 1.9323926930283541,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-02850.png",
+      "ms": 2850,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "968dbc78f8c68259d1e74977fe980d7a997387bd8457ae3c72a372aa5ca633d3",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 11,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 394.6834653610408,
+          "shell": 1,
+          "depth": 0.9520033285530201,
+          "logoWidth": 124.22069369123324,
+          "logoOpacity": 1,
+          "camera": 2.472456302344041,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-03200.png",
+      "ms": 3200,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "5dea70888f47e088e85523432a4fc24133c038433f03e03f00d589f99a775c38",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 12,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 319.9161239013823,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 86.12819632476292,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.058240862235614,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-03500.png",
+      "ms": 3500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "02782ca858e37fb3d3427fbeaa211e240596b6c9b1ff06e54a34724316bd8e9b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 13,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 258.06616891791106,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.61685459014473,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.542820732965069,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-03800.png",
+      "ms": 3800,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "0aa7ddaa75861f276908f824bdef9746788e2ae0c069f7dff0a229fb606953a7",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 14,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 204.31466760364907,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626832,
+          "layers": 0.68359375
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04000.png",
+      "ms": 4000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "94b59eb050e32fa4a97caa23c6f43e7dbef24c7e9eaefba8f735e19d5f74de88",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 15,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 175.80246470726058,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0.15625,
+          "camera": 4.18733753435605,
+          "layers": 0.31640625
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04150.png",
+      "ms": 4150,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "52c730ae74e1cadc4b4a319f49a5a07823d308869f7165d49fbbd805c2821b79",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 16,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 159.46661331079184,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04300.png",
+      "ms": 4300,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "6b564df1e7219f13ba786a74aeff4e1890e9abb30cb10343181f926ac55ac554",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 17,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 148.25184291102892,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.403190185374177,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-04500.png",
+      "ms": 4500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "0f5d51fe02d28710ea1b56244e7a7b7488362c8963ffa449b3153f7d82ae3ea1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 18,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-06500.png",
+      "ms": 6500,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "5fac3c036dcfc044601ac7aa583f6688563d65c455e19f0844e1c01af0960e09",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 19,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-09000.png",
+      "ms": 9000,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "997e030171d0632c23ddcf464ec884c4d692f6aa1abe8f4eaf24055c616c335e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 20,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-se-09360.png",
+      "ms": 9360,
+      "width": 375,
+      "height": 667,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "d9b6b371c80b0aa76afb4a4fb0b246013ae3c10c3a9215d5d6da2ea439064df5",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 21,
+        "scene": {
+          "x": 187.5,
+          "y": 333.5,
+          "radius": 142.5,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 54.149999999999984,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        750,
+        1334
+      ],
+      "viewport": [
+        0,
+        0,
+        750,
+        1334
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 375,
+      "innerHeight": 667
+    },
+    {
+      "file": "iphone-tall-00000.png",
+      "ms": 0,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "e4ad063303443d9aa4e0c64e122096c300fc022844f8a8f4dfb503b39d487bc2",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-00500.png",
+      "ms": 500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "1df071f39d38310ad74bb36ffd3bc30586fe46926545f387408c3a22ee8bf4b7",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 4,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 880.8211542114334,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 298.68,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01000.png",
+      "ms": 1000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "14560604f155dc16f6a2554909be33d5b4a9005e4c2ffbd60971cadde3e78b47",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 5,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 858.9619344558132,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223069,
+          "logoWidth": 289.62092297608365,
+          "logoOpacity": 1,
+          "camera": 0.1329294303780384,
+          "layers": 0.1262002743484225
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01350.png",
+      "ms": 1350,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "f2d9d5ddf70b759f0af5b517125a913c5e54902cf1e890d461d835dc84a104b6",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 6,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 801.1811943374544,
+          "shell": 0.20863016486871566,
+          "depth": 0.07681560958690774,
+          "logoWidth": 265.67495504662327,
+          "logoOpacity": 1,
+          "camera": 0.48430340239641856,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-01800.png",
+      "ms": 1800,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "e1c178e738a51561e81de8e300e38cf0305d9779bf1061c21b89801225218187",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 7,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 708.8115705475545,
+          "shell": 0.5878282108691227,
+          "depth": 0.3052385013054558,
+          "logoWidth": 227.39437843236706,
+          "logoOpacity": 1,
+          "camera": 1.0460179380430146,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02000.png",
+      "ms": 2000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "e871bdd6a90b2c9c6b615bab2836bc6fa7e7c68c2ff6d1e059655cba61de3695",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 8,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 667.7584044187103,
+          "shell": 0.7537146346427845,
+          "depth": 0.4321178679900695,
+          "logoWidth": 210.380788826031,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748344,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02350.png",
+      "ms": 2350,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "3fafde2b33d2cc7824434c18237961534dba1a964dc55bf8154ced06a30d1796",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 9,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 595.9153636932326,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038459,
+          "logoWidth": 180.6070070149429,
+          "logoOpacity": 1,
+          "camera": 1.73255792605552,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02500.png",
+      "ms": 2500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "800a9c5ceac3b50b32d7a9c097e1afa00ab50892d639a977685411ea87facd3f",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 10,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 563.0540772674238,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 166.98836334126642,
+          "logoOpacity": 1,
+          "camera": 1.932392693028354,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-02850.png",
+      "ms": 2850,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "602f0bbb95821da98b5f2efc6ace64e9db397637191b2fe21f09a885695ea678",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 11,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 474.24478135400807,
+          "shell": 1,
+          "depth": 0.9520033285530201,
+          "logoWidth": 130.18328698841242,
+          "logoOpacity": 1,
+          "camera": 2.472456302344041,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-03200.png",
+      "ms": 3200,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "b746d06610c5bcd913d236681254f08e17dd6688502a294ce36e240205b19a04",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 12,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 377.91702769025164,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 90.26234974835158,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.0582408622356136,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-03500.png",
+      "ms": 3500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "f7fcb7d5514c769fc9fc9bd0ceb38d6d44a40be11b996bdbc45c68f645d417a9",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 13,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 298.2316047308586,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 57.23846361047168,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.5428207329650685,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-03800.png",
+      "ms": 3800,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "34ae88aab6fd272fed130f61e4cfd95e56a5cfd0ad5d177ee2ed6a9800f240df",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 14,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 228.9799598739791,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626823,
+          "layers": 0.68359375
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04000.png",
+      "ms": 4000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "089a07170e764f2abc98a8e17a6740188678d224fbd7ddc138cbbda7d1ea133f",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 15,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 192.24578685946494,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0.15625,
+          "camera": 4.18733753435605,
+          "layers": 0.31640625
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04150.png",
+      "ms": 4150,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "4da5c37dd8610f73fee77b4ef5cd2b642da3402fb33f337ba8b122721c81ca5b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 16,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 171.19921975562022,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04300.png",
+      "ms": 4300,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "f616de409850a54384a4ddc5960364bb42cf20d8af473d17955bca6cb5ea624f",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 17,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 156.75048292248255,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.403190185374177,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-04500.png",
+      "ms": 4500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "aa9f5c2c1f0fb3e43d6489f1406fb4f6383112dfbf65401b48fdd0275928f77c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 18,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-06500.png",
+      "ms": 6500,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "ba11e76805c170eb47a731f410fcb373ee0a84921a31af1e275460f4d497bcba",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 19,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-09000.png",
+      "ms": 9000,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "fb731d6e4943468a4664e197d3b40173a68d52e0e0e28f640dfe6693829dafa6",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 20,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "iphone-tall-09360.png",
+      "ms": 9360,
+      "width": 393,
+      "height": 852,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "2819e9d2dc21b417c3f6cc2fcad0719669475a2fb509fb94a24020a86a68428d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 21,
+        "scene": {
+          "x": 196.5,
+          "y": 426,
+          "radius": 149.34000000000003,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 56.74919999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        786,
+        1704
+      ],
+      "viewport": [
+        0,
+        0,
+        786,
+        1704
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 393,
+      "innerHeight": 852
+    },
+    {
+      "file": "android-compact-00000.png",
+      "ms": 0,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "44b9f9df79aed2ef85235cdcfa56bb942f4d8c5dae0b365adf7a7a5c0effda43",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-00500.png",
+      "ms": 500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "23a1ed86358e7dd8a565b38dc33d5ae0c4ca26cbd9df42c8b58eb71c1ae0f2f6",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 4,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 824.6576611391629,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 273.6,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01000.png",
+      "ms": 1000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "d05f76143dc751b2aeef013b9433676c0abe497b38b8fdcd27fb7e4674ee990d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 5,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 804.1020641988189,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223032,
+          "logoWidth": 265.30160883305376,
+          "logoOpacity": 1,
+          "camera": 0.132929430378038,
+          "layers": 0.1262002743484225
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01350.png",
+      "ms": 1350,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "d68596326448c47b13d263cdffc402043438e4e418b45e7290b107e8689e10f9",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 6,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 749.7672060444064,
+          "shell": 0.20863016486871566,
+          "depth": 0.07681560958690774,
+          "logoWidth": 243.36637103507476,
+          "logoOpacity": 1,
+          "camera": 0.48430340239641856,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-01800.png",
+      "ms": 1800,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "2743d7cb389ab83cca342763a9a59f751df42b424057b31ad00a4ecb9f12b09b",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 7,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 662.9062486368017,
+          "shell": 0.5878282108691227,
+          "depth": 0.30523850130545555,
+          "logoWidth": 208.30019398384772,
+          "logoOpacity": 1,
+          "camera": 1.0460179380430141,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02000.png",
+      "ms": 2000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "30f54bd3579276288b752ba923949dfe0e0670f993368cae490b8c160b9c6386",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 8,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 624.3013786778663,
+          "shell": 0.7537146346427845,
+          "depth": 0.4321178679900695,
+          "logoWidth": 192.7152264055246,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748344,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02350.png",
+      "ms": 2350,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "436dae96473a4fda1a038aa4287a2866ee74adbb032f681ebacb7e8d9a5b858c",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 9,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 556.7428562497292,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038459,
+          "logoWidth": 165.4415331434591,
+          "logoOpacity": 1,
+          "camera": 1.7325579260555202,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02500.png",
+      "ms": 2500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "a33664a9dcb7b690104927754a1a695362135b90903f8fc1e39cc959f8875999",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 10,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 525.8413251675664,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 152.96643970192346,
+          "logoOpacity": 1,
+          "camera": 1.9323926930283541,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-02850.png",
+      "ms": 2850,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "3bd61a3a207443c548d7b07397a88c76b7fbd023fa98e9e535a86b1cb370b0e4",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 11,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 442.32836762558645,
+          "shell": 1,
+          "depth": 0.95200332855302,
+          "logoWidth": 119.25186594358398,
+          "logoOpacity": 1,
+          "camera": 2.4724563023440407,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-03200.png",
+      "ms": 3200,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "37c491381b61b86662bd6a9def125dec9bcebd79db4e0ad79840c4ec36f86bf4",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 12,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 351.7453321550804,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 82.68306847177242,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.058240862235614,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-03500.png",
+      "ms": 3500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "3f8ed341079f99be182b932ae6c7705c9940318e3fe0c929e67f4b57d1da630d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 13,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 276.8121252663494,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 52.43218040653895,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.542820732965069,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-03800.png",
+      "ms": 3800,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "1edf76f049c538b0900b409bb13b513a0096c7e494d2be6a1db21b33468677fb",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 14,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 211.69045509475654,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626832,
+          "layers": 0.68359375
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04000.png",
+      "ms": 4000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "eaff5ce802db62e4b0b177bd70d9c8e05ab28a9b10f3ffa36b749d8521db3724",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 15,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 177.14700556339454,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0.15625,
+          "camera": 4.187337534356051,
+          "layers": 0.31640625
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04150.png",
+      "ms": 4150,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "d7bfb4ff18df3473f27d2b94e9f1b2c263d3b5b78d1244a9fe6060520cee3027",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 16,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 157.35559694034407,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04300.png",
+      "ms": 4300,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "a18477ed6184f3caef4ca6df99d56873cc069640f6636cde6a4a2b5f3c6c0a12",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 17,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 143.76854241783667,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.403190185374178,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-04500.png",
+      "ms": 4500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "236d188af334f239eb2f55d43114a73315dc8c6fe87f5d5b186521fc71777711",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 18,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-06500.png",
+      "ms": 6500,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "2f90542a37e57c348e427675080d81c97d06c62a380ec244b70f05ffd5771434",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 19,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-09000.png",
+      "ms": 9000,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "6f66bc039a9339a60b123fb7bf1f24dc9c323411b2c722c15fecf8465b41c137",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 20,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-compact-09360.png",
+      "ms": 9360,
+      "width": 360,
+      "height": 800,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "96689ea5332eedaf119f11cf2837aa0a7ea88f4e40f30a2f9e77327d47dfcc6e",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 21,
+        "scene": {
+          "x": 180,
+          "y": 400,
+          "radius": 136.8,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 51.98399999999999,
+          "logoOpacity": 0,
+          "camera": 4.448254523659102,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        720,
+        1600
+      ],
+      "viewport": [
+        0,
+        0,
+        720,
+        1600
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 360,
+      "innerHeight": 800
+    },
+    {
+      "file": "android-tall-00000.png",
+      "ms": 0,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "8fda3b6d726c92cd5ab83276f1905b4f92b4d173c7eee4baf483166b2bd54461",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 0,
+        "draws": 3,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-00500.png",
+      "ms": 500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [],
+      "sha256": "2a2399cad3152c10e2976ae18dbce4ff4147e85fb157346caf19ecedbd6c3849",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 500,
+        "draws": 4,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 943.2678474088312,
+          "shell": 0,
+          "depth": 0,
+          "logoWidth": 313.12,
+          "logoOpacity": 1,
+          "camera": 0,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01000.png",
+      "ms": 1000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0
+      ],
+      "sha256": "54567333e661e744457586ad7f5a99f8d9482603c63d75cf20533235f49b4838",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1000,
+        "draws": 5,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 919.7582605644246,
+          "shell": 0.02198249542031346,
+          "depth": 0.006323466133223016,
+          "logoWidth": 303.6229523311615,
+          "logoOpacity": 1,
+          "camera": 0.1329294303780378,
+          "layers": 0.1262002743484225
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01350.png",
+      "ms": 1350,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1
+      ],
+      "sha256": "673b9a930bafad83edaf2c332180e1ccbec16559e2df8c7648b1f32d5fe20587",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1350,
+        "draws": 6,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 857.6150851476809,
+          "shell": 0.20863016486871566,
+          "depth": 0.07681560958690774,
+          "logoWidth": 278.51929129569663,
+          "logoOpacity": 1,
+          "camera": 0.48430340239641856,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-01800.png",
+      "ms": 1800,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "299fe35f81f07df8d6e77623d18b282fea559f4ebc095236dd635eec7d5778ad",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 1800,
+        "draws": 7,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 758.2715716759571,
+          "shell": 0.5878282108691227,
+          "depth": 0.3052385013054555,
+          "logoWidth": 238.38799978151462,
+          "logoOpacity": 1,
+          "camera": 1.046017938043014,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02000.png",
+      "ms": 2000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 1,
+      "visibleDepthLayers": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "b8b0fdaf0c55d3d15f02439778ff66ce2697210e1f623412ec3dd4181021c6e4",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2000,
+        "draws": 8,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 714.1188990218576,
+          "shell": 0.7537146346427845,
+          "depth": 0.4321178679900697,
+          "logoWidth": 220.55187021965588,
+          "logoOpacity": 1,
+          "camera": 1.2956688427748346,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02350.png",
+      "ms": 2350,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.9827928669410151,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "b9b814eedc8620fc7bbfb6868f2a45ac59f35e63cd15d82b957b63e1b4255a54",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2350,
+        "draws": 9,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 636.8517218771835,
+          "shell": 0.9617341746387136,
+          "depth": 0.6593591083038459,
+          "logoWidth": 189.3386434864032,
+          "logoOpacity": 1,
+          "camera": 1.73255792605552,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02500.png",
+      "ms": 2500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.9657064471879286,
+      "visibleDepthLayers": [
+        1,
+        2,
+        3
+      ],
+      "sha256": "1bd7a8e70b39a3d21bb2577f661fb78e53dee62a24c10c4b8dfc9422834d4c9d",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2500,
+        "draws": 10,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 601.5094143436384,
+          "shell": 0.9974557296967229,
+          "depth": 0.7557630977568893,
+          "logoWidth": 175.0615921033124,
+          "logoOpacity": 1,
+          "camera": 1.932392693028354,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-02850.png",
+      "ms": 2850,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.9064417009602195,
+      "visibleDepthLayers": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "84b8d140cb8806d9cf439ee0b735de8f97f642e76c8d9d23387995e84acc9e14",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 2850,
+        "draws": 11,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 505.9950328511218,
+          "shell": 1,
+          "depth": 0.95200332855302,
+          "logoWidth": 136.47713546876832,
+          "logoOpacity": 1,
+          "camera": 2.4724563023440407,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-03200.png",
+      "ms": 3200,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.8245925925925925,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "8f9b89f7e11d3f824d8ca8b424d0bc2ebe5deface588b3aa0ef703371afd5116",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3200,
+        "draws": 12,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 402.3945514248602,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 94.62617836213958,
+          "logoOpacity": 0.9803240740740741,
+          "camera": 3.0582408622356136,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-03500.png",
+      "ms": 3500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.7407407407407407,
+      "visibleDepthLayers": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "a1c75dfb53c6c54aaef32eaae79ce49e224c263e7ad8d7f991f83364d1675499",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3500,
+        "draws": 13,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 316.69289362367203,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 60.00571757637235,
+          "logoOpacity": 0.7407407407407407,
+          "camera": 3.542820732965069,
+          "layers": 1
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-03800.png",
+      "ms": 3800,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.6479999999999999,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "7aaca502caa6f050797fdca17f1eeedb1dbbcd127f1294b760903bc2adebf128",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 3800,
+        "draws": 14,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 242.21276226115043,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0.37615740740740733,
+          "camera": 3.9639511212626823,
+          "layers": 0.68359375
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04000.png",
+      "ms": 4000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.5829903978052127,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "ad8eb40dc9d110e93e5678a2ed64039b037df93bd07d9be44fa1e6daa02f7556",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4000,
+        "draws": 15,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 202.70516591063836,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0.15625,
+          "camera": 4.1873375343560495,
+          "layers": 0.31640625
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04150.png",
+      "ms": 4150,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.5333113854595336,
+      "visibleDepthLayers": [
+        4,
+        5
+      ],
+      "sha256": "da6c3cc700fdab81722fd5465d456f7d328bb89277608b7a95adeabcf875e7f1",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4150,
+        "draws": 16,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 180.06958684440679,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0.04296875,
+          "camera": 4.315325093281063,
+          "layers": 0.09228515625
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04300.png",
+      "ms": 4300,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.4833360768175584,
+      "visibleDepthLayers": [],
+      "sha256": "7f335d3c2149587c7ab6431b2fbe51540dd9cbebc589c2429c169bfc41bc72b0",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4300,
+        "draws": 17,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 164.5299730261554,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.403190185374177,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-04500.png",
+      "ms": 4500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0.41700960219478733,
+      "visibleDepthLayers": [],
+      "sha256": "2ead36f0c900e3dd3681c6d2161b01ac9115ae55d60fa936bfdead9ece2613e4",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 4500,
+        "draws": 18,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-06500.png",
+      "ms": 6500,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "503a1f30af40259eb83faa62000614069541ee8074a3f0dbfad50d5459d0a3a2",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 6500,
+        "draws": 19,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-09000.png",
+      "ms": 9000,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "6501c1f9de7cc482960cee56b9f725e28e9800534fb34c4b466e3d80531e0fb9",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 20,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    },
+    {
+      "file": "android-tall-09360.png",
+      "ms": 9360,
+      "width": 412,
+      "height": 915,
+      "backgroundOpacity": 0,
+      "visibleDepthLayers": [],
+      "sha256": "59cc826aba6ab776e6690912c0e6acbda007fa5ad81ab7d58a1bc2260219dc00",
+      "state": {
+        "loaded": true,
+        "started": false,
+        "active": true,
+        "reduced": false,
+        "failed": false,
+        "elapsed": 9000,
+        "draws": 21,
+        "scene": {
+          "x": 206,
+          "y": 457.5,
+          "radius": 156.56000000000006,
+          "shell": 1,
+          "depth": 1,
+          "logoWidth": 59.49279999999998,
+          "logoOpacity": 0,
+          "camera": 4.448254523659101,
+          "layers": 0
+        }
+      },
+      "canvas": [
+        824,
+        1830
+      ],
+      "viewport": [
+        0,
+        0,
+        824,
+        1830
+      ],
+      "glError": 0,
+      "devicePixelRatio": 2,
+      "innerWidth": 412,
+      "innerHeight": 915
+    }
+  ],
+  "events": [
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x12c08f06600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "timestamp": 1794674568788.95,
+          "url": "file:///tmp/tih-premium-v5/gpu-final/renderer.html",
+          "lineNumber": 234
+        }
+      }
+    },
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x12c08f06600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "timestamp": 1794674568873.677,
+          "url": "file:///tmp/tih-premium-v5/gpu-final/renderer.html"
+        }
+      }
+    },
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x12c08f06600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "timestamp": 1794674568873.833,
+          "url": "file:///tmp/tih-premium-v5/gpu-final/renderer.html"
+        }
+      }
+    },
+    {
+      "method": "Log.entryAdded",
+      "params": {
+        "entry": {
+          "source": "rendering",
+          "level": "warning",
+          "text": "[.WebGL-0x12c08f06600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+          "timestamp": 1794674568873.854,
+          "url": "file:///tmp/tih-premium-v5/gpu-final/renderer.html"
+        }
+      }
+    }
+  ],
+  "v4Comparison": {
+    "baselineCommit": "71504ac77a33f888fe65a49c60069a27153f1bea",
+    "method": "Exact SHA-256 equality of raw RGBA framebuffer readPixels at identical material-clock checkpoints; no background pixels",
+    "samples": [
+      {
+        "label": "iphone-se",
+        "width": 375,
+        "height": 667,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 254375,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "b3fca1faec2c6c3ce5b3d5971dafd451429f703336d552b8e09e963a3ab615bf",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 254375,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "b3fca1faec2c6c3ce5b3d5971dafd451429f703336d552b8e09e963a3ab615bf",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-se",
+        "width": 375,
+        "height": 667,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 254518,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "225b9c9b0b8d37862e896661d579c1d91173a1b6f26daedadf9770bf9734a26a",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 254518,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "225b9c9b0b8d37862e896661d579c1d91173a1b6f26daedadf9770bf9734a26a",
+          "byteCount": 4002000,
+          "canvas": [
+            750,
+            1334
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-tall",
+        "width": 393,
+        "height": 852,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 279341,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "44e0fbaca4b0dacd648e094f304adb1267f858a52ac765a27df56b041fad1e3f",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 279341,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "44e0fbaca4b0dacd648e094f304adb1267f858a52ac765a27df56b041fad1e3f",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "iphone-tall",
+        "width": 393,
+        "height": 852,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 279493,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "514263ed075eb41c2d77cae606afa1eb55c8caf78f7a75a2c01ef4a39ce04b72",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 279493,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "514263ed075eb41c2d77cae606afa1eb55c8caf78f7a75a2c01ef4a39ce04b72",
+          "byteCount": 5357376,
+          "canvas": [
+            786,
+            1704
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-compact",
+        "width": 360,
+        "height": 800,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 234409,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "da1596fb35c2e4f43b2d7e53420e11eb69cc2ec2f14ddabb5a90ec6010d3a770",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 234409,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "da1596fb35c2e4f43b2d7e53420e11eb69cc2ec2f14ddabb5a90ec6010d3a770",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-compact",
+        "width": 360,
+        "height": 800,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 234543,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "0758975498a2a3c5d9ef8f670c1bf85e6ced7178627fc6500b43e979e2b15e0d",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 234543,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "0758975498a2a3c5d9ef8f670c1bf85e6ced7178627fc6500b43e979e2b15e0d",
+          "byteCount": 4608000,
+          "canvas": [
+            720,
+            1600
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-tall",
+        "width": 412,
+        "height": 915,
+        "ms": 9000,
+        "baseline": {
+          "nonzeroAlphaPixels": 307065,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "3a8a64ff09ba687edcf0863939cf37a6712f47e45e7a7c0cec36d4ec1fe6e107",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 307065,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "3a8a64ff09ba687edcf0863939cf37a6712f47e45e7a7c0cec36d4ec1fe6e107",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "exact": true
+      },
+      {
+        "label": "android-tall",
+        "width": 412,
+        "height": 915,
+        "ms": 9360,
+        "baseline": {
+          "nonzeroAlphaPixels": 307236,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "fe2c1c9c472af694c095afc2f7c1b13488d42b2284b4a84ad32d6a4226ee769f",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "current": {
+          "nonzeroAlphaPixels": 307236,
+          "renderer": "WebKit WebGL",
+          "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+          "sha256": "fe2c1c9c472af694c095afc2f7c1b13488d42b2284b4a84ad32d6a4226ee769f",
+          "byteCount": 6031680,
+          "canvas": [
+            824,
+            1830
+          ],
+          "glError": 0
+        },
+        "exact": true
+      }
+    ]
+  },
+  "offscreenScissors": [
+    {
+      "target": [
+        200,
+        -200
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        116,
+        1830,
+        568,
+        0
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        200,
+        1500
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        116,
+        0,
+        568,
+        0
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        -500,
+        400
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        0,
+        746,
+        0,
+        568
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        1500,
+        400
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        824,
+        746,
+        0,
+        568
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        0,
+        0
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        0,
+        1546,
+        284,
+        284
+      ],
+      "glError": 0
+    },
+    {
+      "target": [
+        200,
+        400
+      ],
+      "canvas": [
+        824,
+        1830
+      ],
+      "box": [
+        116,
+        746,
+        568,
+        568
+      ],
+      "glError": 0
+    }
+  ]
+}

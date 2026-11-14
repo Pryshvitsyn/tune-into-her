@@ -66,7 +66,26 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
-## CURRENT BRAND GEOMETRY / TYPOGRAPHY — 2026-11-14
+## CURRENT PREMIUM INTRO V5 / NATIVE STARTUP — 2026-11-14
+
+- Founder reference archived immutable. One authored metallic SVG/steel atmosphere supplies
+  native launch, fallback, GPU opening and Home; exact approved OTF/glyphs/rings retained.
+  Intro-only light/material/fade preserves9000ms/sixlayers and the original V4/8s loop.
+  Eight realGPU finalRGBA comparisons across4ratios exactly equal protected baseline.
+- Release now presents an opaque storyboard window BEFORE Expo/Updates/JS initialization;
+  native frame commitment precedes factory creation; window cover survives root replacement
+  until the installed Expo splash is ready. No pre-runtime WebGL or arbitrary loading delay.
+- Verified first-update/cold pressure: Simulator765frames, physical normal1265 and native-QA
+  pressure1361, all0black. Physical pressure run is unobscured; raw private UI is excluded.
+  The exact normal signed Release is restored on iPhone, data preserved, process alive285s.
+-383tests/42files, TypeScript, lint0errors/1prior generated warning, font/raster/source/content
+  checks pass. Native Light/Dark/Home/reduced-motion (Home1.493s and OFF cleanup) pass.
+  Android resources verified; nativeAndroid and real reader speech remain unavailable.
+- Full actual evidence, reference-approximation limits and intermediate harness boundaries:
+  [PREMIUM_INTRO_V5_QA](docs/PREMIUM_INTRO_V5_QA.md). No billing/content/data/configuration
+  service changes, store submission or production deployment.
+
+## PREVIOUS BRAND GEOMETRY / TYPOGRAPHY — 2026-11-14
 
 - Supersedes the old upper-ring fragment, rectangular wordmark gap and extra1s hold.
   Two coherent open arcs retain original proportions/stroke/caps; glyph-shaped clearance

@@ -102,7 +102,7 @@ extension LaunchUIQA {
         XCTFail("Cannot read the native screenshot pixel buffer")
         return
       }
-      print("TIH_STATUS_BAR_PIXELS \(name) background=\(pixels.backgroundRGB) dark=\(pixels.darkBackground) whiteClockPixels=\(pixels.whiteClockPixels)")
+      print("TIH_STATUS_BAR_PIXELS \(name) background=\(pixels.backgroundRGB) dark=\(pixels.darkBackground) whiteClockPixels=\(pixels.whiteClockPixels) darkClockPixels=\(pixels.darkClockPixels)")
       if pixels.darkBackground {
         XCTAssertGreaterThan(pixels.whiteClockPixels, 80, "Graphite screens require readable white status-bar clock pixels")
       }
@@ -216,7 +216,12 @@ extension LaunchUIQA {
 extension LaunchUIQA {
   func testRestoreReducedMotionOffAtCurrentSettingsScreen() throws {
     continueAfterFailure = false
-    let settings = XCUIApplication(bundleIdentifier: "com.apple.Preferences")
+    restoreReducedMotionOff(in: XCUIApplication(bundleIdentifier: "com.apple.Preferences"))
+  }
+
+  /// Re-query Settings after every app round trip. Reuse the actual inner UISwitch
+  /// and bounded thumb drag, preserving both native-value and UIKit OFF assertions.
+  func restoreReducedMotionOff(in settings: XCUIApplication) {
     settings.activate()
     let reduce = openMotionSettings(in: settings)
     XCTAssertTrue(reduce.waitForExistence(timeout: 5))
@@ -985,7 +990,24 @@ extension LaunchUIQA {
     home.tap()
     let cover = app.otherElements["home-transition"].firstMatch
     XCTAssertTrue(cover.waitForExistence(timeout: 2))
-    try requireDarkPixels("57-dark-home-cover-white-clock")
+    let initialScreenshot = app.screenshot() // Capture before AX traversal consumes the initial steel interval.
+    let initialAttachment = XCTAttachment(screenshot: initialScreenshot)
+    initialAttachment.name = "57-v5-steel-home-cover-dark-clock"
+    initialAttachment.lifetime = .keepAlways
+    add(initialAttachment)
+    let initialImage = try XCTUnwrap(initialScreenshot.image.cgImage)
+    let initialPixels = try XCTUnwrap(statusBarReadability(in: initialImage))
+    print("TIH_STATUS_BAR_PIXELS 57-v5-steel-home-cover-dark-clock background=\(initialPixels.backgroundRGB) whiteClockPixels=\(initialPixels.whiteClockPixels) darkClockPixels=\(initialPixels.darkClockPixels)")
+    XCTAssertFalse(initialPixels.darkBackground, "V5 Home starts with the approved steel atmosphere even when Dark is saved")
+    XCTAssertTrue(initialPixels.backgroundRGB.allSatisfy { $0 > 80 && $0 < 210 }, "Assert the real steel backdrop, not an unrelated light page")
+    XCTAssertGreaterThan(initialPixels.darkClockPixels, 80, "Initial steel atmosphere needs readable dark clock pixels")
+    let darkCover = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
+      guard cover.exists, let image = app.screenshot().image.cgImage,
+        let pixels = statusBarReadability(in: image) else { return false }
+      return pixels.darkBackground && pixels.whiteClockPixels > 80
+    }, object: app)
+    XCTAssertEqual(XCTWaiter.wait(for: [darkCover], timeout: 9), .completed, "The same Home cover must acquire a readable white clock as it blends into saved Dark")
+    try requireDarkPixels("57a-v5-home-faded-dark-white-clock")
     let gone = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: cover)
     XCTAssertEqual(XCTWaiter.wait(for: [gone], timeout: 17), .completed)
     assertLockedToday(in: app)
@@ -1361,10 +1383,7 @@ extension LaunchUIQA {
     XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value == %@", "1"), object: reduce)], timeout: 5), .completed)
     XCTAssertTrue(UIAccessibility.isReduceMotionEnabled)
     defer {
-      settings.activate()
-      if reduce.value as? String != "0" { reduce.descendants(matching: .switch).firstMatch.tap() }
-      XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value == %@", "0"), object: reduce)], timeout: 5), .completed)
-      XCTAssertFalse(UIAccessibility.isReduceMotionEnabled)
+      restoreReducedMotionOff(in: settings)
       app.activate()
     }
     app.activate()

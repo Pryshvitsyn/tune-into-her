@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1950" viewBox="0 0 900 1950">
+<defs>
+ <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#718097"/><stop offset=".25" stop-color="#9CAAC0"/><stop offset=".5" stop-color="#7E8BA1"/><stop offset=".78" stop-color="#A9B5C8"/><stop offset="1" stop-color="#677992"/></linearGradient>
+ <radialGradient id="illumination" cx=".48" cy=".46" r=".69"><stop stop-color="#E0E5EF" stop-opacity=".43"/><stop offset=".45" stop-color="#C4CEDF" stop-opacity=".08"/><stop offset="1" stop-color="#233951" stop-opacity=".29"/></radialGradient>
+ <radialGradient id="upper-reflection" cx=".52" cy="0" r=".68"><stop stop-color="#F0F3FC" stop-opacity=".95"/><stop offset=".45" stop-color="#DFE7F6" stop-opacity=".08"/><stop offset="1" stop-color="#DFE7F6" stop-opacity="0"/></radialGradient>
+ <linearGradient id="ray" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".55" stop-color="#F9FAFF" stop-opacity=".65"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+ <filter id="soft" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="10"/></filter><filter id="halo" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="32"/></filter>
+</defs>
+<rect width="900" height="1950" fill="url(#steel)"/><rect width="900" height="1950" fill="url(#illumination)"/><rect width="900" height="1950" fill="url(#upper-reflection)"/>
+<g fill="none" stroke="url(#ray)"><path d="M-100 470 Q300 250 795 -70" stroke-width="32" filter="url(#soft)" opacity=".9"/><path d="M-100 470 Q300 250 795 -70" stroke-width="2.1" opacity=".62"/><path d="M-30 540 Q220 410 550 320" stroke-width="10" filter="url(#soft)" opacity=".3"/>
+<path d="M-150 935 C60 1310 550 1390 1040 920" stroke-width="22" filter="url(#soft)" opacity=".7"/><path d="M-150 935 C60 1310 550 1390 1040 920" stroke-width="2.2" opacity=".7"/>
+<path d="M-120 1430 C170 1210 600 1240 1040 1390" stroke-width="27" filter="url(#soft)" opacity=".65"/><path d="M-110 1410 C240 1240 650 1260 1020 1390" stroke-width="1.2" opacity=".38"/>
+<path d="M-90 2030 Q340 1690 1000 1535" stroke-width="28" filter="url(#soft)" opacity=".85"/><path d="M-90 2030 Q340 1690 1000 1535" stroke-width="1.5" opacity=".45"/></g>
+<ellipse cx="490" cy="1290" rx="130" ry="48" fill="#FFF4E7" opacity=".38" filter="url(#halo)"/><ellipse cx="490" cy="1290" rx="76" ry="13" fill="#FFFBF5" opacity=".65" filter="url(#soft)"/>
+<ellipse cx="430" cy="1800" rx="100" ry="65" fill="#F6F8FF" opacity=".25" filter="url(#halo)"/></svg>

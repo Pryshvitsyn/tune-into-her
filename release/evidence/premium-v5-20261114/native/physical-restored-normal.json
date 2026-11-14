@@ -1,0 +1,11 @@
+{
+  "restoredExactNormalRelease": true,
+  "dataReset": false,
+  "normalNativeHash": "9fe01c5342c53514e5a1e28dec1dd61c4a5b23975a035745c040e69aea127a95",
+  "normalJSHash": "7caa32a0780a33022f5962a762f83709441f2d3fb5593ac4a0b3fdd97f9137b0",
+  "qaPressureCompiled": false,
+  "installExitCode": 0,
+  "launchExitCode": 0,
+  "normalProcessStillRunning": true,
+  "normalObservedSeconds": 285.179
+}

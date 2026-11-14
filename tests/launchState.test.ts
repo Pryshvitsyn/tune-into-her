@@ -179,8 +179,8 @@ describe('approved Deep Intro V2 assets and motion contract', () => {
       'timeline.ts': '20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf',
       'sceneRuntime.generated.ts': 'ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2',
       'v4Shaders.generated.ts': 'ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a',
-      'brand.generated.ts': 'cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f',
-      'brandTexture.generated.ts': '9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9',
+      'brand.generated.ts': '0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5',
+      'brandTexture.generated.ts': '56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe',
     };
     for (const [name, expected] of Object.entries(hashes)) {
       const content = readFileSync(new URL(`../src/intro/${name}`, import.meta.url));

@@ -1,4 +1,5 @@
 import { BRAND_RATIO } from './brand.generated';
+import { FIRST_FRAME_LOGO_CENTER_X, FIRST_FRAME_LOGO_CENTER_Y, FIRST_FRAME_LOGO_WIDTH_CAP, FIRST_FRAME_LOGO_WIDTH_FRACTION } from './brandBackground.generated';
 import { BRAND_TEXTURE_URI } from './brandTexture.generated';
 import { SCENE_AT_SOURCE } from './sceneRuntime.generated';
 import { INTRO_MS } from './timeline';
@@ -25,8 +26,9 @@ uniform float u_radius;
 uniform float u_shell;
 uniform float u_depth;
 uniform float u_logoWidth;
+uniform vec2 u_logoCenter;
 uniform float u_logoOpacity;
-uniform vec3 u_ink;
+uniform float u_introTime;
 uniform float u_camera;
 uniform float u_layers;
 
@@ -61,13 +63,13 @@ vec3 depthSilver(vec2 pixel, vec3 underneath) {
   return result;
 }
 
-// A single padded, transparent PNG is used by native loading AND WebGL.
-// Coordinates here remain in the original 640x400 design coordinate system.
-// Padding is not a new background/oval; it contains only alpha=0 pixels.
-float logoMask(vec2 uv) {
+// The exact native foreground is uploaded premultiplied before linear sampling.
+// RGB carries the authored silver relief; transparent pixels never add dark fringes.
+// Coordinates remain in the shared 640x400 design, with the existing transparent rim.
+vec4 logoMaterial(vec2 uv) {
   vec2 padded = (uv * vec2(640.0, 400.0) + vec2(80.0)) / vec2(800.0, 560.0);
-  if (padded.x < 0.0 || padded.x > 1.0 || padded.y < 0.0 || padded.y > 1.0) return 0.0;
-  return texture2D(u_logo, padded).a;
+  if (padded.x < 0.0 || padded.x > 1.0 || padded.y < 0.0 || padded.y > 1.0) return vec4(0.0);
+  return texture2D(u_logo, padded);
 }
 
 void main() {
@@ -86,23 +88,32 @@ void main() {
   // TIH_DEEP_INTRO_V2: extra internal material only. Never punch an alpha hole.
   if (u_layers > 0. && sphere.a > 0.) sphere.rgb = depthSilver(pixel, sphere.rgb);
 
-  vec2 uvLogo = (pixel - u_center) / vec2(u_logoWidth, u_logoWidth / ${BRAND_RATIO}) + .5;
+  vec2 uvLogo = (pixel - u_logoCenter) / vec2(u_logoWidth, u_logoWidth / ${BRAND_RATIO}) + .5;
   vec2 distortion = u_depth * .012 * vec2(
     sin(uvLogo.y * 7. + u_phase), cos(uvLogo.x * 6. - u_phase));
   uvLogo += distortion;
-  float mark = logoMask(uvLogo);
-  // All samples use padded bounds, never a tight rectangular cut around the mark.
+  vec4 material = logoMaterial(uvLogo);
+  // Depth softening samples the same polished RGB and alpha, never a flat ink mask.
   float spread = u_depth * .0018;
-  float softMark = (logoMask(uvLogo + vec2(spread, 0.))
-                   + logoMask(uvLogo - vec2(spread, 0.))
-                   + logoMask(uvLogo + vec2(0., spread))
-                   + logoMask(uvLogo - vec2(0., spread))) * .25;
-  mark = mix(mark, softMark, u_depth * .7);
+  vec4 softMaterial = (logoMaterial(uvLogo + vec2(spread, 0.))
+                       + logoMaterial(uvLogo - vec2(spread, 0.))
+                       + logoMaterial(uvLogo + vec2(0., spread))
+                       + logoMaterial(uvLogo - vec2(0., spread))) * .25;
+  material = mix(material, softMaterial, u_depth * .7);
+  // At t=0 the authored first-frame pixels pass through unchanged. Light awakens
+  // gently after start; these intro-only glints disappear with the emblem.
+  float awake = smoothstep(0.0, .65, u_introTime) * u_logoOpacity;
+  float sweepDistance = (uvLogo.x + uvLogo.y * .20 - (-.25 + u_introTime * .20)) / .13;
+  float sweep = exp(-sweepDistance * sweepDistance);
+  float reflection = .018 * sin(uvLogo.y * 4.5 + uvLogo.x * 2.0 + u_introTime * .45);
+  vec3 polished = material.rgb * (1.0 + awake * (.055 * sweep + reflection));
+  polished += material.a * vec3(.003, .002, .001) * sweep * awake;
   float shine = dot(sphere.rgb, vec3(.299, .587, .114));
-  float logoAlpha = mark * u_logoOpacity * (1. - u_depth * .82 * shine * sphere.a);
+  float reveal = u_logoOpacity * (1. - u_depth * .82 * shine * sphere.a);
+  float logoAlpha = material.a * reveal;
   float alpha = logoAlpha + sphere.a * (1. - logoAlpha);
   vec3 rgb = alpha > .00001
-    ? (u_ink * logoAlpha + sphere.rgb * sphere.a * (1. - logoAlpha)) / alpha
+    ? (polished * reveal + sphere.rgb * sphere.a * (1. - logoAlpha)) / alpha
     : vec3(0.);
   gl_FragColor = vec4(rgb, alpha);
 }
@@ -118,6 +129,12 @@ export function makeSphereHtml(sourceBase64: string, testMode = false): string {
   const config = {
     source: `data:image/png;base64,${sourceBase64}`,
     logo: BRAND_TEXTURE_URI,
+    logoPresentation: {
+      widthFraction: FIRST_FRAME_LOGO_WIDTH_FRACTION,
+      widthCap: FIRST_FRAME_LOGO_WIDTH_CAP,
+      centerX: FIRST_FRAME_LOGO_CENTER_X,
+      centerY: FIRST_FRAME_LOGO_CENTER_Y,
+    },
     vertex: V4_VERTEX,
     fragment: makeSceneFragment(),
     duration: INTRO_MS,
@@ -138,7 +155,7 @@ const WEB_RUNTIME = String.raw`
   let gl, program, frame = 0, last = 0, motionMs = 0, elapsed = 0;
   let loaded = false, started = false, active = true, reduced = false, failed = false, ended = false;
   let visible = !document.hidden;
-  let target = null, ink = [.16,.27,.35], draws = 0;
+  let target = null, draws = 0;
   const textures = [], shaders = [];
   let buffer;
   const post = (type, extra = {}) => {
@@ -187,9 +204,19 @@ const WEB_RUNTIME = String.raw`
     gl.uniform1f(uniforms.u_depth, scene.depth);
     gl.uniform1f(uniforms.u_camera, scene.camera);
     gl.uniform1f(uniforms.u_layers, scene.layers);
-    gl.uniform1f(uniforms.u_logoWidth, Math.max(1,scene.logoWidth));
+    // Preserve the original shrink/camera curve, adapting only the emblem's
+    // first-frame composition to the shared native/RN V5 presentation.
+    const cameraProgress = Math.max(0,Math.min(1,scene.camera/3.55));
+    const logoStartX = view.width*C.logoPresentation.centerX;
+    const logoStartY = view.height*C.logoPresentation.centerY;
+    const logoStartWidth = Math.min(view.width*C.logoPresentation.widthFraction,C.logoPresentation.widthCap);
+    const logoWidth = logoStartWidth*(scene.logoWidth/Math.min(view.width*.76,420));
+    gl.uniform1f(uniforms.u_logoWidth, Math.max(1,logoWidth));
+    gl.uniform2f(uniforms.u_logoCenter,
+      logoStartX+(scene.x-logoStartX)*cameraProgress,
+      logoStartY+(scene.y-logoStartY)*cameraProgress);
     gl.uniform1f(uniforms.u_logoOpacity, scene.logoOpacity);
-    gl.uniform3f(uniforms.u_ink, ink[0],ink[1],ink[2]);
+    gl.uniform1f(uniforms.u_introTime, reduced ? 0 : elapsed/1000);
     gl.uniform1f(uniforms.u_phase, reduced ? 0 : ((motionMs % 8000)/8000)*Math.PI*2);
     gl.drawArrays(gl.TRIANGLES,0,6);
     draws++;
@@ -224,8 +251,6 @@ const WEB_RUNTIME = String.raw`
       if (command.type === 'configure') {
         const t = command.target;
         if(t && [t.x,t.y,t.radius].every(Number.isFinite) && t.radius>0) target = t;
-        if(Array.isArray(command.ink) && command.ink.length===3 && command.ink.every(Number.isFinite))
-          ink=command.ink.map(x=>Math.max(0,Math.min(1,x)));
         draw();
       } else if (command.type === 'start' && !started && loaded) {
         reduced = !!command.reducedMotion;
@@ -283,9 +308,9 @@ const WEB_RUNTIME = String.raw`
       gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
       const pos=gl.getAttribLocation(program,'a_position');
       gl.enableVertexAttribArray(pos); gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
-      ['u_tex','u_logo','u_phase','u_view','u_center','u_radius','u_shell','u_depth','u_logoWidth','u_logoOpacity','u_ink','u_camera','u_layers']
+      ['u_tex','u_logo','u_phase','u_view','u_center','u_radius','u_shell','u_depth','u_logoWidth','u_logoCenter','u_logoOpacity','u_introTime','u_camera','u_layers']
         .forEach(name=>{uniforms[name]=gl.getUniformLocation(program,name);});
-      const load=(src,unit)=>new Promise((resolve,reject)=>{
+      const load=(src,unit,premultiply=false)=>new Promise((resolve,reject)=>{
         const image=new Image();
         image.onerror=()=>reject(new Error('Local texture failed to decode'));
         image.onload=()=>{
@@ -298,7 +323,7 @@ const WEB_RUNTIME = String.raw`
             gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
             gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
             gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
-            gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);
+            gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,premultiply);
             gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
             const uploadError=gl.getError();
             if(uploadError!==gl.NO_ERROR) throw new Error('GPU texture upload failed: '+uploadError);
@@ -307,7 +332,7 @@ const WEB_RUNTIME = String.raw`
         };
         image.src=src;
       });
-      await Promise.all([load(C.source,0),load(C.logo,1)]);
+      await Promise.all([load(C.source,0),load(C.logo,1,true)]);
       gl.uniform1i(uniforms.u_tex,0); gl.uniform1i(uniforms.u_logo,1);
       loaded=true; draw(); gl.finish(); post('ready');
     } catch(error) {fail(error);}

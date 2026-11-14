@@ -1,0 +1,15 @@
+{
+  "method": "Every source video frame, central 80% ROI, area64x64 grayscale; black when >=98% samples have luma<=18",
+  "frameCount": 765,
+  "durationSeconds": 20.59,
+  "stream": {
+    "width": 750,
+    "height": 1334,
+    "averageFrameRate": "76500/2059"
+  },
+  "launchCommandVideoEstimateSeconds": 0.5273232499999999,
+  "blackFrameCount": 0,
+  "blackFrameIndices": [],
+  "blackAfterLaunchCommandEstimate": 0,
+  "timingLimit": "Recorder acknowledgement and command start are host observations, not exact UIKit foreground/frame timestamps; inspect OS/app transition in original movie"
+}

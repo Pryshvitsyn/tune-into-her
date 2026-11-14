@@ -1,0 +1,106 @@
+{
+  "platform": "physical iPhone, explicit native-QA signed Release",
+  "standaloneWithoutMetro": true,
+  "runIsNormalProductionBuild": false,
+  "artifact": {
+    "qaNativeSHA256": "f7257336fe3f6d6f01a12ea9370250ffc2284bedbe65c64f5585a3ab4d25ff07",
+    "normalNativeSHA256": "9fe01c5342c53514e5a1e28dec1dd61c4a5b23975a035745c040e69aea127a95",
+    "embeddedJSSHA256": "7caa32a0780a33022f5962a762f83709441f2d3fb5593ac4a0b3fdd97f9137b0",
+    "sameJSAsNormal": true,
+    "stressCompilationGuard": "TIH_NATIVE_LAUNCH_QA",
+    "launchArgument": "-TIHStartupStress",
+    "pressureRequested": true,
+    "pressureCodeSeconds": 2.5,
+    "deviceNativeStageTimestampsCollected": false,
+    "exactDeviceCPUTimeBenchmarkClaimed": false
+  },
+  "sourceVideoSHA256": "a8d59d0e726b461fd779f58d2b8a4ec5e339399fd4985c470a865a02334b2c39",
+  "decodedOriginalFrames": 1361,
+  "sourceDurationSeconds": 24.076683,
+  "allFramePixelMetrics": {
+    "fullBlackFrames": 0,
+    "fullNearBlackFrames": 0,
+    "centralBlackFrames": 0,
+    "centralNearBlackFrames": 0,
+    "whiteBlankCandidates": 0,
+    "minimumFullMeanLuma": 41.48287470725995,
+    "minimumCentralMeanLuma": 39.06014739229025
+  },
+  "visualReview": {
+    "accessoryPopupObserved": false,
+    "firstUnobscuredFullOpeningSampleSeconds": 2.5,
+    "staticNativeOpeningSampledThroughSeconds": 6.0,
+    "nativePlateauSamples": [
+      {
+        "pts": 2.5065,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.5243874643874644,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 3.007467,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 3.492167,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.06615384615384616,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 3.992417,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.08284900284900285,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 4.492417,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.13424501424501425,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 4.992417,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.13703703703703704,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 5.480633,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.14626780626780628,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 5.99805,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 0.3442735042735043,
+        "changedFractionAbove3": 0
+      },
+      {
+        "pts": 6.266317,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 3.3544159544159546,
+        "changedFractionAbove3": 0.12085470085470086
+      },
+      {
+        "pts": 6.50045,
+        "meanAbsoluteLumaDifferenceFromNativeAt3s": 2.7572079772079774,
+        "changedFractionAbove3": 0.10883190883190884
+      }
+    ],
+    "depthPassageApproximatelyStartsSeconds": 6.5,
+    "singleOriginalV4SphereVisibleApproximatelySeconds": 10.0,
+    "destination": "existing dark locked application entry; protected daily guidance withheld",
+    "destinationVisibleApproximatelySeconds": 15.5,
+    "privateExternalSystemUIBeginsApproximatelySeconds": 20.5,
+    "lastRawFrameIsNotStableApplicationDestination": true
+  },
+  "reviewedExcerpt": {
+    "file": "physical-pressure-intro-reviewed.mp4",
+    "sourceStartSeconds": 2.5,
+    "sourceEndSeconds": 15.0,
+    "audioRemoved": true,
+    "metadataRemoved": true,
+    "excludesHomeWallpaperOtherAppsSystemPromptAndApplicationContent": true
+  },
+  "limitations": [
+    "The observed native still-image plateau is image evidence, not a measured2.5-second CPU benchmark. Exact stage NSLog timestamps were not collected.",
+    "The explicit QA native binary differs from the normal binary; embedded JavaScript is identical. The parent restores the exact normal signed artifact separately.",
+    "Later raw footage contains external app-switcher/Home interactions and another opening; no attribution or stable-last-frame claim is made.",
+    "Full original phone media/contact sheets remain private outside Git; only this reviewed intro excerpt/stills and sanitized proof may be published."
+  ]
+}

@@ -1,5 +1,8 @@
 # Global launch and Premium Onboarding V2 — actual QA
 
+Current V5/native pre-runtime correction supersedes the old flat launch artwork and
+black-startup boundary: [PREMIUM_INTRO_V5_QA](PREMIUM_INTRO_V5_QA.md).
+
 Updated: 2026-11-14 (Europe/Rome). Branch: `codex/monetization-20261113`.
 Both scopes were explicitly confirmed by the Founder. This is an implemented application
 flow, with standalone iOS runtime evidence. Android native and some external-access

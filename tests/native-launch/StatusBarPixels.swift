@@ -3,6 +3,7 @@ import CoreGraphics
 struct StatusBarReadability {
   let darkBackground: Bool
   let whiteClockPixels: Int
+  let darkClockPixels: Int
   let backgroundRGB: [Int]
 }
 
@@ -38,12 +39,14 @@ func statusBarReadability(in image: CGImage) -> StatusBarReadability? {
     let minX = Int(Double(width) * 0.40)
     let maxX = Int(Double(width) * 0.65)
     var white = 0
+    var black = 0
     for y in minY..<maxY {
       for x in minX..<maxX {
         let offset = y * stride + x * 4
+        if pixels[offset] < 40 && pixels[offset + 1] < 40 && pixels[offset + 2] < 40 { black += 1 }
         if pixels[offset] > 210 && pixels[offset + 1] > 210 && pixels[offset + 2] > 210 { white += 1 }
       }
     }
-    return StatusBarReadability(darkBackground: dark, whiteClockPixels: white, backgroundRGB: background)
+    return StatusBarReadability(darkBackground: dark, whiteClockPixels: white, darkClockPixels: black, backgroundRGB: background)
   }
 }

@@ -3,6 +3,7 @@ import { Animated, useAnimatedValue, type StyleProp, type ViewStyle } from 'reac
 
 interface LaunchPresentationValue {
   blocking: boolean;
+  introStatusBarStyle?: 'dark' | 'light';
   destinationSpheresVisible: boolean;
   prepareDestinationSpheres: boolean;
   reducedMotion: boolean;
