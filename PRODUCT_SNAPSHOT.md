@@ -66,6 +66,26 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
+## CURRENT BRAND GEOMETRY / TYPOGRAPHY — 2026-11-14
+
+- Supersedes the old upper-ring fragment, rectangular wordmark gap and extra1s hold.
+  Two coherent open arcs retain original proportions/stroke/caps; glyph-shaped clearance
+  places the real Linux Libertine O Regular lettering above them. Native-default “Tu”
+  kerning now matches app shaping; original OTF, glyphs, em, weight and baseline remain.
+- One authoritative assets/brand/official-mark.svg regenerates shared vector/texture,
+  native logo and Home emblem. iOS copy and all5 Android densities verified; source/raster,
+  native-alpha, font provenance and approved-hash guards stay enabled.
+- Full9000ms/six-layer timeline, V4/runtime/shaders/sphere assets are byte-identical.
+  Fade360ms begins at actual readiness after scene completion; slow initialization keeps
+  V4 moving. No navigation/content/cycle/subscription/backend/configuration changes.
+-369 tests, typecheck, lint0errors/1existing generated warning, font/CoreText/full-raster
+  checks pass. Simulator/physical Release and Android JS export pass. Native Light/Dark,
+  Home single/double replay and Reduced Motion cold entry pass. First post-install capture
+  exposed pre-silver black frames; two quiescent runs including a data-preserving reinstall
+  check all690/724 frames with zero black frames. Final boundaries are recorded in
+  [BRAND_GEOMETRY_QA](docs/BRAND_GEOMETRY_QA.md). Android native/real speech/physical visual
+  proof remain open. No publication or production configuration change.
+
 ## FINAL UX / INTERNAL QA — 2026-11-14
 
 - Existing header emblem now replays the shared approved scene in-app then opens Today,
@@ -92,7 +112,7 @@ fertility, or mood-prediction product.
   locked Today. Final source/evidence review passes; changes follow the authorized feature-branch commit/push workflow. No app/store publication.
 - [Current proof and limitations](docs/UX_TEST_READINESS.md) · [QA workflow](docs/INTERNAL_QA.md).
 
-## FINAL BRAND / TYPOGRAPHY — 2026-11-14
+## PREVIOUS BRAND / TYPOGRAPHY CHECKPOINT — 2026-11-14
 
 - Implementation `f5a8628`, followed by final MAX navigation fix `55bbd9b`, applies the existing real Linux Libertine O Regular across
   native UI through AppText, including Today/History/Settings/navigation. Hindi/Chinese

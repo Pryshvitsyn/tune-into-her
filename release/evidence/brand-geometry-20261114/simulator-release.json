@@ -1,0 +1,31 @@
+{
+  "kind": "current standalone Simulator Release after brand correction",
+  "configuration": "Release",
+  "sourceCommit": "e1058c4a138aac18e2e01f829cc390efe41df6c6",
+  "deepStrictSignatureVerified": true,
+  "embeddedBundleSha256": "aee581e32c00b388e7eeab3001874ce17e64ab9fc1f0183c394886ade2cdb71e",
+  "sourceSha256": {
+    "assets/brand/official-mark.svg": "b27dc551e6b8e0e302658f930245a3026433d89a87a6909354293e4c3b9574df",
+    "src/intro/brand.generated.ts": "cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f",
+    "src/intro/brandTexture.generated.ts": "9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9",
+    "assets/launch/official-launch-mark.png": "14154cf2b6cf24f28f438459ec18bc942f6c03be291d8fc65ff027c5cc0d46ab"
+  },
+  "officialUpdates": {
+    "app.manifest": {
+      "equal": true,
+      "sha256": "a566edab841f26f7c30c368d1cb03f296b21fef21e846fecb3a9a76a4c22e415"
+    },
+    "fingerprint": {
+      "equal": true,
+      "sha256": "ffec4729ee55cf91b8b2894a8b7908a04a2086e41fe5863d4084ac3ad231f891"
+    }
+  },
+  "metroListening": {
+    "8081": false,
+    "8082": false
+  },
+  "dataPreservingInstallPassed": true,
+  "installedBundleMatches": true,
+  "sourceCommitIsBaseline": true,
+  "sourceWorkingTreeIncluded": true
+}

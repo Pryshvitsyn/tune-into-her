@@ -1,0 +1,161 @@
+{
+  "kind": "offline Expo Android splash resource generation, not native runtime",
+  "sourceCommit": "e1058c4a138aac18e2e01f829cc390efe41df6c6",
+  "sourceSha256": {
+    "assets/brand/official-mark.svg": "b27dc551e6b8e0e302658f930245a3026433d89a87a6909354293e4c3b9574df",
+    "src/intro/brand.generated.ts": "cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f",
+    "src/intro/brandTexture.generated.ts": "9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9"
+  },
+  "prebuild": {
+    "offline": true,
+    "noInstall": true,
+    "localInstalledTemplate": true,
+    "exitCode": 0
+  },
+  "inputConsistency": {
+    "app.config.ts": {
+      "sha256": "cdb8d78edcaf1f8754b4b73a51d281b1b980ff9a929f0dd0258de783b65282a7",
+      "equal": true
+    },
+    "src/config/brand.json": {
+      "sha256": "ac6bbc9c89d8e6f66ebd1fa3b7c44e5b60dcf0f9e7a0fd0907484a2dd2ead283",
+      "equal": true
+    },
+    "package.json": {
+      "sha256": "4ba91d5de6cd99d6cca30aaf195daa78a89afcf7461fc36602db8efaa1176c04",
+      "equal": true
+    },
+    "assets/launch/official-launch-mark.png": {
+      "sha256": "14154cf2b6cf24f28f438459ec18bc942f6c03be291d8fc65ff027c5cc0d46ab",
+      "equal": true
+    },
+    "assets/launch/silver-gradient.png": {
+      "sha256": "41b2dd70391b452708a37d4722906c22b8cef3173fbde5c3e818f4fa7fabd660",
+      "equal": true
+    }
+  },
+  "sourceAndroidDirectoryAbsent": true,
+  "densities": [
+    {
+      "density": "mdpi",
+      "multiplier": 1,
+      "width": 288,
+      "height": 288,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 4380,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.44888059008801,
+      "sha256": {
+        "day": "0bfca0c7eb4f9c8763820d9c37babb7ba83ef7dc77d39cceb02702e72f30dddc",
+        "night": "0bfca0c7eb4f9c8763820d9c37babb7ba83ef7dc77d39cceb02702e72f30dddc"
+      }
+    },
+    {
+      "density": "hdpi",
+      "multiplier": 1.5,
+      "width": 432,
+      "height": 432,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 9147,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 90.2982711782334,
+      "sha256": {
+        "day": "f1853bd86c9183545c772e4fbaf780074da1b2ca3324598094c908eb66c33ae5",
+        "night": "f1853bd86c9183545c772e4fbaf780074da1b2ca3324598094c908eb66c33ae5"
+      }
+    },
+    {
+      "density": "xhdpi",
+      "multiplier": 2,
+      "width": 576,
+      "height": 576,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 15534,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 89.95137575379268,
+      "sha256": {
+        "day": "ee5bda373be95dcba2ffe7be0a7fd9e021763354110ca22d6ac17ed52270fc01",
+        "night": "ee5bda373be95dcba2ffe7be0a7fd9e021763354110ca22d6ac17ed52270fc01"
+      }
+    },
+    {
+      "density": "xxhdpi",
+      "multiplier": 3,
+      "width": 864,
+      "height": 864,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 33193,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 89.93948582858984,
+      "sha256": {
+        "day": "15d87d9b277bb8729536b15ec93c18135b4700885a63ae80cae9812f8f0a7d91",
+        "night": "15d87d9b277bb8729536b15ec93c18135b4700885a63ae80cae9812f8f0a7d91"
+      }
+    },
+    {
+      "density": "xxxhdpi",
+      "multiplier": 4,
+      "width": 1152,
+      "height": 1152,
+      "dayNightRGBAEqual": true,
+      "dayNightBytesEqual": true,
+      "expectedRGBADifferences": 0,
+      "expectedAlphaDifferences": 0,
+      "nontransparentPixels": 57722,
+      "outside96dpSafeCirclePixels": 0,
+      "maxAlphaCornerRadiusDP": 89.85683056952321,
+      "sha256": {
+        "day": "7a253277f6f7419b403a5f0f021cbbfef748a0971d222d86d04771ef0badc118",
+        "night": "7a253277f6f7419b403a5f0f021cbbfef748a0971d222d86d04771ef0badc118"
+      }
+    }
+  ],
+  "generatedApplicationID": "com.pryshvitsyn.tuneintoher",
+  "generatedNamespace": "com.pryshvitsyn.tuneintoher",
+  "allowBackupDisabled": true,
+  "splashBackgroundDayAndNight": true,
+  "toolBoundary": {
+    "gradleWrapperVersionExitCode": 1,
+    "javaRuntimeAvailable": false,
+    "sdkDirectoryPresent": false,
+    "tools": {
+      "adb": false,
+      "sdkmanager": false,
+      "gradle": false
+    },
+    "environment": {
+      "ANDROID_HOME": false,
+      "ANDROID_SDK_ROOT": false,
+      "JAVA_HOME": false
+    },
+    "nativeCompilationAttempted": false,
+    "nativeRuntimeVerified": false
+  },
+  "contactSheet": {
+    "file": "resource-contact.png",
+    "rows": [
+      "day",
+      "night"
+    ],
+    "columns": [
+      "mdpi",
+      "hdpi",
+      "xhdpi",
+      "xxhdpi",
+      "xxxhdpi"
+    ],
+    "previewMethod": "Each density sampled to 288px square; original full-resolution PNGs retained separately."
+  }
+}

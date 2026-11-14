@@ -1,0 +1,13 @@
+{
+  "launchStoryboardName": "SplashScreen",
+  "controllerStatusBarPolicy": true,
+  "compiledStoryboardPresent": true,
+  "compiledStoryboards": [
+    "SplashScreen.storyboardc"
+  ],
+  "causeEstablished": false,
+  "notes": [
+    "Read-only artifact inspection cannot establish the cause of first-post-install black recording samples.",
+    "Original first-post-install recording and sample preserved. No SDK/config edits."
+  ]
+}

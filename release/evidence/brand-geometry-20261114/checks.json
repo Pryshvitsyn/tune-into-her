@@ -1,0 +1,45 @@
+{
+  "sourceTests": {
+    "files": 41,
+    "passed": 369
+  },
+  "typecheck": "passed",
+  "lint": {
+    "errors": 0,
+    "existingGeneratedWarnings": 1
+  },
+  "coreTextAuditPassed": true,
+  "svgRasterReproducibilityPassed": true,
+  "nativeThemeSeconds": 72.506,
+  "nativeHomeFinal": {
+    "passed": true,
+    "testSeconds": 37.451,
+    "singleSeconds": 12.70964420834207,
+    "doubleSeconds": 11.691284041648032
+  },
+  "nativeReducedMotion": {
+    "enabledPassSeconds": 24.984,
+    "coldEntryPassSeconds": 7.834,
+    "restoredOffPassSeconds": 6.525
+  },
+  "intermediateHomeRuns": [
+    {
+      "result": "timing threshold failed under concurrent build/export",
+      "doubleSeconds": 18.52534225001
+    },
+    {
+      "result": "AX snapshot failed before gesture with Settings foreground"
+    }
+  ],
+  "sourceSha256": {
+    "src/intro/GlobalLaunch.tsx": "65ccb717dd1f36bc41e4d029b169901898e462c0d37d846c549237933b50c516",
+    "src/intro/launchState.ts": "4d231da614b9d0b77b1339b1aad7d86c78a866d643e776ad4e9c143b8b0c8759",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sphereHtml.ts": "7ec807c372a42aa4deba65de1c9098ba3f88d239a118e9dc49b26b36fa16cf80",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a"
+  },
+  "androidProductionExport": "entry-430ae195ed4b4e774b8aa4dc91dfb908.hbc",
+  "androidNative": "unavailable - no JDK/JRE/SDK/emulator",
+  "publication": false
+}

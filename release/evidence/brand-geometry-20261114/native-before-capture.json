@@ -1,0 +1,19 @@
+{
+  "kind": "installed standalone Simulator Release before brand correction",
+  "sourceBaseline": "e1058c4",
+  "installedBundleSha256": "30c405b5a96caa4fc00c93bd12113fa1cd2854f1733e5a19a14de34bebd97b77",
+  "recordingWallSeconds": 40,
+  "recorderAcknowledged": true,
+  "metroListening": {
+    "8081": true,
+    "8082": false
+  },
+  "launchCommandPassed": true,
+  "launchedAt": "2026-11-14T15:30:24.230Z",
+  "actualWallSeconds": 41.499040042,
+  "recordingExit": {
+    "code": 0,
+    "signal": null
+  },
+  "settledScreenshotCaptured": true
+}

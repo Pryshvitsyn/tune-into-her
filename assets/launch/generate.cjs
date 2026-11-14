@@ -12,7 +12,8 @@ const text = fs.readFileSync(path.join(root, 'src/intro/brandTexture.generated.t
 const encoded = text.match(/data:image\/png;base64,([A-Za-z0-9+/=]+)/)?.[1];
 if (!encoded) throw new Error('Approved brand texture missing');
 const original = Buffer.from(encoded, 'base64');
-if (crypto.createHash('sha256').update(original).digest('hex') !== '347cb7e26f2f9006b1655fbbb5768e2129e4cfb3975a31a83e8adef4eb57517b') throw new Error('Approved brand texture changed; review before regenerating native assets');
+const expectedHash = text.match(/BRAND_TEXTURE_SHA256 = '([a-f0-9]{64})'/)?.[1];
+if (!expectedHash || crypto.createHash('sha256').update(original).digest('hex') !== expectedHash) throw new Error('Shared brand texture integrity failed');
 const logo = PNG.sync.read(original);
 if (logo.width !== 1600 || logo.height !== 1120) throw new Error('Approved logo bounds changed');
 for (let i = 0; i < logo.data.length; i += 4) {

@@ -2,7 +2,27 @@
 
 Updated: 2026-11-14 (Europe/Rome)
 
-## NOW — final UX correction and test readiness
+## NOW — final brand geometry and typography correction
+
+- [x] Correct the marked upper fragment into one smooth open trajectory; retain both
+  open rings, original bounds/stroke/caps/color; replace broad rectangle with glyph clearance.
+- [x] Audit actual app OTF/Regular weight; use its native kerning and centered advance.
+  Preserve exact font bytes, glyph shapes, uniform em and baseline.
+- [x] Regenerate vector/texture/native PNG from one SVG; share arc data with BrandMark;
+  update iOS copy and verify all5 Android day/night densities without production changes.
+- [x] Preserve complete9000ms/six-layer/V4 scene byte-for-byte; remove extra1s hold;
+  retain readiness/background/error/Reduced Motion and existing360ms fade.
+- [x] Record actual before/after closeups, font-reference comparison,72 renderer checkpoints,
+  native Release film and final Light/Dark/Home/Reduced Motion tests.
+- [x] Pass369 tests/typecheck/lint,50 targeted cases, CoreText audit, raster reproducibility,
+  original asset integrity checks and Android production JS export.
+- [x] Build/sign/install current iPhone Release preserving data; cold process survives55s.
+- [x] Finish quiescent cold-recording review (690/724frames,0black in both runs),
+  preserve the initial observation, review diff/secrets and make a safe local commit.
+- [ ] Android native, physical pixels and real VoiceOver/TalkBack acceptance remain unavailable.
+- [ ] Publication/store/production changes are outside this request.
+
+## PREVIOUS — final UX correction and test readiness
 
 - [x] Reuse the approved globe for the existing header emblem's one-tap return to Today;
   deduplicate gestures, retain access gates, motion preferences, themes and application process.

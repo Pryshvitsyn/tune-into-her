@@ -202,8 +202,8 @@ describe('approved Deep Intro V2 boundaries', () => {
       'timeline.ts': '20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf',
       'sceneRuntime.generated.ts': 'ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2',
       'v4Shaders.generated.ts': 'ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a',
-      'brand.generated.ts': '00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee',
-      'brandTexture.generated.ts': 'b081f98ca837efde52545822bfeb5c617e6cdede1c5345a1608ea67e100b2910',
+      'brand.generated.ts': 'cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f',
+      'brandTexture.generated.ts': '9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9',
     };
     for (const [name, expected] of Object.entries(approved)) {
       const data = readFileSync(new URL(`../src/intro/${name}`, import.meta.url));

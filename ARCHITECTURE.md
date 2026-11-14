@@ -48,20 +48,21 @@ local onboarding state and entitlement readiness to choose when a destination ca
 revealed. Existing routes and Today access checks remain authoritative; initialization
 or presentation readiness cannot grant trial or paid access.
 
-`launchState` is a pure managed-clock model: explicit renderer completion ends the
-original 9000ms scene, then a 1000ms visible foreground sphere hold runs. The shared
+`launchState` is a pure readiness/lifecycle model: explicit renderer completion ends the
+original 9000ms scene and immediately permits the existing360ms fade when ready.
+There is no extra fixed hold or JS frame timer. The shared
 `SphereIntroSurface` and WebView runtime render the same approved timeline, scene,
 shaders, logo and V4 material; there is no second WebGL implementation. The material
 keeps moving while initialization is slow. Fade requires current-attempt initialization
 and destination paint readiness. Initialization failures expose Retry; completed
-choreography/hold are retained and stale attempt callbacks cannot release the new gate.
+choreography is retained and stale attempt callbacks cannot release the new gate.
 
 `LaunchPresentation` coordinates destination visibility and accessibility and suppresses
 its duplicate sphere while the global sphere is present. `GlobalLaunch` retains its
 completion latch only in process memory. `introSession` marks the timeline consumed before
 mounting the destination, preventing Today from starting another full intro behind it.
-Navigation/foreground does not replay the intro; a genuine new process does. Background time does not advance visible choreography/hold. Reduced
-Motion or an enabled screen reader skips the full sequence and hold. Android Back is
+Navigation/foreground does not replay the intro; a genuine new process does. Background time does not advance visible choreography. Reduced
+Motion or an enabled screen reader skips the full sequence. Android Back is
 consumed while the launch presentation blocks navigation. These are presentation rules,
 not changes to onboarding persistence or billing policy.
 
@@ -80,6 +81,18 @@ dark icons on silver. Destinations retain their corresponding style.
 The native `UIViewControllerBasedStatusBarAppearance` flag is true in both Info.plist
 and app.config.ts. A separate Expo StatusBar JSX owner is not mounted. This resolves the
 observed dark-destination status-bar ownership conflict without changing signing.
+
+## Shared emblem source
+
+`assets/brand/official-mark.svg` owns the open-arc geometry and exact OTF wordmark
+outlines. `scripts/generate-intro-brand.cjs` derives the shared vector, padded PNG alpha
+texture and canonical native launch image; BrandMark imports the generated arc path.
+The iOS splash resource and Expo Android density images derive from that canonical PNG.
+The glyph-contour mask supplies local clearance under the lettering, which paints last;
+there is no broad rectangular break through the rings. Exact font shapes/Regular weight
+are retained, with native-default kerning and a centered advance. Source/raster integrity,
+font provenance, native alpha and protected V4/timeline tests remain independent guards.
+See [source and regeneration](assets/brand/README.md) and [actual QA](docs/BRAND_GEOMETRY_QA.md).
 
 ## Shared app typography and presentation
 

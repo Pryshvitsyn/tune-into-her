@@ -1,4 +1,6 @@
 import Svg, { Path, Rect, Line } from "react-native-svg";
+
+import { OFFICIAL_APP_MARK_PATH } from "../intro/brand.generated";
 export function BrandMark({
   corporate = false,
   color = "#216A50",
@@ -17,7 +19,7 @@ export function BrandMark({
         accessibilityLabel="Tune Into Her"
       >
         <Path
-          d="M33 6 A19 19 0 1 0 22 40 M34 32 A19 19 0 0 0 35 9 M34 37 A15 15 0 1 1 45 34"
+          d={OFFICIAL_APP_MARK_PATH}
           fill="none"
           stroke={color}
           strokeWidth="1.5"

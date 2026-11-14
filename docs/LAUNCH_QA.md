@@ -6,26 +6,30 @@ flow, with standalone iOS runtime evidence. Android native and some external-acc
 scenarios remain unverified; this document does not establish store-release readiness.
 No submission, publication, push or merge is part of this change.
 
+Current brand/hold correction supersedes the original geometry and extra-second policy:
+[BRAND_GEOMETRY_QA](BRAND_GEOMETRY_QA.md). The tables below retain their original runtime
+checkpoint counts rather than implying those old runs used the new emblem.
+
 ## Result and architecture
 
 `GlobalLaunch` mounts at the root. AppContext local state/access initialization and the
 bundled font load run concurrently with the approved shared scene. Existing routes and
 Today entitlement checks remain authoritative. The launch layer never grants access.
 The shared renderer retains the original nine-second timeline, six layers, shader math,
-logo geometry, texture and V4 material; no second WebGL implementation was introduced.
+V4 material; the shared emblem source is updated separately without changing that choreography.
 
 Only the intro is visible or accessible while it blocks the destination. Explicit renderer
-completion starts a further1000ms foreground hold; V4 material motion continues. Slow
-readiness keeps that same sphere moving, with no repeated scene or further fixed delay.
+completion permits handoff immediately. Slow readiness keeps that same V4 sphere moving,
+with no repeated scene or fixed loading delay.
 A360ms fade starts when the actual destination is ready. Destination sphere layout is
 reserved but its visible rendering waits for handoff, avoiding two visible spheres.
 
 The reducer keys destination readiness/fade callbacks by attempt, route and Today access
 mode. Pending daily selection invalidates readiness. Stale callbacks cannot uncover a
 new attempt/screen; lost readiness restores an opaque cover. Retry preserves completed
-choreography/hold. Process-memory state suppresses another global/Today sequence during
+choreography. Process-memory state suppresses another global/Today sequence during
 ordinary navigation or foreground return. Background time does not advance visible time.
-Reduced Motion or a screen reader skips the full choreography/hold; a skip remains skipped
+Reduced Motion or a screen reader skips the full choreography; a skip remains skipped
 after a live preference reversal. Android Back is consumed while the launch gate blocks.
 
 The native splash is static. WebGL begins in the React Native/WebView runtime. Splash

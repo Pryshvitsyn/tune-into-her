@@ -4,8 +4,8 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 
 import {
-  createLaunchState, ForegroundLaunchClock, getLaunchPhase, LAUNCH_HOLD_MS,
-  reduceLaunch, type LaunchEvent, type LaunchState,
+  createLaunchState, getLaunchPhase, LAUNCH_FADE_MS,
+  reduceLaunch, shouldAnimateLaunch, type LaunchEvent, type LaunchState,
 } from '../src/intro/launchState';
 import { DEPTH_LAYERS, INTRO_MS, sceneAt } from '../src/intro/timeline';
 
@@ -16,8 +16,7 @@ const visible = () => send(createLaunchState(),
 const prepared = () => send(visible(),
   { type: 'initialization', status: 'ready', attempt: 0 },
   { type: 'destination-ready', attempt: 0 });
-const completeMotion = (state: LaunchState) => send(state,
-  { type: 'intro-complete' }, { type: 'tick', deltaMs: LAUNCH_HOLD_MS });
+const completeMotion = (state: LaunchState) => send(state, { type: 'intro-complete' });
 
 describe('global startup presentation', () => {
   it('keeps native-compatible preparation until a frame and accessibility decision exist', () => {
@@ -29,34 +28,40 @@ describe('global startup presentation', () => {
     expect(getLaunchPhase(send(state, { type: 'accessibility', reducedMotion: false }))).toBe('preparing');
   });
 
-  it('does not shorten nine seconds even if the destination is ready immediately', () => {
-    const state = send(prepared(), { type: 'tick', deltaMs: 60_000 });
+  it('preserves the full nine-second six-layer scene even when the destination is ready immediately', () => {
+    const state = prepared();
     expect(getLaunchPhase(state)).toBe('animating');
     expect(state.introComplete).toBe(false);
-    // Only the scene's GPU complete event, not a JS loading timer, ends choreography.
+    expect(shouldAnimateLaunch(state)).toBe(true);
+    // The scene's completion event owns the handoff; initialization never ends it.
     expect(INTRO_MS).toBe(9000);
     expect(DEPTH_LAYERS).toBe(6);
   });
 
-  it('holds the final original V4 sphere for exactly one additional active second', () => {
-    let state = send(prepared(), { type: 'intro-complete' });
-    state = send(state, { type: 'tick', deltaMs: 999 });
-    expect(getLaunchPhase(state)).toBe('holding');
-    expect(state.holdElapsedMs).toBe(999);
-    state = send(state, { type: 'tick', deltaMs: 1 });
+  it('starts the existing fade as soon as the final scene and destination are ready, without an extra hold tick', () => {
+    const state = completeMotion(prepared());
     expect(getLaunchPhase(state)).toBe('fading');
+    expect(shouldAnimateLaunch(state)).toBe(false);
+    expect(LAUNCH_FADE_MS).toBe(360);
     const target = { x: 201, y: 437, radius: 140 };
     const final = sceneAt(INTRO_MS, { width: 402, height: 874 }, target);
     expect(final).toMatchObject({ ...target, shell: 1, logoOpacity: 0, layers: 0 });
   });
 
-  it('keeps the sphere after ten seconds while initialization is slow, then fades without another delay', () => {
+  it('keeps the final sphere available while initialization is slow and fades on readiness without another delay', () => {
     let state = completeMotion(visible());
     expect(getLaunchPhase(state)).toBe('waiting');
-    state = send(state, { type: 'tick', deltaMs: 45_000 },
-      { type: 'initialization', status: 'ready', attempt: 0 });
+    state = send(state, { type: 'initialization', status: 'ready', attempt: 0 });
     expect(getLaunchPhase(state)).toBe('waiting');
-    expect(getLaunchPhase(send(state, { type: 'destination-ready', attempt: 0 }))).toBe('fading');
+    state = send(state, { type: 'destination-ready', attempt: 0 });
+    expect(getLaunchPhase(state)).toBe('fading');
+    expect(state.introComplete).toBe(true);
+  });
+
+  it('fades immediately when initialization is the last dependency to become ready', () => {
+    const state = send(completeMotion(visible()), { type: 'destination-ready', attempt: 0 });
+    expect(getLaunchPhase(state)).toBe('waiting');
+    expect(getLaunchPhase(send(state, { type: 'initialization', status: 'ready', attempt: 0 }))).toBe('fading');
   });
 
   it('requires destination layout readiness as well as data readiness', () => {
@@ -65,12 +70,10 @@ describe('global startup presentation', () => {
     expect(getLaunchPhase(send(state, { type: 'destination-ready', attempt: 0 }))).toBe('fading');
   });
 
-  it('does not expose retry controls during the nine-second choreography or final hold', () => {
-    let state = send(visible(), { type: 'initialization', status: 'error', attempt: 0 });
+  it('reveals recoverable errors at scene completion while preserving all nine seconds beforehand', () => {
+    const state = send(visible(), { type: 'initialization', status: 'error', attempt: 0 });
     expect(getLaunchPhase(state)).toBe('animating');
-    state = send(state, { type: 'intro-complete' });
-    expect(getLaunchPhase(state)).toBe('holding');
-    expect(getLaunchPhase(send(state, { type: 'tick', deltaMs: 1000 }))).toBe('error');
+    expect(getLaunchPhase(completeMotion(state))).toBe('error');
   });
 
   it('recovers initialization in place without replay, ignoring late work from the failed attempt', () => {
@@ -89,22 +92,23 @@ describe('global startup presentation', () => {
       { type: 'destination-ready', attempt: 1 });
     expect(getLaunchPhase(state)).toBe('fading');
     expect(state.introComplete).toBe(true);
-    expect(state.holdElapsedMs).toBe(1000);
   });
 
-  it('does not count background time in the additional hold or fade while backgrounded', () => {
-    const clock = new ForegroundLaunchClock();
-    let state = send(prepared(), { type: 'intro-complete' });
-    clock.sample(9000, true);
-    state = send(state, { type: 'tick', deltaMs: clock.sample(9400, true) });
-    state = send(state, { type: 'active', value: false });
-    clock.sample(9400, false);
-    state = send(state, { type: 'tick', deltaMs: clock.sample(99_400, false) });
-    expect(state.holdElapsedMs).toBe(400);
-    state = send(state, { type: 'active', value: true },
-      { type: 'tick', deltaMs: clock.sample(100_000, true) });
-    expect(state.holdElapsedMs).toBe(400);
-    state = send(state, { type: 'tick', deltaMs: clock.sample(100_600, true) });
+  it('does not treat background or foreground events as choreography completion', () => {
+    let state = send(prepared(), { type: 'active', value: false });
+    expect(state.introComplete).toBe(false);
+    expect(getLaunchPhase(state)).toBe('animating');
+    state = send(state, { type: 'active', value: true });
+    expect(getLaunchPhase(state)).toBe('animating');
+    expect(getLaunchPhase(completeMotion(state))).toBe('fading');
+  });
+
+  it('waits in the background after scene completion and fades immediately on foreground', () => {
+    let state = completeMotion(send(prepared(), { type: 'active', value: false }));
+    state = send(state, { type: 'fade-complete' });
+    expect(state.fadeComplete).toBe(false);
+    expect(getLaunchPhase(state)).toBe('waiting');
+    state = send(state, { type: 'active', value: true });
     expect(getLaunchPhase(state)).toBe('fading');
     state = send(state, { type: 'active', value: false }, { type: 'fade-complete' });
     expect(state.fadeComplete).toBe(false);
@@ -114,14 +118,16 @@ describe('global startup presentation', () => {
   it.each([
     { reducedMotion: true, screenReader: false },
     { reducedMotion: false, screenReader: true },
-  ])('skips the full sequence and hold for accessibility preference %j', preference => {
-    const state = send(createLaunchState(),
+  ])('skips the full sequence for accessibility preference %j while retaining readiness', preference => {
+    let state = send(createLaunchState(),
       { type: 'accessibility', ...preference },
-      { type: 'first-frame', kind: 'fallback' },
-      { type: 'initialization', status: 'ready', attempt: 0 },
-      { type: 'destination-ready', attempt: 0 });
+      { type: 'first-frame', kind: 'fallback' });
+    expect(getLaunchPhase(state)).toBe('waiting');
+    state = send(state, { type: 'initialization', status: 'ready', attempt: 0 });
+    expect(getLaunchPhase(state)).toBe('waiting');
+    state = send(state, { type: 'destination-ready', attempt: 0 });
     expect(getLaunchPhase(state)).toBe('fading');
-    expect(state.holdElapsedMs).toBe(1000);
+    expect(shouldAnimateLaunch(state)).toBe(false);
   });
 
   it('never replays a sequence skipped by a live Reduced Motion change', () => {
@@ -129,6 +135,7 @@ describe('global startup presentation', () => {
     expect(getLaunchPhase(state)).toBe('fading');
     state = send(state, { type: 'accessibility', reducedMotion: false });
     expect(getLaunchPhase(state)).toBe('fading');
+    expect(shouldAnimateLaunch(state)).toBe(false);
   });
 
   it('treats a compatible native image as frame readiness, not completed choreography', () => {
@@ -149,11 +156,11 @@ describe('global startup presentation', () => {
     expect(getLaunchPhase(send(state, { type: 'first-frame', kind: 'fallback' }))).toBe('fading');
   });
 
-  it('does not reset the one-second hold on duplicate completion or first-frame delivery', () => {
-    const state = send(prepared(), { type: 'intro-complete' }, { type: 'tick', deltaMs: 600 });
+  it('does not add a delay after duplicate completion or first-frame delivery', () => {
+    const state = completeMotion(prepared());
     const next = send(state, { type: 'intro-complete' }, { type: 'first-frame', kind: 'gpu' });
-    expect(next.holdElapsedMs).toBe(600);
-    expect(getLaunchPhase(next)).toBe('holding');
+    expect(next.introComplete).toBe(true);
+    expect(getLaunchPhase(next)).toBe('fading');
   });
 
   it('does not reopen the launch gate after completion on navigation, foreground or late retry', () => {
@@ -164,17 +171,6 @@ describe('global startup presentation', () => {
     expect(next).toBe(state);
     expect(getLaunchPhase(next)).toBe('complete');
   });
-
-  it('ignores invalid elapsed input and keeps a monotonic foreground clock', () => {
-    const state = send(prepared(), { type: 'intro-complete' });
-    expect(send(state, { type: 'tick', deltaMs: -1 }, { type: 'tick', deltaMs: NaN },
-      { type: 'tick', deltaMs: Infinity })).toBe(state);
-    const clock = new ForegroundLaunchClock();
-    expect(clock.sample(1000, true)).toBe(0);
-    expect(clock.sample(1100, true)).toBe(100);
-    expect(clock.sample(1050, true)).toBe(0);
-    expect(clock.sample(1120, true)).toBe(20);
-  });
 });
 
 describe('approved Deep Intro V2 assets and motion contract', () => {
@@ -183,8 +179,8 @@ describe('approved Deep Intro V2 assets and motion contract', () => {
       'timeline.ts': '20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf',
       'sceneRuntime.generated.ts': 'ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2',
       'v4Shaders.generated.ts': 'ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a',
-      'brand.generated.ts': '00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee',
-      'brandTexture.generated.ts': 'b081f98ca837efde52545822bfeb5c617e6cdede1c5345a1608ea67e100b2910',
+      'brand.generated.ts': 'cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f',
+      'brandTexture.generated.ts': '9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9',
     };
     for (const [name, expected] of Object.entries(hashes)) {
       const content = readFileSync(new URL(`../src/intro/${name}`, import.meta.url));

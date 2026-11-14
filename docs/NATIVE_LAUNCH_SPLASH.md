@@ -6,22 +6,26 @@ Updated: 2026-11-14 (Europe/Rome). Runtime cases and media:
 The native splash is static. WebGL starts only in the React Native/WebView runtime.
 Root module-scope `SplashScreen.preventAutoHideAsync()` retains that bridge until an
 actual configured GPU frame or a loaded compatible image is ready and painted. The
-shared global controller then owns the approved nine-second scene, additional animated
-sphere second and destination fade. No native splash is described as pre-runtime WebGL.
+shared global controller then owns the approved nine-second scene and
+destination fade; the final extra hold was removed by the current brand correction. No native splash is described as pre-runtime WebGL.
+
+Current corrected-geometry/native evidence: [BRAND_GEOMETRY_QA](BRAND_GEOMETRY_QA.md).
+Older build hashes and runtime results below are historical checkpoints.
 
 ## Approved assets and iOS layout
 
 `assets/launch/official-launch-mark.png` derives from the approved brand texture. Its
-alpha, dimensions, padding, emblem and outlined Linux Libertine O wordmark are unchanged;
+alpha, dimensions and padding match the corrected shared SVG/texture exactly;
 only RGB mask pixels receive the existing light ink `#294458`. Pixel tests report zero
 alpha differences. Source PNG SHA256:
-`347cb7e26f2f9006b1655fbbb5768e2129e4cfb3975a31a83e8adef4eb57517b`.
+`dd12d37161e9a9fa891dda017a121edb4ac5108495a9a29fa738fff93d079967`.
 This vector-outline image does not itself establish an installed UI font.
 
 `assets/launch/silver-gradient.png` deterministically samples the existing horizontal
 `#DCE3E9` → `#F9FBFC` → `#DCE3E9` background. `node assets/launch/generate.cjs` uses installed
 pngjs; it creates native representations, not a new illustration or logo geometry.
-The approved V4 renderer, original textures, logo sources and timeline remain unchanged.
+The V4 renderer, original sphere textures and timeline remain unchanged. The corrected
+brand source and regeneration command are documented in [assets/brand](../assets/brand/README.md).
 
 The storyboard fills the native window. Padded image width is
 `min(0.95 * viewportWidth,525)` with ratio800:560, matching the React Native fallback's

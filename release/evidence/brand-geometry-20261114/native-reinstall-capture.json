@@ -1,0 +1,38 @@
+{
+  "kind": "quiescent same-binary data-preserving reinstall cold launch",
+  "configuration": "Release",
+  "deepStrictSignatureVerified": true,
+  "embeddedBundleSha256": "aee581e32c00b388e7eeab3001874ce17e64ab9fc1f0183c394886ade2cdb71e",
+  "sameBinaryAsFirstAfter": true,
+  "noPreferenceChanges": true,
+  "noMidIntroLifecycleAction": true,
+  "quiescentByCoordinator": true,
+  "preflight": {
+    "loadAverage": [
+      3.93603515625,
+      5.04248046875,
+      6.4033203125
+    ],
+    "logicalCPUs": 8,
+    "activeBuildOrEncodingProcesses": []
+  },
+  "metroListeningBefore": {
+    "8081": false,
+    "8082": false
+  },
+  "dataPreservingReinstallPassed": true,
+  "installedBundleMatches": true,
+  "recorderAcknowledged": true,
+  "coldLaunchPassed": true,
+  "launchedAt": "2026-11-14T15:55:28.027Z",
+  "requestedRecordingWallSeconds": 40,
+  "actualRecordingWallSeconds": 40.350233417000005,
+  "recordingExit": {
+    "code": 0,
+    "signal": null
+  },
+  "metroListeningAfter": {
+    "8081": false,
+    "8082": false
+  }
+}

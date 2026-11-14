@@ -54,32 +54,59 @@ func fontCommands(_ font: CTFont, _ glyph: CGGlyph) -> [Command] {
 
 do {
   let root = URL(fileURLWithPath: CommandLine.arguments.dropFirst().first ?? FileManager.default.currentDirectoryPath)
-  let fontPath = "assets/fonts/LinuxLibertineO-Regular.otf", vectorPath = "src/intro/brand.generated.ts"
+  let fontPath = "assets/fonts/LinuxLibertineO-Regular.otf", vectorPath = "assets/brand/official-mark.svg"
   let fontURL = root.appendingPathComponent(fontPath), vectorURL = root.appendingPathComponent(vectorPath)
   let fontBytes = try Data(contentsOf: fontURL), vectorBytes = try Data(contentsOf: vectorURL)
   let source = String(decoding: vectorBytes, as: UTF8.self)
-  let literal = try capture("(?m)^export const BRAND_BODY = (\".*\");$", source)[0]
-  let body = try JSONSerialization.jsonObject(with: Data(literal.utf8), options: [.fragmentsAllowed]) as! String
-  let xml = try XMLDocument(xmlString: "<svg>" + body + "</svg>", options: [])
-  let paths = try xml.nodes(forXPath: "//path").compactMap { $0 as? XMLElement }
-  let wordmarks = paths.filter { $0.attribute(forName: "fill")?.stringValue == "currentColor" && $0.attribute(forName: "d")?.stringValue?.contains("C") == true }
+  let xml = try XMLDocument(xmlString: source, options: [])
+  let paths = try xml.nodes(forXPath: "//*[local-name()='path']").compactMap { $0 as? XMLElement }
+  let wordmarks = paths.filter { $0.attribute(forName: "id")?.stringValue == "wordmark" }
   try require(wordmarks.count == 1, "Expected one filled wordmark outline")
   let wordmark = wordmarks[0], outline = try svgCommands(wordmark.attribute(forName: "d")!.stringValue!)
   let transform = wordmark.attribute(forName: "transform")?.stringValue ?? ""
+  let generatedPath = "src/intro/brand.generated.ts"
+  let generatedBytes = try Data(contentsOf: root.appendingPathComponent(generatedPath))
+  let generatedSource = String(decoding: generatedBytes, as: UTF8.self)
+  let generatedLiteral = try capture("(?m)^export const BRAND_BODY = (\".*\");$", generatedSource)[0]
+  let generatedBody = try JSONSerialization.jsonObject(with: Data(generatedLiteral.utf8), options: [.fragmentsAllowed]) as! String
+  let generatedXML = try XMLDocument(xmlString: "<svg>" + generatedBody + "</svg>", options: [])
+  let generatedMarks = try generatedXML.nodes(forXPath: "//path[@id='wordmark']").compactMap { $0 as? XMLElement }
+  let generatedMatches = generatedMarks.count == 1 && generatedMarks[0].attribute(forName: "d")?.stringValue == wordmark.attribute(forName: "d")?.stringValue && generatedMarks[0].attribute(forName: "transform")?.stringValue == transform
+  try require(generatedMatches, "Generated wordmark differs from the authoritative SVG; run the existing brand generator")
   let transformValues = try capture("^translate\\(([-+0-9.eE]+)[ ,]+([-+0-9.eE]+)\\)\\s*scale\\(([-+0-9.eE]+)\\)$", transform).map { Double($0)! }
   let descriptors = CTFontManagerCreateFontDescriptorsFromURL(fontURL as CFURL) as! [CTFontDescriptor]
   try require(descriptors.count == 1, "Expected one face in the trusted font file")
   let first = CTFontCreateWithFontDescriptor(descriptors[0], 1000, nil), units = CTFontGetUnitsPerEm(first)
   let font = CTFontCreateWithFontDescriptor(descriptors[0], CGFloat(units), nil)
   let tolerance = 0.0001 // Font units: 1e-7em at 1000 UPEM; allows CoreText float conversion noise.
-  var cursor = 0, natural = 0.0, maxDeviation = 0.0, maxSpacingDelta = 0.0, shapeMatch = true
+  // Ordinary RN Text omits NSKern when letterSpacing is unset. Shape the actual
+  // font with the same native default instead of assuming summed glyph advances.
+  let text = "Tune Into Her"
+  let attributed = NSAttributedString(string: text, attributes: [NSAttributedString.Key(kCTFontAttributeName as String): font])
+  let line = CTLineCreateWithAttributedString(attributed)
+  let shapedAdvance = CTLineGetTypographicBounds(line, nil, nil, nil)
+  var shaped: [(glyph: CGGlyph, x: Double, y: Double, index: Int)] = []
+  for run in CTLineGetGlyphRuns(line) as! [CTRun] {
+    let count = CTRunGetGlyphCount(run)
+    var glyphs = [CGGlyph](repeating: 0, count: count), positions = [CGPoint](repeating: .zero, count: count), indices = [CFIndex](repeating: 0, count: count)
+    CTRunGetGlyphs(run, CFRange(location: 0, length: 0), &glyphs)
+    CTRunGetPositions(run, CFRange(location: 0, length: 0), &positions)
+    CTRunGetStringIndices(run, CFRange(location: 0, length: 0), &indices)
+    for i in 0..<count { shaped.append((glyphs[i], Double(positions[i].x), Double(positions[i].y), indices[i])) }
+  }
+  try require(shaped.count == text.utf16.count, "Unexpected native shaping topology")
+  var cursor = 0, unshaped = 0.0, maxDeviation = 0.0, maxSpacingDelta = 0.0, shapeMatch = true
   var rows: [[String: Any]] = []
-  for character in "Tune Into Her" {
+  for (stringIndex, character) in text.enumerated() {
     var code = String(character).utf16.first!, glyph = CGGlyph(), advance = CGSize()
     try require(CTFontGetGlyphsForCharacters(font, &code, &glyph, 1), "Wordmark glyph missing from actual font")
     CTFontGetAdvancesForGlyphs(font, .horizontal, &glyph, &advance, 1)
     let expected = fontCommands(font, glyph)
-    if expected.isEmpty { natural += advance.width; continue }
+    let native = shaped.filter { $0.index == stringIndex }
+    try require(native.count == 1 && native[0].glyph == glyph, "Native glyph differs from direct actual-font glyph")
+    let shapedOrigin = native[0].x
+    try require(abs(native[0].y) <= tolerance, "Unexpected shaped baseline shift")
+    if expected.isEmpty { unshaped += advance.width; continue }
     try require(cursor + expected.count <= outline.count, "Wordmark outline ended before all glyphs")
     let actual = Array(outline[cursor..<(cursor + expected.count)]); cursor += expected.count
     let origin = actual[0].points[0][0] - expected[0].points[0][0]
@@ -88,19 +115,22 @@ do {
       if a.type != b.type || a.points.count != b.points.count { shapeMatch = false; continue }
       for (p, q) in zip(a.points, b.points) { deviation = max(deviation, abs(p[0] - q[0] - origin), abs(p[1] + q[1])) }
     }
-    maxDeviation = max(maxDeviation, deviation); maxSpacingDelta = max(maxSpacingDelta, abs(origin - natural))
-    rows.append(["character": String(character), "glyphId": glyph, "originUnits": origin, "naturalOriginUnits": natural, "advanceUnits": advance.width, "commandCount": expected.count, "maxCoordinateDeviationUnits": deviation])
-    natural += advance.width
+    maxDeviation = max(maxDeviation, deviation); maxSpacingDelta = max(maxSpacingDelta, abs(origin - shapedOrigin))
+    rows.append(["character": String(character), "glyphId": glyph, "originUnits": origin, "nativeShapedOriginUnits": shapedOrigin, "unshapedOriginUnits": unshaped, "nativeKerningFromUnshapedOriginUnits": shapedOrigin - unshaped, "advanceUnits": advance.width, "commandCount": expected.count, "maxCoordinateDeviationUnits": deviation])
+    unshaped += advance.width
   }
   let fontHash = sha256(fontBytes), trustedHash = "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114"
   let ofl = try Data(contentsOf: root.appendingPathComponent("assets/fonts/OFL.txt")), distribution = try Data(contentsOf: root.appendingPathComponent("assets/fonts/LICENCE.txt"))
-  let passed = fontHash == trustedHash && shapeMatch && cursor == outline.count && maxDeviation <= tolerance && maxSpacingDelta <= tolerance && wordmark.attribute(forName: "stroke") == nil
+  let centeredX = transformValues[0] + shapedAdvance * transformValues[2] / 2
+  let passed = fontHash == trustedHash && shapeMatch && cursor == outline.count && maxDeviation <= tolerance && maxSpacingDelta <= tolerance && abs(centeredX - 320) < 0.000001 && wordmark.attribute(forName: "stroke") == nil
   let report: [String: Any] = [
-    "schemaVersion": 1, "passed": passed, "method": "CoreText glyph paths loaded directly from existing OTF; SVG H/V normalized to L; glyph Y inverted; no system font lookup or font installation",
+    "schemaVersion": 2, "passed": passed, "method": "CoreText default CTLine shaping and glyph paths loaded directly from existing OTF; SVG H/V normalized to L; glyph Y inverted; no system font lookup or font installation",
     "font": ["path": fontPath, "sha256": fontHash, "matchesTrustedUnmodifiedFile": fontHash == trustedHash, "family": CTFontCopyFamilyName(font) as String, "postScript": CTFontCopyPostScriptName(font) as String, "style": CTFontCopyName(font, kCTFontSubFamilyNameKey) as String? ?? "", "version": (CTFontCopyName(font, kCTFontVersionNameKey) as String? ?? "").trimmingCharacters(in: .whitespaces), "unitsPerEm": units],
-    "wordmark": ["path": vectorPath, "sourceSha256": sha256(vectorBytes), "text": "Tune Into Her", "transform": transform, "glyphCount": rows.count, "svgCommandCount": outline.count, "matchedFontCommandCount": cursor, "contourCount": outline.filter { $0.type == 0 }.count, "commandShapesMatch": shapeMatch, "maxCoordinateDeviationUnits": maxDeviation, "coordinateToleranceUnits": tolerance, "maxOriginDeviationFromUnkernedAdvancesUnits": maxSpacingDelta, "appliedTrackingOrPairAdjustmentUnits": maxSpacingDelta, "naturalAdvanceUnits": natural, "naturalAdvanceDesignUnits": natural * transformValues[2], "extraStrokeApplied": wordmark.attribute(forName: "stroke") != nil, "uniformScale": transformValues[2], "translation": Array(transformValues[0..<2]), "glyphs": rows],
+    "wordmark": ["path": vectorPath, "sourceSha256": sha256(vectorBytes), "text": "Tune Into Her", "transform": transform, "glyphCount": rows.count, "svgCommandCount": outline.count, "matchedFontCommandCount": cursor, "contourCount": outline.filter { $0.type == 0 }.count, "commandShapesMatch": shapeMatch, "maxCoordinateDeviationUnits": maxDeviation, "coordinateToleranceUnits": tolerance, "maxOriginDeviationFromNativeShapingUnits": maxSpacingDelta, "spacingPolicy": "Native CoreText default; no custom kern/tracking attribute", "nativeShapedAdvanceUnits": shapedAdvance, "unshapedAdvanceUnits": unshaped, "nativeKerningFromUnshapedAdvanceUnits": shapedAdvance - unshaped, "nativeShapedAdvanceDesignUnits": shapedAdvance * transformValues[2], "centerDesignX": centeredX, "extraStrokeApplied": wordmark.attribute(forName: "stroke") != nil, "uniformScale": transformValues[2], "translation": Array(transformValues[0..<2]), "glyphs": rows],
+    "generatedWrapper": ["path": generatedPath, "sha256": sha256(generatedBytes), "matchesAuthoritativeWordmark": generatedMatches],
+    "previousDeliverySpacing": ["sourceModuleSha256": "00d2bb375b62d235cd915bda3c0797884e28bb7f6393bcec062b6d1c5d4a0fee", "policy": "Summed unkerned glyph advances", "advanceUnits": unshaped, "translation": [70, 224], "nativePairAdjustmentUnits": shapedAdvance - unshaped, "centeringTranslationDeltaDesignUnits": transformValues[0] - 70],
     "licenseFiles": ["oflPath": "assets/fonts/OFL.txt", "oflSha256": sha256(ofl), "originalDistributionNoticePath": "assets/fonts/LICENCE.txt", "originalDistributionNoticeSha256": sha256(distribution)],
-    "limits": ["Establishes equivalence of these existing wordmark glyphs to the trusted font, within explicit numeric tolerance.", "Does not identify the original generating font file byte-for-byte; different font files can share these glyphs.", "Does not prove that the original numbered Variant #8 comparison/approval sample was made with this exact file, style or layout.", "Does not establish native rasterization, visual approval, all-script glyph coverage or store/legal readiness."]
+    "limits": ["Establishes equivalence of these existing wordmark glyphs to the trusted font, within explicit numeric tolerance.", "Does not identify the original generating font file byte-for-byte; different font files can share these glyphs.", "Does not prove that the original numbered Variant #8 comparison/approval sample was made with this exact file, style or layout.", "Matches native default shaping at the font/path level; does not instrument a live React Native Text node.", "Does not establish native rasterization, visual approval, all-script glyph coverage or store/legal readiness."]
   ]
   let result = try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes])
   FileHandle.standardOutput.write(result); FileHandle.standardOutput.write(Data("\n".utf8))

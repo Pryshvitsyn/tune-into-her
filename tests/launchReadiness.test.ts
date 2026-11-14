@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { launchDestinationKey } from '../src/intro/launchRouting';
-import { createLaunchState, getLaunchPhase, LAUNCH_HOLD_MS, reduceLaunch, type LaunchState } from '../src/intro/launchState';
+import { createLaunchState, getLaunchPhase, reduceLaunch, type LaunchState } from '../src/intro/launchState';
 
 function readyToFade(pathname = '/today', hasAccess = false): LaunchState {
   const key = launchDestinationKey(0, pathname, hasAccess);
@@ -11,8 +11,7 @@ function readyToFade(pathname = '/today', hasAccess = false): LaunchState {
   state = reduceLaunch(state, { type: 'initialization', status: 'ready', attempt: 0 });
   state = reduceLaunch(state, { type: 'destination-selected', attempt: 0, key });
   state = reduceLaunch(state, { type: 'destination-ready', attempt: 0, key });
-  state = reduceLaunch(state, { type: 'intro-complete' });
-  return reduceLaunch(state, { type: 'tick', deltaMs: LAUNCH_HOLD_MS });
+  return reduceLaunch(state, { type: 'intro-complete' });
 }
 
 describe('destination readiness generations', () => {
@@ -26,7 +25,7 @@ describe('destination readiness generations', () => {
     expect(getLaunchPhase(state)).toBe('waiting');
     state = reduceLaunch(state, { type: 'destination-ready', attempt: 0, key: locked });
     expect(getLaunchPhase(state)).toBe('waiting');
-    expect(state.holdElapsedMs).toBe(LAUNCH_HOLD_MS);
+    expect(state.introComplete).toBe(true);
     state = reduceLaunch(state, { type: 'destination-ready', attempt: 0, key: full });
     expect(getLaunchPhase(state)).toBe('fading'); // no repeated intro or extra fixed hold
   });
@@ -65,7 +64,7 @@ describe('destination readiness generations', () => {
     expect(getLaunchPhase(state)).toBe('waiting');
     state = reduceLaunch(state, { type: 'destination-ready', attempt: 1, key: nextKey });
     expect(getLaunchPhase(state)).toBe('fading');
-    expect(state.holdElapsedMs).toBe(LAUNCH_HOLD_MS);
+    expect(state.introComplete).toBe(true);
   });
 
   it('waits for a new selected-day frame when midnight invalidates the same-route content', () => {
@@ -77,7 +76,7 @@ describe('destination readiness generations', () => {
     expect(getLaunchPhase(state)).toBe('waiting');
     state = reduceLaunch(state, { type: 'destination-ready', attempt: 0, key });
     expect(getLaunchPhase(state)).toBe('fading');
-    expect(state.holdElapsedMs).toBe(LAUNCH_HOLD_MS);
+    expect(state.introComplete).toBe(true);
   });
 
   it('ignores invalidation from an old destination or initialization attempt', () => {

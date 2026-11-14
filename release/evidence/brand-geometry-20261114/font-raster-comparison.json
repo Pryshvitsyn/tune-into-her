@@ -1,0 +1,40 @@
+{
+  "font": "Linux Libertine O Regular 5.3.0",
+  "fontPostScript": "LinLibertineO",
+  "fontSHA256": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+  "canonicalSVG": "assets/brand/official-mark.svg",
+  "canonicalSourceSHA256": "b27dc551e6b8e0e302658f930245a3026433d89a87a6909354293e4c3b9574df",
+  "unchanged": {
+    "fontFile": true,
+    "glyphShape": true,
+    "regularWeight": true,
+    "uniformScale": 0.08583691,
+    "baselineDesignY": 224
+  },
+  "spacing": {
+    "previousAdvanceUnits": 5825,
+    "nativeAdvanceUnits": 5786,
+    "pair": "Tu",
+    "pairKerningUnits": -39,
+    "oldTranslationX": 70,
+    "newTranslationX": 71.673819745,
+    "advanceDifferencePercent": 0.6695278969957081
+  },
+  "nativeReferenceVersusCorrectedSVG": {
+    "threshold": 128,
+    "intersectionOverUnion": 0.9985924361966144,
+    "absoluteAlphaErrorSum": 15843,
+    "meanAlphaErrorPerInkUnion": 0.5360332927324402
+  },
+  "nativeReferenceVersusPreviousSVG": {
+    "threshold": 128,
+    "intersectionOverUnion": 0.6839631509682271,
+    "absoluteAlphaErrorSum": 2566982,
+    "meanAlphaErrorPerInkUnion": 74.0831746031746
+  },
+  "limits": [
+    "Independent desktop CoreText/CoreGraphics and SVG raster comparison, not live React Native Text inspection.",
+    "Native font antialias and SVG antialias differ slightly; glyph positions and shapes are independently audited.",
+    "No claim that kerning alone explains all perceived font or logo differences."
+  ]
+}

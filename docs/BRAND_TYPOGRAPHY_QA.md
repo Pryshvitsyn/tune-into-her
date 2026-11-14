@@ -1,5 +1,8 @@
 # Brand and typography correction — 2026-11-14
 
+Historical checkpoint: the subsequent [brand geometry/spacing correction](BRAND_GEOMETRY_QA.md)
+supersedes the old arc, clipping and unkerned wordmark. Its current evidence is separate.
+
 ## Diagnosis and preserved reference
 
 The existing delivered intro package explicitly identifies its outlined wordmark as

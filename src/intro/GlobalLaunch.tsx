@@ -14,7 +14,7 @@ import { SphereIntroSurface } from './SphereIntroSurface';
 import { markAppIntroConsumed } from './introSession';
 import { getLaunchCopy } from './launchCopy';
 import { launchDestinationKey, launchRouteState } from './launchRouting';
-import { createLaunchState, ForegroundLaunchClock, getLaunchPhase, LAUNCH_FADE_MS, reduceLaunch, shouldAnimateLaunch } from './launchState';
+import { createLaunchState, getLaunchPhase, LAUNCH_FADE_MS, reduceLaunch, shouldAnimateLaunch } from './launchState';
 import { loadPremiumTypeface } from './premiumFont';
 
 // A JS-runtime lifetime is a native cold launch. Navigation/AppState never resets it.
@@ -39,9 +39,6 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
   const [view, setView] = useState({ width: 0, height: 0 });
   const elapsed = useSharedValue(0);
   const opacity = useAnimatedValue(completedThisRuntime ? 0 : 1);
-  const [clock] = useState(() => new ForegroundLaunchClock());
-  const active = useRef(state.active);
-  const frame = useRef<number | null>(null);
   const splashHidden = useRef(false);
   useLayoutEffect(() => {
     dispatch({ type: 'destination-selected', attempt: initializationAttempt, key: routeKey });
@@ -107,23 +104,12 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
 
   useEffect(() => {
     if (!blocking) return;
-    clock.sample(performance.now(), active.current);
-    const sample = () => {
-      const deltaMs = clock.sample(performance.now(), active.current);
-      if (deltaMs > 0) dispatch({ type: 'tick', deltaMs });
-      frame.current = requestAnimationFrame(sample);
-    };
-    frame.current = requestAnimationFrame(sample);
-    const sub = AppState.addEventListener('change', value => {
-      const now = performance.now();
-      const deltaMs = clock.sample(now, active.current);
-      if (deltaMs > 0) dispatch({ type: 'tick', deltaMs });
-      active.current = value === 'active';
-      clock.sample(now, active.current);
-      dispatch({ type: 'active', value: active.current });
-    });
-    return () => { if (frame.current !== null) cancelAnimationFrame(frame.current); sub.remove(); };
-  }, [clock, blocking]);
+    // The shared GPU runtime owns choreography time; JS tracks only lifecycle.
+    const update = (value: string) => dispatch({ type: 'active', value: value === 'active' });
+    const sub = AppState.addEventListener('change', update);
+    if (AppState.currentState != null) update(AppState.currentState);
+    return () => sub.remove();
+  }, [blocking]);
 
   useEffect(() => {
     if (!blocking) return;
@@ -142,10 +128,8 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
     }));
   }, []);
   const onIntroComplete = useCallback(() => {
-    const now = performance.now();
-    clock.sample(now, false); clock.sample(now, active.current);
     dispatch({ type: 'intro-complete' });
-  }, [clock]);
+  }, []);
 
   useLayoutEffect(() => {
     if (phase !== 'fading') {

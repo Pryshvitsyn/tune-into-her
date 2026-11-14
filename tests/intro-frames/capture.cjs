@@ -35,7 +35,7 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
   const rendererFiles=['src/intro/sphereHtml.ts','src/intro/timeline.ts','src/intro/sceneRuntime.generated.ts','src/intro/v4Shaders.generated.ts','src/intro/brand.generated.ts','src/intro/brandTexture.generated.ts','assets/tune_into_her_sphere_source_clean.png'];
   const sourceSha256=Object.fromEntries(rendererFiles.map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync(path.join(repo,file))).digest('hex')]));
   const metadata={sourceSha256,sourceCommit:cp.execFileSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8'}).trim(),capturedAt:new Date().toISOString(),engine:'Chromium headless WebGL / ANGLE SwiftShader; not iOS or Android native evidence',frames:[],events};
-  const times=[0,500,1000,2000,2500,3500,4300,4500,9000,9500,10000];
+  const times=[0,500,1000,1350,1800,2000,2350,2500,2850,3200,3500,3800,4000,4150,4300,4500,9000,9360];
   for(const [label,width,height] of [['iphone-se',375,667],['iphone-tall',393,852],['android-compact',360,800],['android-tall',412,915]]) {
    await cdp('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:2,mobile:true});
    await cdp('Page.navigate',{url:`file://${htmlPath}`});
@@ -49,7 +49,8 @@ const chrome=cp.spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chr
     const shot=await cdp('Page.captureScreenshot',{format:'png',captureBeyondViewport:false,fromSurface:true});
     const file=`${label}-${String(ms).padStart(5,'0')}.png`;
     const data=Buffer.from(shot.data,'base64');fs.writeFileSync(path.join(out,file),data);
-    metadata.frames.push({file,ms,width,height,sha256:crypto.createHash('sha256').update(data).digest('hex'),...info});
+    const visibleDepthLayers=Array.from({length:6},(_,layer)=>({layer,z:info.state.scene.camera+.62-layer*.68})).filter(item=>info.state.scene.layers>0&&item.z>.08&&item.z<2.30).map(item=>item.layer);
+    metadata.frames.push({file,ms,width,height,visibleDepthLayers,sha256:crypto.createHash('sha256').update(data).digest('hex'),...info});
    }
   }
   metadata.offscreenScissors=[];

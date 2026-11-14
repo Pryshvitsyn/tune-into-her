@@ -1,0 +1,120 @@
+{
+  "kind": "quiescent same-binary data-preserving reinstall cold launch",
+  "configuration": "Release",
+  "deepStrictSignatureVerified": true,
+  "embeddedBundleSha256": "aee581e32c00b388e7eeab3001874ce17e64ab9fc1f0183c394886ade2cdb71e",
+  "sameBinaryAsFirstAfter": true,
+  "noPreferenceChanges": true,
+  "noMidIntroLifecycleAction": true,
+  "quiescentByCoordinator": true,
+  "preflight": {
+    "loadAverage": [
+      3.93603515625,
+      5.04248046875,
+      6.4033203125
+    ],
+    "logicalCPUs": 8,
+    "activeBuildOrEncodingProcesses": []
+  },
+  "metroListeningBefore": {
+    "8081": false,
+    "8082": false
+  },
+  "dataPreservingReinstallPassed": true,
+  "installedBundleMatches": true,
+  "recorderAcknowledged": true,
+  "coldLaunchPassed": true,
+  "launchedAt": "2026-11-14T15:55:28.027Z",
+  "requestedRecordingWallSeconds": 40,
+  "actualRecordingWallSeconds": 40.350233417000005,
+  "recordingExit": {
+    "code": 0,
+    "signal": null
+  },
+  "metroListeningAfter": {
+    "8081": false,
+    "8082": false
+  },
+  "mediaDurationSeconds": 32.963333,
+  "mediaPTSIsStartupWallTime": false,
+  "blackFrameAnalysis": {
+    "method": "Every decoded original frame, no fps resampling; crop x0/y64/w750/h1270 excludes system status bar; convert grayscale; black threshold8/255, full-black criterion98% coverage. Calibrated against preserved visually black first-post-install film.",
+    "framesExamined": 724,
+    "ffprobeOriginalFrameCount": 724,
+    "everyOriginalDecodedFrameExamined": true,
+    "maxNearBlackCoveragePercent": 1.0,
+    "nearBlackFrames": 0,
+    "calibrationFirstPostInstallUnderLoad": {
+      "framesExamined": 680,
+      "maxNearBlackCoveragePercent": 100.0,
+      "nearBlackFrames": 44,
+      "segments": [
+        {
+          "firstFrame": 32,
+          "lastFrame": 75,
+          "firstPTS": 5.34,
+          "lastPTS": 5.94,
+          "frames": 44
+        }
+      ],
+      "ffprobeOriginalFrameCount": 680,
+      "everyOriginalDecodedFrameExamined": true
+    },
+    "quiescentRepeatWithoutReinstall": {
+      "framesExamined": 690,
+      "maxNearBlackCoveragePercent": 1.0,
+      "nearBlackFrames": 0,
+      "segments": [],
+      "ffprobeOriginalFrameCount": 690,
+      "everyOriginalDecodedFrameExamined": true
+    }
+  },
+  "visualReview": {
+    "completed": true,
+    "correctedLogo": true,
+    "movingDepthAndGlobe": true,
+    "finalLockedToday": true,
+    "blackFlashObservedThisReinstall": false,
+    "earlierBlackCauseEstablished": false,
+    "firstPostInstallEvidenceRetained": true
+  },
+  "selectedFrames": {
+    "opening-reinstall.png": {
+      "mediaSeconds": 3
+    },
+    "depth-reinstall.png": {
+      "mediaSeconds": 8.5
+    },
+    "globe-reinstall.png": {
+      "mediaSeconds": 12.5
+    },
+    "logo-closeup-reinstall.png": {
+      "mediaSeconds": 3
+    },
+    "last-decoded-frame-reinstall.png": {
+      "originalFrameIndex": 723,
+      "mediaSeconds": 32.96
+    }
+  },
+  "sourceSha256": {
+    "assets/brand/official-mark.svg": "b27dc551e6b8e0e302658f930245a3026433d89a87a6909354293e4c3b9574df",
+    "src/intro/brand.generated.ts": "cb66c5dca41880d97dc398d0c88b478396ecbe5ef7820d239585c59e25b13a0f",
+    "src/intro/brandTexture.generated.ts": "9a9ce0d318358a07d49c5dd82cae86169e367d33a3e6a2c35448764c3dbe0ba9",
+    "assets/launch/official-launch-mark.png": "14154cf2b6cf24f28f438459ec18bc942f6c03be291d8fc65ff027c5cc0d46ab"
+  },
+  "sha256": {
+    "settled-reinstall.png": "e21e94240ee9874fac859d746e714b9e8d876d96cf8e8ebf3c17db64e5de0d3e",
+    "globe-reinstall.png": "2d40064e551a7c69c66e8f1a37683a1abccffe31f43871919bca1bd61911c14b",
+    "last-decoded-frame-reinstall.png": "cf2815203970b8ada43e43b70ac2b392507487c5ee481e0be1bfa93402bee3e6",
+    "depth-reinstall.png": "080846c4323b2dfd6a1f45a690bca95f61f92bff00aecd4d2c91906a9e272eb0",
+    "contact-reinstall.png": "63223e0cf5b6a0096024790773507d5a3ed282e9f4d1987da931d0814527bc4f",
+    "opening-reinstall.png": "6c35aaa33f9d86ab91c3d54564e2fd34037ca04cfa407cb7f0c1829f1106b13d",
+    "logo-closeup-reinstall.png": "ce78213f6769af89653d747a5f6383b23e84fffafad498fbc265eb3ff30ff0f2",
+    "cold-reinstall.mp4": "e3f33e59ff0fd2987bc8a48590eb561bed968b05eeca8f3dbadb16561267fa23"
+  },
+  "limits": [
+    "Two quiescent passes, including data-preserving reinstall, do not causally identify the earlier under-load first-post-install black frame source.",
+    "No universal flash-free, physical-device or Android runtime claim.",
+    "Media PTS does not equal total startup wall-clock duration."
+  ]
+}

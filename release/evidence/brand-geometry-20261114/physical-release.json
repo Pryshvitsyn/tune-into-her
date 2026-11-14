@@ -1,0 +1,16 @@
+{
+  "configuration": "Release",
+  "mockBilling": false,
+  "dataReset": false,
+  "visualEvidenceAvailable": false,
+  "signaturePassed": true,
+  "embeddedBundleSha256": "31b144e67ad22dde0a9408bed5020571291071e44c497c58c626eae94cf598d9",
+  "officialResourcesMatched": true,
+  "installExitCode": 0,
+  "launchExitCode": 0,
+  "launchCommandSeconds": 4.563,
+  "processStillRunning": true,
+  "processQueryExitCode": 0,
+  "relaunchExitCode": 0,
+  "observationSeconds": 54.956
+}
