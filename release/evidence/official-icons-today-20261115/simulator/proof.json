@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-15",
+  "status": "PASS actual single-intro to Today-with-test-disclosure; full offscreen advice blocks require separate scrolling UI proof",
+  "scope": "Isolated memory-only QA Simulator Release; not ordinary paid access or physical iPhone proof",
+  "sourceMovieSHA256": "4efb3e4b93f543a615fbb84574681b0f140d70961935c88dd6cc00421a8f645f",
+  "sourceDecodedFrames": 2116,
+  "sourcePTSAnomalies": [
+    {
+      "decodedFrame": 2028,
+      "previousPTS": 38.585,
+      "currentPTS": 36.681667
+    }
+  ],
+  "acceptedClip": {
+    "file": "corrected-qa-photo-to-today.mp4",
+    "sha256": "fa32dd972d56f1bf1b12b76ff2c49297fd71084424c565c2ebe057e0296a3dc1",
+    "sourceStartFrame": 85,
+    "sourceEndFrame": 673,
+    "sourceStartPTS": 1.996667,
+    "sourceEndPTS": 16,
+    "decodedFrames": 589,
+    "allOutputPTSStrictlyIncreasing": true,
+    "sourceWindowPTSStrictlyIncreasing": true,
+    "timestampOperation": "Constant start offset only; every selected source frame retained with its original presentation intervals, variable frame rate",
+    "maximumRelativePTSDeviationSeconds": 1.0000000010279564e-06
+  },
+  "acceptedClipFlashCheck": {
+    "region": "center80percent",
+    "grid": [
+      64,
+      64
+    ],
+    "areaResampling": true,
+    "threshold": "At least98percent samples<=18 black,<=30 near-black,>=245 white",
+    "decodedFrames": 589,
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0
+  },
+  "sourceArtifact": "artifact.json",
+  "allSourceArtifactHashesMatchCurrent": true,
+  "productionGuardSourceUnmodified": true,
+  "visualObservations": {
+    "onePhotoDepthV4Intro": true,
+    "TodayDAY7Visible": true,
+    "mockDisclosureVisible": true,
+    "keepInMindGuidanceVisible": true,
+    "supportHeadingAtLowerViewport": true,
+    "fullSupportAndDODemonstratedByThisMovie": false,
+    "lockedOrDevLauncherOrDevQAUIAfterIntro": false
+  },
+  "coarseTransitionSamples": {
+    "stableFinalSphereSampleSeconds": 11.401667,
+    "sphereOnlySampleSeconds": 12.201667,
+    "firstSampledFaintTodayTextSeconds": 12.401667,
+    "fullyVisibleTodaySampleSeconds": 13,
+    "limit": "Sample brackets only; no exact native assembly/hold/fade telemetry inferred. Source/GPU tests measure the active1000ms hold separately."
+  },
+  "samples": [
+    {
+      "file": "01-exact-approved-opening.png",
+      "label": "Full-bounds approved artwork; opening actor not inferred from pixel sample",
+      "sourceDecodedFrame": 85,
+      "moviePTSSeconds": 1.996667,
+      "sha256": "23c9240d201bfc14baf0c9b1e38932cdd5722c18bb4743dcbfe49d1d1c714f51"
+    },
+    {
+      "file": "02-last-photo-sample.png",
+      "label": "Last sampled static photograph",
+      "sourceDecodedFrame": 135,
+      "moviePTSSeconds": 6.998333,
+      "sha256": "c258485450878a382ea47a52ced5fef0bf58eb6811a11ecaaf06c687a38a7448"
+    },
+    {
+      "file": "03-depth-travel.png",
+      "label": "Existing metallic depth travel",
+      "sourceDecodedFrame": 225,
+      "moviePTSSeconds": 8.501667,
+      "sha256": "fe6c15f9b472fd80ca127d3a0bdceda3a126bc74cd44a437559307fe7dc4560b"
+    },
+    {
+      "file": "04-inward-depth.png",
+      "label": "Inward travel",
+      "sourceDecodedFrame": 291,
+      "moviePTSSeconds": 9.603333,
+      "sha256": "666fcce562a73ed93590971d4fd7f8a9db877e6f9aeafcb708f6a9ab5ec359f3"
+    },
+    {
+      "file": "05-assembled-sphere-sample.png",
+      "label": "Stable final sphere sample; not exact assembly telemetry",
+      "sourceDecodedFrame": 399,
+      "moviePTSSeconds": 11.401667,
+      "sha256": "e4a046a24fd4adb839ade995b309a71f8fe1fd5f2052934a914337774643b39f"
+    },
+    {
+      "file": "06-visible-sphere-before-fade.png",
+      "label": "Sphere still visible before first sampled text",
+      "sourceDecodedFrame": 447,
+      "moviePTSSeconds": 12.201667,
+      "sha256": "c8504f076b762c7bc0687c9eba8fc508fb99c939776c527bd62132f2b9329345"
+    },
+    {
+      "file": "07-today-starting-to-appear.png",
+      "label": "Actual Today text becoming visible",
+      "sourceDecodedFrame": 459,
+      "moviePTSSeconds": 12.401667,
+      "sha256": "ad5879555ac9056129dbca92a9206f57bd3060d293e57c9a6d435e3ffade9492"
+    },
+    {
+      "file": "08-today-with-mock-disclosure.png",
+      "label": "Actual Today KEEP IN MIND plus DEVELOPMENT MOCK BILLING",
+      "sourceDecodedFrame": 493,
+      "moviePTSSeconds": 13,
+      "sha256": "2a5fc757d6334d3cbabe4760689e31d9f84f88dbde8db926478c8e4c4655c313"
+    }
+  ],
+  "privacy": "Full OS launch animation/SpringBoard prelude and source late tail excluded. One explicit SpringBoard icon+name-only crop is retained separately. App content is isolated synthetic QA. Only reviewed pixels and sanitized provenance; no raw device/process IDs or raw logs.",
+  "limits": [
+    "Mock paid-active is a private QA scenario, not real subscription access.",
+    "Full SUPPORT/DO text and interactions need the separate native scroll/tap case.",
+    "Source frame2028 has a late non-monotonic PTS reset; the accepted frame85..673 window is independently strict and excludes it.",
+    "This source movie cannot establish physical iPhone behavior or real VoiceOver speech."
+  ],
+  "contactSheet": {
+    "file": "actual-photo-to-mock-today-contact.png",
+    "sha256": "f37c1207af148791be3a78c16e266bb10d46b24bcb7cc7b2bc10e7d66b9b007b",
+    "method": "Uniformly reduced original frames with original-source timestamps; no synthesized app pixels"
+  },
+  "approvedPhotoFramingComparison": {
+    "uniformCenteredCoverPixels": [
+      750,
+      1334
+    ],
+    "regionExcludesOSStatusBar": {
+      "left": 0,
+      "top": 60,
+      "width": 750,
+      "height": 1274
+    },
+    "meanAbsoluteRGB": 2.3176302110587823,
+    "rmsRGB": 3.1444250168435475,
+    "limit": "Lossy Simulator video versus vips filtering; no per-pixel native visual approval inferred."
+  },
+  "copiedArtifactSHA256": "0570bdabe6eeafd2af0470bb0a2f383bc9780d4a2cd8ecad1b7c49146be17574",
+  "simulatorSpringBoardIcon": {
+    "file": "09-actual-simulator-springboard-icon-name.png",
+    "sha256": "26bcf2e9a8c2448aa8d0e6def88d81e384f67fcb93da67d3c9c5246468513466",
+    "sourceDecodedFrame": 24,
+    "moviePTSSeconds": 0.788333,
+    "cropSourcePixels": {
+      "left": 382,
+      "top": 220,
+      "width": 164,
+      "height": 180
+    },
+    "processing": "Exact rectangular crop of actual decoded OS frame, no scaling/redrawing or simulated mask",
+    "observation": "Bright silver photographic icon at stable Home Screen size, unobscured; OS-truncated TuneInto\u2026 label retained verbatim as pixels",
+    "scope": "Actual iOS Simulator SpringBoard rendering, not physical iPhone. System icon effects remain as recorded."
+  }
+}

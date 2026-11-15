@@ -1,0 +1,73 @@
+{
+  "kind": "Isolated memory-only Today QA; not ordinary app access",
+  "platform": "iphoneos",
+  "configuration": "Release",
+  "developmentJavaScript": false,
+  "isolatedQA": true,
+  "scenario": "paid-active",
+  "nativeAssetCompiler": "Xcode actool",
+  "nativeAssetsRebuilt": true,
+  "nativeCodeRecompiled": false,
+  "nativeExecutableUnchangedExcludingCodeSignature": true,
+  "unsignedNativeSHA256": "79d2c981756c137369e090d0ae730dbbe9c3a209e9ae18133496b3b397edba03",
+  "nativeBinarySHA256": "74b041df51a165f2b32b04cbf98bf972cc330354ea6598ff71cd2e6cc957746e",
+  "embeddedJavaScriptSHA256": "509e7f5cad743f02aff10628e8cc84fa01319691a0df449545ed0a0d91ff3622",
+  "codesignVerified": true,
+  "existingProvisioningProfilePreserved": true,
+  "frameworksByteIdentical": true,
+  "nonIconInfoPlistValuesUnchanged": true,
+  "nativeUpdatesEnabled": false,
+  "originalAssetsCarSHA256": "1c763d539de7642b35c817a6e812e3499e26d95a327cafb123e7148115b16371",
+  "assetsCarSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+  "catalogNames": [
+    "AppIcon",
+    "LaunchApprovedOpening",
+    "LaunchLogo",
+    "LaunchSilverGradient",
+    "LaunchSteelBackground"
+  ],
+  "appIconMasterSHA256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+  "generatedLooseIcons": {
+    "AppIcon60x60@2x.png": "dc8543e53711af5640f3c36b16de32fa55096a0b2466d59bc57ada903cda503d",
+    "AppIcon76x76@2x~ipad.png": "05e220ead0e1aa1c951f6f2d83c002ff069aeb3445f4ee13205a3615f3ac149c"
+  },
+  "sourceSHA256": {
+    "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+    "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+    "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+    "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+    "src/devQA/session.ts": "707b54c302ac8f66e13dd943b421e43a679f0aa6d83d5353b63ae2bd8f3f4eed",
+    "src/context/AppContext.tsx": "7264cacdcc400de57998f5697ddcb378a0b8ea9e29cbc9584bab3df6d0f9dc40",
+    "src/services/purchases/mockBilling.ts": "fef8446d2d3b607f2fe9aa7439909844331a58cfe127aa0a632fdd1cf4ed2c63",
+    "app/index.tsx": "ad3537f11756ca694883f369ed3ee1d8dd5fd24365259caa92118c64b100105f",
+    "app/_layout.tsx": "9de996833782db429413d84b169c5fb0291add85b6c31f40f92d67e8059812e4",
+    "app.config.ts": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400",
+    "assets/icon.png": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+    "assets/adaptive-icon.png": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287",
+    "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4",
+    "assets/brand/reference/founder-approved-premium-v5-20261114.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+  },
+  "officialExpoResourcesMatch": true,
+  "normalAppEntryAndSubscriptionGuardsUnmodified": true,
+  "standaloneQAMarkerPresent": true,
+  "noUninstallOrDataReset": true,
+  "qaBootstrapGeneratedSHA256": {
+    "entry": "b1af500772073be2c88ecd2ac6fed28b38cb3ecf3641345094d0da2e25a40ab1",
+    "session": "7b6b97b9408bb4d46f1b9b2730affeb91e17194d9fcef533e0dd949d5fc62611",
+    "index": "b9d46fbf8391f29989bca620108e1510fb8b7881224a5ad9b04f77d4f4985339",
+    "config": "1c5f78516cf90ba215068b8805e62cae43dfe72d0714ad41885500a09f8788d1"
+  },
+  "qaAliasGraphVerified": true,
+  "qaAliasGraph": {
+    "result": "PASS",
+    "format": "Unminified numeric Metro modules",
+    "standaloneIndexPresent": true,
+    "AppProviderUsesPrivateSession": true,
+    "hookUsesSamePrivateSession": true,
+    "originalSessionConsumedOnlyByWrapper": true,
+    "synchronousEntryUsesPrivateSession": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-15",
+  "baseline": "4c079d306da833c17e138cdfa996cf8536ddb4f2",
+  "applicationTests": {
+    "command": "npm test -- --maxWorkers=2",
+    "passed": 442,
+    "files": 49,
+    "failed": 0,
+    "durationSeconds": 23.07,
+    "defaultTestTimeoutsUnchanged": true
+  },
+  "typecheck": "PASS",
+  "lint": {
+    "errors": 0,
+    "preExistingGeneratedWarnings": 1
+  },
+  "iconChecks": {
+    "sourceLiteralCrop": [
+      35,
+      450,
+      780,
+      780
+    ],
+    "master1024OpaqueRGB": true,
+    "play512OpaqueRGBA": true,
+    "playBytes": 470865,
+    "iOSNativeInputByteIdenticalToMaster": true,
+    "adaptiveFullWordmarkInsideSafeCircle": true,
+    "sourceReferenceUntouched": true,
+    "nativeIPhoneOSAndSimulatorAssetsCompiled": true,
+    "nativeCodeRecompiled": false,
+    "protectedLaunchContentDigestsPreserved": true,
+    "androidGeneratedWEBP": 20,
+    "androidAdaptiveXML": 2,
+    "androidNativeBuildOrRuntimeVerified": false
+  },
+  "standaloneQA": {
+    "developmentJavaScript": false,
+    "scenario": "paid-active",
+    "normalGatesSourceUnchanged": true,
+    "privateStateActiveBeforeAppMount": true,
+    "emittedGraphVerified": true,
+    "firstFailedAliasRejectedBeforePhoneInstall": true,
+    "normalBundlePrivateMarkersAbsent": true,
+    "simulatorFullIntroToActualTodayVideo": true,
+    "nativeInteractionCasePASS": true,
+    "nativeCaseSeconds": 52.479,
+    "HomeGestureSecondsIncludingAXAndInitialization": 8.698335499997484,
+    "allThreeAuthoredTextBlocksAndNotesVerified": true,
+    "modalSettingsHomeSameProcessVerified": true
+  },
+  "physical": {
+    "newIconInstalled": false,
+    "todayQARecorded": false,
+    "dataSnapshotVerified": false,
+    "normalRestorationPerformed": false,
+    "deviceChangedByTimedOutAttempt": false,
+    "status": "Pending available wired/unlocked iPhone;180s wait ended before any install."
+  },
+  "sourceSHA256": {
+    "app.config.ts": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400",
+    "assets/icon.png": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+    "assets/adaptive-icon.png": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287",
+    "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4",
+    "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+    "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+    "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/devQA/session.ts": "707b54c302ac8f66e13dd943b421e43a679f0aa6d83d5353b63ae2bd8f3f4eed",
+    "src/context/AppContext.tsx": "7264cacdcc400de57998f5697ddcb378a0b8ea9e29cbc9584bab3df6d0f9dc40",
+    "src/services/purchases/mockBilling.ts": "fef8446d2d3b607f2fe9aa7439909844331a58cfe127aa0a632fdd1cf4ed2c63",
+    "app/index.tsx": "ad3537f11756ca694883f369ed3ee1d8dd5fd24365259caa92118c64b100105f",
+    "tests/native-launch/standalone-qa.cjs": "2eb156e8b284e2647e35d6a6f34894b9eea3d888e019ba6079705bb0fb6f11d3"
+  },
+  "limits": [
+    "Physical Today/saved-data hashes/normal restoration wait for phone availability; previous locked iPhone recording is not reused.",
+    "Simulator native UI and OS icon crop are not physical touch or phone Home Screen claims.",
+    "Store cards and platform masks are generated previews; no store/TestFlight upload.",
+    "Android native SDK/JDK/adb and real VoiceOver/TalkBack runtime verification unavailable."
+  ]
+}

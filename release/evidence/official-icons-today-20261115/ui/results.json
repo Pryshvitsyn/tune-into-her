@@ -1,0 +1,84 @@
+{
+  "kind": "Actual standalone private Today native Simulator interaction case",
+  "result": "PASS",
+  "test": "testStandaloneQAActualTodayTextsScrollModalSettingsAndHomeReplay",
+  "structuredSummary": {
+    "result": "Passed",
+    "passedTests": 1,
+    "failedTests": 0,
+    "skippedTests": 0,
+    "totalTestCount": 1
+  },
+  "caseDurationSeconds": 52.479,
+  "HomeTotalObservedSeconds": 8.698335499997484,
+  "HomeTimingIncludesInitializationAndAXOverhead": true,
+  "HomeTimingMeasuresOneSecondHold": false,
+  "resultBundle": "standalone-today-ui.xcresult",
+  "artifact": "../simulator/artifact.json",
+  "artifactSHA256": "0570bdabe6eeafd2af0470bb0a2f383bc9780d4a2cd8ecad1b7c49146be17574",
+  "embeddedJavaScriptSHA256": "83412b77e9b10fd7876dbb9b7e102a95eccf987a4666b6b12820661942967c75",
+  "nativeBinarySHA256": "212c65fa71dffa4725fafc381cd45137089c9bd3543f88a173bceae77ee097d1",
+  "allArtifactSourceHashesMatchCurrentSource": true,
+  "runner": "Existing guarded Simulator XCUITest harness; test-without-building",
+  "noCompileActionsObservedInLog": true,
+  "assertionsPassed": {
+    "mockDisclosureBeforeInteraction": true,
+    "actualAuthoredMindSupportDoCards": true,
+    "fullContentScrolling": true,
+    "existingAdviceModalAndAuthoredNote": true,
+    "nativeSettingsFooterNavigation": true,
+    "HomeCoverAppearsAndLeaves": true,
+    "sameProcessAfterHome": true,
+    "sameThreeAuthoredLabelsAfterHome": true,
+    "postHomeModalInteractiveAndClosed": true,
+    "noPurchaseTrialStartCycleOrPreferenceSaveOrEndQA": true
+  },
+  "nativeSettingsFooterCenterRetryCount": 0,
+  "screenshots": [
+    {
+      "file": "109-standalone-qa-post-home-interactive-modal.png",
+      "sha256": "0bc620206c97b4d8c41b9baf1986a84d5bf9910b821d261ba5e4bc1b71ca6ac1",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "107-standalone-qa-home-restored-authored-mind.png",
+      "sha256": "d962ac0f34442496870d8a0878ea4bbb7ad463fc444904d41309af62f08e8b0d",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "106-standalone-qa-home-opening.png",
+      "sha256": "c206c90201551d98d3dc51d5c65de12101f3fc0d81d475b8b439c90d452b2583",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "105-standalone-qa-existing-settings-no-writes.png",
+      "sha256": "da3a544900f7c9224dd1e650942b8794cad56b3a31ad5ed0d52b046274a388a5",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "103-standalone-qa-scrolled-authored-do.png",
+      "sha256": "981d7d6c9c3552e2c3cfd27a597f0f17cdd4bf1e6873a779285d8c040dbdcbb5",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "101-standalone-qa-today-authored-mind.png",
+      "sha256": "defeeb0acc439f35b4ad44f616b20bdad594732103f5be69f9e0c622db359dfb",
+      "originalIDATBytesPreserved": true
+    }
+  ],
+  "scope": {
+    "SimulatorOnly": true,
+    "ownedSyntheticFixture": "paid-active memory scenario",
+    "ordinaryReleaseAccessGranted": false,
+    "personalDataUsed": false,
+    "physicalTouchVerified": false,
+    "normalReleaseRestoreClaimedByThisCase": false
+  },
+  "privacy": "Only synthetic authored guidance/screens. No raw logs, AX hierarchies, device/attachment identifiers or private manifests. PNG text/EXIF/time metadata removed; original IDAT and color chunks retained.",
+  "limits": [
+    "Case and Home timings include native/GPU initialization and XCTest/AX overhead, not isolated visible-hold timing.",
+    "Home opening screenshot exact elapsed time is unknown; no frame-zero or continuous smoothness claim.",
+    "This case proves actual Simulator interaction only; physical touch, Android runtime, store transactions and ordinary production access are not claimed.",
+    "Temporary standalone stop resets its private fixture; normal personal-data Release restoration is a separate root-owned action."
+  ]
+}

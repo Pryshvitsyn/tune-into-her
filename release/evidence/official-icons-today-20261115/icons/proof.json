@@ -1,0 +1,784 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "scope": "Source/icon/compiled-asset preservation audit; actual physical and Simulator journey evidence are separate",
+  "baselineCommit": "4c079d306da833c17e138cdfa996cf8536ddb4f2",
+  "sourceProvenance": {
+    "reference": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+    "referenceSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "referencePixels": [
+      851,
+      1847
+    ],
+    "literalCropSourcePixels": {
+      "left": 35,
+      "top": 450,
+      "width": 780,
+      "height": 780
+    },
+    "processing": "Literal source rectangle; uniform Lanczos3 resampling only. No redrawing, text replacement, recoloring, added art or pre-rounded production icons.",
+    "outputPNGMetadata": {
+      "assets/icon.png": {
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "PNGColorType": 2,
+        "bytes": 1488842,
+        "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+      },
+      "assets/icons/play-store-512.png": {
+        "width": 512,
+        "height": 512,
+        "bitDepth": 8,
+        "PNGColorType": 6,
+        "bytes": 470865,
+        "sha256": "0ead23e6d76256e624014fc095138838a5596de024a41f555bc72733c1a557d5"
+      },
+      "assets/adaptive-icon.png": {
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "PNGColorType": 6,
+        "bytes": 866549,
+        "sha256": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287"
+      },
+      "assets/icons/adaptive-background.png": {
+        "width": 1024,
+        "height": 1024,
+        "bitDepth": 8,
+        "PNGColorType": 2,
+        "bytes": 143921,
+        "sha256": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4"
+      }
+    },
+    "iOSNativeInputByteIdenticalToMaster": true
+  },
+  "adaptiveMask": {
+    "canvas": 1024,
+    "photoSide": 672,
+    "inset": 176,
+    "layerDP": 108,
+    "maskDP": 72,
+    "safeCircleDP": 66,
+    "outerSteelFeatherPixels": 24,
+    "backgroundCropMasterPixels": {
+      "left": 420,
+      "top": 24,
+      "width": 184,
+      "height": 184
+    },
+    "safeCircleRadiusPixels": 312.8888888888889,
+    "maximumLandmarkRadiusPixels": 310.1837592412623,
+    "conservativeSourceLandmarks": {
+      "wordmark": [
+        [
+          80,
+          800
+        ],
+        [
+          780,
+          800
+        ],
+        [
+          80,
+          900
+        ],
+        [
+          780,
+          900
+        ]
+      ],
+      "ringEndpointsAndExtrema": [
+        [
+          130,
+          840
+        ],
+        [
+          365,
+          1065
+        ],
+        [
+          505,
+          1028
+        ],
+        [
+          505,
+          990
+        ],
+        [
+          640,
+          1008
+        ],
+        [
+          705,
+          840
+        ],
+        [
+          425,
+          615
+        ]
+      ]
+    },
+    "limit": "Foreground preserves entire photographed square with transparent system inset and alpha-only24px easing of outer steel margins; lettering/rings/shadows remain opaque. Opaque background is a letter-free steel excerpt of that same master. OEM motion/mask behavior still needs Android runtime verification."
+  },
+  "independentReview": {
+    "correct108dpLayer72dpViewport66dpSafeCircleMath": true,
+    "maximumLandmarkRadiusPixels": 310.1837592412623,
+    "safeRadiusPixels": 312.8888888888889,
+    "clearancePixels": 2.7051296476266202,
+    "simulatedRoundPreviewNoVisibleClippedLettersOrEndpoints": true,
+    "nativeAndroidOEMMaskMotionVerified": false
+  },
+  "sourcePreservation": {
+    "trackedFilesCompared": 216,
+    "allByteIdenticalToBaseline": true,
+    "groups": {
+      "allApplicationSource": {
+        "trackedFiles": 136,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "befc282866e06194205ae7b635df2fb7488826d01876bd9c5120b72f42eb9b9f"
+      },
+      "contentAndElevenLocales": {
+        "trackedFiles": 23,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "7db556faab295c7ff79eae1a176c353cd5b26bc57abc81a375b1fe1bb2da4741"
+      },
+      "fontAndCanonicalNotices": {
+        "trackedFiles": 5,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "656d3a710db7177dacdc3f49b9840012ad48bce9c4e1a69055de8fc85b03f40b"
+      },
+      "approvedReferenceAndBrand": {
+        "trackedFiles": 5,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "eb0964a9ce380b6d530ccaa707dd27ed39d63d9bdbc783ddbc178687a5a78cb9"
+      },
+      "nativeLaunchAssetsAndBridge": {
+        "trackedFiles": 8,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "993d489148f35ccca7ed06183913cb2351ded9b953b325c9824bf9e1acf95e75"
+      },
+      "nativeProjectAndConfiguration": {
+        "trackedFiles": 25,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "346e92c7af2def72f6635f978214ee85eda5b643b36f1028101025b11a8ca653"
+      },
+      "billingTrialBackend": {
+        "trackedFiles": 7,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "2118d6154cbe7fd1400f8672f0051f1438426f7a21d8df740a9d9009b2bfe9c7"
+      },
+      "dependencies": {
+        "trackedFiles": 2,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "2273e6dfbfe2e4752d4fd56da9c25892b086af22ea432de7a97411628faa9b23"
+      },
+      "cycleTrialSubscriptionLogic": {
+        "trackedFiles": 18,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "3cbf783a07cf52958f868709ec3a1b3d59116858fc0935bb6cc007a62c18fd5e"
+      },
+      "originalV4TextureAndPosters": {
+        "trackedFiles": 5,
+        "byteIdenticalToBaseline": true,
+        "pathAndSHA256ListDigest": "f21b45fd56d69101ad996d24660caf0fa661845122266ec3821eab8d84861bff"
+      }
+    },
+    "criticalFileSHA256": {
+      "TuneIntoHerSphereV4.tsx": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39",
+      "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+      "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+      "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+      "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+      "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+      "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+      "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+      "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+      "assets/fonts/LinuxLibertineO-Regular.otf": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+      "assets/tune_into_her_sphere_source_clean.png": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c",
+      "assets/tune_into_her_sphere_phase0_poster.png": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87"
+    },
+    "elevenContentLocaleSHA256": {
+      "content/locales/de.json": "c6e4e775ca7e4fc7a2081ce19f5b94211d8d6159c1a22351ef9d9c77989d21c8",
+      "content/locales/en.json": "c4ed26f227e434107da90892576a1ec283f05b8b33965bd835861149353f5e75",
+      "content/locales/es.json": "1899b431aa3fe6b1e3059bd1577ea7b32e2a27c831b580feaed03318368f988e",
+      "content/locales/fr.json": "849274b4f74389cd26875a9b15406056fcb0e942b52fc1cff29cffff0036506c",
+      "content/locales/hi.json": "f7a467b8def64627b88352df9de1e6eeb73f6bb59cc1aa7c7128169d0a340c44",
+      "content/locales/it.json": "5135142c5806418d1b98371a7fe7f6e2d3ef00bff7a8a719ffd2db887740493d",
+      "content/locales/mbf.json": "484b84c617d604fc3a110a6aec34f6f550c6a687dbb72081d508c08e29cf84df",
+      "content/locales/ms.json": "454408fa1a634d15c2c06f8c47b877ff4a23d8a5f71aea1440a1867ef88dc545",
+      "content/locales/ru.json": "8dc34f0cf6ffacbca80213a661bd9be6dbea792289a9cb494f0d706359db8e07",
+      "content/locales/uk.json": "c94a0697c4e071726c86a9f113f8d7cb060e43c7314915ef240f21175bb6c309",
+      "content/locales/zh-Hans.json": "926b78f47a5b4d48d02e6025f159c7f6643f1b439b001c65143da2ee1c75d54f"
+    },
+    "noAddedProductionSourceFiles": true,
+    "configChangesOnlyAdaptiveIconFields": true,
+    "legacySphereSVGPNGBytesUnchanged": true,
+    "legacyScriptChangeOnlyIconDelegation": "Original sphere-generation literals/outputs retained; obsolete icon writes delegate to canonical official-photo generator. Legacy sphere generator was not run."
+  },
+  "compiledNativeAssets": {
+    "compiler": "Xcode actool",
+    "nativeSwiftCodeRecompiled": false,
+    "actualCatalogSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+    "previousPhoneCatalogSHA256": "1c763d539de7642b35c817a6e812e3499e26d95a327cafb123e7148115b16371",
+    "requiredNamesPresent": [
+      "AppIcon",
+      "LaunchApprovedOpening",
+      "LaunchLogo",
+      "LaunchSilverGradient",
+      "LaunchSteelBackground"
+    ],
+    "preservedLaunchRenditions": {
+      "LaunchApprovedOpening": {
+        "reportedRenditions": [
+          {
+            "Name": "LaunchApprovedOpening",
+            "AssetType": "Image",
+            "RenditionName": "approved-opening.png",
+            "Scale": 1,
+            "PixelWidth": 851,
+            "PixelHeight": 1847,
+            "SHA1Digest": "10432060F487BD1140F7B5D483564072D966CCC139D388AC12D917B8402E0C16"
+          }
+        ],
+        "reportedPixelDimensionsAndContentDigestsUnchanged": true
+      },
+      "LaunchLogo": {
+        "reportedRenditions": [
+          {
+            "Name": "LaunchLogo",
+            "AssetType": "Image",
+            "RenditionName": "official-launch-mark.png",
+            "Scale": 2,
+            "PixelWidth": 1600,
+            "PixelHeight": 1120,
+            "SHA1Digest": "15E5141DD740FBD1F9201A8DCCEDF0F8703471A3D6E7E92932064D6B650DB1FC"
+          }
+        ],
+        "reportedPixelDimensionsAndContentDigestsUnchanged": true
+      },
+      "LaunchSilverGradient": {
+        "reportedRenditions": [
+          {
+            "Name": "LaunchSilverGradient",
+            "AssetType": "Image",
+            "RenditionName": "silver-gradient.png",
+            "Scale": 1,
+            "PixelWidth": 1024,
+            "PixelHeight": 1,
+            "SHA1Digest": "5B27A512FB9F3E29AA4B774D7B07B3584079DDD8C56D537BBB4E59E3E3915472"
+          }
+        ],
+        "reportedPixelDimensionsAndContentDigestsUnchanged": true
+      },
+      "LaunchSteelBackground": {
+        "reportedRenditions": [
+          {
+            "Name": "LaunchSteelBackground",
+            "AssetType": "Image",
+            "RenditionName": "steel-background.png",
+            "Scale": 1,
+            "PixelWidth": 900,
+            "PixelHeight": 1950,
+            "SHA1Digest": "ADD06616F35C6A098F6A12B4580447497E083F9FA0EA13B2908AD3618C1D1718"
+          }
+        ],
+        "reportedPixelDimensionsAndContentDigestsUnchanged": true
+      }
+    },
+    "changedAppIconRenditions": {
+      "baseline": [
+        {
+          "Name": "AppIcon",
+          "AssetType": "Icon Image",
+          "RenditionName": "App-Icon-1024x1024@1x.png",
+          "Scale": 1,
+          "PixelWidth": 1024,
+          "PixelHeight": 1024,
+          "SHA1Digest": "11DE1B26631AD86FC6762B8311F927B19EED91FB68929048B9310AD95D7E6DAF"
+        }
+      ],
+      "final": [
+        {
+          "Name": "AppIcon",
+          "AssetType": "Icon Image",
+          "RenditionName": "App-Icon-1024x1024@1x.png",
+          "Scale": 1,
+          "PixelWidth": 1024,
+          "PixelHeight": 1024,
+          "SHA1Digest": "719F4F4F0921D50B0C2107242B9C812324D579B132163E9BEAFDB258F7FAFD97"
+        },
+        {
+          "Name": "AppIcon",
+          "AssetType": "Icon Image",
+          "RenditionName": "App-Icon-1024x1024@1x.png",
+          "Scale": 1,
+          "PixelWidth": 1024,
+          "PixelHeight": 1024,
+          "SHA1Digest": "719F4F4F0921D50B0C2107242B9C812324D579B132163E9BEAFDB258F7FAFD97"
+        }
+      ],
+      "actualIconContentDigestChanged": true
+    },
+    "looseCompiledIcons": {
+      "iphoneos": {
+        "AppIcon60x60@2x.png": {
+          "width": 120,
+          "height": 120,
+          "bitDepth": 8,
+          "PNGColorType": 6,
+          "bytes": 35897,
+          "sha256": "dc8543e53711af5640f3c36b16de32fa55096a0b2466d59bc57ada903cda503d"
+        },
+        "AppIcon76x76@2x~ipad.png": {
+          "width": 152,
+          "height": 152,
+          "bitDepth": 8,
+          "PNGColorType": 6,
+          "bytes": 53943,
+          "sha256": "05e220ead0e1aa1c951f6f2d83c002ff069aeb3445f4ee13205a3615f3ac149c"
+        }
+      },
+      "iphonesimulator": {
+        "AppIcon60x60@2x.png": {
+          "width": 120,
+          "height": 120,
+          "bitDepth": 8,
+          "PNGColorType": 6,
+          "bytes": 25254,
+          "sha256": "0c97fe417ff1b0b224a1761b280106a3f6702925d77d8a847416a45d1403eff2"
+        },
+        "AppIcon76x76@2x~ipad.png": {
+          "width": 152,
+          "height": 152,
+          "bitDepth": 8,
+          "PNGColorType": 6,
+          "bytes": 38748,
+          "sha256": "9c21eab9b1678a3cb2c510bfb6bc32a52ac15021f662d29a86ffca39150830bb"
+        }
+      }
+    },
+    "digestLimit": "SHA1Digest is the assetutil field name. The audit compares its reported value and dimensions; it does not claim a new independent decoded GPU/pixel test."
+  },
+  "acceptedArtifactDefinitions": {
+    "iphoneos-normal": {
+      "kind": "Normal standalone Release with official photographic icon",
+      "platform": "iphoneos",
+      "configuration": "Release",
+      "developmentJavaScript": false,
+      "isolatedQA": false,
+      "scenario": null,
+      "nativeAssetCompiler": "Xcode actool",
+      "nativeAssetsRebuilt": true,
+      "nativeCodeRecompiled": false,
+      "nativeExecutableUnchangedExcludingCodeSignature": true,
+      "unsignedNativeSHA256": "79d2c981756c137369e090d0ae730dbbe9c3a209e9ae18133496b3b397edba03",
+      "nativeBinarySHA256": "215723ee2b3b95728a76f90b8b635265faef65cff95834e0298ce49140289669",
+      "embeddedJavaScriptSHA256": "b0084b6e3ec2ebad036771732ea9ecb48218a085ae7f854a83ac60ec2b7b4f75",
+      "codesignVerified": true,
+      "existingProvisioningProfilePreserved": true,
+      "frameworksByteIdentical": true,
+      "nonIconInfoPlistValuesUnchanged": true,
+      "nativeUpdatesEnabled": false,
+      "originalAssetsCarSHA256": "1c763d539de7642b35c817a6e812e3499e26d95a327cafb123e7148115b16371",
+      "assetsCarSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+      "catalogNames": [
+        "AppIcon",
+        "LaunchApprovedOpening",
+        "LaunchLogo",
+        "LaunchSilverGradient",
+        "LaunchSteelBackground"
+      ],
+      "appIconMasterSHA256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+      "generatedLooseIcons": {
+        "AppIcon60x60@2x.png": "dc8543e53711af5640f3c36b16de32fa55096a0b2466d59bc57ada903cda503d",
+        "AppIcon76x76@2x~ipad.png": "05e220ead0e1aa1c951f6f2d83c002ff069aeb3445f4ee13205a3615f3ac149c"
+      },
+      "sourceSHA256": {
+        "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+        "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+        "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+        "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+        "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+        "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+        "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+        "src/devQA/session.ts": "707b54c302ac8f66e13dd943b421e43a679f0aa6d83d5353b63ae2bd8f3f4eed",
+        "src/context/AppContext.tsx": "7264cacdcc400de57998f5697ddcb378a0b8ea9e29cbc9584bab3df6d0f9dc40",
+        "src/services/purchases/mockBilling.ts": "fef8446d2d3b607f2fe9aa7439909844331a58cfe127aa0a632fdd1cf4ed2c63",
+        "app/index.tsx": "ad3537f11756ca694883f369ed3ee1d8dd5fd24365259caa92118c64b100105f",
+        "app/_layout.tsx": "9de996833782db429413d84b169c5fb0291add85b6c31f40f92d67e8059812e4",
+        "app.config.ts": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400",
+        "assets/icon.png": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+        "assets/adaptive-icon.png": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287",
+        "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4",
+        "assets/brand/reference/founder-approved-premium-v5-20261114.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+      },
+      "officialExpoResourcesMatch": true,
+      "normalAppEntryAndSubscriptionGuardsUnmodified": true,
+      "standaloneQAMarkerPresent": false,
+      "noUninstallOrDataReset": true,
+      "independentAudit": {
+        "codesignDeepStrictVerified": true,
+        "actualNativeJavaScriptAssetsHashesMatchMetadata": true,
+        "unsignedNativeMatchesPriorSignedRelease": true,
+        "frameworkFilesByteIdenticalToPriorSignedRelease": true,
+        "existingProfileByteIdentical": true,
+        "nonIconInfoPlistValuesByteEquivalent": true,
+        "currentSourceHashesMatch": true,
+        "QAMarkerMatchesDeclaredArtifactKind": true
+      }
+    },
+    "iphoneos-isolated-qa": {
+      "kind": "Isolated memory-only Today QA; not ordinary app access",
+      "platform": "iphoneos",
+      "configuration": "Release",
+      "developmentJavaScript": false,
+      "isolatedQA": true,
+      "scenario": "paid-active",
+      "nativeAssetCompiler": "Xcode actool",
+      "nativeAssetsRebuilt": true,
+      "nativeCodeRecompiled": false,
+      "nativeExecutableUnchangedExcludingCodeSignature": true,
+      "unsignedNativeSHA256": "79d2c981756c137369e090d0ae730dbbe9c3a209e9ae18133496b3b397edba03",
+      "nativeBinarySHA256": "74b041df51a165f2b32b04cbf98bf972cc330354ea6598ff71cd2e6cc957746e",
+      "embeddedJavaScriptSHA256": "509e7f5cad743f02aff10628e8cc84fa01319691a0df449545ed0a0d91ff3622",
+      "codesignVerified": true,
+      "existingProvisioningProfilePreserved": true,
+      "frameworksByteIdentical": true,
+      "nonIconInfoPlistValuesUnchanged": true,
+      "nativeUpdatesEnabled": false,
+      "originalAssetsCarSHA256": "1c763d539de7642b35c817a6e812e3499e26d95a327cafb123e7148115b16371",
+      "assetsCarSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+      "catalogNames": [
+        "AppIcon",
+        "LaunchApprovedOpening",
+        "LaunchLogo",
+        "LaunchSilverGradient",
+        "LaunchSteelBackground"
+      ],
+      "appIconMasterSHA256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+      "generatedLooseIcons": {
+        "AppIcon60x60@2x.png": "dc8543e53711af5640f3c36b16de32fa55096a0b2466d59bc57ada903cda503d",
+        "AppIcon76x76@2x~ipad.png": "05e220ead0e1aa1c951f6f2d83c002ff069aeb3445f4ee13205a3615f3ac149c"
+      },
+      "sourceSHA256": {
+        "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+        "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+        "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+        "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+        "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+        "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+        "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+        "src/devQA/session.ts": "707b54c302ac8f66e13dd943b421e43a679f0aa6d83d5353b63ae2bd8f3f4eed",
+        "src/context/AppContext.tsx": "7264cacdcc400de57998f5697ddcb378a0b8ea9e29cbc9584bab3df6d0f9dc40",
+        "src/services/purchases/mockBilling.ts": "fef8446d2d3b607f2fe9aa7439909844331a58cfe127aa0a632fdd1cf4ed2c63",
+        "app/index.tsx": "ad3537f11756ca694883f369ed3ee1d8dd5fd24365259caa92118c64b100105f",
+        "app/_layout.tsx": "9de996833782db429413d84b169c5fb0291add85b6c31f40f92d67e8059812e4",
+        "app.config.ts": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400",
+        "assets/icon.png": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+        "assets/adaptive-icon.png": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287",
+        "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4",
+        "assets/brand/reference/founder-approved-premium-v5-20261114.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+      },
+      "officialExpoResourcesMatch": true,
+      "normalAppEntryAndSubscriptionGuardsUnmodified": true,
+      "standaloneQAMarkerPresent": true,
+      "noUninstallOrDataReset": true,
+      "qaBootstrapGeneratedSHA256": {
+        "entry": "b1af500772073be2c88ecd2ac6fed28b38cb3ecf3641345094d0da2e25a40ab1",
+        "session": "7b6b97b9408bb4d46f1b9b2730affeb91e17194d9fcef533e0dd949d5fc62611",
+        "index": "b9d46fbf8391f29989bca620108e1510fb8b7881224a5ad9b04f77d4f4985339",
+        "config": "1c5f78516cf90ba215068b8805e62cae43dfe72d0714ad41885500a09f8788d1"
+      },
+      "qaAliasGraphVerified": true,
+      "qaAliasGraph": {
+        "result": "PASS",
+        "format": "Unminified numeric Metro modules",
+        "standaloneIndexPresent": true,
+        "AppProviderUsesPrivateSession": true,
+        "hookUsesSamePrivateSession": true,
+        "originalSessionConsumedOnlyByWrapper": true,
+        "synchronousEntryUsesPrivateSession": true
+      },
+      "independentAudit": {
+        "codesignDeepStrictVerified": true,
+        "actualNativeJavaScriptAssetsHashesMatchMetadata": true,
+        "unsignedNativeMatchesPriorSignedRelease": true,
+        "frameworkFilesByteIdenticalToPriorSignedRelease": true,
+        "existingProfileByteIdentical": true,
+        "nonIconInfoPlistValuesByteEquivalent": true,
+        "currentSourceHashesMatch": true,
+        "QAMarkerMatchesDeclaredArtifactKind": true
+      }
+    },
+    "iphonesimulator-isolated-qa": {
+      "kind": "Isolated memory-only Today QA; not ordinary app access",
+      "platform": "iphonesimulator",
+      "configuration": "Release",
+      "developmentJavaScript": false,
+      "isolatedQA": true,
+      "scenario": "paid-active",
+      "nativeAssetCompiler": "Xcode actool",
+      "nativeAssetsRebuilt": true,
+      "nativeCodeRecompiled": false,
+      "nativeExecutableUnchangedExcludingCodeSignature": true,
+      "unsignedNativeSHA256": "9a74f672549b1aea62708fe2f0d317b8cb93edbbf4f8505b487c17ef5bd3469c",
+      "nativeBinarySHA256": "212c65fa71dffa4725fafc381cd45137089c9bd3543f88a173bceae77ee097d1",
+      "embeddedJavaScriptSHA256": "83412b77e9b10fd7876dbb9b7e102a95eccf987a4666b6b12820661942967c75",
+      "codesignVerified": true,
+      "existingProvisioningProfilePreserved": true,
+      "frameworksByteIdentical": true,
+      "nonIconInfoPlistValuesUnchanged": true,
+      "nativeUpdatesEnabled": false,
+      "originalAssetsCarSHA256": "0503fcf8f2c9b66b03cb988cadc548ab6c6ad43fbf5b0e0af5e6df3ef3ab1512",
+      "assetsCarSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+      "catalogNames": [
+        "AppIcon",
+        "LaunchApprovedOpening",
+        "LaunchLogo",
+        "LaunchSilverGradient",
+        "LaunchSteelBackground"
+      ],
+      "appIconMasterSHA256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+      "generatedLooseIcons": {
+        "AppIcon60x60@2x.png": "0c97fe417ff1b0b224a1761b280106a3f6702925d77d8a847416a45d1403eff2",
+        "AppIcon76x76@2x~ipad.png": "9c21eab9b1678a3cb2c510bfb6bc32a52ac15021f662d29a86ffca39150830bb"
+      },
+      "sourceSHA256": {
+        "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+        "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+        "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+        "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+        "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+        "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+        "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+        "src/devQA/session.ts": "707b54c302ac8f66e13dd943b421e43a679f0aa6d83d5353b63ae2bd8f3f4eed",
+        "src/context/AppContext.tsx": "7264cacdcc400de57998f5697ddcb378a0b8ea9e29cbc9584bab3df6d0f9dc40",
+        "src/services/purchases/mockBilling.ts": "fef8446d2d3b607f2fe9aa7439909844331a58cfe127aa0a632fdd1cf4ed2c63",
+        "app/index.tsx": "ad3537f11756ca694883f369ed3ee1d8dd5fd24365259caa92118c64b100105f",
+        "app/_layout.tsx": "9de996833782db429413d84b169c5fb0291add85b6c31f40f92d67e8059812e4",
+        "app.config.ts": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400",
+        "assets/icon.png": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+        "assets/adaptive-icon.png": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287",
+        "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4",
+        "assets/brand/reference/founder-approved-premium-v5-20261114.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+      },
+      "officialExpoResourcesMatch": true,
+      "normalAppEntryAndSubscriptionGuardsUnmodified": true,
+      "standaloneQAMarkerPresent": true,
+      "noUninstallOrDataReset": true,
+      "qaBootstrapGeneratedSHA256": {
+        "entry": "b1af500772073be2c88ecd2ac6fed28b38cb3ecf3641345094d0da2e25a40ab1",
+        "session": "7b6b97b9408bb4d46f1b9b2730affeb91e17194d9fcef533e0dd949d5fc62611",
+        "index": "b9d46fbf8391f29989bca620108e1510fb8b7881224a5ad9b04f77d4f4985339",
+        "config": "1c5f78516cf90ba215068b8805e62cae43dfe72d0714ad41885500a09f8788d1"
+      },
+      "qaAliasGraphVerified": true,
+      "qaAliasGraph": {
+        "result": "PASS",
+        "format": "Unminified numeric Metro modules",
+        "standaloneIndexPresent": true,
+        "AppProviderUsesPrivateSession": true,
+        "hookUsesSamePrivateSession": true,
+        "originalSessionConsumedOnlyByWrapper": true,
+        "synchronousEntryUsesPrivateSession": true
+      },
+      "independentAudit": {
+        "codesignDeepStrictVerified": true,
+        "actualNativeJavaScriptAssetsHashesMatchMetadata": true,
+        "unsignedNativeMatchesPriorSignedRelease": true,
+        "frameworkFilesByteIdenticalToPriorSignedRelease": true,
+        "existingProfileByteIdentical": null,
+        "nonIconInfoPlistValuesByteEquivalent": true,
+        "currentSourceHashesMatch": true,
+        "QAMarkerMatchesDeclaredArtifactKind": true
+      }
+    }
+  },
+  "rejectedIntermediateArtifacts": {
+    "firstFailedAliasBundlesAccepted": false,
+    "correctedAliasGraphVerifiedForAcceptedQAArtifacts": true,
+    "failedIntermediateBundlesRemainOutsideAcceptedEvidence": true
+  },
+  "androidResourceGeneration": {
+    "kind": "Isolated official Expo57 icon resource generation only; not an Android native build",
+    "sourceReferenceSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "passed": true,
+    "generatedDensityFiles": 20,
+    "outputs": [
+      {
+        "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp",
+        "width": 108,
+        "height": 108,
+        "sha256": "85603f7e1ad1451b2bcb957947098d0a4d2696333bbff0fb8650d94a17b9a4e2"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_background.webp",
+        "width": 108,
+        "height": 108,
+        "sha256": "09202dd4971e9234e9365b7f7ff5bd7be86c3ad7a583d121ab0ef9f0f464f3bc"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+        "width": 48,
+        "height": 48,
+        "sha256": "ec980a3cc462e4e21ffc5c33d1b302fbdfa6859c1f41e43d04ccfece156f2398"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+        "width": 48,
+        "height": 48,
+        "sha256": "6271c4ecd0750fcd1c9f54b2593500641906e4de64a99d593be78988ab83f2ca"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp",
+        "width": 162,
+        "height": 162,
+        "sha256": "bf8ae1a74d87315d45eefbfaf70fcb8044a42c3fcaf606d19fe0b83f699ce0e5"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_background.webp",
+        "width": 162,
+        "height": 162,
+        "sha256": "43eb65fec4fd51ceeec0531dc795c9633629ee63aef83529993a41b5e84f3327"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+        "width": 72,
+        "height": 72,
+        "sha256": "061db7be9a036d21cb7b4c87371d378c9595ede13602d486d9521ca4d4c11cde"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+        "width": 72,
+        "height": 72,
+        "sha256": "911d71956c8961ea028f358b457b1f3be2151d12378dba924f84a2d79655f332"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp",
+        "width": 216,
+        "height": 216,
+        "sha256": "7238a02afd4d53f304bbe87877941b5ffdaea98c2d1c5d2017505f20bca3e908"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_background.webp",
+        "width": 216,
+        "height": 216,
+        "sha256": "e6a84d94088ef4bbaf8d00218ccb671abf442485c11e07e3b1976b960b812849"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+        "width": 96,
+        "height": 96,
+        "sha256": "cffc94550dac40983fa7b52c690fe28d29e49084f49a8a284c5b76396e9d5261"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+        "width": 96,
+        "height": 96,
+        "sha256": "713fdab07ceaf80437390d0cec8895975530c18b640efa57cb0b62ec21d92a5c"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp",
+        "width": 324,
+        "height": 324,
+        "sha256": "1e8eab4de90720c2690669fdb6b2de119686552a555a1d8b2ec1f3c6fac9f927"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.webp",
+        "width": 324,
+        "height": 324,
+        "sha256": "a2921eca4dcc416cb0973a0d674cf1da9387cd7f7e3962bee71d33c43376108f"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+        "width": 144,
+        "height": 144,
+        "sha256": "f23fe6bec8a78cfa9a5008f2769e4c6c5ccda9e6f47408d27500e12dc338de86"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+        "width": 144,
+        "height": 144,
+        "sha256": "9c87b52b89abb76e01df3351a50b0ce2f135ea5654fdfc663187f6fb36689019"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp",
+        "width": 432,
+        "height": 432,
+        "sha256": "4ab5510d80dc93088c4410c674e0b86a5fc9d4dec91dccd12800872b15d9ee13"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.webp",
+        "width": 432,
+        "height": 432,
+        "sha256": "7a6aaa5001b4b68268ca5cb9ba545df9007b4459f59caec492b760fa2e1a246d"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+        "width": 192,
+        "height": 192,
+        "sha256": "66458a74e1831dc291610a0555c582540047a09752200ba94a454cf19084f695"
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+        "width": 192,
+        "height": 192,
+        "sha256": "f7732a5d6c609bb8d587e63c5487717d5337b639f1cafbd35117d3fe13a837c1"
+      }
+    ],
+    "canonicalLayerReferences": true,
+    "nativeBuild": false,
+    "emulatorOrDevice": false,
+    "repoAndroidFolderCreated": false,
+    "officialGenerator": {
+      "module": "@expo/prebuild-config/build/plugins/icons/withAndroidIcons.js",
+      "export": "setIconAsync",
+      "isolatedTemporaryDirectory": true,
+      "networkOrPackageInstallation": false,
+      "inputsSHA256": {
+        "assets/icon.png": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+        "assets/adaptive-icon.png": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287",
+        "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4"
+      }
+    },
+    "actualAdaptiveXMLResources": [
+      {
+        "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+        "sha256": "44cc3246d167bd718fb61feaba493850ff95255c1ddbb8854c0e4c0534832f96",
+        "foregroundAndBackgroundReferencesVerified": true
+      },
+      {
+        "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+        "sha256": "44cc3246d167bd718fb61feaba493850ff95255c1ddbb8854c0e4c0534832f96",
+        "foregroundAndBackgroundReferencesVerified": true
+      }
+    ]
+  },
+  "checks": {
+    "rootFinalSourceTests": {
+      "passed": 442,
+      "files": 49
+    },
+    "typecheck": "PASS",
+    "lint": "0errors;1prior warning",
+    "focusedIconAndSplashTests": {
+      "passed": 12,
+      "files": 2
+    },
+    "fullIconRasterReproducibility": "PASS",
+    "gitDiffWhitespace": "PASS"
+  },
+  "privacyAndLimits": {
+    "deviceIdentifiersSigningIdentityCertificatesProfilesNotPublished": true,
+    "physicalMoviesAndApplicationDataNotReadByThisAudit": true,
+    "previewFilesAreGeneratedNotDeviceScreenshots": true,
+    "storeUploadedOrPublished": false,
+    "nativeAndroidBuildOrRuntimeClaimed": false,
+    "fullSwiftRecompileClaimed": false,
+    "ordinaryAppPaidAccessBypassed": false,
+    "isolatedQAUsesMemoryOnlyPaidActiveFixtureNotAStoreTransaction": true,
+    "FounderVisualApprovalClaimed": false,
+    "finalEvidenceSecretScan": "PASS; see ../final-audit.json"
+  }
+}

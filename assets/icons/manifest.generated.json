@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "reference": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+  "referenceSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+  "referencePixels": [
+    851,
+    1847
+  ],
+  "cropSourcePixels": {
+    "left": 35,
+    "top": 450,
+    "width": 780,
+    "height": 780
+  },
+  "processing": "Literal source rectangle; uniform Lanczos3 resampling only. No redrawing, text replacement, recoloring, added art or pre-rounded production icons.",
+  "tool": {
+    "sharp": "0.35.5",
+    "vips": "8.18.7"
+  },
+  "adaptive": {
+    "canvas": 1024,
+    "photoSide": 672,
+    "inset": 176,
+    "layerDP": 108,
+    "maskDP": 72,
+    "safeCircleDP": 66,
+    "outerSteelFeatherPixels": 24,
+    "backgroundCropMasterPixels": {
+      "left": 420,
+      "top": 24,
+      "width": 184,
+      "height": 184
+    },
+    "safeCircleRadiusPixels": 312.8888888888889,
+    "maximumLandmarkRadiusPixels": 310.1837592412623,
+    "conservativeSourceLandmarks": {
+      "wordmark": [
+        [
+          80,
+          800
+        ],
+        [
+          780,
+          800
+        ],
+        [
+          80,
+          900
+        ],
+        [
+          780,
+          900
+        ]
+      ],
+      "ringEndpointsAndExtrema": [
+        [
+          130,
+          840
+        ],
+        [
+          365,
+          1065
+        ],
+        [
+          505,
+          1028
+        ],
+        [
+          505,
+          990
+        ],
+        [
+          640,
+          1008
+        ],
+        [
+          705,
+          840
+        ],
+        [
+          425,
+          615
+        ]
+      ]
+    },
+    "limit": "Foreground preserves entire photographed square with transparent system inset and alpha-only24px easing of outer steel margins; lettering/rings/shadows remain opaque. Opaque background is a letter-free steel excerpt of that same master. OEM motion/mask behavior still needs Android runtime verification."
+  },
+  "protectedSHA256": {
+    "assets/brand/reference/founder-approved-premium-v5-20261114.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+    "src/intro/brandTexture.generated.ts": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe",
+    "assets/sphere.png": "10884e1fe4e4d470dbcd201d750e6c52aef8ebb66c35446399cee5e012167a3f",
+    "assets/sphere.svg": "21f41b4b30659d0231b3b3f0a0fe3808c63642a9f656eaa35a553188b80710a7"
+  },
+  "outputs": [
+    {
+      "path": "assets/icon.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+    },
+    {
+      "path": "ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+    },
+    {
+      "path": "assets/icons/play-store-512.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0ead23e6d76256e624014fc095138838a5596de024a41f555bc72733c1a557d5"
+    },
+    {
+      "path": "assets/icons/previews/iphone-home-60pt@2x.png",
+      "width": 120,
+      "height": 120,
+      "sha256": "5c14e189a915a46f152b7b049502e7108854638cf5cf1c507ae7525581d103c5"
+    },
+    {
+      "path": "assets/icons/previews/iphone-home-60pt@3x.png",
+      "width": 180,
+      "height": 180,
+      "sha256": "a70db6fad4f4a39bf3b7ae68e5f8009074edfafc97db59ce9790742a677a013f"
+    },
+    {
+      "path": "assets/icons/previews/iphone-settings-29pt@2x.png",
+      "width": 58,
+      "height": 58,
+      "sha256": "571c3b1eb8845bfc86528bba1ffce2ecc712e302d08b34ab31f25410fca34b59"
+    },
+    {
+      "path": "assets/icons/previews/iphone-settings-29pt@3x.png",
+      "width": 87,
+      "height": 87,
+      "sha256": "4cf2e99ee73d2f2d78adc7713a5d8b956d48f5883ad60c29059b99d1eb4497e4"
+    },
+    {
+      "path": "assets/adaptive-icon.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287"
+    },
+    {
+      "path": "assets/icons/adaptive-background.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4"
+    },
+    {
+      "path": "assets/icons/previews/android-round-system-mask.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "b0cc94944ec8b076cf0a476d6d367e13c9c5492d3e86a261c13b51dcaa624618"
+    },
+    {
+      "path": "assets/icons/previews/android-safe-area-DIAGNOSTIC.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "688d9122e0a5d847feea2eda28ba065e2c160ff3eb665896b5e0bf070010bf6e"
+    },
+    {
+      "path": "assets/icons/previews/store-listing-cards.png",
+      "width": 1024,
+      "height": 400,
+      "sha256": "a4e997232300e87df08b72053169a7136850a2a60a4230bb10733568a0e03eda"
+    },
+    {
+      "path": "assets/icons/previews/platform-preview-sheet.png",
+      "width": 1024,
+      "height": 955,
+      "sha256": "d223f9cf15d8ed9ee9eb90ec840f2e8167f26654a4b80c5e99770c87dc05401c"
+    }
+  ]
+}

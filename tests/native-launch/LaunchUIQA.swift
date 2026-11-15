@@ -1426,3 +1426,92 @@ extension LaunchUIQA {
     capture(app, "91-reduced-motion-home-quick-locked-today")
   }
 }
+
+extension LaunchUIQA {
+  /// Requires the explicitly packaged standalone memory-only paid-active fixture.
+  /// Does not launch/terminate, save preferences/cycle, transact or end QA into real data.
+  func testStandaloneQAActualTodayTextsScrollModalSettingsAndHomeReplay() throws {
+    continueAfterFailure = false
+    XCTAssertFalse(UIAccessibility.isReduceMotionEnabled, "This case verifies full-motion Home on the owned Simulator")
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning, "Root must first install and cold-record the reviewed standalone QA artifact")
+    app.activate()
+    let disclosure = app.staticTexts["DEVELOPMENT MOCK BILLING"].firstMatch
+    XCTAssertTrue(disclosure.waitForExistence(timeout: 30), "Never run this fixture case against ordinary personal-data Release")
+    XCTAssertFalse(app.buttons["qa-scenario-fresh"].exists, "Standalone startup must show actual Today, not the QA panel")
+    let process = try nativeProcess(in: app)
+    func card(_ title: String) -> XCUIElement {
+      let element = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", title + ".")).firstMatch
+      XCTAssertTrue(element.waitForExistence(timeout: 15), "Actual authored \(title) guidance must exist")
+      requireBodyElementFullyVisible(element, in: app)
+      XCTAssertGreaterThan(element.label.count, title.count + 35, "A heading alone is not authored guidance")
+      return element
+    }
+    let mind = card("KEEP IN MIND")
+    let originalMind = mind.label
+    XCTAssertFalse(app.buttons["View subscription"].exists, "Private mock access must use the ordinary guidance route")
+    capture(app, "101-standalone-qa-today-authored-mind")
+    let support = card("SUPPORT")
+    let originalSupport = support.label
+    capture(app, "102-standalone-qa-scrolled-authored-support")
+    let action = card("DO")
+    let originalAction = action.label
+    capture(app, "103-standalone-qa-scrolled-authored-do")
+
+    func openMindAndReturn(_ name: String) {
+      let currentMind = card("KEEP IN MIND")
+      XCTAssertEqual(currentMind.label, originalMind)
+      currentMind.tap()
+      let back = app.buttons["Back"].firstMatch
+      XCTAssertTrue(back.waitForExistence(timeout: 5), "Native tap must open the existing advice reading modal")
+      let authoredTexts = app.staticTexts.allElementsBoundByIndex.filter {
+        $0.label.count > 15 && originalMind.contains($0.label)
+      }
+      XCTAssertGreaterThanOrEqual(authoredTexts.count, 2, "The modal must render both actual guidance text and authored note")
+      capture(app, name)
+      XCTAssertTrue(back.isHittable)
+      back.tap()
+      XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label == %@", originalMind)).firstMatch.waitForExistence(timeout: 5))
+    }
+    openMindAndReturn("104-standalone-qa-native-advice-modal")
+
+    // AnimatedToday has its own existing fixed footer, distinct from generic Screen tabs.
+    let settings = app.buttons.matching(NSPredicate(format: "label IN %@", ["Open settings", "Settings"])).firstMatch
+    XCTAssertTrue(settings.waitForExistence(timeout: 5))
+    XCTAssertTrue(settings.isHittable)
+    XCTAssertTrue(app.frame.contains(settings.frame))
+    let settingsRoot = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Cycle details")).firstMatch
+    settings.tap()
+    if !settingsRoot.waitForExistence(timeout: 2) {
+      print("TIH_STANDALONE_FOOTER_CENTER_RETRY")
+      let frame = settings.frame
+      app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+        dx: frame.midX - app.frame.minX, dy: frame.midY - app.frame.minY
+      )).tap()
+    }
+    XCTAssertTrue(settingsRoot.waitForExistence(timeout: 5), "Existing Settings navigation must respond after Today")
+    capture(app, "105-standalone-qa-existing-settings-no-writes")
+    let home = app.buttons["brand-home"].firstMatch
+    XCTAssertTrue(home.waitForExistence(timeout: 5))
+    XCTAssertTrue(home.isHittable)
+    let started = ProcessInfo.processInfo.systemUptime
+    home.tap()
+    let cover = app.otherElements["home-transition"].firstMatch
+    XCTAssertTrue(cover.waitForExistence(timeout: 2))
+    capture(app, "106-standalone-qa-home-opening")
+    let gone = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: cover)
+    XCTAssertEqual(XCTWaiter.wait(for: [gone], timeout: 20), .completed)
+    print("TIH_STANDALONE_QA_HOME_TOTAL_SECONDS \(ProcessInfo.processInfo.systemUptime - started)")
+    XCTAssertEqual(try nativeProcess(in: app), process, "Home replay must preserve this standalone process")
+    XCTAssertEqual(card("KEEP IN MIND").label, originalMind)
+    XCTAssertTrue(disclosure.exists)
+    capture(app, "107-standalone-qa-home-restored-authored-mind")
+    XCTAssertEqual(card("SUPPORT").label, originalSupport)
+    XCTAssertEqual(card("DO").label, originalAction)
+    capture(app, "108-standalone-qa-home-restored-authored-do")
+    openMindAndReturn("109-standalone-qa-post-home-interactive-modal")
+    XCTAssertFalse(cover.exists)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_STANDALONE_QA_AUTHORED_TEXTS_SCROLL_MODAL_SETTINGS_HOME_SAME_PROCESS_PASS")
+  }
+}

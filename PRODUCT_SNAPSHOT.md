@@ -66,7 +66,29 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
-## CURRENT VISIBLE-ASSEMBLY ENDING — 2026-11-15
+## CURRENT OFFICIAL ICON / ISOLATED TODAY QA — 2026-11-15
+
+- Literal780px crop of the immutable approved photo supplies full silver rings/wordmark,
+1024iOS/AppStore/TestFlight,512PlayRGBA and separate safe adaptive layers. Actual native
+AppIcon input updated; no SVG/font/photographic repaint. Source and splash stay exact.
+- Xcode actool rebuilt real iphoneos/Simulator Assets.car and icon PNGs. AppIcon digest
+changes; four launch rendition digests/dimensions remain exact. Existing code/profile/IDs
+preserved; signed normal and separately labelled QA artifacts verify. This is native asset
+compilation, not a claim of full Swift rebuild or a Metro-only installed-icon change.
+- Temporary standalone dev=false QA tooling reuses existing in-memory services before
+AppProvider mounts. Normal gate/provider/routes are byte-unchanged; emitted graph verifier
+rejects an SDK config-loading failure. No real paid/trial access or personal storage write.
+-442tests/49files, TypeScript, lint0errors/one prior warning, raster/hash/native-resource
+checks PASS. Corrected Simulator cold video reaches real authored Today with QA disclosure;
+full three-part text, scrolling, modal, Settings and Home native test PASS52.479s.
+- Actual Simulator SpringBoard photo icon and generated store/small/round previews supplied.
+Android20density/2XML generation verified; native Android build/runtime still lacks SDK/JDK.
+- Physical new-icon/Today QA awaits a wired/unlocked iPhone. The180s wait changed no phone
+installation. Prepared flow privately hashes data, tests memory access, restores normal app;
+no physical data-preservation/installed-new-icon success is claimed before execution.
+- [Current files, actual proof and remaining physical step](docs/OFFICIAL_ICONS_TODAY_QA.md).
+
+## PREVIOUS VISIBLE-ASSEMBLY ENDING — 2026-11-15
 
 - Preserves c441ad3's physically verified exact photo, corrected RN sizing and native/GPU
   handoff. Protected V4, shader/texture, timeline, six-depth scene and8s loop stay byte-exact.

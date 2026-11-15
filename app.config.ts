@@ -27,7 +27,11 @@ const config: ExpoConfig = {
   },
   android: {
     package: 'com.pryshvitsyn.tuneintoher',
-    adaptiveIcon: { foregroundImage: './assets/adaptive-icon.png', backgroundColor: '#F7F5F0' },
+    adaptiveIcon: {
+      foregroundImage: './assets/adaptive-icon.png',
+      backgroundImage: './assets/icons/adaptive-background.png',
+      backgroundColor: '#7E8BA1',
+    },
     allowBackup: false,
   },
   plugins: [

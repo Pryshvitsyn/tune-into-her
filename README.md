@@ -26,3 +26,11 @@ app/ routes; src/ implementation; content/ catalog; tests/; release/ evidence.
 [GOAL](GOAL.md) · [SNAPSHOT](PRODUCT_SNAPSHOT.md) · [TASKS](TASKS.md) · [DECISIONS](DECISIONS.md) · [ARCHITECTURE](ARCHITECTURE.md) · [PRODUCT](docs/PRODUCT.md) · [UX](docs/UX.md) · [Content reserve](docs/CONTENT.md).
 ## Agent rules
 Read [AGENTS.md](AGENTS.md). Historical validation is not current proof.
+
+
+## Official icon and isolated Today QA
+The official icon is generated from the exact approved silver opening photograph for
+native iOS, Play listing and adaptive Android layers. Native catalogs, source provenance,
+small/masked/store previews and the standalone memory-only Today test are documented in
+[official icon / Today QA](docs/OFFICIAL_ICONS_TODAY_QA.md). Physical new-icon/Today acceptance
+is reported separately from Simulator proof; no store upload is implied.

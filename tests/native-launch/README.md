@@ -288,3 +288,22 @@ robust native OFF cleanup. The former1.922sbody had a stale/simple cleanup tap f
 its raw result remains private in /tmp and is not counted as a passing complete test.
 The shared restore helper now re-queries the actual switch and uses the already-tested
 inner-control/drag fallback with both native-value and UIKit assertions.
+
+## Standalone private Today interaction case
+
+`testStandaloneQAActualTodayTextsScrollModalSettingsAndHomeReplay` is selected explicitly
+only after root installs/cold-records the reviewed [standalone QA bundle](STANDALONE_QA.md).
+It retains the common Simulator-only/owned-device guard and never drives a phone. It
+activates the already running app, requires the mock disclosure, verifies actual authored
+KEEP IN MIND/SUPPORT/DO cards through scrolling, taps a card into its existing reading
+modal and back, navigates with the existing Settings footer, then replays Home without
+restarting the process. It compares all three guidance labels before/after replay and
+opens the modal again to prove post-transition interaction. Captures101–109 are synthetic
+fixture content only. Home's reported total includes native/GPU initialization and AX
+work; it is not a measurement of the one-second hold.
+
+The case performs no purchase, trial start, cycle/preference save, data deletion or End QA.
+In the temporary standalone artifact `stop()` resets its memory scenario; returning to
+ordinary personal data requires root's separate normal Release update/restore. Generate
+or copy the harness sources as usual, build the runner separately, and select only this
+case. A prepared case/source is not a passed native run; record the actual result afterward.

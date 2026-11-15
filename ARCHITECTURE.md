@@ -269,3 +269,20 @@ time restores the displayed day after backgrounding. AcceleratedDemoScheduler sc
 routing validates the current run and day before opening `/demo`. A first launch or active
 session can open the preview without purchase/onboarding; ordinary access checks are
 unchanged.
+
+
+## Official photographic icon assets and standalone QA tooling
+
+The immutable approved opening PNG also supplies a literal square crop for platform icons.
+`scripts/generate-official-icons.cjs` owns the square master, native AppIcon copy, Play512,
+adaptive foreground/background and deterministic previews/hashes. The legacy brand script
+delegates only icon writes. Expo config generates Android native densities; the checked-in
+iOS catalog is compiled with actool. The system applies corners/masks to unrounded masters.
+
+`tests/native-launch/standalone-qa.cjs` is explicit build tooling, outside the normal graph.
+Ignored private entry/config aliases use existing InternalQASession memory services and
+start before AppProvider mount. Dev JavaScript remains false; normal session gates and
+routes are unchanged. Config requires the exact private Release entry and Expo override;
+emitted provider/hook/session/Index bindings are verified before accepting an artifact.
+Private End QA resets memory instead of activating real storage; installing the retained
+normal Release ends this temporary artifact. Separate signed hashes distinguish all builds.

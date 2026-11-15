@@ -2,7 +2,20 @@
 
 Updated: 2026-11-15 (Europe/Rome)
 
-## CURRENT — completed-sphere one-second ending (2026-11-15)
+## CURRENT — official photographic icon and isolated Today device QA (2026-11-15)
+
+- [x] Derive official square icon from exact portrait pixels; preserve rings/wordmark/reflections.
+- [x] Generate1024iOS/512Play and safe adaptive foreground/background from one master.
+- [x] Update actual iOSAppIcon and Expo icon fields; verify20Android density resources/2XML.
+- [x] Compile actual iphoneos/Simulator Assets.car with actool; sign normal/private QA artifacts.
+- [x] Reuse existing memory-only QA services before app mount; preserve normal subscription guards.
+- [x] Reject incorrect alias graph, verify corrected standalone bundle, record actual Simulator Today.
+- [x] Pass442tests/typecheck/lint, native full-text/scroll/modal/Settings/Home interaction case.
+- [ ] Install on connected/unlocked iPhone; record full intro to Today text and actual Home icon.
+- [ ] Verify private before/after personal-storage hashes and restore normal Release after physical QA.
+- [x] Review source/proof/privacy and commit/push the completed source/Simulator checkpoint; physical steps remain open. No store publication.
+
+## PREVIOUS — completed-sphere one-second ending (2026-11-15)
 
 - [x] Physically verify exact approved photo/native/RN framing and smooth GPU dissolve at c441ad3.
 - [x] Preserve all six original depth layers, target assembly, V4 and8s material motion.

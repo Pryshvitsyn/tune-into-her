@@ -1,0 +1,867 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "result": "PASS",
+  "baselineCommit": "4c079d306da833c17e138cdfa996cf8536ddb4f2",
+  "scope": "Frozen official-photo icons +normal/corrected isolated-QA definitions +accepted Simulator media/documentation; source/native/Simulator checkpoint only",
+  "findings": [],
+  "candidateFiles": [
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 19416,
+      "sha256": "8c4c057f6702a9ef894b6e5b9999e6c32cb3e56688334b851fa7cd03613a0b39"
+    },
+    {
+      "path": "PRODUCT_SNAPSHOT.md",
+      "bytes": 26739,
+      "sha256": "7acf9b952652b9738c1985d04b8e6105b69c4ce9338dec14f04be5a05b442f12"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3532,
+      "sha256": "162a6b405cb033824b747bf8e2c6eb2bd7cd76cf7d7e6f0454767fdb070bfc12"
+    },
+    {
+      "path": "TASKS.md",
+      "bytes": 21297,
+      "sha256": "591a39dd9c298a6116fc7e4c7e96dfffdc07f45ba9aa36ee3abb88064b62b78a"
+    },
+    {
+      "path": "app.config.ts",
+      "bytes": 2254,
+      "sha256": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400"
+    },
+    {
+      "path": "assets/adaptive-icon.png",
+      "bytes": 866549,
+      "sha256": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287"
+    },
+    {
+      "path": "assets/icon.png",
+      "bytes": 1488842,
+      "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+    },
+    {
+      "path": "assets/icons/README.md",
+      "bytes": 5546,
+      "sha256": "7638c84627876d54dfdca5bf416446a5d0f4144fdd4385167f42cf451bcce46f"
+    },
+    {
+      "path": "assets/icons/adaptive-background.png",
+      "bytes": 143921,
+      "sha256": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4"
+    },
+    {
+      "path": "assets/icons/manifest.generated.json",
+      "bytes": 5610,
+      "sha256": "ab53232a867c9ac000569134efc39f39e65a588e07f5a6e5690f05567f755c6e"
+    },
+    {
+      "path": "assets/icons/play-store-512.png",
+      "bytes": 470865,
+      "sha256": "0ead23e6d76256e624014fc095138838a5596de024a41f555bc72733c1a557d5"
+    },
+    {
+      "path": "assets/icons/previews/android-round-system-mask.png",
+      "bytes": 1381393,
+      "sha256": "b0cc94944ec8b076cf0a476d6d367e13c9c5492d3e86a261c13b51dcaa624618"
+    },
+    {
+      "path": "assets/icons/previews/android-safe-area-DIAGNOSTIC.png",
+      "bytes": 913215,
+      "sha256": "688d9122e0a5d847feea2eda28ba065e2c160ff3eb665896b5e0bf070010bf6e"
+    },
+    {
+      "path": "assets/icons/previews/iphone-home-60pt@2x.png",
+      "bytes": 32301,
+      "sha256": "5c14e189a915a46f152b7b049502e7108854638cf5cf1c507ae7525581d103c5"
+    },
+    {
+      "path": "assets/icons/previews/iphone-home-60pt@3x.png",
+      "bytes": 64771,
+      "sha256": "a70db6fad4f4a39bf3b7ae68e5f8009074edfafc97db59ce9790742a677a013f"
+    },
+    {
+      "path": "assets/icons/previews/iphone-settings-29pt@2x.png",
+      "bytes": 9035,
+      "sha256": "571c3b1eb8845bfc86528bba1ffce2ecc712e302d08b34ab31f25410fca34b59"
+    },
+    {
+      "path": "assets/icons/previews/iphone-settings-29pt@3x.png",
+      "bytes": 18515,
+      "sha256": "4cf2e99ee73d2f2d78adc7713a5d8b956d48f5883ad60c29059b99d1eb4497e4"
+    },
+    {
+      "path": "assets/icons/previews/platform-preview-sheet.png",
+      "bytes": 739887,
+      "sha256": "d223f9cf15d8ed9ee9eb90ec840f2e8167f26654a4b80c5e99770c87dc05401c"
+    },
+    {
+      "path": "assets/icons/previews/store-listing-cards.png",
+      "bytes": 91376,
+      "sha256": "a4e997232300e87df08b72053169a7136850a2a60a4230bb10733568a0e03eda"
+    },
+    {
+      "path": "docs/OFFICIAL_ICONS_TODAY_QA.md",
+      "bytes": 8652,
+      "sha256": "a7044caffd6d240edbdbe8eb7cb87fe482d2044a18b35f29288778533023d695"
+    },
+    {
+      "path": "ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+      "bytes": 1488842,
+      "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+    },
+    {
+      "path": "release/RELEASE_GUIDE_RU.md",
+      "bytes": 19024,
+      "sha256": "ff24b82394742516169fea432ceba827aa7a4be2c5cfdb94eb0c17585e0c75ae"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/artifacts/iphoneos-isolated-qa.json",
+      "bytes": 4143,
+      "sha256": "6b12df18bcfa675028beba9b50b339bc155b979e69258c0c9a4d66dc137eb9f4"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/artifacts/iphoneos-normal.json",
+      "bytes": 3429,
+      "sha256": "92f168afec01569fe733682c17636a16afe5de011528961a714b84cc079febfd"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/artifacts/iphonesimulator-isolated-qa.json",
+      "bytes": 4150,
+      "sha256": "0570bdabe6eeafd2af0470bb0a2f383bc9780d4a2cd8ecad1b7c49146be17574"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/checks.json",
+      "bytes": 3634,
+      "sha256": "b84d496fc5940df913641ebbe79ffecaa3c0be312b09ee55d694425e0cc08562"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/icons/README.md",
+      "bytes": 7281,
+      "sha256": "dd95b3a800ab79e4845f5c5f22d3d9d32a47b5e4b2db7c2d0b8ae0eaf22a13bf"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/icons/proof.json",
+      "bytes": 34833,
+      "sha256": "5a2ce3d2ce61345fc630d43c0cbec7b85b7dd89715ac46c15ac1bae62220e257"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/01-exact-approved-opening.png",
+      "bytes": 508764,
+      "sha256": "23c9240d201bfc14baf0c9b1e38932cdd5722c18bb4743dcbfe49d1d1c714f51"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/02-last-photo-sample.png",
+      "bytes": 581476,
+      "sha256": "c258485450878a382ea47a52ced5fef0bf58eb6811a11ecaaf06c687a38a7448"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/03-depth-travel.png",
+      "bytes": 561971,
+      "sha256": "fe6c15f9b472fd80ca127d3a0bdceda3a126bc74cd44a437559307fe7dc4560b"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/04-inward-depth.png",
+      "bytes": 688301,
+      "sha256": "666fcce562a73ed93590971d4fd7f8a9db877e6f9aeafcb708f6a9ab5ec359f3"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/05-assembled-sphere-sample.png",
+      "bytes": 534646,
+      "sha256": "e4a046a24fd4adb839ade995b309a71f8fe1fd5f2052934a914337774643b39f"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/06-visible-sphere-before-fade.png",
+      "bytes": 495874,
+      "sha256": "c8504f076b762c7bc0687c9eba8fc508fb99c939776c527bd62132f2b9329345"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/07-today-starting-to-appear.png",
+      "bytes": 551619,
+      "sha256": "ad5879555ac9056129dbca92a9206f57bd3060d293e57c9a6d435e3ffade9492"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/08-today-with-mock-disclosure.png",
+      "bytes": 599496,
+      "sha256": "2a5fc757d6334d3cbabe4760689e31d9f84f88dbde8db926478c8e4c4655c313"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/09-actual-simulator-springboard-icon-name.png",
+      "bytes": 38357,
+      "sha256": "26bcf2e9a8c2448aa8d0e6def88d81e384f67fcb93da67d3c9c5246468513466"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/README.md",
+      "bytes": 3987,
+      "sha256": "4363fecefa2a626825decc0570e9349436142cc849a70b34812fb741ffab4a68"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/actual-photo-to-mock-today-contact.png",
+      "bytes": 1121181,
+      "sha256": "f37c1207af148791be3a78c16e266bb10d46b24bcb7cc7b2bc10e7d66b9b007b"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/artifact.json",
+      "bytes": 4150,
+      "sha256": "0570bdabe6eeafd2af0470bb0a2f383bc9780d4a2cd8ecad1b7c49146be17574"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/corrected-qa-photo-to-today.mp4",
+      "bytes": 4108607,
+      "sha256": "fa32dd972d56f1bf1b12b76ff2c49297fd71084424c565c2ebe057e0296a3dc1"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/proof.json",
+      "bytes": 6627,
+      "sha256": "4d41b9abf01fc82a86243a0f150dd132f2dc9420a692e49b35a9548fc347d5f8"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/101-standalone-qa-today-authored-mind.png",
+      "bytes": 1046957,
+      "sha256": "defeeb0acc439f35b4ad44f616b20bdad594732103f5be69f9e0c622db359dfb"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/103-standalone-qa-scrolled-authored-do.png",
+      "bytes": 1070223,
+      "sha256": "981d7d6c9c3552e2c3cfd27a597f0f17cdd4bf1e6873a779285d8c040dbdcbb5"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/105-standalone-qa-existing-settings-no-writes.png",
+      "bytes": 191188,
+      "sha256": "da3a544900f7c9224dd1e650942b8794cad56b3a31ad5ed0d52b046274a388a5"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/106-standalone-qa-home-opening.png",
+      "bytes": 996948,
+      "sha256": "c206c90201551d98d3dc51d5c65de12101f3fc0d81d475b8b439c90d452b2583"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/107-standalone-qa-home-restored-authored-mind.png",
+      "bytes": 1049313,
+      "sha256": "d962ac0f34442496870d8a0878ea4bbb7ad463fc444904d41309af62f08e8b0d"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/109-standalone-qa-post-home-interactive-modal.png",
+      "bytes": 57575,
+      "sha256": "0bc620206c97b4d8c41b9baf1986a84d5bf9910b821d261ba5e4bc1b71ca6ac1"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/README.md",
+      "bytes": 2629,
+      "sha256": "a6df6fb0eba765be26fb60db7206f689fba5421e3f909871143f16665c6a4b81"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/results.json",
+      "bytes": 3821,
+      "sha256": "28cdab5750d54daa2b51b71138c4420f34cafd5b2f59dd38f9adbb3e7a53980c"
+    },
+    {
+      "path": "scripts/create-brand-assets.cjs",
+      "bytes": 1475,
+      "sha256": "a8eba521036a80c5480d340cb7cbb38c2d0bc5f269c8b7045362c6fd5ec82fed"
+    },
+    {
+      "path": "scripts/generate-official-icons.cjs",
+      "bytes": 13516,
+      "sha256": "fcac4d90ec0106b46f36f23bedbce1c1dee1c819c105639e46ab328126dbdb63"
+    },
+    {
+      "path": "tests/native-launch/LaunchUIQA.swift",
+      "bytes": 86792,
+      "sha256": "5e89bce1c1dbb688215a3839961e55a1aac2d8ab963f7b1ab88e66361ea6d905"
+    },
+    {
+      "path": "tests/native-launch/README.md",
+      "bytes": 31322,
+      "sha256": "2d1648d893e4aa0c38778e99eee30e914c4277afe4265da90f22a8c7496c9642"
+    },
+    {
+      "path": "tests/native-launch/STANDALONE_QA.md",
+      "bytes": 4886,
+      "sha256": "4b7d1ff1a15e5484f77dc6f5fe84053877fb29474fd655275c8429b95260ddfc"
+    },
+    {
+      "path": "tests/native-launch/standalone-qa.cjs",
+      "bytes": 9608,
+      "sha256": "2eb156e8b284e2647e35d6a6f34894b9eea3d888e019ba6079705bb0fb6f11d3"
+    },
+    {
+      "path": "tests/officialIcons.test.ts",
+      "bytes": 7473,
+      "sha256": "be21ef003e7ce89e0097c620f4040391746f9633a66832cb77be21f46ce16cf7"
+    },
+    {
+      "path": "tests/standaloneQA.test.ts",
+      "bytes": 11965,
+      "sha256": "32b9b8fd336438b46158378f5a4e39b3708af6a60f1bc12fc808ac5e752faceb"
+    }
+  ],
+  "candidateFileCountExcludingThisSelfReferentialAudit": 58,
+  "candidatePathSHA256SizeListDigest": "c76d7a185750423aa59bc2ff4315e10b0569888c1cf3b0ff1eb50d62d2d93713",
+  "selfReference": {
+    "file": "release/evidence/official-icons-today-20261115/final-audit.json",
+    "excludedFromOwnHashManifest": true,
+    "reason": "A file cannot contain its own stable content hash; root receives this audit SHA separately and verifies all listed candidate hashes before commit."
+  },
+  "textPrivacy": {
+    "UTF8TextFilesChecked": 28,
+    "newTextCredentialPatternsAbsent": true,
+    "knownPhysicalCaptureIdentifiersAbsent": true,
+    "rawLogsMoviesStorageSnapshotsSigningMaterialsFailedArtifactsAndIgnoredPrivateQAFilesNotCandidates": true,
+    "preExistingTestSimulatorHardGuardNotNewlyIntroduced": true,
+    "humanReview": "All generated platform/listing previews, accepted Simulator phase contact/icon-only Home crop and six native synthetic-QA images visually reviewed. No personal UI, payment data or real cycle history observed."
+  },
+  "media": [
+    {
+      "path": "assets/adaptive-icon.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icon.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/adaptive-background.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/play-store-512.png",
+      "kind": "PNG",
+      "pixels": [
+        512,
+        512
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/android-round-system-mask.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/android-safe-area-DIAGNOSTIC.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/iphone-home-60pt@2x.png",
+      "kind": "PNG",
+      "pixels": [
+        120,
+        120
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/iphone-home-60pt@3x.png",
+      "kind": "PNG",
+      "pixels": [
+        180,
+        180
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/iphone-settings-29pt@2x.png",
+      "kind": "PNG",
+      "pixels": [
+        58,
+        58
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/iphone-settings-29pt@3x.png",
+      "kind": "PNG",
+      "pixels": [
+        87,
+        87
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/platform-preview-sheet.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        955
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "assets/icons/previews/store-listing-cards.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        400
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+      "kind": "PNG",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/01-exact-approved-opening.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/02-last-photo-sample.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/03-depth-travel.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/04-inward-depth.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/05-assembled-sphere-sample.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/06-visible-sphere-before-fade.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/07-today-starting-to-appear.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/08-today-with-mock-disclosure.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/09-actual-simulator-springboard-icon-name.png",
+      "kind": "PNG",
+      "pixels": [
+        164,
+        180
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/actual-photo-to-mock-today-contact.png",
+      "kind": "PNG",
+      "pixels": [
+        900,
+        852
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/simulator/corrected-qa-photo-to-today.mp4",
+      "kind": "MP4",
+      "fullyDecodedFrames": 589,
+      "audioStreams": 0,
+      "sourceFrameRange": [
+        85,
+        673
+      ],
+      "allOriginalSelectedFramesRetained": true,
+      "strictlyIncreasingPTS": true,
+      "maximumOriginalRelativePTSErrorSeconds": 1.0000000010279564e-06,
+      "privateMetadataTagsAbsent": true,
+      "allowedStandardFormatTagNames": [
+        "compatible_brands",
+        "encoder",
+        "major_brand",
+        "minor_version"
+      ],
+      "durationSeconds": 14.021667,
+      "flashThreshold": "Central80percent/64x64area gray;98percent<=18/30 or>=245",
+      "flashCounts": {
+        "black": 0,
+        "nearBlack": 0,
+        "white": 0
+      }
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/101-standalone-qa-today-authored-mind.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/103-standalone-qa-scrolled-authored-do.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/105-standalone-qa-existing-settings-no-writes.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/106-standalone-qa-home-opening.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/107-standalone-qa-home-restored-authored-mind.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/ui/109-standalone-qa-post-home-interactive-modal.png",
+      "kind": "PNG",
+      "pixels": [
+        750,
+        1334
+      ],
+      "allChunkCRCsAndIDATDecodeValid": true,
+      "chunkTypes": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "sRGB"
+      ],
+      "privateTextEXIFTimeChunks": []
+    }
+  ],
+  "sourceAndAccessGuards": {
+    "protectedTrackedFilesByteIdentical": 216,
+    "baseline": "4c079d306da833c17e138cdfa996cf8536ddb4f2",
+    "allElevenLocaleCatalogsPreserved": true,
+    "normalEntryExpoRouterUnchanged": true,
+    "normalAppSrcNeverImportStandaloneBuildTooling": true,
+    "normalEmbeddedPrivateQAMarkerAbsent": true,
+    "privateGeneratedQAEntryIgnoredByGit": true,
+    "buildRequiresExplicitAcknowledgementReleasePrivateEntryAndOverride": true,
+    "correctedEmittedPrivateGraphVerifiedInAcceptedArtifacts": true,
+    "realServiceTripwireTestsPassed": true,
+    "firstAliasFailureRejectedAndExcluded": true
+  },
+  "scopeBoundaries": {
+    "physicalNewIconAndTodayAcceptance": "OPEN; wired/unlocked phone unavailable.180s wait exited before installation. No phone data-snapshot/restore success claimed.",
+    "nativeSwiftRecompiled": false,
+    "nativeAssetActoolCompilationVerified": true,
+    "nativeAndroidRuntimeOrSDKBuildVerified": false,
+    "storeUploadPublicationOrMergePerformed": false,
+    "paidAccessIsIsolatedMockNotRealSubscription": true,
+    "FounderVisualApprovalClaimed": false
+  },
+  "checks": {
+    "applicationTestsPassed": 442,
+    "applicationTestFiles": 49,
+    "typecheck": "PASS",
+    "lint": "0errors;1prior generated warning",
+    "iconReproducibility": "PASS",
+    "metadataAndFullAcceptedVideoDecode": "PASS",
+    "sourcePTSFrameRetention": "589/589; constant offset only",
+    "gitDiffWhitespace": "PASS"
+  }
+}
