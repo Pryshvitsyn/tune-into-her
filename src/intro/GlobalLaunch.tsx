@@ -15,7 +15,7 @@ import { INTRO_BACKGROUND_COLOR } from './brandBackground.generated';
 import { markAppIntroConsumed } from './introSession';
 import { getLaunchCopy } from './launchCopy';
 import { launchDestinationKey, launchRouteState } from './launchRouting';
-import { createLaunchState, getLaunchPhase, LAUNCH_FADE_MS, reduceLaunch, shouldAnimateLaunch } from './launchState';
+import { createLaunchState, getLaunchPhase, LAUNCH_FADE_MS, reduceLaunch, shouldAnimateLaunch, shouldPrepareDestinationSpheres } from './launchState';
 import { createNativeSplashGate } from './nativeSplashGate';
 import { loadPremiumTypeface } from './premiumFont';
 
@@ -158,6 +158,9 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
     });
   }, [backgroundReady, nativeSplashGate]);
   useEffect(() => { if (backgroundReady && pendingFrame.current) onFirstFrame(pendingFrame.current); }, [backgroundReady, onFirstFrame]);
+  const onAssembled = useCallback(() => {
+    dispatch({ type: 'intro-assembled' });
+  }, []);
   const onIntroComplete = useCallback(() => {
     dispatch({ type: 'intro-complete' });
   }, []);
@@ -198,7 +201,7 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
     retryInitialization();
     if (font === 'error') { setFont('loading'); setFontAttempt(value => value + 1); }
   };
-  const prepareDestinationSpheres = !blocking || state.introComplete || state.reducedMotion || state.rendererFailed;
+  const prepareDestinationSpheres = shouldPrepareDestinationSpheres(state);
   const presentation = useMemo(() => ({ blocking, introStatusBarStyle: blocking ? 'dark' as const : undefined, destinationSpheresVisible: !blocking, prepareDestinationSpheres, reducedMotion: state.reducedMotion, reportScreenReady, reportScreenNotReady }), [blocking, prepareDestinationSpheres, state.reducedMotion, reportScreenReady, reportScreenNotReady]);
   const target = useMemo(() => ({ x: view.width / 2, y: view.height / 2, radius: Math.max(1, Math.min(view.width * .38, view.height * .25, 180)) }), [view]);
 
@@ -216,7 +219,7 @@ export function GlobalLaunch({ children }: PropsWithChildren) {
         <IntroAtmosphere elapsed={elapsed} onReady={() => setBackgroundReady(true)} />
         {view.width > 0 && view.height > 0 && <SphereIntroSurface launch view={view} target={target} elapsed={elapsed} animate={shouldAnimateLaunch(state)}
           active={state.active} playbackAllowed={nativeHideQueued} preferencesReady={state.accessibilityReady && backgroundReady} reducedMotion={state.reducedMotion} ink={SILVER.ink}
-          onFirstFrame={onFirstFrame} onComplete={onIntroComplete} onError={() => dispatch({ type: 'renderer-failed' })} />}
+          onFirstFrame={onFirstFrame} onAssembled={onAssembled} onComplete={onIntroComplete} onError={() => dispatch({ type: 'renderer-failed' })} />}
         {phase === 'error' && <View style={styles.error} accessibilityLiveRegion="polite">
           <Text systemFont={font !== 'ready'} accessibilityRole="alert" style={styles.errorText}>{copy.error}</Text>
           <Pressable onPress={retry} accessibilityRole="button" style={styles.retry}><Text systemFont={font !== 'ready'} style={styles.retryText}>{t('common.retry')}</Text></Pressable>

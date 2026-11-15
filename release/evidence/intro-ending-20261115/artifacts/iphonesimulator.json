@@ -1,0 +1,38 @@
+{
+  "kind": "Normal iOS Release; JS-only change packaged through unchanged official React Native/Expo Xcode phase scripts, then signed with existing identity",
+  "platform": "iphonesimulator",
+  "nativeRecompiled": false,
+  "originalSignedNativeSHA256": "bbdfe1c06d0000d5bb84fa3f7b7702a9b39e60811daba0bb9cf091aecadd9c4b",
+  "nativeBinarySHA256": "f21941f95032db939cbba80309a146c19c84e8fd7a81c6fd1660a3900926a083",
+  "unsignedNativeSHA256": "9a74f672549b1aea62708fe2f0d317b8cb93edbbf4f8505b487c17ef5bd3469c",
+  "nativeExecutableUnchangedExcludingCodeSignature": true,
+  "embeddedJavaScriptSHA256": "641211a73b6c5d8e28000ce1e44ce8183afe1c1f42693fcf6d82259c249eb91e",
+  "codesignVerified": true,
+  "normalReleasePressureMarkerAbsent": true,
+  "updatesResourcesMatch": true,
+  "nativeUpdatesEnabled": false,
+  "updatesResourcesSHA256": {
+    "app.manifest": "0b241bf058e3bb3963d6a43dd33effd48831974b51150f9e16f9e127c79a4a06",
+    "fingerprint": "64d7201bd7bcbad373e14fa6bf825c318fb6987bf493a97ce360da092dedadf1"
+  },
+  "sourceSHA256": {
+    "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+    "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+    "src/intro/homeTransitionState.ts": "81f85f488061ec2d37a1c7c29dc5c2ceb1938044c5644ad6cc2679966a85b14a",
+    "src/intro/launchState.ts": "22d556251d2fd57598b7364cebff7e4a89cbeda49a495f6b5e5379540edbe4d2",
+    "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+    "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+    "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+    "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+    "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "app.config.ts": "89d42e9ebfb86956a143422f1a1e299d0a992f08f74055f4058c5ea9430fd1cc"
+  },
+  "noAppDeletion": true,
+  "noNativeOrProvisioningChange": true,
+  "frameworksByteIdentical": true,
+  "sourceFilesMatchFinal": true,
+  "installMode": "Update only, no uninstall or user-data reset"
+}

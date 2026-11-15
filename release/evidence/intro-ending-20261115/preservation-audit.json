@@ -1,0 +1,356 @@
+{
+  "kind": "Independent preservation, candidate-text privacy and signed-artifact audit",
+  "comparisonBase": "c441ad36cdfca0824f05730ceff139a03df3298e",
+  "protectedBase": "2c77ba01e1d654b225adab5ccb60820da71a2154",
+  "head": "c441ad36cdfca0824f05730ceff139a03df3298e",
+  "productionFilesUnmodifiedByAuditor": true,
+  "noBuildSigningInstallOrDeviceActions": true,
+  "scope": {
+    "trackedModifiedFiles": [
+      "ARCHITECTURE.md",
+      "DECISIONS.md",
+      "PRODUCT_SNAPSHOT.md",
+      "TASKS.md",
+      "docs/APPROVED_OPENING_QA.md",
+      "docs/INTRO_ENDING_QA.md",
+      "release/evidence/approved-opening-20261114/physical-framed-final/README.md",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-depth-travel-frame597.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-first-intro-checkpoint.mp4",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-native-approved-photo-frame429.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-original-v4-frame986.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-photo-fade-depth-v4-contact.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-requested-timing-contact.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-rings-wordmark-closeup.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-rn-approved-photo-frame486.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/approved-reference-native-rn-comparison.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/before-after-reference.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/proof.json",
+      "release/evidence/intro-ending-20261115/artifacts/android-export.json",
+      "release/evidence/intro-ending-20261115/artifacts/iphoneos.json",
+      "release/evidence/intro-ending-20261115/artifacts/iphonesimulator.json",
+      "release/evidence/intro-ending-20261115/checks.json",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-assembled.png",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-hold-ended.png",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-initial.png",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-late-ready-moving.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-assembled.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-hold-ended.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-initial.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-late-ready-moving.png",
+      "release/evidence/intro-ending-20261115/gpu/README.md",
+      "release/evidence/intro-ending-20261115/gpu/proof.json",
+      "release/evidence/intro-ending-20261115/preservation-audit.json",
+      "release/evidence/intro-ending-20261115/simulator/README.md",
+      "release/evidence/intro-ending-20261115/simulator/actual-ending-phase-contact.png",
+      "release/evidence/intro-ending-20261115/simulator/actual-photo-to-locked-ending-body-crop.mp4",
+      "release/evidence/intro-ending-20261115/simulator/proof.json",
+      "release/evidence/intro-ending-20261115/ui/14-qa-reduce-motion-restored-off.png",
+      "release/evidence/intro-ending-20261115/ui/46-home-single-tap-returned-locked-today.png",
+      "release/evidence/intro-ending-20261115/ui/48-home-double-tap-returned-locked-today.png",
+      "release/evidence/intro-ending-20261115/ui/57-v5-steel-home-cover-dark-clock.png",
+      "release/evidence/intro-ending-20261115/ui/57a-v5-home-faded-dark-white-clock.png",
+      "release/evidence/intro-ending-20261115/ui/59-dark-theme-persisted-after-cold-launch.png",
+      "release/evidence/intro-ending-20261115/ui/60-light-theme-restored-after-dark-cold-test.png",
+      "release/evidence/intro-ending-20261115/ui/91-reduced-motion-home-quick-locked-today.png",
+      "release/evidence/intro-ending-20261115/ui/README.md",
+      "release/evidence/intro-ending-20261115/ui/results.json",
+      "src/intro/GlobalLaunch.tsx",
+      "src/intro/HomeTransition.tsx",
+      "src/intro/SphereIntroSurface.tsx",
+      "src/intro/homeTransitionState.ts",
+      "src/intro/launchState.ts",
+      "src/intro/sphereHtml.ts",
+      "tests/homeTransitionState.test.ts",
+      "tests/introRuntime.test.ts",
+      "tests/introSurface.test.ts",
+      "tests/launchState.test.ts",
+      "tests/native-launch/LaunchUIQA.swift",
+      "tests/native-launch/README.md"
+    ],
+    "stagedFiles": [
+      "ARCHITECTURE.md",
+      "DECISIONS.md",
+      "PRODUCT_SNAPSHOT.md",
+      "TASKS.md",
+      "docs/APPROVED_OPENING_QA.md",
+      "docs/INTRO_ENDING_QA.md",
+      "release/evidence/approved-opening-20261114/physical-framed-final/README.md",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-depth-travel-frame597.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-first-intro-checkpoint.mp4",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-native-approved-photo-frame429.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-original-v4-frame986.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-photo-fade-depth-v4-contact.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-requested-timing-contact.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-rings-wordmark-closeup.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-rn-approved-photo-frame486.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/approved-reference-native-rn-comparison.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/before-after-reference.png",
+      "release/evidence/approved-opening-20261114/physical-framed-final/proof.json",
+      "release/evidence/intro-ending-20261115/artifacts/android-export.json",
+      "release/evidence/intro-ending-20261115/artifacts/iphoneos.json",
+      "release/evidence/intro-ending-20261115/artifacts/iphonesimulator.json",
+      "release/evidence/intro-ending-20261115/checks.json",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-assembled.png",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-hold-ended.png",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-initial.png",
+      "release/evidence/intro-ending-20261115/gpu/393-fractional-pause-late-ready-moving.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-assembled.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-hold-ended.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-initial.png",
+      "release/evidence/intro-ending-20261115/gpu/400-continuous-late-ready-moving.png",
+      "release/evidence/intro-ending-20261115/gpu/README.md",
+      "release/evidence/intro-ending-20261115/gpu/proof.json",
+      "release/evidence/intro-ending-20261115/preservation-audit.json",
+      "release/evidence/intro-ending-20261115/simulator/README.md",
+      "release/evidence/intro-ending-20261115/simulator/actual-ending-phase-contact.png",
+      "release/evidence/intro-ending-20261115/simulator/actual-photo-to-locked-ending-body-crop.mp4",
+      "release/evidence/intro-ending-20261115/simulator/proof.json",
+      "release/evidence/intro-ending-20261115/ui/14-qa-reduce-motion-restored-off.png",
+      "release/evidence/intro-ending-20261115/ui/46-home-single-tap-returned-locked-today.png",
+      "release/evidence/intro-ending-20261115/ui/48-home-double-tap-returned-locked-today.png",
+      "release/evidence/intro-ending-20261115/ui/57-v5-steel-home-cover-dark-clock.png",
+      "release/evidence/intro-ending-20261115/ui/57a-v5-home-faded-dark-white-clock.png",
+      "release/evidence/intro-ending-20261115/ui/59-dark-theme-persisted-after-cold-launch.png",
+      "release/evidence/intro-ending-20261115/ui/60-light-theme-restored-after-dark-cold-test.png",
+      "release/evidence/intro-ending-20261115/ui/91-reduced-motion-home-quick-locked-today.png",
+      "release/evidence/intro-ending-20261115/ui/README.md",
+      "release/evidence/intro-ending-20261115/ui/results.json",
+      "src/intro/GlobalLaunch.tsx",
+      "src/intro/HomeTransition.tsx",
+      "src/intro/SphereIntroSurface.tsx",
+      "src/intro/homeTransitionState.ts",
+      "src/intro/launchState.ts",
+      "src/intro/sphereHtml.ts",
+      "tests/homeTransitionState.test.ts",
+      "tests/introRuntime.test.ts",
+      "tests/introSurface.test.ts",
+      "tests/launchState.test.ts",
+      "tests/native-launch/LaunchUIQA.swift",
+      "tests/native-launch/README.md"
+    ],
+    "untrackedFileCount": 0,
+    "textFilesScanned": 30,
+    "binaryFilesExcludedFromTextScan": 28,
+    "newPNGMetadataFilesInspected": 26
+  },
+  "intendedProductionFiles": [
+    "src/intro/GlobalLaunch.tsx",
+    "src/intro/HomeTransition.tsx",
+    "src/intro/SphereIntroSurface.tsx",
+    "src/intro/homeTransitionState.ts",
+    "src/intro/launchState.ts",
+    "src/intro/sphereHtml.ts"
+  ],
+  "protectedFiles": [
+    {
+      "file": "TuneIntoHerSphereV4.tsx",
+      "sameBytes": true,
+      "sha256": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39"
+    },
+    {
+      "file": "assets/tune_into_her_sphere_source_clean.png",
+      "sameBytes": true,
+      "sha256": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c"
+    },
+    {
+      "file": "assets/tune_into_her_sphere_phase0_poster.png",
+      "sameBytes": true,
+      "sha256": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87"
+    },
+    {
+      "file": "src/intro/v4Shaders.generated.ts",
+      "sameBytes": true,
+      "sha256": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a"
+    },
+    {
+      "file": "src/intro/timeline.ts",
+      "sameBytes": true,
+      "sha256": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf"
+    },
+    {
+      "file": "src/intro/sceneRuntime.generated.ts",
+      "sameBytes": true,
+      "sha256": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2"
+    },
+    {
+      "file": "assets/fonts/LinuxLibertineO-Regular.otf",
+      "sameBytes": true,
+      "sha256": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114"
+    },
+    {
+      "file": "src/components/BrandMark.tsx",
+      "sameBytes": true,
+      "sha256": "04335cff6d1a20e1af4eacdb58cba9829cb79588271792bda79954543725bdb6"
+    },
+    {
+      "file": "src/intro/brand.generated.ts",
+      "sameBytes": true,
+      "sha256": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5"
+    },
+    {
+      "file": "src/intro/brandTexture.generated.ts",
+      "sameBytes": true,
+      "sha256": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe"
+    },
+    {
+      "file": "src/intro/brandBackground.generated.ts",
+      "sameBytes": true,
+      "sha256": "7e468afb668edf6a74f0b512e98c3c5c6d4e57ac0ce36bb0aaee983da2b34ebd"
+    },
+    {
+      "file": "assets/brand/official-mark.svg",
+      "sameBytes": true,
+      "sha256": "f4df61a255f22785485b5c6443969e45e99d583cd0e23209ed860003bab1129a"
+    },
+    {
+      "file": "assets/brand/steel-background.svg",
+      "sameBytes": true,
+      "sha256": "73cd4447bf72ba0f1e1872c47296b019f404df709f4be3c1cbdf9bca6668d312"
+    },
+    {
+      "file": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+      "sameBytes": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    }
+  ],
+  "protectedHomeTransitionExcludedBecauseIntentionallyChanged": true,
+  "pureMakeSceneFragment": {
+    "sameBytesAsProtectedBase": true,
+    "sameBytesAsAppBase": true,
+    "sha256": "732932e023147b71fb2d239e17bc8ef02e9fb62e3284617ab6234ac8c2573492"
+  },
+  "unchangedGroupsAgainstAppBase": {
+    "nativeProjectAndLaunchPipeline": {
+      "filesCompared": 35,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "38e8c2edc5a3b5eda8772e5c6ef0e0daaed0f2b9d792f94a258d28c3d2db18ef"
+    },
+    "brandPhotoAndFonts": {
+      "filesCompared": 13,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "75338f86f695e577818beb30d02982d0a6991d644db7157c5dc981b8d93687ec"
+    },
+    "cycleDomain": {
+      "filesCompared": 16,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "05f444f87b48158852d16ad0249687bae2fb5c613e33040dbf1028c9187a7504"
+    },
+    "subscriptionTrialNotificationsAndStores": {
+      "filesCompared": 19,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "e65eb54856828374fb45550e9a033646a984e39e30b10933b51608ffa757c25e"
+    },
+    "content": {
+      "filesCompared": 23,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "7db556faab295c7ff79eae1a176c353cd5b26bc57abc81a375b1fe1bb2da4741"
+    },
+    "backend": {
+      "filesCompared": 7,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "2118d6154cbe7fd1400f8672f0051f1438426f7a21d8df740a9d9009b2bfe9c7"
+    },
+    "routes": {
+      "filesCompared": 23,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "997ee94f25ce10367fc81aacba78dd5dbf0ce6b13254c39bf453ce80b981acb1"
+    },
+    "configurationAndDependencies": {
+      "filesCompared": 8,
+      "allSameBytesAsAppBase": true,
+      "changedFiles": [],
+      "manifestSHA256": "39e6ea3a88a2e614bafe25b5bff28deb172c3a848e2cbdf124ceaef882cd8685"
+    }
+  },
+  "exactPhotographCopies": [
+    {
+      "file": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+      "sameBytesAsApprovedReference": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    },
+    {
+      "file": "assets/launch/approved-opening.png",
+      "sameBytesAsApprovedReference": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    },
+    {
+      "file": "ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png",
+      "sameBytesAsApprovedReference": true,
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58"
+    }
+  ],
+  "candidateTextScan": {
+    "categories": [
+      "privateKey",
+      "githubCredential",
+      "awsAccessCredential",
+      "stripeSecret",
+      "googleApiCredential",
+      "revenueCatSecret",
+      "slackCredential",
+      "credentialAssignment",
+      "privateDeviceIdentifier",
+      "privateMachinePath",
+      "privateLANAddress",
+      "signingIdentifierAssignment"
+    ],
+    "newFindings": [],
+    "unchangedBaselinePatternMatchesSuppressed": 5,
+    "valuesNeverIncludedInAudit": true
+  },
+  "newMediaMetadataInspection": [
+    {
+      "file": "release/evidence/approved-opening-20261114/physical-framed-final/actual-iphone-first-intro-checkpoint.mp4",
+      "streams": [
+        "video"
+      ],
+      "formatTagKeys": [
+        "compatible_brands",
+        "encoder",
+        "major_brand",
+        "minor_version"
+      ]
+    },
+    {
+      "file": "release/evidence/intro-ending-20261115/simulator/actual-photo-to-locked-ending-body-crop.mp4",
+      "streams": [
+        "video"
+      ],
+      "formatTagKeys": [
+        "compatible_brands",
+        "encoder",
+        "major_brand",
+        "minor_version"
+      ]
+    }
+  ],
+  "physicalReleaseArtifact": {
+    "artifactSHA256": "fea888ecf794f5669e109dff311d42fdb6704c7f150c0e98fe49edabe77c0459",
+    "signedNativeHashMatchesArtifact": true,
+    "embeddedJavaScriptHashMatchesArtifact": true,
+    "sourceFilesCompared": 13,
+    "allCurrentSourceHashesMatch": true,
+    "updatesResourcesMatchArtifact": true,
+    "strictDeepCodesignVerifiedByAuditor": true,
+    "nativeExecutableUnchangedExcludingCodeSignature": true,
+    "unsignedNativeSHA256": "79d2c981756c137369e090d0ae730dbbe9c3a209e9ae18133496b3b397edba03",
+    "nativeRecompiled": false,
+    "nativeUpdatesEnabled": false,
+    "unsignedComparisonMethod": "Existing official packaging proof compares original and final SHA256 after codesign --remove-signature on temporary copies; auditor reviewed that assertion and independently rechecked signed native, embedded JS, source hashes, resources and strict signature. Unsigned-copy comparison was not rerun."
+  },
+  "findings": [],
+  "limits": [
+    "Pattern-based scanning cannot guarantee detection of every possible secret or personal item. Existing unchanged baseline matches are counted rather than reclassified as new exposures.",
+    "Audit covers this working-tree snapshot; any evidence added afterward requires a final refresh.",
+    "No runtime, visual acceptance, physical ending recording, speech or Android native verification was performed by this audit.",
+    "Reported 431 tests/47 files with 15000ms timeout and TypeScript/lint PASS are parent-owned validation, not rerun here."
+  ],
+  "result": "PASS"
+}

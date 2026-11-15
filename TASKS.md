@@ -2,6 +2,19 @@
 
 Updated: 2026-11-14 (Europe/Rome)
 
+## CURRENT — completed-sphere one-second ending (2026-11-15)
+
+- [x] Physically verify exact approved photo/native/RN framing and smooth GPU dissolve at c441ad3.
+- [x] Preserve all six original depth layers, target assembly, V4 and8s material motion.
+- [x] Count one1000ms active-visible hold from a presented assembled sphere; no duplicate delay.
+- [x] Prepare destination during hold; readiness immediately permits360ms fade after hold.
+- [x] Apply same behavior to Global/Home with Reduced Motion, pause, scope/access/id guards.
+- [x] Pass required source/integrity/navigation tests and native Light/Dark/Reduced Motion.
+- [x] Update-install final standalone iPhone Release preserving data; exact native/artifact proof.
+- [ ] Capture new physical ending/timestamps: WiFi only,0USBentries;180s wait could not start.
+- [x] Record actual final Simulator cold ending under bounded CPU load; native3cases pass.
+- [x] Review final diff/secrets; commit and push authorized feature branch. No service/store changes.
+
 ## NOW — Exact approved photographic opening, preserving corrected V5
 
 - [x] Diagnose/fix WK alpha and native/GPU ownership; preserve checkpoint38d3437.

@@ -162,8 +162,8 @@ Three new individually selectable cases are ready for the same simulator UUID on
 - `testHomeSingleAndDoubleTapStaysLockedSameProcess`: existing English/saved-cycle/no-access
   fixture, default text, native Reduce Motion OFF. From Settings, a single emblem tap
   and then a separate double-tap each show one cover, retain the approved full-motion
-  duration (8.5–17.5s bounded native observation), return to locked Today and retain PID.
-  The upper bound excludes two consecutive nine-second intros. It captures each cover
+  depth travel plus one-second final hold (5.4–10.5s bounded native observation), return to locked Today and retain PID.
+  The upper bound excludes two consecutive complete intros; source timing changed November15. It captures each cover
   and result; video remains the choreography proof. No purchase controls are touched.
 - `testCalendarFixedUpdateOpensSavedEditorWithoutWrites`: existing synthetic saved28/5,
   verifies the single update action is fully visible outside the scroll body and above

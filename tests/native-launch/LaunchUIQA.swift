@@ -847,8 +847,8 @@ extension LaunchUIQA {
       XCTAssertEqual(XCTWaiter.wait(for: [gone], timeout: 17), .completed)
       let duration = ProcessInfo.processInfo.systemUptime - started
       print("TIH_HOME_GESTURE double=\(doubleTap) seconds=\(duration)")
-      XCTAssertGreaterThanOrEqual(duration, 8.5, "Full-motion Home must retain the existing nine-second choreography")
-      XCTAssertLessThan(duration, 17.5, "A double tap must not queue two consecutive full intros")
+      XCTAssertGreaterThanOrEqual(duration, 5.4, "Full-motion Home retains all original depth travel, then one second of assembled V4")
+      XCTAssertLessThan(duration, 10.5, "A double tap must not queue two consecutive complete intros")
       assertLockedToday(in: app)
       XCTAssertEqual(try nativeProcess(in: app), process, "Home must not restart the application")
       capture(app, doubleTap ? "48-home-double-tap-returned-locked-today" : "46-home-single-tap-returned-locked-today")

@@ -9,6 +9,8 @@ export interface LaunchState {
   accessibilityReady: boolean;
   reducedMotion: boolean;
   active: boolean;
+  sphereAssembled: boolean;
+  /** GPU-owned visible-assembly hold has ended (or accessibility/fallback skipped it). */
   introComplete: boolean;
   initialization: LaunchInitialization;
   attempt: number;
@@ -20,6 +22,7 @@ export interface LaunchState {
 export type LaunchEvent =
   | { type: 'first-frame'; kind: 'gpu' | 'fallback' }
   | { type: 'accessibility'; reducedMotion: boolean; screenReader?: boolean }
+  | { type: 'intro-assembled' }
   | { type: 'intro-complete' }
   | { type: 'active'; value: boolean }
   | { type: 'initialization'; status: LaunchInitialization; attempt: number }
@@ -37,6 +40,7 @@ export function createLaunchState(active = true): LaunchState {
     accessibilityReady: false,
     reducedMotion: false,
     active,
+    sphereAssembled: false,
     introComplete: false,
     initialization: 'loading',
     attempt: 0,
@@ -50,6 +54,12 @@ export function createLaunchState(active = true): LaunchState {
 /** Turning motion back on cannot revive a sequence that this launch already skipped. */
 export function shouldAnimateLaunch(state: Pick<LaunchState, 'introComplete'>): boolean {
   return !state.introComplete;
+}
+
+/** Prepare the real Today frame during the visible sphere hold, still behind the cover. */
+export function shouldPrepareDestinationSpheres(state: Pick<LaunchState,
+  'fadeComplete' | 'sphereAssembled' | 'introComplete' | 'reducedMotion' | 'rendererFailed'>): boolean {
+  return state.fadeComplete || state.sphereAssembled || state.introComplete || state.reducedMotion || state.rendererFailed;
 }
 
 export function getLaunchPhase(state: LaunchState): LaunchPhase {
@@ -76,6 +86,8 @@ export function reduceLaunch(state: LaunchState, event: LaunchEvent): LaunchStat
         introComplete: state.introComplete || reducedMotion,
       };
     }
+    case 'intro-assembled':
+      return state.sphereAssembled ? state : { ...state, sphereAssembled: true };
     case 'intro-complete':
       return state.introComplete ? state : { ...state, introComplete: true };
     case 'active':

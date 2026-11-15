@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-14 (Europe/Rome)
+Updated: 2026-11-15 (Europe/Rome)
 
 ## GOAL
 
@@ -66,6 +66,27 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
+## CURRENT VISIBLE-ASSEMBLY ENDING — 2026-11-15
+
+- Preserves c441ad3's physically verified exact photo, corrected RN sizing and native/GPU
+  handoff. Protected V4, shader/texture, timeline, six-depth scene and8s loop stay byte-exact.
+- Global/Home now count one1000ms active GPU-clock hold after settled geometry has had a
+  presentation opportunity; destination prepares during it. Existing360ms fade waits for
+  real readiness; late readiness never restarts a hold. Standalone Today retains9000ms reveals.
+- Fixed fractional-radius comparison deadlock with sub-micropixel/ULP tolerance; actual
+ 320/393/412/414/430 targets regressions pass. Hidden/background time cannot consume hold.
+-431tests/47files, TypeScript, lint0errors/one prior warning, brand/raster/integrity PASS.
+  RealGPU1000/1100ms hold, pause and continued material motion verified. Final native
+  Dark/Home/cold, single/doubleHome, interaction/access guards and1.574sRMHome PASS;
+  Light and native/UIKit Reduced Motion OFF restored. Android production Hermes export PASS.
+- Final Simulator pressure cold video470frames/0black-or-white: observed settled sphere
+ ~17.04s→fade~18.14s→locked body~18.45s;~1.1s hold/~0.3s fade, distinct from host wall time.
+- Final signed normal iPhone JS Release update-installed preserving data; original native
+  executable unchanged apart from code signature, frameworks byte-identical. No Metro.
+  New ending physical video remains unavailable: wired screen absent (WiFi only/0USBentries).
+  Actual protected physical Today text requires legitimate access; none is bypassed.
+- [Current implementation, measured proof and limits](docs/INTRO_ENDING_QA.md).
+
 ## CURRENT EXACT PHOTOGRAPH / VERIFIED V5 — 2026-11-14
 
 - Original approved PNG supplies native iOS, RN loading and Home. All3 source copies
@@ -79,13 +100,14 @@ fertility, or mood-prediction product.
 - Accepted final Simulator:697frames under CPU pressure,0black/white, samephoto native/RN,
  48gradual dissolve frames and correct destination. Native Dark/Home/cold+2.124sRMHome
   pass; Light and native Reduce Motion OFF restored.
-- Final signed normal iPhone Release is installed with data intact. Continuous physical
-  capture is waiting for a working USB data connection; Mac currently sees Wi-Fi only.
-  An AVFoundation host DiskFull failure is retained; it is not accepted runtime proof.
+- Corrected signed normal iPhone Release physically verified November15 without Metro:
+ 2415frames/0black-or-white, full-photo native/RN MAE0.955/255, smooth42frame dissolve.
+ Data intact, entitlement-locked route preserved. This c441ad3 photograph/handoff checkpoint
+ predates the newly requested assembly+1s ending; original recorder failures remain distinct.
 - Exact-photo Android resources pass isolated checks; Android12+ native icon/full-screen
   limits and absent SDK/JDK/runtime remain explicit. No billing/service configuration work.
 - Report/evidence/limits: [APPROVED_OPENING_QA](docs/APPROVED_OPENING_QA.md).
-  Founder implementation approval and final physical video remain pending, separately.
+  Founder implementation approval remains pending, separately; new ending verification is in progress.
 
 ## PREVIOUS PREMIUM INTRO V5 / NATIVE STARTUP — 2026-11-14
 

@@ -37,10 +37,12 @@ extra rings, SVG lettering, color adjustment or artificial glow.
    queued-hide gate now precedes the UI-frame barrier. Expo hideAsync itself only queues
    UIKit removal; it is not described as a native paint acknowledgement.
 
-The photograph dissolves into the existing metal scene rather than a second emblem.
-The9000ms clock, camera, six depth ribbons, V4 source/texture/geometry and8000ms loop remain.
-Every ribbon retains a fully uncovered interval after the photo. There is no added final
-hold; the existing360ms destination fade waits for its actual screen/access readiness.
+At checkpoint c441ad3 the photograph dissolves into the existing metal scene rather than
+a second emblem. Its9000ms clock, camera, six depth ribbons, V4 source/texture/geometry and
+8000ms loop remain. Every ribbon retains a fully uncovered interval after the photo. That
+checkpoint has no added final hold and waits for9000ms before its360ms readiness fade.
+The November15 correction replaces that unnecessary post-assembly wait; this checkpoint
+is photographic/handoff proof, not acceptance of the new one-second ending.
 
 ## Completed final-source checks
 
@@ -70,16 +72,23 @@ hold; the existing360ms destination fade waits for its actual screen/access read
 
 Final corrected Release nativeSHA `f61157ecae61c1bc7b83062007d396c577d882204f6cff83701deb33114a83ca`,
 embeddedJS `7ebf1900b28dc3305b18908e3c4f02bb9b369cadc67776ae6fcd42e68ef73ac7`,
-was update-installed without deleting the app or user data. Final physical continuous
-recording remains pending an active data-capable USB connection. A recording started
-but failed with host AVFoundation DiskFull; its missing movie is not accepted proof.
-Space was recovered only from reproducible compiler/Pods caches; signed app artifacts,
-source, all original videos and accepted evidence remain. The current Mac subsequently
-reported Wi-Fi only and no pinned USB screen. No permission/pairing change is made.
+was update-installed without deleting the app or user data. On November15 a complete
+40.553217s wired physical cold recording succeeded without Metro.2415 decoded frames
+contain0black/nearblack/white flashes. Native and RN full-photo RGB MAE is0.955/255;
+58handoff frames have max consecutive change0.432/255;42dissolve frames progress smoothly,
+max1.622/255. The first photo/depth/V4/entitlement-locked journey was reviewed in the actual
+movie. [Actual iPhone checkpoint, closeups and privacy-reviewed clip](../release/evidence/approved-opening-20261114/physical-framed-final/README.md).
 
-Earlier physical native-photo pixels establish the original artwork/framing, but the
-pre-fix RN crop run is explicitly FAILED, not final smoothness proof. The final Simulator
-results cannot substitute for the requested new physical recording.
+Earlier recorder failures (host DiskFull and AVFoundation sample-limit failure) remain
+private diagnostic history, not accepted visual proof. The successful temporary host
+recorder uses a40s wall stop instead of a device-timestamp maxRecordedDuration; it changes
+no app permissions, pairing or source. Only reproducible compiler/Pods caches were removed
+to recover recording space. Signed original apps and accepted evidence remain.
+
+This recording verifies c441ad3's corrected photograph, crop and GPU handoff. It predates
+the new assembly-plus-one-second ending; it must not be presented as its timing acceptance.
+The actual phone has no valid entitlement, so the correct locked entry appears and paid
+Today content is never exposed. Founder implementation approval remains a separate review.
 
 ## Android and remaining boundaries
 
@@ -89,8 +98,7 @@ non-development Android Hermes export also passed and includes the exact origina
 its final-source hashes are recorded in the adjacent JavaScript export proof. Android12+
 uses a masked OS icon; full-screen exact-photo presentation starts in RN. JDK/SDK/adb/
 emulator are absent, so no Android native runtime/build claim is made. Real screen-reader
-speech is not newly recorded. Physical final visual review and Founder acceptance remain
-separate from automated/Simulator evidence. No store submission, backend/billing or production service configuration change was
+speech is not newly recorded. Founder acceptance remains separate from actual physical, automated and Simulator evidence. No store submission, backend/billing or production service configuration change was
 performed. The app configuration diff is only its two approved splash-image paths.
 
 All pre-framing Simulator/physical media and intermediate UI runs remain distinctly

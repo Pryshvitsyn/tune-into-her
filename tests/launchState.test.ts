@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   createLaunchState, getLaunchPhase, LAUNCH_FADE_MS,
-  reduceLaunch, shouldAnimateLaunch, type LaunchEvent, type LaunchState,
+  reduceLaunch, shouldAnimateLaunch, shouldPrepareDestinationSpheres, type LaunchEvent, type LaunchState,
 } from '../src/intro/launchState';
 import { DEPTH_LAYERS, INTRO_MS, sceneAt } from '../src/intro/timeline';
 
@@ -28,12 +28,12 @@ describe('global startup presentation', () => {
     expect(getLaunchPhase(send(state, { type: 'accessibility', reducedMotion: false }))).toBe('preparing');
   });
 
-  it('preserves the full nine-second six-layer scene even when the destination is ready immediately', () => {
+  it('preserves the six-layer scene and original reveal horizon when the destination is ready early', () => {
     const state = prepared();
     expect(getLaunchPhase(state)).toBe('animating');
     expect(state.introComplete).toBe(false);
     expect(shouldAnimateLaunch(state)).toBe(true);
-    // The scene's completion event owns the handoff; initialization never ends it.
+    // GPU presentation completion owns the handoff; initialization never ends it.
     expect(INTRO_MS).toBe(9000);
     expect(DEPTH_LAYERS).toBe(6);
   });
@@ -70,7 +70,7 @@ describe('global startup presentation', () => {
     expect(getLaunchPhase(send(state, { type: 'destination-ready', attempt: 0 }))).toBe('fading');
   });
 
-  it('reveals recoverable errors at scene completion while preserving all nine seconds beforehand', () => {
+  it('reveals recoverable errors after GPU presentation completion', () => {
     const state = send(visible(), { type: 'initialization', status: 'error', attempt: 0 });
     expect(getLaunchPhase(state)).toBe('animating');
     expect(getLaunchPhase(completeMotion(state))).toBe('error');
@@ -161,6 +161,35 @@ describe('global startup presentation', () => {
     const next = send(state, { type: 'intro-complete' }, { type: 'first-frame', kind: 'gpu' });
     expect(next.introComplete).toBe(true);
     expect(getLaunchPhase(next)).toBe('fading');
+  });
+
+  it('prepares hidden Today at assembly while retaining the complete GPU-owned visible hold', () => {
+    let state = prepared();
+    expect(shouldPrepareDestinationSpheres(state)).toBe(false);
+    state = send(state, { type: 'intro-assembled' });
+    expect(shouldPrepareDestinationSpheres(state)).toBe(true);
+    expect(state.introComplete).toBe(false);
+    expect(getLaunchPhase(state)).toBe('animating');
+    expect(reduceLaunch(state, { type: 'intro-assembled' })).toBe(state);
+    state = send(state, { type: 'intro-complete' });
+    expect(getLaunchPhase(state)).toBe('fading');
+  });
+
+  it('retains a completed hold through late readiness and background without repeating it', () => {
+    let state = send(visible(), { type: 'intro-assembled' }, { type: 'intro-complete' },
+      { type: 'active', value: false }, { type: 'initialization', status: 'ready', attempt: 0 },
+      { type: 'destination-ready', attempt: 0 });
+    expect(getLaunchPhase(state)).toBe('waiting');
+    expect(shouldPrepareDestinationSpheres(state)).toBe(true);
+    state = send(state, { type: 'active', value: true });
+    expect(getLaunchPhase(state)).toBe('fading');
+  });
+
+  it('prepares Today immediately for accessibility/fallback without needing assembly or a hold event', () => {
+    const reduced = send(visible(), { type: 'accessibility', reducedMotion: true });
+    expect(shouldPrepareDestinationSpheres(reduced)).toBe(true);
+    expect(shouldAnimateLaunch(reduced)).toBe(false);
+    expect(shouldPrepareDestinationSpheres(send(visible(), { type: 'renderer-failed' }))).toBe(true);
   });
 
   it('does not reopen the launch gate after completion on navigation, foreground or late retry', () => {

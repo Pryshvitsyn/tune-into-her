@@ -1,0 +1,24 @@
+{
+  "scope": "Offline non-development Android production JavaScript/Hermes and assets export only",
+  "nativeBuildOrRuntimeVerified": false,
+  "exactApprovedPhotoIncluded": true,
+  "photoSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+  "photoAssetPaths": [
+    "assets/7377cef9a4e7880701a33e0e6536832f"
+  ],
+  "bundles": [
+    {
+      "file": "_expo/static/js/android/entry-b41bad4bafcd164eed0deca6acddeb7b.hbc",
+      "bytes": 8735851,
+      "sha256": "4b265e1ec4a34b9987e5aec6ec259095d0a007179ac11c759cdb9348192a8a37"
+    }
+  ],
+  "sourceSHA256": {
+    "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+    "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+    "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+    "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf"
+  },
+  "limits": "No installed JDK/Android SDK/adb/emulator; this does not establish native Android readiness."
+}

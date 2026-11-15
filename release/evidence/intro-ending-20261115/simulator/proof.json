@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "kind": "Actual signed Release Simulator new-ending observation; physical new-ending capture unavailable",
+  "artifact": {
+    "kind": "Normal iOS Release; JS-only change packaged through unchanged official React Native/Expo Xcode phase scripts, then signed with existing identity",
+    "platform": "iphonesimulator",
+    "nativeRecompiled": false,
+    "originalSignedNativeSHA256": "bbdfe1c06d0000d5bb84fa3f7b7702a9b39e60811daba0bb9cf091aecadd9c4b",
+    "nativeBinarySHA256": "f21941f95032db939cbba80309a146c19c84e8fd7a81c6fd1660a3900926a083",
+    "unsignedNativeSHA256": "9a74f672549b1aea62708fe2f0d317b8cb93edbbf4f8505b487c17ef5bd3469c",
+    "nativeExecutableUnchangedExcludingCodeSignature": true,
+    "embeddedJavaScriptSHA256": "641211a73b6c5d8e28000ce1e44ce8183afe1c1f42693fcf6d82259c249eb91e",
+    "codesignVerified": true,
+    "normalReleasePressureMarkerAbsent": true,
+    "updatesResourcesMatch": true,
+    "nativeUpdatesEnabled": false,
+    "updatesResourcesSHA256": {
+      "app.manifest": "0b241bf058e3bb3963d6a43dd33effd48831974b51150f9e16f9e127c79a4a06",
+      "fingerprint": "64d7201bd7bcbad373e14fa6bf825c318fb6987bf493a97ce360da092dedadf1"
+    },
+    "sourceSHA256": {
+      "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+      "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+      "src/intro/homeTransitionState.ts": "81f85f488061ec2d37a1c7c29dc5c2ceb1938044c5644ad6cc2679966a85b14a",
+      "src/intro/launchState.ts": "22d556251d2fd57598b7364cebff7e4a89cbeda49a495f6b5e5379540edbe4d2",
+      "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+      "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+      "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+      "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+      "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+      "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+      "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+      "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "app.config.ts": "89d42e9ebfb86956a143422f1a1e299d0a992f08f74055f4058c5ea9430fd1cc"
+    },
+    "noAppDeletion": true,
+    "noNativeOrProvisioningChange": true
+  },
+  "sourceMovie": {
+    "sha256": "3e9524816bd60169a6519a6f17704f31f1d041e0d428d5e5b7214336a6648fd3",
+    "decodedOriginalFrames": 470,
+    "durationSeconds": 18.565,
+    "recordedWallSeconds": 40,
+    "videoPixels": [
+      750,
+      1334
+    ],
+    "limit": "MediaPTS span18.565s while host recording lasted40s; startup samples are sparse. All timing below is observed source-mediaPTS, not end-to-end host launch latency."
+  },
+  "observedTiming": {
+    "firstSettledSphere": {
+      "representativeFrame": 384,
+      "moviePTSSeconds": 17.053333,
+      "firstStableEdgeFrame": 383,
+      "firstStableEdgePTS": 17.036667,
+      "bracketSeconds": [
+        17.018333,
+        17.07
+      ],
+      "method": "Observed horizontal RGB edge peaks settle at radius279px left/282px right and remain there through18.111667s. Earlier right edge changes from292px near16.903s to283px at17.018s, then282px at17.036667s. Position is observed, not calculated from4500ms.",
+      "tolerance": "Approximately1\u20132edge pixels and1\u20132source frames (~33ms); texture/codec edges are not exact mathematical silhouette telemetry."
+    },
+    "sphereAboutOneSecondLater": {
+      "frame": 444,
+      "moviePTSSeconds": 18.051667,
+      "secondsAfterRepresentativeSettledFrame": 0.998334,
+      "originalSphereStillVisibleAndAnimated": true
+    },
+    "firstObservableFade": {
+      "lastPureSphereFrame": 447,
+      "lastPureSpherePTS": 18.111667,
+      "firstTextChangeFrame": 449,
+      "firstTextChangePTS": 18.136667,
+      "clearTextFrame": 451,
+      "clearTextPTS": 18.17,
+      "bracketSeconds": [
+        18.111667,
+        18.17
+      ],
+      "method": "Previously empty header scanline gains text contrast while the sphere fades; contrast rises from2.67 at18.111667 to7.0 at18.136667 and15.33 at18.17."
+    },
+    "visibleSettledSphereHold": {
+      "approximatelySeconds": 1.1,
+      "observedRangeSeconds": [
+        1.075,
+        1.133
+      ],
+      "limit": "Range uses observed stable-edge onset and first observable transition; exact native animation-start callback was not logged."
+    },
+    "lockedTextFirstVisiblePTS": 18.136667,
+    "lockedBodyFullyVisible": {
+      "frame": 468,
+      "moviePTSSeconds": 18.451667,
+      "stableContrastAlreadyAtFrame": 467,
+      "stableContrastPTS": 18.436667
+    },
+    "observableFadeDuration": {
+      "approximatelySeconds": 0.33,
+      "rangeSeconds": [
+        0.267,
+        0.34
+      ]
+    },
+    "exactInteractiveTimestamp": null,
+    "interactionLimit": "A video shows appearance, not touch delivery. Separate native UI tests reported by root verify interaction after overlay removal. No physical tap/paid-access verification is claimed."
+  },
+  "sequence": {
+    "approvedPhotoPreserved": true,
+    "originalDepthTravelObserved": true,
+    "allSixLayersProtectedBySeparateSourceGPUChecks": true,
+    "originalV4SettlesThenBriefHoldThenFade": true,
+    "correctDestination": "Existing locked entry; no valid paid access in this fixture",
+    "noSecondIntroOrExtraPostAssemblyWaitingObserved": true
+  },
+  "flashChecks": {
+    "method": "Every decoded original frame, central80percent ROI64x64 gray; black/nearblack when98percent<=18/30; white when98percent>=245",
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0
+  },
+  "publishedMedia": {
+    "phaseContact": {
+      "file": "actual-ending-phase-contact.png",
+      "sha256": "c18598c7a27c6ec6a026ee7fddcf91ecf35ef72df9cb61d3fa0f4bb594344764"
+    },
+    "completeClip": {
+      "file": "actual-photo-to-locked-ending-body-crop.mp4",
+      "sha256": "78d67ff7928823466de369fab8a7f293dfdd2db595a5c1292032e0624101b70e",
+      "sourceTrimSeconds": [
+        12.503333,
+        18.508333
+      ],
+      "cropSourcePixels": {
+        "x": 40,
+        "y": 360,
+        "width": 670,
+        "height": 750
+      },
+      "limit": "Continuous actual full sequence in a labelled body crop. Crop preserves the full central emblem/sphere and generic locked-access text while withholding cycle header/status/navigation; no speed change.",
+      "durationSeconds": 6.005,
+      "decodedFrames": 356,
+      "maximumSourcePTSRoundingSeconds": 1.0000000019161348e-06,
+      "noFramesDroppedOrDuplicated": true,
+      "metadataAndAudioRemoved": true
+    },
+    "phaseFrames": [
+      113,
+      219,
+      384,
+      444,
+      459,
+      468
+    ]
+  },
+  "privacy": {
+    "rawMovieNotPublished": true,
+    "cycleHeaderAndPrivateUIPreludeExcluded": true,
+    "noDeviceIDsProcessIDsOrNames": true,
+    "noSourceAudioOrMetadata": true
+  },
+  "scope": {
+    "physicalNewEndingVerified": false,
+    "paidTodayVerified": false,
+    "FounderVisualApprovalClaimed": false,
+    "sourceDeviceOrSettingsActionsByAnalyst": false
+  },
+  "limits": [
+    "Exact native/GPU presentation timestamps were not recorded. Observed pixel/frame timing bounds are stated explicitly.",
+    "This new ending is independently measured; the prior physical c441 photo checkpoint retained the old ending and is not relabelled as new physical proof."
+  ],
+  "outputValidation": {
+    "phaseContactFullyDecoded": true,
+    "allPhaseSamplesReviewed": true,
+    "clipPTSAndFrameCountChecked": true,
+    "noNewAppSourceOrDeviceActions": true
+  }
+}

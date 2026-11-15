@@ -1,0 +1,1259 @@
+{
+  "kind": "Real Chromium WebGL running-clock launch hold; not native app/UI evidence",
+  "sourceCommit": "c441ad36cdfca0824f05730ceff139a03df3298e",
+  "sourceSHA256": {
+    "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+    "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+    "src/intro/timeline.ts": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+    "src/intro/sceneRuntime.generated.ts": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+    "src/intro/v4Shaders.generated.ts": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+    "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+    "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+    "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+    "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd"
+  },
+  "photoSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+  "cases": [
+    {
+      "label": "400-continuous",
+      "width": 400,
+      "height": 800,
+      "targetRadius": 152,
+      "pausedProbe": false,
+      "screenshots": [
+        {
+          "file": "400-continuous-initial.png",
+          "sha256": "77389cc33edce97f91184329fd979aa163519acf490fe7224e0eda46172727f6",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": false,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 0,
+              "draws": 3,
+              "scene": {
+                "x": 200,
+                "y": 400,
+                "radius": 835.9018647772353,
+                "shell": 0,
+                "depth": 0,
+                "logoWidth": 304,
+                "logoOpacity": 1,
+                "camera": 0,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 6904.9000000059605
+              }
+            ],
+            "phase": 0,
+            "radius": 835.90185546875,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        },
+        {
+          "file": "400-continuous-assembled.png",
+          "sha256": "5f29ff1b0feabf9157d11d04d3318d24a75fe3f8caf42f543fc94c9cf10201e8",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": true,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 5099.9,
+              "draws": 113,
+              "scene": {
+                "x": 200,
+                "y": 400,
+                "radius": 152,
+                "shell": 1,
+                "depth": 1,
+                "logoWidth": 57.759999999999984,
+                "logoOpacity": 0,
+                "camera": 4.448254523659101,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 6904.9000000059605
+              },
+              {
+                "type": "clock",
+                "elapsed": 0,
+                "running": true,
+                "started": true,
+                "performanceMs": 7661.9000000059605
+              },
+              {
+                "type": "assembled",
+                "elapsed": 4533.200000000001,
+                "running": true,
+                "started": true,
+                "motionMs": 4533.200000000001,
+                "performanceMs": 12197.600000023842
+              }
+            ],
+            "phase": 4.0054521560668945,
+            "radius": 152,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        },
+        {
+          "file": "400-continuous-hold-ended.png",
+          "sha256": "da9b30480760a982b83461d7839dfae266a1b6051dcc9fc56d02dff9f6d945b9",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": true,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 6233.1,
+              "draws": 140,
+              "scene": {
+                "x": 200,
+                "y": 400,
+                "radius": 152,
+                "shell": 1,
+                "depth": 1,
+                "logoWidth": 57.759999999999984,
+                "logoOpacity": 0,
+                "camera": 4.448254523659101,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 6904.9000000059605
+              },
+              {
+                "type": "clock",
+                "elapsed": 0,
+                "running": true,
+                "started": true,
+                "performanceMs": 7661.9000000059605
+              },
+              {
+                "type": "assembled",
+                "elapsed": 4533.200000000001,
+                "running": true,
+                "started": true,
+                "motionMs": 4533.200000000001,
+                "performanceMs": 12197.600000023842
+              },
+              {
+                "type": "complete",
+                "elapsed": 5633.200000000001,
+                "running": true,
+                "started": true,
+                "motionMs": 5633.200000000001,
+                "assembledMotionMs": 4533.200000000001,
+                "heldMs": 1100,
+                "performanceMs": 13309.200000017881
+              }
+            ],
+            "phase": 4.89546537399292,
+            "radius": 152,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        },
+        {
+          "file": "400-continuous-late-ready-moving.png",
+          "sha256": "d85ec9e6dfe0fefc7878bc2d36b5e198cedb0eda9d9a6f4a93cc1b49aaaaf671",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": true,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 7233.1,
+              "draws": 179,
+              "scene": {
+                "x": 200,
+                "y": 400,
+                "radius": 152,
+                "shell": 1,
+                "depth": 1,
+                "logoWidth": 57.759999999999984,
+                "logoOpacity": 0,
+                "camera": 4.448254523659101,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 6904.9000000059605
+              },
+              {
+                "type": "clock",
+                "elapsed": 0,
+                "running": true,
+                "started": true,
+                "performanceMs": 7661.9000000059605
+              },
+              {
+                "type": "assembled",
+                "elapsed": 4533.200000000001,
+                "running": true,
+                "started": true,
+                "motionMs": 4533.200000000001,
+                "performanceMs": 12197.600000023842
+              },
+              {
+                "type": "complete",
+                "elapsed": 5633.200000000001,
+                "running": true,
+                "started": true,
+                "motionMs": 5633.200000000001,
+                "assembledMotionMs": 4533.200000000001,
+                "heldMs": 1100,
+                "performanceMs": 13309.200000017881
+              }
+            ],
+            "phase": 5.680863380432129,
+            "radius": 152,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        }
+      ],
+      "assemblySample": {
+        "state": {
+          "loaded": true,
+          "started": true,
+          "preparedToken": 1,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 4533.200000000001,
+          "draws": 97,
+          "scene": {
+            "x": 200,
+            "y": 400,
+            "radius": 152,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 57.759999999999984,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "messages": [
+          {
+            "type": "prepared",
+            "elapsed": 0,
+            "running": false,
+            "started": false,
+            "token": 1,
+            "performanceMs": 6904.9000000059605
+          },
+          {
+            "type": "clock",
+            "elapsed": 0,
+            "running": true,
+            "started": true,
+            "performanceMs": 7661.9000000059605
+          },
+          {
+            "type": "assembled",
+            "elapsed": 4533.200000000001,
+            "running": true,
+            "started": true,
+            "motionMs": 4533.200000000001,
+            "performanceMs": 12197.600000023842
+          }
+        ],
+        "phase": 3.5603668689727783,
+        "radius": 152,
+        "glError": 0,
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "completeSample": {
+        "state": {
+          "loaded": true,
+          "started": true,
+          "preparedToken": 1,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 5649.800000000001,
+          "draws": 125,
+          "scene": {
+            "x": 200,
+            "y": 400,
+            "radius": 152,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 57.759999999999984,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "messages": [
+          {
+            "type": "prepared",
+            "elapsed": 0,
+            "running": false,
+            "started": false,
+            "token": 1,
+            "performanceMs": 6904.9000000059605
+          },
+          {
+            "type": "clock",
+            "elapsed": 0,
+            "running": true,
+            "started": true,
+            "performanceMs": 7661.9000000059605
+          },
+          {
+            "type": "assembled",
+            "elapsed": 4533.200000000001,
+            "running": true,
+            "started": true,
+            "motionMs": 4533.200000000001,
+            "performanceMs": 12197.600000023842
+          },
+          {
+            "type": "complete",
+            "elapsed": 5633.200000000001,
+            "running": true,
+            "started": true,
+            "motionMs": 5633.200000000001,
+            "assembledMotionMs": 4533.200000000001,
+            "heldMs": 1100,
+            "performanceMs": 13309.200000017881
+          }
+        ],
+        "phase": 4.437342643737793,
+        "radius": 152,
+        "glError": 0,
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "milestones": {
+        "assembled": {
+          "type": "assembled",
+          "elapsed": 4533.200000000001,
+          "running": true,
+          "started": true,
+          "motionMs": 4533.200000000001,
+          "performanceMs": 12197.600000023842
+        },
+        "complete": {
+          "type": "complete",
+          "elapsed": 5633.200000000001,
+          "running": true,
+          "started": true,
+          "motionMs": 5633.200000000001,
+          "assembledMotionMs": 4533.200000000001,
+          "heldMs": 1100,
+          "performanceMs": 13309.200000017881
+        },
+        "activeHoldMilliseconds": 1100,
+        "reportedHeldMilliseconds": 1100,
+        "hostHoldMilliseconds": 1111.5999999940395
+      },
+      "lateReadinessSample": {
+        "state": {
+          "loaded": true,
+          "started": true,
+          "preparedToken": 1,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 6816.4,
+          "draws": 165,
+          "scene": {
+            "x": 200,
+            "y": 400,
+            "radius": 152,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 57.759999999999984,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "messages": [
+          {
+            "type": "prepared",
+            "elapsed": 0,
+            "running": false,
+            "started": false,
+            "token": 1,
+            "performanceMs": 6904.9000000059605
+          },
+          {
+            "type": "clock",
+            "elapsed": 0,
+            "running": true,
+            "started": true,
+            "performanceMs": 7661.9000000059605
+          },
+          {
+            "type": "assembled",
+            "elapsed": 4533.200000000001,
+            "running": true,
+            "started": true,
+            "motionMs": 4533.200000000001,
+            "performanceMs": 12197.600000023842
+          },
+          {
+            "type": "complete",
+            "elapsed": 5633.200000000001,
+            "running": true,
+            "started": true,
+            "motionMs": 5633.200000000001,
+            "assembledMotionMs": 4533.200000000001,
+            "heldMs": 1100,
+            "performanceMs": 13309.200000017881
+          }
+        ],
+        "phase": 5.353588104248047,
+        "radius": 152,
+        "glError": 0,
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      }
+    },
+    {
+      "label": "393-fractional-pause",
+      "width": 393,
+      "height": 852,
+      "targetRadius": 149.34,
+      "pausedProbe": true,
+      "screenshots": [
+        {
+          "file": "393-fractional-pause-initial.png",
+          "sha256": "84ab720a72ef7dd6ab3980f4d7af21183e62dad5ab470910fc0ec1d1aaed5293",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": false,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 0,
+              "draws": 3,
+              "scene": {
+                "x": 196.5,
+                "y": 426,
+                "radius": 880.8211542114334,
+                "shell": 0,
+                "depth": 0,
+                "logoWidth": 298.68,
+                "logoOpacity": 1,
+                "camera": 0,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 605.0999999940395
+              }
+            ],
+            "phase": 0,
+            "radius": 880.8211669921875,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        },
+        {
+          "file": "393-fractional-pause-assembled.png",
+          "sha256": "616d18402864ede4a0c725eceea9a0377afaf2e5491c766d7c279dfe92ecb6c1",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": true,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 5249.7,
+              "draws": 105,
+              "scene": {
+                "x": 196.5,
+                "y": 426,
+                "radius": 149.34000000000003,
+                "shell": 1,
+                "depth": 1,
+                "logoWidth": 56.74919999999999,
+                "logoOpacity": 0,
+                "camera": 4.448254523659101,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 605.0999999940395
+              },
+              {
+                "type": "clock",
+                "elapsed": 0,
+                "running": true,
+                "started": true,
+                "performanceMs": 861.9000000059605
+              },
+              {
+                "type": "assembled",
+                "elapsed": 4533.2,
+                "running": true,
+                "started": true,
+                "motionMs": 4533.2,
+                "performanceMs": 5411.299999982119
+              }
+            ],
+            "phase": 4.123104572296143,
+            "radius": 149.33999633789062,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        },
+        {
+          "file": "393-fractional-pause-hold-ended.png",
+          "sha256": "ae256067eaf5462351b8b9788158022bf85d0d4a6a87d96fbe791925a4d211b9",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": true,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 5999.8,
+              "draws": 123,
+              "scene": {
+                "x": 196.5,
+                "y": 426,
+                "radius": 149.34000000000003,
+                "shell": 1,
+                "depth": 1,
+                "logoWidth": 56.74919999999999,
+                "logoOpacity": 0,
+                "camera": 4.448254523659101,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 605.0999999940395
+              },
+              {
+                "type": "clock",
+                "elapsed": 0,
+                "running": true,
+                "started": true,
+                "performanceMs": 861.9000000059605
+              },
+              {
+                "type": "assembled",
+                "elapsed": 4533.2,
+                "running": true,
+                "started": true,
+                "motionMs": 4533.2,
+                "performanceMs": 5411.299999982119
+              },
+              {
+                "type": "clock",
+                "elapsed": 5499.8,
+                "running": false,
+                "started": true,
+                "performanceMs": 6383.299999982119
+              },
+              {
+                "type": "clock",
+                "elapsed": 5499.8,
+                "running": true,
+                "started": true,
+                "performanceMs": 6897.5
+              },
+              {
+                "type": "complete",
+                "elapsed": 5533.2,
+                "running": true,
+                "started": true,
+                "motionMs": 5533.2,
+                "assembledMotionMs": 4533.2,
+                "heldMs": 1000,
+                "performanceMs": 6944.0999999940395
+              }
+            ],
+            "phase": 4.7122321128845215,
+            "radius": 149.33999633789062,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        },
+        {
+          "file": "393-fractional-pause-late-ready-moving.png",
+          "sha256": "e4b10b198072acedf4412290a438f5a0a30251a3f668ee131c1622781e69541e",
+          "sample": {
+            "state": {
+              "loaded": true,
+              "started": true,
+              "preparedToken": 1,
+              "active": true,
+              "reduced": false,
+              "failed": false,
+              "elapsed": 7082.999999999999,
+              "draws": 151,
+              "scene": {
+                "x": 196.5,
+                "y": 426,
+                "radius": 149.34000000000003,
+                "shell": 1,
+                "depth": 1,
+                "logoWidth": 56.74919999999999,
+                "logoOpacity": 0,
+                "camera": 4.448254523659101,
+                "layers": 0
+              }
+            },
+            "messages": [
+              {
+                "type": "prepared",
+                "elapsed": 0,
+                "running": false,
+                "started": false,
+                "token": 1,
+                "performanceMs": 605.0999999940395
+              },
+              {
+                "type": "clock",
+                "elapsed": 0,
+                "running": true,
+                "started": true,
+                "performanceMs": 861.9000000059605
+              },
+              {
+                "type": "assembled",
+                "elapsed": 4533.2,
+                "running": true,
+                "started": true,
+                "motionMs": 4533.2,
+                "performanceMs": 5411.299999982119
+              },
+              {
+                "type": "clock",
+                "elapsed": 5499.8,
+                "running": false,
+                "started": true,
+                "performanceMs": 6383.299999982119
+              },
+              {
+                "type": "clock",
+                "elapsed": 5499.8,
+                "running": true,
+                "started": true,
+                "performanceMs": 6897.5
+              },
+              {
+                "type": "complete",
+                "elapsed": 5533.2,
+                "running": true,
+                "started": true,
+                "motionMs": 5533.2,
+                "assembledMotionMs": 4533.2,
+                "heldMs": 1000,
+                "performanceMs": 6944.0999999940395
+              }
+            ],
+            "phase": 5.5629754066467285,
+            "radius": 149.33999633789062,
+            "glError": 0,
+            "context": {
+              "alpha": true,
+              "antialias": true,
+              "depth": true,
+              "desynchronized": false,
+              "failIfMajorPerformanceCaveat": false,
+              "powerPreference": "default",
+              "premultipliedAlpha": true,
+              "preserveDrawingBuffer": false,
+              "stencil": false,
+              "xrCompatible": false
+            }
+          }
+        }
+      ],
+      "assemblySample": {
+        "state": {
+          "loaded": true,
+          "started": true,
+          "preparedToken": 1,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 4533.2,
+          "draws": 88,
+          "scene": {
+            "x": 196.5,
+            "y": 426,
+            "radius": 149.34000000000003,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 56.74919999999999,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "messages": [
+          {
+            "type": "prepared",
+            "elapsed": 0,
+            "running": false,
+            "started": false,
+            "token": 1,
+            "performanceMs": 605.0999999940395
+          },
+          {
+            "type": "clock",
+            "elapsed": 0,
+            "running": true,
+            "started": true,
+            "performanceMs": 861.9000000059605
+          },
+          {
+            "type": "assembled",
+            "elapsed": 4533.2,
+            "running": true,
+            "started": true,
+            "motionMs": 4533.2,
+            "performanceMs": 5411.299999982119
+          }
+        ],
+        "phase": 3.5603668689727783,
+        "radius": 149.33999633789062,
+        "glError": 0,
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "pause": {
+        "hostMilliseconds": 400,
+        "before": {
+          "state": {
+            "loaded": true,
+            "started": true,
+            "preparedToken": 1,
+            "active": false,
+            "reduced": false,
+            "failed": false,
+            "elapsed": 5499.8,
+            "draws": 107,
+            "scene": {
+              "x": 196.5,
+              "y": 426,
+              "radius": 149.34000000000003,
+              "shell": 1,
+              "depth": 1,
+              "logoWidth": 56.74919999999999,
+              "logoOpacity": 0,
+              "camera": 4.448254523659101,
+              "layers": 0
+            }
+          },
+          "messages": [
+            {
+              "type": "prepared",
+              "elapsed": 0,
+              "running": false,
+              "started": false,
+              "token": 1,
+              "performanceMs": 605.0999999940395
+            },
+            {
+              "type": "clock",
+              "elapsed": 0,
+              "running": true,
+              "started": true,
+              "performanceMs": 861.9000000059605
+            },
+            {
+              "type": "assembled",
+              "elapsed": 4533.2,
+              "running": true,
+              "started": true,
+              "motionMs": 4533.2,
+              "performanceMs": 5411.299999982119
+            },
+            {
+              "type": "clock",
+              "elapsed": 5499.8,
+              "running": false,
+              "started": true,
+              "performanceMs": 6383.299999982119
+            }
+          ],
+          "phase": 4.319532871246338,
+          "radius": 149.33999633789062,
+          "glError": 0,
+          "context": {
+            "alpha": true,
+            "antialias": true,
+            "depth": true,
+            "desynchronized": false,
+            "failIfMajorPerformanceCaveat": false,
+            "powerPreference": "default",
+            "premultipliedAlpha": true,
+            "preserveDrawingBuffer": false,
+            "stencil": false,
+            "xrCompatible": false
+          }
+        },
+        "after": {
+          "state": {
+            "loaded": true,
+            "started": true,
+            "preparedToken": 1,
+            "active": false,
+            "reduced": false,
+            "failed": false,
+            "elapsed": 5499.8,
+            "draws": 107,
+            "scene": {
+              "x": 196.5,
+              "y": 426,
+              "radius": 149.34000000000003,
+              "shell": 1,
+              "depth": 1,
+              "logoWidth": 56.74919999999999,
+              "logoOpacity": 0,
+              "camera": 4.448254523659101,
+              "layers": 0
+            }
+          },
+          "messages": [
+            {
+              "type": "prepared",
+              "elapsed": 0,
+              "running": false,
+              "started": false,
+              "token": 1,
+              "performanceMs": 605.0999999940395
+            },
+            {
+              "type": "clock",
+              "elapsed": 0,
+              "running": true,
+              "started": true,
+              "performanceMs": 861.9000000059605
+            },
+            {
+              "type": "assembled",
+              "elapsed": 4533.2,
+              "running": true,
+              "started": true,
+              "motionMs": 4533.2,
+              "performanceMs": 5411.299999982119
+            },
+            {
+              "type": "clock",
+              "elapsed": 5499.8,
+              "running": false,
+              "started": true,
+              "performanceMs": 6383.299999982119
+            }
+          ],
+          "phase": 4.319532871246338,
+          "radius": 149.33999633789062,
+          "glError": 0,
+          "context": {
+            "alpha": true,
+            "antialias": true,
+            "depth": true,
+            "desynchronized": false,
+            "failIfMajorPerformanceCaveat": false,
+            "powerPreference": "default",
+            "premultipliedAlpha": true,
+            "preserveDrawingBuffer": false,
+            "stencil": false,
+            "xrCompatible": false
+          }
+        },
+        "sceneClockUnchanged": true,
+        "phaseUnchanged": true
+      },
+      "completeSample": {
+        "state": {
+          "loaded": true,
+          "started": true,
+          "preparedToken": 1,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 5533.2,
+          "draws": 110,
+          "scene": {
+            "x": 196.5,
+            "y": 426,
+            "radius": 149.34000000000003,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 56.74919999999999,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "messages": [
+          {
+            "type": "prepared",
+            "elapsed": 0,
+            "running": false,
+            "started": false,
+            "token": 1,
+            "performanceMs": 605.0999999940395
+          },
+          {
+            "type": "clock",
+            "elapsed": 0,
+            "running": true,
+            "started": true,
+            "performanceMs": 861.9000000059605
+          },
+          {
+            "type": "assembled",
+            "elapsed": 4533.2,
+            "running": true,
+            "started": true,
+            "motionMs": 4533.2,
+            "performanceMs": 5411.299999982119
+          },
+          {
+            "type": "clock",
+            "elapsed": 5499.8,
+            "running": false,
+            "started": true,
+            "performanceMs": 6383.299999982119
+          },
+          {
+            "type": "clock",
+            "elapsed": 5499.8,
+            "running": true,
+            "started": true,
+            "performanceMs": 6897.5
+          },
+          {
+            "type": "complete",
+            "elapsed": 5533.2,
+            "running": true,
+            "started": true,
+            "motionMs": 5533.2,
+            "assembledMotionMs": 4533.2,
+            "heldMs": 1000,
+            "performanceMs": 6944.0999999940395
+          }
+        ],
+        "phase": 4.345765113830566,
+        "radius": 149.33999633789062,
+        "glError": 0,
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "milestones": {
+        "assembled": {
+          "type": "assembled",
+          "elapsed": 4533.2,
+          "running": true,
+          "started": true,
+          "motionMs": 4533.2,
+          "performanceMs": 5411.299999982119
+        },
+        "complete": {
+          "type": "complete",
+          "elapsed": 5533.2,
+          "running": true,
+          "started": true,
+          "motionMs": 5533.2,
+          "assembledMotionMs": 4533.2,
+          "heldMs": 1000,
+          "performanceMs": 6944.0999999940395
+        },
+        "activeHoldMilliseconds": 1000,
+        "reportedHeldMilliseconds": 1000,
+        "hostHoldMilliseconds": 1532.800000011921
+      },
+      "lateReadinessSample": {
+        "state": {
+          "loaded": true,
+          "started": true,
+          "preparedToken": 1,
+          "active": true,
+          "reduced": false,
+          "failed": false,
+          "elapsed": 6599.7,
+          "draws": 138,
+          "scene": {
+            "x": 196.5,
+            "y": 426,
+            "radius": 149.34000000000003,
+            "shell": 1,
+            "depth": 1,
+            "logoWidth": 56.74919999999999,
+            "logoOpacity": 0,
+            "camera": 4.448254523659101,
+            "layers": 0
+          }
+        },
+        "messages": [
+          {
+            "type": "prepared",
+            "elapsed": 0,
+            "running": false,
+            "started": false,
+            "token": 1,
+            "performanceMs": 605.0999999940395
+          },
+          {
+            "type": "clock",
+            "elapsed": 0,
+            "running": true,
+            "started": true,
+            "performanceMs": 861.9000000059605
+          },
+          {
+            "type": "assembled",
+            "elapsed": 4533.2,
+            "running": true,
+            "started": true,
+            "motionMs": 4533.2,
+            "performanceMs": 5411.299999982119
+          },
+          {
+            "type": "clock",
+            "elapsed": 5499.8,
+            "running": false,
+            "started": true,
+            "performanceMs": 6383.299999982119
+          },
+          {
+            "type": "clock",
+            "elapsed": 5499.8,
+            "running": true,
+            "started": true,
+            "performanceMs": 6897.5
+          },
+          {
+            "type": "complete",
+            "elapsed": 5533.2,
+            "running": true,
+            "started": true,
+            "motionMs": 5533.2,
+            "assembledMotionMs": 4533.2,
+            "heldMs": 1000,
+            "performanceMs": 6944.0999999940395
+          }
+        ],
+        "phase": 5.18339204788208,
+        "radius": 149.33999633789062,
+        "glError": 0,
+        "context": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "default",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Actual production renderer/control runtime with real requestAnimationFrame. No test seek, synthetic GPU, altered shader or scene clock.",
+    "External photograph/atmosphere use the shared production curves in CSS. This does not run React Native, native splash, navigation, access gates or actual Today.",
+    "Screenshots are asynchronous samples near milestone events, not proof of exact native presentation.",
+    "This probe validates launch completion and unchanged ongoing material motion. Prior protected V4 raw/presentation comparisons and104GPU checkpoints remain separate historical proof."
+  ],
+  "exceptions": [],
+  "passed": true,
+  "date": "2026-11-15",
+  "privacy": "Only source hashes, relative browser timings and reviewed app-artwork pixels; no native device/process identifiers, raw logs, HTML/base64 or Chrome profile.",
+  "protectedSceneFragmentSHA256": "732932e023147b71fb2d239e17bc8ef02e9fb62e3284617ab6234ac8c2573492",
+  "allSourceHashesStillMatch": true
+}

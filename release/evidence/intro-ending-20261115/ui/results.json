@@ -1,0 +1,131 @@
+{
+  "kind": "Final native Simulator ending/theme/Home/Reduced Motion UI cases",
+  "result": "PASS",
+  "structuredSummary": {
+    "result": "Passed",
+    "passedTests": 3,
+    "failedTests": 0,
+    "skippedTests": 0,
+    "totalTestCount": 3
+  },
+  "resultBundle": "ui-final.xcresult",
+  "artifact": "../artifacts/iphonesimulator.json",
+  "artifactSHA256": "8f6f2135cdd961b5d519bce85c3293d0c570f4b446e8cc514a13317d1c5bb56e",
+  "allArtifactSourceHashesMatchCurrentSource": true,
+  "sourceFilesCompared": 13,
+  "runner": "Existing compiled XCUITest runner with xcodebuild test-without-building",
+  "noCompileActionsObservedInLog": true,
+  "cases": [
+    {
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "result": "PASS",
+      "caseDurationSeconds": 57.892,
+      "nativeCenterRetryCount": 0,
+      "savedDarkAcrossHomeAndColdVerified": true,
+      "HomeSameProcessVerified": true,
+      "earlyFullPhotographAndDarkClockVisuallyReviewed": true,
+      "sameHomeCoverDarkWhiteClockPredicatePassed": true,
+      "LightAndLockedDestinationRestored": true,
+      "openingScreenshotElapsedUnknown": true,
+      "openingScreenshotIsFrameZeroProof": false
+    },
+    {
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "result": "PASS",
+      "caseDurationSeconds": 34.074,
+      "nativeCenterRetryCount": 0,
+      "gestures": [
+        {
+          "type": "single",
+          "totalObservedSeconds": 9.87580479166354
+        },
+        {
+          "type": "double",
+          "totalObservedSeconds": 9.317825708334567
+        }
+      ],
+      "sameProcessAndLockedAccessAfterBothGesturesVerified": true,
+      "observedDurationGateSeconds": {
+        "minimum": 5.4,
+        "maximumExclusive": 10.5
+      },
+      "gestureDurationsMeasureVisibleHold": false
+    },
+    {
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "result": "PASS",
+      "caseDurationSeconds": 45.51,
+      "nativeCenterRetryCount": 0,
+      "HomeSeconds": 1.5742002916813362,
+      "sameProcessAndLockedAccessVerified": true,
+      "UIKitReduceMotionEnabledBeforeHomeVerified": true,
+      "nativeOffAndUIKitFalseCleanup": true,
+      "appReactivatedAfterCleanup": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "60-light-theme-restored-after-dark-cold-test.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "1043adec1c8bde38fa897edbe39863a3c1e9206e0dc1507d52631777902d7ee1",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "59-dark-theme-persisted-after-cold-launch.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "f30f51b254ee0b1efbce08c6fe7d9a4edf84cee0c30383314cd37923ba30db3b",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "57a-v5-home-faded-dark-white-clock.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "f8d591365b1860349dcbc41c67af03e34da0e980647e6f73c1ef6e8de405f53d",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "57-v5-steel-home-cover-dark-clock.png",
+      "test": "testDarkThemePersistsAcrossHomeAndColdLaunchThenRestoreLight",
+      "sha256": "e31052cbbb0c05b59c38e63802254ff29a678eac03b867483da9055b8a3f0064",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "48-home-double-tap-returned-locked-today.png",
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "sha256": "8fb7c5e1fa922b843ffe5342a0f26fb5bfc2e97b2e10080741e06d095ee00bd8",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "46-home-single-tap-returned-locked-today.png",
+      "test": "testHomeSingleAndDoubleTapStaysLockedSameProcess",
+      "sha256": "5d0a4dab845c509d04e8efd664de3fc116fdeb29df650cc29271aab8464ac3bc",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "14-qa-reduce-motion-restored-off.png",
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "sha256": "3126fff2cd3feeadbc5f48e4aef14e0d86c5918e58568e3301368880d2cccf9b",
+      "originalIDATBytesPreserved": true
+    },
+    {
+      "file": "91-reduced-motion-home-quick-locked-today.png",
+      "test": "testReducedMotionHomeReturnsFromPrivacyWithoutFullScene",
+      "sha256": "667efaa6f0e3d930c6906cc15ac4e43f1d6b3fbd454f447fa0c449daeb495acd",
+      "originalIDATBytesPreserved": true
+    }
+  ],
+  "finalState": {
+    "LightRestored": true,
+    "lockedToday": true,
+    "nativeReduceMotionSwitch": "0",
+    "UIKitReducedMotionEnabled": false,
+    "appForegroundByCleanup": true
+  },
+  "privacy": "Owned synthetic SE3 fixture only. No real-user cycle content, purchase, protected guidance, app reset or runtime-clock modification. Raw logs, AX hierarchies, attachment/device identifiers and result manifest stay private. PNG text/EXIF/time metadata removed; IDAT and color chunks retained.",
+  "limits": [
+    "Native UI gesture timings include GPU initialization, automation/AX work, navigation and fade; they do not isolate or measure the one-second assembled-sphere hold.",
+    "The early Home image visibly shows the full photograph, but exact elapsed time is unknown and it is not a frame-zero/continuous-handoff proof.",
+    "Screenshot57a shows the Dark locked destination after Home by the time of capture; its legacy filename is not proof that the intro cover remains visible in that image.",
+    "These three Simulator cases verify locked navigation/access gates, not protected Today content, physical-device smoothness, Android runtime or spoken accessibility.",
+    "No Founder visual acceptance is inferred from automated passes."
+  ]
+}

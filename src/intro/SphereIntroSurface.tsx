@@ -29,6 +29,8 @@ interface Props {
   launch?: boolean;
   /** Actual configured GPU frame or a loaded, visually compatible native fallback. */
   onFirstFrame?(kind: IntroFirstFrame): void;
+  /** Launch-only: settled sphere has had a foreground presentation opportunity. */
+  onAssembled?(): void;
   onComplete(): void;
   onError?(message: string): void;
 }
@@ -40,7 +42,7 @@ function rgb(hex: string): number[] {
 
 /** Shared launch/Today surface. The same WebView keeps animating V4 after completion. */
 export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function SphereIntroSurface(
-  {target, elapsed, animate, active, playbackAllowed = true, preferencesReady, reducedMotion, ink, launch = false, onFirstFrame, onComplete, onError}, forwardedRef,
+  {target, elapsed, animate, active, playbackAllowed = true, preferencesReady, reducedMotion, ink, launch = false, onFirstFrame, onAssembled, onComplete, onError}, forwardedRef,
 ) {
   const { prepareDestinationSpheres } = useLaunchPresentation();
   const preparationAllowed = launch || prepareDestinationSpheres;
@@ -59,6 +61,7 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   const started = useRef(false);
   const skipped = useRef(false);
   const delivered = useRef(false);
+  const assemblyDelivered = useRef(false);
   const firstFrameDelivered = useRef(false);
   const failedRef = useRef(false);
   const prepared = useRef(false);
@@ -71,8 +74,8 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
   const uiActive = useSharedValue(playbackActive);
   const uiAlive = useSharedValue(true);
   const uiCoverReady = useSharedValue(false);
-  const callbacks = useRef({onFirstFrame,onComplete,onError});
-  callbacks.current = {onFirstFrame,onComplete,onError};
+  const callbacks = useRef({onFirstFrame,onAssembled,onComplete,onError});
+  callbacks.current = {onFirstFrame,onAssembled,onComplete,onError};
 
   const complete = useCallback(() => {
     if (!alive.current || delivered.current) return;
@@ -189,8 +192,8 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
     if(!ready || failed || !preparationAllowed || !preferencesReady || !active || !validCircle(target) || started.current) return;
     started.current = true;
     send({type:'configure',target,ink:rgb(ink)});
-    send({type:'prepare',animate:animate && !skipped.current,reducedMotion,photographicOpening:true,token:1});
-  }, [ready,failed,preparationAllowed,preferencesReady,active,target,animate,reducedMotion,ink,send]);
+    send({type:'prepare',animate:animate && !skipped.current,reducedMotion,photographicOpening:true,launch,token:1});
+  }, [ready,failed,preparationAllowed,preferencesReady,active,target,animate,reducedMotion,ink,launch,send]);
   useEffect(() => {
     if(ready && started.current && !failed) send({type:'reduce-motion',value:reducedMotion});
   }, [ready,reducedMotion,failed,send]);
@@ -234,17 +237,24 @@ export const SphereIntroSurface = forwardRef<SphereIntroHandle, Props>(function 
         if(data.running && t<INTRO_MS) {
           elapsed.value=withTiming(INTRO_MS,{duration:INTRO_MS-t,easing:Easing.linear,reduceMotion:ReduceMotion.Never});
         }
+      } else if(data.type === 'assembled') {
+        if (!launch || !released.current || failedRef.current || assemblyDelivered.current) return;
+        assemblyDelivered.current = true;
+        callbacks.current.onAssembled?.();
       } else if(data.type === 'complete') {
         if (!released.current) return;
         setFinished(true);
-        cancelAnimation(elapsed); elapsed.value=INTRO_MS; complete();
+        // Launch completion is a presentation milestone, not scene time9000.
+        // Keep atmosphere/material motion continuous throughout readiness and fade.
+        if (!launch) {cancelAnimation(elapsed); elapsed.value=INTRO_MS;}
+        complete();
       } else if(data.type === 'error') {
         fail(data.message || 'V4 renderer failed');
       }
     } catch(error) {
       if(__DEV__) console.warn('[Tune Into Her intro] Invalid WebView message',error);
     }
-  }, [complete,elapsed,fail,handoffStage,send]);
+  }, [complete,elapsed,fail,handoffStage,launch,send]);
 
   const content = <View testID={frameReady && !failed ? 'intro-owner-gpu' : 'intro-owner-fallback'} pointerEvents="none" accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={StyleSheet.absoluteFill}>
     {source ? <Animated.View testID="intro-gpu-surface" style={[StyleSheet.absoluteFill,gpuStyle]}><WebView

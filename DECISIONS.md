@@ -117,3 +117,22 @@ scaling and accessible controls rather than clipping content.
 
 Reason: The Founder requested the attached onboarding redesign alongside global startup;
 this supersedes earlier visual drafts only within the approved presentation scope.
+
+
+## D-011 — Exact photograph and visible assembled-sphere ending
+Date recorded: 2026-11-15 (Europe/Rome)
+Status: APPROVED by the Founder's final intro image/ending brief; IMPLEMENTED in source;
+actual new ending verification is recorded separately in the current QA report.
+
+Decision: Use the exact immutable Founder PNG in native launch and the shared RN fallback.
+Retain its framing, all existing six-layer motion, protected V4 and eight-second loop.
+For Global/Home, count one approximately1000ms active-visible hold after final sphere
+assembly, then the existing360ms readiness fade. Prepare destination during that hold;
+late readiness adds no second hold. Reduced Motion skips it. Existing access and route
+decisions remain authoritative.
+
+Reason: The existing scene reaches final geometry at4500ms;4500–9000 is the standalone
+Today's text-reveal horizon. Waiting for that horizon behind a launch-only cover added
+unnecessary post-assembly waiting. This supersedes D-009's nine-second-plus-extra-second
+presentation duration and the intervening removal of the extra hold, without retiming or
+truncating any depth layer. The standalone Today timeline remains unchanged.

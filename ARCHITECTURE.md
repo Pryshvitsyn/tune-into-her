@@ -48,13 +48,21 @@ local onboarding state and entitlement readiness to choose when a destination ca
 revealed. Existing routes and Today access checks remain authoritative; initialization
 or presentation readiness cannot grant trial or paid access.
 
-`launchState` is a pure readiness/lifecycle model: explicit renderer completion ends the
-original 9000ms scene and immediately permits the existing360ms fade when ready.
-There is no extra fixed hold or JS frame timer. The shared
+`launchState` is a pure readiness/lifecycle model. Global/Home use the renderer's visible
+assembly milestone (original geometry settles at4500ms), then one1000ms active GPU-clock
+hold. A finished GPU draw and subsequent foreground RAF provide a presentation opportunity;
+this is not claimed as a native compositor acknowledgement. Final geometry comparisons
+allow1e-6px floating-point error without changing scene math. Completion permits the existing
+360ms fade as soon as destination readiness is satisfied. There is no JS hold timer. The shared
 `SphereIntroSurface` and WebView runtime render the same approved timeline, scene,
 shaders, logo and V4 material; there is no second WebGL implementation. The material
 keeps moving while initialization is slow. Fade requires current-attempt initialization
-and destination paint readiness. Initialization failures expose Retry; completed
+and destination paint readiness. Destination sphere preparation starts at assembly, under
+the cover; Home routes/unpauses Today then and latches readiness independently of hold-end.
+Late readiness never restarts the hold. The scene clock continues unchanged through any
+readiness wait, retaining the V4 material loop. Standalone Today keeps its original9000ms
+text-reveal timeline; Global/Home do not wait out that text-only horizon. Initialization
+failures expose Retry; completed
 choreography is retained and stale attempt callbacks cannot release the new gate.
 
 `LaunchPresentation` coordinates destination visibility and accessibility and suppresses
@@ -67,7 +75,7 @@ consumed while the launch presentation blocks navigation. These are presentation
 not changes to onboarding persistence or billing policy.
 
 The module-scope Expo splash lock bridges native startup. The native storyboard/system
-splash is static, using the original outlined logo and approved first-frame silver;
+splash is static, using the exact approved photograph and centered aspect-fill framing;
 WebGL begins only when the React Native/WebView surface runs. Hiding waits for a loaded
 compatible image or ready GPU frame and paint callbacks. `app.config.ts`, the canonical
 launch assets and `with-approved-launch-splash.cjs` retain this setup across native
@@ -110,7 +118,7 @@ while preserving saved destination themes and all routing/access handlers.
 The shared GPU presentation uses an explicitly associated-alpha context and a final
 output adapter; protected V4/scene functions remain straight-color calculations. Native
 ownership is two-phase: prepare draws a frozen configured frame, UI-thread covered
-paints/reveal commit its visibility, then release starts the original9s/8s clocks.
+paints/reveal commit its visibility, then release starts the unchanged scene/material clocks.
 An opaque cover prevents independently blended fallback and GPU logos. No clock advances
 on a hidden/prepared surface; inactive transfers are re-presented on foreground.
 

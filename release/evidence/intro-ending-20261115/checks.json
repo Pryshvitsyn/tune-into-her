@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-15",
+  "sourceBaseline": "c441ad36cdfca0824f05730ceff139a03df3298e",
+  "applicationTests": {
+    "command": "npm test -- --maxWorkers=2 --testTimeout=15000",
+    "passedTests": 431,
+    "passedFiles": 47,
+    "failed": 0,
+    "durationSeconds": 20.49,
+    "assertionsDisabled": false,
+    "limit": "Earlier concurrent-package run exceeded the old5s PNG-test timeout; this complete15s-bounded run passed."
+  },
+  "typecheck": "PASS",
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 1,
+    "warningFile": ".expo/types/router.d.ts"
+  },
+  "brandRasterCheck": "PASS: generate-intro-brand.cjs --check --raster-check",
+  "nativeUICases": {
+    "passed": 3,
+    "failed": 0,
+    "DarkHomeColdSeconds": 57.892,
+    "HomeSingleDoubleCaseSeconds": 34.074,
+    "ReducedMotionHomeSeconds": 1.5742002916813362,
+    "ReducedMotionCaseSeconds": 45.51,
+    "LightRestored": true,
+    "nativeReducedMotionRestoredOff": true,
+    "UIKitReducedMotionRestoredFalse": true
+  },
+  "sourceSHA256": {
+    "src/intro/sphereHtml.ts": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+    "src/intro/SphereIntroSurface.tsx": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+    "src/intro/GlobalLaunch.tsx": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+    "src/intro/HomeTransition.tsx": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+    "src/intro/launchState.ts": "22d556251d2fd57598b7364cebff7e4a89cbeda49a495f6b5e5379540edbe4d2",
+    "src/intro/homeTransitionState.ts": "81f85f488061ec2d37a1c7c29dc5c2ceb1938044c5644ad6cc2679966a85b14a"
+  },
+  "physicalNewEnding": {
+    "installedFinalNormalRelease": true,
+    "dataReset": false,
+    "recorded": false,
+    "reason": "No wired iPhone screen available during180s bounded attempt; WiFi only, USB inventory0iPhone entries. Earlier c441 photo proof is separate."
+  },
+  "limits": [
+    "Native UI cases use the existing isolated SE3 synthetic/no-access fixture.",
+    "Native test total case/gesture times include automation overhead; use recorded sphere geometry/framePTS for hold timing.",
+    "No actual unlocked physical Today content/tap, Android native runtime or spoken-reader acceptance is claimed."
+  ],
+  "nativeRecordedEnding": {
+    "sourceFrames": 470,
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0,
+    "settlingPTSSeconds": [
+      17.018,
+      17.07
+    ],
+    "representativeSettledPTSSeconds": 17.053,
+    "stillAnimatedAfterAboutOneSecondPTSSeconds": 18.052,
+    "firstFadeAndTextPTSSeconds": [
+      18.137,
+      18.17
+    ],
+    "lockedBodyFullyVisiblePTSSeconds": [
+      18.437,
+      18.452
+    ],
+    "holdApproximatelySeconds": 1.1,
+    "fadeApproximatelySeconds": 0.3,
+    "touchInteractiveExactPTSMeasured": false,
+    "scope": "Actual Simulator video; body crop retains central artwork/sphere and generic locked text; native interactions separately pass."
+  }
+}

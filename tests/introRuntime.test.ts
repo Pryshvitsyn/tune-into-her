@@ -12,11 +12,11 @@ import { advanceSurfaceHandoff, type SurfaceHandoffStage } from '../src/intro/su
 import { INTRO_MS, sceneAt } from '../src/intro/timeline';
 import { V4_FRAGMENT } from '../src/intro/v4Shaders.generated';
 
-interface RuntimeMessage { type: string; elapsed: number; started: boolean; running: boolean }
+interface RuntimeMessage { type: string; elapsed: number; started: boolean; running: boolean; motionMs?: number; heldMs?: number }
 interface RuntimeState { elapsed: number; active: boolean; reduced: boolean; draws: number; scene: { x: number; y: number; radius: number; layers: number } }
 
 /** Execute the real control/clock runtime; this is not a real GPU or visual test. */
-async function bootRuntime() {
+async function bootRuntime(width = 400, height = 800) {
   let now = 100;
   let frameId = 0;
   const frames = new Map<number, (time: number) => void>();
@@ -73,7 +73,7 @@ async function bootRuntime() {
   }
   const script = makeSphereHtml('AAAA', true).split('<script>')[1]!.split('</script>')[0]!;
   vm.runInNewContext(script, {
-    window, document, Image: LocalImage, innerWidth: 400, innerHeight: 800,
+    window, document, Image: LocalImage, innerWidth: width, innerHeight: height,
     devicePixelRatio: 2, Date: { now: () => now },
     requestAnimationFrame: (callback: (time: number) => void) => { frames.set(++frameId, callback); return frameId; },
     cancelAnimationFrame: (id: number) => frames.delete(id),
@@ -93,9 +93,9 @@ async function bootRuntime() {
   };
 }
 
-function start(runtime: Awaited<ReturnType<typeof bootRuntime>>, animate = true, reducedMotion = false) {
+function start(runtime: Awaited<ReturnType<typeof bootRuntime>>, animate = true, reducedMotion = false, launch = false) {
   runtime.command({ type: 'configure', target: { x: 200, y: 470, radius: 100 }, ink: [.16, .27, .35] });
-  runtime.command({ type: 'prepare', token: 1, animate, reducedMotion });
+  runtime.command({ type: 'prepare', token: 1, animate, reducedMotion, launch });
   runtime.command({ type: 'release', token: 1 });
   runtime.step(1); // first RAF establishes its monotonic anchor
 }
@@ -378,6 +378,105 @@ describe('shared scene runtime lifecycle', () => {
     expect(runtime.frames.size).toBe(0);
     const draws = runtime.state().draws; runtime.step(10_000);
     expect(runtime.state().draws).toBe(draws);
+  });
+});
+
+describe('visible final sphere launch hold', () => {
+  it('waits for final geometry, another presentation frame, and one active second without changing scene time', async () => {
+    const runtime = await bootRuntime(); start(runtime, true, false, true);
+    runtime.step(4300); // exact V4 shading, but the camera/radius have not settled
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(0);
+    runtime.step(200); // first settled GPU draw is complete, not a presentation ACK
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(0);
+    runtime.step(16);
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toEqual([
+      expect.objectContaining({ elapsed: 4516, motionMs: 4516 }),
+    ]);
+    runtime.step(999);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    runtime.step(1);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toEqual([
+      expect.objectContaining({ elapsed: 5516, heldMs: 1000 }),
+    ]);
+    expect(runtime.state().elapsed).toBe(5516);
+    const phase = runtime.values.u_phase;
+    runtime.step(1500); // slow destination readiness keeps the same V4 moving
+    expect(runtime.values.u_phase).not.toBe(phase);
+    runtime.step(10_000);
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(1);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+  });
+
+  it.each([[320, 568], [393, 852], [412, 915], [414, 896], [430, 932]])(
+    'completes for the real fractional launch target at %s×%s', async (width, height) => {
+      const runtime = await bootRuntime(width, height);
+      const radius = Math.max(1, Math.min(width * .38, height * .25, 180));
+      runtime.command({ type: 'configure', target: { x: width / 2, y: height / 2, radius } });
+      runtime.command({ type: 'prepare', token: 1, animate: true, launch: true });
+      runtime.command({ type: 'release', token: 1 }); runtime.step(1);
+      runtime.step(4499);
+      expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(0);
+      runtime.step(1); runtime.step(16); runtime.step(1000);
+      expect(runtime.state().scene.radius).toBeCloseTo(radius, 10);
+      expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(1);
+      expect(runtime.messages.filter(message => message.type === 'complete')).toEqual([
+        expect.objectContaining({ elapsed: 5516, heldMs: 1000 }),
+      ]);
+    },
+  );
+
+  it('counts a full hold after a delayed first assembled frame beyond the capped scene clock', async () => {
+    const runtime = await bootRuntime(); start(runtime, true, false, true);
+    runtime.step(12_000);
+    expect(runtime.state().elapsed).toBe(INTRO_MS);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    runtime.step(16);
+    expect(runtime.messages.at(-1)).toMatchObject({ type: 'assembled', elapsed: INTRO_MS, motionMs: 12_016 });
+    runtime.step(999);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    runtime.step(1);
+    expect(runtime.messages.at(-1)).toMatchObject({ type: 'complete', elapsed: INTRO_MS, heldMs: 1000 });
+  });
+
+  it('does not reuse an unpresented final candidate across backgrounding', async () => {
+    const runtime = await bootRuntime(); start(runtime, true, false, true);
+    runtime.step(4500); runtime.visibility(true); runtime.step(90_000);
+    runtime.visibility(false); runtime.step(1);
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(0);
+    runtime.step(16);
+    expect(runtime.messages.at(-1)).toMatchObject({ type: 'assembled', elapsed: 4516 });
+    runtime.step(1000);
+    expect(runtime.messages.at(-1)).toMatchObject({ type: 'complete', heldMs: 1000 });
+  });
+
+  it.each(['activity', 'visibility'])('pauses an already visible hold during %s loss', async mode => {
+    const runtime = await bootRuntime(); start(runtime, true, false, true);
+    runtime.step(4500); runtime.step(16); runtime.step(300);
+    if (mode === 'activity') runtime.command({ type: 'active', value: false });
+    else runtime.visibility(true);
+    runtime.step(90_000);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    if (mode === 'activity') runtime.command({ type: 'active', value: true });
+    else runtime.visibility(false);
+    runtime.step(1); runtime.step(699);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(0);
+    runtime.step(1);
+    expect(runtime.messages.at(-1)).toMatchObject({ type: 'complete', heldMs: 1000 });
+  });
+
+  it.each(['finish', 'reduce-motion'])('bypasses the hold after an explicit %s skip, completing once', async type => {
+    const runtime = await bootRuntime(); start(runtime, true, false, true);
+    runtime.step(2000); runtime.command({ type, value: true });
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(0);
+    runtime.command({ type: 'finish' }); runtime.step(10_000);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+  });
+
+  it.each([[false, false], [true, true]])('does not hold a consumed or reduced-motion launch (%s,%s)', async (animate, reduced) => {
+    const runtime = await bootRuntime(); start(runtime, animate, reduced, true);
+    expect(runtime.messages.filter(message => message.type === 'complete')).toHaveLength(1);
+    expect(runtime.messages.filter(message => message.type === 'assembled')).toHaveLength(0);
   });
 });
 

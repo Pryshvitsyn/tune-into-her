@@ -65,9 +65,16 @@ export function HomeTransition({ children }: PropsWithChildren) {
     markAppIntroConsumed();
     send({ type: 'start', id: current.current.id + 1 });
   }, [parent.blocking, opacity, elapsed, send]);
-  const complete = useCallback(() => {
-    if (current.current.phase !== 'playing') return;
-    send({ type: 'complete', id: current.current.id });
+  const assembled = useCallback((id: number) => {
+    if (current.current.id !== id || current.current.phase !== 'playing') return;
+    // Route and unpause Today during the GPU-owned hold, behind the opaque cover.
+    send({ type: 'assembled', id });
+    if (pathRef.current !== '/today') router.dismissTo('/today');
+  }, [send]);
+  const complete = useCallback((id: number) => {
+    if (current.current.id !== id || !['playing', 'routing'].includes(current.current.phase)) return;
+    send({ type: 'complete', id });
+    // Reduced Motion/fallback can complete without an assembled event.
     if (pathRef.current !== '/today') router.dismissTo('/today');
   }, [send]);
   const reportScreenReady = useCallback((owner?: string) => {
@@ -80,6 +87,11 @@ export function HomeTransition({ children }: PropsWithChildren) {
     painted.current = null;
     send({ type: 'not-ready', id: current.current.id });
   }, [parentNotReady, dataScope, send]);
+  useLayoutEffect(() => {
+    // A different QA scope/access shape must paint its own Today, even on the same route.
+    painted.current = null;
+    send({ type: 'not-ready', id: current.current.id });
+  }, [dataScope, waitForSphere, send]);
   useEffect(() => {
     if ((state.phase === 'routing' || state.phase === 'fading') && path !== '/today') {
       painted.current = null;
@@ -124,7 +136,7 @@ export function HomeTransition({ children }: PropsWithChildren) {
         <IntroAtmosphere elapsed={elapsed} dark={dark} onReady={() => setBackgroundReady(true)} onContrastChange={setIntroDarkContent} />
         {motion.ready && view.width > 0 && view.height > 0 ? <SphereIntroSurface key={state.id} launch view={view} target={target} elapsed={elapsed}
           animate={!motion.reduced} active={foreground} preferencesReady={motion.ready && backgroundReady} reducedMotion={motion.reduced} ink={palette.ink}
-          onComplete={complete} /> : null}
+          onAssembled={() => assembled(state.id)} onComplete={() => complete(state.id)} /> : null}
       </Animated.View> : null}
     </View>
   </LaunchPresentationContext.Provider></HomeTransitionContext.Provider>;

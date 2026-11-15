@@ -172,6 +172,9 @@ const WEB_RUNTIME = String.raw`
   let loaded = false, started = false, active = true, reduced = false, failed = false, ended = false;
   let visible = !document.hidden;
   let target = null, draws = 0, preparedToken = null, forceFinished = false, photographicOpening = false;
+  // Launch presentation finishes after a genuinely presented final sphere, while
+  // the original scene clock/reveals remain available to the nonlaunch Today surface.
+  let holdRequired = false, assemblyCandidate = null, assembledMotionMs = null;
   const textures = [], shaders = [];
   let buffer;
   const post = (type, extra = {}) => {
@@ -179,7 +182,11 @@ const WEB_RUNTIME = String.raw`
     if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(message));
     if (C.testMode) window.dispatchEvent(new CustomEvent('tih-message', {detail: message}));
   };
-  const stop = () => { if(frame) cancelAnimationFrame(frame); frame = 0; last = 0; };
+  const stop = () => {
+    if(frame) cancelAnimationFrame(frame); frame = 0; last = 0;
+    // An unpresented candidate cannot cross a background/foreground boundary.
+    assemblyCandidate = null;
+  };
   const fail = error => { if (failed) return; failed = true; stop(); post('error', {message: String(error)}); };
   const size = () => ({width: Math.max(1, innerWidth), height: Math.max(1, innerHeight)});
   const safeTarget = () => {
@@ -238,6 +245,34 @@ const WEB_RUNTIME = String.raw`
     gl.uniform1f(uniforms.u_phase, reduced ? 0 : ((motionMs % 8000)/8000)*Math.PI*2);
     gl.drawArrays(gl.TRIANGLES,0,6);
     draws++;
+    return scene;
+  }
+  function advanceLaunchPresentation(scene) {
+    if (!holdRequired || ended || !scene) return;
+    const destination = safeTarget();
+    // Eased arithmetic may differ from a fractional target by a few ULPs.
+    // A sub-micropixel tolerance preserves travel and avoids a permanent hold.
+    const epsilon = Math.max(1e-6, Math.max(Math.abs(destination.x), Math.abs(destination.y), destination.radius) * Number.EPSILON * 16);
+    const settled = scene.shell >= 1 && scene.logoOpacity <= 0 && scene.layers <= 0
+      && Math.abs(scene.x - destination.x) <= epsilon && Math.abs(scene.y - destination.y) <= epsilon
+      && Math.abs(scene.radius - destination.radius) <= epsilon;
+    if (!settled) {assemblyCandidate = null; return;}
+    if (assembledMotionMs === null) {
+      const signature = [scene.x,scene.y,scene.radius,canvas.width,canvas.height].join(',');
+      if (assemblyCandidate !== signature) {
+        // Complete this final GPU frame, then require another active/visible RAF.
+        // gl.finish alone is not a compositor presentation acknowledgement.
+        gl.finish(); assemblyCandidate = signature; return;
+      }
+      assembledMotionMs = motionMs;
+      post('assembled', {motionMs});
+    }
+    // motionMs is unbounded and excludes hidden time. A late first final frame
+    // (even after the capped nine-second scene clock) still receives its full hold.
+    if (motionMs - assembledMotionMs >= 1000) {
+      ended = true;
+      post('complete', {motionMs, assembledMotionMs, heldMs: motionMs - assembledMotionMs});
+    }
   }
   function tick(now) {
     frame = 0;
@@ -246,8 +281,9 @@ const WEB_RUNTIME = String.raw`
     last = now;
     motionMs += dt;
     elapsed = Math.min(C.duration,elapsed+dt);
-    draw();
-    if (elapsed >= C.duration && !ended) { ended = true; post('complete'); }
+    const scene = draw();
+    if (holdRequired) advanceLaunchPresentation(scene);
+    else if (elapsed >= C.duration && !ended) { ended = true; post('complete'); }
     if (!reduced) frame = requestAnimationFrame(tick);
   }
   function schedule() {
@@ -256,7 +292,7 @@ const WEB_RUNTIME = String.raw`
     if (!frame) frame = requestAnimationFrame(tick);
   }
   function finish() {
-    forceFinished = true;
+    forceFinished = true; holdRequired = false; assemblyCandidate = null;
     elapsed = C.duration;
     draw();
     if (loaded) gl.finish();
@@ -285,6 +321,8 @@ const WEB_RUNTIME = String.raw`
         preparedToken = command.token;
         photographicOpening = !!command.photographicOpening;
         reduced = !!command.reducedMotion;
+        holdRequired = !!command.launch && !!command.animate && !reduced && !forceFinished;
+        assemblyCandidate = null; assembledMotionMs = null;
         elapsed = (!command.animate || reduced || forceFinished) ? C.duration : 0;
         motionMs = 0; ended = false; last = 0;
         draw(); gl.finish();
@@ -295,7 +333,7 @@ const WEB_RUNTIME = String.raw`
                  && preparedToken !== null && command.token === preparedToken) {
         started = true; last = 0;
         post('clock');
-        if(elapsed>=C.duration) {ended=true; post('complete');}
+        if(elapsed>=C.duration && !holdRequired) {ended=true; post('complete');}
         schedule();
       } else if (command.type === 'active') {
         active=!!command.value; stop(); post('clock'); schedule();

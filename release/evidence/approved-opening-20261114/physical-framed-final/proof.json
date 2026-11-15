@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "status": "Verified physical PHOTO/FRAMING CHECKPOINT before the new approximately1000ms post-assembly ending; not acceptance of that new ending",
+  "sourceRevision": "c441ad36cdfca0824f05730ceff139a03df3298e",
+  "branch": "codex/monetization-20261113",
+  "sourceMovie": {
+    "sha256": "8b3216575e0cf965089d2247e6ab1d752fda1bce04287b589732bac90f0fea33",
+    "bytes": 98019076,
+    "decodedOriginalFrames": 2415,
+    "containerDeclaredSamples": 2426,
+    "durationSeconds": 40.553217,
+    "videoPixels": [
+      1126,
+      2436
+    ],
+    "limit": "Decoded frame list and both scaled sample streams agree2415 frames. Container-declared samples are reported separately."
+  },
+  "artifact": {
+    "nativeBinarySHA256": "f61157ecae61c1bc7b83062007d396c577d882204f6cff83701deb33114a83ca",
+    "embeddedJavaScriptSHA256": "7ebf1900b28dc3305b18908e3c4f02bb9b369cadc67776ae6fcd42e68ef73ac7",
+    "codesignVerified": true,
+    "normalReleasePressureMarkerAbsent": true,
+    "updatesResourcesMatch": true,
+    "nativeUpdatesEnabled": false,
+    "updatesResourcesSHA256": {
+      "app.manifest": "c395b9efd54de93317c3ec4d271d03f807d4ee26a148e27f89ede8ef9f536362",
+      "fingerprint": "64d7201bd7bcbad373e14fa6bf825c318fb6987bf493a97ce360da092dedadf1"
+    },
+    "noAppDeletion": true,
+    "sourceSHA256": {
+      "src/intro/GlobalLaunch.tsx": "1dbb19db515e84f3c4f9c8f63585eba4f34f9d882be9e70756c4d0e77517eaad",
+      "src/intro/SphereIntroSurface.tsx": "26d604c62e797501746b308816314d1a7610533b4cb6caf548e74e66ca645c97",
+      "src/intro/nativeSplashGate.ts": "49e4b45ef7352f94547d5b5a27c5442f63432b4232132a3d1a527254984aa737",
+      "src/intro/ApprovedOpening.tsx": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+      "src/intro/introPresentation.ts": "fb1fb2796e624e5920c28f43254a3a79e2a5639ef79b54389956e47004f00d35",
+      "src/intro/sphereHtml.ts": "695a145bfa73ec335e04cf74d3ee4aa068f310ac20ef6fa3389ece651de43425",
+      "assets/launch/SplashScreen.storyboard": "33c0f1eff66e6e2e8d885806887f3da7e87066ba6a3e7304d2a05392115e1a2b",
+      "assets/launch/approved-opening.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "app.config.ts": "89d42e9ebfb86956a143422f1a1e299d0a992f08f74055f4058c5ea9430fd1cc"
+    }
+  },
+  "captureToolReport": {
+    "mode": "normal Release cold screen capture",
+    "startedAtUTC": "2026-11-15T00:27:36.188936+00:00",
+    "complete": true,
+    "metroPortsClosed": true,
+    "recordingStarted": true,
+    "screenSourcePinned": true,
+    "screenMuxed": true,
+    "launchCommandExit": 0,
+    "launchCommandSeconds": 0.53,
+    "coldLaunchAfterRecordingReady": true,
+    "captureExit": 0,
+    "captureFinishedSuccessfully": true,
+    "durationSeconds": 40.553217,
+    "nativePressureRequested": false
+  },
+  "captureMethod": {
+    "pinnedKnownWiredMuxedScreen": true,
+    "cameraSource": false,
+    "noPermissionRequestOrSettingsChange": true,
+    "hostWallStopSeconds": 40,
+    "deviceTimestampMaxRecordedDurationRemovedOnlyInTemporaryHostTool": true,
+    "originalAppSourceUnchanged": true,
+    "sourcePTSPreserved": true
+  },
+  "approvedReference": {
+    "file": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+    "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+    "sourcePixels": [
+      851,
+      1847
+    ],
+    "framing": "Uniform centered cover; no redraw/recolor/stretch",
+    "nativeAndRNAssetBytesExact": true
+  },
+  "comparison": {
+    "regionExcludesOSAndEncodedExtraColumn": {
+      "left": 0,
+      "top": 150,
+      "width": 1125,
+      "height": 2136
+    },
+    "framedReferenceToNative": {
+      "meanAbsoluteRGB": 1.2869779442363711,
+      "rmsRGB": 2.9478143860491657,
+      "p99ChannelDifference": 12
+    },
+    "framedReferenceToRN": {
+      "meanAbsoluteRGB": 1.379789568594812,
+      "rmsRGB": 2.970130700280929,
+      "p99ChannelDifference": 11
+    },
+    "nativeToRN": {
+      "meanAbsoluteRGB": 0.9549506172839506,
+      "rmsRGB": 1.3214370983871149,
+      "p99ChannelDifference": 4
+    },
+    "limits": "Actual screen video is lossyYUV. Reference uses vips instead of UIKit filtering. One encoded extra right column is excluded. Metrics use0..255 RGB units, not visual approval."
+  },
+  "nativeRNHandoff": {
+    "manualWindowSeconds": [
+      7.251467,
+      8.253483
+    ],
+    "originalFrames": 58,
+    "maximumPhotoReferenceRGBError": 1.392578125,
+    "maximumConsecutiveRGBChange": 0.4322916666666667,
+    "foregroundDropoutObserved": false,
+    "wrongIntrinsicCropObserved": false,
+    "unwantedHaloOrDuplicateEmblemObserved": false,
+    "limit": "Exact native/RN/GPU-present timestamps are not exposed by this recording. Correct RN geometry is independently visible throughout its subsequent partial-opacity dissolve."
+  },
+  "photoDissolve": {
+    "manualWindowSeconds": [
+      8.27,
+      8.97
+    ],
+    "originalFrames": 42,
+    "maximumConsecutiveRGBChange": 1.6223958333333333,
+    "fittedPhotographProfile": [
+      {
+        "originalFrame": 486,
+        "moviePTSSeconds": 8.253483,
+        "fittedPhotoContribution": 1
+      },
+      {
+        "originalFrame": 492,
+        "moviePTSSeconds": 8.3537,
+        "fittedPhotoContribution": 0.9386753285925082
+      },
+      {
+        "originalFrame": 498,
+        "moviePTSSeconds": 8.453933,
+        "fittedPhotoContribution": 0.8040751314527492
+      },
+      {
+        "originalFrame": 504,
+        "moviePTSSeconds": 8.554167,
+        "fittedPhotoContribution": 0.6343361894221258
+      },
+      {
+        "originalFrame": 510,
+        "moviePTSSeconds": 8.654383,
+        "fittedPhotoContribution": 0.46467527750552773
+      },
+      {
+        "originalFrame": 516,
+        "moviePTSSeconds": 8.754617,
+        "fittedPhotoContribution": 0.3252163936020905
+      },
+      {
+        "originalFrame": 522,
+        "moviePTSSeconds": 8.85485,
+        "fittedPhotoContribution": 0.174007854098383
+      },
+      {
+        "originalFrame": 528,
+        "moviePTSSeconds": 8.955067,
+        "fittedPhotoContribution": 0.05053832030906923
+      },
+      {
+        "originalFrame": 537,
+        "moviePTSSeconds": 9.105417,
+        "fittedPhotoContribution": 0
+      }
+    ],
+    "limit": "Least-squares contribution between two recorded endpoint crops, not native alpha telemetry. Underlying original GPU scene moves during transition. Many intermediate16–17ms frames replace the earlier one-frame36.61RGB crop jump."
+  },
+  "flashCheck": {
+    "method": "All original decoded frames, central80percent ROI area64x64 gray; black/nearblack when98percent samples<=18/30; white when98percent>=245",
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0
+  },
+  "requestedTimingSamples": {
+    "estimatedSceneStartMovieSeconds": 7.602,
+    "limit": "Inferred from pre-fade RN photography and650ms opacity lead; not logged GPU elapsed. Actual source framePTS and offsets are retained.",
+    "samples": [
+      {
+        "requestedRelativeMilliseconds": 0,
+        "originalDecodedFrame": 448,
+        "moviePTSSeconds": 7.618833,
+        "actualRelativeMilliseconds": 16.833
+      },
+      {
+        "requestedRelativeMilliseconds": 100,
+        "originalDecodedFrame": 453,
+        "moviePTSSeconds": 7.702367,
+        "actualRelativeMilliseconds": 100.367
+      },
+      {
+        "requestedRelativeMilliseconds": 300,
+        "originalDecodedFrame": 465,
+        "moviePTSSeconds": 7.902817,
+        "actualRelativeMilliseconds": 300.817
+      },
+      {
+        "requestedRelativeMilliseconds": 600,
+        "originalDecodedFrame": 483,
+        "moviePTSSeconds": 8.203367,
+        "actualRelativeMilliseconds": 601.367
+      },
+      {
+        "requestedRelativeMilliseconds": 1000,
+        "originalDecodedFrame": 507,
+        "moviePTSSeconds": 8.604267,
+        "actualRelativeMilliseconds": 1002.267
+      },
+      {
+        "requestedRelativeMilliseconds": 1500,
+        "originalDecodedFrame": 537,
+        "moviePTSSeconds": 9.105417,
+        "actualRelativeMilliseconds": 1503.417
+      },
+      {
+        "requestedRelativeMilliseconds": 2000,
+        "originalDecodedFrame": 567,
+        "moviePTSSeconds": 9.60655,
+        "actualRelativeMilliseconds": 2004.55
+      }
+    ]
+  },
+  "journey": {
+    "firstColdPhotoToDepthToOriginalV4ToCorrectLockedEntry": true,
+    "privateLockedEntryReviewedAt": {
+      "originalFrame": 1021,
+      "moviePTSSeconds": 17.206567
+    },
+    "noProtectedContentShownDuringIntro": true,
+    "sixLayerSceneAnd9000msSourcePreserved": true,
+    "originalV4IntegrityAndGPUEquivalence": "Separate source/test proof; this recording confirms actual presentation, not per-frame pixel equality to a different device."
+  },
+  "samples": [
+    {
+      "file": "actual-iphone-native-approved-photo-frame429.png",
+      "originalDecodedFrame": 429,
+      "moviePTSSeconds": 7.251467,
+      "label": "native-approved-photo"
+    },
+    {
+      "file": "actual-iphone-rn-approved-photo-frame486.png",
+      "originalDecodedFrame": 486,
+      "moviePTSSeconds": 8.253483,
+      "label": "rn-approved-photo"
+    },
+    {
+      "file": "actual-iphone-photo-fade-depth-v4-contact.png",
+      "originalDecodedFrame": 507,
+      "moviePTSSeconds": 8.604267,
+      "label": "mid-dissolve",
+      "contactPanelIndexZeroBased": 2,
+      "fullSourceFrameRetainedPrivately": true
+    },
+    {
+      "file": "actual-iphone-depth-travel-frame597.png",
+      "originalDecodedFrame": 597,
+      "moviePTSSeconds": 10.107683,
+      "label": "depth-travel"
+    },
+    {
+      "file": "actual-iphone-photo-fade-depth-v4-contact.png",
+      "originalDecodedFrame": 626,
+      "moviePTSSeconds": 10.591967,
+      "label": "depth-travel",
+      "contactPanelIndexZeroBased": 4,
+      "fullSourceFrameRetainedPrivately": true
+    },
+    {
+      "file": "actual-iphone-original-v4-frame986.png",
+      "originalDecodedFrame": 986,
+      "moviePTSSeconds": 16.605233,
+      "label": "original-v4"
+    }
+  ],
+  "privacy": {
+    "onlyReviewedFirstIntroMediaPublished": true,
+    "raw40secondVideoExcluded": true,
+    "preludeAndDestinationCycleDataExcluded": true,
+    "noDeviceIDsProcessIDsNames": true,
+    "audioAndMetadataRemovedFromPublishedClip": true
+  },
+  "limits": [
+    "No exact GPU-present telemetry or calibrated physical colorimetry was recorded.",
+    "No new Android native runtime or screen-reader speech verification is claimed.",
+    "The source code is unchanged from the408-test checkpoint; host capture-tool fixes are temporary only.",
+    "Founder visual approval awaits review of the actual corrected iPhone screenshot.",
+    "The captured c441ad3 build still uses the old9000ms ending gate. A new source build and timed capture are required for the newly requested one-second hold after assembly."
+  ],
+  "publishedClip": {
+    "file": "actual-iphone-first-intro-checkpoint.mp4",
+    "sha256": "ecc815819068bde4d8f7c3008187280d4cf40ac0d383d136b781615dead2c51a",
+    "sourceTrimStartSeconds": 7.251467,
+    "sourceTrimEndSeconds": 16.615,
+    "durationSeconds": 9.370467,
+    "videoPixels": [
+      1126,
+      2436
+    ],
+    "continuousOriginalSourceTime": true,
+    "speedOrFrameRateNotRetimed": true,
+    "audioAndSourceMetadataRemoved": true,
+    "onlyFirstReviewedCleanIntro": true,
+    "preludeAndPrivateDestinationExcluded": true,
+    "timingValidation": {
+      "sourceFramesInTrim": 558,
+      "publishedDecodedFrames": 558,
+      "maximumSourceRelativePTSRoundingSeconds": 0.0000010000000010279564,
+      "timeBase": "1/1000000",
+      "noFramesDroppedOrDuplicated": true
+    }
+  },
+  "endingCheckpoint": {
+    "implementsNewOneSecondPolicy": false,
+    "policyAtCapture": "Old9000ms ending gate; photographic corrections verified independently",
+    "estimatedSceneStartMovieSeconds": 7.602,
+    "assemblySourceThresholdMilliseconds": 4500,
+    "estimatedAssemblyMovieSeconds": 12.102,
+    "firstSampleVisuallyVerifiedAtTargetSphere": {
+      "originalFrame": 722,
+      "moviePTSSeconds": 12.195567
+    },
+    "pureV4StillHeldAt": {
+      "originalFrame": 986,
+      "moviePTSSeconds": 16.605233
+    },
+    "correctLockedDestinationPrivatelySeenAt": {
+      "originalFrame": 1021,
+      "moviePTSSeconds": 17.206567
+    },
+    "estimatedExistingAssembledSphereWaitSeconds": 4.5,
+    "limits": "Assembly time is inferred from immutable geometry math and observed target sphere, not exact GPU telemetry. This capture does not satisfy or verify the new approximately1000ms ending policy."
+  },
+  "newEndingRequirementVerified": false,
+  "artifactSourceFilesMatchCapturedRevision": {
+    "src/intro/GlobalLaunch.tsx": true,
+    "src/intro/SphereIntroSurface.tsx": true,
+    "src/intro/nativeSplashGate.ts": true,
+    "src/intro/ApprovedOpening.tsx": true,
+    "src/intro/introPresentation.ts": true,
+    "src/intro/sphereHtml.ts": true,
+    "assets/launch/SplashScreen.storyboard": true,
+    "assets/launch/approved-opening.png": true,
+    "app.config.ts": true
+  },
+  "outputValidation": {
+    "allPublishedPNGFullyDecoded": 9,
+    "metadataChunksAbsent": true,
+    "videoFrameAndSourcePTSValidated": true
+  }
+}
