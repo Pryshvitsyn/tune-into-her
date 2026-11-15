@@ -13,17 +13,19 @@ export function SettingsRow({
   value,
   onPress,
   language,
+  testID,
 }: {
   label: string;
   value?: string;
   onPress(): void;
   language?: SupportedLanguage;
+  testID?: string;
 }) {
   const { colors } = useTheme();
   const styles = makeStyles(colors);
   const selectedLanguage = value === "✓";
   return (
-    <Pressable accessibilityRole="button" accessibilityState={{ selected: selectedLanguage ? true : undefined }} onPress={onPress} style={styles.row}>
+    <Pressable testID={testID} accessibilityRole="button" accessibilityState={{ selected: selectedLanguage ? true : undefined }} onPress={onPress} style={styles.row}>
       <View style={styles.copy}>
         <Text language={language} style={styles.label}>{label}</Text>
         {value ? <Text systemFont={selectedLanguage} accessible={!selectedLanguage} allowFontScaling={!selectedLanguage} style={styles.value}>{value}</Text> : null}

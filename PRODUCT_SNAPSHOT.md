@@ -66,7 +66,33 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
-## CURRENT OFFICIAL ICON / ISOLATED TODAY QA — 2026-11-15
+## CURRENT FINAL UI / LANGUAGES / FOUNDER QA — 2026-11-15
+
+- Safe pre-change checkpoint3eff34d retained. Secondary footer now has only accessible arrow/gear,
+  main tabs unchanged. Compact Cycle retains42dates/6weeks and fixed Edit, actually fits375×667.
+- Initial language selection uses11 horizontal draft pages, swipe/arrows/adjustable accessibility,
+  explicit confirmation/cancel and large-text fallback. All11 own-locale UI/QA/legal trees and
+  actual preference save/load paths tested; iOS spinners use the chosen locale.
+- Known Android OS-language picker gap is closed in source with one app-owned localized date/time
+  modal at Cycle and both reminder entrypoints; temporary edits/Done/Cancel/maxdate/24h guards tested.
+  iOS spinner branch is retained. Android native runtime still requires absent SDK/JDK.
+- Today Learn more now supplies meaningful bundled four-phase content in11languages, individual
+  variation/no-diagnosis caveats and live institutional NHS/NICHD sources checkedNovember15.
+  Original licence remains exact English with localized context; sources are labelled English.
+- Latest Founder correction supersedes wordmark-in-icon: rings-only photographic master, bounded
+  reconstructed letter area, exact original pixels elsewhere. Native iOS1024/Play512/adaptive
+  resources regenerated; full original portrait/wordmark/splash/V4/6layers/ending stay byte-exact.
+- Private standalone Release defaults to localized existing QA panel, Settings reopens it, Reset
+  keeps synthetic ownership. Ordinary production gates/AppProvider/index and real services unchanged.
+  QA language/theme seed stays in memory; cold test preferences reset separately from normal persistence.
+- Current-source physical no-Metro Today/panel/Home captures pass with source-identified signed builds;
+  all before/after personal AsyncStorage snapshots equal, Founder QA stays installed and launch exits0.
+  MovieFileOutput -11813/short fragments rejected; successful video-only host-arrival writer is labelled
+  separately from native GPU-clock measurements. Keychain not read/hashed. Native UI tour/final report
+  readback still being completed; no store release or clinical/native-speaker approval is implied.
+- [Implementation, accepted evidence and explicit limits](docs/FINAL_UX_QA.md).
+
+## PREVIOUS WORDMARK ICON / ISOLATED TODAY QA — 2026-11-15
 
 - Literal780px crop of the immutable approved photo supplies full silver rings/wordmark,
 1024iOS/AppStore/TestFlight,512PlayRGBA and separate safe adaptive layers. Actual native

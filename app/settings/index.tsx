@@ -50,7 +50,7 @@ export default function SettingsScreen() {
         </Section>
       ) : null}
       {internalQAEnabled ? <Section title={t("paywall.mock")}>
-        <SettingsRow label="Internal QA" onPress={() => router.push('/dev-qa')} />
+        <SettingsRow label={t('qa.title')} onPress={() => router.push('/dev-qa')} />
       </Section> : null}
       <Section title={t("settings.cycle")}>
         <SettingsRow

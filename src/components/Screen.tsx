@@ -27,26 +27,27 @@ export function Screen({
   children,
   footer,
   scroll = true,
-}: PropsWithChildren<{ footer?: ReactNode; scroll?: boolean }>) {
+  compact = false,
+}: PropsWithChildren<{ footer?: ReactNode; scroll?: boolean; compact?: boolean }>) {
   const { colors } = useTheme();
   const styles = makeStyles(colors);
   const route = useRoute();
   const navigation = navigationForRoute(route.name);
   const { qaActive } = useApp();
   const { t } = useTranslation();
-  const disclosure = qaActive ? <AppText style={{ color: colors.danger, fontSize: 13, lineHeight: 19, textAlign: "center", marginBottom: 12 }}>{t("paywall.mock")}</AppText> : null;
+  const disclosure = qaActive ? <AppText style={{ color: colors.danger, fontSize: 13, lineHeight: 19, textAlign: "center", marginBottom: compact ? 4 : 12 }}>{t("paywall.mock")}</AppText> : null;
   const content = scroll ? (
     <ScrollView
-      contentContainerStyle={styles.content}
+      contentContainerStyle={[styles.content, compact && styles.compactContent]}
       keyboardShouldPersistTaps="handled"
     >
-      <BrandHeader />
+      <BrandHeader compact={compact} />
       {disclosure}
       {children}
     </ScrollView>
   ) : (
-    <View style={styles.content}>
-      <BrandHeader />
+    <View style={[styles.content, compact && styles.compactContent]}>
+      <BrandHeader compact={compact} />
       {disclosure}
       {children}
     </View>
@@ -59,7 +60,7 @@ export function Screen({
         behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
         {content}
-        {footer ? <View style={styles.footer}>{footer}</View> : null}
+        {footer ? <View style={[styles.footer, compact && styles.compactFooter]}>{footer}</View> : null}
         {navigation === "primary" ? <BottomNav ownerPath={'/' + route.name.replace(/\/index$/, '')} /> : navigation === "secondary" ? <SecondaryNav /> : null}
       </KeyboardAvoidingView>
     </SafeAreaView></ScreenNavigationContext.Provider>
@@ -71,6 +72,8 @@ const makeStyles = (colors: Palette) =>
     safe: { flex: 1, backgroundColor: colors.background },
     flex: { flex: 1 },
     content: { flexGrow: 1, padding: spacing.lg },
+    compactContent: { paddingVertical: 8 },
+    compactFooter: { paddingBottom: 6 },
     footer: {
       paddingHorizontal: spacing.lg,
       paddingBottom: spacing.sm,

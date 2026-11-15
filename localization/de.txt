@@ -136,3 +136,11 @@ Der Supportkontakt muss vor der Veröffentlichung eingerichtet werden.
 {{label}} erhöhen
 {{language}} auswählen
 Phasenanzeige: {{phase}}
+Wische, um deine Sprache zu wählen
+Vorherige Sprache
+Nächste Sprache
+{{index}} von {{count}}
+Die Sprache konnte nicht gespeichert werden. Bitte erneut versuchen.
+Intro überspringen
+Schriften und Lizenzen
+Nachfolgend stehen die englische Originallizenz von Linux Libertine O und der zugehörige Vertriebshinweis.

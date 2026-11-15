@@ -1,13 +1,15 @@
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, StyleSheet, Switch, View } from 'react-native';
+import { Alert, Platform, StyleSheet, Switch, View } from 'react-native';
 
+import { AndroidTimeField } from '../../src/components/AndroidDateTimePicker';
 import { AppText as Text } from '../../src/components/AppText';
 import { Button } from "../../src/components/Button";
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import { notificationScheduler, useApp } from "../../src/context/AppContext";
+import { localeForLanguage } from '../../src/i18n/locale';
 import { radius, spacing } from "../../src/theme";
 import type { Palette } from "../../src/theme";
 import { useTheme } from "../../src/theme/useTheme";
@@ -79,13 +81,14 @@ function ReminderScreen() {
       {enabled ? (
         <View style={styles.picker}>
           <Text style={styles.smallLabel}>{t("onboarding.reminderTime")}</Text>
-          <DateTimePicker
+          {Platform.OS === 'android' ? <AndroidTimeField value={time} language={preferences.language} onChange={setTime} /> : <DateTimePicker
             themeVariant={dark ? "dark" : "light"}
             value={time}
             mode="time"
             display="spinner"
+            locale={Platform.OS === 'ios' ? localeForLanguage(preferences.language) : undefined}
             onChange={(_, value) => value && setTime(value)}
-          />
+          />}
         </View>
       ) : null}
       <View style={styles.permission}>

@@ -13,7 +13,7 @@ import { useApp } from "../src/context/AppContext";
 import { cycleDraftFromSaved, cycleSettingsFromDraft } from "../src/domain/cycle/cycleDraft";
 import { toDateOnly, type DateOnly } from "../src/domain/cycle/dateOnly";
 import { useInterface } from "../src/i18n/useInterface";
-import { radius, spacing } from "../src/theme";
+import { radius } from "../src/theme";
 import type { Palette } from "../src/theme";
 import { useTheme } from "../src/theme/useTheme";
 
@@ -64,13 +64,12 @@ function CycleScreen() {
   };
   if (!editing)
     return (
-      <Screen footer={<Button label={ui.editCycle} onPress={edit} />}>
-        <Header title={ui.cycle} back={false} />
-        <CycleCalendar />
+      <Screen compact footer={<Button label={ui.editCycle} onPress={edit} />}>
+        <CycleCalendar compact />
       </Screen>
     );
   return (
-    <Screen
+    <Screen compact
       footer={<Button label={t(working ? "common.loading" : "common.save")} disabled={!date || working} onPress={() => void save()} />}
     >
       <Header title={t("cycle.title")} onBack={() => { if (!working) setEditing(false); }} />
@@ -105,12 +104,12 @@ const makeStyles = (colors: Palette) =>
       color: colors.secondary,
       fontSize: 13,
       fontWeight: '400',
-      marginBottom: spacing.sm,
+      marginBottom: 4,
     },
     picker: {
       backgroundColor: colors.card,
       borderRadius: radius.lg,
-      padding: spacing.sm,
+      padding: 4,
     },
-    gap: { height: spacing.lg },
+    gap: { height: 8 },
   });

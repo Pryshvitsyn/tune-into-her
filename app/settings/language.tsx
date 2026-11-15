@@ -1,11 +1,12 @@
+import { useRef } from 'react';
 import { useTranslation } from "react-i18next";
-import { StyleSheet, View } from 'react-native';
+import { Alert, StyleSheet, View } from 'react-native';
 
 import { AppText as Text } from '../../src/components/AppText';
 import { Header } from "../../src/components/Header";
 import { Screen } from "../../src/components/Screen";
 import { SettingsRow } from "../../src/components/SettingsRow";
-import { SUPPORTED_LANGUAGES } from "../../src/config/constants";
+import { SUPPORTED_LANGUAGES, type SupportedLanguage } from "../../src/config/constants";
 import { useApp } from "../../src/context/AppContext";
 import releaseCopy from "../../src/i18n/releaseCopy.json";
 import { radius, spacing } from "../../src/theme";
@@ -17,6 +18,14 @@ export default function LanguageScreen() {
   const styles = makeStyles(colors);
   const { t } = useTranslation();
   const { preferences, updatePreferences } = useApp();
+  const saving = useRef(false);
+  const choose = async (language: SupportedLanguage) => {
+    if (saving.current) return;
+    saving.current = true;
+    try { await updatePreferences({ language }, true); }
+    catch { Alert.alert(t('language.saveError')); }
+    finally { saving.current = false; }
+  };
   return (
     <Screen>
       <Header title={t("language.title")} />
@@ -26,11 +35,12 @@ export default function LanguageScreen() {
       <View style={styles.card}>
         {SUPPORTED_LANGUAGES.map((language) => (
           <SettingsRow
+            testID={`settings-language-${language}`}
             language={language}
             key={language}
             label={t(`language.${language}`)}
             value={preferences.language === language ? "✓" : undefined}
-            onPress={() => void updatePreferences({ language }, true)}
+            onPress={() => void choose(language)}
           />
         ))}
       </View>

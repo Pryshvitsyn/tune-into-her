@@ -18,8 +18,8 @@ const reference = image('assets/brand/reference/founder-approved-premium-v5-2026
 const master = image('assets/icon.png');
 const foreground = image('assets/adaptive-icon.png');
 
-describe('official photo icon pipeline', () => {
-  it('uses the exact approved photograph and a literal centred square without changing launch art', () => {
+describe('rings-only official photo icon pipeline', () => {
+  it('keeps the exact wordmarked opening while deriving a distinct rings-only icon', () => {
     expect(sha(read(manifest.reference))).toBe('dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58');
     expect(manifest.cropSourcePixels).toEqual({ left: 35, top: 450, width: 780, height: 780 });
     expect(read('assets/launch/approved-opening.png').equals(read(manifest.reference))).toBe(true);
@@ -27,7 +27,7 @@ describe('official photo icon pipeline', () => {
     expect(execFileSync(process.execPath, ['scripts/generate-official-icons.cjs', '--check'], { cwd: new URL('..', import.meta.url) }).toString()).toContain('protected assets match');
   });
 
-  it('matches the literal photograph geometry using an independent uniform interpolation probe', () => {
+  it('matches original photo geometry outside the deliberately reconstructed text band', () => {
     // This implementation does not import Sharp or the generator. Compare a32x32
     // grid against the original photograph with one uniform780/1024 source mapping.
     // libvips rounds/quantizes its filter near high-contrast metallic glyph edges;
@@ -36,6 +36,7 @@ describe('official photo icon pipeline', () => {
       3 * Math.sin(Math.PI * x) * Math.sin(Math.PI * x / 3) / (Math.PI * Math.PI * x * x);
     const errors: number[] = [];
     for (let y = 16; y < 1024; y += 32) for (let x = 16; x < 1024; x += 32) {
+      if (y >= 420 && y < 680) continue; // Only this labelled icon edit band is reconstructed.
       const sx = 35 + (x + .5) * 780 / 1024 - .5;
       const sy = 450 + (y + .5) * 780 / 1024 - .5;
       for (let channel = 0; channel < 3; channel += 1) {
@@ -53,6 +54,23 @@ describe('official photo icon pipeline', () => {
     expect(errors.reduce((a, b) => a + b, 0) / errors.length).toBeLessThan(1.5);
     expect(errors[Math.floor(errors.length * .95)]).toBeLessThanOrEqual(4);
     expect(errors[Math.floor(errors.length * .99)]).toBeLessThanOrEqual(22);
+  });
+
+  it('pins the text-free reconstruction and preserves every original pixel outside its bounded band', () => {
+    const provenance = JSON.parse(read('assets/icons/source/rings-only.provenance.json').toString());
+    expect(manifest.iconVariant).toBe('silver-open-rings-no-wordmark');
+    expect(sha(read(provenance.editSourceFile))).toBe('d68c28ea81d9ea5a68d33269cfe4fdb65d6b429bfbad9e7e82c45b06dddafdcc');
+    expect(manifest.editBand).toEqual({ top: 420, bottomExclusive: 680, featherPixels: 24 });
+    const protectedPixels = Buffer.concat([master.data.subarray(0, 420 * 1024 * 4), master.data.subarray(680 * 1024 * 4)]);
+    expect(sha(protectedPixels)).toBe('cd3d74547d11f1a50c8a743b6dde146b97b23d270ae59247c8ec7eccf99396b5');
+    expect(sha(master.data.subarray(420 * 1024 * 4, 680 * 1024 * 4))).toBe('79a340fb6df7f2f828fe1391788869a7c9431811e84521932c6fc5c866d96eea');
+    expect(sha(read('assets/icon.png'))).toBe(provenance.rasterAudit.masterSHA256);
+    expect(provenance.rasterAudit.outsideDifferencePixels).toBe(0);
+    expect(provenance.rasterAudit.insideDifferencePixels).toBeGreaterThan(0);
+    expect(provenance.textRecognitionAudit.positiveControlRecognizedStrings).toEqual(['Tune Into Her']);
+    expect(provenance.textRecognitionAudit.ringsOnlyRecognizedStrings).toEqual([]);
+    expect(provenance.textRecognitionAudit.ringsOnlyMasterSHA256).toBe(provenance.rasterAudit.masterSHA256);
+    expect(config.name).toBe('Tune Into Her'); // Device label is separate from icon pixels.
   });
 
   it('ships square opaque store/master assets and the actual native iOS icon copy', () => {
@@ -79,21 +97,38 @@ describe('official photo icon pipeline', () => {
     expect(config.android?.adaptiveIcon?.backgroundImage).toBe('./assets/icons/adaptive-background.png');
   });
 
-  it('keeps complete wordmark/ring landmarks opaque inside the real Android safe circle', () => {
+  it('keeps complete ring/endpoints opaque inside the real Android safe circle', () => {
     expect([foreground.width, foreground.height]).toEqual([1024, 1024]);
     const a = manifest.adaptive;
-    expect([a.photoSide, a.inset, a.layerDP, a.maskDP, a.safeCircleDP, a.outerSteelFeatherPixels]).toEqual([672, 176, 108, 72, 66, 24]);
+    expect([a.photoSide, a.inset, a.layerDP, a.maskDP, a.safeCircleDP, a.outerSteelFeatherPixels]).toEqual([768, 128, 108, 72, 66, 24]);
     const safeRadius = 1024 * 66 / 108 / 2;
     for (const [sx, sy] of Object.values(a.conservativeSourceLandmarks).flat() as number[][]) {
-      const x = 176 + (sx! - 35) * 672 / 780, y = 176 + (sy! - 450) * 672 / 780;
+      const x = 128 + (sx! - 35) * 768 / 780, y = 128 + (sy! - 450) * 768 / 780;
       expect(Math.hypot(x - 512, y - 512)).toBeLessThan(safeRadius);
       expect(foreground.data[(Math.round(y) * 1024 + Math.round(x)) * 4 + 3]).toBe(255);
     }
     expect(foreground.data[3]).toBe(0);
-    expect(foreground.data[(512 * 1024 + 176) * 4 + 3]).toBe(0);
-    expect(foreground.data[(512 * 1024 + 200) * 4 + 3]).toBe(255);
-    expect(foreground.data[(512 * 1024 + 188) * 4 + 3]).toBeGreaterThan(0);
-    expect(foreground.data[(512 * 1024 + 188) * 4 + 3]).toBeLessThan(255);
+    expect(foreground.data[(512 * 1024 + 128) * 4 + 3]).toBe(0);
+    expect(foreground.data[(512 * 1024 + 152) * 4 + 3]).toBe(255);
+    expect(foreground.data[(512 * 1024 + 140) * 4 + 3]).toBeGreaterThan(0);
+    expect(foreground.data[(512 * 1024 + 140) * 4 + 3]).toBeLessThan(255);
+  });
+
+  it('binds actual Android density/XML generation to the current rings-only inputs', () => {
+    const android = JSON.parse(read('assets/icons/source/android-resource-check.generated.json').toString());
+    expect(android.iconVariant).toBe('silver-open-rings-no-wordmark');
+    expect(android.passed).toBe(true);
+    expect(android.nativeBuild).toBe(false);
+    expect(android.emulatorOrDevice).toBe(false);
+    expect(android.repoAndroidFolderCreated).toBe(false);
+    for (const file of ['assets/icon.png', 'assets/adaptive-icon.png', 'assets/icons/adaptive-background.png']) {
+      expect(android.inputSHA256[file]).toBe(sha(read(file)));
+    }
+    expect(android.outputs).toHaveLength(20);
+    expect(android.adaptiveXML).toHaveLength(2);
+    const adaptiveSizes = android.outputs.filter((row: { path: string }) => row.path.includes('foreground')).map((row: { width: number }) => row.width);
+    expect(adaptiveSizes).toEqual([108, 162, 216, 324, 432]);
+    expect(android.adaptiveXML.every((row: { canonicalLayerReferences: boolean }) => row.canonicalLayerReferences)).toBe(true);
   });
 
   it('prevents the historical sphere generator from overwriting official icons', () => {

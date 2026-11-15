@@ -136,5 +136,13 @@
   "accessibility.decrease",
   "accessibility.increase",
   "accessibility.selectLanguage",
-  "accessibility.phaseIndicator"
+  "accessibility.phaseIndicator",
+  "language.swipeHint",
+  "language.previous",
+  "language.next",
+  "language.page",
+  "language.saveError",
+  "today.skipIntro",
+  "legal.fontsTitle",
+  "legal.originalEnglish"
 ]

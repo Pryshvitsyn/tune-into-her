@@ -52,7 +52,8 @@
     "settings": "Einstellungen öffnen",
     "lockedTitle": "Dein täglicher Impuls ist bereit",
     "lockedBody": "Ein aktiver Testzeitraum oder ein Abo schaltet den Impuls frei.",
-    "unlock": "Abo ansehen"
+    "unlock": "Abo ansehen",
+    "skipIntro": "Intro überspringen"
   },
   "phase": {
     "menstrual": "Menstruation",
@@ -117,7 +118,12 @@
     "it": "Italiano",
     "ru": "Русский",
     "uk": "Українська",
-    "es": "Español"
+    "es": "Español",
+    "swipeHint": "Wische, um deine Sprache zu wählen",
+    "previous": "Vorherige Sprache",
+    "next": "Nächste Sprache",
+    "page": "{{index}} von {{count}}",
+    "saveError": "Die Sprache konnte nicht gespeichert werden. Bitte erneut versuchen."
   },
   "paywall": {
     "title": "Ein hilfreicher Impuls jeden Tag.",
@@ -178,5 +184,9 @@
     "increase": "{{label}} erhöhen",
     "selectLanguage": "{{language}} auswählen",
     "phaseIndicator": "Phasenanzeige: {{phase}}"
+  },
+  "legal": {
+    "fontsTitle": "Schriften und Lizenzen",
+    "originalEnglish": "Nachfolgend stehen die englische Originallizenz von Linux Libertine O und der zugehörige Vertriebshinweis."
   }
 }

@@ -1,5 +1,6 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "iconVariant": "silver-open-rings-no-wordmark",
   "reference": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
   "referenceSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
   "referencePixels": [
@@ -12,15 +13,25 @@
     "width": 780,
     "height": 780
   },
-  "processing": "Literal source rectangle; uniform Lanczos3 resampling only. No redrawing, text replacement, recoloring, added art or pre-rounded production icons.",
+  "editSourceFile": "assets/icons/source/rings-wordmark-removal.generated.png",
+  "editSourceSHA256": "d68c28ea81d9ea5a68d33269cfe4fdb65d6b429bfbad9e7e82c45b06dddafdcc",
+  "provenanceFile": "assets/icons/source/rings-only.provenance.json",
+  "provenanceSHA256": "dfd71a3d3f26178f378a2a222ab6eba6b5e22fea5e49221749709e3dbf8686b3",
+  "editBand": {
+    "top": 420,
+    "bottomExclusive": 680,
+    "featherPixels": 24
+  },
+  "protectedOutsideBandSHA256": "cd3d74547d11f1a50c8a743b6dde146b97b23d270ae59247c8ec7eccf99396b5",
+  "processing": "Original square photograph plus bounded built-in imagegen wordmark-removal/reconstructed-arc patch. All RGB pixels outside the band are exact. No SVG replacement, new symbol, tint, stretch or pre-rounded production corners.",
   "tool": {
     "sharp": "0.35.5",
     "vips": "8.18.7"
   },
   "adaptive": {
     "canvas": 1024,
-    "photoSide": 672,
-    "inset": 176,
+    "photoSide": 768,
+    "inset": 128,
     "layerDP": 108,
     "maskDP": 72,
     "safeCircleDP": 66,
@@ -32,58 +43,40 @@
       "height": 184
     },
     "safeCircleRadiusPixels": 312.8888888888889,
-    "maximumLandmarkRadiusPixels": 310.1837592412623,
+    "maximumLandmarkRadiusPixels": 300.3076923076923,
     "conservativeSourceLandmarks": {
-      "wordmark": [
-        [
-          80,
-          800
-        ],
-        [
-          780,
-          800
-        ],
-        [
-          80,
-          900
-        ],
-        [
-          780,
-          900
-        ]
-      ],
       "ringEndpointsAndExtrema": [
         [
-          130,
+          120,
           840
         ],
         [
           365,
-          1065
+          1075
         ],
         [
           505,
-          1028
+          1040
         ],
         [
           505,
           990
         ],
         [
-          640,
-          1008
+          650,
+          1020
         ],
         [
-          705,
+          715,
           840
         ],
         [
           425,
-          615
+          605
         ]
       ]
     },
-    "limit": "Foreground preserves entire photographed square with transparent system inset and alpha-only24px easing of outer steel margins; lettering/rings/shadows remain opaque. Opaque background is a letter-free steel excerpt of that same master. OEM motion/mask behavior still needs Android runtime verification."
+    "limit": "Foreground preserves entire photographed square with transparent system inset and alpha-only24px easing of outer steel margins; rings/endpoints/shadows remain opaque. Icon lettering is removed. Opaque background is a letter-free steel excerpt of that same master. OEM motion/mask behavior still needs Android runtime verification."
   },
   "protectedSHA256": {
     "assets/brand/reference/founder-approved-premium-v5-20261114.png": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
@@ -101,49 +94,49 @@
       "path": "assets/icon.png",
       "width": 1024,
       "height": 1024,
-      "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+      "sha256": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05"
     },
     {
       "path": "ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
       "width": 1024,
       "height": 1024,
-      "sha256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2"
+      "sha256": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05"
     },
     {
       "path": "assets/icons/play-store-512.png",
       "width": 512,
       "height": 512,
-      "sha256": "0ead23e6d76256e624014fc095138838a5596de024a41f555bc72733c1a557d5"
+      "sha256": "534ced9935b49b73d2d7a6f3fba71da62b506473ec29d5d4fecae1f0fa105567"
     },
     {
       "path": "assets/icons/previews/iphone-home-60pt@2x.png",
       "width": 120,
       "height": 120,
-      "sha256": "5c14e189a915a46f152b7b049502e7108854638cf5cf1c507ae7525581d103c5"
+      "sha256": "475e6cffff095b791d4b8990fb6c5fb22a545ea68bafe3581026dc98f3af59ed"
     },
     {
       "path": "assets/icons/previews/iphone-home-60pt@3x.png",
       "width": 180,
       "height": 180,
-      "sha256": "a70db6fad4f4a39bf3b7ae68e5f8009074edfafc97db59ce9790742a677a013f"
+      "sha256": "9a12a4ddde4b433622ae1072d1395631babe8be2d0d3a59b0431c3ba4c96a615"
     },
     {
       "path": "assets/icons/previews/iphone-settings-29pt@2x.png",
       "width": 58,
       "height": 58,
-      "sha256": "571c3b1eb8845bfc86528bba1ffce2ecc712e302d08b34ab31f25410fca34b59"
+      "sha256": "6ba31602191e3d8a999332986c176ea10c8a4f9842f247142e11cc6d3477aa8c"
     },
     {
       "path": "assets/icons/previews/iphone-settings-29pt@3x.png",
       "width": 87,
       "height": 87,
-      "sha256": "4cf2e99ee73d2f2d78adc7713a5d8b956d48f5883ad60c29059b99d1eb4497e4"
+      "sha256": "ae9cc8747b49bb754ac6a133806cba53204ffaba7a0a52dbfe669ca05b2b104a"
     },
     {
       "path": "assets/adaptive-icon.png",
       "width": 1024,
       "height": 1024,
-      "sha256": "06d9a7bcbc39ef36e871f8f0a0be9ea2aecbf1e66d0ec151d8e17e9d288f5287"
+      "sha256": "159a3829a7660c273e1e229f58020b8e5d6b536148077da3f1ab516ab16cea45"
     },
     {
       "path": "assets/icons/adaptive-background.png",
@@ -155,25 +148,25 @@
       "path": "assets/icons/previews/android-round-system-mask.png",
       "width": 1024,
       "height": 1024,
-      "sha256": "b0cc94944ec8b076cf0a476d6d367e13c9c5492d3e86a261c13b51dcaa624618"
+      "sha256": "67da6bb3725a3b3180cf3b8b0418b21d7d45f99f590567c3c8c6adfe83e21490"
     },
     {
       "path": "assets/icons/previews/android-safe-area-DIAGNOSTIC.png",
       "width": 1024,
       "height": 1024,
-      "sha256": "688d9122e0a5d847feea2eda28ba065e2c160ff3eb665896b5e0bf070010bf6e"
+      "sha256": "9cf5345fad129c5bccce51d3ce74b00b79bf8d658ba4287f5c33e8a6af509a1c"
     },
     {
       "path": "assets/icons/previews/store-listing-cards.png",
       "width": 1024,
       "height": 400,
-      "sha256": "a4e997232300e87df08b72053169a7136850a2a60a4230bb10733568a0e03eda"
+      "sha256": "95ae851d4b73cb61ad16bb0f0ef904a739f4885b78d4e8462f4616f25a59a298"
     },
     {
       "path": "assets/icons/previews/platform-preview-sheet.png",
       "width": 1024,
       "height": 955,
-      "sha256": "d223f9cf15d8ed9ee9eb90ec840f2e8167f26654a4b80c5e99770c87dc05401c"
+      "sha256": "ff608c27a8fd1c465bfaaed3dc6a1ce7d17110081c1064e8c8afa82d6cc11cba"
     }
   ]
 }

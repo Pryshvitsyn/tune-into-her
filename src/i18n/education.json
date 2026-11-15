@@ -1,0 +1,530 @@
+{
+  "en": {
+    "title": "Understanding the cycle",
+    "timing": "Timing",
+    "physical": "Body",
+    "energy": "Energy and emotions",
+    "support": "Thoughtful support",
+    "variation": "Every person is different",
+    "sources": "Sources",
+    "sourceLanguage": "These institutional sources open in English.",
+    "sourceError": "Could not open the source. Please try again.",
+    "intro": "These are general explanations, not a reading of her body. Dates alone cannot confirm ovulation, predict mood or guide contraception. This app offers relationship guidance, not diagnosis. If symptoms disrupt daily life, seek medical advice.",
+    "variationBody": "Patterns and timing vary between people and cycles; hormonal contraception may change them. Ask how she feels and respect her answer.",
+    "sourceNames": [
+      "Menstrual cycle",
+      "Periods",
+      "Premenstrual symptoms"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Menstruation",
+        "timing": "Day 1 is the first day of bleeding. A period often lasts 2–7 days.",
+        "physical": "The uterine lining is shed. Cramps or discomfort may occur.",
+        "energy": "Some feel tired or need more rest; others notice little change.",
+        "support": "Ask what helps. Offer practical help, rest or warmth if wanted."
+      },
+      "follicular": {
+        "title": "Follicular phase",
+        "timing": "From the first day of bleeding until ovulation; its length varies. Menstruation overlaps this ovarian phase.",
+        "physical": "Follicles develop in the ovaries and the uterine lining rebuilds.",
+        "energy": "Energy may feel different as bleeding eases, but no particular mood or productivity is guaranteed.",
+        "support": "Plan together around her actual energy, without assuming she should feel more social."
+      },
+      "mid_cycle": {
+        "title": "Ovulation",
+        "timing": "An egg is released; often about 12–16 days before the next period, not always day 14.",
+        "physical": "Some notice brief one-sided pelvic discomfort; many notice nothing.",
+        "energy": "No specific emotional or energy pattern is universal.",
+        "support": "Listen to her preferences about plans, closeness and space. A calendar is not consent."
+      },
+      "luteal": {
+        "title": "Luteal phase",
+        "timing": "After ovulation until the next period; often around two weeks, with individual variation.",
+        "physical": "Some experience bloating, breast tenderness or headaches before bleeding.",
+        "energy": "PMS can include tiredness, irritability or emotional changes; it does not affect everyone.",
+        "support": "Offer help with daily tasks and flexible plans. Take difficult symptoms seriously."
+      }
+    }
+  },
+  "ru": {
+    "title": "Как устроен цикл",
+    "timing": "Примерные сроки",
+    "physical": "Физические ощущения",
+    "energy": "Энергия и эмоции",
+    "support": "Бережная поддержка",
+    "variation": "У каждого свой опыт",
+    "sources": "Источники",
+    "sourceLanguage": "Эти медицинские источники откроются на английском языке.",
+    "sourceError": "Не удалось открыть источник. Попробуйте ещё раз.",
+    "intro": "Это общие сведения, а не оценка её организма. По датам нельзя подтвердить овуляцию, предсказать настроение или выбирать контрацепцию. Приложение помогает в отношениях и не ставит диагнозов. Если симптомы мешают повседневной жизни, обратитесь за медицинской помощью.",
+    "variationBody": "Сроки и ощущения различаются у разных людей и в разных циклах; гормональная контрацепция может их менять. Спросите о самочувствии и уважайте ответ.",
+    "sourceNames": [
+      "Менструальный цикл",
+      "Менструация",
+      "Предменструальные симптомы"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Менструация",
+        "timing": "Первый день кровотечения — день 1 цикла. Менструация часто длится 2–7 дней.",
+        "physical": "Слизистая оболочка матки отторгается. Возможны спазмы и дискомфорт.",
+        "energy": "Иногда ощущается усталость и хочется отдыха; иногда изменений почти нет.",
+        "support": "Спросите, что поможет. Предложите бытовую помощь, отдых или тепло, если это нужно."
+      },
+      "follicular": {
+        "title": "Фолликулярная фаза",
+        "timing": "От первого дня кровотечения до овуляции; длительность меняется. Менструация входит в эту фазу яичников.",
+        "physical": "В яичниках развиваются фолликулы, слизистая матки восстанавливается.",
+        "energy": "После кровотечения энергия может меняться, но определённое настроение или продуктивность не гарантированы.",
+        "support": "Стройте планы вместе с учётом её реальных сил, не ожидая обязательной общительности."
+      },
+      "mid_cycle": {
+        "title": "Овуляция",
+        "timing": "Выход яйцеклетки: часто за 12–16 дней до следующей менструации, не обязательно на 14-й день.",
+        "physical": "Иногда бывает краткий дискомфорт с одной стороны таза; многие ничего не замечают.",
+        "energy": "Единого эмоционального состояния или уровня энергии нет.",
+        "support": "Учитывайте её пожелания о планах, близости и личном пространстве. Календарь не означает согласия."
+      },
+      "luteal": {
+        "title": "Лютеиновая фаза",
+        "timing": "После овуляции до следующей менструации; часто около двух недель, но сроки индивидуальны.",
+        "physical": "Перед кровотечением возможны вздутие, чувствительность груди или головная боль.",
+        "energy": "При ПМС возможны усталость, раздражительность и эмоциональные изменения; ПМС бывает не у всех.",
+        "support": "Предложите помощь с делами и гибкие планы. Отнеситесь серьёзно к симптомам, которые мешают жить."
+      }
+    }
+  },
+  "uk": {
+    "title": "Як влаштований цикл",
+    "timing": "Приблизні строки",
+    "physical": "Фізичні відчуття",
+    "energy": "Енергія та емоції",
+    "support": "Дбайлива підтримка",
+    "variation": "Кожна людина різна",
+    "sources": "Джерела",
+    "sourceLanguage": "Ці медичні джерела відкриються англійською мовою.",
+    "sourceError": "Не вдалося відкрити джерело. Спробуйте ще раз.",
+    "intro": "Це загальні відомості, а не оцінка її організму. За датами не можна підтвердити овуляцію, передбачити настрій чи обирати контрацепцію. Застосунок допомагає у стосунках і не встановлює діагнозів. Якщо симптоми заважають щоденному життю, зверніться по медичну допомогу.",
+    "variationBody": "Строки й відчуття відрізняються між людьми та циклами; гормональна контрацепція може їх змінювати. Запитайте про самопочуття та поважайте відповідь.",
+    "sourceNames": [
+      "Менструальний цикл",
+      "Менструація",
+      "Передменструальні симптоми"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Менструація",
+        "timing": "Перший день кровотечі — день 1 циклу. Менструація часто триває 2–7 днів.",
+        "physical": "Слизова оболонка матки відторгається. Можливі спазми та дискомфорт.",
+        "energy": "Дехто відчуває втому й потребує відпочинку; інші майже не помічають змін.",
+        "support": "Запитайте, що допоможе. Запропонуйте допомогу з побутом, відпочинок чи тепло, якщо це потрібно."
+      },
+      "follicular": {
+        "title": "Фолікулярна фаза",
+        "timing": "Від першого дня кровотечі до овуляції; тривалість змінюється. Менструація входить до цієї фази яєчників.",
+        "physical": "У яєчниках розвиваються фолікули, слизова матки відновлюється.",
+        "energy": "Після кровотечі енергія може змінюватися, але певний настрій чи продуктивність не гарантовані.",
+        "support": "Плануйте разом з огляду на її реальні сили, не очікуючи обов’язкової товариськості."
+      },
+      "mid_cycle": {
+        "title": "Овуляція",
+        "timing": "Вихід яйцеклітини: часто за 12–16 днів до наступної менструації, не обов’язково на 14-й день.",
+        "physical": "Іноді буває короткий дискомфорт з одного боку таза; багато хто нічого не помічає.",
+        "energy": "Спільного для всіх настрою чи рівня енергії немає.",
+        "support": "Поважайте її побажання щодо планів, близькості й особистого простору. Календар не означає згоди."
+      },
+      "luteal": {
+        "title": "Лютеїнова фаза",
+        "timing": "Після овуляції до наступної менструації; часто близько двох тижнів, але строки індивідуальні.",
+        "physical": "Перед кровотечею можливі здуття, чутливість грудей чи головний біль.",
+        "energy": "ПМС може включати втому, дратівливість та емоційні зміни; він буває не у всіх.",
+        "support": "Запропонуйте допомогу зі справами та гнучкі плани. Сприймайте серйозно симптоми, які заважають жити."
+      }
+    }
+  },
+  "it": {
+    "title": "Capire il ciclo",
+    "timing": "Tempi indicativi",
+    "physical": "Corpo",
+    "energy": "Energia ed emozioni",
+    "support": "Un sostegno attento",
+    "variation": "Ogni persona è diversa",
+    "sources": "Fonti",
+    "sourceLanguage": "Queste fonti istituzionali si aprono in inglese.",
+    "sourceError": "Impossibile aprire la fonte. Riprova.",
+    "intro": "Sono spiegazioni generali, non una lettura del suo corpo. Le date non confermano l’ovulazione, non prevedono l’umore e non guidano la contraccezione. L’app offre spunti per la relazione, non diagnosi. Se i sintomi limitano la vita quotidiana, chiedere un parere medico.",
+    "variationBody": "Tempi e sensazioni variano tra persone e cicli; la contraccezione ormonale può modificarli. Chiedile come si sente e rispetta la risposta.",
+    "sourceNames": [
+      "Ciclo mestruale",
+      "Mestruazioni",
+      "Sintomi premestruali"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Mestruazione",
+        "timing": "Il primo giorno di sanguinamento è il giorno 1. Le mestruazioni durano spesso 2–7 giorni.",
+        "physical": "Il rivestimento uterino viene espulso. Possono esserci crampi o fastidio.",
+        "energy": "Alcune persone si sentono stanche e desiderano riposo; altre notano pochi cambiamenti.",
+        "support": "Chiedi cosa aiuta. Offri aiuto pratico, riposo o calore se desiderati."
+      },
+      "follicular": {
+        "title": "Fase follicolare",
+        "timing": "Dal primo giorno di sanguinamento all’ovulazione; la durata varia. Le mestruazioni si sovrappongono a questa fase ovarica.",
+        "physical": "I follicoli crescono nelle ovaie e il rivestimento uterino si ricostruisce.",
+        "energy": "L’energia può cambiare quando il flusso diminuisce, ma nessun umore o rendimento è garantito.",
+        "support": "Fate programmi in base alla sua energia reale, senza aspettarvi più socievolezza."
+      },
+      "mid_cycle": {
+        "title": "Ovulazione",
+        "timing": "Viene rilasciato un ovulo, spesso circa 12–16 giorni prima delle mestruazioni successive, non sempre al giorno 14.",
+        "physical": "Alcune avvertono un breve fastidio pelvico da un lato; molte non avvertono nulla.",
+        "energy": "Non esiste uno schema emotivo o energetico universale.",
+        "support": "Ascolta le sue preferenze su programmi, vicinanza e spazio. Il calendario non equivale al consenso."
+      },
+      "luteal": {
+        "title": "Fase luteale",
+        "timing": "Dopo l’ovulazione fino alle mestruazioni successive; spesso circa due settimane, con variazioni individuali.",
+        "physical": "Prima del flusso possono comparire gonfiore, seno dolente o mal di testa.",
+        "energy": "La sindrome premestruale può includere stanchezza, irritabilità o cambiamenti emotivi; non riguarda tutte.",
+        "support": "Offri aiuto nelle attività quotidiane e programmi flessibili. Prendi sul serio i sintomi difficili."
+      }
+    }
+  },
+  "es": {
+    "title": "Comprender el ciclo",
+    "timing": "Cuándo ocurre",
+    "physical": "Cuerpo",
+    "energy": "Energía y emociones",
+    "support": "Apoyo atento",
+    "variation": "Cada persona es diferente",
+    "sources": "Fuentes",
+    "sourceLanguage": "Estas fuentes institucionales se abren en inglés.",
+    "sourceError": "No se pudo abrir la fuente. Inténtalo de nuevo.",
+    "intro": "Son explicaciones generales, no una lectura de su cuerpo. Las fechas no confirman la ovulación, no predicen el ánimo ni sirven para elegir anticoncepción. La app orienta sobre la relación, no diagnostica. Si los síntomas dificultan la vida diaria, consulta a un profesional sanitario.",
+    "variationBody": "Los tiempos y las sensaciones varían entre personas y ciclos; la anticoncepción hormonal puede cambiarlos. Pregúntale cómo se siente y respeta su respuesta.",
+    "sourceNames": [
+      "Ciclo menstrual",
+      "Menstruación",
+      "Síntomas premenstruales"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Menstruación",
+        "timing": "El primer día de sangrado es el día 1. La menstruación suele durar 2–7 días.",
+        "physical": "Se desprende el revestimiento uterino. Puede haber cólicos o molestias.",
+        "energy": "Algunas personas sienten cansancio o necesitan descanso; otras apenas notan cambios.",
+        "support": "Pregunta qué ayuda. Ofrece ayuda práctica, descanso o calor si lo desea."
+      },
+      "follicular": {
+        "title": "Fase folicular",
+        "timing": "Desde el primer día de sangrado hasta la ovulación; su duración varía. La menstruación forma parte de esta fase ovárica.",
+        "physical": "Los folículos crecen en los ovarios y el revestimiento uterino se regenera.",
+        "energy": "La energía puede cambiar al disminuir el sangrado, sin garantizar un ánimo ni una productividad determinados.",
+        "support": "Haced planes según su energía real, sin esperar que tenga más ganas de socializar."
+      },
+      "mid_cycle": {
+        "title": "Ovulación",
+        "timing": "Se libera un óvulo, a menudo unos 12–16 días antes de la siguiente regla, no siempre el día 14.",
+        "physical": "Algunas notan una breve molestia pélvica en un lado; muchas no notan nada.",
+        "energy": "No hay un patrón emocional ni de energía universal.",
+        "support": "Escucha sus preferencias sobre planes, cercanía y espacio. El calendario no equivale al consentimiento."
+      },
+      "luteal": {
+        "title": "Fase lútea",
+        "timing": "Después de la ovulación hasta la siguiente regla; a menudo unas dos semanas, con variación individual.",
+        "physical": "Antes del sangrado puede haber hinchazón, sensibilidad mamaria o dolor de cabeza.",
+        "energy": "El síndrome premenstrual puede incluir cansancio, irritabilidad o cambios emocionales; no afecta a todas.",
+        "support": "Ofrece ayuda con las tareas y planes flexibles. Toma en serio los síntomas difíciles."
+      }
+    }
+  },
+  "fr": {
+    "title": "Comprendre le cycle",
+    "timing": "Quand",
+    "physical": "Le corps",
+    "energy": "Énergie et émotions",
+    "support": "Un soutien attentionné",
+    "variation": "Chaque personne est différente",
+    "sources": "Sources",
+    "sourceLanguage": "Ces sources institutionnelles s’ouvrent en anglais.",
+    "sourceError": "Impossible d’ouvrir la source. Réessayez.",
+    "intro": "Ce sont des explications générales, pas une lecture de son corps. Les dates ne confirment pas l’ovulation, ne prédisent pas l’humeur et ne guident pas la contraception. L’app accompagne la relation, sans diagnostic. Si les symptômes gênent la vie quotidienne, demander un avis médical.",
+    "variationBody": "Le rythme et les sensations varient selon les personnes et les cycles ; la contraception hormonale peut les modifier. Demandez-lui comment elle se sent et respectez sa réponse.",
+    "sourceNames": [
+      "Cycle menstruel",
+      "Règles",
+      "Symptômes prémenstruels"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Menstruation",
+        "timing": "Le premier jour de saignement est le jour 1. Les règles durent souvent 2 à 7 jours.",
+        "physical": "La muqueuse utérine est éliminée. Des crampes ou une gêne sont possibles.",
+        "energy": "Certaines personnes se sentent fatiguées et souhaitent du repos ; d’autres remarquent peu de changements.",
+        "support": "Demandez ce qui aide. Proposez une aide pratique, du repos ou de la chaleur si elle le souhaite."
+      },
+      "follicular": {
+        "title": "Phase folliculaire",
+        "timing": "Du premier jour des règles à l’ovulation ; sa durée varie. Les règles font partie de cette phase ovarienne.",
+        "physical": "Les follicules se développent dans les ovaires et la muqueuse utérine se reconstruit.",
+        "energy": "L’énergie peut changer lorsque les saignements diminuent, sans humeur ni productivité garanties.",
+        "support": "Prévoyez ensemble selon son énergie réelle, sans attendre plus de sociabilité."
+      },
+      "mid_cycle": {
+        "title": "Ovulation",
+        "timing": "Un ovule est libéré, souvent environ 12 à 16 jours avant les prochaines règles, pas toujours au jour 14.",
+        "physical": "Certaines ressentent une brève gêne pelvienne d’un côté ; beaucoup ne remarquent rien.",
+        "energy": "Aucun schéma émotionnel ou énergétique n’est universel.",
+        "support": "Écoutez ses préférences sur les projets, la proximité et l’espace. Un calendrier n’est pas un consentement."
+      },
+      "luteal": {
+        "title": "Phase lutéale",
+        "timing": "Après l’ovulation jusqu’aux règles suivantes ; souvent environ deux semaines, avec des variations individuelles.",
+        "physical": "Des ballonnements, des seins sensibles ou des maux de tête peuvent précéder les règles.",
+        "energy": "Le syndrome prémenstruel peut inclure fatigue, irritabilité ou changements émotionnels ; tout le monde n’est pas concerné.",
+        "support": "Proposez de l’aide au quotidien et des projets souples. Prenez au sérieux les symptômes difficiles."
+      }
+    }
+  },
+  "de": {
+    "title": "Den Zyklus verstehen",
+    "timing": "Ungefährer Zeitpunkt",
+    "physical": "Körper",
+    "energy": "Energie und Gefühle",
+    "support": "Aufmerksame Unterstützung",
+    "variation": "Jeder Mensch ist anders",
+    "sources": "Quellen",
+    "sourceLanguage": "Diese medizinischen Quellen öffnen sich auf Englisch.",
+    "sourceError": "Die Quelle konnte nicht geöffnet werden. Bitte erneut versuchen.",
+    "intro": "Dies sind allgemeine Erklärungen, keine Einschätzung ihres Körpers. Daten bestätigen keinen Eisprung, sagen keine Stimmung voraus und eignen sich nicht zur Verhütung. Die App gibt Beziehungsimpulse, keine Diagnosen. Bei Beschwerden, die den Alltag beeinträchtigen, ärztlichen Rat einholen.",
+    "variationBody": "Zeitpunkt und Empfinden unterscheiden sich je nach Person und Zyklus; hormonelle Verhütung kann sie verändern. Frage nach ihrem Befinden und respektiere die Antwort.",
+    "sourceNames": [
+      "Menstruationszyklus",
+      "Periode",
+      "Prämenstruelle Beschwerden"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Menstruation",
+        "timing": "Der erste Blutungstag ist Tag 1. Die Periode dauert häufig 2–7 Tage.",
+        "physical": "Die Gebärmutterschleimhaut wird abgestoßen. Krämpfe oder Beschwerden sind möglich.",
+        "energy": "Manche fühlen sich müde und brauchen Ruhe; andere bemerken kaum Veränderungen.",
+        "support": "Frage, was hilft. Biete praktische Hilfe, Ruhe oder Wärme an, wenn gewünscht."
+      },
+      "follicular": {
+        "title": "Follikelphase",
+        "timing": "Vom ersten Blutungstag bis zum Eisprung; die Dauer variiert. Die Menstruation überschneidet sich mit dieser Eierstockphase.",
+        "physical": "Follikel wachsen in den Eierstöcken und die Gebärmutterschleimhaut baut sich auf.",
+        "energy": "Mit nachlassender Blutung kann sich die Energie ändern; Stimmung und Leistungsfähigkeit sind nicht festgelegt.",
+        "support": "Plant nach ihrer tatsächlichen Energie, ohne mehr Geselligkeit zu erwarten."
+      },
+      "mid_cycle": {
+        "title": "Eisprung",
+        "timing": "Eine Eizelle wird freigesetzt, oft etwa 12–16 Tage vor der nächsten Periode, nicht immer an Tag 14.",
+        "physical": "Manche spüren kurz einseitige Unterleibsbeschwerden; viele bemerken nichts.",
+        "energy": "Es gibt kein allgemeingültiges Muster für Gefühle oder Energie.",
+        "support": "Achte auf ihre Wünsche zu Plänen, Nähe und Freiraum. Ein Kalender bedeutet keine Zustimmung."
+      },
+      "luteal": {
+        "title": "Lutealphase",
+        "timing": "Nach dem Eisprung bis zur nächsten Periode; oft etwa zwei Wochen, mit individuellen Unterschieden.",
+        "physical": "Vor der Blutung sind Blähungen, empfindliche Brüste oder Kopfschmerzen möglich.",
+        "energy": "PMS kann Müdigkeit, Reizbarkeit oder emotionale Veränderungen umfassen; es betrifft nicht alle.",
+        "support": "Biete Alltagshilfe und flexible Pläne an. Nimm belastende Beschwerden ernst."
+      }
+    }
+  },
+  "hi": {
+    "title": "मासिक चक्र को समझें",
+    "timing": "अनुमानित समय",
+    "physical": "शारीरिक अनुभव",
+    "energy": "ऊर्जा और भावनाएँ",
+    "support": "संवेदनशील सहयोग",
+    "variation": "हर व्यक्ति अलग है",
+    "sources": "स्रोत",
+    "sourceLanguage": "ये संस्थागत स्रोत अंग्रेज़ी में खुलते हैं।",
+    "sourceError": "स्रोत नहीं खुल सका। फिर कोशिश करें।",
+    "intro": "यह सामान्य जानकारी है, उनके शरीर की स्थिति का आकलन नहीं। केवल तारीखें अंडोत्सर्जन की पुष्टि, मनोदशा की भविष्यवाणी या गर्भनिरोध के लिए पर्याप्त नहीं हैं। ऐप रिश्ते के लिए मार्गदर्शन देता है, निदान नहीं। लक्षण रोज़मर्रा की ज़िंदगी में बाधा डालें तो चिकित्सकीय सलाह लें।",
+    "variationBody": "समय और अनुभव हर व्यक्ति और हर चक्र में अलग हो सकते हैं; हार्मोनल गर्भनिरोध इन्हें बदल सकता है। पूछें कि वह कैसा महसूस कर रही हैं और उत्तर का सम्मान करें।",
+    "sourceNames": [
+      "मासिक चक्र",
+      "मासिक धर्म",
+      "मासिक धर्म से पहले के लक्षण"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "मासिक धर्म",
+        "timing": "रक्तस्राव का पहला दिन चक्र का दिन 1 है। मासिक धर्म अक्सर 2–7 दिन रहता है।",
+        "physical": "गर्भाशय की अंदरूनी परत निकलती है। ऐंठन या तकलीफ़ हो सकती है।",
+        "energy": "कुछ लोगों को थकान और आराम की ज़रूरत होती है; कुछ को बहुत कम बदलाव महसूस होता है।",
+        "support": "पूछें कि क्या मदद करेगा। चाहें तो काम में मदद, आराम या गर्माहट दें।"
+      },
+      "follicular": {
+        "title": "फॉलिक्युलर चरण",
+        "timing": "रक्तस्राव के पहले दिन से अंडोत्सर्जन तक; अवधि बदलती है। मासिक धर्म भी अंडाशय के इस चरण का हिस्सा है।",
+        "physical": "अंडाशय में फॉलिकल विकसित होते हैं और गर्भाशय की परत फिर बनती है।",
+        "energy": "रक्तस्राव घटने पर ऊर्जा बदल सकती है, लेकिन किसी खास मनोदशा या उत्पादकता की गारंटी नहीं।",
+        "support": "उनकी वास्तविक ऊर्जा के अनुसार साथ मिलकर योजना बनाएँ, अधिक मिलनसार होने की अपेक्षा न रखें।"
+      },
+      "mid_cycle": {
+        "title": "अंडोत्सर्जन",
+        "timing": "अंडा निकलता है; अक्सर अगले मासिक धर्म से लगभग 12–16 दिन पहले, हमेशा दिन 14 पर नहीं।",
+        "physical": "कुछ लोगों को श्रोणि के एक तरफ थोड़ी देर तक तकलीफ़ होती है; कई को कुछ महसूस नहीं होता।",
+        "energy": "भावनाओं या ऊर्जा का कोई एक सार्वभौमिक पैटर्न नहीं है।",
+        "support": "योजनाओं, नज़दीकी और निजी जगह को लेकर उनकी पसंद सुनें। कैलेंडर सहमति नहीं है।"
+      },
+      "luteal": {
+        "title": "ल्यूटियल चरण",
+        "timing": "अंडोत्सर्जन के बाद अगले मासिक धर्म तक; अक्सर लगभग दो हफ़्ते, लेकिन व्यक्ति के अनुसार अंतर होता है।",
+        "physical": "रक्तस्राव से पहले पेट फूलना, स्तनों में संवेदनशीलता या सिरदर्द हो सकता है।",
+        "energy": "पीएमएस में थकान, चिड़चिड़ापन या भावनात्मक बदलाव हो सकते हैं; यह सभी को नहीं होता।",
+        "support": "रोज़मर्रा के काम में मदद और लचीली योजनाएँ पेश करें। परेशान करने वाले लक्षणों को गंभीरता से लें।"
+      }
+    }
+  },
+  "zh-Hans": {
+    "title": "了解月经周期",
+    "timing": "大致时间",
+    "physical": "身体变化",
+    "energy": "精力与情绪",
+    "support": "体贴的支持",
+    "variation": "每个人都不同",
+    "sources": "资料来源",
+    "sourceLanguage": "以下医疗机构资料以英语打开。",
+    "sourceError": "无法打开资料，请重试。",
+    "intro": "这些是一般知识，不是对她身体状况的判断。仅凭日期无法确认排卵、预测情绪或指导避孕。本应用提供相处建议，不作诊断。如果症状影响日常生活，请寻求医疗建议。",
+    "variationBody": "时间和感受因人、因周期而异；激素避孕也可能改变这些情况。询问她的感受，并尊重她的回答。",
+    "sourceNames": [
+      "月经周期",
+      "月经",
+      "经前症状"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "月经期",
+        "timing": "出血的第一天是周期第1天。月经通常持续2–7天。",
+        "physical": "子宫内膜脱落，可能出现痉挛或不适。",
+        "energy": "有些人感到疲倦、需要休息，有些人几乎没有变化。",
+        "support": "问问什么有帮助。根据她的意愿，提供家务帮助、休息或保暖。"
+      },
+      "follicular": {
+        "title": "卵泡期",
+        "timing": "从出血第一天到排卵，长短不一。月经期与这一卵巢阶段重叠。",
+        "physical": "卵巢中的卵泡发育，子宫内膜重新增厚。",
+        "energy": "出血减少时精力可能变化，但并不保证某种情绪或工作效率。",
+        "support": "根据她实际的精力一起安排计划，不预设她应该更愿意社交。"
+      },
+      "mid_cycle": {
+        "title": "排卵",
+        "timing": "卵子释放，通常在下次月经前约12–16天，并非总在第14天。",
+        "physical": "有些人出现短暂的单侧盆腔不适，许多人没有感觉。",
+        "energy": "不存在人人相同的情绪或精力模式。",
+        "support": "倾听她对安排、亲密和个人空间的意愿。日历不代表同意。"
+      },
+      "luteal": {
+        "title": "黄体期",
+        "timing": "排卵后至下次月经前，通常约两周，但存在个体差异。",
+        "physical": "出血前可能腹胀、乳房触痛或头痛。",
+        "energy": "经前综合征可能包括疲倦、易怒或情绪变化，但并非每个人都有。",
+        "support": "提供日常事务帮助，灵活安排。认真对待影响生活的症状。"
+      }
+    }
+  },
+  "ms": {
+    "title": "Memahami kitaran",
+    "timing": "Anggaran masa",
+    "physical": "Tubuh",
+    "energy": "Tenaga dan emosi",
+    "support": "Sokongan yang prihatin",
+    "variation": "Setiap orang berbeza",
+    "sources": "Sumber",
+    "sourceLanguage": "Sumber institusi ini dibuka dalam bahasa Inggeris.",
+    "sourceError": "Sumber tidak dapat dibuka. Cuba lagi.",
+    "intro": "Ini penerangan umum, bukan penilaian tubuhnya. Tarikh sahaja tidak mengesahkan ovulasi, meramalkan emosi atau menjadi panduan kontrasepsi. Aplikasi memberi panduan hubungan, bukan diagnosis. Dapatkan nasihat perubatan jika gejala mengganggu kehidupan harian.",
+    "variationBody": "Masa dan pengalaman berbeza antara individu dan kitaran; kontrasepsi hormon boleh mengubahnya. Tanya perasaannya dan hormati jawapannya.",
+    "sourceNames": [
+      "Kitaran haid",
+      "Haid",
+      "Gejala prahaid"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Haid",
+        "timing": "Hari pertama pendarahan ialah hari 1. Haid lazimnya berlangsung 2–7 hari.",
+        "physical": "Lapisan rahim luruh. Kekejangan atau ketidakselesaan mungkin berlaku.",
+        "energy": "Ada yang berasa letih dan memerlukan rehat; yang lain hampir tiada perubahan.",
+        "support": "Tanya apa yang membantu. Tawarkan bantuan praktikal, rehat atau kehangatan jika dikehendaki."
+      },
+      "follicular": {
+        "title": "Fasa folikular",
+        "timing": "Dari hari pertama pendarahan hingga ovulasi; tempohnya berubah-ubah. Haid bertindih dengan fasa ovari ini.",
+        "physical": "Folikel berkembang dalam ovari dan lapisan rahim terbina semula.",
+        "energy": "Tenaga mungkin berubah apabila pendarahan berkurang, tetapi emosi atau produktiviti tertentu tidak terjamin.",
+        "support": "Rancang bersama mengikut tenaga sebenarnya, tanpa menjangkakan dia lebih suka bersosial."
+      },
+      "mid_cycle": {
+        "title": "Ovulasi",
+        "timing": "Telur dilepaskan, lazimnya sekitar 12–16 hari sebelum haid berikutnya, bukan semestinya hari 14.",
+        "physical": "Ada yang terasa ketidakselesaan singkat pada sebelah pelvis; ramai tidak merasai apa-apa.",
+        "energy": "Tiada corak emosi atau tenaga yang sama untuk semua.",
+        "support": "Dengar pilihannya tentang rancangan, kemesraan dan ruang peribadi. Kalendar bukan persetujuan."
+      },
+      "luteal": {
+        "title": "Fasa luteal",
+        "timing": "Selepas ovulasi hingga haid berikutnya; lazimnya kira-kira dua minggu, dengan perbezaan individu.",
+        "physical": "Kembung, payudara sensitif atau sakit kepala mungkin berlaku sebelum pendarahan.",
+        "energy": "PMS boleh melibatkan keletihan, mudah marah atau perubahan emosi; bukan semua mengalaminya.",
+        "support": "Tawarkan bantuan harian dan rancangan fleksibel. Ambil serius gejala yang menyusahkan."
+      }
+    }
+  },
+  "mbf": {
+    "title": "Kenali kitaran",
+    "timing": "Anggaran masa",
+    "physical": "Badan",
+    "energy": "Tenaga dan perasaan",
+    "support": "Sokongan dengan timbang rasa",
+    "variation": "Setiap orang berbeza",
+    "sources": "Sumber",
+    "sourceLanguage": "Sumber institusi ini dibuka dalam bahasa Inggeris.",
+    "sourceError": "Sumber tidak dapat dibuka. Cuba lagi.",
+    "intro": "Ini penerangan umum, bukan penilaian badannya. Tarikh sahaja tidak mengesahkan ovulasi, meramalkan perasaan atau menjadi panduan mencegah kehamilan. Aplikasi ini memberi panduan hubungan, bukan diagnosis. Dapatkan nasihat doktor jika gejala mengganggu kehidupan harian.",
+    "variationBody": "Masa dan pengalaman berbeza bagi setiap orang dan kitaran; kaedah hormon untuk mencegah kehamilan boleh mengubahnya. Tanya bagaimana dia rasa dan hormati jawapannya.",
+    "sourceNames": [
+      "Kitaran haid",
+      "Haid",
+      "Gejala sebelum haid"
+    ],
+    "phases": {
+      "menstrual": {
+        "title": "Haid",
+        "timing": "Hari pertama darah haid ialah hari 1. Haid biasa berlangsung 2–7 hari.",
+        "physical": "Lapisan dalam rahim luruh. Kekejangan atau rasa tidak selesa boleh berlaku.",
+        "energy": "Ada yang rasa letih dan perlu berehat; yang lain hampir tidak rasa perubahan.",
+        "support": "Tanya apa yang boleh membantu. Tawarkan bantuan kerja harian, rehat atau kehangatan jika dia mahu."
+      },
+      "follicular": {
+        "title": "Fasa folikel",
+        "timing": "Dari hari pertama haid sampai ovulasi; tempohnya tidak tetap. Haid juga sebahagian daripada fasa ovari ini.",
+        "physical": "Folikel membesar dalam ovari dan lapisan rahim terbina semula.",
+        "energy": "Tenaga mungkin berubah bila darah berkurang, tetapi tiada jaminan perasaan atau keupayaan kerja tertentu.",
+        "support": "Buat rancangan bersama ikut tenaganya yang sebenar, jangan anggap dia mesti lebih suka bergaul."
+      },
+      "mid_cycle": {
+        "title": "Ovulasi",
+        "timing": "Telur dilepaskan, biasa sekitar 12–16 hari sebelum haid seterusnya, tidak semestinya hari 14.",
+        "physical": "Ada yang rasa tidak selesa sekejap di satu sisi pelvis; ramai tidak rasa apa-apa.",
+        "energy": "Tiada corak perasaan atau tenaga yang sama untuk semua orang.",
+        "support": "Dengar pilihannya tentang rancangan, kemesraan dan ruang sendiri. Kalendar bukan tanda persetujuan."
+      },
+      "luteal": {
+        "title": "Fasa luteal",
+        "timing": "Selepas ovulasi sampai haid seterusnya; biasa kira-kira dua minggu, tetapi berbeza bagi setiap orang.",
+        "physical": "Perut kembung, payudara sensitif atau sakit kepala boleh berlaku sebelum haid.",
+        "energy": "PMS boleh membawa rasa letih, mudah marah atau perubahan perasaan; bukan semua orang mengalaminya.",
+        "support": "Tawarkan bantuan kerja harian dan rancangan yang boleh diubah. Ambil serius gejala yang menyusahkan."
+      }
+    }
+  }
+}

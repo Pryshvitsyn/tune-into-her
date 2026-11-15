@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   allLanguageRowsMeasured, createLanguageRowMeasurements, createLanguageSelection,
-  languageAtWheelGestureOffset, languageAtWheelOffset, languagePickerRowHeight,
+  languageAtPageGestureOffset, languageAtWheelGestureOffset, languageAtWheelOffset, languagePickerRowHeight,
   languagePickerViewport, languageToCommit, recordLanguageRowMeasurement, reduceLanguageSelection,
 } from '../src/components/languageSelection';
 import { SUPPORTED_LANGUAGES } from '../src/config/constants';
@@ -17,6 +17,20 @@ const luminance = (hex: string) => {
 const contrast = (a: string, b: string) => (Math.max(luminance(a), luminance(b)) + 0.05) / (Math.min(luminance(a), luminance(b)) + 0.05);
 
 describe('onboarding language draft', () => {
+  it.each(SUPPORTED_LANGUAGES)('pages horizontally to %s without committing until explicit confirmation', language => {
+    const width = 327;
+    const index = SUPPORTED_LANGUAGES.indexOf(language);
+    expect(languageAtPageGestureOffset(index * width, width, { userGesture: false, layoutReady: true })).toBeNull();
+    expect(languageAtPageGestureOffset(index * width, width, { userGesture: true, layoutReady: false })).toBeNull();
+    const selected = languageAtPageGestureOffset(index * width, width, { userGesture: true, layoutReady: true });
+    expect(selected).toBe(language);
+    const draft = reduceLanguageSelection(createLanguageSelection('en'), { type: 'open', value: 'en' });
+    const changed = reduceLanguageSelection(draft, { type: 'choose', value: selected! });
+    expect(changed.origin).toBe('en');
+    expect(reduceLanguageSelection(changed, { type: 'cancel' }).draft).toBe('en');
+    expect(languageToCommit(changed)).toBe(language);
+    expect(reduceLanguageSelection(changed, { type: 'confirm' }).confirming).toBe(true);
+  });
   it('does not produce a persisted value from selection or dismissal', () => {
     const initial = createLanguageSelection('en');
     expect(languageToCommit(initial)).toBeNull();

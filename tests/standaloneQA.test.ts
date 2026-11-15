@@ -8,6 +8,7 @@ import ts from 'typescript';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { scopeAppContext } from '../src/devQA/appScope';
+import { QA_SCENARIOS } from '../src/devQA/scenarios';
 import * as normalQA from '../src/devQA/session';
 import { todayEntry } from '../src/domain/navigation/todayEntry';
 
@@ -83,11 +84,17 @@ describe('explicit build-only standalone QA tooling', () => {
   it('requires explicit preparation and keeps normal guard/context/index/entry inputs unchanged', () => {
     expect(() => prepareStandaloneQA()).toThrow('Explicit');
     const { root, manifest } = prepare();
-    expect(manifest).toMatchObject({ scenario: 'paid-active', developmentJavaScript: false, normalProductionGatesUnchanged: true });
+    expect(manifest).toMatchObject({ scenario: 'paid-active', entry: 'panel', developmentJavaScript: false, normalProductionGatesUnchanged: true });
     for (const file of PROTECTED_INPUTS) {
       expect(readFileSync(path.join(root, file))).toEqual(readFileSync(new URL('../' + file, import.meta.url)));
     }
     expect(normalQA.createInternalQASession(false, 'true').enabled).toBe(false);
+    expect(normalQA.standaloneQAEnabled).toBe(false);
+    expect(readFileSync(manifest.files.index, 'utf8')).toContain('/dev-qa');
+    expect(loadPrivateSession(manifest.files.session).standaloneQAEnabled).toBe(true);
+    const today = prepareStandaloneQA({ projectRoot: root, acknowledge: true, entry: 'today' });
+    expect(readFileSync(today.files.index, 'utf8')).toContain('/today');
+    expect(() => prepareStandaloneQA({ projectRoot: root, acknowledge: true, entry: 'public' })).toThrow('Unsupported');
   });
 
   it('enables aliases only for its exact explicit Release entry and avoids an original-session import cycle', () => {
@@ -125,10 +132,10 @@ describe('explicit build-only standalone QA tooling', () => {
       module(0, 'var qa = require(_dependencyMap[0]); throw new Error("STANDALONE_QA_SCOPE_REQUIRED");', [1]),
       module(3, 'var _session = require(_dependencyMap[0]); function AppProvider() { return _session.internalQAEnabled; }', [sessionId]),
       module(4, 'var _session = require(_dependencyMap[0]); function useInternalQASession() { return _session.internalQASession; }', [sessionId]),
-      module(5, 'function StandaloneQAIndex() { return "/today"; }', []),
+      module(5, 'function StandaloneQAIndex() { return "/dev-qa"; }', []),
     ].join('');
     expect(() => verifyStandaloneBundle(graph(2))).toThrow('DISABLED_SINGLETON');
-    expect(verifyStandaloneBundle(graph(1))).toMatchObject({ result: 'PASS', AppProviderUsesPrivateSession: true, hookUsesSamePrivateSession: true });
+    expect(verifyStandaloneBundle(graph(1))).toMatchObject({ result: 'PASS', AppProviderUsesPrivateSession: true, hookUsesSamePrivateSession: true, entry: 'panel' });
     expect(() => verifyStandaloneBundle(graph(1).replace('StandaloneQAIndex', 'Index'))).toThrow('REQUIRED_MODULE');
     expect(() => verifyStandaloneBundle('Hermes binary is not the audited plain JS')).toThrow('UNSUPPORTED_METRO_FORMAT');
   });
@@ -155,6 +162,19 @@ describe('explicit build-only standalone QA tooling', () => {
     await value.refreshEntitlement(); await value.updatePreferences({ theme: 'dark' }, true);
     await value.selectionStore.writeAll([]); await value.rebuildNotifications();
     expect(forbidden).not.toHaveBeenCalled();
+  });
+
+  it('keeps all Founder scenarios in the existing isolated services before effects can mount', async () => {
+    const { manifest } = prepare(), qa = loadPrivateSession(manifest.files.session);
+    await qa.startStandaloneQA();
+    for (const scenario of QA_SCENARIOS) {
+      await qa.internalQASession.startScenario(scenario.id);
+      const { value, forbidden } = mountActualProvider(qa);
+      expect(value.qaActive).toBe(true);
+      expect(qa.internalQASession.getSnapshot()).toMatchObject({ active: true, scenarioId: scenario.id });
+      await value.refreshEntitlement();
+      expect(forbidden).not.toHaveBeenCalled();
+    }
   });
 
   it('never returns to personal stores/services if the standalone session is stopped', async () => {

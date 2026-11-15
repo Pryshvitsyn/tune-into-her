@@ -9,18 +9,17 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '../config/constants';
 import languages from '../config/languages.json';
 import { spacing, type Palette } from '../theme';
-import { typographyForLanguage } from '../theme/typography';
 import { useTheme } from '../theme/useTheme';
 
 import { AppText as Text } from './AppText';
 import { Button } from './Button';
 import {
   allLanguageRowsMeasured, createLanguageRowMeasurements, createLanguageSelection,
-  languageAtWheelGestureOffset, languagePickerRowHeight, languagePickerViewport, languageToCommit,
+  languageAtPageGestureOffset, languagePickerRowHeight, languageToCommit,
   recordLanguageRowMeasurement, reduceLanguageSelection,
 } from './languageSelection';
 
-/** One closed row; opening edits a local draft. Only Done asks AppContext to persist it. */
+/** One horizontal language page at a time. Swipes edit a draft; only Done persists it. */
 export function LanguagePicker({ value, onConfirm, disabled = false }: {
   value: SupportedLanguage;
   onConfirm(language: SupportedLanguage): Promise<void>;
@@ -30,72 +29,33 @@ export function LanguagePicker({ value, onConfirm, disabled = false }: {
   const { colors } = useTheme();
   const styles = makeStyles(colors);
   const [selection, dispatch] = useReducer(reduceLanguageSelection, value, createLanguageSelection);
-  const [viewportWidth, setViewportWidth] = useState(0);
+  const [pageWidth, setPageWidth] = useState(0);
   const [measurements, setMeasurements] = useState(createLanguageRowMeasurements);
   const [settledLayout, setSettledLayout] = useState('');
-  const [chrome, setChrome] = useState<{ key: string; header?: number; actions?: number }>({ key: '' });
+  const scroll = useRef<ScrollView>(null);
+  const row = useRef<View>(null);
   const saving = useRef(false);
   const gesture = useRef(false);
-  const scroll = useRef<ScrollView>(null);
-  const sheetScroll = useRef<ScrollView>(null);
-  const row = useRef<View>(null);
   const draft = useRef(selection.draft);
-  const measurementKeyRef = useRef('');
-  const chromeKeyRef = useRef('');
+  const activeMeasurement = useRef('');
   const insets = useSafeAreaInsets();
   const { height, fontScale } = useWindowDimensions();
-  const measurementKey = `${viewportWidth.toFixed(2)}:${fontScale.toFixed(4)}`;
-  const rowHeight = languagePickerRowHeight(fontScale, measurementKey, measurements);
-  const measuredAll = viewportWidth > 0 && allLanguageRowsMeasured(measurementKey, measurements);
-  const ios = Platform.OS === 'ios';
-  const stackActions = fontScale > 1.2 || (viewportWidth > 0 && viewportWidth < 300);
-  const buttonHeight = Math.max(54, 24 * fontScale + 24);
-  const actionsHeight = stackActions ? buttonHeight * 2 + 12 : buttonHeight;
-  const bottomPadding = Math.max(insets.bottom, 18);
-  const chromeKey = `${selection.session}:${measurementKey}:${value}:${stackActions}:${selection.confirming}`;
-  const measuredChrome = chrome.key === chromeKey ? chrome : undefined;
-  const headerHeight = 14 + (measuredChrome?.header ?? (ios ? 20 : 0) + 31 * fontScale + 16);
-  const chromeHeight = headerHeight + (measuredChrome?.actions ?? actionsHeight + 16) + bottomPadding + 2;
-  const sheetHeight = stackActions ? height - insets.top : height * 0.9;
-  const available = sheetHeight - chromeHeight;
-  // Extreme accessibility text can make the header/actions taller than the window.
-  // In that case the complete sheet scrolls, including its reachable Cancel/Done.
-  const viewport = languagePickerViewport(rowHeight, available);
-  const wholeSheetScroll = viewport.wholeSheetScroll;
-  const listHeight = viewport.height;
-  const wheel = ios && viewport.canFitWheel;
-  const padding = wheel ? (listHeight - rowHeight) / 2 : 0;
-  const layoutKey = `${chromeKey}:${rowHeight}:${listHeight.toFixed(2)}:${wheel}:${wholeSheetScroll}`;
-  const wheelReady = measuredAll && settledLayout === layoutKey;
+  const measurementKey = `${pageWidth.toFixed(2)}:${fontScale.toFixed(4)}`;
+  const pageHeight = Math.max(144, languagePickerRowHeight(fontScale, measurementKey, measurements) + 72);
+  const measuredAll = pageWidth > 0 && allLanguageRowsMeasured(measurementKey, measurements);
+  const layoutKey = `${selection.session}:${measurementKey}:${pageHeight}`;
+  const pagesReady = measuredAll && settledLayout === layoutKey;
   const currentIndex = SUPPORTED_LANGUAGES.indexOf(selection.draft);
-  const label = languages.labels[value];
+  const stackActions = fontScale > 1.2 || (pageWidth > 0 && pageWidth < 300);
 
-  useLayoutEffect(() => { measurementKeyRef.current = measurementKey; }, [measurementKey]);
   useLayoutEffect(() => { draft.current = selection.draft; }, [selection.draft]);
-  useLayoutEffect(() => { chromeKeyRef.current = chromeKey; }, [chromeKey]);
-  const measureChrome = useCallback((part: 'header' | 'actions', key: string, measuredHeight: number) => {
-    if (!Number.isFinite(measuredHeight) || measuredHeight <= 0) return;
-    setChrome(previous => {
-      if (key !== chromeKeyRef.current) return previous;
-      const current = previous.key === key ? previous : { key };
-      const rounded = Math.ceil(measuredHeight);
-      return (current[part] ?? 0) >= rounded ? previous : { ...current, [part]: rounded };
-    });
-  }, []);
+  useLayoutEffect(() => { activeMeasurement.current = measurementKey; }, [measurementKey]);
   const measure = useCallback((language: SupportedLanguage, key: string, textHeight: number) => {
-    setMeasurements(previous => recordLanguageRowMeasurement(previous, measurementKeyRef.current, key, language, textHeight));
+    setMeasurements(previous => recordLanguageRowMeasurement(previous, activeMeasurement.current, key, language, textHeight));
   }, []);
   const scrollToDraft = useCallback(() => {
-    const index = SUPPORTED_LANGUAGES.indexOf(draft.current);
-    if (wholeSheetScroll) {
-      sheetScroll.current?.scrollTo({ y: Math.max(0, headerHeight - 14 + index * rowHeight), animated: false });
-    } else {
-      scroll.current?.scrollTo({
-        y: wheel ? index * rowHeight : Math.max(0, index * rowHeight - Math.max(0, (listHeight - rowHeight) / 2)),
-        animated: false,
-      });
-    }
-  }, [rowHeight, wheel, wholeSheetScroll, headerHeight, listHeight]);
+    scroll.current?.scrollTo({ x: SUPPORTED_LANGUAGES.indexOf(draft.current) * pageWidth, animated: false });
+  }, [pageWidth]);
   useLayoutEffect(() => {
     gesture.current = false;
     if (!selection.visible || !measuredAll) return;
@@ -108,102 +68,111 @@ export function LanguagePicker({ value, onConfirm, disabled = false }: {
     return () => { cancelAnimationFrame(first); if (second !== undefined) cancelAnimationFrame(second); };
   }, [selection.visible, measuredAll, layoutKey, scrollToDraft]);
 
-  const cancel = () => { if (!saving.current) dispatch({ type: 'cancel' }); };
-  const move = (language: SupportedLanguage) => {
+  const cancel = () => {
     if (saving.current) return;
     gesture.current = false;
-    dispatch({ type: 'choose', value: language });
-    if (wheel) scroll.current?.scrollTo({ y: SUPPORTED_LANGUAGES.indexOf(language) * rowHeight, animated: false });
+    dispatch({ type: 'cancel' });
+  };
+  const move = (index: number) => {
+    if (saving.current) return;
+    const next = Math.max(0, Math.min(SUPPORTED_LANGUAGES.length - 1, index));
+    gesture.current = false;
+    draft.current = SUPPORTED_LANGUAGES[next]!;
+    dispatch({ type: 'choose', value: draft.current });
+    scroll.current?.scrollTo({ x: next * pageWidth, animated: true });
   };
   const updateFromGesture = (event: NativeScrollEvent) => {
-    const language = languageAtWheelGestureOffset(event.contentOffset.y, rowHeight, {
-      userGesture: gesture.current, layoutReady: wheelReady && wheel,
+    if (saving.current) return;
+    const language = languageAtPageGestureOffset(event.contentOffset.x, pageWidth, {
+      userGesture: gesture.current, layoutReady: pagesReady,
     });
-    if (language) dispatch({ type: 'choose', value: language });
+    if (language) { draft.current = language; dispatch({ type: 'choose', value: language }); }
   };
   const confirm = async () => {
     const language = languageToCommit(selection);
     if (!language || saving.current) return;
-    saving.current = true;
+    saving.current = true; gesture.current = false;
     dispatch({ type: 'confirm' });
     try { await onConfirm(language); dispatch({ type: 'saved' }); }
-    catch { dispatch({ type: 'failed' }); Alert.alert(t('cycle.saveError')); }
+    catch { dispatch({ type: 'failed' }); Alert.alert(t('language.saveError')); }
     finally { saving.current = false; }
   };
   const refocus = () => {
     const target = findNodeHandle(row.current);
     if (target) AccessibilityInfo.setAccessibilityFocus(target);
   };
-  const options = SUPPORTED_LANGUAGES.map(language => <Pressable key={language} disabled={selection.confirming}
-    onPress={() => move(language)} accessible={!wheel} accessibilityRole="radio"
-    accessibilityLanguage={language === 'mbf' ? 'ms' : language}
-    accessibilityLabel={languages.labels[language]} accessibilityState={{ checked: selection.draft === language, disabled: selection.confirming }}
-    style={[styles.option, { height: rowHeight }, !wheel && selection.draft === language && styles.optionSelected]}>
-    <Text key={measurementKey} language={language} accessible={false} allowFontScaling
-      onLayout={event => measure(language, measurementKey, event.nativeEvent.layout.height)}
-      onTextLayout={event => {
-        const lines = event.nativeEvent.lines;
-        if (lines.length) measure(language, measurementKey,
-          Math.max(...lines.map(line => line.y + line.height)) - Math.min(...lines.map(line => line.y)));
-      }}
-      style={[styles.optionLabel, selection.draft !== language && styles.unselected]}>
-      {languages.labels[language]}
-    </Text>
-  </Pressable>);
-  const content = <>
-    <View key={`header:${chromeKey}`} onLayout={event => measureChrome('header', chromeKey, event.nativeEvent.layout.height)}>
-      {ios ? <View accessible={false} style={styles.handle} /> : null}
-      <Text accessibilityRole="header" style={[styles.title, typographyForLanguage(value)]}>{t('language.title')}</Text>
-    </View>
-    <View style={wholeSheetScroll ? undefined : { height: listHeight }}
-      onLayout={event => {
-        const width = Math.round(event.nativeEvent.layout.width * 100) / 100;
-        setViewportWidth(previous => previous === width ? previous : width);
-      }}
-      accessible={wheel} accessibilityRole={wheel ? 'adjustable' : undefined}
-      accessibilityLanguage={wheel ? selection.draft === 'mbf' ? 'ms' : selection.draft : undefined}
-      accessibilityLabel={wheel ? t('language.title') : undefined}
-      accessibilityValue={wheel ? { min: 0, max: SUPPORTED_LANGUAGES.length - 1, now: currentIndex, text: languages.labels[selection.draft] } : undefined}
-      accessibilityActions={wheel ? [{ name: 'increment' }, { name: 'decrement' }] : undefined}
-      onAccessibilityAction={event => {
-        const direction = event.nativeEvent.actionName === 'increment' ? 1 : -1;
-        const next = Math.max(0, Math.min(SUPPORTED_LANGUAGES.length - 1, currentIndex + direction));
-        move(SUPPORTED_LANGUAGES[next]!);
-      }}>
-      {wheel ? <View pointerEvents="none" style={[styles.wheelHighlight, { top: padding, height: rowHeight }]} /> : null}
-      {wholeSheetScroll ? <View>{options}</View> : <ScrollView ref={scroll} removeClippedSubviews={false}
-        scrollEnabled={!selection.confirming && (!wheel || wheelReady)} showsVerticalScrollIndicator={!wheel}
-        snapToInterval={wheel ? rowHeight : undefined} decelerationRate={wheel ? 'fast' : 'normal'}
-        contentContainerStyle={wheel ? { paddingVertical: padding } : undefined}
-        onScrollBeginDrag={() => { gesture.current = wheelReady && wheel; }}
-        onScroll={wheel ? event => updateFromGesture(event.nativeEvent) : undefined}
-        onScrollEndDrag={wheel ? event => updateFromGesture(event.nativeEvent) : undefined}
-        onMomentumScrollEnd={wheel ? event => { updateFromGesture(event.nativeEvent); gesture.current = false; } : undefined}
-        scrollEventThrottle={32} onLayout={scrollToDraft} style={wheel && !wheelReady ? styles.measuring : undefined}>
-        {options}
-      </ScrollView>}
-    </View>
-    <View key={`actions:${chromeKey}`} onLayout={event => measureChrome('actions', chromeKey, event.nativeEvent.layout.height)} style={[styles.actions, stackActions && styles.actionsVertical]}>
-      <View style={stackActions ? styles.wideAction : styles.action}><Button label={t('common.cancel')} variant="ghost" disabled={selection.confirming} onPress={cancel} /></View>
-      <View style={stackActions ? styles.wideAction : styles.action}><Button label={t(selection.confirming ? 'common.loading' : 'common.done')} disabled={selection.confirming} onPress={() => void confirm()} /></View>
-    </View>
-  </>;
   return <>
-    <Pressable ref={row} disabled={disabled} onPress={() => dispatch({ type: 'open', value })}
-      accessibilityRole="button" accessibilityLabel={t('accessibility.selectLanguage', { language: label })}
+    <Pressable ref={row} testID="language-picker-open" disabled={disabled}
+      onPress={() => dispatch({ type: 'open', value })}
+      accessibilityRole="button" accessibilityLabel={t('accessibility.selectLanguage', { language: languages.labels[value] })}
       accessibilityState={{ expanded: selection.visible, disabled }}
-      style={({ pressed }) => [styles.closed, pressed && styles.closedPressed, disabled && styles.disabled]}>
-      <Text language={value} style={styles.selected}>{label}</Text>
+      style={({ pressed }) => [styles.closed, pressed && styles.pressed, disabled && styles.disabled]}>
+      <Text language={value} style={styles.selected}>{languages.labels[value]}</Text>
       <Text accessible={false} allowFontScaling={false} style={styles.arrow}>▾</Text>
     </Pressable>
-    <Modal visible={selection.visible} transparent animationType="none" onRequestClose={cancel}
-      onShow={scrollToDraft} onDismiss={refocus} statusBarTranslucent>
-      <View style={[styles.backdrop, ios ? styles.bottom : styles.middle]}>
+    <Modal visible={selection.visible} transparent animationType="none" statusBarTranslucent
+      onRequestClose={cancel} onShow={scrollToDraft} onDismiss={refocus}>
+      <View style={[styles.backdrop, { paddingTop: insets.top + 12 }]}>
         <Pressable style={StyleSheet.absoluteFill} accessible={false} onPress={cancel} />
         <View accessibilityViewIsModal importantForAccessibility="yes"
-          style={[styles.sheet, ios ? styles.iosSheet : styles.androidSheet, { maxHeight: sheetHeight, paddingBottom: wholeSheetScroll ? 0 : bottomPadding }]}>
-          {wholeSheetScroll ? <ScrollView ref={sheetScroll} removeClippedSubviews={false}
-            contentContainerStyle={{ paddingBottom: bottomPadding }}>{content}</ScrollView> : content}
+          style={[styles.sheet, { maxHeight: height - insets.top - 12 }]}>
+          {/* At large text sizes the whole sheet scrolls, including both actions. */}
+          <ScrollView nestedScrollEnabled contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 18) }}>
+            <Text accessibilityRole="header" style={styles.title}>{t('language.title')}</Text>
+            <Text style={styles.hint}>{t('language.swipeHint')}</Text>
+            <View onLayout={event => {
+              const width = Math.round(event.nativeEvent.layout.width * 100) / 100;
+              setPageWidth(previous => previous === width ? previous : width);
+            }}>
+              {pageWidth > 0 ? <View testID="language-pages" accessible accessibilityRole="adjustable"
+                accessibilityLabel={t('language.title')}
+                accessibilityLanguage={selection.draft === 'mbf' ? 'ms' : selection.draft}
+                accessibilityValue={{ min: 0, max: SUPPORTED_LANGUAGES.length - 1, now: currentIndex, text: languages.labels[selection.draft] }}
+                accessibilityActions={[{ name: 'increment' }, { name: 'decrement' }]}
+                onAccessibilityAction={event => move(currentIndex + (event.nativeEvent.actionName === 'increment' ? 1 : -1))}>
+                <ScrollView ref={scroll} horizontal pagingEnabled nestedScrollEnabled
+                  style={{ height: pageHeight }} showsHorizontalScrollIndicator={false} removeClippedSubviews={false}
+                  scrollEnabled={pagesReady && !selection.confirming}
+                  onScrollBeginDrag={() => { gesture.current = pagesReady; }}
+                  onScroll={event => updateFromGesture(event.nativeEvent)}
+                  onScrollEndDrag={event => updateFromGesture(event.nativeEvent)}
+                  onMomentumScrollEnd={event => { updateFromGesture(event.nativeEvent); gesture.current = false; }}
+                  scrollEventThrottle={32} onLayout={scrollToDraft}>
+                  {SUPPORTED_LANGUAGES.map(language => <Pressable key={language} testID={`language-choice-${language}`}
+                    accessible={false} disabled={selection.confirming} onPress={() => move(SUPPORTED_LANGUAGES.indexOf(language))}
+                    style={[styles.page, { width: pageWidth, height: pageHeight }]}>
+                    <Text language={language} accessible={false} style={styles.option}
+                      onLayout={event => measure(language, measurementKey, event.nativeEvent.layout.height)}
+                      onTextLayout={event => {
+                        const lines = event.nativeEvent.lines;
+                        if (lines.length) measure(language, measurementKey,
+                          Math.max(...lines.map(line => line.y + line.height)) - Math.min(...lines.map(line => line.y)));
+                      }}>{languages.labels[language]}</Text>
+                    <Text accessible={false} allowFontScaling={false} style={styles.check}>✓</Text>
+                  </Pressable>)}
+                </ScrollView>
+              </View> : <View style={{ height: pageHeight }} />}
+            </View>
+            <View style={styles.paging}>
+              <Pressable testID="language-previous" accessibilityRole="button" accessibilityLabel={t('language.previous')}
+                disabled={selection.confirming || currentIndex === 0}
+                accessibilityState={{ disabled: selection.confirming || currentIndex === 0 }} onPress={() => move(currentIndex - 1)}
+                style={[styles.pageButton, (selection.confirming || currentIndex === 0) && styles.disabled]}>
+                <Text allowFontScaling={false} accessible={false} style={styles.chevron}>‹</Text>
+              </Pressable>
+              <Text style={styles.position}>{t('language.page', { index: currentIndex + 1, count: SUPPORTED_LANGUAGES.length })}</Text>
+              <Pressable testID="language-next" accessibilityRole="button" accessibilityLabel={t('language.next')}
+                disabled={selection.confirming || currentIndex === SUPPORTED_LANGUAGES.length - 1}
+                accessibilityState={{ disabled: selection.confirming || currentIndex === SUPPORTED_LANGUAGES.length - 1 }} onPress={() => move(currentIndex + 1)}
+                style={[styles.pageButton, (selection.confirming || currentIndex === SUPPORTED_LANGUAGES.length - 1) && styles.disabled]}>
+                <Text allowFontScaling={false} accessible={false} style={styles.chevron}>›</Text>
+              </Pressable>
+            </View>
+            <View style={[styles.actions, stackActions && styles.actionsVertical]}>
+              <View style={styles.action}><Button testID="language-cancel" label={t('common.cancel')} variant="ghost" disabled={selection.confirming} onPress={cancel} /></View>
+              <View style={styles.action}><Button testID="language-confirm" label={t(selection.confirming ? 'common.loading' : 'common.done')} disabled={selection.confirming || !pagesReady} onPress={() => void confirm()} /></View>
+            </View>
+          </ScrollView>
         </View>
       </View>
     </Modal>
@@ -212,25 +181,16 @@ export function LanguagePicker({ value, onConfirm, disabled = false }: {
 const makeStyles = (colors: Palette) => StyleSheet.create({
   closed: { minHeight: 56, borderRadius: 18, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.border, backgroundColor: colors.card, flexDirection: 'row', alignItems: 'center', paddingHorizontal: 18, paddingVertical: 12, gap: 12 },
   selected: { flex: 1, fontSize: 20, lineHeight: 27, color: colors.text },
-  arrow: { fontSize: 19, color: colors.primary },
-  closedPressed: { backgroundColor: colors.pickerSelection },
-  disabled: { opacity: 0.5 },
-  backdrop: { flex: 1, backgroundColor: 'rgba(20,34,44,0.22)' },
-  bottom: { justifyContent: 'flex-end' },
-  middle: { justifyContent: 'center', padding: spacing.lg },
-  sheet: { backgroundColor: colors.background, borderColor: colors.border, borderWidth: StyleSheet.hairlineWidth, paddingHorizontal: spacing.lg, paddingTop: 14 },
-  iosSheet: { borderTopLeftRadius: 26, borderTopRightRadius: 26 },
-  androidSheet: { borderRadius: 24 },
-  handle: { width: 36, height: 4, borderRadius: 2, alignSelf: 'center', backgroundColor: colors.border, marginBottom: 16 },
-  title: { color: colors.text, textAlign: 'center', fontSize: 24, lineHeight: 31, marginBottom: 16 },
-  wheelHighlight: { position: 'absolute', left: 0, right: 0, borderRadius: 14, backgroundColor: colors.pickerSelection },
-  option: { justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10, paddingVertical: 10, borderRadius: 14 },
-  optionSelected: { backgroundColor: colors.pickerSelection },
-  optionLabel: { width: '100%', flexShrink: 0, color: colors.text, fontSize: 20, lineHeight: 27, textAlign: 'center' },
-  unselected: { color: colors.secondary },
-  actions: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingTop: 16 },
-  action: { flex: 1 },
-  wideAction: { width: '100%' },
-  actionsVertical: { flexDirection: 'column', alignItems: 'stretch' },
-  measuring: { opacity: 0 },
+  arrow: { fontSize: 19, color: colors.primary }, pressed: { backgroundColor: colors.pickerSelection }, disabled: { opacity: 0.4 },
+  backdrop: { flex: 1, backgroundColor: 'rgba(20,34,44,0.22)', justifyContent: Platform.OS === 'ios' ? 'flex-end' : 'center', paddingHorizontal: Platform.OS === 'ios' ? 0 : spacing.lg },
+  sheet: { backgroundColor: colors.background, borderColor: colors.border, borderWidth: StyleSheet.hairlineWidth, borderRadius: 24, paddingHorizontal: spacing.lg, paddingTop: 22, flexShrink: 1 },
+  title: { color: colors.text, textAlign: 'center', fontSize: 24, lineHeight: 31, marginBottom: 10 },
+  hint: { color: colors.secondary, textAlign: 'center', fontSize: 16, lineHeight: 23, marginBottom: 14 },
+  page: { justifyContent: 'center', alignItems: 'center', paddingHorizontal: 18, paddingVertical: 24, borderRadius: 18, backgroundColor: colors.pickerSelection },
+  option: { color: colors.text, fontSize: 28, lineHeight: 36, textAlign: 'center', width: '100%' },
+  check: { color: colors.primary, fontSize: 20, marginTop: 12 },
+  paging: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 },
+  pageButton: { minWidth: 54, minHeight: 54, justifyContent: 'center', alignItems: 'center' },
+  chevron: { color: colors.primary, fontSize: 30 }, position: { color: colors.secondary, fontSize: 16, lineHeight: 23, flexShrink: 1, textAlign: 'center' },
+  actions: { flexDirection: 'row', gap: 12, paddingTop: 10 }, action: { flex: 1 }, actionsVertical: { flexDirection: 'column' },
 });

@@ -136,3 +136,11 @@ Kurangkan {{label}}
 Tambah {{label}}
 Pilih {{language}}
 Penunjuk fasa {{phase}}
+Leret untuk memilih bahasa
+Bahasa sebelumnya
+Bahasa seterusnya
+{{index}} daripada {{count}}
+Bahasa tidak dapat disimpan. Sila cuba lagi.
+Langkau pengenalan
+Fon dan lesen
+Lesen asal bahasa Inggeris Linux Libertine O dan notis pengedarannya tertera di bawah.

@@ -1,6 +1,6 @@
 /* global __dirname */
-// Exact Founder photograph -> literal square crop -> platform icon assets.
-// No SVG, text shaping, repainting, retouching, tint or nonuniform scaling.
+// Immutable Founder photograph +bounded built-in imagegen wordmark-removal patch
+// -> rings-only icon. Startup art stays exact; no SVG, typography or new logo.
 const { Buffer } = require('node:buffer');
 const crypto = require('node:crypto');
 const fs = require('node:fs');
@@ -10,13 +10,17 @@ const root = path.resolve(__dirname, '..');
 const reference = 'assets/brand/reference/founder-approved-premium-v5-20261114.png';
 const sourceSHA256 = 'dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58';
 const crop = { left: 35, top: 450, width: 780, height: 780 };
+const editSourceFile = 'assets/icons/source/rings-wordmark-removal.generated.png';
+const editSourceSHA256 = 'd68c28ea81d9ea5a68d33269cfe4fdb65d6b429bfbad9e7e82c45b06dddafdcc';
+const provenanceFile = 'assets/icons/source/rings-only.provenance.json';
+const editBand = { top: 420, bottomExclusive: 680, featherPixels: 24 };
+const protectedOutsideBandSHA256 = 'cd3d74547d11f1a50c8a743b6dde146b97b23d270ae59247c8ec7eccf99396b5';
 // Conservative observed landmarks, in original photograph pixels. Insets are
 // about system masks, not a replacement or reconstruction of the photographed art.
 const landmarks = {
-  wordmark: [[80, 800], [780, 800], [80, 900], [780, 900]],
-  ringEndpointsAndExtrema: [[130, 840], [365, 1065], [505, 1028], [505, 990], [640, 1008], [705, 840], [425, 615]],
+  ringEndpointsAndExtrema: [[120, 840], [365, 1075], [505, 1040], [505, 990], [650, 1020], [715, 840], [425, 605]],
 };
-const adaptive = { canvas: 1024, photoSide: 672, inset: 176, layerDP: 108, maskDP: 72, safeCircleDP: 66, outerSteelFeatherPixels: 24 };
+const adaptive = { canvas: 1024, photoSide: 768, inset: 128, layerDP: 108, maskDP: 72, safeCircleDP: 66, outerSteelFeatherPixels: 24 };
 // Ring/letter-free steel from the top of THE SAME square master, not another image.
 const backgroundCrop = { left: 420, top: 24, width: 184, height: 184 };
 const manifestFile = 'assets/icons/manifest.generated.json';
@@ -24,6 +28,10 @@ const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const source = fs.readFileSync(path.join(root, reference));
 if (sha(source) !== sourceSHA256) throw new Error('Immutable approved photograph changed');
 const { PNG } = require('pngjs');
+const editedSource = fs.readFileSync(path.join(root, editSourceFile));
+if (sha(editedSource) !== editSourceSHA256) throw new Error('Selected rings-only edit source changed');
+const provenance = JSON.parse(fs.readFileSync(path.join(root, provenanceFile), 'utf8'));
+if (provenance.editSourceSHA256 !== editSourceSHA256 || provenance.iconVariant !== 'silver-open-rings-no-wordmark') throw new Error('Rings-only edit provenance mismatch');
 const original = PNG.sync.read(source);
 if (original.width !== 851 || original.height !== 1847) throw new Error('Unexpected approved photograph bounds');
 const landmarksInAdaptive = Object.values(landmarks).flat().map(([x, y]) => ({
@@ -32,7 +40,7 @@ const landmarksInAdaptive = Object.values(landmarks).flat().map(([x, y]) => ({
 }));
 const safeRadius = adaptive.canvas * adaptive.safeCircleDP / adaptive.layerDP / 2;
 const maxLandmarkRadius = Math.max(...landmarksInAdaptive.map(({ x, y }) => Math.hypot(x - 512, y - 512)));
-if (maxLandmarkRadius >= safeRadius) throw new Error('Photographed wordmark or ring endpoint exceeds Android safe circle');
+if (maxLandmarkRadius >= safeRadius) throw new Error('Photographed ring endpoint exceeds Android safe circle');
 const protectedFiles = [
   reference, 'assets/launch/approved-opening.png',
   'ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png',
@@ -43,7 +51,8 @@ const protectedHashes = Object.fromEntries(protectedFiles.map(file => [file, sha
 const readJSON = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 function verify() {
   const manifest = readJSON(manifestFile);
-  if (JSON.stringify(manifest.cropSourcePixels) !== JSON.stringify(crop) || manifest.referenceSHA256 !== sourceSHA256) throw new Error('Official icon provenance changed');
+  if (sha(fs.readFileSync(path.join(root, 'assets/icon.png'))) !== provenance.rasterAudit.masterSHA256) throw new Error('Selected rings-only master changed');
+  if (manifest.iconVariant !== 'silver-open-rings-no-wordmark' || manifest.editSourceSHA256 !== editSourceSHA256 || manifest.provenanceSHA256 !== sha(fs.readFileSync(path.join(root, provenanceFile))) || JSON.stringify(manifest.cropSourcePixels) !== JSON.stringify(crop) || manifest.referenceSHA256 !== sourceSHA256) throw new Error('Official icon provenance changed');
   for (const item of manifest.outputs) {
     const bytes = fs.readFileSync(path.join(root, item.path));
     if (sha(bytes) !== item.sha256) throw new Error('Official icon stale: ' + item.path);
@@ -71,7 +80,17 @@ async function generate(checkOnly = false) {
     });
     return Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="' + side + '" height="' + side + '" viewBox="0 0 1024 1024"><polygon points="' + points.join(' ') + '" fill="white"/></svg>');
   };
-  const master = await png(sharp(source).extract(crop).resize(1024, 1024, { kernel: 'lanczos3' }).removeAlpha());
+  const base = await png(sharp(source).extract(crop).resize(1024, 1024, { kernel: 'lanczos3' }).removeAlpha());
+  if (sha(base) !== provenance.inputSquare1024SHA256) throw new Error('Original photographic crop is not reproducible');
+  const patch = PNG.sync.read(await png(sharp(editedSource).resize(1024, 1024, { kernel: 'lanczos3' }).ensureAlpha()));
+  for (let y = 0; y < 1024; y += 1) for (let x = 0; x < 1024; x += 1) {
+    const t = Math.min(1, Math.max(0, Math.min((y - editBand.top) / editBand.featherPixels, (editBand.bottomExclusive - 1 - y) / editBand.featherPixels)));
+    patch.data[(y * 1024 + x) * 4 + 3] = Math.round(255 * t * t * (3 - 2 * t));
+  }
+  const master = await png(sharp(base).composite([{ input: PNG.sync.write(patch) }]).removeAlpha());
+  const pixels = PNG.sync.read(master).data;
+  const untouched = Buffer.concat([pixels.subarray(0, editBand.top * 1024 * 4), pixels.subarray(editBand.bottomExclusive * 1024 * 4)]);
+  if (sha(untouched) !== protectedOutsideBandSHA256) throw new Error('Original photographic pixels outside the icon edit band changed');
   outputs.set('assets/icon.png', master);
   outputs.set('ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png', master);
   outputs.set('assets/icons/play-store-512.png', await png(sharp(master).resize(512, 512, { kernel: 'lanczos3' }).ensureAlpha()));
@@ -79,7 +98,7 @@ async function generate(checkOnly = false) {
     outputs.set('assets/icons/previews/' + name + '.png', await png(sharp(master).resize(size, size, { kernel: 'lanczos3' }).composite([{ input: iosMask(size), blend: 'dest-in' }])));
   }
   const foregroundPixels = PNG.sync.read(await png(sharp(master).resize(adaptive.photoSide, adaptive.photoSide, { kernel: 'lanczos3' })));
-  // Alpha-only easing in the outer24px steel margin. All lettering, rings and
+  // Alpha-only easing in the outer24px steel margin. Both rings, endpoints and
   // their shadows are inside the fully opaque interior; no RGB/art is repainted.
   for (let y = 0; y < adaptive.photoSide; y += 1) for (let x = 0; x < adaptive.photoSide; x += 1) {
     const distance = Math.min(x, y, adaptive.photoSide - 1 - x, adaptive.photoSide - 1 - y);
@@ -119,7 +138,7 @@ async function generate(checkOnly = false) {
   storeCards.push({ input: appName, left: 176, top: 78 }, { input: appName, left: 176, top: 278 });
   outputs.set('assets/icons/previews/store-listing-cards.png', await png(sharp({ create: { width: 1024, height: 400, channels: 3, background: 'white' } }).composite(storeCards)));
   outputs.set('assets/icons/previews/platform-preview-sheet.png', await png(sharp({ create: { width: 1024, height: 955, channels: 3, background: 'white' } }).composite(sheet)));
-  const manifest = { schemaVersion: 1, reference, referenceSHA256: sourceSHA256, referencePixels: [851, 1847], cropSourcePixels: crop, processing: 'Literal source rectangle; uniform Lanczos3 resampling only. No redrawing, text replacement, recoloring, added art or pre-rounded production icons.', tool: { sharp: sharp.versions.sharp, vips: sharp.versions.vips }, adaptive: { ...adaptive, backgroundCropMasterPixels: backgroundCrop, safeCircleRadiusPixels: safeRadius, maximumLandmarkRadiusPixels: maxLandmarkRadius, conservativeSourceLandmarks: landmarks, limit: 'Foreground preserves entire photographed square with transparent system inset and alpha-only24px easing of outer steel margins; lettering/rings/shadows remain opaque. Opaque background is a letter-free steel excerpt of that same master. OEM motion/mask behavior still needs Android runtime verification.' }, protectedSHA256: protectedHashes, outputs: [] };
+  const manifest = { schemaVersion: 2, iconVariant: 'silver-open-rings-no-wordmark', reference, referenceSHA256: sourceSHA256, referencePixels: [851, 1847], cropSourcePixels: crop, editSourceFile, editSourceSHA256, provenanceFile, provenanceSHA256: sha(fs.readFileSync(path.join(root, provenanceFile))), editBand, protectedOutsideBandSHA256, processing: 'Original square photograph plus bounded built-in imagegen wordmark-removal/reconstructed-arc patch. All RGB pixels outside the band are exact. No SVG replacement, new symbol, tint, stretch or pre-rounded production corners.', tool: { sharp: sharp.versions.sharp, vips: sharp.versions.vips }, adaptive: { ...adaptive, backgroundCropMasterPixels: backgroundCrop, safeCircleRadiusPixels: safeRadius, maximumLandmarkRadiusPixels: maxLandmarkRadius, conservativeSourceLandmarks: landmarks, limit: 'Foreground preserves entire photographed square with transparent system inset and alpha-only24px easing of outer steel margins; rings/endpoints/shadows remain opaque. Icon lettering is removed. Opaque background is a letter-free steel excerpt of that same master. OEM motion/mask behavior still needs Android runtime verification.' }, protectedSHA256: protectedHashes, outputs: [] };
   for (const [file, bytes] of outputs) {
     if (checkOnly) {
       if (!fs.existsSync(path.join(root, file)) || !fs.readFileSync(path.join(root, file)).equals(bytes)) throw new Error('Icon raster reproducibility failed: ' + file);
@@ -132,6 +151,6 @@ async function generate(checkOnly = false) {
     const image = PNG.sync.read(bytes); manifest.outputs.push({ path: file, width: image.width, height: image.height, sha256: sha(bytes) });
   }
   if (!checkOnly) fs.writeFileSync(path.join(root, manifestFile), JSON.stringify(manifest, null, 2) + '\n');
-  console.log(checkOnly ? 'All official icon rasters regenerate byte-for-byte from the exact approved photograph.' : 'Official photo icon assets generated; native AppIcon updated.');
+  console.log(checkOnly ? 'All official icon rasters regenerate byte-for-byte from the approved photograph and selected bounded rings-only edit.' : 'Official photo icon assets generated; native AppIcon updated.');
 }
 (async () => { if (process.argv.includes('--check')) { verify(); if (process.argv.includes('--raster-check')) await generate(true); } else { await generate(); verify(); } })().catch(error => { console.error(error.message); process.exitCode = 1; });

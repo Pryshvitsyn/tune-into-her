@@ -1,5 +1,5 @@
 # ARCHITECTURE
-Updated: 2026-11-14 (Europe/Rome); current launch/onboarding work extends the local monetization candidate.
+Updated: 2026-11-15 (Europe/Rome); final UX/education/private-QA work preserves the approved launch and monetization architecture.
 
 ## Frontend
 
@@ -26,9 +26,11 @@ navigation stack at gesture time; Expo's generated root wrapper is not that stac
 is reached by the one Screen footer action. CycleDateField holds only a transient picker
 candidate until explicit confirmation; null drafts cannot produce a saved date or estimate.
 
-## Isolated development QA
+## Isolated QA
 
-The existing development/mock flag enables `/dev-qa`; it grants no access by itself.
+The ordinary `__DEV__` plus explicit mock flag enables `/dev-qa`; it grants no access by
+itself and remains false in normal Release. A separate reviewed Founder testing artifact
+uses the same controller through explicit build-only aliases, not a production exception.
 InternalQASession supplies explicit private scenarios, a managed clock and memory stores.
 scopeAppContext selects the existing MockPurchaseService and real AppTrialService evaluator
 with injected no-network trial transport. Ordinary sessions use RevenueCat and original
@@ -159,19 +161,17 @@ arrow) retain fixed icon sizes, as an SVG icon would. Their accessible parent co
 keep the existing labels/states. Body text, values, options and action labels retain full
 system font scaling; no body-text size cap or font-binary change is introduced.
 
-`LanguagePicker` presents one closed row and edits a local draft in its modal. iOS uses
-a snapping wheel-style React Native list; Android uses a scrollable radio list. Done
-persists through existing preferences, while Cancel/backdrop/Back do not commit. Measured
-row heights account for all eleven original locale IDs and text scaling. Failed saves
-retain the draft; oversized layouts allow scrolling to the actions.
+`LanguagePicker` presents one closed row and a horizontal, paging modal with one
+language choice per page. Swipes or accessible previous/next/adjustable actions edit a
+local draft; only Done calls the existing preference save. Cancel, backdrop and system
+Back discard it. All eleven original locale IDs remain. Measured label height and page
+width/font-scale generations must settle before gestures/confirmation; programmatic
+recentering never changes the draft. Failed saves retain the choice. Large text uses a
+scrollable outer sheet and stacked actions without capping readable font size.
 
-Picker row measurements are keyed by viewport width and font scale. Header/action View
-keys include that geometry generation and the selection session/current layout state,
-forcing fresh layout callbacks after a geometry change without resetting the reducer's
-draft. Generation refs reject old callbacks; current measured heights and settled layout
-must be ready before wheel gestures can alter the draft. This avoids treating automatic
-recentering or old geometry as a user selection. Live/cold and largest-size native UI
-reachability remain required verification, independent of source tests.
+This supersedes the earlier iOS wheel/Android all-at-once list implementation. Its dated
+measurement/native evidence remains historical; it is not evidence for current paging
+reachability. Current native layout and largest-size verification are reported separately.
 
 Onboarding preview and fallback Today share AdviceBlocks typography. AnimatedToday
 retains all original text with natural wrapping and Dynamic Type in a scrollable content
@@ -215,7 +215,9 @@ historical selections merely to refresh content.
 
 ## Services
 
-Local Expo Notifications. RevenueCat purchase abstraction; mock only in development.
+Local Expo Notifications. RevenueCat purchase abstraction; ordinary mock access requires
+the development gate. The explicit private Founder artifact uses the same memory mock
+through its isolated build wrapper; normal production has no fixture access.
 Stores process native purchases; RevenueCat resolves signed CustomerInfo/full_access.
 AppTrialService independently resolves an explicit server-started 14×24h grant.
 AppContext exposes paid state and app-trial state separately; Today uses their OR, with
@@ -271,18 +273,59 @@ session can open the preview without purchase/onboarding; ordinary access checks
 unchanged.
 
 
-## Official photographic icon assets and standalone QA tooling
+## Bundled cycle education
 
-The immutable approved opening PNG also supplies a literal square crop for platform icons.
-`scripts/generate-official-icons.cjs` owns the square master, native AppIcon copy, Play512,
-adaptive foreground/background and deterministic previews/hashes. The legacy brand script
-delegates only icon writes. Expo config generates Android native densities; the checked-in
-iOS catalog is compiled with actool. The system applies corners/masks to unrounded masters.
+`src/education/cycleEducation.ts` selects the bundled `src/i18n/education.json` copy for
+all eleven supported locales. `/learn/[phase]` presents general menstrual, follicular,
+ovulation and luteal explanations, variable physical/energy patterns, thoughtful support
+and diagnosis/contraception caveats. It is independent of cycle calculations, access
+eligibility and daily authored-content selection. Phase tabs replace the current Learn
+route, preserving the original Back destination; the shared secondary footer stays fixed.
 
-`tests/native-launch/standalone-qa.cjs` is explicit build tooling, outside the normal graph.
-Ignored private entry/config aliases use existing InternalQASession memory services and
-start before AppProvider mount. Dev JavaScript remains false; normal session gates and
-routes are unchanged. Config requires the exact private Release entry and Expo override;
-emitted provider/hook/session/Index bindings are verified before accepting an artifact.
-Private End QA resets memory instead of activating real storage; installing the retained
-normal Release ends this temporary artifact. Separate signed hashes distinguish all builds.
+Static NIH/NICHD and NHS source URLs carry no cycle/preferences or other user fields.
+Only a user tap opens the external browser; the localized source-language caption says
+the institutional pages are English. Copy is available offline; source-link failures use
+the current locale's error message. Primary-source checking and native acceptance are
+separate evidence, not inferred from the presence of URLs or translation keys.
+
+## Rings-only photographic icon pipeline
+
+The immutable approved opening portrait remains the source of the launch photograph and
+keeps its wordmark. Platform icons use a distinct **rings-only** derivative. The selected
+built-in imagegen edit and full prompt/provenance are in `assets/icons/source/`. The
+canonical generator composites only a bounded lettering/shadow band over the original
+square crop; all original pixels outside that band, including the open lower endpoints
+and top glint, are retained exactly. The previously covered segments are reconstructed,
+not claimed as recovered original pixels. No SVG emblem or new logo replaces the photo.
+
+`scripts/generate-official-icons.cjs` owns the opaque 1024px master, actual native AppIcon
+copy, 512px Play export, adaptive foreground/background and deterministic previews/hashes.
+The rings-only adaptive image uses 768px within 1024px (128px inset), tested against the
+Android 108/72/66dp layer/viewport/safe-circle geometry. The legacy generator delegates only
+icon writes. Expo generates density resources; installed iOS icons require native catalog
+compilation. The OS applies masks to unrounded production inputs. The earlier wordmarked
+icon/native proof remains historical and does not establish current rings-only installation.
+
+## Founder private Release testing artifact
+
+`tests/native-launch/standalone-qa.cjs` is explicit build tooling outside the normal graph.
+Ignored private entry/config aliases start existing InternalQASession memory services
+synchronously before AppProvider mounts and native main registration; access readiness
+still gates the global handoff. Development JavaScript remains false. The generated Index
+defaults to localized `/dev-qa`; `--entry today` is the optional capture entry. Existing
+Settings provides the localized Internal testing route while the private wrapper is active.
+
+The wrapper overrides only the session exports/Index under the exact private Release
+entry, marker and Expo override. The normal `standaloneQAEnabled` descriptor is false and
+grants no access; production entry/guards are unchanged. The emitted provider/hook/session/
+Index graph must pass verification before an artifact is accepted. Reset creates fresh
+private state while retaining the isolated scope, rather than resuming real stores.
+
+Current Founder delivery retains the private testing artifact installed/reachable after
+verification. The normal signed artifact remains separately available for an explicitly
+requested return to personal app use or recovery; automatic normal restoration from the
+previous capture-only workflow is superseded. Separate artifact hashes identify the two.
+Test language/theme choices persist within the private process and scenario changes, then
+reset on a cold private launch. Normal preference persistence is unchanged and must be verified
+separately. Source/schema tests and old capture proof are not current native acceptance.
+See [INTERNAL_QA](docs/INTERNAL_QA.md) and [standalone packaging](tests/native-launch/STANDALONE_QA.md).

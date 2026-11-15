@@ -1,72 +1,81 @@
-# Official photographic icon assets
+# Official silver rings-only icon
 
-The icon is a literal square excerpt of the exact Founder-approved opening photograph,
-not an illustrated or regenerated logo. Its complete raised **Tune Into Her** wordmark,
-two open rings, endpoints, light, reflections and steel background remain in the crop.
-The portrait, splash, V4 and animation sources are not changed by this pipeline.
+The final icon has **two approved silver open rings and no wordmark**. The separate
+system app name remains **Tune Into Her**. This supersedes the earlier wordmarked
+icon. The approved portrait and native/RN startup photograph keep their original
+wordmark and remain byte-identical; the intro, V4 and Home scene are not icon assets.
 
-The crop is source pixels **x35, y450, 780×780**, centred on the emblem. Compared
-with an 851px full-width square, this makes the original lettering approximately 9.1%
-larger while keeping about 5–6% side clearance. The 1024px master uses one uniform
-Lanczos3 scale; it has opaque square corners, without an added corner mask or shadow.
+## Source and narrow edit
 
-| Use | Canonical generated file |
+The immutable portrait SHA256 is
+`dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58`.
+The existing literal crop **x35, y450, 780×780**, uniformly scaled to 1024px, supplies
+the base. The built-in **imagegen edit** removes the lettering and its shadows and
+reconstructs the ring/background sections covered by them. It does not replace the
+emblem with an SVG, flat drawing, green sphere or different icon style.
+
+Only source-master rows **420–679** can receive generated pixels, with 24px smooth
+alpha margins. Every original pixel outside that band is byte-exact, including the
+top glint, original lower open ends and surrounding reflections. The selected
+1254px imagegen output is stored locally in [source/](source/); it is not required
+at a Codex-only path. Its content credentials are retained in the source file.
+
+[Full prompt, tool, source hashes, composition and actual checks](source/rings-only.provenance.json)
+record the edit. There are **0 changed pixels outside the band**. Public Apple Vision
+accurate OCR recognizes `Tune Into Her` in the original control at confidence 1.0 and
+recognizes no text in the new master. This supports visual inspection; it does not
+replace native icon verification or claim Founder approval. The covered segments
+are reconstructed, not literal recovered original pixels. Downstream regeneration
+from the selected raster is deterministic; a new generative call is not involved.
+
+## Canonical outputs
+
+| Use | Generated file |
 | --- | --- |
-| iOS / App Store / TestFlight / common legacy launcher | [`../icon.png`](../icon.png), 1024×1024 RGB PNG |
-| Actual iOS asset-catalog input | [`App-Icon-1024x1024@1x.png`](../../ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png), byte-identical to the master |
-| Google Play listing upload asset | [`play-store-512.png`](play-store-512.png), 512×512, 32-bit RGBA PNG, fully opaque, below 1024KB |
-| Android adaptive foreground | [`../adaptive-icon.png`](../adaptive-icon.png), 1024×1024 RGBA |
-| Android adaptive background | [`adaptive-background.png`](adaptive-background.png), 1024×1024 opaque RGB |
-| Reproducible provenance / hashes | [`manifest.generated.json`](manifest.generated.json) |
+| iOS / App Store / TestFlight / common legacy launcher | [`../icon.png`](../icon.png), 1024×1024 RGB PNG without alpha |
+| Actual iOS input | [`App-Icon-1024x1024@1x.png`](../../ios/TuneIntoHer/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png), byte-identical to master |
+| Google Play listing upload | [`play-store-512.png`](play-store-512.png), 512×512 32-bit RGBA, fully opaque and below 1024KB |
+| Adaptive foreground | [`../adaptive-icon.png`](../adaptive-icon.png), 1024×1024 RGBA |
+| Adaptive background | [`adaptive-background.png`](adaptive-background.png), 1024×1024 opaque RGB |
+| Output hashes / geometry / preservation | [`manifest.generated.json`](manifest.generated.json) |
 
-`app.config.ts` points the common icon at the master and Android foreground/background
-at these two adaptive assets. The checked-in native iOS catalog is also updated because
-changing Expo config alone does not replace assets in an existing native project.
-The current Xcode universal 1024px catalog lets the asset compiler produce native sizes.
-Expo prebuild generates Android densities from the configured source images; there is
-no checked-in Android project. Store upload/submission is **not** performed, and an
-upload asset on disk does not prove that any store listing has changed.
+Existing `app.config.ts` paths already target these assets. The checked-in iOS input
+is replaced too; an installed icon requires native asset-catalog compilation, not
+Metro reload. The legacy sphere generator delegates only its icon writes here and
+was not run. No identifiers, store settings or user data are changed. Uploads and
+native installation are separate root-owned tasks; no store publication is implied.
 
-## Adaptive masking
+## Android masking and generated previews
 
-Expo 57 emits 108dp foreground/background layers. Android displays a central 72dp masked
-viewport; its central 66dp circle is the guaranteed safe area. The foreground contains
-the same complete square photo, uniformly scaled to 672px within a 1024px transparent
-canvas (176px inset). Conservative wordmark/ring landmarks remain within the safe
-circle; the manifest records the coordinates and radius calculation.
-
-Only the outer 24px **steel margins** of this inset tile have alpha easing. The actual
-wordmark, rings, endpoints and their shadows remain opaque. No foreground RGB/art is
-repainted. The opaque background is a uniform enlargement of a letter/ring-free steel
-excerpt from the same 1024px master, avoiding a duplicate logo behind the foreground.
-The background is visible during system masking/motion and bridges the outer margins.
-
-The round preview applies the actual 108→72dp centre viewport before a circular mask.
-The diagnostic adds guides only in a preview file. OEM mask/parallax/themed-icon
-behavior and a native Android build remain unverified on this host. No monochrome
-reinterpretation of the approved photographic mark is supplied.
+The 108dp adaptive layers show a central 72dp system viewport with a guaranteed 66dp
+safe circle. Removing the wordmark permits a larger **768px photo / 128px inset**
+inside the 1024px foreground, with complete ring/endpoints inside that safe circle.
+Only 24px of outer steel margins have alpha easing; the rings and their shadows are
+opaque. Background pixels come from a ring-free steel excerpt of the same master.
+The round preview applies 108→72dp framing before its circular mask. OEM motion and
+native Android behavior still require an Android runtime; no monochrome redesign
+is supplied.
 
 [Android adaptive-icon guidance](https://developer.android.com/develop/ui/compose/system/icon_design_adaptive),
 [Expo icon configuration](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/),
-[Google Play 512px/32-bit/1024KB specifications](https://developer.android.com/distribute/google-play/resources/icon-design-specifications).
+[Google Play specification](https://developer.android.com/distribute/google-play/resources/icon-design-specifications),
+[Apple asset catalogs](https://developer.apple.com/documentation/xcode/configuring-your-app-icon).
 
-## Generated previews
-
-- [Platform sheet](previews/platform-preview-sheet.png): master, Play icon, iPhone 60pt,
-  Settings 29pt, small nominal-pixel views and the Android round mask.
-- [Store listing cards](previews/store-listing-cards.png): icon and app name only;
-  labelled generated/unpublished, with no invented ratings, prices or store approval.
+- [Full/small/platform sheet](previews/platform-preview-sheet.png).
+- [Generated store listing cards](previews/store-listing-cards.png), icon and app name
+  only; no invented ratings, price or publication claim.
 - [Android round mask](previews/android-round-system-mask.png).
-- [Adaptive safe-area diagnostic](previews/android-safe-area-DIAGNOSTIC.png): guide
-  strokes are **not** part of any production asset.
-- Individual iPhone 2×/3× previews use a clearly simulated OS-style corner mask.
-  Production inputs remain unrounded. These are generated previews, not screenshots
-  or evidence of installation. Actual SpringBoard/Settings/build proof is separate.
+- [Safe-area diagnostic](previews/android-safe-area-DIAGNOSTIC.png), guides only in a
+  preview file, never a production icon.
+- Individual iPhone 60pt / Settings 29pt 2×/3× previews have simulated OS masks.
+  All previews are labelled/generated, not physical screenshots. Production corners
+  stay square so the real OS can apply its own treatment.
 
-## Reproduction and checks
+Actual official SDK generation of all 20 density files and both adaptive XML resources
+is recorded in [source/android-resource-check.generated.json](source/android-resource-check.generated.json).
+This is a source/resource check, not an Android SDK build or native runtime test.
 
-Use the existing Sharp tools dependency; no package installation is necessary in the
-prepared environment:
+## Reproduction
 
 ```sh
 TIH_BRAND_TOOLS_NODE_MODULES=/path/to/existing/node_modules node scripts/generate-official-icons.cjs
@@ -75,12 +84,12 @@ TIH_BRAND_TOOLS_NODE_MODULES=/path/to/existing/node_modules node scripts/generat
 npx vitest run tests/officialIcons.test.ts
 ```
 
-`--check` verifies the immutable source, crop, generated file hashes/dimensions,
-native copy, safe-circle geometry and protected launch/V4 assets. `--raster-check`
-regenerates every output in memory and compares exact encoded bytes. The tests also
-independently probe the source-to-master uniform geometry, opacity, Play PNG format,
-configured/native copies, adaptive landmark clearance and preview separation.
-
-The historical `create-brand-assets.cjs` retains its old sphere SVG/PNG literals and
-outputs but delegates icon generation here; it cannot restore the obsolete green
-sphere icons. That historical sphere generator is not run for this change.
+Sharp is a build-time tool supplied by the existing tools runtime, not a newly added
+project dependency. Generation and `--raster-check` require the module-directory override
+shown above unless Sharp is already resolvable. Plain `--check` works without Sharp.
+No dependency or lockfile change is required. Checks pin the immutable
+portrait and selected edit, protected pixels, actual master/source/native copies,
+PNG formats, original display name, safe-circle landmarks and preview separation.
+Full raster checking regenerates every output in memory and compares exact bytes.
+The OCR result is bound to the master hash; its original source/positive-control
+check is documented in the provenance. No Python image editing was used.

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "iconVariant": "silver-open-rings-no-wordmark",
+  "originalPortrait": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+  "originalPortraitSHA256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+  "inputSquareCropSourcePixels": {
+    "left": 35,
+    "top": 450,
+    "width": 780,
+    "height": 780
+  },
+  "inputSquare1024SHA256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+  "editTool": "built-in imagegen edit; no CLI/API key",
+  "editSourceFile": "assets/icons/source/rings-wordmark-removal.generated.png",
+  "editSourceSHA256": "d68c28ea81d9ea5a68d33269cfe4fdb65d6b429bfbad9e7e82c45b06dddafdcc",
+  "editSourcePixels": [
+    1254,
+    1254
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: final app icon photographic source. Image 1 is the EDIT TARGET, not a mood reference. Make one narrow edit: remove the entire embossed 'Tune Into Her' wordmark and all letter-shaped shadows from the middle. Reconstruct only the short portions of the two existing silver open rings that the letters occluded, with the identical curve trajectories, thickness, beveled metal, highlights and local shadows. In the emptied areas retain the existing smooth blue-silver steel backdrop. INVARIANTS: keep both original overlapping open-ring shapes, their exact positions and size, their original lower open ends/gaps, the top crossing/glint, all existing ring pixels outside the letter area, all background light/reflections and framing unchanged. Do not close the rings; do not add any new ring, symbol, ornament, border, shadow, text or watermark. No flat/vector replacement and no different icon style. The final image must be completely text-free, silver metallic rings only on the existing steel background, same square canvas and same composition. Preserve the original outside the horizontal lettering/shadow band as accurately as possible.",
+  "composition": {
+    "masterPixels": [
+      1024,
+      1024
+    ],
+    "editedBand": {
+      "top": 420,
+      "bottomExclusive": 680,
+      "featherPixels": 24
+    },
+    "protectOriginalOutsideBand": true,
+    "protectedOutsideBandRGBA_SHA256": "cd3d74547d11f1a50c8a743b6dde146b97b23d270ae59247c8ec7eccf99396b5",
+    "operation": "Uniformly resize generated raster to1024, apply only a bounded alpha patch over the original crop. Original pixels above/below the band, including top glint and all lower endpoints, are retained exactly."
+  },
+  "manualReview": {
+    "wordmarkAbsent": true,
+    "twoOriginalOpenRingsAndEndpointsRetained": true,
+    "noNewSymbolOrStyleAdded": true,
+    "FounderVisualApprovalClaimed": false
+  },
+  "limits": [
+    "The letter-covered ring/background segments are reconstructed; they are not literal recovered original pixels.",
+    "The startup portrait/splash still contains its approved wordmark and is not changed by this icon-only derivation.",
+    "Built-in output source content credentials are retained; runtime/store outputs are normal deterministic PNGs."
+  ],
+  "rasterAudit": {
+    "masterSHA256": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05",
+    "outsideDifferencePixels": 0,
+    "insideDifferencePixels": 257540,
+    "editedBandRGBA_SHA256": "79a340fb6df7f2f828fe1391788869a7c9431811e84521932c6fc5c866d96eea"
+  },
+  "textRecognitionAudit": {
+    "engine": "Apple Vision VNRecognizeTextRequest",
+    "recognitionLevel": "accurate",
+    "usesLanguageCorrection": false,
+    "positiveControlSHA256": "342ffc30da786e7fba9c079207c88d1296a23d5ad6b1c995a5004cd51d88fcd2",
+    "positiveControlRecognizedStrings": [
+      "Tune Into Her"
+    ],
+    "positiveControlConfidence": [
+      1.0
+    ],
+    "ringsOnlyMasterSHA256": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05",
+    "ringsOnlyRecognizedStrings": [],
+    "limit": "OCR supports the recorded visual check; it is not proof that every possible recognizer or device will interpret the emblem identically."
+  }
+}

@@ -136,3 +136,11 @@ Diminuer {{label}}
 Augmenter {{label}}
 Choisir {{language}}
 Indicateur de phase {{phase}}
+Balayez pour choisir votre langue
+Langue précédente
+Langue suivante
+{{index}} sur {{count}}
+Impossible d’enregistrer la langue. Réessayez.
+Passer l’introduction
+Polices et licences
+La licence originale en anglais de Linux Libertine O et sa notice de distribution figurent ci-dessous.

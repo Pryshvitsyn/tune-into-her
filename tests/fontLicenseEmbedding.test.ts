@@ -10,7 +10,15 @@ describe('viewable bundled font license', () => {
     expect(bundledNotice.originalDistributionNotice).toBe(readFileSync(new URL('../assets/fonts/LICENCE.txt', import.meta.url), 'utf8'));
     const terms = readFileSync(new URL('../app/terms.tsx', import.meta.url), 'utf8');
     expect(terms).toContain('import fontLicense from "../assets/fonts/license.generated.json"');
-    expect(terms).toContain('<Text selectable style={styles.licenseText}>{fontLicense.ofl}</Text>');
-    expect(terms).toContain('<Text selectable style={styles.licenseText}>{fontLicense.originalDistributionNotice}</Text>');
+    for (const notice of ['ofl', 'originalDistributionNotice']) {
+      const paragraph = terms.match(new RegExp(`<Text([^>]+)>\\{fontLicense\\.${notice}\\}</Text>`));
+      expect(paragraph, `Reachable verbatim ${notice} paragraph`).not.toBeNull();
+      expect(paragraph![1]).toContain('selectable');
+      expect(paragraph![1]).toContain('language="en"');
+      expect(paragraph![1]).toContain('accessibilityLanguage="en"');
+      expect(paragraph![1]).toContain('style={styles.licenseText}');
+    }
+    expect(terms).toContain("t('legal.fontsTitle')");
+    expect(terms).toContain("t('legal.originalEnglish')");
   });
 });

@@ -7,7 +7,7 @@ import { useTheme } from "../theme/useTheme";
 
 import { BrandHomeButton } from "./BrandHomeButton";
 import { BrandMark } from "./BrandMark";
-export function BrandHeader() {
+export function BrandHeader({ compact = false }: { compact?: boolean }) {
   const { colors } = useTheme();
   const { preferences } = useApp();
   return (
@@ -16,7 +16,7 @@ export function BrandHeader() {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        marginBottom: 20,
+        marginBottom: compact ? 4 : 20,
       }}
     >
       <Pressable

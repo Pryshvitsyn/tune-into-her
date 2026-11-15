@@ -2,7 +2,28 @@
 
 Updated: 2026-11-15 (Europe/Rome)
 
-## CURRENT — official photographic icon and isolated Today device QA (2026-11-15)
+## CURRENT — final UI / language / education / Founder QA / rings-only icon (2026-11-15)
+
+- [x] Preserve clean3eff34d in `codex/checkpoint-ui-final-pass-20261115`; retain all intro/data/access work.
+- [x] Replace shared secondary footer text with accessible48pt arrow/gear; preserve main tabs/routing.
+- [x] Use horizontal11-language draft pages with swipe/arrows/accessible selection and Done/Cancel.
+- [x] Complete own-locale UI/QA/legal keys, locale formatters, recovery copy and preference-path tests.
+- [x] Replace Android OS-language date/time dialogs at all3 entry points with one localized draft modal;
+  preserve iOS spinners, date confirmation, native side-effect and persistence boundaries.
+- [x] Compact the6-week calendar and retain fixed Edit; actual SE375×667 fits all42dates/core controls.
+- [x] Replace empty Learn more with all11 localized four-phase education and verified NHS/NICHD links.
+- [x] Reuse existing17 internal scenarios in private cold-entry panel and reachable Settings row;
+  preserve normal eligibility guards and memory-only reset/preferences/history.
+- [x] Derive rings-only photographic icon; regenerate iOS/Play/adaptive/native inputs and safe previews.
+- [x] Compile real iOS native catalogs, verify20Android density/2XML outputs, bundle/sign current Release.
+- [x] Record current-source physical Today text/panel/Home without Metro; exact personal storage equality;
+  leave Founder QA installed. Reject failed MovieFileOutput fragments; use labelled host-clock capture.
+- [ ] Finish current full517-test/lint/typecheck readback and native horizontal/all11/persistence tour.
+- [ ] Review sanitized actual media/final diff/secrets, update report/snapshot, commit/push feature branch.
+- [ ] Android native build/runtime and real screen-reader speech: equipment/toolchain acceptance remains open.
+- Store submission, automatic merge and service/production configuration remain outside this task.
+
+## PREVIOUS — official photographic wordmark icon and isolated Today device QA (2026-11-15)
 
 - [x] Derive official square icon from exact portrait pixels; preserve rings/wordmark/reflections.
 - [x] Generate1024iOS/512Play and safe adaptive foreground/background from one master.

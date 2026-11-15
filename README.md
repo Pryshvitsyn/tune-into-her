@@ -34,3 +34,10 @@ native iOS, Play listing and adaptive Android layers. Native catalogs, source pr
 small/masked/store previews and the standalone memory-only Today test are documented in
 [official icon / Today QA](docs/OFFICIAL_ICONS_TODAY_QA.md). Physical new-icon/Today acceptance
 is reported separately from Simulator proof; no store upload is implied.
+
+## Current final UX and Founder test build
+
+The latest pass adds horizontal language selection, localized phase education, compact Cycle,
+icon-only secondary controls and the silver rings-only icon. The private iPhone test artifact
+keeps the existing scenario panel reachable; ordinary production access remains gated.
+See [current UX/QA evidence](docs/FINAL_UX_QA.md) and [internal testing](docs/INTERNAL_QA.md).

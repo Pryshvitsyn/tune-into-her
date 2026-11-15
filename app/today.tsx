@@ -120,7 +120,6 @@ function TodayScreen() {
   if (hasAccess && !failed && !cue) return <IntroLoading dark={dark}/>;
   if (hasAccess && cue && current?.id && !failed) {
     const notes = introDailyReminders(today, preferences.language);
-    const russian = preferences.language === "ru";
     return <AnimatedToday
       dark={dark}
       dateLine={[
@@ -137,15 +136,13 @@ function TodayScreen() {
       action={{label:c.do,text:cue.cue,note:notes[2]?.text ?? ""}}
       disclosure={(qaActive || entitlement.isMock) ? t("paywall.mock") : undefined}
       labels={{
-        info:russian ? "Больше о фазе" : t("today.learnMore"),
-        update:russian ? "Изменить фазу" : t("today.update"),
-        settings:t("today.settings",{defaultValue:"Settings"}),
-        skip:russian ? "Пропустить заставку" : "Skip intro",
-        close:t("common.back",{defaultValue:russian ? "Назад" : "Back"}),
+        info:t("today.learnMore"),
+        update:t("today.update"),
+        settings:t("today.settings"),
+        skip:t("today.skipIntro"),
+        close:t("common.back"),
       }}
-      onInfo={() => estimate.requiresPeriodConfirmation
-        ? router.push("/cycle")
-        : router.push({pathname:"/learn/[phase]",params:{phase:estimate.estimatedPhase}})}
+      onInfo={() => router.push({pathname:"/learn/[phase]",params:{phase:estimate.estimatedPhase}})}
       onUpdate={() => router.push("/cycle")}
       onSettings={() => router.dismissTo("/settings")}
       onAbout={() => router.push("/thea")}

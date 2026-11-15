@@ -32,12 +32,12 @@ export class InternalQASession {
   private current(sessionId: number): Extract<InternalQASnapshot, { active: true }> | undefined {
     return this.snapshot.active && this.snapshot.sessionId === sessionId ? this.snapshot : undefined;
   }
-  async startScenario(id: QAScenarioId): Promise<boolean> {
+  async startScenario(id: QAScenarioId, initialPreferences?: Pick<Preferences, 'language' | 'theme'>): Promise<boolean> {
     if (!this.enabled) return false;
     const scenario = makeQAScenario(id), runtime = createQARuntime(scenario), sessionId = ++this.generation;
     this.removePurchaseListener?.();
     const previous = this.snapshot.active ? this.snapshot.preferences : undefined;
-    const preferences: Preferences = { theme: previous?.theme ?? 'light', language: previous?.language ?? 'en', onboardingComplete: scenario.onboardingComplete, reminderEnabled: false, reminderHour: GUIDANCE_REFRESH_HOUR, reminderMinute: 0 };
+    const preferences: Preferences = { theme: previous?.theme ?? initialPreferences?.theme ?? 'light', language: previous?.language ?? initialPreferences?.language ?? 'en', onboardingComplete: scenario.onboardingComplete, reminderEnabled: false, reminderHour: GUIDANCE_REFRESH_HOUR, reminderMinute: 0 };
     this.publish({ ...runtime, active: true, sessionId, scenarioId: id, revision: 0, nowMs: runtime.clock.now(), accessReady: false, preferences: Object.freeze(preferences), cycleSettings: scenario.cycleSettings ? Object.freeze({ ...scenario.cycleSettings }) : null, entitlement: { status: 'loading', isActive: false, isMock: true }, appTrial: { status: 'unavailable', isActive: false, verification: 'unavailable' } });
     this.removePurchaseListener = runtime.purchases.addEntitlementListener(entitlement => {
       const current = this.current(sessionId); if (current) this.publish({ ...current, entitlement });
@@ -86,5 +86,7 @@ export class InternalQASession {
 export function createInternalQASession(isDevelopment: boolean, requested: string | undefined): InternalQASession {
   return new InternalQASession(isMockBillingEnabled(isDevelopment, requested));
 }
+// Build descriptor only; the private build wrapper overrides this export. It grants no access.
+export const standaloneQAEnabled = false;
 export const internalQAEnabled = isMockBillingEnabled(typeof __DEV__ !== 'undefined' && __DEV__, process.env.EXPO_PUBLIC_USE_MOCK_BILLING);
 export const internalQASession = new InternalQASession(internalQAEnabled);

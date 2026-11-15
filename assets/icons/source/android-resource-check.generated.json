@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "iconVariant": "silver-open-rings-no-wordmark",
+  "kind": "Actual isolated official Expo57 icon resource generation; no Android native SDK build/runtime",
+  "passed": true,
+  "generator": "@expo/prebuild-config/build/plugins/icons/withAndroidIcons.js#setIconAsync",
+  "inputSHA256": {
+    "assets/icon.png": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05",
+    "assets/adaptive-icon.png": "159a3829a7660c273e1e229f58020b8e5d6b536148077da3f1ab516ab16cea45",
+    "assets/icons/adaptive-background.png": "494dbae5b5d56727a09af2e3f37a6c643e1f283ab3d27eb008a599a4825982a4"
+  },
+  "generatedDensityFiles": 20,
+  "outputs": [
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp",
+      "width": 108,
+      "height": 108,
+      "sha256": "03427da574502d90d58128bdbb1806c0198129a4ed4136c879de9cb0819fa3b9"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_background.webp",
+      "width": 108,
+      "height": 108,
+      "sha256": "09202dd4971e9234e9365b7f7ff5bd7be86c3ad7a583d121ab0ef9f0f464f3bc"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+      "width": 48,
+      "height": 48,
+      "sha256": "2f73d2107028d8f3d39f01bf4d214a75f2f008e8b792a7ac2e8100a11a62bbe6"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+      "width": 48,
+      "height": 48,
+      "sha256": "0990b85842e6ade3f3f9568edc718649eb6a69c8d2f3cb31e31ca126485b0a14"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp",
+      "width": 162,
+      "height": 162,
+      "sha256": "d1cc51de9a4b35286060c097e9b6a688c9fdaa631bf04f046d87c216e3af77fc"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_background.webp",
+      "width": 162,
+      "height": 162,
+      "sha256": "43eb65fec4fd51ceeec0531dc795c9633629ee63aef83529993a41b5e84f3327"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+      "width": 72,
+      "height": 72,
+      "sha256": "8c38aef6c4d3d91f47a08cb2b92a6bfaed2942ca680fb867de43d3c9d119888a"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+      "width": 72,
+      "height": 72,
+      "sha256": "db15e4b1450cde0bdb200019baba24d6dee209b46529c5a89e60896d806320d3"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp",
+      "width": 216,
+      "height": 216,
+      "sha256": "942add0060d99e19a701686cd47da39ab8da8df13ade75a11d4530ce3c87bc9e"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_background.webp",
+      "width": 216,
+      "height": 216,
+      "sha256": "e6a84d94088ef4bbaf8d00218ccb671abf442485c11e07e3b1976b960b812849"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+      "width": 96,
+      "height": 96,
+      "sha256": "e3986b77285413bf34e1db1d37c79b14bd9e261ed99b1ba5661dab4e574f5617"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+      "width": 96,
+      "height": 96,
+      "sha256": "ddf84e6470865df4e03bc5e9ac2b12ffb1c7cb7a33b0cc091a7cba0d7702a784"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp",
+      "width": 324,
+      "height": 324,
+      "sha256": "8993891989b9c151d4ac7f51025b005ece4990b87419199dd8d90703ae07dfdc"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.webp",
+      "width": 324,
+      "height": 324,
+      "sha256": "a2921eca4dcc416cb0973a0d674cf1da9387cd7f7e3962bee71d33c43376108f"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+      "width": 144,
+      "height": 144,
+      "sha256": "9ed0f885ff69bdb14239ca293be4a42f5d0bed2933400a25a9a31165b8bcb6f1"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+      "width": 144,
+      "height": 144,
+      "sha256": "30f5f13d73d0fce939b11bc5d2d3e82c30af159be3cf162585f293be78daa381"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp",
+      "width": 432,
+      "height": 432,
+      "sha256": "476d3f460865ec6aa8d4b553dac3e152795e8a001f1b4509862b08abe2b1c84b"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.webp",
+      "width": 432,
+      "height": 432,
+      "sha256": "7a6aaa5001b4b68268ca5cb9ba545df9007b4459f59caec492b760fa2e1a246d"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "width": 192,
+      "height": 192,
+      "sha256": "0eb379c48678a9e6c83e5f4ab2bd506dddf7a8f9ba1a45ac4be97239e222049d"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+      "width": 192,
+      "height": 192,
+      "sha256": "59c10196f1c8dd62a634c08a33c8189d8a6bc807e394cea55a112e8026cb2057"
+    }
+  ],
+  "adaptiveXML": [
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "44cc3246d167bd718fb61feaba493850ff95255c1ddbb8854c0e4c0534832f96",
+      "canonicalLayerReferences": true
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "sha256": "44cc3246d167bd718fb61feaba493850ff95255c1ddbb8854c0e4c0534832f96",
+      "canonicalLayerReferences": true
+    }
+  ],
+  "nativeBuild": false,
+  "emulatorOrDevice": false,
+  "repoAndroidFolderCreated": false,
+  "networkOrDependenciesInstalled": false
+}

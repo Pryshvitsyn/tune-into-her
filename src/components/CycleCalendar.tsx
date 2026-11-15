@@ -9,7 +9,7 @@ import { useInterface } from "../i18n/useInterface";
 import { useTheme } from "../theme/useTheme";
 
 import { AppText as Text } from './AppText';
-export function CycleCalendar() {
+export function CycleCalendar({ compact = false }: { compact?: boolean }) {
   const { cycleSettings, preferences, now: currentTime } = useApp();
   const { colors } = useTheme();
   const c = useInterface();
@@ -39,16 +39,16 @@ export function CycleCalendar() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          marginBottom: 20,
+          marginBottom: compact ? 4 : 20,
         }}
       >
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={c.previousMonth}
           onPress={() => setOffset((n) => n - 1)}
-          style={{ padding: 15 }}
+          style={compact ? { minWidth: 44, minHeight: 44, paddingHorizontal: 10, paddingVertical: 6, alignItems: "center", justifyContent: "center" } : { padding: 15 }}
         >
-          <Text accessible={false} allowFontScaling={false} style={{ color: colors.text, fontSize: 28 }}>‹</Text>
+          <Text accessible={false} allowFontScaling={false} style={{ color: colors.text, fontSize: 28, ...(compact ? { lineHeight: 32 } : {}) }}>‹</Text>
         </Pressable>
         <Text style={{ color: colors.text, fontSize: 20, lineHeight: 28, flex: 1, textAlign: "center" }}>
           {month.toLocaleDateString(locale, { month: "long", year: "numeric" })}
@@ -57,9 +57,9 @@ export function CycleCalendar() {
           accessibilityRole="button"
           accessibilityLabel={c.nextMonth}
           onPress={() => setOffset((n) => n + 1)}
-          style={{ padding: 15 }}
+          style={compact ? { minWidth: 44, minHeight: 44, paddingHorizontal: 10, paddingVertical: 6, alignItems: "center", justifyContent: "center" } : { padding: 15 }}
         >
-          <Text accessible={false} allowFontScaling={false} style={{ color: colors.text, fontSize: 28 }}>›</Text>
+          <Text accessible={false} allowFontScaling={false} style={{ color: colors.text, fontSize: 28, ...(compact ? { lineHeight: 32 } : {}) }}>›</Text>
         </Pressable>
       </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={fontScale > 1}
@@ -72,7 +72,8 @@ export function CycleCalendar() {
               width: "14.2857%",
               textAlign: "center",
               color: colors.secondary,
-              paddingVertical: 10,
+              paddingVertical: compact ? 1 : 10,
+              ...(compact ? { fontSize: 14, lineHeight: 20 } : {}),
             }}
           >
             {cells[i]!.toLocaleDateString(locale, {
@@ -88,7 +89,7 @@ export function CycleCalendar() {
               key={key}
               style={{
                 width: "14.2857%",
-                minHeight: 46,
+                minHeight: compact ? 34 : 46,
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -102,7 +103,9 @@ export function CycleCalendar() {
                       : colors.text,
                   textAlign: "center",
                   borderRadius: 18,
-                  padding: 9,
+                  paddingVertical: compact ? 5 : 9,
+                  paddingHorizontal: compact ? 6 : 9,
+                  ...(compact ? { fontSize: 14, lineHeight: 20 } : {}),
                   backgroundColor:
                     estimatedPeriod ? colors.overlay : "transparent",
                   fontWeight: "400",
@@ -120,8 +123,8 @@ export function CycleCalendar() {
         style={{
           color: colors.secondary,
           fontSize: 14,
-          lineHeight: 22,
-          marginVertical: 24,
+          lineHeight: compact ? 20 : 22,
+          marginVertical: compact ? 4 : 24,
         }}
       >
         {c.estimatedPeriod} · {c.wellbeing}

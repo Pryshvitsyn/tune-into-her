@@ -5,8 +5,10 @@ import { Platform, View } from 'react-native';
 
 import { useApp } from '../context/AppContext';
 import { dateOnlyToLocalDate, toDateOnly, type DateOnly } from '../domain/cycle/dateOnly';
+import { localeForLanguage } from '../i18n/locale';
 import { useTheme } from '../theme/useTheme';
 
+import { AndroidDateTimePicker } from './AndroidDateTimePicker';
 import { Button } from './Button';
 
 /** The picker candidate is transient until the user explicitly confirms it. */
@@ -20,7 +22,7 @@ export function CycleDateField({ value, onChange, maximumDate, disabled = false 
   const { dark } = useTheme();
   const { preferences } = useApp();
   const [candidate, setCandidate] = useState<Date | null>(null);
-  const locale = preferences.language === 'mbf' ? 'ms' : preferences.language === 'zh-Hans' ? 'zh-CN' : preferences.language;
+  const locale = localeForLanguage(preferences.language);
   const label = value ? dateOnlyToLocalDate(value).toLocaleDateString(locale, {
     day: 'numeric', month: 'long', year: 'numeric',
   }) : t('common.notSet');
@@ -32,18 +34,18 @@ export function CycleDateField({ value, onChange, maximumDate, disabled = false 
     <Button variant="secondary" label={label} disabled={disabled || candidate !== null}
       accessibilityLabel={`${t('cycle.lastPeriod')}: ${label}`}
       onPress={() => setCandidate(value ? dateOnlyToLocalDate(value) : new Date(maximumDate))} />
-    {candidate ? <>
+    {candidate && Platform.OS === 'android' ? <AndroidDateTimePicker mode="date" value={candidate} maximumDate={maximumDate}
+      language={preferences.language} onConfirm={confirm} onCancel={() => setCandidate(null)} /> : null}
+    {candidate && Platform.OS !== 'android' ? <>
       <DateTimePicker themeVariant={dark ? 'dark' : 'light'} value={candidate} mode="date" display="spinner"
-        maximumDate={maximumDate} onChange={(event, selected) => {
-          if (Platform.OS === 'android') {
-            if (event.type === 'set' && selected) confirm(selected);
-            else setCandidate(null);
-          } else if (selected) setCandidate(selected);
+        locale={Platform.OS === 'ios' ? locale : undefined}
+        maximumDate={maximumDate} onChange={(_, selected) => {
+          if (selected) setCandidate(selected);
         }} />
-      {Platform.OS !== 'android' ? <View style={{ gap: 4 }}>
+      <View style={{ gap: 4 }}>
         <Button label={t('common.done')} onPress={() => confirm(candidate)} />
         <Button variant="ghost" label={t('common.cancel')} onPress={() => setCandidate(null)} />
-      </View> : null}
+      </View>
     </> : null}
   </View>;
 }

@@ -1,0 +1,79 @@
+{
+  "en": {
+    "day": "Day",
+    "month": "Month",
+    "year": "Year",
+    "hour": "Hour (24-hour)",
+    "minute": "Minute"
+  },
+  "it": {
+    "day": "Giorno",
+    "month": "Mese",
+    "year": "Anno",
+    "hour": "Ora (24 ore)",
+    "minute": "Minuti"
+  },
+  "es": {
+    "day": "Día",
+    "month": "Mes",
+    "year": "Año",
+    "hour": "Hora (24 horas)",
+    "minute": "Minutos"
+  },
+  "ru": {
+    "day": "День",
+    "month": "Месяц",
+    "year": "Год",
+    "hour": "Часы (24 часа)",
+    "minute": "Минуты"
+  },
+  "uk": {
+    "day": "День",
+    "month": "Місяць",
+    "year": "Рік",
+    "hour": "Години (24 години)",
+    "minute": "Хвилини"
+  },
+  "fr": {
+    "day": "Jour",
+    "month": "Mois",
+    "year": "Année",
+    "hour": "Heure (24 heures)",
+    "minute": "Minutes"
+  },
+  "de": {
+    "day": "Tag",
+    "month": "Monat",
+    "year": "Jahr",
+    "hour": "Stunde (24 Stunden)",
+    "minute": "Minute"
+  },
+  "hi": {
+    "day": "दिन",
+    "month": "महीना",
+    "year": "वर्ष",
+    "hour": "घंटा (24 घंटे)",
+    "minute": "मिनट"
+  },
+  "zh-Hans": {
+    "day": "日",
+    "month": "月",
+    "year": "年",
+    "hour": "小时（24小时制）",
+    "minute": "分钟"
+  },
+  "ms": {
+    "day": "Hari",
+    "month": "Bulan",
+    "year": "Tahun",
+    "hour": "Jam (24 jam)",
+    "minute": "Minit"
+  },
+  "mbf": {
+    "day": "Hari",
+    "month": "Bulan",
+    "year": "Tahun",
+    "hour": "Jam (24 jam)",
+    "minute": "Minit"
+  }
+}

@@ -2,10 +2,11 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 import { router } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Alert, Pressable, StyleSheet, Switch, useWindowDimensions, View } from 'react-native';
+import { Alert, Platform, Pressable, StyleSheet, Switch, useWindowDimensions, View } from 'react-native';
 
 import { TuneIntoHerSphereV4 } from "../TuneIntoHerSphereV4";
 import { AdviceBlocks } from '../src/components/AdviceBlocks';
+import { AndroidTimeField } from '../src/components/AndroidDateTimePicker';
 import { AppText as Text } from '../src/components/AppText';
 import { Button } from '../src/components/Button';
 import { CycleDateField } from '../src/components/CycleDateField';
@@ -19,6 +20,7 @@ import { cycleDraftFromSaved, cycleSettingsFromDraft } from '../src/domain/cycle
 import { estimateCycle } from '../src/domain/cycle/cycleEngine';
 import { toDateOnly, type DateOnly } from '../src/domain/cycle/dateOnly';
 import { getDemoCopy } from '../src/i18n/acceleratedDemo';
+import { localeForLanguage } from '../src/i18n/locale';
 import releaseCopy from '../src/i18n/releaseCopy.json';
 import { useInterface } from '../src/i18n/useInterface';
 import { DestinationSphere } from '../src/intro/LaunchPresentation';
@@ -155,8 +157,9 @@ function OnboardingScreen() {
       </View>
       {reminderEnabled ? <View style={styles.picker}>
         <Text style={[styles.cardLabel, type]}>{t('onboarding.reminderTime')}</Text>
-        <DateTimePicker themeVariant={dark ? 'dark' : 'light'} value={reminderTime} mode="time" display="spinner"
-          onChange={(_, selected) => selected && setReminderTime(selected)} />
+        {Platform.OS === 'android' ? <AndroidTimeField value={reminderTime} language={preferences.language} onChange={setReminderTime} /> : <DateTimePicker themeVariant={dark ? 'dark' : 'light'} value={reminderTime} mode="time" display="spinner"
+          locale={Platform.OS === 'ios' ? localeForLanguage(preferences.language) : undefined}
+          onChange={(_, selected) => selected && setReminderTime(selected)} />}
       </View> : null}
     </View> : null}
   </Screen>;

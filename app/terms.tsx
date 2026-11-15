@@ -37,9 +37,10 @@ export default function TermsScreen() {
         />
       ) : null}
       <View style={styles.fontLicense}>
-        <Text selectable accessibilityRole="header" style={styles.licenseTitle}>Linux Libertine O — SIL Open Font License</Text>
-        <Text selectable style={styles.licenseText}>{fontLicense.ofl}</Text>
-        <Text selectable style={styles.licenseText}>{fontLicense.originalDistributionNotice}</Text>
+        <Text selectable accessibilityRole="header" style={styles.licenseTitle}>{t('legal.fontsTitle')}</Text>
+        <Text style={styles.body}>{t('legal.originalEnglish')}</Text>
+        <Text language="en" accessibilityLanguage="en" selectable style={styles.licenseText}>{fontLicense.ofl}</Text>
+        <Text language="en" accessibilityLanguage="en" selectable style={styles.licenseText}>{fontLicense.originalDistributionNotice}</Text>
       </View>
     </Screen>
   );

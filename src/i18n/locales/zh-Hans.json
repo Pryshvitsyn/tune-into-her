@@ -52,7 +52,8 @@
     "settings": "打开设置",
     "lockedTitle": "今日建议已准备好",
     "lockedBody": "有效试用或订阅可解锁今日建议。",
-    "unlock": "查看订阅"
+    "unlock": "查看订阅",
+    "skipIntro": "跳过开场"
   },
   "phase": {
     "menstrual": "月经期",
@@ -117,7 +118,12 @@
     "it": "Italiano",
     "ru": "Русский",
     "uk": "Українська",
-    "es": "Español"
+    "es": "Español",
+    "swipeHint": "左右滑动选择语言",
+    "previous": "上一个语言",
+    "next": "下一个语言",
+    "page": "第{{index}}项，共{{count}}项",
+    "saveError": "无法保存语言，请重试。"
   },
   "paywall": {
     "title": "每天一条实用建议。",
@@ -178,5 +184,9 @@
     "increase": "增加{{label}}",
     "selectLanguage": "选择{{language}}",
     "phaseIndicator": "{{phase}}阶段指示"
+  },
+  "legal": {
+    "fontsTitle": "字体与许可",
+    "originalEnglish": "以下为Linux Libertine O的原始英文许可证及其发布声明。"
   }
 }

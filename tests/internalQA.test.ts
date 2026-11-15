@@ -43,6 +43,13 @@ describe('isolated internal QA', () => {
     await expect(session.startAppTrial()).rejects.toThrow('ONBOARDING_REQUIRED');
     await expect(session.completeOnboarding()).rejects.toThrow('ONBOARDING_REQUIRED');
   });
+  it('takes the selected UI language/theme into the first private scenario without reading personal stores', async () => {
+    const session = createInternalQASession(true, 'true');
+    await session.startScenario('fresh', { language: 'ru', theme: 'dark' });
+    expect(active(session).preferences).toMatchObject({ language: 'ru', theme: 'dark' });
+    await session.startScenario('cycle-7', { language: 'en', theme: 'light' });
+    expect(active(session).preferences).toMatchObject({ language: 'ru', theme: 'dark' });
+  });
   it('retains the prior daily selection at 07:59 and changes the guidance key at local 08:00', async () => {
     const session = createInternalQASession(true, 'true'); await session.startScenario('before-0800');
     const before = active(session), settings = before.cycleSettings!;

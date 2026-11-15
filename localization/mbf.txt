@@ -136,3 +136,11 @@ Kurangkan {{label}}
 Tambah {{label}}
 Pilih {{language}}
 Tanda fasa {{phase}}
+Leret untuk pilih bahasa
+Bahasa dulu
+Bahasa yang datang
+{{index}} dari {{count}}
+Bahasa tak dapat simpan. Cuba lagi.
+Langkau pembukaan
+Fon sama lesen
+Lesen asal Inggeris Linux Libertine O sama notis pengedaran ada di bawah.

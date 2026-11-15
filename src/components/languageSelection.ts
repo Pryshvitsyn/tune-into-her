@@ -82,6 +82,15 @@ export function languageAtWheelGestureOffset(
   return interaction.userGesture && interaction.layoutReady ? languageAtWheelOffset(offset, rowHeight) : null;
 }
 
+/** Horizontal pages use the same guarded spatial-index mapping as the prior wheel. */
+export function languageAtPageGestureOffset(
+  offset: number,
+  pageWidth: number,
+  interaction: { userGesture: boolean; layoutReady: boolean },
+): SupportedLanguage | null {
+  return languageAtWheelGestureOffset(offset, pageWidth, interaction);
+}
+
 /** When a whole row cannot fit, use a normal scroll list rather than an invalid wheel. */
 export function languagePickerViewport(rowHeight: number, availableHeight: number): {
   height: number; wholeSheetScroll: boolean; canFitWheel: boolean;

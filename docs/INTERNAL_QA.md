@@ -1,16 +1,62 @@
 # Isolated internal QA
 
-The hidden `/dev-qa` route requires both `__DEV__` and the existing
-`EXPO_PUBLIC_USE_MOCK_BILLING=true` gate. Production and ordinary development sessions
-cannot activate fixtures. There is no public QA tab. The normal app remains the test
-subject: the controller supplies synthetic data/services through AppContext rather than
-adding replacement cycle, subscription, navigation or animation screens.
+The ordinary app's hidden `/dev-qa` route still requires both `__DEV__` and
+`EXPO_PUBLIC_USE_MOCK_BILLING=true`. That gate grants no access by itself and remains
+disabled in normal production Release. The current Founder workflow additionally uses
+an explicitly packaged **private Release testing artifact**, with a build-only entry
+and the same existing memory controller. It is not a new production entitlement path.
+There is no public QA tab or URL/environment flag that unlocks ordinary Release.
 
-## Run on the existing development client
+The real application remains the test subject: AppContext selects synthetic
+services/state rather than replacement cycle, billing, navigation or animation screens.
+Current source behavior and the two testing modes are distinguished below. Build,
+installation and physical verification must be reported for their actual artifact;
+these instructions alone are not runtime proof.
 
-No new dependency or native module is introduced by QA. The older Debug client lacked
-already-required ExpoCrypto and had an older SVG module. Compatible Debug clients have
-now been rebuilt for the existing iPhone and isolated Simulator; the iPhone update
+## Current Founder private Release workflow
+
+Explicit preparation defaults to the localized testing panel:
+
+```sh
+node tests/native-launch/standalone-qa.cjs --standalone-qa
+```
+
+The generated private Index opens `/dev-qa` on cold launch. A labelled `paid-active`
+fixture starts synchronously before AppProvider mounts, so real storage, billing/cache
+and notification effects never become the initial test scope. Development JavaScript
+remains false. The separate build configuration requires its exact private Release entry,
+marker and Expo Metro override; packaging verifies the actual emitted module graph.
+[Packaging and fail-closed checks](../tests/native-launch/STANDALONE_QA.md) are the source
+of truth for those mechanics. Do not submit/distribute the diagnostic artifact.
+
+After the reviewed artifact is installed, choose a scenario, then use **Open selected
+scenario** to enter its existing screen. The button waits for private access readiness.
+Return through **Settings → Internal testing**, whose title and controls follow the
+selected locale. `--standalone-qa --entry today` is the explicit optional capture entry;
+it does not replace the default panel intended for the Founder.
+
+In this artifact, **Reset test session** resets only synthetic memory and keeps the
+private scope active. It cannot expose personal stores or switch itself into ordinary
+app use. For the latest final-pass request, finish with the reviewed private testing
+artifact installed and reachable. Retain the signed normal artifact separately; an
+update to it is a later explicitly requested return to ordinary use or recovery action.
+Do not automatically restore normal after successful testing and hide the controls again.
+Never uninstall or reset data when changing between these artifacts.
+
+Private language/theme changes survive navigation and scenario selection in the running
+process. A cold process starts a new fixture, so those test preferences/history reset;
+they are not a disk-persistence test. The first scenario in the ordinary Debug workflow
+can seed language/theme from the currently displayed preferences without saving anything.
+Normal app preferences continue to use their existing persistence and cold-start restore.
+Verify normal persistence separately in the normal artifact, rather than interpreting a
+private cold reset as lost personal settings.
+
+## Ordinary development-client alternative
+
+Historical Debug-client checkpoint: no new dependency or native module was introduced
+by QA. The older Debug client lacked
+already-required ExpoCrypto and had an older SVG module. Compatible Debug clients were
+rebuilt for the existing iPhone and isolated Simulator; the iPhone update
 preserved its application data. Build/install evidence and native case results are in
 [UX_TEST_READINESS](UX_TEST_READINESS.md).
 
@@ -24,7 +70,9 @@ Open the installed Tune Into Her development client on the same LAN and select t
 server or scan Expo's development-client QR. The verified unique scheme is
 `exp+tune-into-her`; the legacy `tuneintoher` scheme may belong to an older app.
 The flag-enabled startup opens `/dev-qa`. Its Settings entry also remains available.
-A standalone Release cannot enable fixtures through a URL or an environment flag.
+An ordinary Release cannot enable fixtures through a URL or an environment flag. The
+separately packaged private Release above uses a reviewed build-only wrapper, not this
+development-client flag.
 
 On the first Expo developer-menu tutorial, use its Continue and Close controls. The
 SDK's floating Tools button can cover the product's upper-right Home emblem; turn off
@@ -32,7 +80,8 @@ SDK's floating Tools button can cover the product's upper-right Home emblem; tur
 host control. Automated Simulator runs use the temporary launch argument
 `-EXDevMenuShowFloatingActionButton NO`, without changing product preferences.
 
-The environment flag enables only the panel. Outside an explicitly active scenario,
+In this ordinary Debug workflow, the environment flag enables only the panel. Outside
+an explicitly active scenario,
 AppContext keeps the actual RevenueCat/trial services and real data; it does not select
 mock billing globally. Choose a scenario and confirm its active disclosure before using
 the panel's shortcuts to existing screens. The existing
@@ -77,10 +126,13 @@ configuration and real transactions remain separate external tests.
   AppTrialService with private Map storage and a no-network fixture transport);
 - `memorySelectionStore` and `memoryFeedbackStore`, matching the existing store methods.
 
-Controller actions are `startScenario`, `stop`, `refreshAccess`, `advanceBy`,
+Controller actions are `startScenario(id, initialPreferences?)`, `stop`, `refreshAccess`, `advanceBy`,
 `advanceToNextGuidanceBoundary`, `setStoreAvailable`, `setCycleSettings`,
-`updatePreferences`, `completeOnboarding` and `startAppTrial`. Start waits for access
-readiness. Session generations reject stale asynchronous results/listeners after reset
+`updatePreferences`, `completeOnboarding` and `startAppTrial`. Start publishes active
+memory ownership synchronously, then its promise waits for
+access readiness. Optional initial preferences contain only language/theme; subsequent
+scenarios retain the existing private choice. Session generations reject stale
+asynchronous results/listeners after reset
 or exit. Starting app access still requires completed onboarding and a configured cycle.
 
 `scopeAppContext(base, controller, snapshot)` is the pure provider facade. Disabled or
@@ -99,22 +151,29 @@ selection/feedback stores. Keep default notification scheduling inactive during 
 including foreground effects, permission requests and cleanup actions. Real trial/cache
 polling must pause too: even `AppTrialService.getCachedState()` writes its cache metadata.
 No SecureStore/AsyncStorage, real billing cache/history, backend or notification request
-is part of a synthetic scenario. Restore the real language and ordinary effects on exit.
+is part of a synthetic scenario. Ending an ordinary Debug session restores real language
+and ordinary effects with fresh access checks. The standalone wrapper instead resets its
+private scenario and stays isolated; it needs a separately retained normal artifact to exit.
 
-## Source proof and remaining runtime work
+## Source checks and historical proof
 
 ```sh
-npx vitest run tests/internalQA.test.ts tests/internalQAScope.test.ts
-npx eslint src/devQA app/dev-qa.tsx tests/internalQA.test.ts tests/internalQAScope.test.ts
+npx vitest run tests/standaloneQA.test.ts tests/internalQA.test.ts tests/internalQAScope.test.ts
+npx eslint src/devQA app/dev-qa.tsx tests/native-launch/standalone-qa.cjs tests/standaloneQA.test.ts tests/internalQA.test.ts tests/internalQAScope.test.ts
 npm run typecheck
 ```
 
-The focused suites pass 27 source tests for production gates, real cycle/guidance/trial
+The earlier Debug/source checkpoint passed 27 source tests for production gates, real
+cycle/guidance/trial
 service reuse, exact clock boundaries, restore/store recovery, private history and
 stale-session cleanup. Base callback/service/storage spies remain uncalled during every
 facade mutation, and ending QA restores the exact base object.
-It does not establish that AppContext has selected every correct store, nor native
-layout/navigation/animation success. Run the integrated bundle through all rows above
+That historical count and the linked older native proof are not the final-pass
+private-panel evidence. The current standalone suite additionally executes actual
+AppProvider effects with real-service tripwires, checks all scenarios and rejects a
+miswired emitted alias graph. Unit checks still do not establish native layout,
+installation or navigation/animation success. Run the integrated bundle through all rows
+above
 and record its actual device/build evidence. Normal production access, persistence and
 notification behavior require separate regression checks; QA is not real paid access or
 store readiness.

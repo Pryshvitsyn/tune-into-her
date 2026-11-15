@@ -15,8 +15,9 @@ const PROTECTED_INPUTS = [
 const literal = value => JSON.stringify(value);
 const sha = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 
-function prepareStandaloneQA({ projectRoot, acknowledge = false, scenario = 'paid-active' } = {}) {
+function prepareStandaloneQA({ projectRoot, acknowledge = false, scenario = 'paid-active', entry = 'panel' } = {}) {
   if (!acknowledge) throw new Error('Explicit --standalone-qa acknowledgement required');
+  if (!['panel', 'today'].includes(entry)) throw new Error('Unsupported standalone QA entry');
   if (scenario !== 'paid-active') throw new Error('Only the reviewed paid-active memory scenario is supported');
   const root = fs.realpathSync(projectRoot || path.resolve(__dirname, '../..'));
   for (const file of PROTECTED_INPUTS) if (!fs.statSync(path.join(root, file)).isFile()) throw new Error('Missing normal app input');
@@ -46,7 +47,7 @@ function startStandaloneQA() {
   });
   return startup;
 }
-module.exports = { ...original, internalQAEnabled: true, internalQASession, startStandaloneQA };
+module.exports = { ...original, internalQAEnabled: true, standaloneQAEnabled: true, internalQASession, startStandaloneQA };
 `);
   fs.writeFileSync(files.entry, `'use strict';
 const qa = require(${literal(files.session)});
@@ -58,7 +59,7 @@ void startup.catch(() => { console.error('STANDALONE_QA_START_FAILED'); });
 require('expo-router/entry');
 `);
   fs.writeFileSync(files.index, `import { Redirect } from 'expo-router';
-export default function StandaloneQAIndex() { return <Redirect href="/today" />; }
+export default function StandaloneQAIndex() { return <Redirect href="${entry === 'panel' ? '/dev-qa' : '/today'}" />; }
 `);
   fs.writeFileSync(files.config, `'use strict';
 const path = require('node:path');
@@ -96,7 +97,7 @@ module.exports = config;
   if (JSON.stringify(inputsBefore) !== JSON.stringify(inputsAfter)) throw new Error('Normal app inputs changed during preparation');
   const manifest = {
     kind: 'Explicit standalone memory-only QA bundle; not the normal production entry',
-    scenario, nativeConfiguration: 'Release', developmentJavaScript: false,
+    scenario, entry, nativeConfiguration: 'Release', developmentJavaScript: false,
     requiredEnvironment: { [MARKER]: '1', CONFIGURATION: 'Release', ENTRY_FILE: files.entry, BUNDLE_CONFIG: files.config, EXPO_OVERRIDE_METRO_CONFIG: files.config },
     files, originalInputsSHA256: inputsAfter,
     generatedSHA256: Object.fromEntries(Object.entries(files).map(([key, file]) => [key, sha(file)])),
@@ -142,10 +143,10 @@ function verifyStandaloneBundle(source) {
   const originalConsumers = modules.filter(module => module.dependencies.includes(original.id));
   if (!wrapper.dependencies.includes(original.id) || wrapper.dependencies.includes(wrapper.id)
       || originalConsumers.length !== 1 || originalConsumers[0].id !== wrapper.id) throw new Error('QA_BUNDLE_ORIGINAL_SESSION_ALIAS_LEAK_OR_CYCLE');
-  if (!entry.dependencies.includes(wrapper.id) || !index.text.includes('/today')) throw new Error('QA_BUNDLE_STARTUP_NOT_PRIVATE_TODAY');
+  if (!entry.dependencies.includes(wrapper.id) || !['/today', '/dev-qa'].some(route => index.text.includes(route))) throw new Error('QA_BUNDLE_STARTUP_NOT_PRIVATE');
   return { result: 'PASS', format: 'Unminified numeric Metro modules', standaloneIndexPresent: true,
     AppProviderUsesPrivateSession: true, hookUsesSamePrivateSession: true,
-    originalSessionConsumedOnlyByWrapper: true, synchronousEntryUsesPrivateSession: true };
+    originalSessionConsumedOnlyByWrapper: true, synchronousEntryUsesPrivateSession: true, entry: index.text.includes('/dev-qa') ? 'panel' : 'today' };
 }
 
 module.exports = { prepareStandaloneQA, verifyStandaloneBundle, MARKER, PROTECTED_INPUTS };
@@ -154,10 +155,10 @@ if (require.main === module) {
   if (args.length === 2 && args[0] === '--verify-bundle') {
     try { process.stdout.write(JSON.stringify(verifyStandaloneBundle(fs.readFileSync(args[1], 'utf8')), null, 2) + '\n'); }
     catch (error) { process.stderr.write(error.message + '\n'); process.exitCode = 1; }
-  } else if (args.length !== 1 || args[0] !== '--standalone-qa') {
-    process.stderr.write('Usage: standalone-qa.cjs --standalone-qa | --verify-bundle <unminified-main.jsbundle>\n');
+  } else if (!((args.length === 1 || (args.length === 3 && args[1] === '--entry' && ['panel', 'today'].includes(args[2]))) && args[0] === '--standalone-qa')) {
+    process.stderr.write('Usage: standalone-qa.cjs --standalone-qa [--entry panel|today] | --verify-bundle <unminified-main.jsbundle>\n');
     process.exitCode = 1;
   } else {
-    process.stdout.write(JSON.stringify(prepareStandaloneQA({ acknowledge: true }), null, 2) + '\n');
+    process.stdout.write(JSON.stringify(prepareStandaloneQA({ acknowledge: true, entry: args[2] || 'panel' }), null, 2) + '\n');
   }
 }
