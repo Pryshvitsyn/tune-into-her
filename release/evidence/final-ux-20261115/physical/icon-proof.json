@@ -1,0 +1,86 @@
+{
+  "status": "PASS_ACTUAL_PHYSICAL_HOME_ICON_FIRST_SOURCE_FRAME",
+  "date": "2026-11-15",
+  "source": {
+    "decodedFrames": 811,
+    "durationSeconds": 15.628333,
+    "selectedSourceFrame": 0,
+    "sourceDisplayPTS": 0,
+    "pixels": [
+      1126,
+      2436
+    ],
+    "timestampSource": "monotonic host arrival, not device PTS",
+    "selectedFrameScope": "Only first Home frame; later unrelated private UI is excluded",
+    "captureFinishedSuccessfully": true,
+    "captureErrorCode": 0,
+    "audioRecorded": false,
+    "cameraSource": false,
+    "framesSynthesized": false
+  },
+  "icon": {
+    "file": "actual-iphone-home-icon-privacy-masked.png",
+    "width": 210,
+    "height": 218,
+    "sha256": "2b891812a7ea2ff9c874fa8f737073b7d1868a84f21346f96206b7635064d639",
+    "sourceCropPixels": {
+      "x": 60,
+      "y": 456,
+      "width": 210,
+      "height": 218
+    },
+    "maskRoundedRectangleWithinCrop": {
+      "x": 13,
+      "y": 19,
+      "width": 180,
+      "height": 180,
+      "radius": 45
+    },
+    "maskPurpose": "Conservative inset privacy mask; it is not an unmodified OS icon outline",
+    "nativePixelScale": "1:1; no resizing, redrawing, recoloring, generation or sharpening of captured icon pixels",
+    "fullyOpaquePixels": 30473,
+    "antialiasedPartialAlphaPixels": 339,
+    "fullyTransparentPixels": 14968,
+    "opaqueRGBByteMismatchesAgainstSourcePNG": 0,
+    "transparentExteriorNonzeroRGBChannels": 0,
+    "allWallpaperNeighborsAndOSLabelExcluded": true
+  },
+  "labelVerification": {
+    "method": "Manual visual review of source first frame; no unrelated OCR or surrounding text published",
+    "OSLabelMatchesNativeInfoDisplayName": true,
+    "nativeInfoDisplayName": "Tune Into Her",
+    "onlyExpectedNamePublished": true,
+    "actualBothSignedArtifactInfoPlistsRead": true,
+    "nativeInfoDisplayNameMatchesBothSignedArtifacts": true
+  },
+  "artifactBinding": {
+    "todayArtifact": "artifact-today.json",
+    "panelArtifact": "artifact-panel.json",
+    "sameCompiledAssetsCarInBoth": true,
+    "assetsCarSHA256": "c32aeefeeaffaa78de43a37e0a9c1f63a756fbede64fd47fad887e290798f2ed",
+    "masterSHA256": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05",
+    "masterFileHashVerified": true,
+    "actualBothSignedAssetsCarRehashed": true,
+    "both50SourceInputsMatchCurrentWorkingTree": true
+  },
+  "comparison": {
+    "file": "icon-master-actual-device-generated-preview.png",
+    "actualCapturedImageOnlyMiddle": true,
+    "actualCutoutNotRescaled": true,
+    "masterAndGeneratedPreviewClearlyLabelled": true
+  },
+  "privacy": {
+    "fullSourceFramePublished": false,
+    "originalMoviePublished": false,
+    "wallpaperPublished": false,
+    "OSLabelPixelsPublished": false,
+    "otherAppsOrPrivateMessagesPublished": false,
+    "deviceIdentifiersOrProcessIDsPublished": false
+  },
+  "limits": [
+    "A conservative privacy mask hides the outermost OS icon border; this cutout is not proof of the complete original OS mask geometry.",
+    "Only the first source frame proves the icon and expected OS label. The later private recording is not app evidence and is not published.",
+    "Captured H.264/display color and OS icon processing may differ from the source master. No pixel equality with the 1024px master is claimed.",
+    "Existing preservation snapshot boundary remains before final panel relaunch; no additional personal storage or Keychain read was performed."
+  ]
+}

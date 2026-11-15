@@ -2,6 +2,7 @@
 
 Date: 2026-11-15. Branch: `codex/monetization-20261113`.
 Checkpoint: `codex/checkpoint-ui-final-pass-20261115` → `3eff34d`.
+Implementation checkpoint: `6c8d2d70ccad3bcc6bb2e13acf236b76a923b92c`.
 The latest Founder brief supersedes the earlier wordmark-in-icon and automatic-normal-restore requirements.
 No uninstall, reset, backend/billing setup, store publication or merge is part of this pass.
 
@@ -73,8 +74,9 @@ Endonyms in language selection and institutional/product names are intentional.
   and launch succeed, and the Founder private test artifact remains installed.
 - Native SE375×667 test passes all4 phase pages/16 paragraphs/sources, fixed accessible arrow/
   gear/Back behavior,42 visible dates, reachable Edit/prefill/cancel and the same process.
-  Native horizontal swipe/draft/cancel/confirm/English cleanup PASS. All11 tour/cold-persistence
-  proof is being completed separately.
+  Native horizontal swipe/draft/cancel/confirm/English cleanup PASS. All11 locale assertion sequences completed (8independent passed cases and3explicit
+  EN/FR/IT checkpoints from an otherwise failed aggregate). Normal Release Russian cold
+  persistence/English cleanup PASS39.084s; current QA Today/Cycle smoke PASS40.740s.
 
 Accepted media distinguishes native screenshots/video from generated icon/store-mask previews.
 Failed or short physical recordings are never accepted as a complete startup. Public evidence
@@ -93,3 +95,93 @@ is claimed without that toolchain. Native-speaker review (especially Baba Malay)
 clinical content review and real reader speech remain separate from schema/device proof.
 The internal build's test preferences/history are memory-only and reset on cold launch;
 normal saved-language persistence is a separate check. Personal Keychain is not read/hashed.
+
+## Actual iPhone media
+
+[Photo → all existing depth stages → V4 → actual Today video](../release/evidence/final-ux-20261115/physical/actual-iphone-photo-to-today.mp4)
+
+![Actual recorded iPhone launch stages](../release/evidence/final-ux-20261115/physical/actual-iphone-photo-to-today-contact.png)
+
+![Actual current private testing panel](../release/evidence/final-ux-20261115/physical/actual-iphone-testing-panel.png)
+
+![Master, actual masked iPhone icon, generated preview](../release/evidence/final-ux-20261115/physical/icon-master-actual-device-generated-preview.png)
+
+Only the middle image in the icon comparison is a physical capture, retained at native1:1
+pixel size. The first Home source frame proves the rings-only icon and matching OS name;
+all later unrelated private UI is excluded. Wallpaper, neighbours and OS-label pixels are
+removed by a conservative inset mask;30,473 opaque pixels remain source-exact,339 partial
+alpha edge pixels are recorded separately. No equality with the1024master pixels is claimed.
+The icon master/store/mask previews remain [here](../assets/icons/previews/platform-preview-sheet.png),
+with the full [1024master](../assets/icon.png) and separate [512Play export](../assets/icons/play-store-512.png).
+
+The physical sequence publishes566/566 consecutive selected frames with their host-arrival
+intervals unchanged (one constant start offset, maximum rounding error1µs). It excludes OS
+zoom/prelude, crops only the top140system pixels, and retains native1126×2296app pixels.
+Actual Today text is visible; the offscreen DO body is not claimed as visible. The entire
+1495-frame Today and1483-frame panel sources each passed the defined luma flash check.
+[Frame/source/privacy metadata](../release/evidence/final-ux-20261115/physical/proof.json),
+[actual icon proof](../release/evidence/final-ux-20261115/physical/icon-proof.json) and
+[precise preservation scope](../release/evidence/final-ux-20261115/physical/preservation.json)
+distinguish observation from inference. No raw phone movie, personal digest or identifier is published.
+
+## Final localized-footer correction
+
+Native visual review found a single Ukrainian orphan letter in Today’s custom footer
+on375pt width. The approved font’s14pt CoreText width for «налаштування» is89.95pt;
+the old label slot was84.67pt. Reducing that footer’s horizontal padding18→9 gives90.67pt
+without changing text, font, icons, hit-target minimums or routing. Ordinary primary tabs,
+all26 protected renderer/texture/timeline/launch inputs and English footer height are
+unchanged. Fresh source-identified native artifacts include this wrapper explicitly;
+focused native validation and refreshed physical evidence are recorded below.
+
+## Native Simulator screenshots and recordings
+
+![Horizontal language choice and compact calendar](../release/evidence/final-ux-20261115/simulator/native-language-cycle-contact.jpg)
+
+![Actual Today in all eleven languages](../release/evidence/final-ux-20261115/simulator/native-all11-Today-contact.jpg)
+
+[Actual horizontal swipe, cancellation and confirmation video](../release/evidence/final-ux-20261115/simulator/language-horizontal-swipe-cancel-confirm.mp4)
+
+[Actual phase pages and fixed arrow/gear footer](../release/evidence/final-ux-20261115/simulator/README.md)
+
+![Actual Ukrainian footer before and after](../release/evidence/final-ux-20261115/simulator/footer-width/uk-before-after-native-contact.png)
+
+[All eleven updated native footer crops](../release/evidence/final-ux-20261115/simulator/footer-width/all11-native-footer-contact.png)
+show intact text and accessible44pt minimum hit targets. EN remains48pt high; the other
+rows are56pt except MBF’s three WHOLE-word lines at76pt. The focused aggregate retains
+10completed checkpoints but remains FAILED because its initial universal two-line
+constraint was too strict for MBF; the MBF-only follow-up PASS24.111s confirms the natural
+three-word wrap and English restoration. No translation or font was shrunk to satisfy it.
+The new51-input artifact cold recording has1741decoded frames,0black and verified native
+stage ordering. Earlier50-input route/current-cold evidence and these51-input footer-only
+checks are explicitly separated in the [native verification](../release/evidence/final-ux-20261115/simulator/native-verification.json)
+and [footer verification](../release/evidence/final-ux-20261115/simulator/footer-width/verification.json).
+Failed driver attempts/zero-test selections are not relabelled as passes. Raw logs/result
+bundles/identifiers remain private; only reviewed synthetic UI and bounded clips are copied.
+
+## Last physical update boundary
+
+The complete physical startup/QA/icon/data proof above is the accepted implementation
+checkpoint before the final ONE-constant footer-spacing correction. Its source50 map is
+accurate for that artifact; the correction’s new artifacts bind51 inputs including the
+wrapper. At this report checkpoint the phone is locked, so the spacing update/fresh physical
+recording is pending the requested unlock. The already installed private test build remains
+usable with the panel and the rings-only icon; real personal data remains preserved. No claim
+of installing the51-input footer artifact is made until the update receipt/capture is present.
+
+## Changed files
+
+- Secondary controls/calendar: `SecondaryNav`, `Screen`, `BrandHeader`, `CycleCalendar`, `app/cycle`.
+- Language and inputs: `LanguagePicker`, `languageSelection`, `SettingsRow`, `CycleDateField`,
+  `AndroidDateTimePicker`, onboarding/reminder/language routes, UI authoring files and locale dictionaries.
+- Education: `app/learn/[phase]`, `education.json`, `cycleEducation.ts`; shared source links are constant.
+- QA: `app/dev-qa`, the memory controller’s locale/theme seed and false build descriptor,
+  explicit standalone build tooling and host/simulator QA harnesses.
+- Branding: deterministic icon generator, immutable-edit provenance, masters/adaptive/export/previews
+  and actual iOS AppIcon input. Original portrait, wordmark, fonts and26 protected inputs stay exact.
+- Today: localized chrome and the single measured horizontal-padding correction. Main tab design,
+  cycle engine, daily catalogue, real purchase/trial services and backend have no source changes.
+
+[Complete changed-file inventory](../release/evidence/final-ux-20261115/changed-files.txt) and
+[verification summary](../release/evidence/final-ux-20261115/verification.json) accompany the media.
+The source checkpoint and final follow-up commit preserve history; stores and production are untouched.

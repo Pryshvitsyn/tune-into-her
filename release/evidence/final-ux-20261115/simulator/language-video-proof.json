@@ -1,0 +1,30 @@
+{
+  "purpose": "Actual owned iOS Simulator language swipe, Cancel, French confirmation, English restoration. Standalone memory QA; no persistence claim.",
+  "sourceMovieSHA256": "63b371e47a1e77362e76a2c63044c7930bc2acf5142c88dcfcd3adf0ac04c654",
+  "acceptedClipSHA256": "731a2a7f6400ba345bf1eebc8a88dc6a8fab0debba61c47de21db53aabdc3d57",
+  "sourceMediaWindowSeconds": [
+    52,
+    72
+  ],
+  "sourceSelectedFrameRange": [
+    1264,
+    1842
+  ],
+  "sourceSelectedFrameCount": 579,
+  "acceptedClipFrameCount": 579,
+  "acceptedClipDurationSeconds": 19.375,
+  "acceptedClipGeometry": {
+    "width": 750,
+    "height": 1334
+  },
+  "acceptedPTSStrictlyIncreasing": true,
+  "transformation": "Continuous source window52\u2264PTS<72; every selected source frame retained; H.264 encoding at1/60000timebase; first retained PTS normalized to0; no speed change/interpolation/UI overlays/audio. Earlier failed-case recovery excluded.",
+  "timingBoundary": "AX and native encoder timing are not clinical or animation-duration calibration.",
+  "sourceSelectedPTSSpanSeconds": [
+    52.608333,
+    71.981667
+  ],
+  "allSelectedFramesRetained": true,
+  "maxPTSNormalizationErrorSeconds": 1.00000000458067e-06,
+  "sourceOutsideAcceptedWindow": "Earlier source PTS discontinuity40.358333\u219235.23 is outside accepted52\u201372 window; original retained privately. Full source PTS is not claimed monotonic."
+}

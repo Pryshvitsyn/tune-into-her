@@ -226,7 +226,7 @@ const styles=StyleSheet.create({
   body:{fontSize:17,lineHeight:25,textAlign:'center'},
   note:{fontSize:14,lineHeight:21,textAlign:'center',marginTop:4},
   sphereSlot:{marginTop:16,marginBottom:2},
-  footer:{minHeight:48,flexDirection:'row',alignItems:'center',paddingHorizontal:18,gap:8},
+  footer:{minHeight:48,flexDirection:'row',alignItems:'center',paddingHorizontal:9,gap:8},
   footerStack:{flexDirection:'column',alignItems:'stretch'},
   footerButtonStack:{flex:0},
   footerLabel:{fontSize:14,lineHeight:20,marginLeft:6,flexShrink:1,textAlign:'center'},

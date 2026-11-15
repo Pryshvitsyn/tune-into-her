@@ -18,8 +18,14 @@ Updated: 2026-11-15 (Europe/Rome)
 - [x] Compile real iOS native catalogs, verify20Android density/2XML outputs, bundle/sign current Release.
 - [x] Record current-source physical Today text/panel/Home without Metro; exact personal storage equality;
   leave Founder QA installed. Reject failed MovieFileOutput fragments; use labelled host-clock capture.
-- [ ] Finish current full517-test/lint/typecheck readback and native horizontal/all11/persistence tour.
-- [ ] Review sanitized actual media/final diff/secrets, update report/snapshot, commit/push feature branch.
+- [x] Pass517tests/54files, TypeScript/lint and native horizontal/all11/persistence sequences.
+- [x] Correct measured Ukrainian footer orphan with one padding constant; verify native before/after
+  and updated11locale footer checkpoints/MBF follow-up, current51-input cold1741frames/0black.
+- [ ] Update-install/record the final spacing-only artifact on iPhone after the pending unlock;
+  full pre-spacing physical startup/panel/icon/preservation proof is already accepted.
+- [x] Review sanitized actual media/final diff/secrets and update report/snapshot.
+- [x] Commit final source and accepted evidence on the working feature branch; authorized feature push
+  is verified in delivery. No store publication.
 - [ ] Android native build/runtime and real screen-reader speech: equipment/toolchain acceptance remains open.
 - Store submission, automatic merge and service/production configuration remain outside this task.
 

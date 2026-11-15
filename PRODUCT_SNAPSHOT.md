@@ -89,7 +89,11 @@ fertility, or mood-prediction product.
   all before/after personal AsyncStorage snapshots equal, Founder QA stays installed and launch exits0.
   MovieFileOutput -11813/short fragments rejected; successful video-only host-arrival writer is labelled
   separately from native GPU-clock measurements. Keychain not read/hashed. Native UI tour/final report
-  readback still being completed; no store release or clinical/native-speaker approval is implied.
+  readback is complete:517tests/54files/typecheck/lint PASS, all11 native locale assertion sequences,
+  normal RU cold persistence and QA smoke verified. A measured Ukrainian footer orphan is fixed
+  by one padding constant, native before/after/all11 footer checks and51-input cold1741frames/0black.
+  Its final physical spacing-only update awaits phone unlock; existing physical50-input proof
+  remains explicitly labelled. No store release or clinical/native-speaker approval is implied.
 - [Implementation, accepted evidence and explicit limits](docs/FINAL_UX_QA.md).
 
 ## PREVIOUS WORDMARK ICON / ISOLATED TODAY QA — 2026-11-15

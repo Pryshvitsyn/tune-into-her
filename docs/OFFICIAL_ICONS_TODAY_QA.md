@@ -1,5 +1,8 @@
 # Official photo icon and isolated Today startup — 2026-11-15
 
+Historical wordmark-icon / normal-restoration checkpoint. The latest Founder correction
+uses rings-only icons and keeps private QA installed: [current final UX proof](FINAL_UX_QA.md).
+
 The official icon now comes from the exact Founder-approved photograph. The separate
 standalone diagnostic bundle reaches the real Today screen with actual authored guidance
 through the existing full intro, without changing normal subscription or trial logic.

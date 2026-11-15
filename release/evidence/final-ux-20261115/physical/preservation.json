@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "personalStoragePhases": [
+    {
+      "beforeQA": true,
+      "fileCount": 1,
+      "manifestEntryCount": 2,
+      "copyReceiptSucceeded": true,
+      "actualFilesMatchPrivateDigestRecord": true,
+      "bytesEqualToBefore": true,
+      "manifestObjectEqualToBefore": true
+    },
+    {
+      "afterTodayQACapture": true,
+      "fileCount": 1,
+      "manifestEntryCount": 2,
+      "copyReceiptSucceeded": true,
+      "actualFilesMatchPrivateDigestRecord": true,
+      "bytesEqualToBefore": true,
+      "manifestObjectEqualToBefore": true
+    },
+    {
+      "afterFinalPanelInstall": true,
+      "fileCount": 1,
+      "manifestEntryCount": 2,
+      "copyReceiptSucceeded": true,
+      "actualFilesMatchPrivateDigestRecord": true,
+      "bytesEqualToBefore": true,
+      "manifestObjectEqualToBefore": true
+    },
+    {
+      "afterPanelCapture": true,
+      "fileCount": 1,
+      "manifestEntryCount": 2,
+      "copyReceiptSucceeded": true,
+      "actualFilesMatchPrivateDigestRecord": true,
+      "bytesEqualToBefore": true,
+      "manifestObjectEqualToBefore": true
+    }
+  ],
+  "actualPersonalAsyncStorageFilesEqualAcrossAllFourPhases": true,
+  "actualPersonalAsyncStorageManifestObjectsEqualAcrossAllFourPhases": true,
+  "installAndLaunchReceipts": {
+    "todayQAInstallSucceeded": true,
+    "finalPanelInstallSucceeded": true,
+    "todayColdLaunchSucceeded": true,
+    "panelColdLaunchSucceeded": true,
+    "finalPanelRelaunchSucceeded": true,
+    "copiesInstallsAndLaunchesBoundToSameKnownPhone": true,
+    "copiedAppContainerMatchesInstalledAppIdentity": true
+  },
+  "sourceArtifactBinding": {
+    "actualTodayEmbeddedBundleMatchesProofAndArtifact": true,
+    "actualPanelEmbeddedBundleMatchesProofAndArtifact": true,
+    "bothArtifactsUseVerifiedPrivateAliasGraph": true,
+    "bothUseDevelopmentJavaScriptFalse": true,
+    "actualNativeAssetsCarMatchesArtifacts": true,
+    "actualNativeAssetsCarIdenticalBetweenTodayAndPanelArtifacts": true
+  },
+  "finalState": {
+    "founderPrivatePanelLeftInstalled": true,
+    "finalPanelRelaunchSucceeded": true,
+    "normalArtifactRestoredInThisWorkflow": false,
+    "noUninstallOrResetRecordedByWorkflow": true
+  },
+  "privacyAndScope": {
+    "onlyPersonalAsyncStorageWasCompared": true,
+    "lastStorageSnapshotAfterPanelCapture": true,
+    "lastStorageSnapshotPrecedesFinalPanelRelaunch": true,
+    "storageSnapshotAfterFinalPanelRelaunchAvailable": false,
+    "keychainRead": false,
+    "keychainHashed": false,
+    "personalKeysPublished": false,
+    "personalValuesPublished": false,
+    "personalDigestsPublished": false,
+    "deviceIdentifiersPublished": false,
+    "processIdentifiersPublished": false,
+    "absoluteHostPathsPublished": false,
+    "rawReceiptsRemainPrivate": true
+  }
+}

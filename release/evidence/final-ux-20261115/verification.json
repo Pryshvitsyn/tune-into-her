@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-15",
+  "implementationCommit": "6c8d2d70ccad3bcc6bb2e13acf236b76a923b92c",
+  "checkpoint": "3eff34db8f856cfef3ddac55e6d60d7a59d45a2d",
+  "unitTests": {
+    "passed": 517,
+    "files": 54,
+    "command": "npx vitest run --maxWorkers 1",
+    "testTimeoutsOrHashGuardsDisabled": false,
+    "quiescentDurationSeconds": 27.13
+  },
+  "typecheck": "PASS",
+  "lint": {
+    "errors": 0,
+    "preExistingGeneratedExpoWarning": 1
+  },
+  "iconRasterRegeneration": "PASS with documented Sharp tools module override",
+  "content": {
+    "locales": 11,
+    "dailyBundles": 610,
+    "authoredTextsPerLocale": 318,
+    "regeneration": "PASS"
+  },
+  "iOSNativeAssetCompilation": {
+    "iphoneos": "PASS",
+    "iphonesimulator": "PASS",
+    "fourLaunchRenditionsUnchanged": true,
+    "nativeExecutableAndFrameworksRecompiled": false,
+    "signedCurrentSourceArtifacts": true
+  },
+  "Android": {
+    "actualDensityResources": 20,
+    "adaptiveXMLResources": 2,
+    "productionHermesExport": "PASS",
+    "nativeBuildOrRuntimeClaimed": false,
+    "reason": "Android SDK/JDK absent"
+  },
+  "physical": {
+    "proof": "physical/proof.json",
+    "currentSourceInputsPerArtifact": 50,
+    "personalAsyncStorageFourWayEquality": true,
+    "keychainReadOrHashed": false,
+    "privateFounderPanelLeftInstalled": true,
+    "recordingClock": "Mac host arrival, not native/GPU timing"
+  },
+  "nativeSimulator": {
+    "fourPhaseEducationFooterCompactCycle": "PASS216.389s",
+    "horizontalLanguageDraftCancelConfirm": "PASS52.473s",
+    "all11LocalesActualAssertions": "Complete, checkpointed and independent results described in native proof",
+    "normalRussianColdPersistenceAndEnglishRestoration": "PASS39.084s",
+    "finalCurrentQASmoke": "PASS40.740s on pre-footer source50 artifact"
+  },
+  "scope": {
+    "uninstallOrDataReset": false,
+    "billingBackendOrProductionConfigurationChanged": false,
+    "storePublication": false,
+    "automaticMerge": false
+  },
+  "footerCorrection": {
+    "file": "src/intro/AnimatedToday.tsx",
+    "scope": "Footer horizontal padding18\u21929 only; unchanged text/font/icons/handlers/renderer/timeline",
+    "sourceInputsInNewArtifacts": 51,
+    "nativeColdDecodedFrames": 1741,
+    "nativeColdBlackFrames": 0,
+    "tenLocaleFooterAssertionCheckpoints": true,
+    "MBFFollowupPassedSeconds": 24.111,
+    "MBFNaturalWholeWordLines": 3,
+    "UkrainianWholeWordNativeReview": true,
+    "phoneRefresh": "Pending known phone unlock; last installed artifact remains pre-spacing privateQA",
+    "updated517TestSuite": "PASS29.79s;54files",
+    "updatedTypecheck": "PASS",
+    "updatedLintErrors": 0,
+    "updatedAndroidProductionExport": "PASS"
+  }
+}

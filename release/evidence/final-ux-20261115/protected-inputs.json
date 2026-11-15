@@ -1,0 +1,136 @@
+{
+  "checkpoint": "3eff34db8f856cfef3ddac55e6d60d7a59d45a2d",
+  "allMatch": true,
+  "inputs": [
+    {
+      "file": "TuneIntoHerSphereV4.tsx",
+      "sha256": "7c46b5ab8fbd587fb70b1e557365f6d505dc2a1a82f8ed5a536220a2dea6ef39",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "app/index.tsx",
+      "sha256": "ad3537f11756ca694883f369ed3ee1d8dd5fd24365259caa92118c64b100105f",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/brand/reference/founder-approved-premium-v5-20261114.png",
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/fonts/LinuxLibertineO-Regular.otf",
+      "sha256": "6332761e4fc08e30bce6f47e4a08e7d5332abe000ab6ca06c8e86bd88f456114",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/launch/approved-opening.png",
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/sphere.png",
+      "sha256": "10884e1fe4e4d470dbcd201d750e6c52aef8ebb66c35446399cee5e012167a3f",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/sphere.svg",
+      "sha256": "21f41b4b30659d0231b3b3f0a0fe3808c63642a9f656eaa35a553188b80710a7",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/tune_into_her_sphere_phase0_poster.png",
+      "sha256": "70fc3712d6d1048f46833d038c96f8c3502632b81e523b98bcc8ff94b9dccb87",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "assets/tune_into_her_sphere_source_clean.png",
+      "sha256": "50e988dde8cdd04b945883a1404fd95881b55ad86087274a5a5b594063f0509c",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "ios/TuneIntoHer/AppDelegate.swift",
+      "sha256": "c986688cde67d23f34d625f9818b3f62f5bcfab73fa9a35fa38ce91fad51dd1e",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "ios/TuneIntoHer/Images.xcassets/LaunchApprovedOpening.imageset/approved-opening.png",
+      "sha256": "dfce7d014d6107bdad02a54886dba3bbb8e5f216065774dc7b7c34e7e3da1c58",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/components/BottomNav.tsx",
+      "sha256": "301a907255aa9430ed72ad401bd3a8a0e1a75b6972d1590a9e209a6c7f0e1663",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/components/BrandMark.tsx",
+      "sha256": "04335cff6d1a20e1af4eacdb58cba9829cb79588271792bda79954543725bdb6",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/context/AppContext.tsx",
+      "sha256": "7264cacdcc400de57998f5697ddcb378a0b8ea9e29cbc9584bab3df6d0f9dc40",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/domain/cycle/cycleEngine.ts",
+      "sha256": "62057df50b29fc9192465525d85b7982e109fe6f2d1f432f6f8957dd2473d27a",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/ApprovedOpening.tsx",
+      "sha256": "fac94344ae61a251c0184c9553ffa89429376a9558acc8fd2641b37838d0b2fd",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/GlobalLaunch.tsx",
+      "sha256": "09360a7be285e29bfb3d0d236eb6906db89ae555c2604cab1c714e537cfc9097",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/HomeTransition.tsx",
+      "sha256": "ceb2c90a4ae756e83555886eb579a4262938d6c56866522fce024c4271e2553d",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/SphereIntroSurface.tsx",
+      "sha256": "601fa23197f22705ced5fbbe5beb400af556b915e09af3f1935f9ab4332f057b",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/brand.generated.ts",
+      "sha256": "0c619eecd599903ef02568c10ffbc0492ec24392fe5ed906f6cdb33561c851e5",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/brandTexture.generated.ts",
+      "sha256": "56706ef4e4b2b8be5b2f2017e71580af9c89a4ce718f0b098cccf872057e74fe",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/sceneRuntime.generated.ts",
+      "sha256": "ac700a2e5274f5651444924e8f1be6f239f5b07256b9072739f64d79b7e6d4c2",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/sphereHtml.ts",
+      "sha256": "1433b36a638471c46ad1bb5706085b3132792062ad016c7a34ea1686a7229d30",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/timeline.ts",
+      "sha256": "20de443e222558f4e1fa7ad9aab952abf05b1c2054950bfe00b642dcf8a50eaf",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/intro/v4Shaders.generated.ts",
+      "sha256": "ba777d69d0b7dc8af9fefef3328f0dc95ab86e89bc14b0b8e9403ba3b4b3823a",
+      "byteIdenticalToCheckpoint": true
+    },
+    {
+      "file": "src/services/purchases/mockBilling.ts",
+      "sha256": "fef8446d2d3b607f2fe9aa7439909844331a58cfe127aa0a632fdd1cf4ed2c63",
+      "byteIdenticalToCheckpoint": true
+    }
+  ]
+}

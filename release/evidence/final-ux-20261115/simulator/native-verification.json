@@ -1,0 +1,149 @@
+{
+  "scope": "PRE-FOOTER-CORRECTION broad native UI pass. New51-source footer/cold verification is in footer-width/verification.json.",
+  "matrixArtifact": {
+    "nativeBinarySHA256": "434286e48d83ebfb8e14a0e07a9135bed72a10ac9184cd7ae84c08ca92573300",
+    "embeddedJavaScriptSHA256": "7be93d27dd58280c1d2d2c16f50ab5982f80d937de914df51e13ad9ef7eca9e3",
+    "assetsCarSHA256": "c32aeefeeaffaa78de43a37e0a9c1f63a756fbede64fd47fad887e290798f2ed",
+    "sourceInputCount": 48,
+    "sourceInputMapSHA256": "1f1032d5205de159dbcde70dd09c2ce94f74635a20ca537d364931731bf831ea"
+  },
+  "passedNativeCases": {
+    "educationFooterCompactCycle": {
+      "status": "passed",
+      "nativeSeconds": 216.389
+    },
+    "horizontalLanguageDraftCancelConfirm": {
+      "status": "passed",
+      "nativeSeconds": 52.473
+    },
+    "normalRussianColdPersistenceEnglishRestored": {
+      "status": "passed",
+      "nativeSeconds": 39.084
+    },
+    "finalCurrentTodayCycleSameProcess": {
+      "status": "passed",
+      "nativeSeconds": 40.74
+    }
+  },
+  "completedLocales": {
+    "en": {
+      "status": "completed-all-assertions-checkpoint",
+      "withinOverallFailedCase": true
+    },
+    "fr": {
+      "status": "completed-all-assertions-checkpoint",
+      "withinOverallFailedCase": true
+    },
+    "it": {
+      "status": "completed-all-assertions-checkpoint",
+      "withinOverallFailedCase": true
+    },
+    "es": {
+      "status": "passed",
+      "nativeSeconds": 176.571
+    },
+    "de": {
+      "status": "passed",
+      "nativeSeconds": 159.193
+    },
+    "ru": {
+      "status": "passed",
+      "nativeSeconds": 164.468
+    },
+    "uk": {
+      "status": "passed",
+      "nativeSeconds": 169.176
+    },
+    "hi": {
+      "status": "passed",
+      "nativeSeconds": 196.67
+    },
+    "zh-Hans": {
+      "status": "passed",
+      "nativeSeconds": 160.161
+    },
+    "ms": {
+      "status": "passed",
+      "nativeSeconds": 166.488
+    },
+    "mbf": {
+      "status": "passed",
+      "nativeSeconds": 162.415
+    }
+  },
+  "partialRunBoundary": "EN/FR/IT each completed the full locale assertion sequence and reached an explicit completion marker before a later Spanish scroll-driver failure. The whole original all-eleven XCTest is FAILED, not counted as passed. Remaining8 are independent passed native cases.",
+  "failedDriverAttempts": {
+    "phaseCaseAttempts": 3,
+    "carouselImmediateCleanupTap": 1,
+    "allElevenSmallPanWrongRoute": 1,
+    "SpanishRecoveryTap": 1,
+    "totalNativeFailedAttempts": 6,
+    "resolution": "Native AX/route-control corrections, >=90pt pans, Done-enabled waits and logged bounded retry. No production patch was needed for those driver failures. A separate one-constant footer visual correction is documented in footer-width/verification.json."
+  },
+  "coldStartup": {
+    "complete": true,
+    "sameProcessAliveAtEnd": true,
+    "nativeStageOrderingPass": true,
+    "recordedHostSeconds": 40.175605709,
+    "decodedFrameCount": 536,
+    "sourceMediaDurationSeconds": 21.866667,
+    "blackFrameCount": 0,
+    "blackScanMethod": "Every source video frame, central 80% ROI, area64x64 grayscale; black when >=98% samples have luma<=18",
+    "sourceMovieSHA256": "f33467c7d4cae431d0f771d4be27d07ec9954df2e9621e725fa2732def0ef6b4",
+    "acceptedAppClipSHA256": "a7d1ba75452d10cc559fee2f301987a3bb43c637e240d36085758002b2c767c7",
+    "acceptedSourceWindowSeconds": [
+      2,
+      14.6
+    ],
+    "acceptedSourceFrameRange": [
+      79,
+      533
+    ],
+    "acceptedSelectedFrameCount": 455,
+    "acceptedClipFrameCount": 455,
+    "acceptedClipDurationSeconds": 19.688333,
+    "acceptedPTSStrictlyIncreasing": true,
+    "allSelectedFramesRetained": true,
+    "maxPTSNormalizationErrorSeconds": 1.0000000010279564e-06,
+    "sourcePTSLimit": "Final duplicate source PTS21.863333 is outside accepted2–14.6 app window. OS/Home prelude and terminal static tail remain private. Whole source PTS is not claimed strictly monotonic.",
+    "transform": "Continuous app-only trim; H.264 at1/60000timebase; timestamp origin normalized only; no speed change/interpolation/overlays/audio.",
+    "timingLimit": "Simulator VFR/AX timing is not a measurement of assembly hold duration or motion speed."
+  },
+  "dataAndScope": {
+    "normalUpdateInstallIdentityVerified": true,
+    "normalLanguageRestoredEnglish": true,
+    "noEraseUninstallDataDeletionCycleSaveTrialPurchaseRestoreActions": true,
+    "simulatorLeftInFinalEnglishPrivateQAPanel": true,
+    "noPhoneOrAndroidActionsInThisSimulatorPass": true,
+    "notEstablished": [
+      "Professional native-speaker or clinical review",
+      "Actual VoiceOver/TalkBack speech",
+      "Android emulator/release runtime",
+      "Byte-for-byte personal storage comparison from these Simulator cases"
+    ]
+  },
+  "passedNativeCaseCount": 12,
+  "completedLocaleCount": 11,
+  "preFooterQAArtifact": {
+    "nativeBinarySHA256": "68b503cced659f9cb044faf965c6f5a43ad6f274ba6daa297cf499d2267f0837",
+    "embeddedJavaScriptSHA256": "10d8fa0d5da8511d0904664f65a32d99d54d239e1b49f2ae5d40db807c6364c0",
+    "assetsCarSHA256": "c32aeefeeaffaa78de43a37e0a9c1f63a756fbede64fd47fad887e290798f2ed",
+    "sourceInputCount": 50,
+    "sourceInputMapSHA256": "390a47ea982c1e8266706e9536d856d401475527fdd756a659ad2ff4b52cbef6"
+  },
+  "preFooterNormalArtifact": {
+    "nativeBinarySHA256": "68231da39e4011d74b5810df7213b691181685284331c6004675d866cae3a008",
+    "embeddedJavaScriptSHA256": "f68925916a8dd45920133bff148b27db0c220d46380c4898b8a3db4811ffebda",
+    "assetsCarSHA256": "c32aeefeeaffaa78de43a37e0a9c1f63a756fbede64fd47fad887e290798f2ed",
+    "sourceInputCount": 50,
+    "sourceInputMapSHA256": "390a47ea982c1e8266706e9536d856d401475527fdd756a659ad2ff4b52cbef6"
+  },
+  "preFooter50RecordedInputsMatchedAtValidation": true,
+  "matrixToPreFooterChangedExistingSourceInputs": [
+    "app/onboarding.tsx",
+    "app/settings/reminder.tsx",
+    "src/components/CycleDateField.tsx",
+    "src/i18n/resources.ts"
+  ],
+  "matrixToPreFooterBoundary": "Final adds Android-only localized picker paths. Existing iOS language, footer, calendar and education UI retained; final normal persistence/current QA smoke/cold capture bind the final artifact."
+}

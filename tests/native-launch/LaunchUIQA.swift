@@ -1515,3 +1515,545 @@ extension LaunchUIQA {
     print("TIH_STANDALONE_QA_AUTHORED_TEXTS_SCROLL_MODAL_SETTINGS_HOME_SAME_PROCESS_PASS")
   }
 }
+// FINAL_PASS_20261115_BEGIN
+extension LaunchUIQA {
+  var finalPassLabels: [String: [String: String]] {
+    [
+      "en": ["autonym": "English", "advice": "Advice", "cycle": "Cycle", "settings": "Settings", "editCycle": "Edit cycle details", "mind": "KEEP IN MIND", "support": "SUPPORT", "action": "DO", "languageRow": "Language", "languageTitle": "Language", "subscriptionTitle": "Subscription", "privacyTitle": "Privacy", "termsTitle": "Subscription terms", "qaTitle": "Internal testing", "mockDisclosure": "DEVELOPMENT MOCK BILLING", "continue": "Continue", "educationTitle": "Understanding the cycle", "learnMore": "Learn more", "paywallTitle": "One useful cue every day.", "back": "Back", "openSettings": "Open settings", "aboutThea": "About THEA"],
+      "it": ["autonym": "Italiano", "advice": "Consigli", "cycle": "Ciclo", "settings": "Impostazioni", "editCycle": "Modifica i dati del ciclo", "mind": "RICORDA", "support": "SOSTIENI", "action": "FAI", "languageRow": "Lingua", "languageTitle": "Lingua", "subscriptionTitle": "Abbonamento", "privacyTitle": "Privacy", "termsTitle": "Condizioni di abbonamento", "qaTitle": "Test interni", "mockDisclosure": "PAGAMENTI SIMULATI DI SVILUPPO", "continue": "Continua", "educationTitle": "Capire il ciclo", "learnMore": "Scopri di più", "paywallTitle": "Un suggerimento utile ogni giorno.", "back": "Indietro", "openSettings": "Apri impostazioni", "aboutThea": "Informazioni su THEA"],
+      "es": ["autonym": "Español", "advice": "Consejos", "cycle": "Ciclo", "settings": "Ajustes", "editCycle": "Editar datos del ciclo", "mind": "RECUERDA", "support": "APOYA", "action": "HAZ", "languageRow": "Idioma", "languageTitle": "Idioma", "subscriptionTitle": "Suscripción", "privacyTitle": "Privacidad", "termsTitle": "Condiciones de suscripción", "qaTitle": "Pruebas internas", "mockDisclosure": "PAGO SIMULADO DE DESARROLLO", "continue": "Continuar", "educationTitle": "Comprender el ciclo", "learnMore": "Más información", "paywallTitle": "Una sugerencia útil cada día.", "back": "Atrás", "openSettings": "Abrir ajustes", "aboutThea": "Acerca de THEA"],
+      "ru": ["autonym": "Русский", "advice": "Советы", "cycle": "Цикл", "settings": "Настройки", "editCycle": "Изменить данные цикла", "mind": "УЧТИ", "support": "ПОДДЕРЖИ", "action": "СДЕЛАЙ", "languageRow": "Язык", "languageTitle": "Язык", "subscriptionTitle": "Подписка", "privacyTitle": "Конфиденциальность", "termsTitle": "Условия подписки", "qaTitle": "Внутреннее тестирование", "mockDisclosure": "ТЕСТОВАЯ ОПЛАТА ДЛЯ РАЗРАБОТКИ", "continue": "Продолжить", "educationTitle": "Как устроен цикл", "learnMore": "Узнать больше", "paywallTitle": "Одна полезная подсказка каждый день.", "back": "Назад", "openSettings": "Открыть настройки", "aboutThea": "О THEA"],
+      "uk": ["autonym": "Українська", "advice": "Поради", "cycle": "Цикл", "settings": "Налаштування", "editCycle": "Змінити дані циклу", "mind": "ВРАХУЙ", "support": "ПІДТРИМАЙ", "action": "ЗРОБИ", "languageRow": "Мова", "languageTitle": "Мова", "subscriptionTitle": "Підписка", "privacyTitle": "Приватність", "termsTitle": "Умови підписки", "qaTitle": "Внутрішнє тестування", "mockDisclosure": "ТЕСТОВА ОПЛАТА ДЛЯ РОЗРОБКИ", "continue": "Продовжити", "educationTitle": "Як влаштований цикл", "learnMore": "Дізнатися більше", "paywallTitle": "Одна корисна підказка щодня.", "back": "Назад", "openSettings": "Відкрити налаштування", "aboutThea": "Про THEA"],
+      "fr": ["autonym": "Français", "advice": "Conseils", "cycle": "Cycle", "settings": "Réglages", "editCycle": "Modifier le cycle", "mind": "À RETENIR", "support": "SOUTIENS", "action": "AGIS", "languageRow": "Langue", "languageTitle": "Langue", "subscriptionTitle": "Abonnement", "privacyTitle": "Confidentialité", "termsTitle": "Conditions d’abonnement", "qaTitle": "Tests internes", "mockDisclosure": "PAIEMENT SIMULÉ — DÉVELOPPEMENT", "continue": "Continuer", "educationTitle": "Comprendre le cycle", "learnMore": "En savoir plus", "paywallTitle": "Un conseil utile chaque jour.", "back": "Retour", "openSettings": "Ouvrir les réglages", "aboutThea": "À propos de THEA"],
+      "de": ["autonym": "Deutsch", "advice": "Tipps", "cycle": "Zyklus", "settings": "Einstellungen", "editCycle": "Zyklusdaten bearbeiten", "mind": "BEACHTE", "support": "UNTERSTÜTZE", "action": "HANDLE", "languageRow": "Sprache", "languageTitle": "Sprache", "subscriptionTitle": "Abonnement", "privacyTitle": "Datenschutz", "termsTitle": "Abobedingungen", "qaTitle": "Interne Tests", "mockDisclosure": "SIMULIERTE ZAHLUNG — ENTWICKLUNG", "continue": "Weiter", "educationTitle": "Den Zyklus verstehen", "learnMore": "Mehr erfahren", "paywallTitle": "Ein hilfreicher Impuls jeden Tag.", "back": "Zurück", "openSettings": "Einstellungen öffnen", "aboutThea": "Über THEA"],
+      "hi": ["autonym": "हिन्दी", "advice": "सुझाव", "cycle": "चक्र", "settings": "सेटिंग्स", "settingsAXTitle": "सेटिंग", "editCycle": "चक्र का विवरण बदलें", "mind": "ध्यान रखें", "support": "सहारा दें", "action": "करें", "languageRow": "भाषा", "languageTitle": "भाषा", "subscriptionTitle": "सदस्यता", "privacyTitle": "निजता", "termsTitle": "सदस्यता की शर्तें", "qaTitle": "आंतरिक परीक्षण", "mockDisclosure": "विकास हेतु नकली भुगतान", "continue": "आगे बढ़ें", "educationTitle": "मासिक चक्र को समझें", "learnMore": "और जानें", "paywallTitle": "हर दिन एक उपयोगी सुझाव।", "back": "वापस", "openSettings": "सेटिंग खोलें", "aboutThea": "THEA के बारे में"],
+      "zh-Hans": ["autonym": "简体中文", "advice": "建议", "cycle": "周期", "settings": "设置", "editCycle": "修改周期资料", "mind": "请记住", "support": "支持", "action": "行动", "languageRow": "语言", "languageTitle": "语言", "subscriptionTitle": "订阅", "privacyTitle": "隐私", "termsTitle": "订阅条款", "qaTitle": "内部测试", "mockDisclosure": "开发模拟支付", "continue": "继续", "educationTitle": "了解月经周期", "learnMore": "了解更多", "paywallTitle": "每天一条实用建议。", "back": "返回", "openSettings": "打开设置", "aboutThea": "关于 THEA"],
+      "ms": ["autonym": "Bahasa Melayu", "advice": "Nasihat", "cycle": "Kitaran", "settings": "Tetapan", "editCycle": "Edit butiran kitaran", "mind": "INGAT", "support": "SOKONG", "action": "LAKUKAN", "languageRow": "Bahasa", "languageTitle": "Bahasa", "subscriptionTitle": "Langganan", "privacyTitle": "Privasi", "termsTitle": "Terma langganan", "qaTitle": "Ujian dalaman", "mockDisclosure": "BAYARAN SIMULASI PEMBANGUNAN", "continue": "Teruskan", "educationTitle": "Memahami kitaran", "learnMore": "Ketahui lebih lanjut", "paywallTitle": "Satu cadangan berguna setiap hari.", "back": "Kembali", "openSettings": "Buka tetapan", "aboutThea": "Tentang THEA"],
+      "mbf": ["autonym": "Baba Melayu · Peranakan", "advice": "Nasihat", "cycle": "Kitaran", "settings": "Tetapan", "editCycle": "Tukar butiran kitaran", "mind": "INGAT", "support": "SOKONG", "action": "BUAT", "languageRow": "Bahasa", "languageTitle": "Bahasa", "subscriptionTitle": "Langganan", "privacyTitle": "Privasi", "termsTitle": "Terma langganan", "qaTitle": "Ujian dalaman", "mockDisclosure": "BAYARAN CUBA UNTUK PEMBANGUNAN", "continue": "Teruskan", "educationTitle": "Kenali kitaran", "learnMore": "Tengok lagi", "paywallTitle": "Satu cadangan berguna tiap-tiap hari.", "back": "Balek", "openSettings": "Buka tetapan", "aboutThea": "Pasal THEA"],
+    ]
+  }
+}
+extension LaunchUIQA {
+  /// Default standalone --entry panel only. These cases never End QA into real data.
+  func finalPassNode(_ identifier: String, in app: XCUIApplication) -> XCUIElement {
+    app.descendants(matching: .any).matching(identifier: identifier).firstMatch
+  }
+  /// A small correction drag can be interpreted as a button press by iOS.
+  /// Use an actual >=90pt vertical pan, then re-query the settled native bounds.
+  func finalPassReveal(_ element: XCUIElement, in app: XCUIApplication) {
+    func owner() -> XCUIElement {
+      if element.exists {
+        let found = app.scrollViews.containing(NSPredicate(format: "label == %@", element.label)).firstMatch
+        if found.exists { return found }
+      }
+      return app.scrollViews.allElementsBoundByIndex.last ?? app.scrollViews.firstMatch
+    }
+    for _ in 0..<30 {
+      let scroll = owner(), exists = element.exists
+      let viewport = scroll.exists ? scroll.frame.intersection(app.frame) : app.frame
+      if exists && viewport.contains(element.frame) {
+        Thread.sleep(forTimeInterval: 0.35)
+        if element.isHittable && app.frame.contains(element.frame) { break }
+        continue // native route/layout transition; do not touch an unrelated control
+      }
+      guard scroll.exists else { break }
+      let needed: CGFloat
+      if exists {
+        needed = element.frame.minY < viewport.minY
+          ? viewport.minY - element.frame.minY + 16
+          : viewport.maxY - element.frame.maxY - 16
+      } else { needed = -viewport.height * 0.65 }
+      let sign: CGFloat = needed >= 0 ? 1 : -1
+      let distance = sign * min(viewport.height * 0.65, max(90, abs(needed)))
+      let start = scroll.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: distance < 0 ? 0.8 : 0.2))
+      start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: distance)), withVelocity: .slow, thenHoldForDuration: 0.1)
+    }
+    XCTAssertTrue(element.exists)
+    XCTAssertTrue(element.isHittable)
+    XCTAssertTrue(app.frame.contains(element.frame), "The complete native control must fit the app viewport")
+    let scroll = owner()
+    if scroll.exists { XCTAssertTrue(scroll.frame.contains(element.frame), "The complete control must fit its native scroll viewport") }
+  }
+  func finalPassAssertIconFooter(in app: XCUIApplication, labels: [String: String]) {
+    let back = app.buttons["secondary-back"].firstMatch
+    let settings = app.buttons["secondary-settings"].firstMatch
+    for element in [back, settings] {
+      XCTAssertTrue(element.waitForExistence(timeout: 5))
+      XCTAssertTrue(element.isHittable)
+      XCTAssertTrue(app.frame.contains(element.frame))
+      XCTAssertGreaterThanOrEqual(element.frame.width, 44)
+      XCTAssertGreaterThanOrEqual(element.frame.height, 44)
+      XCTAssertFalse(element.staticTexts.matching(NSPredicate(format: "label == %@", element.label)).firstMatch.exists,
+        "Button names belong to accessibility; the screenshot must show only decorative icons")
+    }
+    XCTAssertEqual(back.label, labels["back"]!)
+    XCTAssertEqual(settings.label, labels["settingsAXTitle"] ?? labels["settings"]!)
+  }
+  func finalPassTapFixed(_ element: XCUIElement, expecting destination: XCUIElement, in app: XCUIApplication) {
+    XCTAssertTrue(element.waitForExistence(timeout: 5))
+    XCTAssertTrue(element.isHittable && app.frame.contains(element.frame))
+    element.tap()
+    if !destination.waitForExistence(timeout: 2) {
+      print("TIH_FINAL_PASS_FIXED_CENTER_RETRY \(element.identifier)")
+      let frame = element.frame
+      app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(dx: frame.midX - app.frame.minX, dy: frame.midY - app.frame.minY)).tap()
+    }
+    XCTAssertTrue(destination.waitForExistence(timeout: 5))
+  }
+  func finalPassOpenSettings(in app: XCUIApplication, labels: [String: String]) {
+    let settingsTab = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", " + labels["settings"]!)).firstMatch
+    let secondary = app.buttons["secondary-settings"].firstMatch
+    if secondary.exists { secondary.tap() }
+    else {
+      let todaySettings = app.buttons.matching(NSPredicate(format: "label IN %@", [labels["openSettings"]!, labels["settings"]!])).firstMatch
+      if todaySettings.exists && todaySettings.isHittable { finalPassTapFixed(todaySettings, expecting: settingsTab, in: app) }
+      else {
+        let primary = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", " + labels["settings"]!)).firstMatch
+        if primary.exists && primary.isHittable { if !primary.isSelected { primary.tap() } }
+        else {
+          let about = app.buttons[labels["aboutThea"]!].firstMatch
+          finalPassReveal(about, in: app)
+          finalPassTapFixed(about, expecting: secondary, in: app)
+          secondary.tap()
+        }
+      }
+    }
+    XCTAssertTrue(settingsTab.waitForExistence(timeout: 5))
+    XCTAssertTrue(settingsTab.isSelected, "Verify the visible Settings tab, not an offscreen section's button")
+  }
+  func finalPassOpenLanguage(in app: XCUIApplication, labels: [String: String]) {
+    finalPassOpenSettings(in: app, labels: labels)
+    // The Settings language row displays the current autonym, not its section title.
+    let language = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", labels["autonym"]!)).firstMatch
+    finalPassReveal(language, in: app)
+    language.tap()
+    XCTAssertTrue(app.buttons["settings-language-en"].firstMatch.waitForExistence(timeout: 5))
+  }
+  func finalPassReturnToPanel(in app: XCUIApplication, labels: [String: String]) {
+    finalPassOpenSettings(in: app, labels: labels)
+    let row = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", labels["qaTitle"]!)).firstMatch
+    finalPassReveal(row, in: app)
+    row.tap()
+    XCTAssertTrue(app.buttons["qa-scenario-fresh"].firstMatch.waitForExistence(timeout: 5))
+  }
+  func finalPassFixtureApp() throws -> XCUIApplication {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning, "Root must first install/launch the standalone --entry panel artifact")
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    // Recover only a prior private-case UI draft; never reset/end the QA session.
+    let cancelDraft = app.buttons["language-cancel"].firstMatch
+    if cancelDraft.exists && cancelDraft.isHittable { cancelDraft.tap() }
+    let locale = finalPassLabels.first(where: { app.staticTexts[$0.value["mockDisclosure"]!].firstMatch.exists })
+    XCTAssertNotNil(locale, "Never use this case with normal Release/personal data")
+    guard let current = locale else { return app }
+    if current.key != "en" {
+      finalPassOpenLanguage(in: app, labels: current.value)
+      let english = app.buttons["settings-language-en"].firstMatch
+      finalPassReveal(english, in: app)
+      english.tap()
+    }
+    if !app.buttons["qa-scenario-fresh"].firstMatch.exists {
+      finalPassReturnToPanel(in: app, labels: finalPassLabels["en"]!)
+    }
+    XCTAssertTrue(app.buttons["qa-scenario-fresh"].firstMatch.waitForExistence(timeout: 30))
+    XCTAssertTrue(app.staticTexts[finalPassLabels["en"]!["mockDisclosure"]!].firstMatch.exists)
+    return app
+  }
+  func finalPassSelectScenario(_ scenario: String, in app: XCUIApplication) {
+    let option = app.buttons["qa-scenario-" + scenario].firstMatch
+    finalPassReveal(option, in: app)
+    let expectedName = option.label
+    option.tap()
+    let open = app.buttons["qa-open-selected"].firstMatch
+    finalPassReveal(open, in: app)
+    let ready = XCTNSPredicateExpectation(predicate: NSPredicate(format: "enabled == true AND label CONTAINS %@", expectedName), object: open)
+    XCTAssertEqual(XCTWaiter.wait(for: [ready], timeout: 10), .completed)
+  }
+  func finalPassOpenSelected(in app: XCUIApplication) {
+    finalPassOpenRouteControl("qa-open-selected", in: app)
+  }
+  func finalPassOpenRouteControl(_ identifier: String, in app: XCUIApplication) {
+    let button = app.buttons[identifier].firstMatch
+    finalPassReveal(button, in: app)
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "enabled == true"), object: button)], timeout: 5), .completed)
+    button.tap()
+  }
+
+  func testFinalPassStandaloneQALearnIconFooterAndCompactCycle() throws {
+    let app = try finalPassFixtureApp(), labels = finalPassLabels["en"]!, process = try nativeProcess(in: app)
+    finalPassSelectScenario("cycle-7", in: app)
+    finalPassOpenSelected(in: app)
+    _ = internalQAMind(in: app, day: 7)
+    let learn = app.buttons[labels["learnMore"]!].firstMatch
+    let firstPhase = finalPassNode("learn-phase-menstrual", in: app)
+    finalPassTapFixed(learn, expecting: firstPhase, in: app)
+    for phase in ["menstrual", "follicular", "mid_cycle", "luteal"] {
+      let tab = finalPassNode("learn-phase-" + phase, in: app)
+      finalPassReveal(tab, in: app)
+      tab.tap()
+      let content = finalPassNode("learn-content-" + phase, in: app)
+      XCTAssertTrue(content.waitForExistence(timeout: 5))
+      // Offscreen native AX descendants are not a measure of authored content.
+      // Reveal and inspect every real body paragraph instead of counting children.
+      for body in finalPassEnglishEducation[phase]! {
+        let paragraph = app.staticTexts[body].firstMatch
+        finalPassReveal(paragraph, in: app)
+        XCTAssertEqual(paragraph.label, body)
+        XCTAssertGreaterThan(paragraph.label.count, 50)
+      }
+      print("TIH_FINAL_PASS_EDUCATION_BODY_VERIFIED \(phase) 4")
+      finalPassAssertIconFooter(in: app, labels: labels)
+      let before = app.buttons["secondary-back"].firstMatch.frame
+      let source = finalPassNode("learn-source-2", in: app)
+      finalPassReveal(source, in: app)
+      XCTAssertTrue(finalPassNode("learn-source-0", in: app).label.contains("NIH"))
+      XCTAssertTrue(source.label.contains("NHS"))
+      XCTAssertEqual(app.buttons["secondary-back"].firstMatch.frame.minY, before.minY, accuracy: 1)
+      capture(app, "final-learn-" + phase + "-sources-icon-footer")
+    }
+    app.buttons["secondary-back"].firstMatch.tap()
+    let mind = internalQAMind(in: app, day: 7)
+    finalPassTapFixed(app.buttons[labels["learnMore"]!].firstMatch, expecting: firstPhase, in: app)
+    finalPassOpenSettings(in: app, labels: labels) // actual gear destination
+    let edit = app.buttons[labels["editCycle"]!].firstMatch
+    tapNativePrimaryTab(labels["cycle"]!, in: app, expect: edit)
+    XCTAssertEqual(app.frame.width, 375, accuracy: 1)
+    XCTAssertEqual(app.frame.height, 667, accuracy: 1)
+    // No scrolling before these assertions: all six calendar weeks must fit.
+    let dateNodes = app.staticTexts.matching(NSPredicate(format: "label MATCHES %@", "^[0-9]{1,2}/[0-9]{1,2}/2026.*$")).allElementsBoundByIndex
+    // Native AX can return duplicate date matches from retained route/text nodes.
+    // Inspect distinct dates and their visible bounds; screenshots prove the grid.
+    let dates = Dictionary(grouping: dateNodes, by: { $0.label })
+    XCTAssertEqual(dates.count, 42)
+    let body = app.scrollViews.firstMatch
+    for (_, nodes) in dates {
+      XCTAssertTrue(nodes.contains(where: { body.frame.contains($0.frame) && $0.frame.width > 0 && $0.frame.height > 0 }),
+        "Every distinct calendar date must have visible native bounds at normal phone text size")
+    }
+    XCTAssertTrue(edit.isHittable && app.frame.contains(edit.frame))
+    XCTAssertLessThanOrEqual(edit.frame.maxY, nativePrimaryTab(labels["cycle"]!, in: app).frame.minY + 1)
+    capture(app, "final-compact-cycle-six-weeks-fixed-edit")
+    edit.tap()
+    let saved = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Last known period start:")).firstMatch
+    XCTAssertTrue(saved.waitForExistence(timeout: 5))
+    XCTAssertTrue(saved.label.contains("November 3, 2026"))
+    XCTAssertTrue(app.staticTexts["28 days"].exists && app.staticTexts["5 days"].exists)
+    capture(app, "final-compact-cycle-saved-editor-no-save")
+    app.buttons[labels["back"]!].firstMatch.tap() // cancel local editing, never save
+    XCTAssertTrue(edit.waitForExistence(timeout: 5))
+    finalPassReturnToPanel(in: app, labels: labels)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    XCTAssertFalse(mind.isHittable)
+    print("TIH_FINAL_PASS_EDUCATION_ICONS_COMPACT_CYCLE_SAME_PROCESS_PASS")
+  }
+
+  func testFinalPassStandaloneQAHorizontalLanguageDraftAndConfirmation() throws {
+    let app = try finalPassFixtureApp(), english = finalPassLabels["en"]!, french = finalPassLabels["fr"]!
+    let process = try nativeProcess(in: app)
+    finalPassSelectScenario("fresh", in: app)
+    finalPassOpenSelected(in: app)
+    let open = app.buttons["language-picker-open"].firstMatch
+    XCTAssertTrue(open.waitForExistence(timeout: 10))
+    finalPassReveal(open, in: app)
+    open.tap()
+    let pages = finalPassNode("language-pages", in: app)
+    XCTAssertTrue(pages.waitForExistence(timeout: 5))
+    XCTAssertTrue((pages.value as? String ?? "").contains(english["autonym"]!))
+    XCTAssertFalse(app.buttons["language-previous"].firstMatch.isEnabled)
+    let start = pages.coordinate(withNormalizedOffset: CGVector(dx: 0.8, dy: 0.5))
+    let end = pages.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.5))
+    start.press(forDuration: 0.1, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.3)
+    let drafted = XCTNSPredicateExpectation(predicate: NSPredicate(format: "value CONTAINS %@", french["autonym"]!), object: pages)
+    XCTAssertEqual(XCTWaiter.wait(for: [drafted], timeout: 5), .completed)
+    capture(app, "final-language-horizontal-swipe-French-draft")
+    app.buttons["language-cancel"].firstMatch.tap()
+    XCTAssertTrue(open.waitForExistence(timeout: 5))
+    XCTAssertTrue(open.label.contains(english["autonym"]!))
+    XCTAssertTrue(app.buttons[english["continue"]!].exists)
+    open.tap()
+    app.buttons["language-next"].firstMatch.tap()
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value CONTAINS %@", french["autonym"]!), object: pages)], timeout: 5), .completed)
+    app.buttons["language-confirm"].firstMatch.tap()
+    XCTAssertTrue(app.buttons[french["continue"]!].waitForExistence(timeout: 5))
+    XCTAssertTrue(open.label.contains(french["autonym"]!))
+    capture(app, "final-onboarding-French-confirmed")
+    open.tap()
+    app.buttons["language-previous"].firstMatch.tap()
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value CONTAINS %@", english["autonym"]!), object: pages)], timeout: 5), .completed)
+    let done = app.buttons["language-confirm"].firstMatch
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "enabled == true AND hittable == true"), object: done)], timeout: 5), .completed)
+    done.tap()
+    XCTAssertTrue(app.buttons[english["continue"]!].waitForExistence(timeout: 5))
+    XCTAssertTrue(open.label.contains(english["autonym"]!))
+    finalPassReturnToPanel(in: app, labels: english)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_FINAL_PASS_LANGUAGE_SWIPE_DRAFT_CANCEL_CONFIRM_MEMORY_ONLY_PASS")
+  }
+
+  func finalPassLocaleTour(_ codes: [String]) throws {
+    let app = try finalPassFixtureApp(), process = try nativeProcess(in: app)
+    finalPassSelectScenario("cycle-7", in: app)
+    var current = finalPassLabels["en"]!
+    for code in codes {
+      finalPassOpenSelected(in: app)
+      // First iteration opens Today; use Learn's icon footer to reach Settings.
+      let learn = app.buttons[current["learnMore"]!].firstMatch
+      finalPassTapFixed(learn, expecting: finalPassNode("learn-phase-menstrual", in: app), in: app)
+      finalPassOpenLanguage(in: app, labels: current)
+      let option = app.buttons["settings-language-" + code].firstMatch
+      finalPassReveal(option, in: app)
+      option.tap()
+      current = finalPassLabels[code]!
+      XCTAssertTrue(app.staticTexts[current["languageTitle"]!].firstMatch.waitForExistence(timeout: 5))
+      finalPassReturnToPanel(in: app, labels: current)
+      finalPassOpenSelected(in: app)
+      let mind = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", current["mind"]! + ".")).firstMatch
+      XCTAssertTrue(mind.waitForExistence(timeout: 10))
+      XCTAssertTrue(app.staticTexts[current["mockDisclosure"]!].firstMatch.exists)
+      XCTAssertGreaterThan(mind.label.count, current["mind"]!.count + 30)
+      capture(app, "final-language-" + code + "-actual-Today")
+      finalPassTapFixed(app.buttons[current["learnMore"]!].firstMatch, expecting: finalPassNode("learn-phase-menstrual", in: app), in: app)
+      XCTAssertTrue(app.staticTexts[current["educationTitle"]!].firstMatch.waitForExistence(timeout: 5))
+      finalPassAssertIconFooter(in: app, labels: current)
+      finalPassOpenSettings(in: app, labels: current)
+      let edit = app.buttons[current["editCycle"]!].firstMatch
+      tapNativePrimaryTab(current["cycle"]!, in: app, expect: edit)
+      XCTAssertTrue(edit.exists && edit.isHittable)
+      finalPassReturnToPanel(in: app, labels: current)
+      finalPassOpenRouteControl("qa-open--settings-subscription", in: app)
+      XCTAssertTrue(app.staticTexts[current["paywallTitle"]!].firstMatch.waitForExistence(timeout: 5))
+      finalPassAssertIconFooter(in: app, labels: current)
+      finalPassReturnToPanel(in: app, labels: current)
+      finalPassOpenRouteControl("qa-open--privacy", in: app)
+      XCTAssertTrue(app.staticTexts[current["privacyTitle"]!].firstMatch.waitForExistence(timeout: 5))
+      finalPassAssertIconFooter(in: app, labels: current)
+      finalPassReturnToPanel(in: app, labels: current)
+      finalPassOpenRouteControl("qa-open--terms", in: app)
+      XCTAssertTrue(app.staticTexts[current["termsTitle"]!].firstMatch.waitForExistence(timeout: 5))
+      finalPassAssertIconFooter(in: app, labels: current)
+      finalPassReturnToPanel(in: app, labels: current)
+      print("TIH_FINAL_PASS_LOCALE_HEADERS_TODAY_CYCLE_LEARN_PAYWALL_PRIVACY_TERMS \(code)")
+    }
+    finalPassOpenSelected(in: app)
+    finalPassTapFixed(app.buttons[current["learnMore"]!].firstMatch, expecting: finalPassNode("learn-phase-menstrual", in: app), in: app)
+    finalPassOpenLanguage(in: app, labels: current)
+    let english = app.buttons["settings-language-en"].firstMatch
+    finalPassReveal(english, in: app)
+    english.tap()
+    finalPassReturnToPanel(in: app, labels: finalPassLabels["en"]!)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_FINAL_PASS_LOCALE_CASE_COMPLETE \(codes.joined(separator: ",")) RESTORED_ENGLISH_MEMORY_ONLY")
+  }
+  func testFinalPassStandaloneQAAllElevenLocalizedMajorScreens() throws {
+    try finalPassLocaleTour(["en", "fr", "it", "es", "de", "ru", "uk", "hi", "zh-Hans", "ms", "mbf"])
+  }
+  func testFinalPassStandaloneQALocaleEN() throws { try finalPassLocaleTour(["en"]) }
+  func testFinalPassStandaloneQALocaleFR() throws { try finalPassLocaleTour(["fr"]) }
+  func testFinalPassStandaloneQALocaleIT() throws { try finalPassLocaleTour(["it"]) }
+  func testFinalPassStandaloneQALocaleES() throws { try finalPassLocaleTour(["es"]) }
+  func testFinalPassStandaloneQALocaleDE() throws { try finalPassLocaleTour(["de"]) }
+  func testFinalPassStandaloneQALocaleRU() throws { try finalPassLocaleTour(["ru"]) }
+  func testFinalPassStandaloneQALocaleUK() throws { try finalPassLocaleTour(["uk"]) }
+  func testFinalPassStandaloneQALocaleHI() throws { try finalPassLocaleTour(["hi"]) }
+  func testFinalPassStandaloneQALocaleZHHans() throws { try finalPassLocaleTour(["zh-Hans"]) }
+  func testFinalPassStandaloneQALocaleMS() throws { try finalPassLocaleTour(["ms"]) }
+  func testFinalPassStandaloneQALocaleMBF() throws { try finalPassLocaleTour(["mbf"]) }
+
+  /// Run separately only after root installs the normal artifact, never the private QA bundle.
+  func testFinalPassNormalReleaseRussianPersistsColdThenRestoreEnglish() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    let en = finalPassLabels["en"]!, ru = finalPassLabels["ru"]!
+    app.activate()
+    XCTAssertTrue(app.buttons["brand-home"].firstMatch.waitForExistence(timeout: 30))
+    XCTAssertFalse(app.buttons["qa-scenario-fresh"].exists)
+    for label in Set(finalPassLabels.values.map { $0["mockDisclosure"]! }) { XCTAssertFalse(app.staticTexts[label].firstMatch.exists, "Normal-only persistence case must reject private QA") }
+    var restoreNeeded = false
+    defer {
+      if restoreNeeded {
+        app.activate()
+        if !app.buttons["settings-language-en"].firstMatch.exists { finalPassOpenLanguage(in: app, labels: ru) }
+        let english = app.buttons["settings-language-en"].firstMatch
+        finalPassReveal(english, in: app)
+        english.tap()
+      }
+    }
+    finalPassOpenLanguage(in: app, labels: en)
+    let russian = app.buttons["settings-language-ru"].firstMatch
+    finalPassReveal(russian, in: app)
+    russian.tap(); restoreNeeded = true
+    XCTAssertTrue(app.staticTexts[ru["languageTitle"]!].firstMatch.waitForExistence(timeout: 5))
+    capture(app, "final-normal-Russian-language-before-cold")
+    app.terminate(); app.launch()
+    XCTAssertTrue(app.buttons["brand-home"].firstMatch.waitForExistence(timeout: 30))
+    XCTAssertFalse(app.buttons["qa-scenario-fresh"].exists)
+    for label in Set(finalPassLabels.values.map { $0["mockDisclosure"]! }) { XCTAssertFalse(app.staticTexts[label].firstMatch.exists) }
+    finalPassOpenLanguage(in: app, labels: ru)
+    XCTAssertTrue(app.staticTexts[ru["languageTitle"]!].firstMatch.exists)
+    XCTAssertTrue(app.buttons["settings-language-ru"].firstMatch.isSelected, "The selected language is an accessibility state; its decorative checkmark is hidden")
+    capture(app, "final-normal-Russian-restored-after-cold")
+    let english = app.buttons["settings-language-en"].firstMatch
+    finalPassReveal(english, in: app)
+    english.tap()
+    XCTAssertTrue(app.staticTexts[en["languageTitle"]!].firstMatch.waitForExistence(timeout: 5))
+    restoreNeeded = false
+    finalPassOpenSettings(in: app, labels: en)
+    capture(app, "final-normal-English-restored-no-data-reset")
+    print("TIH_FINAL_PASS_NORMAL_RU_COLD_PERSISTENCE_RESTORED_ENGLISH_NO_RESET")
+  }
+}
+
+// FINAL_PASS_20261115_END
+
+extension LaunchUIQA {
+  var finalPassEnglishEducation: [String: [String]] {
+    [
+      "menstrual": ["Day 1 is the first day of bleeding. A period often lasts 2–7 days.", "The uterine lining is shed. Cramps or discomfort may occur.", "Some feel tired or need more rest; others notice little change.", "Ask what helps. Offer practical help, rest or warmth if wanted."],
+      "follicular": ["From the first day of bleeding until ovulation; its length varies. Menstruation overlaps this ovarian phase.", "Follicles develop in the ovaries and the uterine lining rebuilds.", "Energy may feel different as bleeding eases, but no particular mood or productivity is guaranteed.", "Plan together around her actual energy, without assuming she should feel more social."],
+      "mid_cycle": ["An egg is released; often about 12–16 days before the next period, not always day 14.", "Some notice brief one-sided pelvic discomfort; many notice nothing.", "No specific emotional or energy pattern is universal.", "Listen to her preferences about plans, closeness and space. A calendar is not consent."],
+      "luteal": ["After ovulation until the next period; often around two weeks, with individual variation.", "Some experience bloating, breast tenderness or headaches before bleeding.", "PMS can include tiredness, irritability or emotional changes; it does not affect everyone.", "Offer help with daily tasks and flexible plans. Take difficult symptoms seriously."],
+    ]
+  }
+}
+
+extension LaunchUIQA {
+  /// Recheck final rebundled iOS imports after the Android-only picker addition.
+  func testFinalPassCurrentQAQuickTodayAndCompactCycle() throws {
+    let app = try finalPassFixtureApp(), labels = finalPassLabels["en"]!, process = try nativeProcess(in: app)
+    finalPassSelectScenario("cycle-7", in: app)
+    finalPassOpenSelected(in: app)
+    let mind = internalQAMind(in: app, day: 7)
+    XCTAssertGreaterThan(mind.label.count, 60)
+    capture(app, "final-current-QA-actual-Today-day7")
+    finalPassTapFixed(app.buttons[labels["learnMore"]!].firstMatch,
+      expecting: finalPassNode("learn-phase-menstrual", in: app), in: app)
+    capture(app, "final-current-QA-menstrual-body-top")
+    finalPassOpenSettings(in: app, labels: labels)
+    let edit = app.buttons[labels["editCycle"]!].firstMatch
+    tapNativePrimaryTab(labels["cycle"]!, in: app, expect: edit)
+    let dates = app.staticTexts.matching(NSPredicate(format: "label MATCHES %@", "^[0-9]{1,2}/[0-9]{1,2}/2026.*$")).allElementsBoundByIndex
+    XCTAssertEqual(Set(dates.map { $0.label }).count, 42)
+    XCTAssertTrue(edit.isHittable && app.frame.contains(edit.frame))
+    XCTAssertLessThanOrEqual(edit.frame.maxY, nativePrimaryTab(labels["cycle"]!, in: app).frame.minY + 1)
+    capture(app, "final-current-QA-compact-Cycle")
+    finalPassReturnToPanel(in: app, labels: labels)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_FINAL_PASS_CURRENT_QA_TODAY_CYCLE_SAME_PROCESS_PASS")
+  }
+}
+
+extension LaunchUIQA {
+  var finalFooterUpdateLabels: [String: String] { [
+    "en": "Update cycle",
+    "fr": "Actualiser le cycle",
+    "it": "Aggiorna ciclo",
+    "es": "Actualizar ciclo",
+    "de": "Zyklus aktualisieren",
+    "ru": "Обновить цикл",
+    "uk": "Оновити цикл",
+    "hi": "चक्र अपडेट करें",
+    "zh-Hans": "更新周期",
+    "ms": "Kemas kini kitaran",
+    "mbf": "Tukar maklumat kitaran",
+  ] }
+}
+
+extension LaunchUIQA {
+  /// Direct --entry today private artifact, normal text size on owned SE3 only.
+  /// This checks the one-constant footer-width correction, not another full tour.
+  func testFinalFooterAllElevenTodayWidthAndHitLabels() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    XCTAssertNotEqual(app.state, .notRunning, "Root installs and cold-records the final direct-Today QA artifact first")
+    clearExistingOpenConfirmation(for: app)
+    app.activate()
+    let english = finalPassLabels["en"]!
+    XCTAssertTrue(app.staticTexts[english["mockDisclosure"]!].firstMatch.waitForExistence(timeout: 30), "Never drive the normal/personal app")
+    XCTAssertTrue(app.buttons[english["learnMore"]!].firstMatch.waitForExistence(timeout: 15))
+    XCTAssertEqual(app.frame.width, 375, accuracy: 1)
+    XCTAssertEqual(app.frame.height, 667, accuracy: 1)
+    let process = try nativeProcess(in: app)
+    var current = english
+    for code in ["en", "fr", "it", "es", "de", "ru", "uk", "hi", "zh-Hans", "ms", "mbf"] {
+      let next = finalPassLabels[code]!
+      if code != "en" {
+        finalPassOpenLanguage(in: app, labels: current)
+        let option = app.buttons["settings-language-" + code].firstMatch
+        finalPassReveal(option, in: app)
+        option.tap()
+        XCTAssertTrue(app.staticTexts[next["languageTitle"]!].firstMatch.waitForExistence(timeout: 5))
+        finalPassOpenSettings(in: app, labels: next)
+        tapNativePrimaryTab(next["advice"]!, in: app, expect: app.buttons[next["learnMore"]!].firstMatch)
+      }
+      finalFooterAssert(code, in: app)
+      current = next
+    }
+    // Existing preference controls restore the disposable QA memory locale.
+    finalPassOpenLanguage(in: app, labels: current)
+    let englishOption = app.buttons["settings-language-en"].firstMatch
+    finalPassReveal(englishOption, in: app)
+    englishOption.tap()
+    finalPassOpenSettings(in: app, labels: english)
+    tapNativePrimaryTab(english["advice"]!, in: app, expect: app.buttons[english["learnMore"]!].firstMatch)
+    XCTAssertTrue(app.staticTexts[english["mockDisclosure"]!].firstMatch.exists)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_FINAL_FOOTER_ALL11_SAME_PROCESS_ENGLISH_RESTORED")
+  }
+}
+
+extension LaunchUIQA {
+  func finalFooterAssert(_ code: String, in app: XCUIApplication) {
+    let labels = finalPassLabels[code]!
+    XCTAssertTrue(app.staticTexts[labels["mockDisclosure"]!].firstMatch.exists)
+    var frames: [CGRect] = []
+    for label in [labels["learnMore"]!, finalFooterUpdateLabels[code]!, labels["openSettings"]!] {
+      let button = app.buttons[label].firstMatch
+      XCTAssertTrue(button.waitForExistence(timeout: 5))
+      XCTAssertTrue(button.isHittable && app.frame.contains(button.frame))
+      XCTAssertEqual(button.label, label)
+      XCTAssertGreaterThanOrEqual(button.frame.width, 44)
+      XCTAssertGreaterThanOrEqual(button.frame.height, 44)
+      // UK needs two intact word lines; MBF naturally has three whole words/lines.
+      let maximumHeight: CGFloat = code == "mbf" ? 76.5 : 56.5
+      XCTAssertLessThanOrEqual(button.frame.height, maximumHeight,
+        "Keep full labels; MBF may use three whole-word lines without shrinking")
+      frames.append(button.frame)
+    }
+    XCTAssertLessThanOrEqual(frames[0].maxX, frames[1].minX + 1)
+    XCTAssertLessThanOrEqual(frames[1].maxX, frames[2].minX + 1)
+    capture(app, "footer-final-" + code + "-actual-Today")
+    print("TIH_FINAL_FOOTER_LOCALE_PASS \(code) MAX_HEIGHT \(frames.map { $0.height }.max()!)")
+  }
+
+  /// Resume only MBF after the aggregate's overstrict two-line test constraint.
+  func testFinalFooterMBFWholeWordLinesAndEnglishCleanup() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    if app.state == .notRunning { app.launch() } else { app.activate() }
+    let en = finalPassLabels["en"]!, mbf = finalPassLabels["mbf"]!
+    let disclosure = app.staticTexts.matching(NSPredicate(format: "label IN %@", [en["mockDisclosure"]!, mbf["mockDisclosure"]!])).firstMatch
+    XCTAssertTrue(disclosure.waitForExistence(timeout: 30), "Require actual private QA before any preference action")
+    let process = try nativeProcess(in: app)
+    if app.staticTexts[en["mockDisclosure"]!].firstMatch.exists {
+      finalPassOpenLanguage(in: app, labels: en)
+      let option = app.buttons["settings-language-mbf"].firstMatch
+      finalPassReveal(option, in: app)
+      option.tap()
+      XCTAssertTrue(app.staticTexts[mbf["languageTitle"]!].firstMatch.waitForExistence(timeout: 5))
+      finalPassOpenSettings(in: app, labels: mbf)
+      tapNativePrimaryTab(mbf["advice"]!, in: app, expect: app.buttons[mbf["learnMore"]!].firstMatch)
+    }
+    finalFooterAssert("mbf", in: app)
+    finalPassOpenLanguage(in: app, labels: mbf)
+    let english = app.buttons["settings-language-en"].firstMatch
+    finalPassReveal(english, in: app)
+    english.tap()
+    finalPassOpenSettings(in: app, labels: en)
+    tapNativePrimaryTab(en["advice"]!, in: app, expect: app.buttons[en["learnMore"]!].firstMatch)
+    XCTAssertTrue(app.staticTexts[en["mockDisclosure"]!].firstMatch.exists)
+    XCTAssertEqual(try nativeProcess(in: app), process)
+    print("TIH_FINAL_FOOTER_MBF_FULL_WORDS_ENGLISH_CLEANUP_SAME_PROCESS_PASS")
+  }
+}

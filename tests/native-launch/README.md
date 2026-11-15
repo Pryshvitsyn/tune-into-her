@@ -307,3 +307,107 @@ In the temporary standalone artifact `stop()` resets its memory scenario; return
 ordinary personal data requires root's separate normal Release update/restore. Generate
 or copy the harness sources as usual, build the runner separately, and select only this
 case. A prepared case/source is not a passed native run; record the actual result afterward.
+
+## Final secondary-footer / Cycle / language / education pass
+
+The methods below are reusable guarded native cases. Actual run boundaries and results are recorded below. The common
+`setUpWithError` still rejects every physical device and every Simulator except the
+explicitly owned Launch QA Simulator. They append to the harness; older scenarios
+and the `--entry today` interaction case remain unchanged. The eleven-locale heading
+matrix is embedded in Swift from the final application copy, so there is no external
+fixture to copy into the runner.
+
+Run the first three only against the separately packaged standalone `--entry panel`
+artifact, initially English and with normal system text size for the compact Cycle
+assertions. They require the private QA panel and mock disclosure before scenario
+selection. They do not delete data, save cycle details, transact, or call the old
+End-QA/base-storage comparison helpers. This standalone session stays in memory.
+
+- `testFinalPassStandaloneQALearnIconFooterAndCompactCycle`: cycle-day7 to authored
+  Today; native Learn More; all four substantive phase pages and institutional source
+  controls; localized accessibility names on the fixed arrow/gear footer; actual Back
+  and Settings destinations; all42calendar dates visible on375×667 without prior
+  scrolling; fixed Edit action; saved28/5/date prefill and local editor cancellation.
+- `testFinalPassStandaloneQAHorizontalLanguageDraftAndConfirmation`: fresh scenario,
+  actual horizontal swipe to French draft, Cancel retaining English, explicit French
+  confirmation/translated Continue, then English restoration. Uses stable control IDs.
+- `testFinalPassStandaloneQAAllElevenLocalizedMajorScreens`: each existing Settings
+  language row, actual Today/mock/card labels, Cycle action, education/paywall/privacy/
+  terms headings and icon-footer semantics; one Today capture per locale. It restores
+  English. This confirms UI locale wiring, not professional native-language review or
+  persistence across a native restart; QA preferences are deliberately in memory.
+
+Run `testFinalPassNormalReleaseRussianPersistsColdThenRestoreEnglish` separately after
+installing the normal artifact. It rejects the QA panel and every localized mock banner,
+changes only the existing language preference to Russian, terminates/relaunches the
+normal app, verifies the persisted selected accessibility state and Russian UI, then
+restores English. Cleanup also attempts English restoration after failure. No content
+reset, onboarding completion, purchase/trial action or fixture storage comparison occurs.
+The owning Simulator baseline and all app data remain in place; real-phone automation
+is still prohibited. This case is the persistence proof only after it actually passes.
+
+All text selectors come from final localized labels; arrow/gear names remain available
+to accessibility while decorative children are hidden. Native source-link controls are
+inspected without opening an external browser. Any bounded native center retry is logged;
+it is not misreported as a first-tap pass. Screenshots/AX trees remain raw private test
+output until reviewed and sanitized. Real VoiceOver/TalkBack speech is not established.
+
+### Recorded final pass (2026-11-15)
+
+The education/footer/compact-Cycle case passed 216.389s; the horizontal language
+case passed 52.473s. All four phase bodies (16 paragraphs), institutional source
+controls, real Back/gear destinations,42 distinct native calendar dates, fixed Edit
+and saved-date/28/5 editor prefill were exercised. The editor was cancelled.
+
+Use independently selectable `testFinalPassStandaloneQALocaleEN`, `FR`, `IT`,
+`ES`, `DE`, `RU`, `UK`, `HI`, `ZHHans`, `MS`, `MBF` (same full prefix) to resume
+only an affected locale; all share `finalPassLocaleTour`. The aggregate method
+remains available but need not restart completed languages. ES/DE/RU/UK/HI/
+ZHHans/MS/MBF passed individually (176.571/159.193/164.468/169.176/196.670/
+160.161/166.488/162.415 seconds). EN/FR/IT each completed every locale assertion
+and explicit completion marker in the earlier aggregate run; that whole case later
+FAILED during a Spanish driver scroll and is not counted as a passed case.
+
+The earlier six native failures were test-driver/AX corrections: nested-content
+counting, a Settings section versus its autonym button, duplicate native date
+matches, an unready cleanup Done tap, a too-short pan, and a recovery tap. They
+remain failures in the private results. `finalPassReveal` now performs >=90pt
+native pans so a small correction cannot become an unrelated button press.
+The normal old harness prefix and owning-Simulator/physical-device guards remain
+unchanged. No application patch, reset/delete, cycle Save or financial action
+was required. One standalone QA process restart recovered its memory fixture.
+
+The FINAL normal artifact passed Russian cold persistence/English cleanup 39.084s.
+The FINAL QA artifact passed `testFinalPassCurrentQAQuickTodayAndCompactCycle`
+40.740 s: actual Today 7, education body top, compact Cycle and return to the panel
+in the same process. This binds the final rebundle after Android-only localized
+picker imports; the eleven-locale tour is explicitly bound to its earlier artifact.
+The final cold capture passed 536 frames / 0 black/native ordering/same-process gates.
+Only its accepted app window is claimed monotonic; terminal duplicate source PTS
+and the private OS prelude are excluded. See curated `native-verification.json`
+and the evidence README for exact hashes, counts and unverified boundaries.
+
+### Today footer width follow-up
+
+The 51-input follow-up changes only `AnimatedToday` horizontal footer padding
+from 18 to 9 points. `testFinalFooterAllElevenTodayWidthAndHitLabels` uses a
+direct-Today private artifact and existing Settings language → gear → Advice
+navigation. It completed 10 locale checkpoints, including Ukrainian with an
+intact second-line “налаштування” and 56 pt maximum targets, then FAILED after
+249.661 s because its original universal two-line assertion was too strict for
+MBF's three whole-word lines. That aggregate result is not a pass.
+
+Root accepted the natural three-word layout. The separate
+`testFinalFooterMBFWholeWordLinesAndEnglishCleanup` PASSED in 24.111 s with 76 pt
+maximum targets, readable “Tukar / maklumat / kitaran”, no overlap, full localized
+accessible labels and English restoration in the same process. No application,
+font or copy change followed that test-constraint failure. One preparatory empty
+selection ran zero tests and is excluded. The current helper allows MBF up to
+76.5 pt and other default-size footers up to 56.5 pt. Every target must remain
+at least 44 pt, hittable and inside the app.
+
+The current 51-input artifact explicitly tracks `AnimatedToday.tsx`. Its independent
+cold recording passed 1,741 frames / zero black / native order / same-process gates.
+Earlier 50-input / 536-frame cold and broad-route evidence remain earlier artifacts,
+not relabelled current. No phone-install or Android runtime claim follows from this
+Simulator-only follow-up. The original pre-task harness prefix remains byte-identical.

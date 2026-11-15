@@ -1,0 +1,174 @@
+{
+  "status": "PASS_IMPLEMENTATION_CHECKPOINT_PHYSICAL_TODAY_PANEL_HOME_ICON_AND_PRESERVATION",
+  "date": "2026-11-15",
+  "sourceChecks": [
+    {
+      "artifact": "artifact-today.json",
+      "sourceInputs": 50,
+      "matchCurrentWorkingTree": true
+    },
+    {
+      "artifact": "artifact-panel.json",
+      "sourceInputs": 50,
+      "matchCurrentWorkingTree": true
+    }
+  ],
+  "actualBothSignedAssetsCarRehashedAndMatch": true,
+  "privacyScanFindings": [],
+  "PNGMetadata": [
+    {
+      "file": "actual-iphone-approved-photo.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-home-icon-privacy-masked.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-photo-to-today-contact.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-testing-panel.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-today.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "icon-master-actual-device-generated-preview.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "noTextExifOrContentCredentials": true
+    }
+  ],
+  "videoOnly": true,
+  "publishedVideoRetainsAllSelectedDecodedFrames": 566,
+  "relativePTSMaximumErrorSeconds": 1e-06,
+  "nativePixelsCroppedNotRescaled": [
+    0,
+    140,
+    1126,
+    2296
+  ],
+  "unredactedHomePixelsPublished": false,
+  "actualAppIconPixelsPublished": true,
+  "iconOpaqueRGBMatchesSourceExactly": true,
+  "iconTransparentExteriorRGBZero": true,
+  "limitations": [
+    "Capture PTS derive from monotonic host arrival, not the device/GPU animation clock.",
+    "Home icon evidence is first source frame only; conservative inset privacy mask does not preserve the complete original OS icon border.",
+    "Last storage snapshot is before final panel relaunch; Keychain was not read or hashed."
+  ],
+  "manifestExcludesItself": true,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3722,
+      "sha256": "d5ab8288b1a3d1cdd828cb690c2612168dfd0874027e9068fad6f9657978f6e0"
+    },
+    {
+      "file": "actual-iphone-approved-photo.png",
+      "bytes": 1166796,
+      "sha256": "88becb92b1c51bf960d55ff97b8051887138cf25bbb0c92637acb345a690f2a2"
+    },
+    {
+      "file": "actual-iphone-home-icon-privacy-masked.png",
+      "bytes": 39508,
+      "sha256": "2b891812a7ea2ff9c874fa8f737073b7d1868a84f21346f96206b7635064d639"
+    },
+    {
+      "file": "actual-iphone-photo-to-today-contact.png",
+      "bytes": 1429736,
+      "sha256": "9f28d64d46826164f7eacadc9124cf7e57e782e77968663644bfe81895e4bfb2"
+    },
+    {
+      "file": "actual-iphone-photo-to-today.mp4",
+      "bytes": 3780898,
+      "sha256": "d2c923ee45cccec7cdc6d94e40b2821a82a816132d0fbec0cec198397c269092"
+    },
+    {
+      "file": "actual-iphone-testing-panel.png",
+      "bytes": 837171,
+      "sha256": "62576915b6d6ffebe9343e4727adce08e59e43e631432f2e7359bbfe96c130c8"
+    },
+    {
+      "file": "actual-iphone-today.png",
+      "bytes": 1226671,
+      "sha256": "d3faeaeac2d215db1432f320aae486db00fe8cc91f0f58185cae7fce60f276cb"
+    },
+    {
+      "file": "artifact-panel.json",
+      "bytes": 7474,
+      "sha256": "e5595ff0c3206c513f73626b942f4f35cb35f416de8bae4ec6d53e40915b6a57"
+    },
+    {
+      "file": "artifact-today.json",
+      "bytes": 7474,
+      "sha256": "2ec74fd18af13e5e582f618eae585869d82ddf7717c765a95e10d905a3ef1195"
+    },
+    {
+      "file": "icon-master-actual-device-generated-preview.png",
+      "bytes": 288388,
+      "sha256": "af9d77f29cd336991baed2688ae93e72ac9ed7524948805f80eafa934b620fcc"
+    },
+    {
+      "file": "icon-proof.json",
+      "bytes": 3431,
+      "sha256": "91923e58b0a8cf45e91be584402da5779946286622d1451d7d34a56f771f164c"
+    },
+    {
+      "file": "preservation.json",
+      "bytes": 2786,
+      "sha256": "d4573ff2bd192b4a8fa86dad3dfe62c1d3c96591006b15e9d0fea0fae424b088"
+    },
+    {
+      "file": "proof.json",
+      "bytes": 7402,
+      "sha256": "686e0b441b3e2162a2d876cb80adef111e8998a84bba1850c074267ee5962372"
+    }
+  ]
+}

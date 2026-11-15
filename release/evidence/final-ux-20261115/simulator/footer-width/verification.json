@@ -1,0 +1,247 @@
+{
+  "scope": "Post-correction actual iOS Simulator Today footer only; synthetic private memory QA. Broad pre-correction route/language proof remains separate.",
+  "artifact": {
+    "nativeBinarySHA256": "226b5936434f0916a4607497bae6ef6fe1174048ec7db10fddd3a9a27208d1fd",
+    "embeddedJavaScriptSHA256": "2376e05a2d508d0748d57bb204f6448ed15e3b5f33aa56caf3f089f1fd185b3d",
+    "assetsCarSHA256": "c32aeefeeaffaa78de43a37e0a9c1f63a756fbede64fd47fad887e290798f2ed",
+    "sourceInputCount": 51,
+    "tracksAnimatedToday": true,
+    "animatedTodaySourceSHA256": "a7f881f699e777fcc6241118962569aec9bc338495a30d0c58407fe4f8422ff9",
+    "all51SourceInputsMatchCurrentFiles": true
+  },
+  "applicationDelta": {
+    "baselineImplementationCommit": "6c8d2d7",
+    "onlyConstantChange": true,
+    "file": "src/intro/AnimatedToday.tsx",
+    "footerHorizontalPaddingPointsBefore": 18,
+    "footerHorizontalPaddingPointsAfter": 9,
+    "fontSizeLineHeightIconMarginTapHandlersUnchanged": true,
+    "copyTypefaceRendererShadersTimelineUntouchedByDelta": true
+  },
+  "nativeChecks": {
+    "en": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 48.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "86f9730d4205e57b078ec38a99fbf1a34a951f2c9344d08502d4621e23d43fc1",
+      "originalPixelCrop": [
+        0,
+        1222,
+        750,
+        112
+      ],
+      "cropSHA256": "f0195f130edf013cbf591cf3af32ad8abed2fc6c9fc6f999a324a10744b99955"
+    },
+    "fr": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "00f906897798b2b505a21aa2a3c32fb31062af06fb3a2a57c0cd54eefd071457",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "488977cdccbdb763f0cb1d275bfa83c6d77ea55f53fa356c4aa08c816d3a597d"
+    },
+    "it": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "2980ae9fa43fcb3a92dca73eda8c5566996651f9326d39f1393a4185c57328ea",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "7f50d3c59b7ede73e38e061f7228324f49e9a98207c6fe36dfc5af039b82364e"
+    },
+    "es": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "9a040da90013a4277d84a4ace88cb9c7de719efb58141f85c433ac0c73fcb835",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "e0b637d686ffb89b4f98cb4a79a995e530acda3708cca870a8fa96af479ac06d"
+    },
+    "de": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "7600788ffc5e98475761f63e1e28dc1ad4b625b3604d808385dc877e6cfa30fb",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "6d09eb5bf087961c66000ec97ac9b27bc65b3041c280299d8ff844bc2992905d"
+    },
+    "ru": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "732254fbe1d5d778b8735d11077a64de3d77d286a7eb7b24adc5d5c96fbdadcd",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "c682706c53fd213f0e98a83e5486d65f0d9129be1e24578f56ef0d96998ec292"
+    },
+    "uk": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "d8b858643e8816d407e5f116d1cea449351d953c8ae01b9802e4c8dc1f6c3fb0",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "6c3357899a233b1ffa7c54f679c2e59a6639d3ccc2ea1dc3391cb9c970bdc964"
+    },
+    "hi": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 48.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "75bff73ddc8905bc17b4efba502cd965c02ca5fcf3bd4761e1783db6c05b3c9e",
+      "originalPixelCrop": [
+        0,
+        1222,
+        750,
+        112
+      ],
+      "cropSHA256": "dd94ed1e2147d1c76a23727287964e4b6c3dd41e1076e28422aa3d4788c778b8"
+    },
+    "zh-Hans": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 48.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "37da5df228b541c58544b45cd354fad8246b94e2375631026cefa9b9ae01c572",
+      "originalPixelCrop": [
+        0,
+        1222,
+        750,
+        112
+      ],
+      "cropSHA256": "c9c7cf1d307b492c2e8e9ba28ab1683e4879a22d7278902d5c403c4416c87ad0"
+    },
+    "ms": {
+      "status": "completed-native-checkpoint-before-later-test-constraint-failure",
+      "maximumNativeButtonHeightPoints": 56.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "84fa6afd8bccb8a05e80cc9ed4d4edb99aea1bd8703bfc764106d845a0dc19ba",
+      "originalPixelCrop": [
+        0,
+        1206,
+        750,
+        128
+      ],
+      "cropSHA256": "d15362f560222bd2b92bb113590144300b291c6d308f99b5646c38826b221cba"
+    },
+    "mbf": {
+      "status": "independent-case-passed",
+      "maximumNativeButtonHeightPoints": 76.0,
+      "allThreeTargetsAtLeast44Points": true,
+      "allLabelsExactLocalizedAccessibleAndHittable": true,
+      "allTargetsWithinAppAndWithoutHorizontalOverlap": true,
+      "sourceScreenshotSHA256": "7f4568cdcade8bd5670c4554b2353d7e37c269122375e18d482559c6c875f1ee",
+      "originalPixelCrop": [
+        0,
+        1166,
+        750,
+        168
+      ],
+      "cropSHA256": "1d923e0e12ee9ad116130ac5fb9a00fddf03b58de5aab9f5834e32dcec6437cb"
+    }
+  },
+  "aggregateCase": {
+    "status": "failed",
+    "nativeSeconds": 249.661,
+    "completedLocaleCheckpoints": 10,
+    "reason": "The original test incorrectly limited MBF to2lines. Its unchanged three-word action uses3whole-word lines. Failure retained, not counted as passed."
+  },
+  "mbfOnlyFollowup": {
+    "status": "passed",
+    "nativeSeconds": 24.111,
+    "wholeWordsVisuallyReviewed": [
+      "Tukar",
+      "maklumat",
+      "kitaran"
+    ],
+    "maximumButtonHeightPoints": 76,
+    "englishRestored": true,
+    "sameProcessForFollowupAndCleanup": true,
+    "sourceAppChangesAfterAggregate": false
+  },
+  "ukVisualReview": {
+    "word": "налаштування",
+    "afterTwoIntactWordLines": true,
+    "orphanLastLetterRemoved": true,
+    "beforeSourceScreenshotSHA256": "00696d9c63d085dbc125a10df236b92a6779acd9c008ff161f058dbe4ff2664d",
+    "afterSourceScreenshotSHA256": "d8b858643e8816d407e5f116d1cea449351d953c8ae01b9802e4c8dc1f6c3fb0",
+    "beforeOriginalPixelCrop": [
+      0,
+      1166,
+      750,
+      168
+    ],
+    "afterOriginalPixelCrop": [
+      0,
+      1206,
+      750,
+      128
+    ],
+    "comparison": "Original native footer pixels, no scaling/redrawing; captions are outside the UI."
+  },
+  "coldStartup": {
+    "complete": true,
+    "installedArtifactHashesMatched": true,
+    "sameProcessAtEnd": true,
+    "nativeStageOrderingPass": true,
+    "decodedFrames": 1741,
+    "mediaDurationSeconds": 40.053333,
+    "recordedHostSeconds": 40.20350625,
+    "blackFrames": 0,
+    "method": "Every source video frame, central 80% ROI, area64x64 grayscale; black when >=98% samples have luma<=18",
+    "rawMovieKeptPrivate": true
+  },
+  "boundaries": [
+    "10 completed checkpoints plus1separate passed MBF case; aggregate is not claimed passed",
+    "One preparatory empty test selection executed0tests and is not counted as a pass",
+    "No new complete route tour or normal-persistence run; one display-padding constant changed",
+    "No app erase/uninstall/deletion/cycle Save/trial/purchase/Restore actions",
+    "No physical phone install or Android runtime claim from this Simulator proof",
+    "Real VoiceOver/TalkBack speech and professional native-language review not established"
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "status": "PASS_CURRENT_SOURCE_PHYSICAL_TODAY_PANEL_AND_HOME_ICON",
+  "date": "2026-11-15",
+  "scope": "Signed private isolated QA Release, paid-active sample data; real purchase entitlement and personal cycle content are not used for this proof.",
+  "artifacts": {
+    "today": "artifact-today.json",
+    "panel": "artifact-panel.json",
+    "sourceInputsEach": 50,
+    "allSourceInputsMatchCurrentWorkingTree": true
+  },
+  "captureClock": {
+    "timestampSource": "monotonic host arrival, not device PTS",
+    "publishedPTS": "Source movie display intervals retained with one constant start offset only",
+    "nativeOrGPUClockClaimed": false,
+    "framesSynthesized": false,
+    "captureArrivalGapsAreNotAppRenderTimings": true
+  },
+  "crop": {
+    "x": 0,
+    "y": 140,
+    "width": 1126,
+    "height": 2296,
+    "reason": "Exclude OS status bar and return-to-other-app breadcrumb; no video/still rescaling. Contact thumbnails alone are uniformly reduced."
+  },
+  "today": {
+    "sourceDecodedFrames": 1495,
+    "sourceDurationSeconds": 25.845,
+    "sourcePTSStrictlyIncreasing": true,
+    "reviewedSequence": [
+      "Full-expanded approved photograph, after OS launch zoom",
+      "Existing depth choreography",
+      "Original animated V4 sphere",
+      "Actual Today with labelled mock billing and sample guidance"
+    ],
+    "window": {
+      "firstSourceFrame": 340,
+      "lastSourceFrame": 905,
+      "sourceFirstPTS": 6.493133,
+      "sourceLastPTS": 16.00155,
+      "frameCount": 566,
+      "manualReviewAcknowledged": true,
+      "cropSourcePixels": {
+        "x": 0,
+        "y": 140,
+        "width": 1126,
+        "height": 2296
+      }
+    },
+    "clip": {
+      "file": "actual-iphone-photo-to-today.mp4",
+      "sha256": "d2c923ee45cccec7cdc6d94e40b2821a82a816132d0fbec0cec198397c269092",
+      "frames": 566,
+      "durationSeconds": 9.525183,
+      "allOutputPTSStrict": true,
+      "maximumRelativePTSErrorSeconds": 1.0000000010279564e-06,
+      "constantOffsetOnly": true,
+      "videoOnly": true,
+      "metadataStripped": true
+    },
+    "flashAnalysisPublishedWindow": {
+      "method": "Every published frame,central80percent,64x64area gray;98percent<=18/30 or>=245",
+      "frames": 566,
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "contact": {
+      "file": "actual-iphone-photo-to-today-contact.png",
+      "samples": [
+        {
+          "sourceFrame": 340,
+          "sourcePTS": 6.493133
+        },
+        {
+          "sourceFrame": 427,
+          "sourcePTS": 8.001617
+        },
+        {
+          "sourceFrame": 487,
+          "sourcePTS": 9.00135
+        },
+        {
+          "sourceFrame": 547,
+          "sourcePTS": 10.0047
+        },
+        {
+          "sourceFrame": 607,
+          "sourcePTS": 11.00675
+        },
+        {
+          "sourceFrame": 637,
+          "sourcePTS": 11.5058
+        },
+        {
+          "sourceFrame": 667,
+          "sourcePTS": 12.009017
+        },
+        {
+          "sourceFrame": 785,
+          "sourcePTS": 13.99555
+        }
+      ]
+    },
+    "noPhaseFramesSkipped": true,
+    "audioRecorded": false,
+    "cameraSource": false,
+    "finishedSuccessfully": true,
+    "captureErrorCode": 0,
+    "nativeCroppedStills": [
+      {
+        "file": "actual-iphone-approved-photo.png",
+        "sourceFrame": 340,
+        "sourcePTS": 6.493133
+      },
+      {
+        "file": "actual-iphone-today.png",
+        "sourceFrame": 905,
+        "sourcePTS": 16.00155
+      }
+    ]
+  },
+  "panel": {
+    "sourceDecodedFrames": 1483,
+    "sourceDurationSeconds": 25.72,
+    "sourcePTSStrictlyIncreasing": true,
+    "shot": {
+      "file": "actual-iphone-testing-panel.png",
+      "sourceFrame": 1031,
+      "sourcePTS": 18.000333,
+      "nativeCroppedPixels": [
+        1126,
+        2296
+      ]
+    },
+    "observed": "Internal testing, visible mock-billing disclosure, private sample scenario and memory-reset disclosure",
+    "finishedSuccessfully": true,
+    "captureErrorCode": 0
+  },
+  "allDecodedFrameFlashAnalysis": {
+    "today": {
+      "decodedFrames": 1495,
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "panel": {
+      "decodedFrames": 1483,
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "method": "Every actual decoded frame; top140 native pixels excluded, central80percent of remaining frame, area-reduced64x64 gray;98percent luma<=18/30 or>=245. No frame synthesis or default CFR synchronization."
+  },
+  "home": {
+    "sourceDecodedFrames": 811,
+    "sourceDurationSeconds": 15.628333,
+    "captureFinishedSuccessfully": true,
+    "captureErrorCode": 0,
+    "sourcePTSStrictlyIncreasing": true,
+    "appIconObserved": true,
+    "selectedSourceFrame": 0,
+    "sourceDisplayPTS": 0,
+    "iconFile": "actual-iphone-home-icon-privacy-masked.png",
+    "iconProof": "icon-proof.json",
+    "comparison": "icon-master-actual-device-generated-preview.png",
+    "OSLabelMatchesActualSignedNativeInfoDisplayName": true,
+    "fullyOpaquePixels": 30473,
+    "antialiasedPartialAlphaPixels": 339,
+    "fullyTransparentPixels": 14968,
+    "opaqueRGBByteMismatchesAgainstSourcePNG": 0,
+    "transparentExteriorNonzeroRGBChannels": 0,
+    "laterPrivateUIExcludedEntirely": true,
+    "earlierFirstPageOnlyHomeAttemptExcluded": true
+  },
+  "privacy": {
+    "originalMoviesKeptPrivate": true,
+    "rawHomeOrWallpaperPublished": false,
+    "OSStatusAndOtherAppBreadcrumbExcluded": true,
+    "personalStorageKeysValuesOrDigestsPublished": false,
+    "deviceIdentifiersOrProcessIDsPublished": false
+  },
+  "limits": [
+    "Capture timings are host-arrival display PTS and cannot prove device/GPU frame cadence or exact one-second clock duration.",
+    "A 98percent luma threshold is a flash detector, not pixel-level proof of every compositing property.",
+    "Static photo frames alone do not establish native/RN/GPU surface ownership.",
+    "All visible dates/cycle/access values here are explicit isolated QA sample data.",
+    "The Do heading is visible in the contact; this package does not assert the offscreen Do body was shown without scrolling.",
+    "Personal AsyncStorage preservation is verified through the post-panel-capture snapshot, before final panel relaunch. No post-final-relaunch snapshot or Keychain hash was taken.",
+    "Current Home icon is proven by the first source frame only. A conservative inset privacy mask hides the outermost OS icon border; all later private UI, wallpaper, neighboring apps and OS-label pixels are excluded."
+  ],
+  "preservation": {
+    "file": "preservation.json",
+    "independentActualSnapshotReview": true,
+    "fourSnapshotsByteAndManifestEqual": true,
+    "filesPerSnapshot": 1,
+    "entriesPerSnapshot": 2,
+    "privateDigestRecomputationPassed": true,
+    "installedFounderPanelLeftAvailable": true,
+    "normalAppAutomaticallyRestored": false,
+    "lastSnapshotBoundary": "After panel capture, before final panel relaunch; no post-final-relaunch snapshot",
+    "keychainReadOrHashed": false
+  },
+  "applicationSourceCheckpoint": "6c8d2d70ccad3bcc6bb2e13acf236b76a923b92c",
+  "laterPresentationDelta": {
+    "file": "src/intro/AnimatedToday.tsx",
+    "change": "Footer paddingHorizontal18\u21929 only",
+    "includedInThisPhysicalCapture": false,
+    "newSignedArtifactsSourceCount": 51,
+    "physicalRefreshPendingPhoneUnlock": true,
+    "introRendererTimelineTextureOrIconAssetsChanged": false
+  }
+}
