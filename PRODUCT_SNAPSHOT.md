@@ -92,8 +92,10 @@ fertility, or mood-prediction product.
   readback is complete:517tests/54files/typecheck/lint PASS, all11 native locale assertion sequences,
   normal RU cold persistence and QA smoke verified. A measured Ukrainian footer orphan is fixed
   by one padding constant, native before/after/all11 footer checks and51-input cold1741frames/0black.
-  Its final physical spacing-only update awaits phone unlock; existing physical50-input proof
-  remains explicitly labelled. No store release or clinical/native-speaker approval is implied.
+  Final51-input physical update/capture now PASS without Metro: Today1487decoded/panel1482,
+  0black, continuous568-frame launch to Today text, four-way exact personal AsyncStorage equality.
+  Founder QA panel remains installed/relaunched; unchanged native icon catalog reuses accepted Home proof.
+  Historical50-input proof remains labelled. No store release or clinical/native-speaker approval is implied.
 - [Implementation, accepted evidence and explicit limits](docs/FINAL_UX_QA.md).
 
 ## PREVIOUS WORDMARK ICON / ISOLATED TODAY QA — 2026-11-15

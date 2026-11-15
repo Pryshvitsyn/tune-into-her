@@ -21,8 +21,9 @@ Updated: 2026-11-15 (Europe/Rome)
 - [x] Pass517tests/54files, TypeScript/lint and native horizontal/all11/persistence sequences.
 - [x] Correct measured Ukrainian footer orphan with one padding constant; verify native before/after
   and updated11locale footer checkpoints/MBF follow-up, current51-input cold1741frames/0black.
-- [ ] Update-install/record the final spacing-only artifact on iPhone after the pending unlock;
-  full pre-spacing physical startup/panel/icon/preservation proof is already accepted.
+- [x] Update-install/record final51-input spacing artifact on iPhone without Metro; Today1487/panel1482
+  decoded frames/0black,568-frame continuous public startup, exact four-way personal-storage equality;
+  leave final Founder panel installed/relaunched, retain unchanged-icon and historical proof.
 - [x] Review sanitized actual media/final diff/secrets and update report/snapshot.
 - [x] Commit final source and accepted evidence on the working feature branch; authorized feature push
   is verified in delivery. No store publication.

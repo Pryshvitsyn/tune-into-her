@@ -1,0 +1,17 @@
+{
+  "fourSnapshotByteAndManifestEquality": true,
+  "actualPrivateDigestRecomputationPassed": true,
+  "fileCountPerSnapshot": 1,
+  "manifestEntryCountPerSnapshot": 2,
+  "allCopyInstallAndFinalLaunchReceiptsSucceeded": true,
+  "allReceiptsBoundToSamePhone": true,
+  "both51InputSourceMapsMatchWorkingTree": true,
+  "bothActualEmbeddedBundleAndNativeAssetHashesMatch": true,
+  "bothDeepStrictCodesignVerificationPassed": true,
+  "bothColdLaunchCapturesCompleteWithoutMetro": true,
+  "privatePanelLeftInstalledAndRelaunched": true,
+  "lastStorageSnapshot": "after panel capture, before final panel relaunch",
+  "postFinalRelaunchSnapshotAvailable": false,
+  "keychainReadOrHashed": false,
+  "privateStorageKeysValuesDigestsOrPhoneIdentifiersPublished": false
+}

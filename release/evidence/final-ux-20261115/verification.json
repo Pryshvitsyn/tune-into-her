@@ -7,7 +7,7 @@
     "files": 54,
     "command": "npx vitest run --maxWorkers 1",
     "testTimeoutsOrHashGuardsDisabled": false,
-    "quiescentDurationSeconds": 27.13
+    "quiescentDurationSeconds": 29.79
   },
   "typecheck": "PASS",
   "lint": {
@@ -36,12 +36,20 @@
     "reason": "Android SDK/JDK absent"
   },
   "physical": {
-    "proof": "physical/proof.json",
-    "currentSourceInputsPerArtifact": 50,
+    "proof": "physical-final/proof.json",
+    "currentSourceInputsPerArtifact": 51,
     "personalAsyncStorageFourWayEquality": true,
     "keychainReadOrHashed": false,
     "privateFounderPanelLeftInstalled": true,
-    "recordingClock": "Mac host arrival, not native/GPU timing"
+    "recordingClock": "Mac host arrival, not native/GPU timing",
+    "previous50InputProof": "physical/proof.json",
+    "finalSpacingSourceCheckpoint": "4e04a30b580aa97ea8281517705a60401e4c918d",
+    "todayDecodedFrames": 1487,
+    "panelDecodedFrames": 1482,
+    "blackNearBlackWhiteFramesBothSources": 0,
+    "continuousPublishedFrames": 568,
+    "finalPanelRelaunchExit": 0,
+    "HomeIconProof": "Reused actual capture; both final signed native catalogs identical to physically observed catalog"
   },
   "nativeSimulator": {
     "fourPhaseEducationFooterCompactCycle": "PASS216.389s",
@@ -66,7 +74,7 @@
     "MBFFollowupPassedSeconds": 24.111,
     "MBFNaturalWholeWordLines": 3,
     "UkrainianWholeWordNativeReview": true,
-    "phoneRefresh": "Pending known phone unlock; last installed artifact remains pre-spacing privateQA",
+    "phoneRefresh": "PASS:51-input signed artifacts update-installed without reset; actual Today/panel cold captures without Metro and four-way personal AsyncStorage equality; final Founder panel installed/relaunched",
     "updated517TestSuite": "PASS29.79s;54files",
     "updatedTypecheck": "PASS",
     "updatedLintErrors": 0,

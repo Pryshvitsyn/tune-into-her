@@ -40,6 +40,17 @@ localization/ms.txt
 localization/ui-keys.json
 localization/zh-Hans.txt
 release/evidence/final-ux-20261115/changed-files.txt
+release/evidence/final-ux-20261115/physical-final/README.md
+release/evidence/final-ux-20261115/physical-final/actual-iphone-approved-photo.png
+release/evidence/final-ux-20261115/physical-final/actual-iphone-photo-to-today-contact.png
+release/evidence/final-ux-20261115/physical-final/actual-iphone-photo-to-today.mp4
+release/evidence/final-ux-20261115/physical-final/actual-iphone-testing-panel.png
+release/evidence/final-ux-20261115/physical-final/actual-iphone-today.png
+release/evidence/final-ux-20261115/physical-final/artifact-panel.json
+release/evidence/final-ux-20261115/physical-final/artifact-today.json
+release/evidence/final-ux-20261115/physical-final/candidate-manifest.json
+release/evidence/final-ux-20261115/physical-final/preservation.json
+release/evidence/final-ux-20261115/physical-final/proof.json
 release/evidence/final-ux-20261115/physical/README.md
 release/evidence/final-ux-20261115/physical/actual-iphone-approved-photo.png
 release/evidence/final-ux-20261115/physical/actual-iphone-home-icon-privacy-masked.png

@@ -1,0 +1,123 @@
+{
+  "status": "PASS_FINAL_CURRENT_51_INPUT_PHYSICAL_TODAY_PANEL_PRESERVATION",
+  "date": "2026-11-15",
+  "sourceCheckpoint": "4e04a30b580aa97ea8281517705a60401e4c918d",
+  "sourceInputsPerArtifact": 51,
+  "allSourceMapsMatchWorkingTree": true,
+  "privacyScanFindings": [],
+  "PNGMetadata": [
+    {
+      "file": "actual-iphone-approved-photo.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-photo-to-today-contact.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-testing-panel.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "noTextExifOrContentCredentials": true
+    },
+    {
+      "file": "actual-iphone-today.png",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cHRM",
+        "gAMA",
+        "pHYs",
+        "sRGB"
+      ],
+      "noTextExifOrContentCredentials": true
+    }
+  ],
+  "videoOnly": true,
+  "publishedVideoRetainsAllSelectedDecodedFrames": 568,
+  "relativePTSMaximumErrorSeconds": 1.0000000019161348e-06,
+  "nativePixelsCroppedNotRescaled": [
+    0,
+    140,
+    1126,
+    2296
+  ],
+  "noNewHomeRecordingClaimed": true,
+  "previousEvidenceRetained": true,
+  "manifestExcludesItself": true,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 2750,
+      "sha256": "aa40601a727cc5c315935dac2d3585ee1966f9bf0a54459fbb54c7df9a262e27"
+    },
+    {
+      "file": "actual-iphone-approved-photo.png",
+      "bytes": 1194332,
+      "sha256": "bc23b7ad1c7f79b8efbb3a5ba9b1b590dbcd905d6eff6c4adf2427be871a3606"
+    },
+    {
+      "file": "actual-iphone-photo-to-today-contact.png",
+      "bytes": 2354932,
+      "sha256": "4c6e44c2080e0dc70ee179e19d179d2fc5bc60c86b93eb6549286b97faf0ba60"
+    },
+    {
+      "file": "actual-iphone-photo-to-today.mp4",
+      "bytes": 5360537,
+      "sha256": "6b000a3e0fb298340efa76f7e62d14ea12440eba21fb68693d51f05f4416df44"
+    },
+    {
+      "file": "actual-iphone-testing-panel.png",
+      "bytes": 831044,
+      "sha256": "104b3bdf40d1dc0a760bb005bd89edde87a27433d045fef0e1bfa90a1989f6d7"
+    },
+    {
+      "file": "actual-iphone-today.png",
+      "bytes": 1242983,
+      "sha256": "532a8b3de4d102b34e87fd6622f1285b98c155f6335b5f258a4e4f6494bc7477"
+    },
+    {
+      "file": "artifact-panel.json",
+      "bytes": 7577,
+      "sha256": "06bba1a970ab59aebeeaf44afdb1dc58395052dcd7785528c753534c5f2eb241"
+    },
+    {
+      "file": "artifact-today.json",
+      "bytes": 7577,
+      "sha256": "3df95bdce6db8514723e6669fbbd6debd838979e78adc27b936fffe466909c4f"
+    },
+    {
+      "file": "preservation.json",
+      "bytes": 757,
+      "sha256": "d9c7f681e1a85274b141e56fa5514aa7aa94630c77acc89413c022da3fa17b99"
+    },
+    {
+      "file": "proof.json",
+      "bytes": 6966,
+      "sha256": "81a7474af5673ccb4ad3a44de00622c56e39aaf8e72a936b7da8334b66bb9677"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 Date: 2026-11-15. Branch: `codex/monetization-20261113`.
 Checkpoint: `codex/checkpoint-ui-final-pass-20261115` → `3eff34d`.
 Implementation checkpoint: `6c8d2d70ccad3bcc6bb2e13acf236b76a923b92c`.
+Final spacing-corrected source checkpoint: `4e04a30b580aa97ea8281517705a60401e4c918d`; final iPhone update/capture accepted below.
 The latest Founder brief supersedes the earlier wordmark-in-icon and automatic-normal-restore requirements.
 No uninstall, reset, backend/billing setup, store publication or merge is part of this pass.
 
@@ -69,7 +70,7 @@ Endonyms in language selection and institutional/product names are intentional.
 - Current normal/private iOS Release bundles are source-identified, graph-verified and signed.
   Native executable excluding signature, frameworks, profile and non-icon Info values remain
   exact. Native assets were compiled; this does not claim a full Swift rebuild or store upload.
-- Physical final current-source Today25.845s and panel25.72s plus separate Home recording PASS
+- Physical final51-input Today25.670s and panel25.368333s plus the unchanged-catalog Home-icon proof PASS
   without Metro. All before/after personal AsyncStorage snapshots equal; final panel update
   and launch succeed, and the Founder private test artifact remains installed.
 - Native SE375×667 test passes all4 phase pages/16 paragraphs/sources, fixed accessible arrow/
@@ -96,13 +97,13 @@ clinical content review and real reader speech remain separate from schema/devic
 The internal build's test preferences/history are memory-only and reset on cold launch;
 normal saved-language persistence is a separate check. Personal Keychain is not read/hashed.
 
-## Actual iPhone media
+## Actual final iPhone media
 
-[Photo → all existing depth stages → V4 → actual Today video](../release/evidence/final-ux-20261115/physical/actual-iphone-photo-to-today.mp4)
+[Photo → all existing depth stages → V4 → actual Today video](../release/evidence/final-ux-20261115/physical-final/actual-iphone-photo-to-today.mp4)
 
-![Actual recorded iPhone launch stages](../release/evidence/final-ux-20261115/physical/actual-iphone-photo-to-today-contact.png)
+![Actual recorded iPhone launch stages](../release/evidence/final-ux-20261115/physical-final/actual-iphone-photo-to-today-contact.png)
 
-![Actual current private testing panel](../release/evidence/final-ux-20261115/physical/actual-iphone-testing-panel.png)
+![Actual current private testing panel](../release/evidence/final-ux-20261115/physical-final/actual-iphone-testing-panel.png)
 
 ![Master, actual masked iPhone icon, generated preview](../release/evidence/final-ux-20261115/physical/icon-master-actual-device-generated-preview.png)
 
@@ -114,14 +115,14 @@ alpha edge pixels are recorded separately. No equality with the1024master pixels
 The icon master/store/mask previews remain [here](../assets/icons/previews/platform-preview-sheet.png),
 with the full [1024master](../assets/icon.png) and separate [512Play export](../assets/icons/play-store-512.png).
 
-The physical sequence publishes566/566 consecutive selected frames with their host-arrival
+The final physical sequence publishes568/568 consecutive selected frames with their host-arrival
 intervals unchanged (one constant start offset, maximum rounding error1µs). It excludes OS
 zoom/prelude, crops only the top140system pixels, and retains native1126×2296app pixels.
 Actual Today text is visible; the offscreen DO body is not claimed as visible. The entire
-1495-frame Today and1483-frame panel sources each passed the defined luma flash check.
-[Frame/source/privacy metadata](../release/evidence/final-ux-20261115/physical/proof.json),
+1487-frame Today and1482-frame panel sources each passed the defined luma flash check.
+[Frame/source/privacy metadata](../release/evidence/final-ux-20261115/physical-final/proof.json),
 [actual icon proof](../release/evidence/final-ux-20261115/physical/icon-proof.json) and
-[precise preservation scope](../release/evidence/final-ux-20261115/physical/preservation.json)
+[precise preservation scope](../release/evidence/final-ux-20261115/physical-final/preservation.json)
 distinguish observation from inference. No raw phone movie, personal digest or identifier is published.
 
 ## Final localized-footer correction
@@ -159,15 +160,26 @@ and [footer verification](../release/evidence/final-ux-20261115/simulator/footer
 Failed driver attempts/zero-test selections are not relabelled as passes. Raw logs/result
 bundles/identifiers remain private; only reviewed synthetic UI and bounded clips are copied.
 
-## Last physical update boundary
+## Final physical update completed
 
-The complete physical startup/QA/icon/data proof above is the accepted implementation
-checkpoint before the final ONE-constant footer-spacing correction. Its source50 map is
-accurate for that artifact; the correction’s new artifacts bind51 inputs including the
-wrapper. At this report checkpoint the phone is locked, so the spacing update/fresh physical
-recording is pending the requested unlock. The already installed private test build remains
-usable with the panel and the rings-only icon; real personal data remains preserved. No claim
-of installing the51-input footer artifact is made until the update receipt/capture is present.
+Both final signed artifacts bind51 inputs, including `AnimatedToday.tsx`, to checkpoint
+`4e04a30`. Actual embedded bundles, Assets.car hashes and strict signatures match their
+records. Both update-install receipts succeed without uninstall/reset; both cold captures
+have Metro ports closed. The retained historical50-input implementation proof is available
+[separately](../release/evidence/final-ux-20261115/physical/README.md).
+
+The final continuous video starts at the fully expanded approved photograph after OS zoom,
+retains source frames581–1148 /PTS10.500183–20.008500s, and reaches actual Today text.
+Its9.525667s duration includes the existing depth travel, V4 and content fade; no selected
+frame is dropped or retimed. Source intervals use host arrival, not native/GPU timing.
+Four independently rehashed personal AsyncStorage snapshots match exact bytes and parsed
+manifests (one file/two entries each). The last snapshot is after panel capture, before
+final panel relaunch. Keychain and post-relaunch storage were not inspected.
+
+The private Founder panel remains installed and final relaunch exits0. The real Home-icon
+capture is reused only because both final native catalogs are identical to that observed
+catalog; no new Home recording is claimed. All public media excludes private prelude,
+status/return-app information and personal storage or device identifiers.
 
 ## Changed files
 

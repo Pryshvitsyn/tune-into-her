@@ -1,0 +1,206 @@
+{
+  "status": "PASS_FINAL_51_INPUT_PHYSICAL_TODAY_PANEL_AND_DATA_PRESERVATION",
+  "date": "2026-11-15",
+  "sourceCheckpoint": "4e04a30b580aa97ea8281517705a60401e4c918d",
+  "scope": "Signed isolated private QA Release with existing paid-active sample fixture, without Metro. No actual paid transaction or personal-cycle content used.",
+  "artifacts": {
+    "today": "artifact-today.json",
+    "panel": "artifact-panel.json",
+    "sourceInputsEach": 51,
+    "allSourceInputsMatchCheckpointAndWorkingTree": true,
+    "bothActualBundleAndAssetsHashesRecomputed": true,
+    "deepStrictCodesignVerified": true
+  },
+  "captureClock": {
+    "timestampSource": "monotonic Mac host arrival, not device PTS or native/GPU animation clock",
+    "constantStartOffsetOnly": true,
+    "framesSynthesized": false,
+    "nativeGPUCadenceClaimed": false
+  },
+  "crop": {
+    "x": 0,
+    "y": 140,
+    "width": 1126,
+    "height": 2296
+  },
+  "today": {
+    "sourceDecodedFrames": 1487,
+    "sourceDurationSeconds": 25.67,
+    "sourcePTSStrictlyIncreasing": true,
+    "window": {
+      "firstSourceFrame": 581,
+      "lastSourceFrame": 1148,
+      "sourceFirstPTS": 10.500183,
+      "sourceLastPTS": 20.0085,
+      "frameCount": 568,
+      "manualReviewAcknowledged": true,
+      "cropSourcePixels": {
+        "x": 0,
+        "y": 140,
+        "width": 1126,
+        "height": 2296
+      }
+    },
+    "clip": {
+      "file": "actual-iphone-photo-to-today.mp4",
+      "sha256": "6b000a3e0fb298340efa76f7e62d14ea12440eba21fb68693d51f05f4416df44",
+      "frames": 568,
+      "durationSeconds": 9.525667,
+      "allOutputPTSStrict": true,
+      "maximumRelativePTSErrorSeconds": 1.0000000019161348e-06,
+      "constantOffsetOnly": true,
+      "videoOnly": true,
+      "metadataStripped": true
+    },
+    "flashAnalysisPublishedWindow": {
+      "method": "Every published frame,central80percent,64x64area gray;98percent<=18/30 or>=245",
+      "frames": 568,
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "contact": {
+      "file": "actual-iphone-photo-to-today-contact.png",
+      "samples": [
+        {
+          "sourceFrame": 581,
+          "sourcePTS": 10.500183
+        },
+        {
+          "sourceFrame": 611,
+          "sourcePTS": 11.002867
+        },
+        {
+          "sourceFrame": 640,
+          "sourcePTS": 11.491767
+        },
+        {
+          "sourceFrame": 670,
+          "sourcePTS": 12.007883
+        },
+        {
+          "sourceFrame": 700,
+          "sourcePTS": 12.51235
+        },
+        {
+          "sourceFrame": 729,
+          "sourcePTS": 12.9939
+        },
+        {
+          "sourceFrame": 759,
+          "sourcePTS": 13.49495
+        },
+        {
+          "sourceFrame": 789,
+          "sourcePTS": 13.997167
+        },
+        {
+          "sourceFrame": 819,
+          "sourcePTS": 14.4975
+        },
+        {
+          "sourceFrame": 849,
+          "sourcePTS": 14.9946
+        },
+        {
+          "sourceFrame": 909,
+          "sourcePTS": 16.0023
+        },
+        {
+          "sourceFrame": 1148,
+          "sourcePTS": 20.0085
+        }
+      ]
+    },
+    "observedSequence": [
+      "Fully expanded approved photograph, after private prelude and OS launch zoom",
+      "Continuous original depth travel",
+      "Original animated V4 sphere",
+      "Fade into actual Today with sample guidance and explicit mock-billing disclosure"
+    ],
+    "selectedFramesOmitted": 0,
+    "captureFinishedSuccessfully": true,
+    "captureErrorCode": 0,
+    "MetroPortsClosed": true,
+    "nativeCroppedStills": [
+      {
+        "file": "actual-iphone-approved-photo.png",
+        "sourceFrame": 581,
+        "sourcePTS": 10.500183
+      },
+      {
+        "file": "actual-iphone-today.png",
+        "sourceFrame": 1148,
+        "sourcePTS": 20.0085
+      }
+    ]
+  },
+  "panel": {
+    "sourceDecodedFrames": 1482,
+    "sourceDurationSeconds": 25.368333,
+    "sourcePTSStrictlyIncreasing": true,
+    "shot": {
+      "file": "actual-iphone-testing-panel.png",
+      "sourceFrame": 1040,
+      "sourcePTS": 17.884967
+    },
+    "observed": "Internal testing, explicit mock-billing/sample-data disclosure, existing scenario entry and memory-reset disclosure",
+    "captureFinishedSuccessfully": true,
+    "captureErrorCode": 0,
+    "MetroPortsClosed": true
+  },
+  "allDecodedFrameFlashAnalysis": {
+    "today": {
+      "decodedFrames": 1487,
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "panel": {
+      "decodedFrames": 1482,
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "method": "Every actual decoded frame; top140 native pixels excluded, central80percent of remaining frame area-reduced64x64 gray;98percent luma<=18/30 or>=245; passthrough, no frame synthesis."
+  },
+  "preservation": {
+    "proof": "preservation.json",
+    "fourSnapshotByteAndManifestEquality": true,
+    "actualPrivateDigestRecomputationPassed": true,
+    "fileCountPerSnapshot": 1,
+    "manifestEntryCountPerSnapshot": 2,
+    "allCopyInstallAndFinalLaunchReceiptsSucceeded": true,
+    "allReceiptsBoundToSamePhone": true,
+    "both51InputSourceMapsMatchWorkingTree": true,
+    "bothActualEmbeddedBundleAndNativeAssetHashesMatch": true,
+    "bothDeepStrictCodesignVerificationPassed": true,
+    "bothColdLaunchCapturesCompleteWithoutMetro": true,
+    "privatePanelLeftInstalledAndRelaunched": true,
+    "lastStorageSnapshot": "after panel capture, before final panel relaunch",
+    "postFinalRelaunchSnapshotAvailable": false,
+    "keychainReadOrHashed": false,
+    "privateStorageKeysValuesDigestsOrPhoneIdentifiersPublished": false
+  },
+  "unchangedHomeIconEvidence": {
+    "file": "../physical/icon-proof.json",
+    "comparison": "../physical/icon-master-actual-device-generated-preview.png",
+    "previousActualCaptureReused": true,
+    "newHomeCaptureClaimed": false,
+    "bothFinalArtifactsAssetsCarEqualPreviousPhysicallyObservedCatalog": true,
+    "nativeAssetsCarSHA256": "c32aeefeeaffaa78de43a37e0a9c1f63a756fbede64fd47fad887e290798f2ed"
+  },
+  "privacy": {
+    "sourceMoviesAndPrivatePreludeExcluded": true,
+    "OSStatusAndOtherAppBreadcrumbExcluded": true,
+    "personalStorageKeysValuesDigestsAndPhoneIdentifiersPublished": false,
+    "cameraOrAudioCaptured": false
+  },
+  "limits": [
+    "Host-arrival capture intervals cannot establish native/GPU timing or exact one-second hold duration. Protected timeline/renderer inputs are unchanged and regression-tested.",
+    "All visible cycle/access/date values are isolated QA sample data. The offscreen Do body is not asserted visible in this unscrolled capture.",
+    "Luma thresholds detect flashes rather than proving every pixel/compositing property.",
+    "Personal AsyncStorage equality ends after panel capture, before final panel relaunch. No post-relaunch snapshot or Keychain read/hash.",
+    "This is the final spacing-only iPhone update. Android native runtime and real screen-reader speech remain outside verified equipment coverage."
+  ]
+}
