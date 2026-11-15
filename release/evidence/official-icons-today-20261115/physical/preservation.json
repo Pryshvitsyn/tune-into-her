@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "kind": "Independent read-only data preservation and normal Release restoration verification",
+  "result": "PASS",
+  "checks": {
+    "allCopiedStorageFilesMatchPrivateSnapshots": true,
+    "exactStorageFileHashMapsEqualBeforeAfterQAAfterNormalInstall": true,
+    "exactParsedPersonalManifestMapsEqualBeforeAfterQAAfterNormalInstall": true,
+    "allThreeReadOnlyCopyReceiptsSucceeded": true,
+    "QAInstallReceiptSucceeded": true,
+    "normalInstallReceiptSucceeded": true,
+    "normalLaunchReceiptSucceeded": true,
+    "bothInstallReceiptsUseOfficialBundleIdentifier": true,
+    "QAInstallReceiptNamesAcceptedQAArtifact": true,
+    "normalInstallReceiptNamesAcceptedNormalArtifact": true,
+    "allCopyInstallLaunchReceiptsReferenceSameDevice": true,
+    "QAAndNormalOfficialAssetsCarByteIdentical": true,
+    "assetsCarMatchBothAcceptedArtifacts": true,
+    "acceptedNativeAndEmbeddedJSArtifactsMatchCurrentFiles": true,
+    "allCurrentAppSourceFilesMatchBothAcceptedArtifacts": true,
+    "pipelineQAJSDigestMatchesAcceptedQAArtifact": true,
+    "pipelineNormalJSDigestMatchesAcceptedNormalArtifact": true,
+    "normalArtifactIsNotIsolatedQA": true,
+    "normalEmbeddedBundleHasNoStandaloneQAMarker": true,
+    "QAEmbeddedBundleHasStandaloneQAMarker": true,
+    "normalRestoreReportedSuccessful": true,
+    "normalLaunchCommandSucceeded": true,
+    "noUninstallOrDataResetReported": true
+  },
+  "counts": {
+    "storageFilesBeforeQA": 1,
+    "storageFilesAfterQA": 1,
+    "storageFilesAfterNormalInstall": 1,
+    "personalManifestEntriesBeforeQA": 2,
+    "personalManifestEntriesAfterQA": 2,
+    "personalManifestEntriesAfterNormalInstall": 2,
+    "copyReceiptsVerified": 3,
+    "installReceiptsVerified": 2,
+    "launchReceiptsVerified": 1,
+    "acceptedArtifactSourceRecordsCompared": 34
+  },
+  "privacy": {
+    "personalKeysPublished": false,
+    "personalValuesPublished": false,
+    "personalDataHashesPublished": false,
+    "deviceIdentifiersPublished": false,
+    "rawReceiptsOrSnapshotsPublished": false,
+    "keychainReadOrHashed": false
+  },
+  "boundaries": {
+    "comparisonEndsAfterNormalInstall": true,
+    "postNormalLaunchStorageSnapshotTaken": false,
+    "normalLaunchSuccessIsSeparateFromStorageComparison": true,
+    "mediaSuccessInferredFromPreservationFlag": false,
+    "physicalTouchVerificationClaimed": false,
+    "noSourceDeviceBuildOrSettingsActionsByAuditor": true
+  },
+  "notes": [
+    "All three private copied AsyncStorage directories were independently rehashed and compared exactly, and their parsed personal manifest maps were compared in memory. Only counts and booleans are published; no keys, values or personal-data digests.",
+    "Storage equality is before QA, after QA, and after normal INSTALL. It is not a post-normal-launch storage snapshot. The successful normal launch receipt is a separate check.",
+    "Keychain was neither read nor hashed. No Keychain-preservation hash claim is made.",
+    "Accepted QA and normal signed files/source records, install arguments and official identifiers were checked privately. The same official native icon Assets.car is present in both artifacts; the normal embedded JS lacks the standalone QA marker.",
+    "Capture duration/format/error and visual/touch claims are separate media evidence and are not inferred from a pipeline complete flag."
+  ]
+}

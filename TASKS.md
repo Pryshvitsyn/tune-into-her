@@ -11,9 +11,10 @@ Updated: 2026-11-15 (Europe/Rome)
 - [x] Reuse existing memory-only QA services before app mount; preserve normal subscription guards.
 - [x] Reject incorrect alias graph, verify corrected standalone bundle, record actual Simulator Today.
 - [x] Pass442tests/typecheck/lint, native full-text/scroll/modal/Settings/Home interaction case.
-- [ ] Install on connected/unlocked iPhone; record full intro to Today text and actual Home icon.
-- [ ] Verify private before/after personal-storage hashes and restore normal Release after physical QA.
-- [x] Review source/proof/privacy and commit/push the completed source/Simulator checkpoint; physical steps remain open. No store publication.
+- [x] Update-install isolated QA on iPhone; record full cold intro to actual Today text without Metro,
+ plus actual silver Home icon with private wallpaper removed from published evidence.
+- [x] Verify exact three-way personal AsyncStorage equality and restore/launch normal Release.
+- [x] Review source/proof/privacy and commit/push the completed source plus physical verification. No store publication.
 
 ## PREVIOUS — completed-sphere one-second ending (2026-11-15)
 

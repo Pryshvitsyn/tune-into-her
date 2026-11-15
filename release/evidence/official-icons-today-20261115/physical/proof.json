@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "status": "PASS actual iPhone standalone QA Today and actual privacy-redacted Home icon",
+  "scope": "Private memory-only paid-active QA scenario, not real entitlement or normal production access",
+  "mainSource": {
+    "sha256": "c1f06402f697b52fabb8291ca12e0aa1e7ec8266b9ae56285a546d7089cd8f01",
+    "durationSeconds": 25.09675,
+    "videoPixels": [
+      1126,
+      2436
+    ],
+    "errorCode": 0,
+    "finishedSuccessfully": true,
+    "decodedFrames": 1498,
+    "allPresentationTimestampsStrictlyIncreasing": true
+  },
+  "artifact": {
+    "file": "artifact.json",
+    "sha256": "6b12df18bcfa675028beba9b50b339bc155b979e69258c0c9a4d66dc137eb9f4",
+    "currentSourceHashesMatch": true,
+    "actualQABundleJavaScriptHashVerified": true,
+    "developmentJavaScript": false,
+    "qaAliasGraphVerified": true
+  },
+  "acceptedClip": {
+    "file": "actual-iphone-cold-photo-to-qa-today.mp4",
+    "sha256": "558ac09e7b8e0e330952ae853f588de828252bdbc2cd1a8e94ded8bf8eae7477",
+    "sourceStartFrame": 88,
+    "sourceEndFrame": 1313,
+    "sourceStartPTS": 1.503917,
+    "sourceEndPTS": 22.005633,
+    "decodedFrames": 1226,
+    "allOutputPTSStrictlyIncreasing": true,
+    "maximumRelativePTSDeviationSeconds": 1.00000000458067e-06,
+    "timestampOperation": "Constant start offset only, all selected frames and original variable presentation intervals retained",
+    "exclusions": "Preflight sphere, OS launch zoom/private backdrop and late tail"
+  },
+  "acceptedClipFlashCheck": {
+    "region": "central80percent",
+    "areaGrid": [
+      64,
+      64
+    ],
+    "threshold": "At least98percent samples<=18 black,<=30 near-black,>=245 white",
+    "decodedFrames": 1226,
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0
+  },
+  "contact": {
+    "file": "actual-iphone-photo-depth-v4-today-contact.png",
+    "sha256": "9d95b456766c3aa1efb14f86f8b84cb4f039c839022abf593bf5a57a3368ce6f",
+    "processing": "Uniformly reduced actual original frames; labels are original movie PTS/decoded frame indices",
+    "samples": [
+      {
+        "sourceDecodedFrame": 88,
+        "moviePTSSeconds": 1.503917,
+        "description": "Fully expanded approved photograph after OS zoom"
+      },
+      {
+        "sourceDecodedFrame": 200,
+        "moviePTSSeconds": 3.392167,
+        "description": "Metallic depth travel"
+      },
+      {
+        "sourceDecodedFrame": 272,
+        "moviePTSSeconds": 4.59515,
+        "description": "Inward travel"
+      },
+      {
+        "sourceDecodedFrame": 368,
+        "moviePTSSeconds": 6.199283,
+        "description": "Original V4 sphere sample"
+      },
+      {
+        "sourceDecodedFrame": 428,
+        "moviePTSSeconds": 7.20185,
+        "description": "Intro sphere fading as Today appears"
+      },
+      {
+        "sourceDecodedFrame": 446,
+        "moviePTSSeconds": 7.502633,
+        "description": "Actual Today text visible"
+      },
+      {
+        "sourceDecodedFrame": 505,
+        "moviePTSSeconds": 8.50505,
+        "description": "Today with QA disclosure and guidance"
+      },
+      {
+        "sourceDecodedFrame": 1163,
+        "moviePTSSeconds": 19.499317,
+        "description": "Recorded scroll position with all three guidance bodies"
+      }
+    ]
+  },
+  "visualObservations": {
+    "oneColdPhotoDepthV4Intro": true,
+    "actualTodayDAY7": true,
+    "DEVELOPMENT_MOCK_BILLING": true,
+    "KEEP_IN_MIND_SUPPORT_DOAndGuidanceBodiesRecorded": true,
+    "recordedScrollPositions": true,
+    "inputActorOrSpecificTapNotInferred": true,
+    "noDevLauncherQAPanelOrLockedReplacementInAcceptedWindow": true,
+    "exactNativeHoldTimingNotRefit": true
+  },
+  "homeIcon": {
+    "file": "actual-iphone-icon-privacy-masked.png",
+    "sha256": "c4757577f3c8695830c9faa6d6acf4f99ccdee6db0214973fd54114500b0a865",
+    "sourceMovieSHA256": "ce6cc0cdee0d0032dd1d64d40bb42d6eaf5a52ff66f9fc19f2664af3673ca8de",
+    "sourceDurationSeconds": 15.307933,
+    "sourceVideoPixels": [
+      1126,
+      2436
+    ],
+    "sourceErrorCode": 0,
+    "sourceFinishedSuccessfully": true,
+    "sourceDecodedFrame": 116,
+    "moviePTSSeconds": 2.005133,
+    "originalSourceFrameSHA256": "1c9f61af8db0612454d1f895ea3c88980b53f6d3131354484c6a8637a8c1be83",
+    "cropSourcePixels": {
+      "left": 60,
+      "top": 456,
+      "width": 210,
+      "height": 218
+    },
+    "privacyMaskWithinCrop": {
+      "type": "conservative rounded rectangle inside observed opaque OS icon",
+      "left": 12,
+      "top": 13,
+      "width": 185,
+      "height": 185,
+      "cornerRadius": 48
+    },
+    "redaction": "Only actual icon pixels; wallpaper, neighboring apps, outer-corner fragments and OS label removed. No resampling/redrawing/recoloring; outside alpha/RGB zero. Not a raw Home Screen crop or unchanged OS-outline proof.",
+    "retainedOpaquePixels": 32031,
+    "retainedOpaqueRGBDifferencesFromSource": 0,
+    "hiddenExteriorRGBPixels": 0
+  },
+  "preservation": {
+    "file": "preservation.json",
+    "scope": "Exact personal AsyncStorage map/file equality beforeQA/afterQA/afterNormalINSTALL, not post-normal-launch snapshot; Keychain was not read/hashed. No personal keys/values/digests public."
+  },
+  "privacy": "Only synthetic QA app content and masked official icon pixels published. Raw movies/Home/wallpaper/prelude/tails, identifiers, logs and storage copies remain private. Media review did not read personal storage snapshots.",
+  "limits": [
+    "No real paid entitlement, store transaction, Android runtime, physical screen-reader speech or Founder visual approval inferred.",
+    "Recorded scrolling/content is observed; no physical XCTest/tap automation or exact input actor claimed.",
+    "Interrupted landscape/short recordings are rejected separately, not accepted proof."
+  ]
+}

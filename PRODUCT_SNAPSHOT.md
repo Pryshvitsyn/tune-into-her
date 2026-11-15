@@ -83,10 +83,14 @@ checks PASS. Corrected Simulator cold video reaches real authored Today with QA 
 full three-part text, scrolling, modal, Settings and Home native test PASS52.479s.
 - Actual Simulator SpringBoard photo icon and generated store/small/round previews supplied.
 Android20density/2XML generation verified; native Android build/runtime still lacks SDK/JDK.
-- Physical new-icon/Today QA awaits a wired/unlocked iPhone. The180s wait changed no phone
-installation. Prepared flow privately hashes data, tests memory access, restores normal app;
-no physical data-preservation/installed-new-icon success is claimed before execution.
-- [Current files, actual proof and remaining physical step](docs/OFFICIAL_ICONS_TODAY_QA.md).
+- Physical standalone QA now PASS without Metro:25.09675s/1498frames, one full intro to actual
+Today DAY7 with mock disclosure and recorded KEEP/SUPPORT/DO positions. Separate15.308sHome
+source shows the new silver icon; public cutout masks private wallpaper/label surroundings.
+- Exact AsyncStorage file/manifest equality at beforeQA/afterQA/afterNormalINSTALL; normal
+Release restored/launched0, same icon Assets.car, no QA marker. Keychain not read/hashed.
+Initial short landscape MediaChanged capture is rejected; only the successful portrait
+recording is evidence. App/subscription/intro source unchanged from315d2eb.
+- [Current files, actual physical proof and preservation checks](docs/OFFICIAL_ICONS_TODAY_QA.md).
 
 ## PREVIOUS VISIBLE-ASSEMBLY ENDING — 2026-11-15
 

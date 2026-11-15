@@ -3,8 +3,9 @@
 The official icon now comes from the exact Founder-approved photograph. The separate
 standalone diagnostic bundle reaches the real Today screen with actual authored guidance
 through the existing full intro, without changing normal subscription or trial logic.
-Physical iPhone installation/recording awaits an available wired, unlocked phone; current
-accepted runtime proof is explicitly Simulator-only.
+The signed standalone test has now also run on the physical iPhone without Metro; the
+normal Release with the new icon is restored. Personal AsyncStorage was verified unchanged
+before QA, after QA and after normal installation. Physical proof is separate from Simulator proof.
 
 ## One photographic icon source
 
@@ -105,18 +106,41 @@ production behavior. [Reproduction and fail-closed checks](../tests/native-launc
 
 ## Physical verification and data preservation
 
-Normal and corrected isolated iphoneos candidates are signed and ready with actual new
-native icon resources. The bounded180s wait saw no wired unlocked phone and performed
-**no installation**. A combined cable/unlock/Home-page request is pending. Therefore the
-new physical Today video, installed physical Home icon and final normal restoration are
-not claimed yet; earlier locked-entry iPhone videos cannot substitute for this test.
+Normal and corrected isolated iphoneos artifacts were update-installed on the existing
+phone with its official identifier/profile, without uninstall/reset or changing ordinary
+subscription logic. After a portrait preflight, a new genuine cold launch was recorded
+without Metro:25.09675s,1498decoded frames, portrait1126×2436,error0 and strictly increasing
+source PTS. The reviewed app-only sequence preserves1226/1226selected frames with their original
+intervals,0black/nearblack/white flashes, and contains one exact photo/depth/original-V4 intro,
+then actual Today DAY7 with the red mock disclosure and KEEP IN MIND. Later recorded scroll
+positions also expose SUPPORT and DO. These are observed UI/content states; no unrecorded
+physical tap actor or exact touch-ready timestamp is invented.
 
-The prepared phone sequence first stops only the verified target app and privately copies
-its existing AsyncStorage directory. It update-installs the separate memory-only QA app,
-records the full cold intro/Today, then terminates only the receipt-verified QA process to
-capture the Home icon. Before/after private file hashes must match. A finally block restores
-the retained normal signed Release even if the QA install/capture fails. No uninstall/reset,
-real subscription write, personal cycle edit, clock/theme/language change or notification
-schedule is part of the test. Raw storage/IDs/recording prelude/Home wallpaper/tails stay
-outside Git. Data-preservation success and restored runtime will be recorded only after
-these actual actions succeed.
+A separate15.307933s portrait Home source,error0, shows the actual newly installed silver
+icon and full OS label at source frame116/2.005133s. The private wallpaper contains personal
+photos; only the actual icon pixels are published in a labelled privacy-masked cutout.
+The OS-label/wallpaper/neighbors and original full Home recording remain private. This
+redacted icon evidence is distinguished from an unmodified full Home screenshot and from
+the generated store/mask previews. QA and restored normal use byte-identical Assets.car.
+
+The first attempted video stopped at0.95235s with AVFoundation MediaChanged(-11809) when
+the source changed from landscape during launch. It is **rejected**, even though the SDK
+reported finishedSuccessfully. The host recorder procedure was corrected: portrait preflight,
+errorCode0, portrait dimensions and a≥15s media-duration gate; Home is recorded separately
+after the app movie is closed. No app, shader, subscription, geometry or timeline edit was
+needed. Earlier failed attempts remain private diagnostics, not accepted startup proof.
+
+[Actual physical video, frames and icon](../release/evidence/official-icons-today-20261115/physical/README.md)
+and [independent data-preservation proof](../release/evidence/official-icons-today-20261115/physical/preservation.json)
+record the successful test. One actual AsyncStorage file/two entries was compared three
+ways, using both file hashes and manifest-object equality. No keys, values or personal
+hashes are published. The final comparison is after normal **installation**, before its
+subsequent successful normal launch; a post-launch snapshot is not claimed. Keychain was
+not read or hashed. Existing official identity/profile stayed unchanged and no deletion
+or real subscription/cycle/preference write was part of QA.
+
+The normal signed Release was restored automatically, contains no standalone marker,
+and its launch returned0. The synthetic session is gone with its process; ordinary access
+checks and saved data are authoritative again. The actual phone is no longer needed for
+this completed recording. Android native SDK/emulator, real store transactions and spoken
+screen-reader acceptance remain separate unverified boundaries; no store upload occurred.

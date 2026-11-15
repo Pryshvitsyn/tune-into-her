@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "result": "PASS",
+  "baselineCommit": "315d2eb2b485b643e9ecb3214debdb5f9a2303ac",
+  "scope": "Independent frozen physical follow-up media/source/artifact/privacy audit; host portrait-recorder fix only, no app edits",
+  "findings": [],
+  "candidateFiles": [
+    {
+      "path": "PRODUCT_SNAPSHOT.md",
+      "bytes": 27097,
+      "sha256": "ddfd813877ab78a3a35c0dc6b545bc60ee8969f263f40b75f8b714f318e0a54e"
+    },
+    {
+      "path": "TASKS.md",
+      "bytes": 21357,
+      "sha256": "5ef046a9fcd43d777a07500aeac6cc5fcf9347204e65e220c45a0ac533aa44ab"
+    },
+    {
+      "path": "docs/OFFICIAL_ICONS_TODAY_QA.md",
+      "bytes": 10648,
+      "sha256": "a14047b54676c7b6664430bc1e2f12a877cf22e3a17eca4dfabb71d71515830a"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/checks.json",
+      "bytes": 5106,
+      "sha256": "60935076b7f094179cd930ce96fda967ad1f2f047f6035958a75cb0638786fd3"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/README.md",
+      "bytes": 3876,
+      "sha256": "b10b418d8cde060b7988ff144819ddbb4d655bad9f52f1a48370d408793f23da"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/actual-iphone-cold-photo-to-qa-today.mp4",
+      "bytes": 10439158,
+      "sha256": "558ac09e7b8e0e330952ae853f588de828252bdbc2cd1a8e94ded8bf8eae7477"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/actual-iphone-icon-privacy-masked.png",
+      "bytes": 57327,
+      "sha256": "c4757577f3c8695830c9faa6d6acf4f99ccdee6db0214973fd54114500b0a865"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/actual-iphone-photo-depth-v4-today-contact.png",
+      "bytes": 1155668,
+      "sha256": "9d95b456766c3aa1efb14f86f8b84cb4f039c839022abf593bf5a57a3368ce6f"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/artifact.json",
+      "bytes": 4143,
+      "sha256": "6b12df18bcfa675028beba9b50b339bc155b979e69258c0c9a4d66dc137eb9f4"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/preservation.json",
+      "bytes": 3358,
+      "sha256": "8f3c85c0a2d148071b36768088a9b38ac0daa49e77c1a1bc9f4ef4aaea383da5"
+    },
+    {
+      "path": "release/evidence/official-icons-today-20261115/physical/proof.json",
+      "bytes": 5754,
+      "sha256": "0b230f38cae5fae6ddd878ef4a1ed55303ac3af72d85e256a9b6aa50c1188390"
+    },
+    {
+      "path": "tests/native-launch/STANDALONE_QA.md",
+      "bytes": 6363,
+      "sha256": "f80839ff08031c02d51c481cf87f6e70f66ee94f4f0beb5cfb3a1a0b44092fa5"
+    }
+  ],
+  "candidateCountExcludingSelf": 12,
+  "candidatePathSHA256SizeListDigest": "b366eb1b9a244e4c4d261621d493d62c2c1c4a9567971f750cbca57aa9b26aa4",
+  "selfExcludedFromOwnHashManifest": true,
+  "selfHashDeliveredSeparatelyToRoot": true,
+  "unchangedProduction": {
+    "trackedProductionAndToolingFilesByteIdentical": 248,
+    "allRuntimeIconConfigBillingCycleFontLocaleAndV4InputsUnchanged": true,
+    "normalAndQAArtifactCurrentSourceMatches": true,
+    "noApplicationOrSDKChangesForRecorderFix": true
+  },
+  "acceptedPhysicalVideo": {
+    "sourceSHA256": "c1f06402f697b52fabb8291ca12e0aa1e7ec8266b9ae56285a546d7089cd8f01",
+    "sourceDurationSeconds": 25.09675,
+    "sourceDecodedFrames": 1498,
+    "sourcePTSStrictlyIncreasing": true,
+    "publishedSHA256": "558ac09e7b8e0e330952ae853f588de828252bdbc2cd1a8e94ded8bf8eae7477",
+    "sourceFrameRangeInclusive": [
+      88,
+      1313
+    ],
+    "sourcePTSSeconds": [
+      1.503917,
+      22.005633
+    ],
+    "publishedFramesRetained": 1226,
+    "maximumRelativePTSDeviationSeconds": 1.00000000458067e-06,
+    "strictOutputPTS": true,
+    "constantStartOffsetOnly": true,
+    "noInterpolationAccelerationOrFrameDrop": true,
+    "fullyDecoded": true,
+    "noAudio": true,
+    "privateMetadataAbsent": true,
+    "central80percent64x64FlashCheck": {
+      "black": 0,
+      "nearBlack": 0,
+      "white": 0
+    },
+    "visualReview": "Actual approved photo, original depth/V4, Today DAY7/mock disclosure and three authored guidance positions observed. No private UI in published window. Input actor/exact tap/hold telemetry not inferred."
+  },
+  "actualHomeIconPrivacy": {
+    "sourceMovieSHA256": "ce6cc0cdee0d0032dd1d64d40bb42d6eaf5a52ff66f9fc19f2664af3673ca8de",
+    "publishedPixels": [
+      210,
+      218
+    ],
+    "sourceFrame": 116,
+    "sourcePTSSeconds": 2.005133,
+    "opaqueActualIconPixelsComparedToVerifiedOriginalDecodedFrame": 32031,
+    "opaqueRGBDifferences": 0,
+    "hiddenExteriorNonzeroRGBPixels": 0,
+    "antialiasedPrivacyMaskEdgePixels": 378,
+    "partialEdgeRGBUnchangedClaimed": false,
+    "redactionExplicitlyDisclosed": true,
+    "wallpaperNeighborsOSLabelNotPublished": true,
+    "notRawHomeScreenOrUnchangedOSOutlineProof": true
+  },
+  "PNGMetadataChecks": [
+    {
+      "file": "release/evidence/official-icons-today-20261115/physical/actual-iphone-icon-privacy-masked.png",
+      "pixels": [
+        210,
+        218
+      ],
+      "CRCAndIDATDecodePASS": true,
+      "textEXIFTimeMetadataAbsent": true
+    },
+    {
+      "file": "release/evidence/official-icons-today-20261115/physical/actual-iphone-photo-depth-v4-today-contact.png",
+      "pixels": [
+        900,
+        1028
+      ],
+      "CRCAndIDATDecodePASS": true,
+      "textEXIFTimeMetadataAbsent": true
+    }
+  ],
+  "acceptedArtifactsVerified": {
+    "iphoneos-normal": {
+      "nativeBinarySHA256": "215723ee2b3b95728a76f90b8b635265faef65cff95834e0298ce49140289669",
+      "embeddedJavaScriptSHA256": "b0084b6e3ec2ebad036771732ea9ecb48218a085ae7f854a83ac60ec2b7b4f75",
+      "assetsCarSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+      "signatureDeepStrictPASS": true,
+      "sourceRecordsMatched": 17,
+      "isolatedQA": false,
+      "sourceAndActualArtifactHashesMatch": true
+    },
+    "iphoneos-isolated-qa": {
+      "nativeBinarySHA256": "74b041df51a165f2b32b04cbf98bf972cc330354ea6598ff71cd2e6cc957746e",
+      "embeddedJavaScriptSHA256": "509e7f5cad743f02aff10628e8cc84fa01319691a0df449545ed0a0d91ff3622",
+      "assetsCarSHA256": "e3e94061005bab910a6b2444293db7a8619ac3ae606c9c299e414fded5dbf023",
+      "signatureDeepStrictPASS": true,
+      "sourceRecordsMatched": 17,
+      "isolatedQA": true,
+      "sourceAndActualArtifactHashesMatch": true
+    }
+  },
+  "dataPreservationBoundary": {
+    "independentSafeProof": "physical/preservation.json",
+    "allSafeProofChecksPASS": true,
+    "threePhases": [
+      "before QA",
+      "after QA",
+      "after normal INSTALL"
+    ],
+    "filesEachPhase": 1,
+    "parsedEntriesEachPhase": 2,
+    "personalKeysValuesDigestsOrRawReceiptsPublished": false,
+    "normalRestoredAndLaunchExit0VerifiedSeparately": true,
+    "postNormalLaunchStorageSnapshotClaimed": false,
+    "KeychainReadOrHashed": false,
+    "thisAuditorDidNotReadPersonalStorageSnapshots": true,
+    "preservationAuditorVerifiedActualPrivateSnapshots": true
+  },
+  "rejectedRecording": {
+    "durationSeconds": 0.95235,
+    "AVFoundationError": -11809,
+    "accepted": false,
+    "notSubstitutedForSuccessfulPortraitProof": true
+  },
+  "privacy": {
+    "candidateUTF8TextFilesChecked": 9,
+    "credentialsOrKnownPrivateIdentifiersFound": false,
+    "rawMoviesLogsSnapshotsSigningMaterialNotCandidates": true,
+    "generatedPreviewVsActualPhysicalRedactionDistinctionPreserved": true
+  },
+  "limits": {
+    "realPurchaseOrProductionEntitlementClaimed": false,
+    "physicalXCTestOrSpecificTapActorClaimed": false,
+    "AndroidNativeOrRealScreenReaderSpeechClaimed": false,
+    "FounderVisualApprovalOrStorePublicationClaimed": false,
+    "nativeCodeRecompiledForThisFollowup": false
+  }
+}

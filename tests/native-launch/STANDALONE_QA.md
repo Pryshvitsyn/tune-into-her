@@ -74,3 +74,24 @@ npm run typecheck
 
 These source tests are not standalone/device or visual acceptance. Root owns native
 packaging, first Simulator proof, any physical update/capture and final normal restoration.
+
+
+## Physical recording acceptance and restoration
+
+Preflight the temporary QA app into its declared portrait orientation before starting the
+recorder, then start a genuinely new process after recording readiness. Do not accept the
+AVFoundation finishedSuccessfully flag alone: MediaChanged(-11809) can finish a valid short
+fragment when orientation/source format changes. Require errorCode0, expected portrait
+geometry, and at least15seconds of actual decoded-media duration for a full startup run.
+Record Home separately after the app movie closes to avoid mid-movie media-format changes.
+These are host recording safeguards; do not retime or modify the app to fix a recorder.
+
+Before testing, privately snapshot existing app storage. Compare actual beforeQA/afterQA/
+afterNormalINSTALL files and manifest objects without publishing any key/value/hash of
+personal data. Always restore the retained normal signed Release in recovery/finally,
+including after failed capture/install attempts; verify its private QA marker is absent.
+Retain ordinary app identity/profile and never uninstall/reset. Keychain is preserved by
+the existing identity and untouched app logic; do not claim a Keychain hash without reading
+one. A successful normal launch after the final installation is separate from that storage
+snapshot. Crop/redact personal Home wallpaper and labels explicitly before publishing icon
+proof; preserve the unedited original privately and label any redaction honestly.

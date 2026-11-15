@@ -50,12 +50,54 @@
     "modalSettingsHomeSameProcessVerified": true
   },
   "physical": {
-    "newIconInstalled": false,
-    "todayQARecorded": false,
-    "dataSnapshotVerified": false,
-    "normalRestorationPerformed": false,
-    "deviceChangedByTimedOutAttempt": false,
-    "status": "Pending available wired/unlocked iPhone;180s wait ended before any install."
+    "newIconInstalled": true,
+    "todayQARecorded": true,
+    "testAccess": "Existing paid-active memory-only scenario with visible mock disclosure",
+    "MetroUsed": false,
+    "sourceMovieDurationSeconds": 25.09675,
+    "decodedSourceFrames": 1498,
+    "portraitPixels": [
+      1126,
+      2436
+    ],
+    "captureErrorCode": 0,
+    "sourcePTSStrictlyIncreasing": true,
+    "actualTodayAllThreeAuthoredGuidancePositionsObserved": true,
+    "homeSourceDurationSeconds": 15.307933,
+    "actualHomeIconFrame": 116,
+    "actualHomeIconPTSSeconds": 2.005133,
+    "privateHomeWallpaperRedacted": true,
+    "dataSnapshotVerified": true,
+    "exactAsyncStorageFilesComparedPerPhase": 1,
+    "exactManifestEntriesComparedPerPhase": 2,
+    "beforeQAAfterQAAfterNormalInstallEqual": true,
+    "postNormalLaunchSnapshotClaimed": false,
+    "KeychainReadOrHashed": false,
+    "normalRestorationPerformed": true,
+    "normalLaunchExit": 0,
+    "QAAndNormalNativeIconAssetsIdentical": true,
+    "rejectedEarlierMovie": {
+      "durationSeconds": 0.95235,
+      "AVFoundationError": -11809,
+      "accepted": false
+    },
+    "status": "PASS: actual iPhone Today and separate Home icon verified; personal storage unchanged; normal Release restored and launched.",
+    "acceptedPublishedFrames": 1226,
+    "allAcceptedSourceFramesRetained": true,
+    "acceptedClipBlackFrames": 0,
+    "acceptedClipNearBlackFrames": 0,
+    "acceptedClipWhiteFrames": 0,
+    "acceptedClipSourceFrameRange": [
+      88,
+      1313
+    ],
+    "acceptedClipSourcePTSSeconds": [
+      1.503917,
+      22.005633
+    ],
+    "publishedVideo": "physical/actual-iphone-cold-photo-to-qa-today.mp4",
+    "physicalProof": "physical/proof.json",
+    "preservationProof": "physical/preservation.json"
   },
   "sourceSHA256": {
     "app.config.ts": "4f3fb5a4dc246714d493ab9061d96487575ab198a9a315bd796b936ba673f400",
@@ -73,9 +115,9 @@
     "tests/native-launch/standalone-qa.cjs": "2eb156e8b284e2647e35d6a6f34894b9eea3d888e019ba6079705bb0fb6f11d3"
   },
   "limits": [
-    "Physical Today/saved-data hashes/normal restoration wait for phone availability; previous locked iPhone recording is not reused.",
     "Simulator native UI and OS icon crop are not physical touch or phone Home Screen claims.",
     "Store cards and platform masks are generated previews; no store/TestFlight upload.",
-    "Android native SDK/JDK/adb and real VoiceOver/TalkBack runtime verification unavailable."
+    "Android native SDK/JDK/adb and real VoiceOver/TalkBack runtime verification unavailable.",
+    "Physical scroll/content positions are observed; exact physical touch-ready timestamp and input actor are not measured."
   ]
 }
