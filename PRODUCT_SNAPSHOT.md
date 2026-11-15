@@ -83,11 +83,13 @@ fertility, or mood-prediction product.
  ~17.04s→fade~18.14s→locked body~18.45s;~1.1s hold/~0.3s fade, distinct from host wall time.
 - Final signed normal iPhone JS Release update-installed preserving data; original native
   executable unchanged apart from code signature, frameworks byte-identical. No Metro.
-  New ending physical video remains unavailable: wired screen absent (WiFi only/0USBentries).
-  Actual protected physical Today text requires legitimate access; none is bypassed.
+  Final physical cold video now verified after USB reconnection:2222frames/0black/nearblack/white,
+ complete photo/depth/V4/Darklocked journey,~1.05–1.09s assembled hold/~0.34–0.37s fade.
+ Safe body contact/clip excludes private cycle/header/prelude/tail. Paid physical Today/touch
+ still requires legitimate access; no access is bypassed.
 - [Current implementation, measured proof and limits](docs/INTRO_ENDING_QA.md).
 
-## CURRENT EXACT PHOTOGRAPH / VERIFIED V5 — 2026-11-14
+## PREVIOUS EXACT PHOTOGRAPH / VERIFIED V5 CHECKPOINT — 2026-11-14
 
 - Original approved PNG supplies native iOS, RN loading and Home. All3 source copies
   are byte-identical; the header/vector/material/font sources remain unchanged.
@@ -107,7 +109,7 @@ fertility, or mood-prediction product.
 - Exact-photo Android resources pass isolated checks; Android12+ native icon/full-screen
   limits and absent SDK/JDK/runtime remain explicit. No billing/service configuration work.
 - Report/evidence/limits: [APPROVED_OPENING_QA](docs/APPROVED_OPENING_QA.md).
-  Founder implementation approval remains pending, separately; new ending verification is in progress.
+  Founder implementation approval remains pending separately; new ending physical proof is linked above.
 
 ## PREVIOUS PREMIUM INTRO V5 / NATIVE STARTUP — 2026-11-14
 

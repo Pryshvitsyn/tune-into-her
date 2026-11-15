@@ -1,6 +1,6 @@
 # TASKS
 
-Updated: 2026-11-14 (Europe/Rome)
+Updated: 2026-11-15 (Europe/Rome)
 
 ## CURRENT — completed-sphere one-second ending (2026-11-15)
 
@@ -11,11 +11,12 @@ Updated: 2026-11-14 (Europe/Rome)
 - [x] Apply same behavior to Global/Home with Reduced Motion, pause, scope/access/id guards.
 - [x] Pass required source/integrity/navigation tests and native Light/Dark/Reduced Motion.
 - [x] Update-install final standalone iPhone Release preserving data; exact native/artifact proof.
-- [ ] Capture new physical ending/timestamps: WiFi only,0USBentries;180s wait could not start.
+- [x] Capture new physical cold ending without Metro after USB reconnect:2222frames/0flashes,
+ ~1.05–1.09s hold/~0.34–0.37s fade and correct Dark locked destination; personal UI excluded.
 - [x] Record actual final Simulator cold ending under bounded CPU load; native3cases pass.
 - [x] Review final diff/secrets; commit and push authorized feature branch. No service/store changes.
 
-## NOW — Exact approved photographic opening, preserving corrected V5
+## PREVIOUS — Exact approved photographic opening checkpoint, preserving corrected V5
 
 - [x] Diagnose/fix WK alpha and native/GPU ownership; preserve checkpoint38d3437.
 - [x] Use byte-exact original851×1847 photo in native/RN/loading/Home; no reconstructed overlay.
@@ -26,7 +27,7 @@ Updated: 2026-11-14 (Europe/Rome)
 - [x] Verify final signed Simulator cold pressure697frames, correct native/RN framing, gradual48-frame dissolve and destination.
 - [x] Verify final native Dark/Home/cold and2.124sReduced Motion Home; restoreLight/nativeOFF.
 - [x] Build/sign/update-install final iPhone normal Release without removing data; no Metro/OTA.
-- [ ] Record final continuous physical proof: awaiting active USB data/muxed-screen connection.
+- [x] Record corrected-photo physical checkpoint c441ad3; new0bb1030 ending proof is above.
 - [ ] Founder review of the actual corrected physical screenshot.
 - [x] Final source/diff/preservation/secrets review; evidence clean.
 - Feature-branch delivery is authorized; no stores, merge or production deployment.

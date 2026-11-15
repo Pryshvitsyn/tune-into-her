@@ -60,9 +60,10 @@ these embedded bundles. Source hashes identify actual delivered JS. No Metro is 
 
 - iPhone signed nativeSHA `732e9976e628438b92b3b52c61d34cf351801b9ec4dd1f03eb20fde8b75de105`;
   embeddedJS `e9ff17d2a14f6870237d24c5adc6792612853f671d8f2be8df152a28aed8bad3`.
-  Update-installed preserving data. A180s bounded capture attempt could not start because
-  only Wi-Fi transport was available; independent USB hardware inventory contains0iPhone
-  entries. No camera/permission/pairing fallback or fabricated timing proof is used.
+  Update-installed preserving data. The initial180s attempt had no USB path. After the
+  owner connected the phone, a complete39.478467s wired cold recording succeeded without
+  Metro. All2222decoded frames contain0black/nearblack/white flashes. No reinstall,
+  permission, pairing, data, access or source change was made for the successful recording.
 - Simulator signed nativeSHA `f21941f95032db939cbba80309a146c19c84e8fd7a81c6fd1660a3900926a083`;
   embeddedJS `641211a73b6c5d8e28000ce1e44ce8183afe1c1f42693fcf6d82259c249eb91e`.
   Pressure cold recording:470frames,0black, native bridge ordering PASS and same process alive.
@@ -88,6 +89,30 @@ Home and cover removal; visual pixels alone are not called proof of touch readin
 [Actual ending clip, phase contact and frame measurements](../release/evidence/intro-ending-20261115/simulator/README.md)
 are distinct from the previous physical photograph checkpoint.
 
+## Final physical iPhone cold recording — verified
+
+The exact installed normal Release corresponds to implementation `0bb1030`. Source/native/
+embedded-Hermes hashes and strict signature match the already delivered artifact. The
+recorder acknowledged the known wired, unlocked, muxed phone screen before genuine cold
+launch; all common local Metro ports were closed. Native Updates is disabled. The first
+journey is approved photo → complete original depth travel → V4 → existing Dark locked
+entry. Later owner/OS/other-app activity is private and excluded from publication.
+
+| Observed event | Physical source movie PTS | Measurement |
+| --- | --- | --- |
+| Sphere edges settle | ~8.737550s; representative8.754267s | About1–2px/1–2frame tolerance |
+| Sphere still at target, internally moving | through9.790017s | No stationary extra hold or restarted material cycle |
+| Fade begins | small change9.806717s, clear9.823417s | About1.05–1.09s after assembly |
+| Dark locked background/text stable | ~10.157533s, confirmed through10.24s | Fade about0.34–0.37s |
+| Exact physical touch-ready timestamp | Not measured | Separate Simulator native interaction tests remain the touch proof |
+
+These are observed image/edge/background timestamps, not the4500/1000ms constants or a
+native compositor callback. The first app-owned journey has no second intro or duplicated
+final waiting interval. All2222original frames were checked for flashes; original source
+video is39.478467s and stays private. [Actual physical contact, continuous clip and proof](../release/evidence/intro-ending-20261115/physical/README.md).
+Published media retains the complete central emblem and sphere, with the personal cycle
+header, owner prelude/tail, identifiers, audio and private metadata excluded.
+
 ## Final native regression cases
 
 The existing isolated SE3 native harness ran against the source-matched standalone app:
@@ -107,8 +132,8 @@ No Android native build/runtime claim is made.
 
 The real phone has no valid entitlement. Correct behavior ends at existing locked Today;
 paid daily text must not be shown by bypassing access. Actual unlocked physical Today text
-and tap interaction require legitimate access and are not claimed. New physical ending
-recording awaits a data-capable wired/unlocked iPhone; the previous successful photograph
-video cannot substitute for it. Android native SDK/JDK/emulator and actual spoken reader
+and tap interaction require legitimate access and are not claimed. The new physical
+ending is now independently recorded; the earlier c441 photograph video remains a
+separate checkpoint. Android native SDK/JDK/emulator and actual spoken reader
 checks remain unavailable. No store/production deployment or Cloudflare/RevenueCat/Stripe
 configuration is performed; Founder visual acceptance remains separate.

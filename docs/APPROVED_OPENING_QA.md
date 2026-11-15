@@ -87,6 +87,8 @@ to recover recording space. Signed original apps and accepted evidence remain.
 
 This recording verifies c441ad3's corrected photograph, crop and GPU handoff. It predates
 the new assembly-plus-one-second ending; it must not be presented as its timing acceptance.
+The separate [final physical ending proof](INTRO_ENDING_QA.md#final-physical-iphone-cold-recording--verified)
+now verifies the0bb1030 implementation after USB reconnection, without relabelling this checkpoint.
 The actual phone has no valid entitlement, so the correct locked entry appears and paid
 Today content is never exposed. Founder implementation approval remains a separate review.
 

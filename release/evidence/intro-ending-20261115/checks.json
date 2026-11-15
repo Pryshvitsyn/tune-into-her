@@ -38,9 +38,39 @@
   },
   "physicalNewEnding": {
     "installedFinalNormalRelease": true,
+    "implementationRevision": "0bb1030a313e6ebafa15907734b4fb90adf06252",
     "dataReset": false,
-    "recorded": false,
-    "reason": "No wired iPhone screen available during180s bounded attempt; WiFi only, USB inventory0iPhone entries. Earlier c441 photo proof is separate."
+    "sourceChangedForCapture": false,
+    "recorded": true,
+    "durationSeconds": 39.478467,
+    "decodedFrames": 2222,
+    "black": 0,
+    "nearBlack": 0,
+    "white": 0,
+    "MetroClosed": true,
+    "knownWiredUnlockedMuxedScreen": true,
+    "coldLaunchAfterRecorderReady": true,
+    "observedSettlingPTSSeconds": 8.73755,
+    "representativeSettledPTSSeconds": 8.754267,
+    "firstSmallFadePTSSeconds": 9.806717,
+    "firstClearFadePTSSeconds": 9.823417,
+    "darkLockedTextStablePTSSeconds": 10.157533,
+    "observedHoldSeconds": [
+      1.05,
+      1.09
+    ],
+    "observedFadeSeconds": [
+      0.34,
+      0.37
+    ],
+    "exactTouchReadyPTSMeasured": false,
+    "priorAttempt": "A180s wait had no USB screen; successful capture followed owner reconnection.",
+    "privacy": "Only first journey/body crop; no personal cycle header, raw prelude/tail, owner/other-app activity or private identifiers.",
+    "sourceMovieSHA256": "5f138a03547d1889d4f6cf863ca2c77d1ffca5664b8f040f67341df9ec648183",
+    "containerSamplesReportedSeparately": 2357,
+    "publishedJourneyFrames": 486,
+    "publishedJourneySourceFramesRetained": 486,
+    "proof": "physical/proof.json"
   },
   "limits": [
     "Native UI cases use the existing isolated SE3 synthetic/no-access fixture.",
