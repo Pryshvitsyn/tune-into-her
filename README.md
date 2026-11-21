@@ -11,10 +11,10 @@ Expo SDK 57, React Native, TypeScript, Expo Router, Vitest, i18next, SecureStore
 `npm run content:validate`, `npm run lint`, `npm run typecheck`, `npm test`, `npx expo-doctor`.
 Release gate: `npm run release:check`.
 ## Deploy
-Existing profiles: [eas.json](eas.json). See [STORE_SETUP.md](STORE_SETUP.md) and [release guide](release/RELEASE_GUIDE_RU.md). Signed builds/submission unverified. No verified production/staging URL.
+Existing profiles: [eas.json](eas.json). See [STORE_SETUP.md](STORE_SETUP.md) and [current native build/provider evidence](release/RELEASE_PREPARATION.md). Internal Android AAB and normal signed iOS Simulator Release are verified within their stated limits; store distribution/submission and production URL remain unverified.
 ## Monetization
 Explicit **14-day full app access without card, account or subscription**, followed by a voluntary monthly or annual purchase. Eurozone base targets are €3.99/month and €24.99/year; the UI uses actual store prices. Trial expiry never charges the user. Native RevenueCat purchases and official web redemption share `full_access`; RevenueCat Billing with Stripe is the prepared web engine.
-The isolated trial backend is source-complete and locally tested; external products, keys, hosting and native sandbox transactions remain unconfigured/unverified. See [MONETIZATION](MONETIZATION.md), [owner setup](STORE_SETUP.md), [billing QA](BILLING_QA.md), and [local backend](backend/README.md). Cycle/relationship content remains on-device; billing services receive only their separate identity/transaction data.
+The isolated trial sandbox is deployed on the verified Cloudflare Free account and HTTP-tested; production and native store transactions remain unverified. RevenueCat is partially configured. See the [current release-preparation evidence](release/RELEASE_PREPARATION.md) for actual builds, provider state and remaining owner actions. See [MONETIZATION](MONETIZATION.md), [owner setup](STORE_SETUP.md), [billing QA](BILLING_QA.md), and [local backend](backend/README.md). Cycle/relationship content remains on-device; billing services receive only their separate identity/transaction data.
 ## Isolated internal QA
 Development-only scenarios, clock, trial/restore/store recovery and iPhone dev-client instructions: [INTERNAL_QA](docs/INTERNAL_QA.md). Actual checks and limits: [UX test readiness](docs/UX_TEST_READINESS.md).
 

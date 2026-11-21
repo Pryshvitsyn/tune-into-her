@@ -3,7 +3,7 @@ import { DatabaseSync } from 'node:sqlite';
 
 import { describe, expect, it } from 'vitest';
 
-import { handle, type Env, type Statement } from '../backend/src/worker';
+import worker, { handle, type Env, type Statement } from '../backend/src/worker';
 
 const now = Date.parse('2026-11-13T12:00:00.000Z');
 function setup() {
@@ -23,6 +23,20 @@ function setup() {
   return { database, env, headers, request };
 }
 describe('persistent trial backend', () => {
+  it('limits public trial traffic before database access, using only a hashed edge key', async () => {
+    const x = setup(); let key = '';
+    x.env.TRIAL_RATE_LIMITER = { async limit(options) { key = options.key; return { success: false }; } };
+    const request = x.request('POST', '{}'); request.headers.set('CF-Connecting-IP', '192.0.2.1');
+    const limited = await worker.fetch(request, x.env);
+    expect(limited.status).toBe(429); expect(limited.headers.get('Retry-After')).toBe('60');
+    expect(key).toMatch(/^[a-f0-9]{64}$/); expect(key).not.toContain('192.0.2.1');
+    expect(x.database.prepare('SELECT COUNT(*) AS n FROM app_trials').get()?.n).toBe(0);
+    x.env.TRIAL_RATE_LIMITER = { async limit() { throw new Error('edge unavailable'); } };
+    expect((await worker.fetch(x.request(), x.env)).status).toBe(503);
+    expect((await worker.fetch(new Request('https://trial.example.test/health'), x.env)).status).toBe(200);
+    x.env.TRIAL_RATE_LIMITER = { async limit() { return { success: true }; } };
+    expect((await worker.fetch(x.request(), x.env)).status).toBe(200);
+  });
   it('has no implicit start; inserts exactly once even with concurrent requests', async () => {
     const x = setup();
     expect(await (await handle(x.request(), x.env, now)).json()).toMatchObject({ startedAt: null });

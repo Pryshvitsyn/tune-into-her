@@ -3,13 +3,15 @@
   "name": "tune-into-her-trial-sandbox",
   "main": "src/worker.ts",
   "compatibility_date": "2026-11-13",
-  "workers_dev": false,
+  "workers_dev": true,
   "observability": { "enabled": false },
   "vars": { "ENVIRONMENT": "sandbox" },
-  "d1_databases": [{ "binding": "DB", "database_name": "tune-into-her-trial-sandbox", "database_id": "REPLACE_WITH_SANDBOX_D1_ID", "migrations_dir": "migrations" }],
+  "ratelimits": [{ "name": "TRIAL_RATE_LIMITER", "namespace_id": "601221261121", "simple": { "limit": 60, "period": 60 } }],
+  "d1_databases": [{ "binding": "DB", "database_name": "tune-into-her-trial-sandbox", "database_id": "1893365a-d901-4b10-a6be-5ac40b7f097a", "migrations_dir": "migrations" }],
   "env": {
     "production": {
       "name": "tune-into-her-trial-production",
+      "workers_dev": false,
       "vars": { "ENVIRONMENT": "production" },
       "d1_databases": [{ "binding": "DB", "database_name": "tune-into-her-trial-production", "database_id": "REPLACE_WITH_PRODUCTION_D1_ID", "migrations_dir": "migrations" }]
     }

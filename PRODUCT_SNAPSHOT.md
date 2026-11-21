@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-15 (Europe/Rome)
+Updated: 2026-11-21 (Europe/Rome)
 
 ## GOAL
 
@@ -11,7 +11,7 @@ fertility, or mood-prediction product.
 
 ## STATE
 
-- Current work branch: `codex/monetization-20261113`, based on clean local candidate `eb5b0f0`; global launch and onboarding V2 extend the reviewed local monetization checkpoint. Original release-candidate branch and `main` remain untouched. Original consolidation was based on PR #6 `25c8505`.
+- Current work branch: `codex/release-preparation-20261121`, preserving monetization/visual/QA baseline`9b6e031`. Original `codex/monetization-20261113`, release-candidate branch and `main` remain untouched. Original consolidation was based on PR #6 `25c8505`.
 - Recovery points: `archive/github-release-baseline-20261111` → `25c8505`; local V4
   preservation branch → `1147292`.
 - V4 renderer is directly used by Today and onboarding. Its renderer, clean texture,
@@ -65,6 +65,42 @@ fertility, or mood-prediction product.
   The monetization arm64 Release build now passes; actual native header SVG marks render
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
+
+## CURRENT RELEASE PREPARATION — 2026-11-21
+
+- Baseline9b6e031 preserved by `codex/checkpoint-release-prep-20261121`; work isolated on
+  `codex/release-preparation-20261121`. Editorial/native-language approval remains frozen.
+- Exact PR#8 listing source reconciled; ten supported storefront mappings, bounded draft
+  exports, approved rings-only feature graphic and guarded Privacy/Terms/Support routes prepared.
+- Existing Cloudflare account visibly Free$0. Only sandbox Worker/EU-jurisdiction D1 created:
+  explicit14-day start, no implicit start, immutable repeat/redeploy dates,401/400 and live429 pass.
+  Production remains undeployed. Preview EAS receives actual public sandbox URL.
+- RevenueCat project5921ebba and approved `full_access` created; Play app445ba93d10 uses preserved
+  package and public SDK key in EAS preview. Apple requires In-App Purchase p8/issuer/key ID;
+  Google service-account/notifications, actual store catalogs and offering mappings remain blocked.
+- Apple login succeeds: existing app6832290282 / en-AU / version1.0 found; groups/IAPs and
+  TestFlight empty. Paid Applications Agreement is not active and requires owner legal-entity
+  update/signing. No catalog/legal/security credential mutation is inferred from sign-in.
+  Current Google profile still reaches signup; correct existing developer access remains required.
+- Native Xcode26.6/iOS26.5 Release compilation and ordinary signed sandbox Simulator build pass.
+  Missing-entitlement unsigned fixture and ENOSPC attempts are explicitly excluded. Distribution
+  identity/profile absent; no TestFlight IPA/store purchase proof is claimed. Ordinary onboarding,
+  explicit real sandbox trial, actual authored Today and cold restart pass on an owned Simulator.
+- Android Free EAS build10288699… FINISHED: actual AAB/API36/Billing8.3.0,100valid native libraries,
+  all50 applicable64-bit ELF/RELRO and same-AAB APK ZIP checks pass. Debug signature and absence
+  of Android runtime/Play App Signing/store transactions stay explicit. No Metro/export equivalence.
+- Ordinary native trial passes all11 locales, Light/Dark/Home/cold, History/documents/Subscription
+  and UIKit Reduced Motion with restore. Full no-Metro H.264 launch2073frames/0black and bounded
+  pressure2048/0black retain every frame/PTS. HEVC reset is rejected; capture helper now guards it.
+  Only the task-created Simulator was cleaned after proof, preserving phone/source/artifacts.
+- Android runtime host capacity is measured: recovered7.89GB, API36 16KB image4.56GB plus required
+  5GB still free already exceed capacity before tools. No low-space SDK install/fabricated runtime pass.
+- Store preflight rejects Test Store keys/private QA overrides; production demo/mock flags explicit.
+  New source checks pass531tests/55files; full pixel/hash checks retained with allocation-only
+  test optimization. No intro/cycle/content/purchase/storage runtime was changed.
+- All nine readiness flags remain false. Public legal policy, native store transactions and
+  device acceptance require real remaining evidence, not this preparation status.
+- [Current source, provider state, dated proof and final approval checklist](release/RELEASE_PREPARATION.md).
 
 ## CURRENT FINAL UI / LANGUAGES / FOUNDER QA — 2026-11-15
 

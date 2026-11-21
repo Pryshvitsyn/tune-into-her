@@ -38,3 +38,11 @@ npm-debug.log*
 *.log
 .DS_Store
 
+
+# Python release-audit bytecode
+__pycache__/
+
+# Local Cloudflare state and native signing configuration
+.wrangler/
+credentials.json
+.credentials/

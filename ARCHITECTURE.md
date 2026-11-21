@@ -203,6 +203,10 @@ trial and optional durable RevenueCat webhook journal; local Node/SQLite runner 
 the same handler. No mandatory user account, runtime AI or remote content fetch. Sandbox
 and production have separate databases/routes/secrets. The backend receives no cycle,
 advice or relationship content.
+The deployed sandbox additionally uses Cloudflare's approximate per-location rate-limit
+binding on trial requests, keyed by a hash of connecting IP/environment; no raw IP is
+persisted by app code. D1 uses EU jurisdiction. Production remains unprovisioned and
+requires its separately configured route/bindings and owner-approved retention policy.
 
 ## Storage
 

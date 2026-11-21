@@ -1,8 +1,35 @@
 # TASKS
 
-Updated: 2026-11-15 (Europe/Rome)
+Updated: 2026-11-21 (Europe/Rome)
 
-## CURRENT — final UI / language / education / Founder QA / rings-only icon (2026-11-15)
+## CURRENT — App Store / Google Play release preparation (2026-11-21)
+
+- [x] Preserve clean9b6e031/checkpoint; isolate work on `codex/release-preparation-20261121`.
+- [x] Freeze editorial/daily translations and protected photo/icon/V4/intro inputs.
+- [x] Reconcile exact PR#8, export ten supported storefront drafts/disclosures and exact-source feature graphic.
+- [x] Prepare Privacy/Terms/Support drafts, guarded local routes, data/health/reviewer declaration drafts.
+- [x] Verify Cloudflare Free$0; deploy only EU sandbox D1/Worker and edge rate binding.
+- [x] Verify live explicit14-day start, repeat/client-restart/redeploy persistence,401/400 and429.
+- [x] Create one RevenueCat project/full_access/Play app; place public Android key and sandbox URL in EAS preview.
+- [x] Audit authenticated existing Apple app6832290282/en-AU, empty subscriptions/IAPs/TestFlight and inactive Paid Applications Agreement; keep legal/signing/catalog approvals explicit. Current Google profile reaches signup; no new account/fee accepted.
+- [x] Harden store build gates; isolate credential-free Android native-audit profile and real artifact verifier.
+- [x] Build actual normal signed iOS Simulator Release; retain failed unsigned/cache/disk attempts explicitly.
+- [x] Pass531source tests/55files, typecheck/lint/content checks; preserve every pixel/hash assertion.
+- [x] Finish actual Android AAB/API36/Billing8.3.0 audit:100valid ELF/50applicable64-bit16KB+RELRO, same-AAB APK payload/ZIP proof; keep debug signing/runtime limitations explicit.
+- [x] Verify ordinary signed iOS onboarding→explicit real sandbox trial→authored Today→cold restart, without mock billing or personal-device writes.
+- [x] Reproduce low-disk save failure and verify real retry after task-only build-cache cleanup; keep rejected attempts separate.
+- [x] Pass all11 normal native locales, Light/Dark/Home/cold, documents/History/Subscription and UIKit Reduced Motion with restore; export actual captures.
+- [x] Record ordinary real-trial no-Metro cold launch2073frames/0black and bounded-pressure2048/0black; preserve every preview frame/PTS. Reject HEVC timestamp reset and add reusable H.264/monotonic capture regression.
+- [x] Verify exact API36 16KB image disk requirements by bounded official metadata reads; retain actual host-capacity blocker without downloading into low space.
+- [ ] Produce store-distribution IPA/AAB and real sandbox purchase/lifecycle/device-notification evidence after account/signing/catalog prerequisites.
+- [ ] Owner-only: existing Apple/Google access/agreements, actual credentials/catalog/notifications, seller/contact/public legal policy and content/legal approval.
+- [x] Review preservation/secrets/diff; retain all39 protected inputs and173 AAB source-input hashes.
+- [ ] Commit/push feature branch and create draft PR linked to#7/#8.
+- [ ] Keep readiness flags false until actual approval/evidence; no implicit production activation, submission or main merge.
+
+Canonical provider state, dated checks and concrete blockers: [current report](release/RELEASE_PREPARATION.md).
+
+## PREVIOUS — final UI / language / education / Founder QA / rings-only icon (2026-11-15)
 
 - [x] Preserve clean3eff34d in `codex/checkpoint-ui-final-pass-20261115`; retain all intro/data/access work.
 - [x] Replace shared secondary footer text with accessible48pt arrow/gear; preserve main tabs/routing.

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-21T19:32:30.971Z",
+  "scope": "Sandbox edge rate limiter, 70 unauthenticated requests; no trial started",
+  "counts": {
+    "401": 61,
+    "429": 9
+  },
+  "rateLimitObserved": true,
+  "approximatePerLocation": true
+}

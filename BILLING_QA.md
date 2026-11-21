@@ -1,5 +1,12 @@
 # Billing QA and evidence
 
+Current status, 2026-11-21: isolated Cloudflare sandbox HTTP and ordinary native Simulator
+trial→Today→cold restart now pass; RevenueCat is partially configured and an actual internal
+Android AAB has binary evidence. See [current release preparation](release/RELEASE_PREPARATION.md)
+and [remaining owner actions](STORE_SETUP.md). The dated November13 observations below are
+historical and do not override that new proof. Real Apple/Google store transactions and
+store-distribution signing remain unverified.
+
 Date: 2026-11-13. Branch: `codex/monetization-20261113`, based on the current local
 release candidate, not an older remote main. Tests below distinguish local deterministic
 proof from native store/provider proof. No real payment was made.

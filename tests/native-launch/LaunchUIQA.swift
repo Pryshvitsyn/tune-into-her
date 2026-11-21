@@ -809,10 +809,7 @@ extension LaunchUIQA {
     if destination.waitForExistence(timeout: 2) { return }
     capture(app, "tab-\(label.lowercased())-semantic-tap-did-not-navigate")
     print("TIH_PRIMARY_TAB_CENTER_RETRY \(label) frame=\(tab.frame)")
-    let frame = tab.frame
-    app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
-      dx: frame.midX - app.frame.minX, dy: frame.midY - app.frame.minY
-    )).tap()
+    tab.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
     XCTAssertTrue(destination.waitForExistence(timeout: 5), "Both native semantic and bounded center taps must reach \(label)")
   }
 
@@ -1540,7 +1537,7 @@ extension LaunchUIQA {
   }
   /// A small correction drag can be interpreted as a button press by iOS.
   /// Use an actual >=90pt vertical pan, then re-query the settled native bounds.
-  func finalPassReveal(_ element: XCUIElement, in app: XCUIApplication) {
+  func finalPassReveal(_ element: XCUIElement, in app: XCUIApplication, horizontalFraction: CGFloat = 0.5) {
     func owner() -> XCUIElement {
       if element.exists {
         let found = app.scrollViews.containing(NSPredicate(format: "label == %@", element.label)).firstMatch
@@ -1565,7 +1562,9 @@ extension LaunchUIQA {
       } else { needed = -viewport.height * 0.65 }
       let sign: CGFloat = needed >= 0 ? 1 : -1
       let distance = sign * min(viewport.height * 0.65, max(90, abs(needed)))
-      let start = scroll.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: distance < 0 ? 0.8 : 0.2))
+      // A UIDatePicker consumes center-axis drags; an owned test may use the
+      // surrounding scroll-view edge. Existing callers retain their exact default.
+      let start = scroll.coordinate(withNormalizedOffset: CGVector(dx: horizontalFraction, dy: distance < 0 ? 0.8 : 0.2))
       start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: distance)), withVelocity: .slow, thenHoldForDuration: 0.1)
     }
     XCTAssertTrue(element.exists)
@@ -1595,21 +1594,28 @@ extension LaunchUIQA {
     element.tap()
     if !destination.waitForExistence(timeout: 2) {
       print("TIH_FINAL_PASS_FIXED_CENTER_RETRY \(element.identifier)")
-      let frame = element.frame
-      app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(dx: frame.midX - app.frame.minX, dy: frame.midY - app.frame.minY)).tap()
+      element.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
     }
     XCTAssertTrue(destination.waitForExistence(timeout: 5))
   }
   func finalPassOpenSettings(in app: XCUIApplication, labels: [String: String]) {
     let settingsTab = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", " + labels["settings"]!)).firstMatch
     let secondary = app.buttons["secondary-settings"].firstMatch
-    if secondary.exists { secondary.tap() }
+    if secondary.exists { finalPassTapFixed(secondary, expecting: settingsTab, in: app) }
     else {
       let todaySettings = app.buttons.matching(NSPredicate(format: "label IN %@", [labels["openSettings"]!, labels["settings"]!])).firstMatch
       if todaySettings.exists && todaySettings.isHittable { finalPassTapFixed(todaySettings, expecting: settingsTab, in: app) }
       else {
         let primary = app.otherElements.matching(NSPredicate(format: "label ENDSWITH %@", ", " + labels["settings"]!)).firstMatch
-        if primary.exists && primary.isHittable { if !primary.isSelected { primary.tap() } }
+        if primary.exists && primary.isHittable {
+          if !primary.isSelected {
+            primary.tap()
+            let selected = NSPredicate(format: "selected == true")
+            if XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: selected, object: primary)], timeout: 2) != .completed {
+              primary.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+            }
+          }
+        }
         else {
           let about = app.buttons[labels["aboutThea"]!].firstMatch
           finalPassReveal(about, in: app)

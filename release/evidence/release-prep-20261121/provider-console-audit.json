@@ -1,0 +1,31 @@
+{
+  "checkedOn": "2026-11-21",
+  "apple": {
+    "appId": "6832290282",
+    "bundleIdentifier": "com.eliogenesis.tuneintoher",
+    "sku": "tuneintoher-ios-001",
+    "primaryLocale": "en-AU",
+    "version": "1.0",
+    "versionState": "Prepare for Submission",
+    "subscriptionGroups": 0,
+    "inAppPurchases": 0,
+    "testFlightBuilds": 0,
+    "freeAppsAgreement": "Active",
+    "paidAppsAgreement": "New, not active; console requires legal entity update before signing",
+    "EU_DSA": "Trader declaration required",
+    "standardAppleEULASelected": true,
+    "catalogCreated": false,
+    "metadataSubmitted": false,
+    "agreementsAcceptedByAgent": false
+  },
+  "googlePlay": {
+    "currentProfileState": "Initial existing owner profile opens developer signup; second project-owner-named profile also opens signup with a two-step-authentication prerequisite. No accessible developer catalog was found in these two profiles.",
+    "newAccountCreated": false,
+    "profilesChecked": 2,
+    "authenticationSettingsChanged": false,
+    "otherProfilesNotAssumedAuthorizedDeveloperOwners": true
+  },
+  "limits": [
+    "Read-only visible console audit; no financial/legal attestation, key creation or store submission."
+  ]
+}

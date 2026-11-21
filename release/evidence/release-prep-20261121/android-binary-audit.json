@@ -1,0 +1,2339 @@
+{
+  "status": "INCOMPLETE",
+  "artifact": "app.aab",
+  "sha256": "ff71db6e5378603569be3e462a0fe85d775630b647fc2995aa2e6b0f5a40f3c5",
+  "checks": {
+    "nativeLibrariesPresent": true,
+    "allELFHeadersValid": true,
+    "arm64LibrariesPresent": true,
+    "all64BitELF16K": true,
+    "all64BitRELRO16K": true,
+    "knownStandaloneQAMarkersAbsent": true,
+    "manifestDecoded": true,
+    "packagePreserved": true,
+    "targetAPI36OrHigher": true,
+    "positiveVersionCode": true,
+    "notDebuggable": true,
+    "billingPermission": true,
+    "billing8OrHigher": true,
+    "bundleRequests16KZipAlignment": true,
+    "jarSignatureVerified": true,
+    "uploadCertificateMatchesOwnerVerifiedRecord": null,
+    "derivedAPKMatchesAABPayload": true,
+    "derivedAPKHasNativeLibraries": true,
+    "derivedAPKELFAndZip16K": true,
+    "officialZipalignPassed": null
+  },
+  "nativeLibraries": [
+    {
+      "file": "base/lib/arm64-v8a/libandroidx.graphics.path.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libappmodules.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "40dcb8d699f04bcd0135dc1fda544494a0e38e20795642c6849806447f6d25fa",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libc++_shared.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "3e852764502d06e0cf1080d532ae7c608b7649d946a3a9d7e84e3d4b7d683214",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libdatastore_shared_counter.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libexpo-modules-core.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "78c21f58ce81b72d1f20f714a2040a57530fc9034f2cf939fe045d4bfb644fa3",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libexpo-updates.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "9e9cef0420283994880c105ff410f7a710ece0c1af7d08698a341b981e95fbe4",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libfbjni.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "a9e35ba55d3f956920281f519385f8a72475ee24819799cb08375fdd4cce2b22",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libgesturehandler.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "00027ccf50ad7807e013a3ed27a63923d9e9ae13b1e4017232b50b52ddad748f",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libgifimage.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "9f605249728da7091569772a38a4dde298ed48e1e73fed3da0e4b662ef38715c",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libhermestooling.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "1db061bbbb050105fee9b208b861adc0cc02cc359551be6ba9562798a81f6cca",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libhermesvm.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "bf38be45bf5d6ad8ba961eaf9deda5fa7e032f3ff7d3929ba2a624567093bffa",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libimagepipeline.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "1b377992e4256fa9398ec057722f84a359c7d588e570c8a41f51d930c19ece7d",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libjsi.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "5acb80d7eb93b2114a419c9e42b44476969299e806ad7eafe1b293e221b9a682",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libnative-filters.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "4294b57460e70a6351ce7ae2733a79c088c907dfa54673a657227ec5bb669594",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libnative-imagetranscoder.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "2aed28298a25afd52ac670cf9682398c6c7ba42a57195c01efd565e7ddfe17ca",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "502aea49cdbb3c6993dc96f1374798683b356e15a0a58f00e6c7a9dae1d51051",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "dbb01947616c989c33e8637ba1f0277950ddfa5827bae9c015b426b6b7580e65",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "0bf2252cee2c7239b550abd1920c81e37326b9829674fd3e3f3c75ffa0e77167",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "e3664448822b2a17321741d068c464fbf609f5a14d06eabb9b4085240a82d1aa",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libreactnative.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "14bb860cebebb0e29eb2c96a52d70da9b73e60253916694af955f6e3ef1e6b64",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libreanimated.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "8cb2573bf1bf23192130317ad31ae4b95632d471a7e708d6360c365d7be906bf",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/librnscreens.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "76077781f332b90be34bdb646491a61f669add61b6249f875cc6be3cd2935a63",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libstatic-webp.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "f3e5f9ab4f93f2a0a057285a2de9c93ba0ab59c76c22874d0356493ce283c4c7",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libworklets.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "abf3bb429a1d448a984b37994967640657fe6e24cea9cc385ca263fc944b1ae4",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/arm64-v8a/libzstd-kmp.so",
+      "elfMachine": 183,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "10ec47f13bee884450b0911066019ba7aa6b4164a4c1f8c33c9d30dd3fd8868a",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libappmodules.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "36a2678f4cb6d9801dd8b7c9c62c19c921687568f21965614403596459f12dd1",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libc++_shared.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "84e7d99b7b6df960b37c28e43808cc5c2c62d1bb9449e27683fc53309dea5b6c",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libdatastore_shared_counter.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "716c5d8d2cac8ca0edf65da8f139c7886b726ac79d542a14edeb94994ba6d3dc",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libexpo-modules-core.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "a21b878d83bb34bc2c5747f7b7379cfbb4ad0dfd1d884bc5254dd7ee745d716f",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libexpo-updates.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "f5d4d9d36de634883bf09265a5a55f79d379b5ebc2441a56a613dda1193d24cd",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libfbjni.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "6739b4db111283fe0a86a3a5fdd80efe5d963355dd161b95ec179f01cc9685d5",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libgesturehandler.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "e32e9aff21eda68e95f47be38642eb5fd2bf548b801da6a41a0f1b70f3a79090",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libgifimage.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "0a10e184300cfbc64a770f872ddbd9c5185fa10f26d960ddc809f2fdb39dedc3",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libhermestooling.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "c3aa71d90fcf993b0ddc9da0bc7a154444663901515c61b7cb20fa599d870fd2",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libhermesvm.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "180d4113ebea599b2cbb44fe2d2634a7599a8d7afabbcb43670e0fe2839b006a",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libimagepipeline.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "0fb5021bcf1cbb6c10630732560bb80bad7187c8b8391e6c001b3f892fa613d5",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libjsi.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "a3f55942fb1d183818decb426a0126e871fc0c6c025f02367c5f38642ca01e2e",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libnative-filters.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "fb3d55facc8dfdc856441015c2a8d803b10b6c3cf09524c4f04562cec186a62e",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libnative-imagetranscoder.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "40905f1c50315f66362a8e10e2ac19d1df62c3f1800bc2ee639047d09c9f1bd9",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libreact_codegen_rngesturehandler_codegen.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "a5de86d91b514e13943af86c08326b20bb41b0d74358c84176e0cc2440ece6e6",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libreact_codegen_rnscreens.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "fc4fe7d1fcf7bde10e31d808a5539b7b1d71be31aa63c7550367edaeefaab1b4",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libreact_codegen_rnsvg.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "1035f91128b41f2a67d8056696898c8c100f6787af505042dbd0175860f746f7",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libreact_codegen_safeareacontext.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "476e3ed07eef1b5ce6b46c07b8ed0b3c76a0e97b95e01d6eeb61bed69452abdd",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libreactnative.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "38a637ec7f32ee8df322074323fc6b1ae23377c8f144e0850d6c5097974552cb",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libreanimated.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "1562f2a4bef5fff508301826d5612bd7966b949f884808ed9e8588dc0f65cf20",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/librnscreens.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "053233b88cdf4f450748c17d84f9fd1dd17d56b2ed361f913f44e159e7380786",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libstatic-webp.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "2f2293b5ff51c39de312cd44ded89a116b3908c9fa0f3cb405727957c6a5992f",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libworklets.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "ac06ea03510e02c7c81500a319dd20fe8c0f531c02082a5c21016166b981fa87",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/armeabi-v7a/libzstd-kmp.so",
+      "elfMachine": 40,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "4b30671d21e9c6953dc84e4b4602e33b88740d61417af96dbc4ddf44b22a8e15",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libandroidx.graphics.path.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "eb0570b41fd3bff25d8204a967c03bd7550719e768b791f680cc40cbe35f29af",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libappmodules.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "a3ce83320d5f83e139b56735e3e376ba42389db59a58c84ad07d2aa5f716202a",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libc++_shared.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "3bd6a3c5d1baa1fac3bdd8452ccc403fd1b464b3f80eb9fa207df5ec2d565129",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libdatastore_shared_counter.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "cd4a1649e2c8350703146f94a6ee2bf4c3c8c9f172159f805b61a4a2abdf0659",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libexpo-modules-core.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "acf7a303b2b95ea59000944c9e5a0e371f0a4b88eb2e9f83d2e9a3ffede80f6f",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libexpo-updates.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "1d77ec5cd677bbb580252c6b6ef7e9c07078288e2dc602c9fa0f796d66d81757",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libfbjni.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "735533ea082fe331b293a947f5ac32556ea433c7db1d2fe76e4ac9a440917c65",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libgesturehandler.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "ef03acaed57c355bf3b5f1fe25761a386f6d3675a01f08e658fe789e2629eacf",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libgifimage.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "a3b5f8f2266597e0d5e3c39edad357cbd0d45ce52c60e41eaaa915b290549ce4",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libhermestooling.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "9def06c3271a443050c0a3915464159b9596bdac9525a5f021caeee162b80ecc",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libhermesvm.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "5a16c3f6370190033ae6cfb42b4c7d334eb120e706ad10232f5ea72b3d83d85d",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libimagepipeline.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "afd22bf7e62e5d08c0ec17ff6c0a273bfc580052c89363c0cb5d72e98d3b4cf4",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libjsi.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "87b504363a35fdc07a6fb2bd5788347123d22c110f9ba476d400c9f32fe50c3c",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libnative-filters.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "6947adfed7f745e52408b11d83a3cf25072749c3336aa35c634928c6dcfa5da0",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libnative-imagetranscoder.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "943c8757e57f59556027d460c0e86738d5969794db905febbe4926fd1d3fa663",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libreact_codegen_rngesturehandler_codegen.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "3b671e3d6e4211ade65dfd3a0cc57b4b9e360b8bd69ce50e33c0c6c2ac0abc32",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libreact_codegen_rnscreens.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "ba16c12f725c57d5711c5393aebf41fcfe60a2a82151fa8147afda1085530ac1",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libreact_codegen_rnsvg.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "b48d1afb45a5fa285fee56de89a40c0788b44c5ba0bac41c0969c7860d945498",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libreact_codegen_safeareacontext.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "c67d9acde9ba4e3de71b1c2e4ed7a999373abead3ad23bafa4a7dbed76015bbb",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libreactnative.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "23b2a618cd791452d99bdde1fa508ea9d4f6333957c5f8021cd6fb21f028ecd1",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libreanimated.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "b4d635a6e6d2f5816be53f573550729eb2cce7ccb2dbf8db918b16e9e4fdb201",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/librnscreens.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "f14fcfb791bbacf35f9e28c635104d5f005e7a99ec0035f9882ce05f9f51309d",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libstatic-webp.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "13d57c0c1992ed870e4830bf932ae472f61adf23ff44540d60e68a5c458abfe1",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86/libworklets.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "9f1feccd1fae6c6d8e6b39bc0af758b810c142ae34d9fa139f219288c0470985",
+      "loadSegments": [
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        },
+        {
+          "alignment": 4096,
+          "offsetCongruent16K": false
+        }
+      ],
+      "elf16K": false,
+      "relro16K": false
+    },
+    {
+      "file": "base/lib/x86/libzstd-kmp.so",
+      "elfMachine": 3,
+      "elfClass": 32,
+      "appliesTo16KDevices": false,
+      "sha256": "2daf9a5f2984289b93568a96bc4234a9e405aa4905c990b85ef887c5de7fb010",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libandroidx.graphics.path.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "4e56c996f13670e70082658de7880c4020eabf4f25e43387f88ed78a713fc9f0",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libappmodules.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "8af9d0422f92b8636c29a34405e99349bd6d525c0a2b8d1f28f16b1dcef48ed4",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libc++_shared.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "0a2c7afa35b183fdd5a3cb20e2080ad54cbea06c2a4f0bc8f122cb7d1e9e0b9f",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libdatastore_shared_counter.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "fb6c9208988c49ae94943bc3236fa763ba584722e044fa4ea9a12d2941027105",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libexpo-modules-core.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "399e2299b67cef3f55e7e4f54a4f2483a64ab4a4aa2bea878befcd482b4781f3",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libexpo-updates.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "225ead313c00953331e57dc030465fadb53c11f8e37fb37c4b2af56049c9f4bf",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libfbjni.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "a51410366a0394e05bc04052cfb237c70dcf7d4d53a56e1d00a041436cb0b653",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libgesturehandler.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "0293de3a11b9d812365a3ef0d06d826a79c899ae07e9fdc36d2c75d3046aac39",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libgifimage.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "20768d822119deee9beeccfd4340987976381587b519b630f5393fee4d731c1f",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libhermestooling.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "6a8ef7ef7bb5bd277a915fc0070fa1285c6969da2d7faf4fbff86ab6468c8458",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libhermesvm.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "3c5f7f3740b6511b55f3f8ba43c24eb1b38ab2fb9dc1ca5618287c3ca6221e13",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libimagepipeline.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "2e596f4955f65abaa93c891b49eb58b5416581806a04bde0097cc369ae4dbfb3",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libjsi.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "f3927514e215b9fe14bc6d5a1937c62b20ed55057ede7205fac198ec763d4349",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libnative-filters.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "1a5270f007dd4b2f0fc52ceac82e05143648ba9be59c2213a21cf61c84f1f5e5",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libnative-imagetranscoder.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "f6b92ad7f1c30973f40704c46987504757c3d079c7f4ace6efc8b318dd9c22f3",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "7e0dd0592c027496f46241ed96a23808dd45c9b0ce3835612110c45a721d30a0",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libreact_codegen_rnscreens.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "d60053479530d44f3e978e8111118c29636590335fba09845e3abe0c8bd178c8",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libreact_codegen_rnsvg.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "178400a079e4d60d6210a7a7b4fc176cb8202d7ea74e5cb909f711d585fbe722",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libreact_codegen_safeareacontext.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "9f09a4b28f77d96810675dbae7ab655b73cfb30cc2a37c0a2f9a01f566ae745d",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libreactnative.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "f80d63ba3df4cd85764c330c6af56ca5995fdaacbdcff107657b8c63918f1d8b",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libreanimated.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "26a84dd62fa87e952a879d16ff9d2890509313ad63e6b34fed46bd24dadcd048",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/librnscreens.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "3c36d1ca9bf06070e0da34e71dee7a3818112c421df702b21de2046908df3c57",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libstatic-webp.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "e7884cd18761b5ee54de98b9a3f4b9e4b0dea364c186e24ff9b740b29742562b",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libworklets.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "45c4a2f0015da7b3aaeaaf9fee0a1edd8ed8bdd5aac5f49b44f8651ad553140a",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    },
+    {
+      "file": "base/lib/x86_64/libzstd-kmp.so",
+      "elfMachine": 62,
+      "elfClass": 64,
+      "appliesTo16KDevices": true,
+      "sha256": "fefcbdcd59580a3043c62380a83d92f13c031c278481e22591a2c75112296e28",
+      "loadSegments": [
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        },
+        {
+          "alignment": 16384,
+          "offsetCongruent16K": true
+        }
+      ],
+      "elf16K": true,
+      "relro16K": true
+    }
+  ],
+  "pageSizeScope": "Google requires 16KB compatibility on 64-bit devices: arm64-v8a and x86_64. All ABIs are recorded; 32-bit 4KB alignment is not a 64-bit failure.",
+  "limits": [
+    "Binary audit does not verify Play App Signing enrollment, resolved Gradle graph, 16KB device execution, notifications, store routing, real purchase/restore or visual icon/splash acceptance.",
+    "Provide an APK generated from this exact AAB and an independently verified upload certificate. A sideload/debug key is not a Play distribution proof."
+  ],
+  "storeReadinessChanged": false
+}

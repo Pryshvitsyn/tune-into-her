@@ -84,6 +84,9 @@ function stagesFrom(text) {
   }
   return rows.sort((a, b) => a.nativeMonotonicSeconds - b.nativeMonotonicSeconds);
 }
+function timestampsMonotonic(values) {
+  return values.length > 0 && values.every((value, index) => Number.isFinite(value) && (index === 0 || value >= values[index - 1]));
+}
 function analyze(out, launchEstimate) {
   const movie = path.join(out, 'startup.mov');
   const probe = JSON.parse(command('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_streams', '-show_format', '-of', 'json', movie]));
@@ -98,7 +101,7 @@ function analyze(out, launchEstimate) {
     frames.push({ index: i, ptsSeconds: Number(timestamps.frames[i].best_effort_timestamp_time), meanLuma: Number((sum / size).toFixed(3)), darkFraction: dark / size, black: dark / size >= 0.98 });
   }
   const black = frames.filter(frame => frame.black);
-  const result = { method: 'Every source video frame, central 80% ROI, area64x64 grayscale; black when >=98% samples have luma<=18', frameCount: count, durationSeconds: Number(probe.format.duration), stream: { width: probe.streams[0].width, height: probe.streams[0].height, averageFrameRate: probe.streams[0].avg_frame_rate }, launchCommandVideoEstimateSeconds: launchEstimate, blackFrameCount: black.length, blackFrameIndices: black.map(f => f.index), blackAfterLaunchCommandEstimate: black.filter(f => f.ptsSeconds >= launchEstimate).length, timingLimit: 'Recorder acknowledgement and command start are host observations, not exact UIKit foreground/frame timestamps; inspect OS/app transition in original movie', frames };
+  const result = { method: 'Every source video frame, central 80% ROI, area64x64 grayscale; black when >=98% samples have luma<=18', frameCount: count, timestampsMonotonic: timestampsMonotonic(frames.map(frame => frame.ptsSeconds)), durationSeconds: Number(probe.format.duration), stream: { width: probe.streams[0].width, height: probe.streams[0].height, averageFrameRate: probe.streams[0].avg_frame_rate }, launchCommandVideoEstimateSeconds: launchEstimate, blackFrameCount: black.length, blackFrameIndices: black.map(f => f.index), blackAfterLaunchCommandEstimate: black.filter(f => f.ptsSeconds >= launchEstimate).length, timingLimit: 'Recorder acknowledgement and command start are host observations, not exact UIKit foreground/frame timestamps; inspect OS/app transition in original movie', frames };
   fs.writeFileSync(path.join(out, 'all-frame-black-analysis.json'), JSON.stringify(result, null, 2) + '\n');
   return result;
 }
@@ -147,7 +150,9 @@ async function main() {
     const stageLog = path.join(args.out, 'native-stages.private.log'); const stageFd = fs.openSync(stageLog, 'w'); descriptors.push(stageFd);
     const logs = track(spawn('xcrun', ['simctl', 'spawn', args.device, 'log', 'stream', '--level', 'info', '--style', 'compact', '--predicate', 'process == "TuneIntoHer" AND eventMessage CONTAINS "TIH_NATIVE_LAUNCH"'], { stdio: ['ignore', stageFd, stageFd] }));
     const recorderLog = path.join(args.out, 'recorder.private.log'); const recordFd = fs.openSync(recorderLog, 'w'); descriptors.push(recordFd);
-    recorder = track(spawn('xcrun', ['simctl', 'io', args.device, 'recordVideo', '--codec=hevc', '--mask=ignored', path.join(args.out, 'startup.mov')], { stdio: ['ignore', 'ignore', 'pipe'] }));
+    // HEVC on the current Pro Simulator reset its PTS during launch. H.264
+    // retained a continuous source clock; still reject any future clock reset.
+    recorder = track(spawn('xcrun', ['simctl', 'io', args.device, 'recordVideo', '--codec=h264', '--mask=ignored', path.join(args.out, 'startup.mov')], { stdio: ['ignore', 'ignore', 'pipe'] }));
     await new Promise((resolve, reject) => {
       let output = '', settled = false;
       const timer = setTimeout(() => { if (!settled) { settled = true; reject(new Error('No recording-start acknowledgement within 8s')); } }, 8000);
@@ -175,10 +180,11 @@ async function main() {
     const expected = ['COVER_INSTALLED', 'COVER_FRAME_COMMITTED', 'FACTORY_BEGIN', 'EXPO_SPLASH_INSTALLED', 'EARLY_COVER_HANDOFF'];
     metadata.stageOrderingPass = expected.every(name => time(name) !== undefined) && expected.every((name, i) => i === 0 || time(name) >= time(expected[i - 1]));
     const analysis = analyze(args.out, metadata.launchCommandVideoEstimateSeconds);
-    metadata.analysis = { frameCount: analysis.frameCount, durationSeconds: analysis.durationSeconds, blackFrameCount: analysis.blackFrameCount, blackAfterLaunchCommandEstimate: analysis.blackAfterLaunchCommandEstimate };
+    metadata.analysis = { frameCount: analysis.frameCount, durationSeconds: analysis.durationSeconds, timestampsMonotonic: analysis.timestampsMonotonic, blackFrameCount: analysis.blackFrameCount, blackAfterLaunchCommandEstimate: analysis.blackAfterLaunchCommandEstimate };
     save();
     requireThat(metadata.sameProcessAliveAtEnd && metadata.stageOrderingPass, 'Native process/stage ordering failed; evidence retained');
     requireThat(metadata.recordedWallSeconds >= 39.5, 'Recorded wall time was shorter than the required 40s window; evidence retained');
+    requireThat(analysis.timestampsMonotonic, 'Simulator source timestamps reset; exclude this movie from continuous timing evidence');
     requireThat(analysis.blackAfterLaunchCommandEstimate === 0, 'Black frames found after launch-command estimate; inspect retained full media before attributing OS/app ownership');
     metadata.complete = true; save();
     process.stdout.write(JSON.stringify({ result: 'recorded-and-analyzed', out: args.out, ...metadata.analysis, stageOrderingPass: metadata.stageOrderingPass, sameProcessAliveAtEnd: true }) + '\n');
@@ -187,4 +193,4 @@ async function main() {
   } finally { await cleanup(); process.removeListener('SIGINT', interrupt); process.removeListener('SIGTERM', interrupt); }
 }
 if (require.main === module) main().catch(error => { process.stderr.write('Startup capture stopped: ' + error.message + '\n'); process.exitCode = 1; });
-module.exports = { parseOptions: options };
+module.exports = { parseOptions: options, timestampsMonotonic };

@@ -30,16 +30,17 @@ describe('approved native launch first frame', () => {
     expect([native.width, native.height]).toEqual([original.width, original.height]);
     let alphaDifferences = 0;
     let inkDifferences = 0;
-    const materialColors = new Set<string>();
+    const materialColors = new Set<number>();
     for (let i = 0; i < native.data.length; i += 4) {
       if (native.data[i + 3] !== original.data[i + 3]) alphaDifferences += 1;
       if (native.data[i] !== original.data[i] || native.data[i + 1] !== original.data[i + 1] || native.data[i + 2] !== original.data[i + 2]) inkDifferences += 1;
-      if (native.data[i + 3] === 255) materialColors.add(native.data.subarray(i, i + 3).toString('hex'));
+      // Exact 24-bit RGB identity without allocating a Buffer/string per pixel.
+      if (native.data[i + 3] === 255) materialColors.add((native.data[i]! << 16) | (native.data[i + 1]! << 8) | native.data[i + 2]!);
     }
     expect(alphaDifferences).toBe(0);
     expect(inkDifferences).toBe(0);
     expect(materialColors.size).toBeGreaterThan(100);
-    expect(read('../ios/TuneIntoHer/Images.xcassets/LaunchLogo.imageset/official-launch-mark.png')).toEqual(read('../assets/launch/official-launch-mark.png'));
+    expect(read('../ios/TuneIntoHer/Images.xcassets/LaunchLogo.imageset/official-launch-mark.png').equals(read('../assets/launch/official-launch-mark.png'))).toBe(true);
   });
 
   it('retains the original destination silver colors', () => {

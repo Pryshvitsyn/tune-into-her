@@ -1,0 +1,75 @@
+{
+  "scope": "Ordinary signed Release on newly created owned iPhone17Pro iOS26.5 Simulator; not personal phone/store purchase",
+  "embeddedJS_SHA256": "4303bebdb8f2306f34975469fa745052bcb24896a0557da815fc01d3a419e8ec",
+  "nativeExecutable_SHA256": "236eb606ce25d13463c9f11afec9077c730b4afdfec863b400e2abc35ea50386",
+  "demo": false,
+  "mockBilling": false,
+  "trialBackend": "Real Cloudflare sandbox",
+  "freshOnboardingTrialTodayColdRestart": {
+    "passed": true,
+    "seconds": 104.453
+  },
+  "lowDiskSaveRecovery": {
+    "passed": true,
+    "seconds": 8.036,
+    "dataReset": false
+  },
+  "localeCases": [
+    {
+      "case": "testReleaseNormalLocalesChineseMalay",
+      "passed": true,
+      "seconds": 172.515
+    },
+    {
+      "case": "testReleaseNormalLocalesCyrillicHindi",
+      "passed": true,
+      "seconds": 169.904
+    },
+    {
+      "case": "testReleaseNormalLocalesLatin",
+      "passed": true,
+      "seconds": 256.538
+    }
+  ],
+  "verifiedLocales": [
+    "zh-Hans",
+    "ms",
+    "mbf",
+    "ru",
+    "uk",
+    "hi",
+    "en",
+    "fr",
+    "it",
+    "es",
+    "de"
+  ],
+  "eachLocale": [
+    "Settings and actual saved selection mark",
+    "Cycle fixed Edit",
+    "Full Home replay",
+    "Authored Today text",
+    "Localized Learn More"
+  ],
+  "languageGroupSeconds": 598.957,
+  "acceptedLocaleLogSHA256": "b234e1401964b849895d9eea3f0aa72eb06315e6677a5b256a2cce2bd148e9f8",
+  "limits": [
+    "Simulator proof, no current physical store build/transaction or screen-reader speech acceptance",
+    "Rejected harness/storage attempts are excluded; no editorial/native-speaker approval",
+    "Actual 08:00 native delivery remains unverified"
+  ],
+  "themesDocumentsMotion": {
+    "passed": true,
+    "seconds": 165.641,
+    "DarkAfterHomeAndColdRestart": true,
+    "LightRestored": true,
+    "PrivacyAndTermsReachable": true,
+    "HistoryViaExistingDeepLink": true,
+    "SubscriptionAndEnabledRestoreControlReachable": true,
+    "restoreTransactionTested": false,
+    "UIKitReducedMotionOnObserved": true,
+    "coldReducedMotionReachedRealTodayUnderNineSeconds": true,
+    "UIKitReducedMotionRestoredOff": true,
+    "logSHA256": "4edf2e4525d85a6c273bb4c2ef3c33519e93cf3743161488bcab1a98d41fd94d"
+  }
+}
