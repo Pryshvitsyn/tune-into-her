@@ -101,6 +101,8 @@ fertility, or mood-prediction product.
 - All nine readiness flags remain false. Public legal policy, native store transactions and
   device acceptance require real remaining evidence, not this preparation status.
 - [Current source, provider state, dated proof and final approval checklist](release/RELEASE_PREPARATION.md).
+- Implementation/evidence commit`7f9b583` is pushed; [draft PR#9](https://github.com/Pryshvitsyn/tune-into-her/pull/9)
+  targets preserved`codex/monetization-20261113`. Main/production/store submission remain untouched.
 
 ## CURRENT FINAL UI / LANGUAGES / FOUNDER QA — 2026-11-15
 

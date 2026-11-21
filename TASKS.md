@@ -24,7 +24,7 @@ Updated: 2026-11-21 (Europe/Rome)
 - [ ] Produce store-distribution IPA/AAB and real sandbox purchase/lifecycle/device-notification evidence after account/signing/catalog prerequisites.
 - [ ] Owner-only: existing Apple/Google access/agreements, actual credentials/catalog/notifications, seller/contact/public legal policy and content/legal approval.
 - [x] Review preservation/secrets/diff; retain all39 protected inputs and173 AAB source-input hashes.
-- [ ] Commit/push feature branch and create draft PR linked to#7/#8.
+- [x] Commit/push feature branch and create [draft PR#9](https://github.com/Pryshvitsyn/tune-into-her/pull/9), targeting the preserved monetization baseline and referencing#7/#8; no merge/submission/production activation.
 - [ ] Keep readiness flags false until actual approval/evidence; no implicit production activation, submission or main merge.
 
 Canonical provider state, dated checks and concrete blockers: [current report](release/RELEASE_PREPARATION.md).

@@ -9,6 +9,13 @@ Baseline `9b6e0311a8f63d0762e649d3803f5302f8961ecf` is preserved by
 remain review inputs. No store submission, production billing, Stripe checkout, paid
 service upgrade or purchase has been performed.
 
+Implementation/evidence commit **`7f9b5836e39071298574ffe31383208bc7f31e88`** is pushed on
+the [prepared feature branch](https://github.com/Pryshvitsyn/tune-into-her/tree/codex/release-preparation-20261121).
+[Draft PR#9](https://github.com/Pryshvitsyn/tune-into-her/pull/9) targets preserved
+`codex/monetization-20261113` at9b6e031 and references#7/#8; neither PR was merged/closed.
+Existing CI branch filters do not trigger on this feature/base pair; reported checks are
+the actual local source/native/provider evidence, not an invented GitHub CI pass.
+
 ## Preserved source
 
 The editorial catalog, cue IDs and all localized daily content are frozen. The twelve
