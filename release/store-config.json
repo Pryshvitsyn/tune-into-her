@@ -101,5 +101,6 @@
     "statusObserved": "Prepare for Submission",
     "checkedOn": "2026-11-21"
   },
-  "appleSubscriptionCatalogEvidence": "release/evidence/apple-catalog-20261122/catalog.json"
+  "appleSubscriptionCatalogEvidence": "release/evidence/apple-catalog-20261122/catalog.json",
+  "revenueCatConfigurationEvidence": "release/evidence/revenuecat-20261122/configuration.json"
 }

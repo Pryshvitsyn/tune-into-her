@@ -1,0 +1,13 @@
+
+ RUN  v4.1.11 /Users/eliogenesis/Documents/ChatGPT/TuneIntoHer
+
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.009s
+
+OK
+
+ Test Files  1 passed (1)
+      Tests  8 passed (8)
+   Start at  14:57:03
+   Duration  916ms (transform 58ms, setup 0ms, import 80ms, tests 693ms, environment 0ms)

@@ -1,0 +1,111 @@
+{
+  "checkedAtUTC": "2026-11-22T13:56:31.720566+00:00",
+  "projectId": "5921ebba",
+  "appleApp": {
+    "id": "app3e066d34c5",
+    "bundleIdentifier": "com.eliogenesis.tuneintoher",
+    "inAppPurchaseCredentialStatus": "Valid credentials",
+    "manualProductRegistration": true,
+    "automaticStoreImportCredentialConfigured": false,
+    "storeStatusReadback": "Could not check"
+  },
+  "credentialHandling": {
+    "explicitFounderPermission": true,
+    "initialApprovalReviewRejectionResolved": true,
+    "inAppPurchaseKeysCreated": 1,
+    "privateKeyContentsPrinted": false,
+    "privateKeyCommitted": false,
+    "backupOutsideGit": true,
+    "backupDirectoryMode": "0700",
+    "backupFilesMode": "0600",
+    "privateKeyFormatValidated": true,
+    "downloadMovedOutOfDownloads": true,
+    "passwordsCreated": 0,
+    "extraAppStoreConnectApiKeysCreated": 0,
+    "signingCredentialsCreated": 0,
+    "browserFileURLPermissionChanged": false,
+    "ownerInventorySeparateAndPrivate": true
+  },
+  "entitlement": {
+    "identifier": "full_access",
+    "id": "entl23b5999e8c",
+    "reused": true,
+    "attachedProductCount": 2,
+    "verifiedByFreshNavigation": true
+  },
+  "offering": {
+    "identifier": "default",
+    "id": "ofrng36616cccd9",
+    "displayName": "Tune Into Her Full Access",
+    "isDefault": true,
+    "defaultSignal": "Delete disabled with cannot delete the default offering explanation",
+    "verifiedAfterReload": true,
+    "packages": [
+      {
+        "identifier": "$rc_monthly",
+        "revenueCatProductId": "prodb61c7ca0c5",
+        "storeProductId": "monthly_access",
+        "expectedPeriod": "P1M"
+      },
+      {
+        "identifier": "$rc_annual",
+        "revenueCatProductId": "prod90bb80af69",
+        "storeProductId": "annual_access",
+        "expectedPeriod": "P1Y"
+      }
+    ],
+    "onlyAppleProductsAttached": true,
+    "nativeStoreKitRetrievalVerified": false
+  },
+  "appleCatalogSource": "../apple-catalog-20261122/catalog.json",
+  "eas": {
+    "projectId": "dc8938e7-7163-413a-9003-479d0afc8a17",
+    "environmentChanged": "preview",
+    "iosPublicSdkKeyConfigured": true,
+    "iosSdkKeyVisibility": "sensitive",
+    "keyValueExcluded": true,
+    "explicitOfferingId": "default",
+    "actualKeyReadbackMatchesPrivateOwnerCopy": true,
+    "androidKeyAndTrialURLPreserved": true,
+    "billingTestIOSConfigurationGatePassed": true,
+    "productionChanged": false,
+    "cliVersion": "27.11.0"
+  },
+  "notifications": {
+    "ownerReauthenticationCompleted": true,
+    "appleSandboxURLConfigured": true,
+    "sandboxURLMatchedAfterFullReload": true,
+    "productionURLStillUnconfigured": true,
+    "callbackValueExcluded": true,
+    "actualDeliveryTested": false
+  },
+  "sandboxExecution": {
+    "appleTestersAtAudit": 0,
+    "separateOwnerEnteredTestAccountRequired": true,
+    "storeKitConfigurationFileUsed": false,
+    "testStoreSubstituteCreated": false,
+    "nativeBuildStarted": false,
+    "testFlightUploadPerformed": false,
+    "storeTransactionPerformed": false,
+    "nativeAcceptancePassed": false
+  },
+  "preservation": {
+    "personalDeviceWrites": false,
+    "cycleHistoryTrialStorageChanged": false,
+    "revenueCatCustomerIdentityReset": false,
+    "applicationRuntimeChanged": false,
+    "productionActivated": false,
+    "storesPublished": false,
+    "readinessFlagsChanged": false
+  },
+  "screenshots": {
+    "offering-default.jpg": "8e43db9cb9e242251f1a933a12eaad3aceae8fd48c6e7d740ca09b5ae28100f1",
+    "full-access-connected.jpg": "f9c035020003682355a877eede301acaa7e7b7f80fea0c0a4f227f44ed537eb1"
+  },
+  "referencesCheckedOn": "2026-11-22",
+  "references": [
+    "https://www.revenuecat.com/docs/projects/configuring-products",
+    "https://www.revenuecat.com/docs/service-credentials/itunesconnect-app-specific-shared-secret/in-app-purchase-key-configuration",
+    "https://www.revenuecat.com/docs/test-and-launch/sandbox/apple-app-store"
+  ]
+}

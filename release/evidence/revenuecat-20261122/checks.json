@@ -1,0 +1,39 @@
+{
+  "checkedAtUTC": "2026-11-22T13:56:31.720566+00:00",
+  "purchaseRegression": {
+    "files": 4,
+    "tests": 49,
+    "passed": true,
+    "seconds": 0.327,
+    "realStoreTransactionProof": false
+  },
+  "actualEASPreviewPreflight": "sandbox-preflight.json",
+  "preservation": {
+    "frozenInputs": 39,
+    "changedFrozenInputs": [],
+    "aabSourceInputs": 173,
+    "changedAabSourceInputs": []
+  },
+  "allNineReadinessFlagsRemainFalse": true,
+  "runtimeSourceChanges": false,
+  "newNativeBuild": false,
+  "releasePreparationRegression": {
+    "files": 1,
+    "tests": 8,
+    "pythonNativeArtifactFixtures": 7,
+    "passed": true,
+    "seconds": 0.916
+  },
+  "terminalLogs": {
+    "purchase-tests.txt": {
+      "rawSHA256": "1967fb0b220a5b73a8a80e71465d1c483c362ca9deeaefb0cb36475c2bede4cd",
+      "artifactSHA256": "7d9985933cf6e5ddc728dc7a76a73429ef101c90140c61f376bf73fcdcaf820c",
+      "normalization": "Trailing terminal blank lines removed; test output retained"
+    },
+    "release-tests.txt": {
+      "rawSHA256": "02438f80753cab24c26ea9af98d6ac8942b57497245c41a0260d12a7f0feba94",
+      "artifactSHA256": "222b6b7cea4bd28aade7c2902d43ed29da2ca8f2c26ecbf676884d36d18ba076",
+      "normalization": "Trailing terminal blank lines removed; test output retained"
+    }
+  }
+}

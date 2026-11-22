@@ -1,0 +1,25 @@
+{
+  "verifiedProjectId": "dc8938e7-7163-413a-9003-479d0afc8a17",
+  "updated": [
+    {
+      "name": "EXPO_PUBLIC_REVENUECAT_IOS_API_KEY",
+      "environment": "preview",
+      "visibility": "sensitive",
+      "exitCode": 0
+    },
+    {
+      "name": "EXPO_PUBLIC_REVENUECAT_OFFERING_ID",
+      "environment": "preview",
+      "visibility": "plaintext",
+      "exitCode": 0
+    }
+  ],
+  "readBackNames": [
+    "EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY",
+    "EXPO_PUBLIC_REVENUECAT_IOS_API_KEY",
+    "EXPO_PUBLIC_REVENUECAT_OFFERING_ID",
+    "EXPO_PUBLIC_TRIAL_API_URL"
+  ],
+  "productionModified": false,
+  "valuesPrinted": false
+}

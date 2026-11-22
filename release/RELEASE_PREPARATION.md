@@ -112,33 +112,71 @@ EAS **preview** now contains the public sandbox URL. Production env/services are
 Legal retention, deletion contact/procedure, processing terms and production abuse controls
 remain owner/legal decisions in the canonical [external checklist](../STORE_SETUP.md).
 
-### RevenueCat — partial live configuration
+### RevenueCat — Apple catalog connected, native purchase proof pending
 
-The authenticated account initially had no projects. Created exactly one project:
-**Tune Into Her**, React Native, Lifestyle, project `5921ebba`. Created approved
-`full_access` (`entl23b5999e8c`); it has **no associated products yet**. Skipped suggested
-Pro/lifetime/Test Store products rather than inventing a new commercial model.
+The authenticated account initially had no projects. Reuse the one existing project
+**Tune Into Her**, React Native, Lifestyle, `5921ebba`, and approved entitlement
+`full_access` (`entl23b5999e8c`). No second project, access tier or Test Store substitute.
 
-Created one Play configuration (`app445ba93d10`) with exact existing Android package.
-Its **public** `goog_` SDK key was placed in EAS preview; no private RC API key was read,
-created or committed. This app cannot validate real transactions until its Google service
-account connection and developer notifications are configured. Android app creation is
-not Play Console catalog, pricing, App Signing or purchase verification.
+Existing Play app `app445ba93d10` retains its exact package and public SDK key in EAS
+preview. Google service-account/notifications/catalog remain unconfigured; no Play
+transaction, upload signing or lifecycle result is inferred from this Apple pass.
 
-Apple creation is blocked at the actual form: In-App Purchase `SubscriptionKey_….p8`,
-Key ID and Issuer ID are required for StoreKit2 recording. The bundle-ID draft matches
-source; no key was invented or searched out of private user files. No Apple RC app/public
-key exists yet. Creating integration/distribution credentials is a separate security-sensitive
-owner action; browser sign-in does not supply these files to RevenueCat or EAS.
+On November22 the Founder explicitly authorized the Apple product/entitlement/offering
+connection, then separately approved one **Tune Into Her RevenueCat IAP** key and transfer
+of its p8/Key ID/Issuer ID only to this RevenueCat project. That resolved the initial
+credential-creation auto-review rejection. Created exactly one In-App Purchase key,
+retained the one-time download in owner-only storage outside Git, and uploaded it through
+the native file picker. No browser file-URL permission was broadened. The secret was never
+printed; no password, extra App Store Connect API key, shared secret or signing credential
+was created. A separate private owner inventory explains purpose, files and revocation.
 
-The Apple catalog was empty at the November21 audit; the approved November22 Apple
-draft creation is recorded below. The current Google profile still opens developer signup,
-so its catalog remains inaccessible. No RC product mapping, Google base plans, current
-offering, provider notification credentials or paid trial migration were saved.
-Approved targets stay €3.99/month and€24.99/year, both `full_access`,
-with independent14-day card-free access and no automatic charge at expiry. Stripe/web
-checkout and production purchases are out of this pass. Real store sandbox matrices
-remain blocked by these actual account/catalog prerequisites.
+Saved Apple app **app3e066d34c5**, bundle `com.eliogenesis.tuneintoher`; RevenueCat reports
+**Valid credentials**. Manually registered the exact existing Apple IDs and attached both
+to the existing entitlement. Created current offering **default** (`ofrng36616cccd9`),
+display name **Tune Into Her Full Access**, with only these Apple packages:
+
+| Standard package | Apple product | RevenueCat product | Access |
+| --- | --- | --- | --- |
+| `$rc_monthly` | `monthly_access` | `prodb61c7ca0c5` | `full_access` |
+| `$rc_annual` | `annual_access` | `prod90bb80af69` | `full_access` |
+
+Fresh entitlement navigation and an offering reload confirm both mappings and default
+status. Both products are subscriptions with upfront billing; no monthly/12month-commitment
+flag or introductory offer was added. Apple remains the authoritative period/price source.
+Without the optional separate App Store Connect API key, automatic import/status/price
+synchronization is unavailable and RC shows **Could not check** store status. That key was
+not generated. Native StoreKit product retrieval/period/price verification remains open.
+
+The actual public iOS SDK identifier was stored in EAS **preview** as **sensitive**, with
+`EXPO_PUBLIC_REVENUECAT_OFFERING_ID=default`. The existing Android key and trial URL were
+preserved. Pulled the actual four remote values into a `0600` temporary file, matched the iOS
+value to the protected owner copy and ran the existing iOS `billing-test` preflight:
+**PASS**, sandbox, demo=false, mocks=false. No fake/Test Store key, native build, production
+variable, distribution/signing mutation, upload or personal-device installation occurred.
+
+After owner password reauthentication in RevenueCat, configured its exact opaque callback
+only in App Store Connect's **Sandbox server URL**. A full reload confirms equality and
+that the production URL remains unset. Callback values are excluded from Git/chat and
+kept in the private owner inventory. No actual notification delivery is claimed.
+
+The existing native SDK already uses standard monthly/annual packages, checks `full_access`,
+preserves its anonymous identity and validates periods/no introductory offer. Reused it
+without runtime changes. [Concrete sandbox execution runbook](../BILLING_QA.md#apple-sandbox-preparation--22-november-2026)
+defines the real mapping, preview/build flags, owner-entered sandbox account, data-preserving
+device setup and separate paid-versus-app-trial assertions. **49 existing tests /4 files
+pass**. The Apple sandbox tester list was empty in the live audit; the dated Apple agreement/
+availability/signing prerequisites and actual native purchase/lifecycle/delivery proof are
+still open. Nothing changed on the personal iPhone, in trial/cycle/history storage or in
+production services. All nine readiness flags remain false.
+
+[Current provider configuration/evidence](evidence/revenuecat-20261122/configuration.json) ·
+[full_access mapping](evidence/revenuecat-20261122/full-access-connected.jpg) ·
+[current default offering](evidence/revenuecat-20261122/offering-default.jpg) ·
+[actual sandbox configuration gate](evidence/revenuecat-20261122/sandbox-preflight.json).
+The Apple draft catalog was created earlier on November22 as recorded below. Approved
+commercial terms and independent14-day card-free access are unchanged. Stripe/web checkout
+and production purchases remain out of scope.
 
 ### Existing store consoles — November21 read-only audit
 
@@ -206,8 +244,8 @@ screenshot, introductory/promotion offer, review submission or agreement accepta
 [monthly saved price](evidence/apple-catalog-20261122/monthly-price.jpg) ·
 [annual saved price](evidence/apple-catalog-20261122/annual-price.jpg).
 The dated November21 Paid Applications Agreement/legal-entity blocker remains unresolved;
-Apple RevenueCat integration credentials, mappings, distribution signing and real store
-sandbox purchase/lifecycle proof are still missing. Catalog creation does not set any
+Apple RevenueCat credentials/mappings are now connected as recorded above; distribution
+signing and real store sandbox purchase/lifecycle proof remain missing. Catalog creation does not set any
 readiness flag or prove a transaction. App/source/phone data were not changed.
 The focused existing release-preparation suite passed **8 tests**, including **7 Python
 native-artifact fixtures**. All 39 frozen inputs and 173 AAB source inputs remain
@@ -471,8 +509,9 @@ Smallest owner handoff:
 
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
    requirements; confirm sales regions/tax and review metadata for the now-created drafts. Provide the authorized
-   distribution signing/profile and Apple In-App Purchase integration directly in the
-   provider consoles. No passwords, keys or financial details belong in chat/Git.
+   distribution signing/profile and a separate sandbox tester directly in the provider
+   consoles. Apple RC integration/mapping and Sandbox URL are configured; real purchases/
+   delivery remain open. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** identify/open the existing developer account or obtain its invitation.
    Confirm health-feature/account-type eligibility, Play App Signing/upload identity and
    the authorized service-account/notification connection. No new account fee was accepted.

@@ -76,8 +76,17 @@ fertility, or mood-prediction product.
   explicit14-day start, no implicit start, immutable repeat/redeploy dates,401/400 and live429 pass.
   Production remains undeployed. Preview EAS receives actual public sandbox URL.
 - RevenueCat project5921ebba and approved `full_access` created; Play app445ba93d10 uses preserved
-  package and public SDK key in EAS preview. Apple requires In-App Purchase p8/issuer/key ID;
-  Google service-account/notifications, Play catalog and offering mappings remain blocked.
+  package and public SDK key in EAS preview. Google service-account/notifications and Play
+  catalog/mappings remain blocked.
+- November22 explicit credential approval resolved the initial automatic-review blocker:
+  one Apple IAP key stored outside Git with private owner handoff; Apple RC app `app3e066d34c5`
+  reports Valid credentials. Both exact products attach to existing full_access; current
+  default offering `ofrng36616cccd9` maps the two standard packages, verified after reload.
+  iOS public SDK key (sensitive) and offering default saved/read back in EAS preview;
+  actual iOS billing-test gate and49 purchase/configuration tests pass. No real purchase,
+  new native build or phone/runtime data write. Sandbox testers were absent at audit; owner
+  reauth completed and RC callback saved/matched after reload only in Apple's Sandbox URL.
+  Notification delivery remains unverified; optional auto-import has no extra ASC API key.
 - Apple app6832290282 / en-AU / version1.0 is preserved. Explicit Founder approval on
   November 22 authorized group `22605485` and drafts `monthly_access` (Apple `6837968807`) /
   `annual_access` (Apple `6837969104`), created with periods 1 month/1 year and the same level 1. Italy/EUR

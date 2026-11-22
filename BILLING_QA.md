@@ -4,12 +4,111 @@ Current status, 2026-11-22: Apple group and monthly/annual drafts are now create
 explicit Founder approval, with equal level1,1month/1year and saved/read-back Italy prices
 €3.99/€24.99. No introductory offers or sales availability configured. See the
 [actual catalog and limits](release/evidence/apple-catalog-20261122/catalog.json).
+RevenueCat Apple app `app3e066d34c5` now has valid In-App Purchase credentials, both
+products attached to `full_access`, and current offering `default` with both standard
+packages. EAS preview key/offering readback and iOS billing-test preflight pass. Actual
+native store purchases remain unverified; see the current preparation below.
 The November21 isolated Cloudflare sandbox HTTP and ordinary native Simulator
 trial→Today→cold restart now pass; RevenueCat is partially configured and an actual internal
 Android AAB has binary evidence. See [current release preparation](release/RELEASE_PREPARATION.md)
 and [remaining owner actions](STORE_SETUP.md). The dated November13 observations below are
 historical and do not override that new proof. Real Apple/Google store transactions and
 store-distribution signing remain unverified.
+
+## Apple sandbox preparation — 22 November 2026
+
+The Founder authorized connecting the two existing Apple products to RevenueCat and
+preparing purchase QA, without publication or personal-data changes. Reuse project
+`5921ebba` and entitlement `full_access` (`entl23b5999e8c`). The current native service
+already reads the configured/current offering's standard monthly and annual packages;
+no purchase, trial, identity or persistence implementation change is needed.
+
+| Configured package | Existing Apple product | Period | Access |
+| --- | --- | --- | --- |
+| `$rc_monthly` | `monthly_access` (Apple6837968807) | P1M | `full_access` |
+| `$rc_annual` | `annual_access` (Apple6837969104) | P1Y, full yearly payment | `full_access` |
+
+Configured offering: `default` (`ofrng36616cccd9`), display name **Tune Into Her Full Access**,
+marked current by RevenueCat. Saved both standard packages under Apple app `app3e066d34c5`:
+monthly product `prodb61c7ca0c5`, annual product `prod90bb80af69`. Both are attached to the
+existing entitlement; a fresh entitlement page and reloaded offering verify the mapping.
+[Dated configuration and screenshots](release/evidence/revenuecat-20261122/configuration.json).
+
+The initial credential approval blocker was resolved by explicit Founder permission in
+this chat. Created exactly one **Tune Into Her RevenueCat IAP** key and uploaded it only
+to this RevenueCat Apple app, which reports **Valid credentials**. The downloaded key and
+separate owner instructions are outside Git in owner-only local storage (directories700,
+files600); no private key contents were printed, and no password was created. No App Store
+Connect API key, signing certificate/profile or legacy shared secret was generated.
+Products were registered manually using the verified existing Apple IDs. Automatic store
+import/status/price synchronization still lacks the separate optional App Store Connect
+API credential; RevenueCat shows **Could not check** for store status. This does not prove
+that native StoreKit has fetched either product or completed a transaction.
+
+An In-App Purchase key is required by the current React Native/StoreKit2 integration,
+as documented by [RevenueCat](https://www.revenuecat.com/docs/service-credentials/itunesconnect-app-specific-shared-secret/in-app-purchase-key-configuration).
+It is an account-level credential, not an app-scoped distribution certificate. Keep its
+private file out of Git, chat, screenshots and public build variables. Creating any
+additional security credential needs its own applicable permission.
+
+Before running a real Apple sandbox transaction:
+
+1. The preserved bundle `com.eliogenesis.tuneintoher`, both Apple product IDs, shared
+   entitlement and standard packages are saved. On the actual native build, confirm
+   `getOfferings()` resolves both expected products with P1M/P1Y and no introductory offer.
+   No Play/Test Store substitute was added. Native metadata/transactions are still open.
+2. The real public `appl_…` SDK key is now in EAS **preview**, visibility **sensitive**;
+   `EXPO_PUBLIC_REVENUECAT_OFFERING_ID=default` is explicit there. Readback matches the
+   separate protected owner copy, and the existing iOS `billing-test` gate passes using
+   the pulled remote values. SDK keys are bundled public identifiers, not server secrets;
+   values are not printed or committed. Production is untouched.
+3. Complete Apple owner prerequisites: the November21 Paid Applications Agreement/legal
+   blocker (recheck current status), sales availability/tax/review metadata, and authorized
+   signing. The sandbox account page showed **no testers** during this audit. The owner must create a separate tester
+   with an owned email and enter its password directly in Apple, then sign into the
+   device's Sandbox Apple Account. Never replace the personal iCloud account or send
+   credentials in chat. TestFlight has no builds at the dated audit; no upload is implied.
+   After owner password reauthentication, the exact RevenueCat callback was saved in
+   Apple's **Sandbox** server URL and matched after reload. The production URL remains
+   unset. Actual event delivery is not tested; the opaque callback is stored only in the
+   protected owner inventory, not this document.
+4. Reuse `billing-test` in [eas.json](eas.json): store distribution, preview environment,
+   sandbox trial service, demo=false and mocks=false. With authorized signing and real
+   public SDK configuration, run `npx eas-cli build --profile billing-test --platform ios`.
+   Check the existing `eas-production-check.mjs` before building. This build has **not**
+   been started; no paid build, store upload or physical-device replacement was performed
+   in this pass. The private Founder QA entry is rejected by the build gate.
+   The app's sandbox flag alone does not select Apple's purchase environment: use the
+   genuine sandbox/TestFlight build/account flow and inspect the native sheet before confirming.
+5. Use a designated test device/installation, or a reviewed update preserving the existing
+   app container. Do not uninstall, clear storage, erase cycle/history/trial credentials,
+   reset the RevenueCat anonymous identity, change device time, or clear personal purchase
+   history. Reach the paywall via Settings → Subscription; onboarding/data resets are not
+   needed to test purchases. Record only redacted technical evidence.
+
+Execution order once all prerequisites pass: fetch actual packages/prices → cancel each
+plan's sandbox sheet → buy monthly → verify server-confirmed sandbox `full_access` →
+cold restart/restore → cancel renewal and verify paid-through access → observe renewal/
+expiry → test annual and both plan-change directions in Apple's subscription management.
+Also cover network failure, pending/delayed entitlement delivery and retry. Check the
+native sheet explicitly identifies the sandbox/test environment before confirmation.
+The current matrix below defines expected state/error handling; local SDK mocks are not
+transaction proof. Follow [RevenueCat's Apple sandbox guide](https://www.revenuecat.com/docs/test-and-launch/sandbox/apple-app-store)
+for the actual OS/account flow and known storefront-metadata quirks.
+
+Paid acceptance requires confirmed `CustomerInfo.entitlements.active.full_access`, the
+expected product, sandbox status, expiration/renewal and successful verification. Today
+being visible is insufficient: the independent 14-day app trial may still allow it. Paid
+expiry must not erase that trial or saved data; locked-flow acceptance additionally requires
+the app trial to be expired using the existing isolated scenario, not a personal-device
+clock or persisted-date alteration. Preserve actual native localized prices; never hardcode
+EUR or treat a sandbox currency quirk as permission to change approved pricing.
+
+Current proof: **49 existing purchase/lifecycle/mock-isolation/build-configuration tests
+passed across 4 files** on November22, live RC mapping verified after reload, actual EAS
+preview readback and iOS billing-test configuration gate pass, sandbox callback saved/read
+back with production unchanged. Real Apple purchases, notification delivery and
+native sandbox acceptance remain unverified; all nine release-readiness flags remain false.
 
 Date: 2026-11-13. Branch: `codex/monetization-20261113`, based on the current local
 release candidate, not an older remote main. Tests below distinguish local deterministic

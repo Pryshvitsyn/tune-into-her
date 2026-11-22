@@ -1,0 +1,15 @@
+{
+  "checkedAtUTC": "2026-11-22T13:48:59.003Z",
+  "profile": "billing-test",
+  "platform": "ios",
+  "environment": "preview",
+  "actualRemoteIOSKeyMatchesPrivateOwnerCopy": true,
+  "explicitOffering": "default",
+  "demo": false,
+  "mockBilling": false,
+  "billingEnvironment": "sandbox",
+  "configurationPreflightPassed": true,
+  "productionModified": false,
+  "nativeBuildStarted": false,
+  "storePurchasePerformed": false
+}
