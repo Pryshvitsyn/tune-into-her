@@ -64,7 +64,7 @@ RevenueCat, Cloudflare or the store's secret storage; never send secrets in chat
 
 | Service | Missing concrete action/value | Where to obtain/configure | Already prepared | Verification unlocked |
 | --- | --- | --- | --- | --- |
-| Apple account/signing | Owner runs prepared exact-key Apple CLI with hidden Login Keychain password prompt, then verify ACL/probe; build-host capacity, next number/free pricing remain open | Apple Developer; protected local signing; fresh Codex Terminal | One certificate/profile valid through22November2027; trust/profile/import pass. UI-enabled API retry -25293 does not establish owner-password validity. Official CLI selector matches exactly one private signing key; no password arguments/files. Manual command pending because Codex screen control is denied; consent received, no IPA/upload | Signed TestFlight-capable IPA/install |
+| Apple account/signing | Supply more host disk for device archive/local export and binary audit; verify future upload number/free pricing before upload | Local Xcode; protected local signing | Certificate/profile/trust/import and owner CLI0/ACL-backup comparison/Distribution probe sign0+strictverify0 pass. Key local, prior identity/policies preserved. Normal arm64/jobs1 attempt passed app-only signing/preflight; disk guard stopped at1.995GiB/1529.72s,0compiler errors. Own failed cache cleaned, prior artifacts intact. No archive/IPA/upload success | Signed TestFlight-capable IPA/install |
 | Apple agreements/catalog | Owner must update legal entity and accept Paid Applications Agreement (New, not active at fresh November22 audit); confirm sales regions and tax category, finish review screenshot/metadata. Draft creation approval is resolved | App Store Connect → Business; app → Monetization → Subscriptions | Founder-approved group22605485 and both products created November22; periods1month/1year, equal level1, en-AU draft names/descriptions, Italy€3.99/€24.99 saved/read back; no introductory offer, availability unset, tax category inherits app without attestation | Catalog mapping and both sandbox purchase/lifecycle matrices |
 | RevenueCat Apple | Run actual native purchases/lifecycle after tester/Apple/signing prerequisites. Independent Sandbox TEST delivery already passes. Optional automatic import/status sync needs a separately authorized App Store Connect API key | RevenueCat → iOS app configuration; Apple sandbox notifications | Apple app3e066d34c5 / preserved bundle, valid authorized In-App Purchase key; both products attached to full_access. Owner reauth complete; Sandbox callback saved/matched after reload, production URL unset; no extra API/signing key | Server-confirmed Apple CustomerInfo and notifications |
 | Google account/app | Owner must choose eligible account type/health classification and separately authorize any paid registration before Console setup; then verify app/package, account date, merchant, signing and versionCode | Play Console; EAS Credentials/version management | Founder explicitly confirms no existing developer account. None created/paid. Package/EAS preserved; remote versionCode1 initialized only for internal native-audit | Play-signed AAB upload/internal install |
@@ -98,14 +98,16 @@ environment name and non-secret redemption scheme belong there. Never place Stri
   release evidence and legal gates must also pass. Store sandbox/TestFlight transactions
   are valid tests even when using production platform SDK keys; they are not revenue.
 
-After filling EAS preview environment values and authorized signing:
+Unexecuted remote-build alternatives, requiring authorized remote signing and service cost:
 
 ```sh
 npx eas-cli build --profile billing-test --platform ios
 npx eas-cli build --profile billing-test --platform android
 ```
 
-These store-distribution commands have **not** been executed. Separate Free EAS `native-audit` build10288699… finished; actual binaries/static proof are in the current report, with debug signing explicitly excluded from Play upload proof. Verify service cost/authorization
+The current iOS archive attempt instead used local Xcode and the checked preview environment,
+keeping the private key on the Mac. These remote store-distribution commands have **not**
+been executed. Separate Free EAS `native-audit` build10288699… finished; actual binaries/static proof are in the current report, with debug signing explicitly excluded from Play upload proof. Verify service cost/authorization
 before starting a remote build. Install Android via Play internal testing/license testers,
 not merely sideloading an export. iOS requires development sandbox/TestFlight. The current
 native dependency change requires a new binary; an OTA update cannot add native code/schemes.

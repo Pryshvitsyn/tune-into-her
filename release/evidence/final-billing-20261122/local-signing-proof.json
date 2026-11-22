@@ -1,6 +1,6 @@
 {
-  "checkedAtUTC": "2026-11-22T17:15:00.535422+00:00",
-  "kind": "Local Distribution credential signing probe; copied Apple system Mach-O; not Tune Into Her native build or IPA",
+  "checkedAtUTC": "2026-11-22T20:37:08.367617+00:00",
+  "kind": "Local Distribution credential probe on isolated copy of Apple system Mach-O; not application compilation/IPA",
   "retainedBlockedAttempts": {
     "initial": {
       "exitCode": null,
@@ -13,20 +13,32 @@
     "previous20s": {
       "exitCode": null,
       "timedOut": true
+    },
+    "lastBlockedAttempt": {
+      "exitCode": null,
+      "timedOut": true
     }
   },
-  "ownerSystemConfirmation": "Owner reports Mac login Keychain password entered and Always Allow selected",
+  "ownerAppleCLIExitCode": 0,
+  "originalACLComparisonPassed": true,
+  "originalCodesignApplicationListAndFlagsPreserved": true,
+  "onlyApprovedApplePartitionAdded": true,
   "sign": {
-    "exitCode": null,
-    "timedOut": true
+    "exitCode": 0,
+    "output": "/tmp/tih-final-billing-20261122/signing-proof/TuneIntoHer-signing-probe: replacing existing signature\n"
   },
-  "verify": null,
-  "teamMatches": false,
-  "result": "INCOMPLETE",
-  "originalSystemBinaryChanged": false,
+  "verify": {
+    "exitCode": 0,
+    "output": "/tmp/tih-final-billing-20261122/signing-proof/TuneIntoHer-signing-probe: valid on disk\n/tmp/tih-final-billing-20261122/signing-proof/TuneIntoHer-signing-probe: satisfies its Designated Requirement\n"
+  },
+  "teamMatches": true,
+  "result": "PASS",
+  "probeSHA256": "3d9e4a7da617adb7bac221cf62c6aa92562d7fa827a8e2a42bac09300c1caa40",
   "probeExecuted": false,
-  "probeSHA256": "875c7eea9c66c826091ede3cc44599311dc6818caf17f9e53d97c54c288842b2",
-  "timestamping": "none; local signing proof only",
+  "systemBinaryChanged": false,
+  "nativeAppBuilt": false,
+  "ipaBuilt": false,
   "personalDeviceWrites": false,
-  "appStoreOrTestFlightUpload": false
+  "privateKeyUploaded": false,
+  "macPasswordReadOrSaved": false
 }

@@ -81,31 +81,22 @@ fertility, or mood-prediction product.
 - **New real Apple Sandbox TEST notification delivery succeeds**, Apple request/status200
   and SUCCESS. No actual purchase/lifecycle entitlement is inferred. Callback values are
   excluded from saved proof; one accidental technical-snapshot inclusion was disclosed.
-- Founder subsequently explicitly approved one Apple Distribution certificate and App Store
-  profile for the existing Team/bundle, with the private key local only. One encrypted RSA2048
-  key and matching verified CSR are now in the protected owner directory, outside Git.
-  Owner completed public-CSR selection; exactly one Distribution certificate and one App Store
-  profile are issued through22November2027. Apple trust, key/CSR/certificate equality and
-  profile Team/bundle/single-certificate/debug-disabled/no-device checks pass.
-  After separate explicit Founder approval, the existing identity was imported into local
-  Login Keychain with codesign-specific access; valid identities changed1→2, prior identity
-  and search list unchanged. Local PKCS12 is AES256/SHA256-encrypted outside Git.
-  Probe signing remains INCOMPLETE (15s/45s/20s/180s timeouts retained). Owner reports
-  system confirmations; exact-key ACL readback still lacks the Apple partition required
-  by codesign. After the initial automatic-review rejection, Founder separately approved
-  apple: for only this key. Scoped update returned macOS authentication failure -25293;
-  call ended, protected ACL backup exists, no successful update/readback/signature claimed.
-  Consent is already received; owner system authentication remains required.
-  Founder-requested retry with native UI enabled also returned -25293; it did not validate
-  the owner's actual password. Apple source confirms its CLI uses an explicit hidden
-  password prompt. A no-password-argument command targeting exactly one new private key
-  is prepared, with a fresh Codex Terminal panel. Codex UI control was denied by tool safety;
-  owner must run the prepared command locally, then ACL/signature proof will be checked.
-  No IPA/EAS private-key upload.
-  Host free space recovered to about4GiB; prior4.5GiB attempt exhausted disk, so no full rebuild.
-  [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
-  Owner intends to complete the tester and Business forms; completion is not yet reported.
-- New full native recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;
+- Local Distribution signing now passes: exactly one certificate/profile through22November2027,
+  matching key/CSR/certificate, Apple trust and all profile checks. Approved import preserved
+  prior identity/search list. Owner Apple CLI exit0 is independently verified against the
+  original ACL backup: only approved apple: added, codesign application list/flags preserved.
+  Actual isolated probe sign0/strictverify0/expectedTeam passes; Mac password never read/saved
+  by agent, private key stays local. Earlier approval/API/prompt failures remain historical.
+  [Signing proof](release/evidence/final-billing-20261122/signing-progress.json).
+- A fresh device Release archive was attempted on4.927GiB free disk using installed prebuilt
+  frameworks, isolated paths, arm64/jobs1/Metro1, automatic2GiB disk/1.5GiB swap-growth guards.
+  App-only manual signing, empty Pods profile, normal real-key sandbox preflight and absent
+  QA/demo/mock overrides pass. Disk guard stopped it at1.995GiB after1529.72s/559compile events,
+  exit75 with0compiler errors; no archive/IPA, export never started. Only its failed DerivedData
+  was cleaned, recovering3.939GiB; logs/prior artifacts intact. More host disk is required,
+  not new credentials or another owner password. No upload/personal-device write.
+  [Build proof](release/evidence/final-billing-20261122/device-archive-build.json).
+- Earlier Simulator recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;
   no success claimed. A separate current Hermes re-embed of prior verified Simulator Release
   has the real SDK key, no private QA, verified ad-hoc signature and identical unsigned
   Mach-O payload. It is runtime QA, not an IPA/new native compile/TestFlight artifact.

@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T19:19:41.599171+00:00",
+  "checkedAtUTC": "2026-11-22T20:47:46.692226+00:00",
   "retryRequestedByFounder": true,
   "nativeUIEnabledAPIRetryStatus": -25293,
   "priorAPICallDidNotValidateOwnersActualPassword": true,
@@ -22,9 +22,13 @@
   "codexTerminalPanelCreated": true,
   "codexTerminalSnapshot": "Fresh zsh prompt; owned exec PTY was not attached",
   "computerUseCodexControl": "Denied by tool safety policy; no bypass attempted",
-  "manualOwnerCommandPending": true,
+  "manualOwnerCommandPending": false,
   "permissionAlreadyReceived": true,
-  "scopedEditSuccessVerified": false,
-  "signatureSuccessVerified": false,
-  "personalAppDataChanged": false
+  "scopedEditSuccessVerified": true,
+  "signatureSuccessVerified": true,
+  "personalAppDataChanged": false,
+  "ownerReportedExitCode": 0,
+  "recordedOwnerExitCode": 0,
+  "officialAppleCLICompleted": true,
+  "originalACLBackupComparisonPassed": true
 }

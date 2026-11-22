@@ -41,13 +41,20 @@ Updated: 2026-11-22 (Europe/Rome)
   back up only its ACL, verify signing application exactly codesign and submit scoped update.
 - [x] Record actual scoped-update result: macOS authentication failed -25293; call ended,
   no successful update/signature claimed; preserve backup and prior import proof.
-- [ ] Resolve owner Login Keychain authentication, finish already-authorized exact-key edit,
-  verify readback/probe, then build IPA on capable host. No key uploaded; no new consent needed.
+- [x] Resolve owner authentication via official Apple CLI exit0; compare exact-key ACL against
+  original backup, preserve all other policies and verify Distribution probe sign0/strictverify0/Team.
 - [x] Retry with native UI enabled; retain actual -25293 without blaming owner password.
   Inspect Apple implementation; prepare official hidden-prompt CLI, verify exactly one
   target private key, preserve existing partitions and omit password arguments/files.
-- [ ] Owner runs prepared Apple CLI in fresh Codex Terminal; Codex screen control is denied
-  by tool safety. Verify actual exit/ACL/probe afterwards; all access consent already received.
+- [x] Owner completed prepared Apple CLI; actual exit/readback/probe pass. Password stayed
+  in vendor hidden prompt; no repeated consent or further owner credential step needed.
+- [x] Prepare/install only approved profile for Xcode; verify app-only signing expansion,
+  empty Pods profile, normal Node-only overrides, real-key sandbox/no-QA preflight.
+- [x] Attempt guarded fresh arm64 device archive; app-only signing/preflight pass,0compiler errors,
+  disk guard stops at1.995GiB after1529.72s/559compile events. Preserve log, clean only owned
+  failed DerivedData, recover3.939GiB; no Simulator/phone/store writes or weakened guards.
+- [ ] Finish device archive/local IPA export and artifact audit with substantially more host
+  disk; initial4.927GiB did not fit. Credential access is resolved, export not attempted.
 - [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
   in prepared forms (intent reported, completion pending); legal/editorial sign-off.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay
@@ -72,7 +79,7 @@ Updated: 2026-11-22 (Europe/Rome)
 - [x] Audit RevenueCat Apple dependency and prepare exact two-package sandbox runbook without device/data writes;49 purchase/configuration tests pass. Record initial zero active Apple IAP keys, no sandbox testers and no existing offering (All filter), before authorized key/catalog setup below.
 - [x] After explicit credential approval, create one protected Apple IAP key and RC Apple app with Valid credentials; register both exact Apple products, attach existing full_access and save/reload current default offering with both standard packages. Save/read back iOS SDK key and offering only in EAS preview; actual billing-test preflight passes. No phone/data/runtime/production write.
 - [x] Complete owner RevenueCat reauthentication; save/read back exact callback only in Apple's Sandbox URL, leaving production unset. Protect opaque callback with the separate local key inventory.
-- [ ] Complete separate owner-entered Apple sandbox tester, Apple agreement/availability and authorized signing; then run actual native purchase/lifecycle proof. Independent Sandbox TEST delivery now passes. No App Store Connect API/signing key or password created in this connection pass.
+- [ ] Complete separate owner-entered Apple sandbox tester, Apple agreement/availability and signed device archive/export; then run actual native purchase/lifecycle proof. Local credential access now passes. Independent Sandbox TEST delivery now passes. No App Store Connect API/signing key or password created in this earlier connection pass.
 - [x] Harden store build gates; isolate credential-free Android native-audit profile and real artifact verifier.
 - [x] Build actual normal signed iOS Simulator Release; retain failed unsigned/cache/disk attempts explicitly.
 - [x] Pass531source tests/55files, typecheck/lint/content checks; preserve every pixel/hash assertion.

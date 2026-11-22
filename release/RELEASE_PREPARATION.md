@@ -18,101 +18,81 @@ the actual local source/native/provider evidence, not an invented GitHub CI pass
 
 ## Signing follow-up — 22 November 2026
 
-Founder explicitly approved **one Apple Distribution certificate and one App Store
-provisioning profile** for TeamB77TL63S9T / `com.eliogenesis.tuneintoher`, keeping the
-private key local. This resolves the earlier approval blocker below; consent is not
-certificate issuance. Exactly one encrypted RSA2048 private key and CSR were generated
-in the protected owner directory outside Git (directory0700, files0600). Private-key
-validation, CSR signature and matching public keys pass. A separate owner inventory
-explains paths/purpose/revocation without copying secret values into the repository.
-No private key was sent to Apple, EAS or RevenueCat; existing signing identities were
-not modified. Apple showed only the existing Development certificate before upload.
-
-Chrome file selection stalled, and the native picker repeatedly failed to confirm the
-public CSR path. Manual selection of the public `/tmp/TuneIntoHer.certSigningRequest`
-was requested. **Owner then completed selection**, and exactly one Apple Distribution
-certificate plus `Tune Into Her App Store 20261122` provisioning profile were issued.
-Both expire22November2027 at16:07:27UTC. Certificate public key matches the existing
-CSR/private key; macOS code-signing trust validation passes through Apple WWDR/Apple Root.
-Decoded profile matches Team/bundle and exactly this certificate, has `get-task-allow=false`,
-no provisioned device list and no Enterprise flag. No duplicate credentials were created.
+**Local Distribution signing is verified.** Exactly one Apple Distribution certificate and
+one `Tune Into Her App Store 20261122` profile exist for TeamB77TL63S9T /
+`com.eliogenesis.tuneintoher`, both expiring22November2027 at16:07:27UTC. Private key,
+CSR and certificate public keys match; Apple WWDR/Root trust passes. Profile Team/bundle,
+single-certificate, expiry, `get-task-allow=false`, no-device-list and non-Enterprise checks pass.
 [Certificate proof](evidence/final-billing-20261122/apple-distribution-created.jpg) and
 [profile proof](evidence/final-billing-20261122/apple-app-store-profile-created.jpg).
 
-Automatic approval review **rejected persistent import of the private identity into the
-existing Login Keychain**: prior consent covered certificate/profile creation and protected
-local storage, not persistent signing access. The entire command was rejected before
-execution; no PKCS12 archive/import, Keychain ACL/search-list/trust-setting change occurred.
-The Founder subsequently provided separate explicit approval for that exact local import.
-It is now **completed** using the existing identity, an AES256/SHA256-encrypted local
-PKCS12 and macOS Security APIs; no secret passphrase was put in process arguments.
-Valid signing identities changed1→2, preserving the prior Development identity and
-Keychain search list. No trust settings or other keys were changed; automatic access was
-scoped to `/usr/bin/codesign`, not all applications. Earlier OpenSSL packaging failures
-did not change Keychain; the successful archive was validated in memory before import.
+The separately approved local Login Keychain import changed valid identities1→2 while
+preserving the prior Development identity and search list. Private key/PKCS12 are encrypted,
+owner-only and outside Git. The owner completed the separately approved **exact-key**
+Apple CLI command: reported and recorded exit0. Independent readback against the protected
+original ACL backup confirms only apple: was appended; original application lists/flags and
+all other policy descriptions are preserved. The ordinary signing application remains
+exactly `/usr/bin/codesign`. No other key, global trust setting or Keychain search list changed.
+**Actual probe:** isolated Mach-O copy signed with Distribution identity, `codesign` exit0,
+strict verification exit0 and expected Team ID. Probe was never executed and is not an IPA.
+[ACL proof](evidence/final-billing-20261122/codesign-acl-diagnosis.json),
+[actual signature](evidence/final-billing-20261122/local-signing-proof.json) and
+[owner CLI verification](evidence/final-billing-20261122/apple-cli-handoff.json).
 
-The local credential probe operates on a separate copy of an Apple system Mach-O in
-task temporary storage, never executes it and does not change the original system binary
-or application. The initial file-copy metadata attempt could not copy a system file flag;
-copied bytes were verified against the original before proceeding.15s/45s/20s/180s `codesign`
-attempts timed out; the owner's screenshot shows
-the specific new-key/login-Keychain password prompt. This prompt was not visible in the
-automation app inventory. Owner reported system confirmations. Login-keychain password
-is normally the Mac account password ([Apple Support](https://support.apple.com/en-gb/guide/keychain-access/kyca2429/mac)), distinct from the generated PKCS12 passphrase;
-it was never read by the agent. Further exact-key read-only ACL inspection found **only
-a cdhash partition and no apple:**, including after the latest owner confirmation.
-Local Apple security(1) explicitly requires apple: for `/usr/bin/codesign`. The operation
-stack is blocked in SecKeyCreateSignature/CSSM. Automatic review rejected the proposed
-exact-key apple: addition as broadening the Apple-signed-process partition scope beyond
-codesign-specific consent. The entire command was rejected before execution; no ACL
-backup/update or other-key change occurred in that rejected command. The Founder then
-**separately approved apple: for only this new key**. The accepted scoped command verified
-the signing application's trust data exactly matches `/usr/bin/codesign`, saved an owner-only
-ACL backup outside Git, and submitted only the partition edit through Security.framework.
-The operation waited inside SecKeychainItemSetAccess / SecurityServer::changeAcl, then
-returned **macOS authentication failure -25293**, decoded by `security error` as
-“The user name or passphrase you entered is not correct.” The call has ended; no successful
-update/readback or signature is claimed. The agent neither read nor stored the Mac password.
-Owner was asked whether the matching system authentication prompt appeared. This is an
-owner authentication dependency, not missing consent; approval is already received and
-must not be requested again. Current state supersedes the earlier
-dated rejection record in [signing progress](evidence/final-billing-20261122/signing-progress.json).
-Founder then requested another attempt. A reusable protected temporary helper enabled
-standard macOS authentication UI, but again received -25293. This does **not establish
-that the owner entered a wrong password**: the agent's API call did not obtain that password.
-Inspection of [Apple's CLI implementation](https://github.com/apple-oss-distributions/Security/blob/main/SecurityTool/macOS/keychain_find.c#L1555)
-shows `security set-key-partition-list` obtains a password with its own hidden terminal
-prompt and calls the explicit password-authenticated update. The prepared official CLI
-omits the password argument, uses the existing login keychain, and its selector was
-verified to match **exactly one private signing key**, identified from the exact certificate.
-It preserves existing partitions and appends only the approved apple: entry. No Mac
-password is read by the agent or saved to arguments/files. Metadata output is owner-only.
-An initial owned exec PTY reached the vendor password prompt and was canceled before
-entry because the Codex panel opened a fresh shell instead of attaching that PTY.
-The fresh Terminal panel is available; Codex app screen control is denied by the computer
-tool's safety policy, so the owner was given the single local runner command. No bypass
-was attempted. Owner command/exit/readback/signature verification are pending.
-[Sanitized handoff evidence](evidence/final-billing-20261122/apple-cli-handoff.json).
-No Keychain reset, password change or global partition-list override was performed.
-**Successful probe signing is not yet claimed.**
-[Scoped diagnosis](evidence/final-billing-20261122/codesign-acl-diagnosis.json) and
-[actual attempts](evidence/final-billing-20261122/local-signing-proof.json).
-The protected owner inventory is being kept current; no secret values are copied here.
+The password went only to Apple's hidden terminal prompt, never agent input, command
+arguments, files, screenshots or Git. Earlier15s/45s/20s/180s probe timeouts and API -25293
+failures are retained; they did not establish an incorrect owner password. The correct
+[Apple implementation](https://github.com/apple-oss-distributions/Security/blob/main/SecurityTool/macOS/keychain_find.c#L1555)
+uses explicit password authentication. Initial approval-review rejections were resolved by
+separate Founder approvals for import and the exact-key apple: scope. Codex app screen
+control was denied, so the owner ran the prepared command; no bypass/reset was attempted.
+Those permissions and the completed owner command must not be requested again.
 
-No signed IPA or TestFlight upload is claimed. Targeted checks found no reusable
-Release-iphoneos app in the known DerivedData or task temporary locations. Full compilation
-was not retried: available disk earlier declined from2.2GiB to about1.1GiB and has recovered
-to about4GiB on the8GiB host. The prior4.5GiB attempt still exhausted disk.
-This is a separate host-capacity gate, not a reason to
-generate another key. [Sanitized signing proof](evidence/final-billing-20261122/signing-progress.json).
+**Device archive was stopped by its disk guard**, separately from the successful credential
+probe. No reusable
+Release-iphoneos app/archive was found; retained apps are Simulator only. On this8GiB host,
+free disk recovered to about5GiB. Installed prebuilt RN/RNDependencies/Hermes/Expo device
+slices allowed a measured attempt; the initial4.927GiB did not fit the full archive.
+The attempt used
+isolated task paths, arm64, `-jobs 1`, one Metro worker, and automatic stop below2GiB disk
+or above1.5GiB additional swap. No Simulator is started and no prior artifacts are cleaned.
+Expanded build settings verify an app-only manual certificate/profile and empty Pods
+profile; native QA flags are absent. Xcode environment files only configure Node. Actual
+normal sandbox preflight passes using the existing preview SDK key/trial endpoint, with
+mock/demo/private QA disabled. The existing profile is installed in Xcode's current
+user-profile folder without replacing other profiles. Export is configured **local only**,
+manual, with no provisioning updates, cloud signing, version management or store upload.
+After1529.72seconds and559compile events, the guard sent SIGINT at1.995GiB free disk.
+Xcode reported ARCHIVE INTERRUPTED/exit75; no compiler error preceded interruption.
+Maximum additional swap was937.25MiB. No archive completed and export never started.
+Only this failed attempt's isolated DerivedData was removed after verifying its process
+had exited; the private log/configuration and all previous artifacts remain intact.
+Free disk recovered to3.939GiB. The same attempt is not retried into the disk limit.
+Complete archive/export and artifact audit need substantially more host disk than5GiB;
+10GiB or an equipped host is a practical target, not a fit guarantee. The existing key
+and profile are usable; no new credential or repeated authentication is required.
+[Actual guarded build result](evidence/final-billing-20261122/device-archive-build.json).
+No successful full archive/export or signed IPA is claimed.
 
-Owner says they **will create** the Sandbox tester and **will complete** Apple Business;
-neither message reports completion. Their forms are preserved. Founder explicitly says
-there is **no existing Google developer account**, superseding the earlier uncertainty
-about another profile. No account, registration fee or legal agreement was created/accepted.
-Current subscription mappings, trial/user data, production and readiness flags are unchanged.
+Current focused verification passes8release-preparation tests and7Python artifact fixtures.
+All39protected and173core source hashes still match; JSON and diff checks pass, changed
+files contain no known credential values/private signing material. All9readiness flags
+remain false. The protected owner signing inventory is updated with the actual result.
+[Current checks](evidence/final-billing-20261122/signing-checks.json).
+
+Owner Business/tester messages remain **intent**, not completion: last audit had Paid
+Agreement New, bank/tax unverified and zero Sandbox testers/TestFlight builds. Apple sales
+availability/tax/review media and genuine purchases remain open. Founder confirms no Google
+developer account exists; none was created/paid. Existing RC/full_access/default mapping,
+separate app trial, frozen content/branding, personal iPhone data and all nine false readiness
+flags are preserved. No private signing key was sent to Apple, EAS or RevenueCat.
+Current [signing state](evidence/final-billing-20261122/signing-progress.json) supersedes the
+earlier dated signing failures below; all prior evidence remains historical.
 
 ## Final Apple / Google audit — 22 November 2026
+
+This provider audit predates local Distribution setup. Current signing results are above;
+its earlier zero-Distribution observations are retained as dated evidence.
 
 New baseline `b8f68f04c31d61d23967066727319cbde2264a5f` is retained by
 `codex/checkpoint-apple-billing-20261122`. The newest Founder instruction freezes remote
@@ -190,7 +170,8 @@ recovered to4.5GB. That run again exhausted host disk during startup; result sav
 ENOSPC. It was interrupted and only its failed empty Simulator/build cache were cleaned.
 The accepted SE, its synthetic trial, original app and all39/173source inputs remain intact.
 No Pro/fresh-case or required-size store screenshot pass is claimed. Required store/Android
-screenshots and a fresh signed IPA remain open behind actual signing/equipped-host gates.
+screenshots remain open behind equipped-host/media gates. The fresh device archive was
+stopped at its disk floor; its completion/artifact audit remain separate from the passed signing probe.
 
 See [native results](evidence/final-billing-20261122/native/runtime-results.json),
 [full video](evidence/final-billing-20261122/native/startup-real-key-simulator.mp4) and
@@ -370,9 +351,10 @@ preserves its anonymous identity and validates periods/no introductory offer. Re
 without runtime changes. [Concrete sandbox execution runbook](../BILLING_QA.md#apple-sandbox-preparation--22-november-2026)
 defines the real mapping, preview/build flags, owner-entered sandbox account, data-preserving
 device setup and separate paid-versus-app-trial assertions. **49 existing tests /4 files
-pass**. The Apple sandbox tester list was empty in the live audit; the dated Apple agreement/
-availability/signing prerequisites and actual native purchase/lifecycle/delivery proof are
-still open. Nothing changed on the personal iPhone, in trial/cycle/history storage or in
+pass**. The Apple sandbox tester list was empty in the live audit; Apple agreement/
+availability, signed app archive/export and actual native purchase/lifecycle/delivery proof
+are still open. Current local credential signing passes as recorded above. Nothing changed
+on the personal iPhone, in trial/cycle/history storage or in
 production services. All nine readiness flags remain false.
 
 [Current provider configuration/evidence](evidence/revenuecat-20261122/configuration.json) ·
@@ -449,8 +431,9 @@ screenshot, introductory/promotion offer, review submission or agreement accepta
 [monthly saved price](evidence/apple-catalog-20261122/monthly-price.jpg) ·
 [annual saved price](evidence/apple-catalog-20261122/annual-price.jpg).
 The dated November21 Paid Applications Agreement/legal-entity blocker remains unresolved;
-Apple RevenueCat credentials/mappings are now connected as recorded above; distribution
-signing and real store sandbox purchase/lifecycle proof remain missing. Catalog creation does not set any
+Apple RevenueCat credentials/mappings are now connected as recorded above. At this catalog
+checkpoint, Distribution signing and real store sandbox purchase/lifecycle proof were still missing;
+current local signing proof is in the signing follow-up above. Catalog creation does not set any
 readiness flag or prove a transaction. App/source/phone data were not changed.
 The focused existing release-preparation suite passed **8 tests**, including **7 Python
 native-artifact fixtures**. All 39 frozen inputs and 173 AAB source inputs remain
@@ -464,12 +447,13 @@ This section records actual artifacts, not JavaScript export equivalence.
 
 ### Apple
 
-Xcode26.6 (17F113), iOS SDK26.5 meet the currently checked upload SDK minimum.
-Keychain audit found one development identity and zero distribution identities. EAS has
-no iOS credential record. Development/ad-hoc Simulator signing does not create a
-TestFlight-capable IPA. App Store Connect authentication is now successful; distribution
-credential/profile setup remains blocked. No distribution key/profile was created from
-that login without action-time approval, and no IPA/TestFlight upload is claimed.
+The following is the historical November21 native checkpoint. Current local Distribution
+signing and device archive results are in the signing follow-up above. Xcode26.6 (17F113),
+iOS SDK26.5 meet the checked upload SDK minimum. At that checkpoint the Keychain had one
+Development identity and zero Distribution identities, and EAS had no iOS credential record.
+Development/ad-hoc Simulator signing did not create a TestFlight-capable IPA. Distribution
+credential/profile setup still needed separate approval then; the later approved setup
+supersedes that blocker. No TestFlight upload has occurred.
 
 Normal arm64 Simulator Release native compilation passed (804s). A stale explicit module
 cache initially failed; retry used the compiler's non-explicit-module strategy, with no
@@ -776,11 +760,11 @@ Smallest owner handoff:
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
    requirements; confirm sales regions/tax and review metadata for the now-created drafts.
    Complete the separate sandbox tester directly in the provider console. Certificate/profile
-   creation and separately approved Login Keychain import are complete. Owner macOS Keychain
-   confirmations are reported, but probe signing is blocked by the exact-key partition ACL.
-   The scoped apple: update is separately approved, but macOS authentication failed -25293;
-   owner Login Keychain authentication is needed. Native IPA compilation also needs sufficient
-   host capacity. Approval must not be requested again for the same edit.
+   creation, separately approved Login Keychain import and exact-key apple: update are complete.
+   Owner Apple CLI exit0, original-ACL comparison and actual Distribution probe sign0/strict
+   verify0 pass. No further owner authentication or repeated signing approval is needed.
+   The local device archive hit its disk guard; more host disk is needed for archive/export
+   and artifact verification. No signed IPA or upload is claimed.
    Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** Founder confirms no developer account exists. Resolve health-feature/account-type

@@ -12,35 +12,29 @@ The November21 isolated Cloudflare sandbox HTTP and ordinary native Simulator
 trial→Today→cold restart now pass; RevenueCat is partially configured and an actual internal
 Android AAB has binary evidence. See [current release preparation](release/RELEASE_PREPARATION.md)
 and [remaining owner actions](STORE_SETUP.md). The dated November13 observations below are
-historical and do not override that new proof. Real Apple/Google store transactions and
-store-distribution signing remain unverified.
+historical and do not override that new proof. Local Distribution credential signing now
+passes; full app archive/export and real Apple/Google transactions have separate proof gates.
 
 ## Final live audit — 22 November 2026
 
-All existing mappings/prices/periods/levels were freshly verified. Apple Paid Applications
-Agreement remains **New** (owner legal-entity update required); availability is unset,
-Sandbox testers and TestFlight builds were absent at audit. The owner now intends to complete
-the tester/Business forms, without reporting completion yet. Distribution creation consent
-has now been explicitly received. After owner manual public-CSR selection, exactly one
-Distribution certificate and App Store profile were issued, expiring22November2027.
-Key/CSR/certificate equality, Apple trust and profile Team/bundle/certificate/debug/no-device
-checks pass. Earlier automatic-review rejection was resolved by separate explicit Founder
-approval: existing identity is now imported into local Login Keychain, with codesign-specific
-access, prior identity/search list intact and encrypted local PKCS12. The probe remains
-INCOMPLETE after15s/45s/20s/180s timeouts. Owner confirmations were reported; read-only
-ACL inspection of this exact key still lacks apple:, required by local Apple security(1).
-Automatic review initially rejected that broader scope. Founder then explicitly approved
-apple: for only this key; its ACL is backed up, signing application is verified exactly
-codesign, and the scoped update returned macOS authentication failure -25293. The call
-has ended; owner system authentication is required, consent is already received.
-Completion/readback, signed probe, IPA and actual purchases remain unverified.
-Founder-requested UI-enabled retry again returned -25293; the agent has not validated the
-owner's actual password. Apple source shows its official CLI obtains a hidden password
-and supplies it explicitly to the partition update. An exact-one-private-key CLI command
-is prepared without a password argument; owner execution in the fresh Terminal panel is
-pending because Codex app screen control is denied. [Handoff proof](release/evidence/final-billing-20261122/apple-cli-handoff.json).
-No private key was sent to EAS/Apple; existing Development credentials are unchanged.
-[Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
+Existing mappings/prices/periods/levels remain verified. Last Apple audit had Paid
+Applications Agreement **New**, availability unset, banking/tax unverified and no Sandbox
+tester/TestFlight build. Owner intent to complete Business/tester is not completion proof.
+
+Local signing is now verified: exactly one certificate/App Store profile, matching private
+key/CSR, Apple trust and profile checks pass. Approved Login Keychain import preserved the
+prior identity/search list. Owner Apple CLI exit0 is independently checked against the
+original ACL backup; only approved apple: was added, codesign application list/flags intact.
+Actual isolated Distribution probe sign0/strictverify0/expectedTeam passes. No password
+was read by the agent; key/PKCS12 stay encrypted/local. Prior API/prompt failures remain dated
+history. [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
+
+A fresh normal device archive used app-only manual signing, real sandbox SDK key, no QA/demo/
+mocks, arm64/jobs1/Metro1. After1529.72s/559compile events its disk guard stopped it at1.995GiB
+free, exit75 with0compiler errors. Export never started. Only its failed compiler cache was
+cleaned; prior artifacts/log intact, free disk3.939GiB. More host disk is required for the
+archive/export/artifact audit. No IPA or real purchase success is claimed.
+[Guarded build](release/evidence/final-billing-20261122/device-archive-build.json).
 
 **Actual Apple Sandbox TEST notification delivery now passes:** request200/status200,
 `sendAttemptResult=SUCCESS`, using the existing approved IAP key locally. This is technical
@@ -48,7 +42,7 @@ notification-path proof, not a subscription/CustomerInfo lifecycle. Production U
 [Sanitized live evidence](release/evidence/final-billing-20261122/provider-audit.json).
 Actual preview values pass iOS sandbox-preflight again;531application tests/55files pass.
 
-A full native compile was stopped under measured host disk/swap pressure. A separate current
+An earlier full Simulator compile was stopped under measured host disk/swap pressure. A separate current
 Hermes re-embed of the prior verified Simulator Release uses the real SDK key/no mock/demo;
 its signature and unsigned native-payload equality are verified. Runtime results below/under
 current evidence must not be labelled a new native build, signed store IPA or actual purchase.
@@ -111,8 +105,9 @@ Before running a real Apple sandbox transaction:
    the pulled remote values. SDK keys are bundled public identifiers, not server secrets;
    values are not printed or committed. Production is untouched.
 3. Complete Apple owner prerequisites: the November21 Paid Applications Agreement/legal
-   blocker (recheck current status), sales availability/tax/review metadata, and authorized
-   signing. The sandbox account page showed **no testers** during this audit. The owner must create a separate tester
+   blocker (recheck current status), sales availability/tax/review metadata, and successful
+   signed device archive/export. Local signing approval and credential access are resolved.
+   The sandbox account page showed **no testers** during this audit. The owner must create a separate tester
    with an owned email and enter its password directly in Apple, then sign into the
    device's Sandbox Apple Account. Never replace the personal iCloud account or send
    credentials in chat. TestFlight has no builds at the dated audit; no upload is implied.
@@ -121,12 +116,12 @@ Before running a real Apple sandbox transaction:
    unset. Sandbox TEST delivery is now verified by Apple SUCCESS; purchase events remain untested.
    The opaque callback is stored only in the
    protected owner inventory, not this document.
-4. Reuse `billing-test` in [eas.json](eas.json): store distribution, preview environment,
-   sandbox trial service, demo=false and mocks=false. With authorized signing and real
-   public SDK configuration, run `npx eas-cli build --profile billing-test --platform ios`.
-   Check the existing `eas-production-check.mjs` before building. This build has **not**
-   been started; no paid build, store upload or physical-device replacement was performed
-   in this pass. The private Founder QA entry is rejected by the build gate.
+4. The device archive attempt used local Xcode and the same checked `billing-test` environment:
+   sandbox trial service, demo=false and mocks=false. Signing key stays on the Mac.
+   `npx eas-cli build --profile billing-test --platform ios` is an **unexecuted alternative**,
+   requiring separate remote credential/cost authorization. The current local attempt passes
+   `eas-production-check.mjs`; the disk-guard stop is recorded above. No paid build, upload or
+   physical-device replacement occurred. The private Founder QA entry is rejected by the gate.
    The app's sandbox flag alone does not select Apple's purchase environment: use the
    genuine sandbox/TestFlight build/account flow and inspect the native sheet before confirming.
 5. Use a designated test device/installation, or a reviewed update preserving the existing
