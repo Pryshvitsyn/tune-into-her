@@ -39,8 +39,10 @@ Updated: 2026-11-22 (Europe/Rome)
   partition persists after owner confirmations; preserve all timed-out attempts.
 - [x] Receive separate explicit new-key apple: approval after automatic-review rejection;
   back up only its ACL, verify signing application exactly codesign and submit scoped update.
-- [ ] Await macOS scoped-update result/owner system confirmation, verify readback/probe,
-  then build IPA on capable host. No key uploaded.
+- [x] Record actual scoped-update result: macOS authentication failed -25293; call ended,
+  no successful update/signature claimed; preserve backup and prior import proof.
+- [ ] Resolve owner Login Keychain authentication, finish already-authorized exact-key edit,
+  verify readback/probe, then build IPA on capable host. No key uploaded; no new consent needed.
 - [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
   in prepared forms (intent reported, completion pending); legal/editorial sign-off.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay

@@ -31,8 +31,9 @@ INCOMPLETE after15s/45s/20s/180s timeouts. Owner confirmations were reported; re
 ACL inspection of this exact key still lacks apple:, required by local Apple security(1).
 Automatic review initially rejected that broader scope. Founder then explicitly approved
 apple: for only this key; its ACL is backed up, signing application is verified exactly
-codesign, and a scoped update is waiting for macOS response. Completion/readback, signed
-probe, IPA and actual purchases remain unverified.
+codesign, and the scoped update returned macOS authentication failure -25293. The call
+has ended; owner system authentication is required, consent is already received.
+Completion/readback, signed probe, IPA and actual purchases remain unverified.
 No private key was sent to EAS/Apple; existing Development credentials are unchanged.
 [Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
 

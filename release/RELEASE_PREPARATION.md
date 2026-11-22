@@ -69,10 +69,13 @@ backup/update or other-key change occurred in that rejected command. The Founder
 **separately approved apple: for only this new key**. The accepted scoped command verified
 the signing application's trust data exactly matches `/usr/bin/codesign`, saved an owner-only
 ACL backup outside Git, and submitted only the partition edit through Security.framework.
-It is currently waiting inside SecKeychainItemSetAccess / SecurityServer::changeAcl;
-**no return status, post-update readback or completed update is yet claimed**. The owner
-was asked whether the matching system authentication prompt appeared. This approval is
-already received and must not be requested again. Current state supersedes the earlier
+The operation waited inside SecKeychainItemSetAccess / SecurityServer::changeAcl, then
+returned **macOS authentication failure -25293**, decoded by `security error` as
+“The user name or passphrase you entered is not correct.” The call has ended; no successful
+update/readback or signature is claimed. The agent neither read nor stored the Mac password.
+Owner was asked whether the matching system authentication prompt appeared. This is an
+owner authentication dependency, not missing consent; approval is already received and
+must not be requested again. Current state supersedes the earlier
 dated rejection record in [signing progress](evidence/final-billing-20261122/signing-progress.json).
 No Keychain reset, password change or global partition-list override was performed.
 **Successful probe signing is not yet claimed.**
@@ -759,8 +762,8 @@ Smallest owner handoff:
    Complete the separate sandbox tester directly in the provider console. Certificate/profile
    creation and separately approved Login Keychain import are complete. Owner macOS Keychain
    confirmations are reported, but probe signing is blocked by the exact-key partition ACL.
-   The scoped apple: update is separately approved/submitted, awaiting macOS result and
-   any matching owner system confirmation; native IPA compilation also needs sufficient
+   The scoped apple: update is separately approved, but macOS authentication failed -25293;
+   owner Login Keychain authentication is needed. Native IPA compilation also needs sufficient
    host capacity. Approval must not be requested again for the same edit.
    Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.

@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T17:34:02.459182+00:00",
+  "checkedAtUTC": "2026-11-22T17:36:43.363824+00:00",
   "releaseTestsPassed": 8,
   "pythonNativeFixturesPassed": 7,
   "protectedInputHashesMatched": 39,
@@ -28,7 +28,9 @@
   "priorApplePartitionApprovalBlockResolved": true,
   "applePartitionUpdateAuthorized": true,
   "applePartitionUpdateCompleted": false,
-  "applePartitionUpdateStatus": "Waiting for macOS response; success not claimed",
+  "applePartitionUpdateStatus": "Failed macOS authentication -25293; scoped call ended",
   "targetKeySigningApplicationExactlyCodesignVerified": true,
-  "targetKeyACLBackupCreated": true
+  "targetKeyACLBackupCreated": true,
+  "applePartitionUpdateMacOSStatus": -25293,
+  "macPasswordReadOrSaved": false
 }
