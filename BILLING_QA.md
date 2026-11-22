@@ -19,8 +19,13 @@ store-distribution signing remain unverified.
 
 All existing mappings/prices/periods/levels were freshly verified. Apple Paid Applications
 Agreement remains **New** (owner legal-entity update required); availability is unset,
-Sandbox testers and TestFlight builds are absent. Development signing exists; Distribution
-signing does not. Its creation is awaiting separate consent after automatic-review rejection.
+Sandbox testers and TestFlight builds were absent at audit. The owner now intends to complete
+the tester/Business forms, without reporting completion yet. Distribution creation consent
+has now been explicitly received. One encrypted local private key/matching CSR is verified;
+public-CSR selection is blocked by the browser/system picker. Certificate/profile issuance,
+Keychain import, signed IPA and actual purchases remain unverified. No private key was sent
+to EAS/Apple; existing Development credentials are unchanged.
+[Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
 
 **Actual Apple Sandbox TEST notification delivery now passes:** request200/status200,
 `sendAttemptResult=SUCCESS`, using the existing approved IAP key locally. This is technical

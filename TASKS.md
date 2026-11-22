@@ -29,8 +29,14 @@ Updated: 2026-11-22 (Europe/Rome)
   keep original artifact hashes, failed attempts and synthetic Simulator data, no personal-device writes.
 - [x] Reuse prior actual normal Release1206×2622 Cycle/Learn images as dated byte-identical
   iOS draft candidates; exclude Today pending DO_043 and missing-offer views, keep approvals false.
-- [ ] Owner: real legal data/Paid Agreement/bank/tax, unused-email Sandbox tester, separate
-  Distribution signing consent, correct existing Play developer access and legal/editorial sign-off.
+- [x] Receive explicit consent for one Distribution certificate/profile; generate exactly one
+  encrypted local RSA2048 key/matching verified CSR and separate protected owner inventory.
+- [ ] Complete public CSR upload/certificate/profile issuance: automatic file selection failed;
+  owner manual selection requested, no private key upload or duplicate signing assets.
+- [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
+  in prepared forms (intent reported, completion pending); legal/editorial sign-off.
+- [x] Record Founder confirmation that no Google developer account exists; do not create/pay
+  for one. Account type/health eligibility and owner-authorized registration remain open.
 - [x] Attempt required-size fresh Pro capture after disk recovery; retain actual ENOSPC/resource
   blocker, stop/clean only own failed empty Simulator/cache, verify source/app artifacts intact.
 - [ ] After prerequisites: signed TestFlight IPA, real Apple/Google products/transactions,

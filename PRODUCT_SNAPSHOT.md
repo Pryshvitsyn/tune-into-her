@@ -81,8 +81,13 @@ fertility, or mood-prediction product.
 - **New real Apple Sandbox TEST notification delivery succeeds**, Apple request/status200
   and SUCCESS. No actual purchase/lifecycle entitlement is inferred. Callback values are
   excluded from saved proof; one accidental technical-snapshot inclusion was disclosed.
-- Local/Apple signing still Development only. New Distribution certificate/profile needs
-  separate Founder approval; automatic review blocked advancing creation before consent.
+- Founder subsequently explicitly approved one Apple Distribution certificate and App Store
+  profile for the existing Team/bundle, with the private key local only. One encrypted RSA2048
+  key and matching verified CSR are now in the protected owner directory, outside Git.
+  Certificate/profile issuance is pending manual public-CSR selection after browser/native
+  file selection failed; no new certificate, Keychain identity, IPA or EAS key upload claimed.
+  [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
+  Owner intends to complete the tester and Business forms; completion is not yet reported.
 - New full native recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;
   no success claimed. A separate current Hermes re-embed of prior verified Simulator Release
   has the real SDK key, no private QA, verified ad-hoc signature and identical unsigned
@@ -98,7 +103,8 @@ fertility, or mood-prediction product.
 - Repeated actual trial HTTP checks pass with prior separate identity, no time extension.
   Repeated same-AAB API36/Billing8.3/ELF+RELRO+ZIP16KB/signature checks pass, overall
   INCOMPLETE for owner upload certificate/local official zipalign; actual cert is Debug.
-  Google owner console/catalog/service account/RTDN remain inaccessible/unverified.
+  Founder now confirms there is no existing Google developer account. No account/fee was
+  created/accepted; catalog/service account/RTDN remain unavailable.
 - Existing November21 normal Release1206×2622 Cycle/Learn images are indexed as dated
   unchanged iOS draft candidates, with byte-identical local export and173core hashes matched.
   Today DO_043 and subscription-error images are excluded; no editorial/media approval or upload.

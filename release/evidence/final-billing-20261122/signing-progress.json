@@ -1,0 +1,23 @@
+{
+  "checkedAtUTC": "2026-11-22T16:10:12.083899+00:00",
+  "authorizedTeam": "B77TL63S9T",
+  "authorizedBundle": "com.eliogenesis.tuneintoher",
+  "approval": "Founder explicitly approved exactly one Apple Distribution certificate and one App Store profile; private signing key local only",
+  "encryptedPrivateKeyCreated": true,
+  "algorithm": "RSA 2048",
+  "csrSignatureValid": true,
+  "csrPublicKeyMatchesPrivateKey": true,
+  "directoryOwnerOnly": true,
+  "allFilesOwnerOnly": true,
+  "certificateIssued": false,
+  "profileIssued": false,
+  "privateKeySentToAppleOrEAS": false,
+  "systemSigningIdentityChanged": false,
+  "blocker": "Chrome file chooser did not confirm public CSR; owner manual file selection requested",
+  "googleDeveloperAccount": "Owner confirms no existing account; none created",
+  "sandboxTester": "Owner intends to create in prepared Italy form; completion not reported",
+  "paidAgreement": "Owner intends to complete Business; Active not reported",
+  "ipaBuilt": false,
+  "testFlightUpload": false,
+  "personalDeviceWrites": false
+}

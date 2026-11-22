@@ -16,6 +16,33 @@ the [prepared feature branch](https://github.com/Pryshvitsyn/tune-into-her/tree/
 Existing CI branch filters do not trigger on this feature/base pair; reported checks are
 the actual local source/native/provider evidence, not an invented GitHub CI pass.
 
+## Signing follow-up — 22 November 2026
+
+Founder explicitly approved **one Apple Distribution certificate and one App Store
+provisioning profile** for TeamB77TL63S9T / `com.eliogenesis.tuneintoher`, keeping the
+private key local. This resolves the earlier approval blocker below; consent is not
+certificate issuance. Exactly one encrypted RSA2048 private key and CSR were generated
+in the protected owner directory outside Git (directory0700, files0600). Private-key
+validation, CSR signature and matching public keys pass. A separate owner inventory
+explains paths/purpose/revocation without copying secret values into the repository.
+No private key was sent to Apple, EAS or RevenueCat; existing signing identities were
+not modified. Apple still showed only the existing Development certificate before upload.
+
+Chrome file selection stalled, and the native picker repeatedly failed to confirm the
+public CSR path. Manual selection of the public `/tmp/TuneIntoHer.certSigningRequest`
+was requested; the approval itself is not being requested again. **No Distribution
+certificate/profile has yet been issued**, and no signed IPA or TestFlight upload is
+claimed. Targeted checks found no reusable Release-iphoneos app in the known DerivedData
+or task temporary locations. Full compilation was not retried with only2.2GiB free after
+the documented disk failures. This is a separate host-capacity gate, not a reason to
+generate another key. [Sanitized signing proof](evidence/final-billing-20261122/signing-progress.json).
+
+Owner says they **will create** the Sandbox tester and **will complete** Apple Business;
+neither message reports completion. Their forms are preserved. Founder explicitly says
+there is **no existing Google developer account**, superseding the earlier uncertainty
+about another profile. No account, registration fee or legal agreement was created/accepted.
+Current subscription mappings, trial/user data, production and readiness flags are unchanged.
+
 ## Final Apple / Google audit — 22 November 2026
 
 New baseline `b8f68f04c31d61d23967066727319cbde2264a5f` is retained by
@@ -57,9 +84,10 @@ key/password was printed, and the callback is excluded from all saved evidence/r
 
 Local signing has1valid Development identity,0Distribution identities and one matching
 Development profile expiring8November2027. Apple's certificate list also has Development
-only; EAS iOS/Android credential lists are empty. New Distribution signing requires the
-separate pending Founder permission; automatic approval review rejected advancing its
-creation workflow before that permission. Nothing was created/revoked/replaced.
+only; EAS iOS/Android credential lists are empty. At that audit, automatic approval review
+rejected advancing new Distribution creation without separate consent. The subsequent
+explicit approval and local CSR preparation are recorded above; this older observation
+does not imply approval remains outstanding. No certificate was revoked/replaced.
 
 A full Xcode Simulator rebuild was stopped (exit75) when this8GiB host reached1.24GiB free
 disk and13.3GiB used swap. No compile success is inferred. Independently, Expo exported a
@@ -677,13 +705,14 @@ The canonical owner action matrix is [STORE_SETUP](../STORE_SETUP.md); it supers
 Smallest owner handoff:
 
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
-   requirements; confirm sales regions/tax and review metadata for the now-created drafts. Provide the authorized
-   distribution signing/profile and a separate sandbox tester directly in the provider
-   consoles. Apple RC integration/mapping and Sandbox URL are configured; real purchases/
+   requirements; confirm sales regions/tax and review metadata for the now-created drafts.
+   Select the public CSR in the blocked picker (signing consent is already received) and
+   complete the separate sandbox tester directly in the provider console.
+   Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.
-2. **Google:** identify/open the existing developer account or obtain its invitation.
-   Confirm health-feature/account-type eligibility, Play App Signing/upload identity and
-   the authorized service-account/notification connection. No new account fee was accepted.
+2. **Google:** Founder confirms no developer account exists. Resolve health-feature/account-type
+   eligibility and owner-authorized registration first, then Play App Signing/upload identity
+   and the service-account/notification connection. No new account fee was accepted.
 3. **Legal/public policy:** approve the actual publisher, monitored contact, HTTPS domain,
    retention/deletion/processor terms and final texts. The local renderer is ready; placeholder
    routes are deliberately not publicly deployed.
