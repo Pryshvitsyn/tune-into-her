@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SANDBOX_HTTP",
+  "resumedPrivateIdentity": true,
+  "requests": 9,
+  "exactFourteenDayInterval": true,
+  "repeatsAndRestartDoNotExtendKnownInterval": true,
+  "wrongOrMissingCredentialRejected": true,
+  "productionEnvironmentRejected": true,
+  "clientTimestampRejected": true,
+  "noCardOrStorePurchaseRequested": true,
+  "privateStatePrinted": false,
+  "limits": [
+    "No real 14-day wait, server process restart, offline native cache or store purchase is inferred from this HTTP smoke. Controlled-clock expiry/offline tests remain separate."
+  ]
+}

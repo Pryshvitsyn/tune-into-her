@@ -26,6 +26,20 @@ describe('distribution billing preflight', () => {
   it('requires deployed HTTPS trial service and real platform keys', () => {
     expect(billingConfigIssues({ ...valid, EXPO_PUBLIC_TRIAL_API_URL: 'http://localhost:8787', EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY: '' }, { production: true })).toHaveLength(2);
   });
+  it('keeps RevenueCat Test Store keys out of store-distributed sandbox builds', () => {
+    const sandbox = { ...valid, EXPO_PUBLIC_BILLING_ENVIRONMENT: 'sandbox', EXPO_PUBLIC_REVENUECAT_IOS_API_KEY: 'test_local_only' };
+    expect(billingConfigIssues(sandbox)).toEqual([]);
+    const issues = billingConfigIssues(sandbox, { storeDistribution: true, platform: 'ios' });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('forbidden in store distribution');
+    expect(issues[0]).not.toContain('local_only');
+    expect(billingConfigIssues({ ...sandbox, EXPO_PUBLIC_REVENUECAT_IOS_API_KEY: valid.EXPO_PUBLIC_REVENUECAT_IOS_API_KEY }, { storeDistribution: true })).toEqual([]);
+  });
+  it('rejects the private standalone QA entry in store builds without exposing configuration values', () => {
+    expect(billingConfigIssues({ ...valid, TIH_STANDALONE_QA_BUNDLE: '1' }, { storeDistribution: true })).toHaveLength(1);
+    expect(billingConfigIssues({ ...valid, ENTRY_FILE: '/private-qa/sensitive/entry.cjs' }, { production: true }).join(' ')).not.toContain('sensitive');
+    expect(billingConfigIssues({ ...valid, EXPO_OVERRIDE_METRO_CONFIG: '/private-qa/metro.config.cjs' }, { production: true })).toHaveLength(1);
+  });
   it('checks only a selected build platform and requires actual web scheme if requested', () => {
     expect(billingConfigIssues({ ...valid, EXPO_PUBLIC_REVENUECAT_ANDROID_API_KEY: undefined }, { production: true, platform: 'ios' })).toEqual([]);
     expect(billingConfigIssues({ ...valid, BILLING_REQUIRE_WEB_REDEMPTION: 'true', EXPO_PUBLIC_REVENUECAT_REDEMPTION_SCHEME: 'tuneintoher' }, { production: true })).toHaveLength(1);

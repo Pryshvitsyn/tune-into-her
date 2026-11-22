@@ -1,0 +1,48 @@
+{
+  "checkedOn": "2026-11-21",
+  "fullVitest": {
+    "files": 55,
+    "tests": 531,
+    "passed": true,
+    "seconds": 10.89,
+    "maxWorkers": 2,
+    "newRegression": "Reject observed Simulator source PTS reset; H.264 default and strict monotonic gate"
+  },
+  "finalAffectedRegression": {
+    "files": 5,
+    "tests": 36,
+    "passed": true,
+    "pythonFixtures": 7
+  },
+  "typeScriptPassed": true,
+  "eslint": {
+    "errors": 0,
+    "warnings": 1,
+    "warningScope": "Existing generated .expo/types/router.d.ts"
+  },
+  "content": {
+    "dailyBundles": 610,
+    "inAppLocales": 11,
+    "authoredPerLocale": 318,
+    "reservePerLocale": 90,
+    "passed": true,
+    "approvalGranted": false
+  },
+  "expoDoctor": {
+    "passed": 19,
+    "total": 21,
+    "remaining": [
+      "Tracked native folder/app config sync advisory",
+      "Intentional RNSVG15.16.0 requirement and seven Expo patch recommendations"
+    ]
+  },
+  "releaseGate": {
+    "passed": false,
+    "readinessFlagsTrue": 0,
+    "readinessFlagsTotal": 9,
+    "localShellMissingProviderVariables": true,
+    "EASPreviewPresenceVerifiedSeparately": true
+  },
+  "productionActivated": false,
+  "storeSubmitted": false
+}

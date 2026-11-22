@@ -20,12 +20,42 @@
       }
     },
     "production": {
+      "distribution": "store",
       "autoIncrement": true,
       "channel": "production",
       "environment": "production",
+      "env": {
+        "EXPO_PUBLIC_ACCELERATED_DEMO": "false",
+        "EXPO_PUBLIC_USE_MOCK_BILLING": "false",
+        "EXPO_PUBLIC_BILLING_ENVIRONMENT": "production"
+      },
       "android": {
         "buildType": "app-bundle"
       }
+    },
+    "native-audit": {
+      "distribution": "internal",
+      "developmentClient": false,
+      "autoIncrement": false,
+      "environment": "preview",
+      "channel": "native-audit",
+      "node": "26.5.1",
+      "env": {
+        "TIH_NATIVE_ARTIFACT_AUDIT": "1",
+        "EXPO_PUBLIC_ACCELERATED_DEMO": "false",
+        "EXPO_PUBLIC_USE_MOCK_BILLING": "false",
+        "EXPO_PUBLIC_BILLING_ENVIRONMENT": "sandbox"
+      },
+      "android": {
+        "withoutCredentials": true,
+        "resourceClass": "medium",
+        "gradleCommand": ":app:bundleRelease :app:assembleRelease",
+        "applicationArchivePath": "android/app/build/outputs/bundle/release/*.aab"
+      },
+      "buildArtifactPaths": [
+        "android/app/build/outputs/apk/release/*.apk",
+        "android/app/build/reports/tih-*"
+      ]
     },
     "billing-test": {
       "distribution": "store",

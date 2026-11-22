@@ -1,6 +1,6 @@
 # Privacy notice draft — owner and legal review required
 
-Updated: 2026-11-13. **Owner/legal entity:** REPLACE_WITH_OWNER_LEGAL_NAME
+Updated: 2026-11-21. **Owner/legal entity:** REPLACE_WITH_OWNER_LEGAL_NAME
 **Privacy contact:** REPLACE_WITH_PRIVACY_CONTACT
 **Effective date:** REPLACE_WITH_EFFECTIVE_DATE
 
@@ -25,7 +25,7 @@ Clearing cycle/preferences/history in the app does not erase the billing identit
 restart the trial. SecureStore persistence after app removal varies by OS; deleting all
 data or changing devices can create an unrelated guest identity. Retention duration,
 privacy-request verification/deletion process, hosting region, processor agreement and
-security-log policy must be finalized by the owner before deployment. Do not promise
+security-log policy must be finalized by the owner before production/public app use. Only the isolated sandbox is currently deployed. Do not promise
 server deletion through the current local-data action. A minimal retained trial marker
 may be necessary to enforce the disclosed trial policy, subject to the final legal basis.
 
@@ -37,7 +37,8 @@ and related technical data to verify access. The trial credential is not sent to
 The app does not attach cycle dates, phase, symptoms, history, woman/partner name or
 relationship description to purchase requests.
 
-For optional hosted web checkout, RevenueCat Billing manages the subscription and Stripe
+Hosted web checkout is not part of this initial native-store launch preparation and is
+not being activated. If separately approved later, RevenueCat Billing manages it and Stripe
 processes payment. They may process email, billing address, payment information, receipts,
 tax and technical payment data entered in checkout. No mandatory app registration is
 introduced. Official RevenueCat Redemption Links confirm purchase ownership; their tokens
@@ -66,6 +67,28 @@ upload is added. Disable reminders in
 app/system settings. Device removal/backup behavior depends on the OS and platform rules.
 
 ## Before public use
+
+Native launch processor inventory: the isolated trial sandbox uses Cloudflare
+Workers/D1; its D1 database was created in EU jurisdiction, while edge processing is not
+a promise of EU-only processing. Production is not deployed. Paid native access uses
+RevenueCat and the Apple/Google stores; live catalog and sandbox transaction verification
+are still pending. These services process
+pseudonymous identifiers and access/purchase data even though no app account is mandatory.
+The app's lack of an advertising SDK does not remove RevenueCat's purchase-dashboard
+processing from store declarations. Any actual provider integrations and operational
+logs must be audited before final answers are submitted.
+
+Local cycle settings use device-only, unlocked Keychain accessibility on iOS through
+SecureStore. Preference/history storage is app-local rather than a promise of encryption
+of every field. Android backup is disabled in the source configuration; iOS/device backup
+behavior and the final native manifests still require verification. Do not infer secure
+deletion of an operating-system backup from the app's local-data action.
+
+Owner decisions still required: retention periods for trial/event records and hosting
+logs, the secure ownership-verification/deletion procedure, international-transfer and
+processor terms, applicable legal bases and the response contact. Trial record deletion
+can permit another guest trial; any retained anti-abuse marker requires its own disclosed,
+lawful and time-limited basis. This draft does not choose one without owner/legal review.
 
 The owner must supply seller/contact/URLs and determine retention, lawful bases, rights
 and deletion handling, international transfers/processor terms, age/children positioning,

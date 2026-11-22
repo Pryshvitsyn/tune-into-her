@@ -1,6 +1,6 @@
 # Tune Into Her isolated trial backend
 
-Prepared source; **not provisioned or deployed**. This service has no cycle, advice,
+Sandbox deployed and HTTP-verified on 2026-11-21; **production is not provisioned or deployed**. This service has no cycle, advice,
 relationship, analytics or advertising data. Paid access remains RevenueCat
 CustomerInfo's `full_access`; this database never synthesizes a paid entitlement.
 
@@ -65,11 +65,23 @@ refresh `getState()` on foreground. A network failure differs from known expiry.
 
 ## Cloudflare Worker + D1 owner setup
 
-No Cloudflare resources are created by these instructions or tests. An owner must
-first approve any applicable service costs and use the project's own account.
+The authorized existing account was visibly verified on Workers Free ($0); sandbox D1 and
+Worker were created without an upgrade. Its EU-jurisdiction database is separate from all
+other products. Production requires separate authorization and cost/privacy review.
+
+Sandbox: https://tune-into-her-trial-sandbox.pryshvitsyna.workers.dev
+
+The deployed sandbox uses a 60-request/60-second approximate per-location edge limit,
+keyed by a SHA-256 hash of Cloudflare's connecting IP and environment. No raw IP is
+persisted by application code; edge counters still count as provider security processing.
+Observability is disabled. Live verification observed HTTP429; this is not a strict global
+quota, DDoS guarantee or per-person trial identity. Production must configure its own
+non-inherited binding/route and reviewed retention policy.
+
+Preview EAS now contains only the public sandbox URL; production variables are untouched.
 
 1. Install an official current Wrangler CLI, record its exact version in build proof.
-2. From `backend/`, create two D1 databases: `tune-into-her-trial-sandbox` and
+2. Sandbox is already configured; do not recreate it. Only after separate production authorization, create the production D1 database. The intended names are: `tune-into-her-trial-sandbox` and
    `tune-into-her-trial-production`. Replace only their respective placeholder IDs in
    `wrangler.jsonc`; never point them to another product's database.
 3. Apply migration separately:
@@ -132,7 +144,7 @@ Focused tests use controlled clocks, real SQLite statements, concurrent starts,
 wrong credentials/env/body, cache TTL/rollback/restart, exact UTC expiry, delayed
 webhooks, raw-body HMAC/timestamp authentication, duplicates and DB failure. Local
 HTTP start → process restart → GET/repeated POST was also verified with unchanged
-server dates. No cloud deployment, billing transaction or store test is implied.
+server dates. Cloud sandbox HTTPS checks, repeated starts, wrong/missing credentials, environment/time-payload rejection and persistence after Worker redeployment now pass; see [current release proof](../release/RELEASE_PREPARATION.md). Offline/expiry controlled-clock tests remain distinct from native/store purchase proof.
 
 Official references checked 13 November 2026:
 [Cloudflare D1 API](https://developers.cloudflare.com/d1/worker-api/d1-database/),

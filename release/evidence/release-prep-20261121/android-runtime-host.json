@@ -1,0 +1,22 @@
+{
+  "checkedOn": "2026-11-21",
+  "package": "system-images;android-36;google_apis_ps16k;arm64-v8a",
+  "officialArchive": "https://dl.google.com/android/repository/sys-img/google_apis/arm64-v8a-ps16k-36_r07.zip",
+  "compressedBytes": 1875087037,
+  "logicalUnpackedBytes": 4560761440,
+  "largeFiles": [
+    {
+      "file": "arm64-v8a/system.img",
+      "unpackedBytes": 4415553536
+    },
+    {
+      "file": "arm64-v8a/vendor.img",
+      "unpackedBytes": 103809024
+    }
+  ],
+  "workspaceVolumeFreeBytesAfterTaskOnlyCleanup": 7889625088,
+  "emulatorStartupRequiresFreeBytes": 5000000000,
+  "sourceForMinimumFreeSpace": "https://developer.android.com/studio/run/emulator-troubleshooting",
+  "SDKEmulatorJDKAndAVDNotInstalled": true,
+  "method": "Read only official SDK XML and bounded ZIP central-directory ranges; no multi-GB download, extraction, license acceptance or emulator execution."
+}

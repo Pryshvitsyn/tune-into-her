@@ -17,6 +17,8 @@
     "locales:generate": "node scripts/build-ui-locales.mjs",
     "release:check": "node scripts/release-check.mjs",
     "eas-build-pre-install": "node scripts/eas-production-check.mjs",
+    "eas-build-post-install": "node scripts/android-native-audit.mjs prepare",
+    "eas-build-on-success": "node scripts/android-native-audit.mjs verify",
     "content:check": "node scripts/generate-content.mjs --check"
   },
   "dependencies": {

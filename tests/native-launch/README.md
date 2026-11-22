@@ -282,6 +282,12 @@ NSLog format/handoff marker because Swift can encode small stage strings as imme
 The canonical native helper's QA branch is compiled only when explicitly requested;
 normal Release has no pressure marker or deliberate busy work.
 
+New captures default to H.264 and reject a non-monotonic source timeline. The November21
+Pro Simulator HEVC attempt reset PTS from1.901667s to0.17s; it remains diagnostic black-frame
+analysis and is excluded from continuous playback/timing proof. H.264 retained monotonic
+timestamps. No footage is silently retimed to conceal a recording-clock failure, and
+native/Metro/ownership guards remain unchanged. See [current release proof](../../release/RELEASE_PREPARATION.md).
+
 Actual V5 results: native Dark/Home/cold/Light restoration53.720s; single/double Home
 38.989s; UIKit reduced-motion cold13.190s; direct reduced Home1.493s with samePID and
 robust native OFF cleanup. The former1.922sbody had a stale/simple cleanup tap failure;

@@ -1,0 +1,83 @@
+{
+  "scope": "Ordinary signed sandbox iOS26.5 Simulator Release, no Metro, no QA/mocks; not physical iPhone/store purchase/GPU-clock proof",
+  "nativeBinarySHA256": "236eb606ce25d13463c9f11afec9077c730b4afdfec863b400e2abc35ea50386",
+  "embeddedJSSHA256": "4303bebdb8f2306f34975469fa745052bcb24896a0557da815fc01d3a419e8ec",
+  "captures": [
+    {
+      "label": "normal",
+      "frameCount": 2073,
+      "durationSeconds": 40.046667,
+      "blackFrameCount": 0,
+      "timestampsMonotonic": true,
+      "nativeStageOrderingPass": true,
+      "installedArtifactHashesMatch": true,
+      "sameProcessAliveAtEnd": true,
+      "recordedWallSeconds": 40.63086762500001,
+      "pressure": {
+        "workers": 0,
+        "workerMs": 4000,
+        "nativeQA": false
+      },
+      "commonMetroPortsClosed": [
+        8081,
+        8082,
+        8083,
+        8084,
+        8085,
+        19000,
+        19001
+      ],
+      "timingLimit": "Recorder acknowledgement and command start are host observations, not exact UIKit foreground/frame timestamps; inspect OS/app transition in original movie",
+      "preview": {
+        "preview": "ios-normal-full-launch.mp4",
+        "sourceMovieSHA256": "8214e52c2468f9b78e93ab799aaca56fcc3c71f1bc2c96c66cf9d4bc5bc42815",
+        "previewSHA256": "f90f0bc6091d284621852f85895c6b847cb12ba2367fc1748e9ddbf8a0bd4f14",
+        "sourceFrameCount": 2073,
+        "previewFrameCount": 2073,
+        "maximumFramePTSChangeSeconds": 0.0,
+        "processing": "Complete untrimmed source footage, uniformly reduced to720px width, H.264; every frame and PTS retained. No footage retiming or app changes."
+      }
+    },
+    {
+      "label": "bounded-host-CPU-pressure",
+      "frameCount": 2048,
+      "durationSeconds": 40.051667,
+      "blackFrameCount": 0,
+      "timestampsMonotonic": true,
+      "nativeStageOrderingPass": true,
+      "installedArtifactHashesMatch": true,
+      "sameProcessAliveAtEnd": true,
+      "recordedWallSeconds": 41.854079667,
+      "pressure": {
+        "workers": 4,
+        "workerMs": 4000,
+        "nativeQA": false
+      },
+      "commonMetroPortsClosed": [
+        8081,
+        8082,
+        8083,
+        8084,
+        8085,
+        19000,
+        19001
+      ],
+      "timingLimit": "Recorder acknowledgement and command start are host observations, not exact UIKit foreground/frame timestamps; inspect OS/app transition in original movie",
+      "preview": {
+        "preview": "ios-normal-full-launch-pressure.mp4",
+        "sourceMovieSHA256": "15e3a9747fab95cf820f1b1d898e9151f4e500db4b7ee0390cdd269823f8907a",
+        "previewSHA256": "b32d0ac178b28840cadeb51970eb118dad7c36f9b5d15b0115f141d1edd60edb",
+        "sourceFrameCount": 2048,
+        "previewFrameCount": 2048,
+        "maximumFramePTSChangeSeconds": 0.0,
+        "processing": "Complete untrimmed source footage, uniformly reduced to720px width, H.264; every frame and PTS retained. No footage retiming or app changes."
+      }
+    }
+  ],
+  "rejectedHEVC": {
+    "blackFrames": 0,
+    "decodedFrames": 2061,
+    "sourceTimestampReset": true,
+    "continuousTimingAccepted": false
+  }
+}

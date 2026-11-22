@@ -1,28 +1,31 @@
 # Store and billing setup
 
-Updated: 2026-11-13. External consoles have **not** been configured or verified by this
-change. No production charge, deployment, store upload or submission was performed.
-The current model supersedes earlier undecided billing drafts: free download, explicit
-14-day application access without a card/subscription, then voluntary monthly or annual
-purchase. Base eurozone prices: €3.99/month and €24.99/year (one annual payment).
-Both plans grant `full_access`. Real storefront prices/currencies are displayed by the SDK.
+Updated: 2026-11-22. [Current evidence](release/RELEASE_PREPARATION.md) records the
+actual sandbox deployment, partial RevenueCat configuration and native build results.
+Production billing, store submission and Stripe checkout remain inactive; all readiness
+gates are false. This is the canonical remaining external-action list.
 
 ## Identity and catalog
 
 Preserve these source identifiers while confirming the existing console records:
 iOS `com.eliogenesis.tuneintoher`, Android `com.pryshvitsyn.tuneintoher`, EAS project
 `dc8938e7-7163-413a-9003-479d0afc8a17`. The package mismatch is preserved deliberately;
-it is not grounds to replace an already registered application. `monthly_access` is a
-legacy **source expectation**, not evidence that a store product exists. A read-only
-authenticated Expo metadata audit confirmed the existing EAS project belongs to
-`eliogenesis`; the target billing variables are absent from both project and account
-metadata, and no actual local `.env` exists. Values were never requested or exposed;
-see [configuration audit](BILLING_QA.md#configuration-presence-audit).
+it is not grounds to replace an already registered application. The authenticated Apple
+audit found existing app6832290282, SKU`tuneintoher-ios-001`, primary locale`en-AU`,
+version1.0 in Prepare for Submission and no TestFlight builds on November21.
+After explicit Founder approval, November22 created group22605485 and registered
+`monthly_access`/`annual_access` as drafts, both at level1. Saved Italy/EUR prices were
+read back as€3.99/€24.99. [Catalog evidence](release/evidence/apple-catalog-20261122/catalog.json)
+records actual Apple IDs, periods, localization and remaining limits. Sales availability
+is not configured; the calculated175-territory price schedule does not enable sales.
+The existing EAS project belongs to`eliogenesis`; preview now contains the public sandbox
+URL and Android SDK key. Production is untouched. Earlier missing-variable findings in
+[the configuration audit](BILLING_QA.md#configuration-presence-audit) are historical.
 
 | Platform | Product ID | Base plan / RevenueCat package | Period | Eurozone base target | Entitlement | Sandbox / production status |
 | --- | --- | --- | --- | --- | --- | --- |
-| Apple | `monthly_access` (legacy source; verify) | Same subscription group / `$rc_monthly` | P1M | EUR 3.99 | `full_access` | Both unverified |
-| Apple | `annual_access` **proposed** | Same group and level / `$rc_annual` | P1Y | EUR 24.99 | `full_access` | Not created/verified |
+| Apple | `monthly_access` / Apple6837968807 | Tune Into Her Full Access22605485, level1 / intended `$rc_monthly` | P1M | EUR 3.99 saved/read back (Italy) | Intended `full_access`; RC unmapped | Prepare for Submission; no introductory offer; availability unset |
+| Apple | `annual_access` / Apple6837969104 | Same group and level1 / intended `$rc_annual` | P1Y | EUR 24.99 saved/read back (Italy) | Intended `full_access`; RC unmapped | Prepare for Submission; yearly upfront, no introductory offer; availability unset |
 | Google Play | `monthly_access` (preserve if registered) | `monthly` **proposed** / `$rc_monthly` | P1M | EUR 3.99 | `full_access` | Both unverified |
 | Google Play | Same subscription as above | `annual` **proposed** / `$rc_annual` | P1Y | EUR 24.99 | `full_access` | Not created/verified |
 | RevenueCat Billing web | `web_monthly` **proposed** | `$rc_monthly` in web offering | P1M | EUR 3.99 | `full_access` | Not created/verified |
@@ -47,20 +50,20 @@ RevenueCat, Cloudflare or the store's secret storage; never send secrets in chat
 
 | Service | Missing concrete action/value | Where to obtain/configure | Already prepared | Verification unlocked |
 | --- | --- | --- | --- | --- |
-| Apple account/signing | Confirm app record for existing bundle ID and free download pricing after existing-listing audit; Developer membership/team, distribution profile, device/TestFlight access and next build number | Apple Developer; App Store Connect; EAS Credentials | Bundle ID preserved; local Xcode 26.6 and one valid development identity observed (distribution/profile/device unverified) | Signed development/TestFlight install |
-| Apple subscriptions | Verify legacy ID; create/confirm annual ID, same subscription group/level, EUR base prices, regions, localized terms/screenshots; audit introductory offers and existing subscribers | App Store Connect → app → Monetization → Subscriptions | Two explicit package periods and paid entitlement lifecycle | Both sandbox purchases, renew/cancel/expiry, plan change |
-| RevenueCat Apple | Confirm project/app; grant current Apple integration credentials and notifications; import actual products and attach entitlement | RevenueCat → iOS app configuration; Apple API keys/notifications | Existing `full_access` preserved | Server-confirmed Apple CustomerInfo and notifications |
-| Google account/app | Confirm existing Android app/package and free download pricing after listing audit, account type/date and health-app Organization requirement applicability, payment profile, Play App Signing, upload key and next unused versionCode | Play Console; EAS Credentials/version management | Package/EAS project preserved, remote version source and autoIncrement retained | Play-signed AAB upload/internal install |
-| Android toolchain/artifact | Provision JDK and Android SDK/NDK; generate native project; resolve release graph, build AAB and inspect 16KB compatibility | Authorized build host or existing EAS project | AAB build profile; pinned SDK dependency trace documented in BILLING_QA | Actual release manifest, dependency graph, AAB, 16KB device result |
+| Apple account/signing | Existing app verified; complete owner-approved distribution credential/profile setup and next build number. Free-download pricing and Developer team/membership still need verification | Apple Developer; App Store Connect; EAS Credentials | App6832290282 / preserved bundle / en-AU / no TestFlight builds; Xcode26.6, one development identity, zero distribution identities/EAS iOS credentials | Signed TestFlight-capable IPA/install |
+| Apple agreements/catalog | Owner must update legal entity and accept Paid Applications Agreement (New, not active at November21 audit); confirm sales regions and tax category, finish review screenshot/metadata. Draft creation approval is resolved | App Store Connect → Business; app → Monetization → Subscriptions | Founder-approved group22605485 and both products created November22; periods1month/1year, equal level1, en-AU draft names/descriptions, Italy€3.99/€24.99 saved/read back; no introductory offer, availability unset, tax category inherits app without attestation | Catalog mapping and both sandbox purchase/lifecycle matrices |
+| RevenueCat Apple | Confirm project/app; grant current Apple integration credentials and notifications; import actual products and attach entitlement | RevenueCat → iOS app configuration; Apple API keys/notifications | Live project5921ebba / approved `full_access` created; no products associated | Server-confirmed Apple CustomerInfo and notifications |
+| Google account/app | Open correct existing developer profile/invitation: current signed-in profile reaches signup. Then audit actual app/package, free pricing, account type/date/health Organization applicability, payment profile, Play App Signing, upload key and next unused versionCode | Play Console; EAS Credentials/version management | No new account/fee accepted. Package/EAS preserved; remote versionCode1 initialized only for internal native-audit | Play-signed AAB upload/internal install |
+| Android runtime/signing | Supply owner-verified upload key/Play App Signing and Android runtime equipment; run actual16KB device/emulator, launcher/splash/routing/notification/store QA | Play Console; authorized test host/device | Real EAS AAB/API36/Billing8.3.0; all50 64-bit ELF/RELRO and same-AAB derived APK ZIP checks pass. Internal debug signature is not upload signing | Store-signed artifact and actual16KB/runtime acceptance |
 | Google subscriptions | Verify existing subscription; create monthly+annual auto-renewing base plans if compatible, EUR target prices, regions and localized disclosures; audit offers | Play Console → Monetize → Products → Subscriptions | Two exact periods, paid base-plan purchase and explicit same-store plan-change flow | Monthly/annual and pending-payment sandbox tests |
-| RevenueCat Google | Google Play service account with permissions requested by current RevenueCat guide, app connection and real-time developer notifications; license testers | RevenueCat Android app; Google Cloud/Play Console | One native RevenueCat SDK; same entitlement | Google purchase/renewal/hold/restore updates |
-| RevenueCat catalog/keys | Confirm `full_access`, current offering, monthly/annual mappings, actual public `appl_…` and `goog_…` keys | RevenueCat project/catalog and platform SDK keys → EAS env | Runtime mapping and distribution preflight | Native offerings and sandbox transactions; `test_` Test Store keys are not store proof |
-| Trial backend | Create separate sandbox/production D1 databases, apply migration, set ENVIRONMENT, routes, retention/rate limits and deploy isolated Worker; set real HTTPS public URL and matching app environment (trial itself needs no webhook secret) | Project-owned Cloudflare account; [backend README](backend/README.md) | Local service, schema and client; no cycle fields | Server-authoritative trial on real devices and durable webhook delivery |
+| RevenueCat Google | Google Play service account with permissions requested by current RevenueCat guide, app connection and real-time developer notifications; license testers | RevenueCat Android app; Google Cloud/Play Console | Play app445ba93d10 created with preserved package; public SDK key in EAS preview; service credentials/notifications missing | Google purchase/renewal/hold/restore updates |
+| RevenueCat catalog/keys | Confirm `full_access`, current offering, monthly/annual mappings, actual public `appl_…` and `goog_…` keys | RevenueCat project/catalog and platform SDK keys → EAS env | Android public key in EAS preview; iOS creation requires actual In-App Purchase p8/Key ID/Issuer ID; offering/products remain unmapped | Native offerings and sandbox transactions; `test_` Test Store keys are not store proof |
+| Trial backend | Sandbox deployed/HTTP/native-Simulator verified with EU D1 and hashed-IP edge rate limit; preview EAS URL configured. Before separately authorized production: finalize legal retention/deletion/provider terms, production D1/route/rate binding and production URL. Never recreate sandbox or deploy production implicitly | Project-owned Cloudflare account; [backend README](backend/README.md) | Live explicit14-day start/repeat/credentials/env/time-body/redeploy/429 pass; ordinary signed Simulator onboarding→real trial→Today→cold restart pass. Controlled-clock offline/expiry separate | Production/device trial acceptance and optional webhook delivery |
 | RevenueCat webhook | If enabling the optional journal, configure each environment's endpoint, REVENUECAT_WEBHOOK_AUTH and exact REVENUECAT_APP_IDS allowlist; if console HMAC signing is enabled also set REVENUECAT_WEBHOOK_SIGNING_SECRET; send sandbox events and verify persistence/redelivery | RevenueCat → Integrations → Webhooks; Cloudflare secrets | Authorization plus optional raw-body HMAC/timestamp verification; durable event idempotency; no Stripe lifecycle duplicate | Wrong auth, replay and out-of-order live-delivery QA |
-| RevenueCat Billing + Stripe | Audit existing Stripe subscriptions first; connect project-owned Stripe in authorized test mode; configure two RC products/offering and sandbox Web Purchase Link | RevenueCat Web configuration → Stripe connection; Funnels → Purchase Links | Chosen architecture and redemption client integration | Hosted test checkout; no live payment authorized |
-| Web redemption | Enable Redemption Links; copy its actual unique `rc-…` scheme to `EXPO_PUBLIC_REVENUECAT_REDEMPTION_SCHEME`; populate actual store download links in RC, rebuild native apps | RevenueCat web config → Redemption Links; EAS env | Conditional Expo/native registration; SDK redemption with confirmed entitlement | Cold/warm/not-installed, invalid/expired/reused proof-of-purchase tests |
-| Web portal/lifecycle | Configure RC Customer Portal, transactional email identity and monthly↔annual switching; verify email portal link/CustomerInfo management URL | RevenueCat Billing settings and Customer Portal | Source-aware management, no guessed Stripe portal | Web cancel, renew, receipt, payment update, refund and recovery |
-| Web regions/locales | Approve supported sales regions (India excluded currently); verify actual hosted language/fallback and legal translations | RevenueCat Billing configuration and test checkout | Native path retained; no external checkout CTA in global native app | Regional checkout and native fallback evidence |
+| RevenueCat Billing + Stripe — **deferred, not a native-launch blocker** | Audit existing Stripe subscriptions first; connect project-owned Stripe in authorized test mode; configure two RC products/offering and sandbox Web Purchase Link | RevenueCat Web configuration → Stripe connection; Funnels → Purchase Links | Chosen architecture and redemption client integration | Hosted test checkout; no live payment authorized |
+| Web redemption — **deferred, not a native-launch blocker** | Enable Redemption Links; copy its actual unique `rc-…` scheme to `EXPO_PUBLIC_REVENUECAT_REDEMPTION_SCHEME`; populate actual store download links in RC, rebuild native apps | RevenueCat web config → Redemption Links; EAS env | Conditional Expo/native registration; SDK redemption with confirmed entitlement | Cold/warm/not-installed, invalid/expired/reused proof-of-purchase tests |
+| Web portal/lifecycle — **deferred, not a native-launch blocker** | Configure RC Customer Portal, transactional email identity and monthly↔annual switching; verify email portal link/CustomerInfo management URL | RevenueCat Billing settings and Customer Portal | Source-aware management, no guessed Stripe portal | Web cancel, renew, receipt, payment update, refund and recovery |
+| Web regions/locales — **deferred, not a native-launch blocker** | Approve supported sales regions (India excluded currently); verify actual hosted language/fallback and legal translations | RevenueCat Billing configuration and test checkout | Native path retained; no external checkout CTA in global native app | Regional checkout and native fallback evidence |
 | Seller/legal/tax | Supply legal seller name/address, tax/VAT status, receipt details, monitored support/privacy contact, Terms/Privacy HTTPS URLs; decide tax provider/registrations in test first | Brand config; RC Billing invoice footer; Stripe/tax authority; legal adviser | Privacy/disclosure drafts and local screens | Final amount/currency/tax/receipt and compliant notices; RC+Stripe is not assumed merchant of record |
 | Google testing access | Confirm applicability to personal account created after 2023-11-13; if applicable 12 opted-in testers continuously 14 days, then apply for production access | Play Console → Closed testing and Dashboard | Separate billing-test AAB profile/instructions | Production-track eligibility (internal testing does not replace it) |
 | Store declarations/review | Complete Apple privacy/age/trader forms; Google Data Safety, Health Apps declaration, content rating and app access instructions from actual flows; publish verified privacy URL | App Store Connect; Play Console → App content | Data inventory/reviewer notes below; readiness evidence remains false | Accurate store review/submission after device and legal sign-off |
@@ -76,6 +79,7 @@ environment name and non-secret redemption scheme belong there. Never place Stri
 - `billing-test`: store-distributed binary, demo/mocks disabled, sandbox app/backend environment.
   Use Apple/Google platform public keys for genuine store sandboxes. RevenueCat Test Store
   keys may test SDK UI but do not prove an Apple/Google purchase.
+- `native-audit`: internal ordinary Android native inspection, explicit audit guard, no QA/sample access and no owner-verified upload signing. Never submit this artifact as a verified Play release.
 - `production`: production backend/environment, public platform keys, no mocks/demo;
   release evidence and legal gates must also pass. Store sandbox/TestFlight transactions
   are valid tests even when using production platform SDK keys; they are not revenue.
@@ -87,14 +91,14 @@ npx eas-cli build --profile billing-test --platform ios
 npx eas-cli build --profile billing-test --platform android
 ```
 
-These are prepared commands, **not executed cloud builds**. Verify service cost/authorization
+These store-distribution commands have **not** been executed. Separate Free EAS `native-audit` build10288699… finished; actual binaries/static proof are in the current report, with debug signing explicitly excluded from Play upload proof. Verify service cost/authorization
 before starting a remote build. Install Android via Play internal testing/license testers,
 not merely sideloading an export. iOS requires development sandbox/TestFlight. The current
 native dependency change requires a new binary; an OTA update cannot add native code/schemes.
 
 ## Current platform requirements
 
-For the 2026-11-13 check, Google requires API 36+ for new mobile apps/updates; Billing 7's
+For the 2026-11-21 check, Google requires API 36+ for new mobile apps/updates; Billing 7's
 extension expired on November 1, so use Billing 8+. See [target API](https://support.google.com/googleplay/android-developer/answer/11926878)
 and [billing deadlines](https://developer.android.com/google/play/billing/deprecation-faq).
 The [16KB guide](https://developer.android.com/guide/practices/page-sizes) requires checking

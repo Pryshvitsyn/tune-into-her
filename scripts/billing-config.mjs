@@ -2,7 +2,11 @@ import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 
 // Pure build-time validation. Never print environment values or credentials.
-export function billingConfigIssues(env, { production = false, platform } = {}) {
+export function privateQAEntryConfigured(env) {
+  return env.TIH_STANDALONE_QA_BUNDLE === '1' || [env.ENTRY_FILE, env.BUNDLE_CONFIG, env.EXPO_OVERRIDE_METRO_CONFIG].some(value => /private-qa|standalone-qa/i.test(value ?? ''));
+}
+
+export function billingConfigIssues(env, { production = false, storeDistribution = false, platform } = {}) {
   const issues = [];
   if (!['sandbox', 'production'].includes(env.EXPO_PUBLIC_BILLING_ENVIRONMENT)) {
     issues.push('Set EXPO_PUBLIC_BILLING_ENVIRONMENT to sandbox or production.');
@@ -11,13 +15,16 @@ export function billingConfigIssues(env, { production = false, platform } = {}) 
   }
   if (env.EXPO_PUBLIC_USE_MOCK_BILLING === 'true') issues.push('Mock billing must be disabled for distribution.');
   if (env.EXPO_PUBLIC_ACCELERATED_DEMO === 'true') issues.push('Accelerated demo must be disabled for billing/store builds.');
+  if ((production || storeDistribution) && privateQAEntryConfigured(env)) {
+    issues.push('Private standalone QA entry/configuration must not be included in store distribution.');
+  }
   const platforms = platform === 'ios' ? ['IOS'] : platform === 'android' ? ['ANDROID'] : ['IOS', 'ANDROID'];
   for (const value of platforms) {
     const key = env[`EXPO_PUBLIC_REVENUECAT_${value}_API_KEY`] ?? '';
     const expected = value === 'IOS' ? 'appl_' : 'goog_';
     if (!key) issues.push(`Missing public RevenueCat ${value} SDK key.`);
-    else if (!key.startsWith(expected) && !(key.startsWith('test_') && !production)) {
-      issues.push(`RevenueCat ${value} key must be a public platform SDK key${production ? '; Test Store keys are forbidden in production' : ' (Test Store is not store sandbox proof)'}.`);
+    else if (!key.startsWith(expected) && !(key.startsWith('test_') && !production && !storeDistribution)) {
+      issues.push(`RevenueCat ${value} key must be a public platform SDK key${production || storeDistribution ? '; Test Store keys are forbidden in store distribution' : ' (Test Store is not store sandbox proof)'}.`);
     }
     if (/placeholder|replace|example/i.test(key)) issues.push(`Replace placeholder RevenueCat ${value} SDK key.`);
   }

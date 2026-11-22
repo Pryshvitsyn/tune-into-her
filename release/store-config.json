@@ -1,0 +1,105 @@
+{
+  "status": "draft-owner-editorial-native-language-and-legal-review-required",
+  "sourceListingPR": "https://github.com/Pryshvitsyn/tune-into-her/pull/8",
+  "sourceListingCommit": "b01e6cf6da6843af5acc7463af644dbfe8d107b5",
+  "defaultDraftLocale": "en-AU",
+  "locales": {
+    "en": {
+      "apple": "en-AU",
+      "google": "en-US",
+      "keywords": "cycle,partner,relationship,support,communication,context,wellbeing"
+    },
+    "it": {
+      "apple": "it",
+      "google": "it-IT",
+      "keywords": "ciclo,partner,relazione,sostegno,comunicazione"
+    },
+    "es": {
+      "apple": "es-ES",
+      "google": "es-ES",
+      "keywords": "ciclo,pareja,relación,apoyo,comunicación"
+    },
+    "ru": {
+      "apple": "ru",
+      "google": "ru-RU",
+      "keywords": "цикл,партнёр,отношения,поддержка"
+    },
+    "uk": {
+      "apple": "uk",
+      "google": "uk",
+      "keywords": "цикл,партнер,стосунки,підтримка"
+    },
+    "fr": {
+      "apple": "fr-FR",
+      "google": "fr-FR",
+      "appleSubtitle": "Un peu de contexte chaque jour",
+      "keywords": "cycle,partenaire,relation,soutien,communication"
+    },
+    "de": {
+      "apple": "de-DE",
+      "google": "de-DE",
+      "keywords": "Zyklus,Partner,Beziehung,Unterstützung,Kommunikation"
+    },
+    "hi": {
+      "apple": "hi",
+      "google": "hi-IN",
+      "keywords": "चक्र,साथी,सहयोग"
+    },
+    "zh-Hans": {
+      "apple": "zh-Hans",
+      "google": "zh-CN",
+      "keywords": "周期,伴侣,关系,支持,沟通"
+    },
+    "ms": {
+      "apple": "ms",
+      "google": "ms",
+      "appleSubtitle": "Sedikit konteks hari ini",
+      "keywords": "kitaran,pasangan,hubungan,sokongan,komunikasi"
+    },
+    "mbf": {
+      "apple": null,
+      "google": null,
+      "keywords": "",
+      "reason": "No dedicated Baba Malay storefront locale. Keep in-app language; do not relabel its listing as reviewed standard Malay."
+    }
+  },
+  "categories": {
+    "applePrimaryRecommendation": "Lifestyle",
+    "appleSecondaryRecommendation": "Health & Fitness",
+    "googleRecommendation": "Lifestyle",
+    "healthClassification": "Cycle dates and estimated phases support relationship guidance. Declare relevant health features regardless of category. Owner must confirm Period Tracking applicability and Organization-account eligibility in Play Console.",
+    "status": "owner-confirmation-required"
+  },
+  "ratingRecommendation": {
+    "audience": "Adults; not designed for children",
+    "storeRating": null,
+    "reason": "Answer actual Apple age questionnaire and Google IARC form for cycle/health education. No invented rating or regulatory approval."
+  },
+  "media": {
+    "iosIcon": "assets/icon.png",
+    "googleListingIcon": "assets/icons/play-store-512.png",
+    "adaptiveForeground": "assets/adaptive-icon.png",
+    "adaptiveBackground": "assets/icons/adaptive-background.png",
+    "featureGraphic": "release/media/google-feature-1024x500.png",
+    "screenshots": [],
+    "previewVideo": null,
+    "screenshotStatus": "Capture normal configured store build. Internal QA/sample-access recordings are evidence, not production marketing screenshots."
+  },
+  "sources": {
+    "appleLocales": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-store-localizations/",
+    "googleLocales": "https://support.google.com/googleplay/android-developer/answer/9844778",
+    "appleScreenshots": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+    "googleMedia": "https://support.google.com/googleplay/android-developer/answer/9866151",
+    "checkedOn": "2026-11-21"
+  },
+  "appleExistingApp": {
+    "appId": "6832290282",
+    "sku": "tuneintoher-ios-001",
+    "bundleIdentifier": "com.eliogenesis.tuneintoher",
+    "primaryLocale": "en-AU",
+    "version": "1.0",
+    "statusObserved": "Prepare for Submission",
+    "checkedOn": "2026-11-21"
+  },
+  "appleSubscriptionCatalogEvidence": "release/evidence/apple-catalog-20261122/catalog.json"
+}

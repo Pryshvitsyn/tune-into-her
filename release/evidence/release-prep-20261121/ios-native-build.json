@@ -1,0 +1,17 @@
+{
+  "scope": "Ordinary sandbox Release for Simulator, not TestFlight",
+  "bundleIdentifier": "com.eliogenesis.tuneintoher",
+  "sdk": "iphonesimulator26.5",
+  "xcode": "17F113",
+  "platform": [
+    "iPhoneSimulator"
+  ],
+  "mainBundleSHA256": "4303bebdb8f2306f34975469fa745052bcb24896a0557da815fc01d3a419e8ec",
+  "sandboxURLPresent": true,
+  "standaloneQAMarkerAbsent": true,
+  "strictCodesignVerified": true,
+  "distributionSigning": false,
+  "marketingVersion": "1.0.0",
+  "buildNumber": "1",
+  "nativeExecutableSHA256": "236eb606ce25d13463c9f11afec9077c730b4afdfec863b400e2abc35ea50386"
+}

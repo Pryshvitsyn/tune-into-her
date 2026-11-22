@@ -8,6 +8,7 @@ export interface TrialDatabase { prepare(sql: string): Statement }
 export interface Env {
   DB: TrialDatabase;
   ENVIRONMENT: 'sandbox' | 'production';
+  TRIAL_RATE_LIMITER?: { limit(options: { key: string }): Promise<{ success: boolean }> };
   REVENUECAT_WEBHOOK_AUTH?: string;
   REVENUECAT_WEBHOOK_SIGNING_SECRET?: string;
   REVENUECAT_APP_IDS?: string;
@@ -95,4 +96,20 @@ export async function handle(request: Request, env: Env, now = Date.now()): Prom
     return response({ error: 'TEMPORARILY_UNAVAILABLE' }, 503);
   }
 }
-export default { fetch(request: Request, env: Env): Promise<Response> { return handle(request, env); } };
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    // Cloudflare supplies this header. Keep raw IP addresses out of application
+    // storage/logs; these short-lived, approximate edge counters are not identity.
+    if (new URL(request.url).pathname === '/v1/trial' && env.TRIAL_RATE_LIMITER) {
+      try {
+        const key = await hash(`${env.ENVIRONMENT}:${request.headers.get('CF-Connecting-IP') ?? 'unknown'}`);
+        if (!(await env.TRIAL_RATE_LIMITER.limit({ key })).success) {
+          const result = response({ error: 'RATE_LIMITED' }, 429);
+          result.headers.set('Retry-After', '60');
+          return result;
+        }
+      } catch { return response({ error: 'TEMPORARILY_UNAVAILABLE' }, 503); }
+    }
+    return handle(request, env);
+  },
+};

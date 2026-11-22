@@ -10,7 +10,10 @@ const native = read('../ios/TuneIntoHer/AppDelegate.swift');
 const plugin = createRequire(import.meta.url)('../plugins/with-approved-launch-splash.cjs') as {
   withEarlyLaunchBridge(contents: string, helper: string): string;
 };
-const capture = createRequire(import.meta.url)('./native-launch/capture-startup.cjs') as { parseOptions(args: string[]): { workers: number; workerMs: number } | null };
+const capture = createRequire(import.meta.url)('./native-launch/capture-startup.cjs') as {
+  parseOptions(args: string[]): { workers: number; workerMs: number } | null;
+  timestampsMonotonic(values: number[]): boolean;
+};
 const normalizedImports = (source: string) => source.replace(/(?:^(?:internal )?import [^\n]+\n)+/m, imports => imports.trimEnd().split('\n').sort().join('\n') + '\n');
 const baseline = execFileSync('git', ['show', '71504ac:ios/TuneIntoHer/AppDelegate.swift'], {
   cwd: new URL('..', import.meta.url), encoding: 'utf8',
@@ -99,6 +102,12 @@ describe('app-owned early native launch integration', () => {
 
 
 describe('guarded standalone capture input', () => {
+  it('rejects the observed Simulator source-clock reset instead of presenting it as continuous footage', () => {
+    expect(capture.timestampsMonotonic([0, 1.901667, 0.17, 0.186667])).toBe(false);
+    expect(capture.timestampsMonotonic([0, 0.016667, 0.016667, 0.033333])).toBe(true);
+    expect(capture.timestampsMonotonic([0, Number.NaN])).toBe(false);
+    expect(capture.timestampsMonotonic([])).toBe(false);
+  });
   const valid = ['--device', '00000000-0000-0000-0000-000000000001', '--app', '/tmp/TuneIntoHer.app', '--out', '/tmp/new-capture', '--expected-binary-sha256', 'a'.repeat(64), '--expected-js-sha256', 'b'.repeat(64)];
   it('requires an explicit device and both current-artifact checksums before any capture', () => {
     expect(capture.parseOptions(['--help'])).toBeNull();

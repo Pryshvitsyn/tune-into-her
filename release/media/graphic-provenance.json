@@ -1,0 +1,15 @@
+{
+  "status": "DRAFT_BRAND_ASSET_OWNER_REVIEW_REQUIRED",
+  "source": "assets/icon.png",
+  "sourceSHA256": "e75475bd206b4df68fe66142471460b3ee7975756d62a1704e8ad011f60d8c05",
+  "file": "google-feature-1024x500.png",
+  "sha256": "d6eb103b5d0202300e9beb844f9487550f9157b708a8bd3972e98a879ff0994f",
+  "pixels": [
+    1024,
+    500
+  ],
+  "alpha": false,
+  "processing": "Uniform500x500 reduction of exact approved rings-only master;262px copied steel edge on each side. Entire emblem retained. No new logo, text, tint, AI generation or app-screen simulation.",
+  "applicationScreenshot": false,
+  "published": false
+}

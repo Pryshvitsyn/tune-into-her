@@ -16,6 +16,17 @@ class FakeBackend implements NotificationBackend {
 const base = { settings: { lastKnownPeriodStart: '2026-01-01' as const, typicalCycleLength: 28, typicalPeriodLength: 5 }, language: 'en' as const, reminder: { enabled: true, hour: 8, minute: 30 }, brandName: 'Test Brand' };
 
 describe('notification scheduler', () => {
+  it.each([
+    [new Date(2026, 10, 30, 7, 59), '2026-11-30', '2026-12-01'],
+    [new Date(2026, 11, 31, 8, 1), '2027-01-01', '2027-01-02'],
+  ] as const)('keeps the configured 08:00 reminder across month/year boundaries (%s)', async (now, first, second) => {
+    const backend = new FakeBackend();
+    const scheduler = new NotificationScheduler(backend, new MemoryStore());
+    await scheduler.rebuild({ ...base, reminder: { enabled: true, hour: 8, minute: 0 } }, now);
+    expect(backend.scheduled.slice(0, 2).map(item => item.content.data.date)).toEqual([first, second]);
+    expect(backend.scheduled.every(item => item.date > now && item.date.getHours() === 8 && item.date.getMinutes() === 0)).toBe(true);
+    expect(new Set(backend.scheduled.map(item => item.content.data.date)).size).toBe(backend.scheduled.length);
+  });
   it('schedules at most one reminder for each date', async () => {
     const backend = new FakeBackend(); const scheduler = new NotificationScheduler(backend, new MemoryStore());
     await scheduler.rebuild(base, new Date(2026, 0, 2, 7));
