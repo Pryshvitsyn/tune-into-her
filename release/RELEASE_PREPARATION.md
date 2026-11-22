@@ -43,13 +43,40 @@ Automatic approval review **rejected persistent import of the private identity i
 existing Login Keychain**: prior consent covered certificate/profile creation and protected
 local storage, not persistent signing access. The entire command was rejected before
 execution; no PKCS12 archive/import, Keychain ACL/search-list/trust-setting change occurred.
-Separate specific approval is required for that step. The protected owner inventory was
-updated with issued files, usage and revocation instructions; no secret values are copied here.
+The Founder subsequently provided separate explicit approval for that exact local import.
+It is now **completed** using the existing identity, an AES256/SHA256-encrypted local
+PKCS12 and macOS Security APIs; no secret passphrase was put in process arguments.
+Valid signing identities changed1→2, preserving the prior Development identity and
+Keychain search list. No trust settings or other keys were changed; automatic access was
+scoped to `/usr/bin/codesign`, not all applications. Earlier OpenSSL packaging failures
+did not change Keychain; the successful archive was validated in memory before import.
+
+The local credential probe operates on a separate copy of an Apple system Mach-O in
+task temporary storage, never executes it and does not change the original system binary
+or application. The initial file-copy metadata attempt could not copy a system file flag;
+copied bytes were verified against the original before proceeding.15s/45s/20s/180s `codesign`
+attempts timed out; the owner's screenshot shows
+the specific new-key/login-Keychain password prompt. This prompt was not visible in the
+automation app inventory. Owner reported system confirmations. Login-keychain password
+is normally the Mac account password ([Apple Support](https://support.apple.com/en-gb/guide/keychain-access/kyca2429/mac)), distinct from the generated PKCS12 passphrase;
+it was never read by the agent. Further exact-key read-only ACL inspection found **only
+a cdhash partition and no apple:**, including after the latest owner confirmation.
+Local Apple security(1) explicitly requires apple: for `/usr/bin/codesign`. The operation
+stack is blocked in SecKeyCreateSignature/CSSM. Automatic review rejected the proposed
+exact-key apple: addition as broadening the Apple-signed-process partition scope beyond
+codesign-specific consent. The entire command was rejected before execution; no ACL
+backup/update or other-key change occurred. Separate explicit approval is required.
+No Keychain reset, password change or global partition-list override was performed.
+**Successful probe signing is not yet claimed.**
+[Scoped diagnosis](evidence/final-billing-20261122/codesign-acl-diagnosis.json) and
+[actual attempts](evidence/final-billing-20261122/local-signing-proof.json).
+The protected owner inventory is being kept current; no secret values are copied here.
 
 No signed IPA or TestFlight upload is claimed. Targeted checks found no reusable
 Release-iphoneos app in the known DerivedData or task temporary locations. Full compilation
-was not retried: available disk declined from2.2GiB to about1.1GiB on the8GiB host after
-the documented disk failures. This is a separate host-capacity gate, not a reason to
+was not retried: available disk earlier declined from2.2GiB to about1.1GiB and has recovered
+to about4GiB on the8GiB host. The prior4.5GiB attempt still exhausted disk.
+This is a separate host-capacity gate, not a reason to
 generate another key. [Sanitized signing proof](evidence/final-billing-20261122/signing-progress.json).
 
 Owner says they **will create** the Sandbox tester and **will complete** Apple Business;
@@ -722,8 +749,10 @@ Smallest owner handoff:
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
    requirements; confirm sales regions/tax and review metadata for the now-created drafts.
    Complete the separate sandbox tester directly in the provider console. Certificate/profile
-   creation is complete; persistent Login Keychain import requires separate approval after
-   automatic-review rejection, and native IPA compilation needs sufficient host capacity.
+   creation and separately approved Login Keychain import are complete. Owner macOS Keychain
+   confirmations are reported, but probe signing is blocked by the exact-key partition ACL.
+   Adding apple: requires separate approval after automatic-review rejection; native IPA
+   compilation also needs sufficient host capacity.
    Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** Founder confirms no developer account exists. Resolve health-feature/account-type

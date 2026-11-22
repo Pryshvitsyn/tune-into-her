@@ -87,8 +87,14 @@ fertility, or mood-prediction product.
   Owner completed public-CSR selection; exactly one Distribution certificate and one App Store
   profile are issued through22November2027. Apple trust, key/CSR/certificate equality and
   profile Team/bundle/single-certificate/debug-disabled/no-device checks pass.
-  Automatic review rejected persistent Login Keychain import as outside prior consent;
-  no Keychain change, IPA or EAS private-key upload. Native build capacity is about1.1GiB free.
+  After separate explicit Founder approval, the existing identity was imported into local
+  Login Keychain with codesign-specific access; valid identities changed1→2, prior identity
+  and search list unchanged. Local PKCS12 is AES256/SHA256-encrypted outside Git.
+  Probe signing remains INCOMPLETE (15s/45s/20s/180s timeouts retained). Owner reports
+  system confirmations; exact-key ACL readback still lacks the Apple partition required
+  by codesign. Automatic review rejected adding apple: as broader scope than prior consent;
+  that change was not executed and needs separate approval. No IPA/EAS private-key upload.
+  Host free space recovered to about4GiB; prior4.5GiB attempt exhausted disk, so no full rebuild.
   [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
   Owner intends to complete the tester and Business forms; completion is not yet reported.
 - New full native recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;

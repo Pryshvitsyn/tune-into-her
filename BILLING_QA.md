@@ -24,9 +24,14 @@ the tester/Business forms, without reporting completion yet. Distribution creati
 has now been explicitly received. After owner manual public-CSR selection, exactly one
 Distribution certificate and App Store profile were issued, expiring22November2027.
 Key/CSR/certificate equality, Apple trust and profile Team/bundle/certificate/debug/no-device
-checks pass. Automatic review rejected persistent Login Keychain import outside prior consent;
-no import was executed. Signed IPA and actual purchases remain unverified. No private key was
-sent to EAS/Apple; existing Development credentials are unchanged.
+checks pass. Earlier automatic-review rejection was resolved by separate explicit Founder
+approval: existing identity is now imported into local Login Keychain, with codesign-specific
+access, prior identity/search list intact and encrypted local PKCS12. The probe remains
+INCOMPLETE after15s/45s/20s/180s timeouts. Owner confirmations were reported; read-only
+ACL inspection of this exact key still lacks apple:, required by local Apple security(1).
+Automatic review rejected adding that broader partition scope without separate consent;
+no ACL update was executed. Signed IPA and actual purchases remain unverified.
+No private key was sent to EAS/Apple; existing Development credentials are unchanged.
 [Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
 
 **Actual Apple Sandbox TEST notification delivery now passes:** request200/status200,

@@ -1,0 +1,32 @@
+{
+  "checkedAtUTC": "2026-11-22T17:15:00.535422+00:00",
+  "kind": "Local Distribution credential signing probe; copied Apple system Mach-O; not Tune Into Her native build or IPA",
+  "retainedBlockedAttempts": {
+    "initial": {
+      "exitCode": null,
+      "timedOut": true
+    },
+    "firstRetry": {
+      "exitCode": null,
+      "timedOut": true
+    },
+    "previous20s": {
+      "exitCode": null,
+      "timedOut": true
+    }
+  },
+  "ownerSystemConfirmation": "Owner reports Mac login Keychain password entered and Always Allow selected",
+  "sign": {
+    "exitCode": null,
+    "timedOut": true
+  },
+  "verify": null,
+  "teamMatches": false,
+  "result": "INCOMPLETE",
+  "originalSystemBinaryChanged": false,
+  "probeExecuted": false,
+  "probeSHA256": "875c7eea9c66c826091ede3cc44599311dc6818caf17f9e53d97c54c288842b2",
+  "timestamping": "none; local signing proof only",
+  "personalDeviceWrites": false,
+  "appStoreOrTestFlightUpload": false
+}

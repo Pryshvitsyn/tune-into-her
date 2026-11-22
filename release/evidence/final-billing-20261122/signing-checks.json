@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T16:25:21.812379+00:00",
+  "checkedAtUTC": "2026-11-22T17:22:24.892736+00:00",
   "releaseTestsPassed": 8,
   "pythonNativeFixturesPassed": 7,
   "protectedInputHashesMatched": 39,
@@ -14,7 +14,15 @@
   "certificateCSRAndPrivateKeyMatch": true,
   "appleCertificateTrustPassed": true,
   "profileIdentityAndEntitlementChecksPassed": 8,
-  "keychainImportExecuted": false,
-  "autoReviewRejectedPersistentKeychainImport": true,
-  "signedIPABuilt": false
+  "keychainImportExecuted": true,
+  "signedIPABuilt": false,
+  "priorKeychainImportApprovalBlockResolved": true,
+  "previousSigningIdentitiesUnchanged": true,
+  "keychainSearchListUnchanged": true,
+  "localPKCS12Encryption": "AES256/SHA256",
+  "newKeyACLReadbackPerformed": true,
+  "applePartitionPresent": false,
+  "applePartitionUpdateExecuted": false,
+  "autoReviewRejectedApplePartitionChange": true,
+  "credentialSignProbe": "INCOMPLETE; actual blocked attempts retained"
 }

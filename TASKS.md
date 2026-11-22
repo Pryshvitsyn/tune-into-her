@@ -33,8 +33,12 @@ Updated: 2026-11-22 (Europe/Rome)
   encrypted local RSA2048 key/matching verified CSR and separate protected owner inventory.
 - [x] After owner selected public CSR, issue exactly one Distribution certificate/App Store
   profile; verify key/CSR/certificate match, Apple trust and all profile identity/entitlement checks.
-- [ ] Login Keychain import needs separate approval after automatic-review rejection;
-  prepare local IPA only on host with sufficient capacity. No key uploaded to EAS/Apple.
+- [x] Receive separate explicit Login Keychain approval; import existing identity with codesign
+  access and encrypted local PKCS12. Verify valid identity1→2/prior identity/search list preserved.
+- [x] Diagnose actual blocked probe via process stack/exact-key read-only ACL: missing apple:
+  partition persists after owner confirmations; preserve all timed-out attempts.
+- [ ] Separate approval for new-key apple: partition after automatic-review rejection; no ACL
+  mutation executed. Then verify probe and build IPA on capable host. No key uploaded.
 - [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
   in prepared forms (intent reported, completion pending); legal/editorial sign-off.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay

@@ -1,0 +1,20 @@
+{
+  "checkedAtUTC": "2026-11-22T17:22:24.892736+00:00",
+  "scope": "Read-only metadata of private key matching the one issued Tune Into Her Distribution certificate",
+  "keyMaterialRead": false,
+  "passwordRead": false,
+  "signingApplicationCount": 1,
+  "partitionTypes": [
+    "cdhash"
+  ],
+  "applePartitionPresent": false,
+  "ownerSystemConfirmationReported": true,
+  "postConfirmationReadbackStillMissingApplePartition": true,
+  "source": "Installed Apple security(1) man page: /usr/bin/codesign requires apple: in key partition list",
+  "proposedAction": "Append apple: to only this key partition ACL, preserving existing partitions and every other ACL",
+  "proposedActionRisk": "Expands allowed Apple-signed processes at partition ACL level; ordinary application ACL intended to remain restricted to codesign",
+  "automaticReview": "Rejected before execution: broader Apple-signed-process scope not covered by codesign-specific consent",
+  "persistentACLChangedByAgent": false,
+  "separateApprovalRequired": true,
+  "otherKeysModified": false
+}
