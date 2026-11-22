@@ -1,13 +1,14 @@
 {
-  "checkedAtUTC": "2026-11-22T17:35:06.334581+00:00",
-  "scope": "Only private key matching issued Tune Into Her Distribution certificate",
-  "cause": "New key partition ACL lacks apple: required by local security(1) for /usr/bin/codesign",
+  "checkedAtUTC": "2026-11-22T19:08:38.263201+00:00",
+  "scope": "Only private key matching verified Tune Into Her Distribution certificate",
   "separateFounderApprovalReceived": true,
+  "retryRequestedByFounder": true,
+  "priorAttemptStatus": -25293,
+  "nativeAuthenticationUIAllowed": true,
   "signingApplicationExactlyCodesignVerified": true,
-  "requestedChange": "Append apple: to partition ACL, preserve all existing partitions and every other ACL",
+  "alreadyConfigured": false,
   "persistentUpdateStatus": -25293,
   "persistentUpdateSucceeded": false,
   "macPasswordReadOrSaved": false,
-  "otherKeyItemsModified": false,
-  "source": "Local Apple security(1) man page and installed Security.framework headers"
+  "otherKeyItemsModified": false
 }

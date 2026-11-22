@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T17:36:43.363824+00:00",
+  "checkedAtUTC": "2026-11-22T19:21:18.834642+00:00",
   "releaseTestsPassed": 8,
   "pythonNativeFixturesPassed": 7,
   "protectedInputHashesMatched": 39,
@@ -32,5 +32,9 @@
   "targetKeySigningApplicationExactlyCodesignVerified": true,
   "targetKeyACLBackupCreated": true,
   "applePartitionUpdateMacOSStatus": -25293,
-  "macPasswordReadOrSaved": false
+  "macPasswordReadOrSaved": false,
+  "nativeUIEnabledRetryStatus": -25293,
+  "officialAppleCLIPreflightExactOneKey": true,
+  "officialAppleCLIPasswordArgumentOmitted": true,
+  "ownerTerminalCommandPending": true
 }

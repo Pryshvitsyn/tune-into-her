@@ -77,6 +77,22 @@ Owner was asked whether the matching system authentication prompt appeared. This
 owner authentication dependency, not missing consent; approval is already received and
 must not be requested again. Current state supersedes the earlier
 dated rejection record in [signing progress](evidence/final-billing-20261122/signing-progress.json).
+Founder then requested another attempt. A reusable protected temporary helper enabled
+standard macOS authentication UI, but again received -25293. This does **not establish
+that the owner entered a wrong password**: the agent's API call did not obtain that password.
+Inspection of [Apple's CLI implementation](https://github.com/apple-oss-distributions/Security/blob/main/SecurityTool/macOS/keychain_find.c#L1555)
+shows `security set-key-partition-list` obtains a password with its own hidden terminal
+prompt and calls the explicit password-authenticated update. The prepared official CLI
+omits the password argument, uses the existing login keychain, and its selector was
+verified to match **exactly one private signing key**, identified from the exact certificate.
+It preserves existing partitions and appends only the approved apple: entry. No Mac
+password is read by the agent or saved to arguments/files. Metadata output is owner-only.
+An initial owned exec PTY reached the vendor password prompt and was canceled before
+entry because the Codex panel opened a fresh shell instead of attaching that PTY.
+The fresh Terminal panel is available; Codex app screen control is denied by the computer
+tool's safety policy, so the owner was given the single local runner command. No bypass
+was attempted. Owner command/exit/readback/signature verification are pending.
+[Sanitized handoff evidence](evidence/final-billing-20261122/apple-cli-handoff.json).
 No Keychain reset, password change or global partition-list override was performed.
 **Successful probe signing is not yet claimed.**
 [Scoped diagnosis](evidence/final-billing-20261122/codesign-acl-diagnosis.json) and

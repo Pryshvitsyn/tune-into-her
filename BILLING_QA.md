@@ -34,6 +34,11 @@ apple: for only this key; its ACL is backed up, signing application is verified 
 codesign, and the scoped update returned macOS authentication failure -25293. The call
 has ended; owner system authentication is required, consent is already received.
 Completion/readback, signed probe, IPA and actual purchases remain unverified.
+Founder-requested UI-enabled retry again returned -25293; the agent has not validated the
+owner's actual password. Apple source shows its official CLI obtains a hidden password
+and supplies it explicitly to the partition update. An exact-one-private-key CLI command
+is prepared without a password argument; owner execution in the fresh Terminal panel is
+pending because Codex app screen control is denied. [Handoff proof](release/evidence/final-billing-20261122/apple-cli-handoff.json).
 No private key was sent to EAS/Apple; existing Development credentials are unchanged.
 [Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
 

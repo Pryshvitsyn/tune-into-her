@@ -96,6 +96,11 @@ fertility, or mood-prediction product.
   apple: for only this key. Scoped update returned macOS authentication failure -25293;
   call ended, protected ACL backup exists, no successful update/readback/signature claimed.
   Consent is already received; owner system authentication remains required.
+  Founder-requested retry with native UI enabled also returned -25293; it did not validate
+  the owner's actual password. Apple source confirms its CLI uses an explicit hidden
+  password prompt. A no-password-argument command targeting exactly one new private key
+  is prepared, with a fresh Codex Terminal panel. Codex UI control was denied by tool safety;
+  owner must run the prepared command locally, then ACL/signature proof will be checked.
   No IPA/EAS private-key upload.
   Host free space recovered to about4GiB; prior4.5GiB attempt exhausted disk, so no full rebuild.
   [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).

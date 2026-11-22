@@ -1,0 +1,30 @@
+{
+  "checkedAtUTC": "2026-11-22T19:19:41.599171+00:00",
+  "retryRequestedByFounder": true,
+  "nativeUIEnabledAPIRetryStatus": -25293,
+  "priorAPICallDidNotValidateOwnersActualPassword": true,
+  "officialAppleSource": "https://github.com/apple-oss-distributions/Security/blob/main/SecurityTool/macOS/keychain_find.c#L1555",
+  "officialPasswordPromptSource": "https://github.com/apple-oss-distributions/Security/blob/main/SecurityTool/macOS/keychain_utilities.c#L1129",
+  "supportedRoute": "/usr/bin/security set-key-partition-list, password flag omitted; Apple getpass prompt",
+  "uniqueTargetPreflight": {
+    "privateSigningKeyCount": 1,
+    "loginKeychainOnly": true,
+    "labelReadFromExactCertificatePrivateKey": true,
+    "preservesExistingPartitions": true,
+    "appendsOnlyApprovedApplePartition": true
+  },
+  "passwordInCommandArguments": false,
+  "passwordFileCreated": false,
+  "passwordReadByAgent": false,
+  "stdoutMetadataOwnerOnly": true,
+  "runnerSHA256": "ba4ff8acf4a4f5c0064504897e974d4716d5f08bcae4f3820b6ff71de0b1cfbc",
+  "ownedToolPTYCanceledBeforePassword": true,
+  "codexTerminalPanelCreated": true,
+  "codexTerminalSnapshot": "Fresh zsh prompt; owned exec PTY was not attached",
+  "computerUseCodexControl": "Denied by tool safety policy; no bypass attempted",
+  "manualOwnerCommandPending": true,
+  "permissionAlreadyReceived": true,
+  "scopedEditSuccessVerified": false,
+  "signatureSuccessVerified": false,
+  "personalAppDataChanged": false
+}

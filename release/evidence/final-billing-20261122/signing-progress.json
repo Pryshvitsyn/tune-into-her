@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T17:36:43.362825+00:00",
+  "checkedAtUTC": "2026-11-22T19:19:41.602844+00:00",
   "authorizedTeam": "B77TL63S9T",
   "authorizedBundle": "com.eliogenesis.tuneintoher",
   "certificateIssued": true,
@@ -61,12 +61,16 @@
   "applePartitionUpdateAwaitingSeparateApproval": false,
   "keychainImportApprovalBlockResolved": true,
   "applePartitionUpdateSeparatelyAuthorized": true,
-  "applePartitionUpdateStatus": "macOS authentication failed (-25293); scoped call ended; update not verified successful",
+  "applePartitionUpdateStatus": "Native-UI-enabled retry also returned -25293; official Apple CLI with hidden owner password prompt prepared, manual command pending",
   "targetKeyACLBackupCreated": true,
   "applePartitionUpdateWaitingIn": null,
   "signingApplicationExactlyCodesignVerified": true,
   "applePartitionUpdateMacOSStatus": -25293,
   "applePartitionUpdateMacOSError": "The user name or passphrase you entered is not correct.",
   "ownerSystemAuthenticationRequired": true,
-  "applePartitionUpdateCompleted": false
+  "applePartitionUpdateCompleted": false,
+  "ownerActualPasswordValidityDetermined": false,
+  "officialAppleCLIUniqueTargetPrepared": true,
+  "ownerTerminalCommandPending": true,
+  "codexAppComputerControlDenied": true
 }

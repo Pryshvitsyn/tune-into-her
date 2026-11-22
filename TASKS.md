@@ -43,6 +43,11 @@ Updated: 2026-11-22 (Europe/Rome)
   no successful update/signature claimed; preserve backup and prior import proof.
 - [ ] Resolve owner Login Keychain authentication, finish already-authorized exact-key edit,
   verify readback/probe, then build IPA on capable host. No key uploaded; no new consent needed.
+- [x] Retry with native UI enabled; retain actual -25293 without blaming owner password.
+  Inspect Apple implementation; prepare official hidden-prompt CLI, verify exactly one
+  target private key, preserve existing partitions and omit password arguments/files.
+- [ ] Owner runs prepared Apple CLI in fresh Codex Terminal; Codex screen control is denied
+  by tool safety. Verify actual exit/ACL/probe afterwards; all access consent already received.
 - [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
   in prepared forms (intent reported, completion pending); legal/editorial sign-off.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay
