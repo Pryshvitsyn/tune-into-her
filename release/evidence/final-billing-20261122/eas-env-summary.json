@@ -1,0 +1,9 @@
+{
+  "iosPublicKeyMatchesOwnerFile": true,
+  "iosPublicKeyIsApple": true,
+  "offering": "default",
+  "trialURLMatchesExistingSandbox": true,
+  "mock": "false",
+  "demo": "false",
+  "preflightExitCode": 0
+}

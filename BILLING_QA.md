@@ -15,6 +15,34 @@ and [remaining owner actions](STORE_SETUP.md). The dated November13 observations
 historical and do not override that new proof. Real Apple/Google store transactions and
 store-distribution signing remain unverified.
 
+## Final live audit — 22 November 2026
+
+All existing mappings/prices/periods/levels were freshly verified. Apple Paid Applications
+Agreement remains **New** (owner legal-entity update required); availability is unset,
+Sandbox testers and TestFlight builds are absent. Development signing exists; Distribution
+signing does not. Its creation is awaiting separate consent after automatic-review rejection.
+
+**Actual Apple Sandbox TEST notification delivery now passes:** request200/status200,
+`sendAttemptResult=SUCCESS`, using the existing approved IAP key locally. This is technical
+notification-path proof, not a subscription/CustomerInfo lifecycle. Production URL unchanged.
+[Sanitized live evidence](release/evidence/final-billing-20261122/provider-audit.json).
+Actual preview values pass iOS sandbox-preflight again;531application tests/55files pass.
+
+A full native compile was stopped under measured host disk/swap pressure. A separate current
+Hermes re-embed of the prior verified Simulator Release uses the real SDK key/no mock/demo;
+its signature and unsigned native-payload equality are verified. Runtime results below/under
+current evidence must not be labelled a new native build, signed store IPA or actual purchase.
+The original Release artifact and personal iPhone data are preserved.
+
+Current accepted runtime: prepared normal onboarding → explicit real isolated app trial →
+authored Today → cold restart passes. Native store offer loading returns the normal unavailable
+state; Retry and return to trial Today pass. Restore is enabled but was not tapped; no native
+prices, sheet, transaction or paid entitlement is verified. The first reminder-wait XCTest
+failure is retained separately. The exact accepted method is committed to the existing
+[native-release harness](tests/native-release/ReleaseSandboxQA.swift).
+[Full no-Metro Simulator launch](release/evidence/final-billing-20261122/native/startup-real-key-simulator.mp4):
+40.036667s/1757frames/0black, same process. It is the described isolated re-embed, not an IPA.
+
 ## Apple sandbox preparation — 22 November 2026
 
 The Founder authorized connecting the two existing Apple products to RevenueCat and
@@ -70,7 +98,8 @@ Before running a real Apple sandbox transaction:
    credentials in chat. TestFlight has no builds at the dated audit; no upload is implied.
    After owner password reauthentication, the exact RevenueCat callback was saved in
    Apple's **Sandbox** server URL and matched after reload. The production URL remains
-   unset. Actual event delivery is not tested; the opaque callback is stored only in the
+   unset. Sandbox TEST delivery is now verified by Apple SUCCESS; purchase events remain untested.
+   The opaque callback is stored only in the
    protected owner inventory, not this document.
 4. Reuse `billing-test` in [eas.json](eas.json): store distribution, preview environment,
    sandbox trial service, demo=false and mocks=false. With authorized signing and real
@@ -107,8 +136,8 @@ EUR or treat a sandbox currency quirk as permission to change approved pricing.
 Current proof: **49 existing purchase/lifecycle/mock-isolation/build-configuration tests
 passed across 4 files** on November22, live RC mapping verified after reload, actual EAS
 preview readback and iOS billing-test configuration gate pass, sandbox callback saved/read
-back with production unchanged. Real Apple purchases, notification delivery and
-native sandbox acceptance remain unverified; all nine release-readiness flags remain false.
+back with production unchanged. Real Apple purchases, subscription-lifecycle notifications and
+native purchase acceptance remain unverified; all nine release-readiness flags remain false.
 
 Date: 2026-11-13. Branch: `codex/monetization-20261113`, based on the current local
 release candidate, not an older remote main. Tests below distinguish local deterministic

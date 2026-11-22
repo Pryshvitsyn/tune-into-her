@@ -1,0 +1,24 @@
+{
+  "sourceMOVSHA256": "513b9fa74915c52967b1068c5eda075e34b28f522570da55ff8dd7b89a04e9c3",
+  "copiedMP4SHA256": "477d2055bf54cc8119084557248b49883e69beecb041119f9a51ae3dccf582d6",
+  "containerOnlyRemux": true,
+  "transcoded": false,
+  "frameCount": 1757,
+  "blackFrames": 0,
+  "durationSeconds": 40.036667,
+  "scope": "Task-owned Simulator, previous verified native Release plus current real-key normal Hermes re-embed. Not physical iPhone or TestFlight.",
+  "personalDeviceWrites": false,
+  "sourceFrameSampleSeconds": [
+    1,
+    4,
+    7,
+    10,
+    13,
+    17,
+    20,
+    23,
+    25,
+    30
+  ],
+  "frameLabels": "Raw recording timestamps, not inferred scene phases. Home/OS transition is included before app content."
+}

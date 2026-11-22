@@ -1,0 +1,12 @@
+{
+  "knownPrivateKeySDKKeyAndOpaqueCallbackValuesAbsent": true,
+  "privateCredentialFilesAdded": false,
+  "reviewedFiles": 55,
+  "providerWrites": "Only isolated trial test activity and Apple Sandbox TEST; no production writes",
+  "credentialCreationDeniedPendingPermission": true,
+  "opaqueCallbackAccidentalTechnicalOutputDisclosed": true,
+  "applicationIdentifiersUnchanged": true,
+  "finalKnownCredentialValueMatches": [],
+  "finalStagedFilesReviewed": 56,
+  "finalStagedCredentialScan": "PASS"
+}

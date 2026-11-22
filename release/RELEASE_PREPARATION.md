@@ -16,6 +16,114 @@ the [prepared feature branch](https://github.com/Pryshvitsyn/tune-into-her/tree/
 Existing CI branch filters do not trigger on this feature/base pair; reported checks are
 the actual local source/native/provider evidence, not an invented GitHub CI pass.
 
+## Final Apple / Google audit — 22 November 2026
+
+New baseline `b8f68f04c31d61d23967066727319cbde2264a5f` is retained by
+`codex/checkpoint-apple-billing-20261122`. The newest Founder instruction freezes remote
+publication: **local commit only; no push, PR update, merge, store upload/submission or
+production activation**. PR#9 remains draft/unmerged at33b06af; its older pushed evidence
+below is historical, not a new push in this pass.
+
+Fresh authenticated readback confirms the existing Apple group22605485, both level1
+products,1month/1year periods, Italy€3.99/€24.99, en-AU names/descriptions and zero introductory
+offers. Both products still have **availability unset**, inherit the app tax category without
+attestation, and lack review screenshots. The annual plan remains one upfront yearly payment;
+no monthly instalment/12-month commitment plan was configured.
+
+Apple Developer membership is Individual, Team`B77TL63S9T`, renewal9November2027; the
+signed-in owner has Account Holder role. Free agreement is Active; **Paid Applications
+Agreement is New**, with the explicit requirement to update legal-entity information before
+signing. Existing legal name/address/type were inspected privately, not changed; the owner
+must verify the actual individual/sole-proprietor details. Banking/tax completion is **not
+verified** and was not surfaced as complete at this agreement stage. No agreement or tax
+attestation was submitted. TestFlight still contains zero builds; Sandbox had zero testers.
+An empty owner-entered tester form is prepared with Italy, with no invented email/password.
+
+Live RevenueCat readback confirms valid existing IAP credentials, both products on
+`full_access`, and current `default` with the exact standard packages. Actual EAS preview
+SDK-key readback matches the protected owner copy; sandbox preflight passes with demo/mocks
+false and the existing trial URL. Metadata-only audit shows these four variables belong
+only to preview; production remains unconfigured/untouched. EAS plan is Free/$0; no new
+cloud build, upgrade or production environment was activated.
+
+**New live notification proof:** requested a genuine Apple **Sandbox TEST** notification
+using the existing approved IAP key locally. Apple request returned200; status returned200
+with `sendAttemptResult=SUCCESS`. This proves test delivery to the configured sandbox
+RevenueCat endpoint, **not purchase/lifecycle processing or entitlement issuance**. No new
+key was generated. The sandbox URL matches the protected owner copy; production remains
+unset. A masked RC field is not mistaken for a different URL. One technical page snapshot
+inadvertently included the opaque sandbox callback; the Founder was informed. No private
+key/password was printed, and the callback is excluded from all saved evidence/reports.
+
+Local signing has1valid Development identity,0Distribution identities and one matching
+Development profile expiring8November2027. Apple's certificate list also has Development
+only; EAS iOS/Android credential lists are empty. New Distribution signing requires the
+separate pending Founder permission; automatic approval review rejected advancing its
+creation workflow before that permission. Nothing was created/revoked/replaced.
+
+A full Xcode Simulator rebuild was stopped (exit75) when this8GiB host reached1.24GiB free
+disk and13.3GiB used swap. No compile success is inferred. Independently, Expo exported a
+current normal minified Hermes bundle with one worker into an **isolated copy of the prior
+verified Release Simulator app**; ad-hoc signature passes, the real iOS SDK key is present,
+and QA overrides are absent. Unsigned Mach-O payload is byte-identical to the prior native
+artifact; the raw native hash changes because of re-signing. Original app/bundle are intact.
+This is a standalone runtime test artifact, **not a fresh native compilation, device IPA,
+App Store distribution signature or TestFlight build**. Accepted runtime results below remain separate from actual product retrieval/purchases.
+
+Accepted current native runtime proof: the first full fresh XCTest stopped on a reminder
+Switch wait (failure retained; a later AX snapshot includes the Switch). Continuing that
+same prepared normal onboarding screen, turning reminders off and explicitly starting a
+separate real sandbox trial passed: authored Today and cold restart remain accessible.
+The native store-offering case also passed its **unavailable → Retry → trial Today** branch.
+No actual products/prices or payment sheet were returned, and Restore was not tapped.
+This does not establish real StoreKit transaction environment, purchase or lifecycle proof.
+The exact accepted offer/retry method is now in the existing guarded native-release harness;
+no original assertion or device guard was removed. Swift parse and8release tests pass.
+
+Recorded a complete40.036667second no-Metro cold launch to the same real-trial Today:
+**1,757frames, monotonic timestamps,0black frames, same process alive**. H.264 stream is
+remuxed without transcoding; raw timestamped frames, original/MP4 hashes and full frame
+analysis are retained. The first low-space capture attempt was rejected; generated build
+intermediates and task-only tools/cache were safely cleaned, retaining original artifact
+hashes. Accepted capture strengthens start headroom to900MiB, automatically aborts below
+512MiB, completed without abort and left972.4MiB free. No guard was weakened. The created
+Simulator was shut down afterwards, retaining its synthetic data; no personal device was
+changed. A later attempt used the existing generator for a fresh iPhone17Pro after free disk
+recovered to4.5GB. That run again exhausted host disk during startup; result save raised
+ENOSPC. It was interrupted and only its failed empty Simulator/build cache were cleaned.
+The accepted SE, its synthetic trial, original app and all39/173source inputs remain intact.
+No Pro/fresh-case or required-size store screenshot pass is claimed. Required store/Android
+screenshots and a fresh signed IPA remain open behind actual signing/equipped-host gates.
+
+See [native results](evidence/final-billing-20261122/native/runtime-results.json),
+[full video](evidence/final-billing-20261122/native/startup-real-key-simulator.mp4) and
+[visible unavailable/retry state](evidence/final-billing-20261122/native/store-retry.png).
+The separate14-day trial must not be mistaken for paid `full_access`.
+
+The same preserved Android AAB was re-audited using checksum-verified temporary official
+Temurin/Google bundletool. Actual manifest/API36/Billing8.3, JAR signature,100ELFs/50applicable
+64-bit16KB+RELRO, same-AAB APK payload and ZIP alignment pass. Overall status remains
+INCOMPLETE: owner-verified upload certificate and local official zipalign are absent. Its
+certificate is **Android Debug**, not Play upload signing. The temporary JDK was removed;
+system Java/SDK are unchanged. No equipped16KB emulator/device or verified Play owner is
+available; current Play profile still opens developer signup, not an app/catalog.
+
+Source validation re-ran: **531tests/55files**, TypeScript, lint(0errors/1existing generated
+`.expo` warning), content610bundles/11locales/318texts each and90-day reserve pass. Release
+check correctly fails on missing owner/legal/public URLs, all9evidence flags and absent local
+production billing config. A separate preflight using actual pulled preview values passes;
+these results are not contradictory. Store/local legal drafts reproduce; public legal
+export correctly fails closed. No editorial approval or real transaction is inferred.
+
+Sanitized current proof: [provider audit](evidence/final-billing-20261122/provider-audit.json),
+[Apple TEST delivery](evidence/final-billing-20261122/apple-test-notification-status.json),
+[trial HTTP](evidence/final-billing-20261122/trial-http.json),
+[EAS metadata](evidence/final-billing-20261122/eas-credentials-summary.json),
+[Android binary](evidence/final-billing-20261122/android-audit.json),
+[Simulator artifact scope](evidence/final-billing-20261122/ios-runtime-artifact.json).
+All9readiness flags remain false. Personal iPhone, saved cycle/history/trial credentials,
+RevenueCat identity, production infrastructure and store publication remain untouched.
+
 ## Preserved source
 
 The editorial catalog, cue IDs and all localized daily content are frozen. The twelve
@@ -158,7 +266,7 @@ variable, distribution/signing mutation, upload or personal-device installation 
 After owner password reauthentication in RevenueCat, configured its exact opaque callback
 only in App Store Connect's **Sandbox server URL**. A full reload confirms equality and
 that the production URL remains unset. Callback values are excluded from Git/chat and
-kept in the private owner inventory. No actual notification delivery is claimed.
+kept in the private owner inventory. Initial connection did not test delivery; the later final audit above verifies a real Sandbox TEST SUCCESS, not a purchase lifecycle.
 
 The existing native SDK already uses standard monthly/annual packages, checks `full_access`,
 preserves its anonymous identity and validates periods/no introductory offer. Reused it
@@ -432,6 +540,67 @@ store's sandbox/review system. Expiry preserves saved data and returns to the ex
 locked/payment flow. Do not provide a hidden premium bypass. Supply any provider test
 account/limited-access instructions only in protected store review fields after account
 eligibility is known. The internal QA panel is not reviewer access.
+
+## International availability proposal — draft, not enabled
+
+Keep both native plans available together at the same access level wherever approved.
+Preserve Italy€3.99/month and€24.99/year; use Apple/Google legitimate local equalization and
+tax calculations, without manual invented territorial prices or an introductory offer.
+The175Apple pricing rows observed today **are not enabled sales regions**. Apple separately
+requires [subscription availability](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription)
+and app availability; neither overrides agreements, metadata or review status.
+
+| Proposed coverage | Conditions before enabling |
+| --- | --- |
+| EU27 plus Iceland, Liechtenstein, Norway; UK; Switzerland | Paid agreement/bank/tax, verified EU DSA trader/contact details, final privacy/terms/consumer disclosures and applicable health/age questionnaires. Do not declare an SRL for this Individual membership. |
+| US/Canada, Australia/New Zealand, Singapore, Ukraine | Include in broad initial proposal, subject to supported paid storefront, actual owner eligibility, final metadata/health/privacy and store acceptance. No assumed legal clearance. |
+| Other supported Asian, African and Latin American storefronts | Default proposal: include all additional store-supported paid territories that pass account-specific regional questions and sanctions/processor review. Reconcile exact per-store lists before Save; use identical monthly/yearly region sets. |
+| Mainland China | Hold pending owner/legal assessment of the actual compliance questionnaire/filings and applicability. Simplified Chinese remains available worldwide; no fabricated LLM/security filing or regulatory approval. |
+| Russia and restricted/sanctioned territories | Separate payment/legal decision. Do not enable a paid path where unavailable or add an external checkout bypass. Russian UI stays supported worldwide. Recheck Apple payment/storefront and owner eligibility independently rather than copying Google's rules. |
+| Belarus on Google Play | Review separately: Google's current notice distinguishes paid-app restrictions from IAP/subscriptions in free apps. Do not mark identical to Russia without checking the actual product/storefront. |
+
+Google [buyer distribution coverage](https://support.google.com/googleplay/android-developer/answer/10532353)
+is distinct from [merchant/developer registration](https://support.google.com/googleplay/android-developer/answer/9306917).
+The unavailable owner console prevents committing an exact validated Google territory list.
+Google currently [pauses Play billing for users in Russia](https://support.google.com/googleplay/android-developer/answer/11950272?hl=en);
+[Russian disbursement-bank seller suspension](https://support.google.com/googleplay/android-developer/answer/15685001?hl=en)
+is a separate owner-side restriction. No country is promised available based on a locale or
+price row. No regional choices, contracts or production configuration were saved.
+
+[EU DSA requirements](https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/),
+[China questionnaire](https://developer.apple.com/help/app-store-connect/manage-compliance-information/view-china-mainland-compliance-information)
+and [Korea compliance](https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-korea-compliance-information/)
+were checked as separate gates. The Mainland China notice requires actual feature
+classification; this authored local catalog is not evidence of an in-app generative service.
+The owner must attest the actual app, not inferred classifications or invented documentation.
+
+Google health-account eligibility remains unresolved: the current
+[Play account policy](https://support.google.com/googleplay/android-developer/answer/10788890?hl=en)
+requires Organization registration for listed health services; determine applicability from
+the real cycle/health features and verified owner account, not the Lifestyle label. If the
+existing verified account is Personal and was created after13November2023, prepare
+[12 opted-in testers for14continuous days](https://support.google.com/googleplay/android-developer/answer/14151465)
+and apply for production access after the closed test. Neither account type nor creation
+date is currently known. No new developer account/payment was made.
+
+## Dated iOS screenshot drafts reused without image changes
+
+The existing November21 ordinary Release QA set already contains actual iPhone17Pro
+1206×2622 captures. Current173core UI/build-input hashes still match that capture source.
+Selected **Cycle and Learn** as dated draft candidates and made byte-identical local copies
+under`build/store-drafts/apple/en-AU/screenshots/`; no scaling, reconstruction or new capture
+is claimed. [Provenance/dimensions/hashes](evidence/final-billing-20261122/ios-store-media-drafts.json)
+reference the original signed normal Release/native trial evidence, which had no demo/mock.
+Its iOS SDK key was not yet configured, so these non-billing UI images do not represent
+current store retrieval or a signed store build.
+
+The old Today image visibly contains`action_42 / DO_043`, pending Founder rewrite, so it
+remains QA evidence and is **excluded from the store draft export**. The subscription image
+has missing offers/configuration and is also excluded. No pending/rejected action wording
+is approved or changed. The two clean UI drafts still require owner/legal/native-language
+approval; Android/current configured-store/purchase media remain open. The config indexes
+the draft manifest separately; approved screenshots and previewVideo remain empty, and all
+readiness flags stay false. No existing evidence image was modified or duplicated in Git.
 
 ## Privacy and legal declaration drafts
 

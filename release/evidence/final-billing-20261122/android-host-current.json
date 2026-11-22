@@ -1,0 +1,9 @@
+{
+  "adbAvailable": false,
+  "usbInventoryReadSucceeded": true,
+  "androidUSBTargetDetectedByProductManufacturer": false,
+  "hostFreeBytes": 4510486528,
+  "previousOfficial16KBImageLogicalBytes": 4560761440,
+  "emulatorRequiresFreeBytes": 5000000000,
+  "limits": "USB product-name detection is not proof that no Wi-Fi/unknown-brand device exists. No device serials, identifiers or personal data emitted."
+}

@@ -263,4 +263,40 @@ extension LaunchUIQA {
     releaseCapture(app, "normal-Reduced-Motion-Today")
     print("TIH_NORMAL_RELEASE_REAL_TRIAL_THEMES_DOCUMENTS_HISTORY_REDUCED_MOTION_PASS")
   }
+  func testFinalBillingNativeStoreAvailabilityAndRetry() throws {
+    continueAfterFailure = false
+    let app = XCUIApplication(bundleIdentifier: "com.eliogenesis.tuneintoher")
+    app.launch()
+    let mind = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "KEEP IN MIND.")).firstMatch
+    XCTAssertTrue(mind.waitForExistence(timeout: 45))
+    requireNormalRelease(app)
+    finalPassOpenSettings(in: app, labels: finalPassLabels["en"]!)
+    let row = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Subscription")).firstMatch
+    finalPassReveal(row, in: app)
+    finalPassTapFixed(row, expecting: app.buttons["billing-restore"].firstMatch, in: app)
+    let unavailable = app.staticTexts["The store offer could not be loaded. No price or trial has been assumed."].firstMatch
+    let monthly = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Monthly")).firstMatch
+    let retry = app.buttons["billing-retry"].firstMatch
+    let end = Date().addingTimeInterval(50)
+    while !retry.exists && !monthly.exists && Date() < end { RunLoop.current.run(until: Date().addingTimeInterval(0.3)) }
+    XCTAssertTrue(retry.exists || monthly.exists, "Native offering must resolve or expose recoverable failure")
+    requireNormalRelease(app)
+    releaseCapture(app, "native-store-offering-first-result")
+    if retry.exists {
+      finalPassReveal(retry, in: app)
+      XCTAssertTrue(retry.isEnabled)
+      retry.tap()
+      XCTAssertTrue(retry.waitForExistence(timeout: 50), "Retry must return a recoverable store state")
+      releaseCapture(app, "native-store-retry-result")
+      print("TIH_NATIVE_REAL_KEY_STORE_OFFERS_UNAVAILABLE_RECOVERABLE_NO_PURCHASE")
+    } else { print("TIH_NATIVE_REAL_KEY_STORE_PRODUCTS_RENDERED_NO_PURCHASE") }
+    let restore = app.buttons["billing-restore"].firstMatch
+    finalPassReveal(restore, in: app)
+    XCTAssertTrue(restore.isEnabled)
+    XCTAssertFalse(app.buttons["billing-start-trial"].firstMatch.exists)
+    releaseHome(app, expecting: mind)
+    XCTAssertTrue(mind.waitForExistence(timeout: 30), "Independent trial remains usable after store failure")
+    releaseCapture(app, "native-store-return-real-trial-today")
+  }
+
 }

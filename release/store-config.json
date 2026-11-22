@@ -83,7 +83,8 @@
     "featureGraphic": "release/media/google-feature-1024x500.png",
     "screenshots": [],
     "previewVideo": null,
-    "screenshotStatus": "Capture normal configured store build. Internal QA/sample-access recordings are evidence, not production marketing screenshots."
+    "screenshotStatus": "Approved exports remain empty. Two dated Nov21 ordinary Release iOS1206x2622 Cycle/Learn draft candidates are indexed separately, byte-identical/same core UI, pending owner/legal/native-language approval. Today DO_043 and subscription-error views are excluded. No configured-store/Android media or upload is implied.",
+    "screenshotDraftEvidence": "release/evidence/final-billing-20261122/ios-store-media-drafts.json"
   },
   "sources": {
     "appleLocales": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-store-localizations/",
@@ -102,5 +103,6 @@
     "checkedOn": "2026-11-21"
   },
   "appleSubscriptionCatalogEvidence": "release/evidence/apple-catalog-20261122/catalog.json",
-  "revenueCatConfigurationEvidence": "release/evidence/revenuecat-20261122/configuration.json"
+  "revenueCatConfigurationEvidence": "release/evidence/revenuecat-20261122/configuration.json",
+  "finalBillingAuditEvidence": "release/evidence/final-billing-20261122/provider-audit.json"
 }

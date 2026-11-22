@@ -1,0 +1,69 @@
+{
+  "checkedOn": "2026-11-22",
+  "tests": 531,
+  "testFiles": 55,
+  "durationSeconds": 15.27,
+  "pythonNativeFixtures": 7,
+  "lintErrors": 0,
+  "lintWarnings": 1,
+  "existingWarning": ".expo/types/router.d.ts unused eslint-disable",
+  "commands": [
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSHA256": "dc0047a236cf6fd0e7981c411ee5b95e511491cbb98408250447c4bb3b1510da"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSHA256": "6c5baff32340b5d92da9196a77cde6e78bcee3ad57609f3985000d7b0bce449c"
+    },
+    {
+      "command": "npm test -- --maxWorkers=2",
+      "exitCode": 0,
+      "logSHA256": "910a11d5f207b1034fb33fe083d556fe9da506739266616ffba510264044d63f"
+    },
+    {
+      "command": "npm run content:check",
+      "exitCode": 0,
+      "logSHA256": "116de9de5946233dcb0d1fa7904b35b9bbbd58242e5af77a0881b3797e86224e"
+    },
+    {
+      "command": "npm run content:validate",
+      "exitCode": 0,
+      "logSHA256": "7de4f48927fd49dcf4a7997befab4f2154deadcd73dc1a54ca867092d3b866d4"
+    },
+    {
+      "command": "npm run release:check",
+      "exitCode": 1,
+      "logSHA256": "23c937d0877d87e7b3ceb08e78d1a593964f88fc73c80823005d72359fb60e93"
+    },
+    {
+      "command": "node scripts/prepare-store-drafts.mjs",
+      "exitCode": 0,
+      "logSHA256": "0865e5a475791a65cfe2a776bbcc4cff5367c61dece79a3bdf5743186422f91b"
+    },
+    {
+      "command": "node scripts/build-legal-site.mjs",
+      "exitCode": 0,
+      "logSHA256": "8f05864e715a5fe0b4189f7cce89ef62ceb9e5f2645efc7f80d08e2b2acaa662"
+    },
+    {
+      "command": "node scripts/build-legal-site.mjs --public-export",
+      "exitCode": 1,
+      "logSHA256": "a09b6a0bf2fd1689105224409325bad36b6ac9e67eae3f8cb0565bf2f7b38f59"
+    }
+  ],
+  "releaseGateExpectedFailure": true,
+  "productionReadinessFlagsAllFalse": true,
+  "realPurchaseProofInferred": false,
+  "publicLegalExportExpectedFailure": true,
+  "sandboxPreflightExitCode": 0,
+  "affectedReleaseTestsAfterFinalSourceChange": {
+    "tests": 8,
+    "testFiles": 1,
+    "exitCode": 0,
+    "logSHA256": "470e26840db78431e02d704ae53003183c6aee78e31b00627f8830063477c7e6"
+  },
+  "swiftNativeHarnessParseExitCode": 0
+}

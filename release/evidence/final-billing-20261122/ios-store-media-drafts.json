@@ -1,0 +1,51 @@
+{
+  "status": "DRAFT_CANDIDATES_ONLY_NOT_APPROVED_OR_UPLOADED",
+  "platform": "App Store iPhone",
+  "locale": "en-AU",
+  "actualPriorRuntimeEvidence": "release/evidence/release-prep-20261121/ios-normal-runtime.json",
+  "actualPriorBuildEvidence": "release/evidence/release-prep-20261121/ios-native-build.json",
+  "sameCoreUIInputsVerifiedUnchanged": 173,
+  "normalRelease": true,
+  "demo": false,
+  "mockBilling": false,
+  "access": "Explicit real isolated Cloudflare app trial; no paid entitlement asserted",
+  "captureIsFromThisNewPass": false,
+  "iosSDKKeyAtPriorBuild": "Not configured; these non-billing UI candidates do not represent current native store retrieval",
+  "imageBytesChanged": false,
+  "resized": false,
+  "screenReconstruction": false,
+  "nativeMediumDynamicIslandDimensions": true,
+  "approvedStoreScreenshotFlagChanged": false,
+  "files": [
+    {
+      "source": "release/evidence/release-prep-20261121/ios-normal-Cycle.png",
+      "generatedDraftCopy": "build/store-drafts/apple/en-AU/screenshots/01-ios-normal-Cycle.png",
+      "sha256": "367490e238735632114e5cfb29dd8ee423fa18aa97732f41059cec1e3f0bb0a5",
+      "width": 1206,
+      "height": 2622,
+      "capturedOn": "2026-11-21",
+      "ownerEditorialAndLegalApproval": false
+    },
+    {
+      "source": "release/evidence/release-prep-20261121/ios-normal-Learn.png",
+      "generatedDraftCopy": "build/store-drafts/apple/en-AU/screenshots/02-ios-normal-Learn.png",
+      "sha256": "bed94f6964ab593590f0030d691e92cb79d6c2cbc448d1ee18cdfcc2b3568cfd",
+      "width": 1206,
+      "height": 2622,
+      "capturedOn": "2026-11-21",
+      "ownerEditorialAndLegalApproval": false
+    }
+  ],
+  "excluded": {
+    "ios-normal-Subscription.png": "Missing configured offers/prices; cannot use store error/missing-config view as purchase marketing",
+    "allCurrentSEFrames": "QA size 750x1334; not resized to create store media",
+    "currentStartupVideo": "40s includes pre-app OS transition; QA evidence, not an App Store preview",
+    "android": "No actual equipped Android runtime capture; do not relabel iOS screenshots",
+    "ios-normal-real-trial-Today.png": "QA proof only: visible action_42 / DO_043 is explicitly pending Founder rewrite; do not promote the wording or screenshot to approved store media."
+  },
+  "limits": [
+    "All daily text remains editorial-frozen/unapproved. Today screenshot with pending DO_043 is excluded; no rejected/rewrite action is promoted.",
+    "Current configured signed store build and Android screenshots remain outstanding.",
+    "No image is newly captured, approved, uploaded or published by this manifest."
+  ]
+}

@@ -53,3 +53,30 @@ disk space has been recovered; it verifies a real successful retry without reset
 It never dismisses an error during a language acceptance loop. Shared fixed-control and
 tab retries anchor their center to the actual element, avoiding root-window coordinate
 offsets on Dynamic Island devices; simulator/physical-device guards remain intact.
+
+## Real-key native offering / retry observation — 22 November 2026
+
+After onboarding and explicit real sandbox trial have reached English Today, run:
+`LaunchUIQA/LaunchUIQA/testFinalBillingNativeStoreAvailabilityAndRetry`.
+The method is copied verbatim from the native case actually compiled/executed in the
+November22 isolated runner. It reuses the guarded generator and existing navigation/
+scroll helpers. It opens normal Settings → Subscription, waits for native store offers or
+recoverable failure, exercises Retry, checks Restore remains enabled **without tapping it**,
+and returns through Home to the independent real-trial Today. It never buys, restores,
+resets data, changes the clock or injects an entitlement.
+
+The accepted November22 result is **store unavailable + retry + trial remains usable**.
+No real product/price/purchase acceptance is inferred from this pass. The optional
+products-rendered branch is not a substitute for verifying both actual store packages,
+periods/prices/entitlements and sandbox transactions after owner prerequisites are ready.
+A separately prepared/continued onboarding case proved real trial → Today → cold restart;
+the original fresh case's reminder wait failure is retained, not marked passed.
+The prior native Release was copied and re-embedded with the current normal Hermes
+bundle/public SDK key, with unchanged unsigned Mach-O payload and verified ad-hoc signature;
+this is **not a new native compile, IPA or TestFlight build**.
+
+[Actual current results, screenshots and full standalone video](../../release/evidence/final-billing-20261122/native/runtime-results.json).
+The tested temporary runner is restricted to its newly created SE3; the canonical generator
+continues to create a new isolated iPhone17Pro and must not target an existing personal
+Simulator. Larger-device rerun and required store screenshot sizes remain unverified in
+this low-space pass. Keep the existing guard and all original assertions.

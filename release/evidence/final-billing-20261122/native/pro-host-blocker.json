@@ -1,0 +1,17 @@
+{
+  "checkedAtUTC": "2026-11-22T15:20:09.441353+00:00",
+  "newOwnedIPhone17ProAttempt": "Stopped under actual disk/swap pressure before fresh onboarding could complete",
+  "nativeBuildOrFreshTrialPassClaimed": false,
+  "ownedRunnerInterrupted": true,
+  "onlyOwnedSimulatorShutdown": true,
+  "personalDeviceWrites": false,
+  "requiredSizeStoreScreenshotsProduced": false,
+  "sourceOrAssertionsChangedToPass": false,
+  "observedLowFreeGiBApprox": 0.24,
+  "runnerResultSaveFailedWithENOSPC": true,
+  "acceptedSEEvidenceUnchanged": true,
+  "onlyFailedEmptyProSimulatorCleaned": true,
+  "acceptedSESyntheticTrialAndAllPersonalDevicesPreserved": true,
+  "originalNativeArtifactHashesPreserved": true,
+  "currentFreeMiBAfterTaskCleanup": 300.4
+}

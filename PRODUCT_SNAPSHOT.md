@@ -66,6 +66,47 @@ fertility, or mood-prediction product.
   on the current paywall in Light/Dark. Full unlocked Today/intro/icon regression remains open.
 
 
+## CURRENT FINAL BILLING AUDIT — 2026-11-22
+
+- Preserve b8f68f0 via `codex/checkpoint-apple-billing-20261122`; local-only continuation.
+  Newest instruction forbids push/PR edits/merge/store submission. No personal-device writes.
+- Fresh Apple readback: both approved level1 plans/periods/Italy prices/no intro intact;
+  availability unset, inherited tax unconfirmed, review screenshots absent. Individual
+  Developer membership renews9November2027, TeamB77TL63S9T; Account Holder role verified.
+  Paid Applications Agreement remains New with legal-entity confirmation prerequisite;
+  banking/tax not verified, TestFlight empty, no sandbox testers at audit. Owner forms ready.
+- Fresh RC full_access/default mappings and valid existing key confirmed. EAS preview
+  key matches owner copy and actual sandbox preflight passes; four preview variables only,
+  production untouched, Free/$0plan, no remote iOS/Android signing credentials.
+- **New real Apple Sandbox TEST notification delivery succeeds**, Apple request/status200
+  and SUCCESS. No actual purchase/lifecycle entitlement is inferred. Callback values are
+  excluded from saved proof; one accidental technical-snapshot inclusion was disclosed.
+- Local/Apple signing still Development only. New Distribution certificate/profile needs
+  separate Founder approval; automatic review blocked advancing creation before consent.
+- New full native recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;
+  no success claimed. A separate current Hermes re-embed of prior verified Simulator Release
+  has the real SDK key, no private QA, verified ad-hoc signature and identical unsigned
+  Mach-O payload. It is runtime QA, not an IPA/new native compile/TestFlight artifact.
+- Accepted current native runtime: continue the prepared normal onboarding screen → explicitly
+  start separate real sandbox trial → authored Today/cold restart; native offers remain unavailable,
+  Retry and return-to-Today work, Restore not tapped/no purchase. First reminder-wait failure retained.
+  Exact accepted offer/retry test is added to existing guarded native harness; Swift parse/8release
+  tests pass. Full current no-Metro cold40.036667s/1757frames/0black recorded with stronger disk guards,
+  original native artifact preserved. Test Simulator shut down with its synthetic data intact.
+  A later fresh Pro attempt hit ENOSPC despite4.5GBinitial free; stopped/cleaned only its empty
+  owned Simulator/cache. No required-size store capture or new fresh-case pass is claimed.
+- Repeated actual trial HTTP checks pass with prior separate identity, no time extension.
+  Repeated same-AAB API36/Billing8.3/ELF+RELRO+ZIP16KB/signature checks pass, overall
+  INCOMPLETE for owner upload certificate/local official zipalign; actual cert is Debug.
+  Google owner console/catalog/service account/RTDN remain inaccessible/unverified.
+- Existing November21 normal Release1206×2622 Cycle/Learn images are indexed as dated
+  unchanged iOS draft candidates, with byte-identical local export and173core hashes matched.
+  Today DO_043 and subscription-error images are excluded; no editorial/media approval or upload.
+- Re-ran all six commands:531tests/55files, typecheck/lint/content pass; release gate fails
+  as expected. All9flags stay false. International proposal and current sanitized evidence
+  are in the [canonical release report](release/RELEASE_PREPARATION.md); no legal/editorial
+  approval, country availability, real transaction or store readiness is claimed.
+
 ## CURRENT RELEASE PREPARATION — 2026-11-21
 
 - Baseline9b6e031 preserved by `codex/checkpoint-release-prep-20261121`; work isolated on
@@ -86,7 +127,8 @@ fertility, or mood-prediction product.
   actual iOS billing-test gate and49 purchase/configuration tests pass. No real purchase,
   new native build or phone/runtime data write. Sandbox testers were absent at audit; owner
   reauth completed and RC callback saved/matched after reload only in Apple's Sandbox URL.
-  Notification delivery remains unverified; optional auto-import has no extra ASC API key.
+  Sandbox TEST delivery is now separately verified; purchase/lifecycle events remain unverified.
+  Optional auto-import has no extra ASC API key.
 - Apple app6832290282 / en-AU / version1.0 is preserved. Explicit Founder approval on
   November 22 authorized group `22605485` and drafts `monthly_access` (Apple `6837968807`) /
   `annual_access` (Apple `6837969104`), created with periods 1 month/1 year and the same level 1. Italy/EUR

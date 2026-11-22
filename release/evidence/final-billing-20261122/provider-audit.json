@@ -1,0 +1,98 @@
+{
+  "checkedAtUTC": "2026-11-22T14:41:18.467818+00:00",
+  "baseline": "b8f68f04c31d61d23967066727319cbde2264a5f",
+  "checkpoint": "codex/checkpoint-apple-billing-20261122",
+  "branch": "codex/release-preparation-20261121",
+  "apple": {
+    "appId": "6832290282",
+    "bundle": "com.eliogenesis.tuneintoher",
+    "team": "B77TL63S9T",
+    "membership": "Apple Developer Program / Individual",
+    "renewalDate": "2027-11-09",
+    "accountHolderRoleVerified": true,
+    "paidApplicationsAgreement": "New",
+    "freeApplicationsAgreement": "Active",
+    "legalEntityConfirmedByOwner": false,
+    "bankingTax": "Not verified; not exposed as completed at New agreement stage",
+    "availabilityConfigured": false,
+    "products": [
+      {
+        "id": "monthly_access",
+        "appleId": "6837968807",
+        "period": "P1M",
+        "level": 1,
+        "italyPriceEUR": "3.99",
+        "locales": [
+          "en-AU"
+        ],
+        "introductoryOfferCount": 0
+      },
+      {
+        "id": "annual_access",
+        "appleId": "6837969104",
+        "period": "P1Y",
+        "level": 1,
+        "italyPriceEUR": "24.99",
+        "locales": [
+          "en-AU"
+        ],
+        "introductoryOfferCount": 0
+      }
+    ],
+    "taxCategory": "Inherited from main app; not attested",
+    "reviewScreenshotsUploaded": false,
+    "testFlightBuildCount": 0,
+    "sandboxTestersAtAudit": 0,
+    "sandboxFormPreparedItaly": true,
+    "distributionCertificateCount": 0,
+    "signingCreationAwaitingSeparateApproval": true
+  },
+  "revenueCat": {
+    "project": "5921ebba",
+    "appleApp": "app3e066d34c5",
+    "credentialStatus": "Valid credentials",
+    "entitlement": "full_access",
+    "attachedAppleProducts": [
+      "monthly_access",
+      "annual_access"
+    ],
+    "currentOffering": "default",
+    "packages": {
+      "$rc_monthly": "monthly_access",
+      "$rc_annual": "annual_access"
+    },
+    "callbackMatchesProtectedOwnerFile": true,
+    "productionCallbackConfigured": false,
+    "sandboxTestNotificationDelivery": "Apple SUCCESS",
+    "purchaseLifecycleVerified": false,
+    "automaticImportConfigured": false
+  },
+  "google": {
+    "currentProfile": "Developer account creation screen; not proof no other account exists",
+    "verifiedDeveloperOwnerAccessible": false,
+    "registrationDate": null,
+    "accountType": null,
+    "playAppSigningVerified": false,
+    "merchantVerified": false,
+    "catalogVerified": false,
+    "existingRCApp": "app445ba93d10",
+    "package": "com.pryshvitsyn.tuneintoher",
+    "serviceAccountAndRTDNConfigured": false
+  },
+  "secrets": {
+    "keysCreatedThisPass": 0,
+    "passwordsCreatedThisPass": 0,
+    "privateKeyOrPasswordPrinted": false,
+    "opaqueSandboxCallbackAppearedInOneTechnicalSnapshot": true,
+    "callbackExcludedFromSavedReportsAndScreenshots": true
+  },
+  "preservation": {
+    "personalDeviceWrites": false,
+    "userDataReset": false,
+    "productionChanged": false,
+    "publication": false,
+    "push": false,
+    "prModified": false,
+    "readinessChanged": false
+  }
+}

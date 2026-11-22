@@ -1,0 +1,10 @@
+{
+  "checkedAtUTC": "2026-11-22T14:28:31.239Z",
+  "environment": "Sandbox",
+  "operation": "REQUEST_TEST_NOTIFICATION",
+  "httpStatus": 200,
+  "testTokenReturned": true,
+  "productionCalled": false,
+  "newCredentialCreated": false,
+  "transactionPerformed": false
+}

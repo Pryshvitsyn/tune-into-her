@@ -1,0 +1,18 @@
+{
+  "kind": "Isolated Simulator standalone re-embed, not a fresh native compilation or IPA",
+  "version": "1.0.0",
+  "build": "1",
+  "sdk": "iphonesimulator26.5",
+  "bundle": "com.eliogenesis.tuneintoher",
+  "nativeSHA256": "6a021a602bd4fd347e9738b5ce5ec4abdb658e4b3105277e08c166220abca08e",
+  "jsSHA256": "d6b4daa711d73d2a6216adb7514580d65d6d27fba904690f06c0e848580042ff",
+  "actualIOSSDKKeyBundled": true,
+  "privateQAOverridesAbsent": true,
+  "signatureVerified": true,
+  "originalArtifactJsSHA256": "4303bebdb8f2306f34975469fa745052bcb24896a0557da815fc01d3a419e8ec",
+  "fullNativeRebuildExitCode": 75,
+  "fullNativeRebuildLimit": "Stopped own build at 1.24GiB free disk, 13.3GiB swap on 8GiB host; existing artifact preserved.",
+  "unsignedMachOPayloadMatchesPreviousVerifiedRelease": true,
+  "unsignedMachOPayloadSHA256": "d82cfa0ad4f9e631a0fb64f952e3be118d296dfde06a59b407c2f9699c7da2ec",
+  "rawNativeHashChangedByAdHocResigning": true
+}

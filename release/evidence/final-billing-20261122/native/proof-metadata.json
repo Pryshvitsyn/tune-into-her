@@ -1,0 +1,77 @@
+{
+  "startedAtUTC": "2026-11-22T14:56:11.255Z",
+  "ownedDevice": {
+    "name": "Tune Into Her Billing QA 20261122",
+    "type": "com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation",
+    "state": "Booted",
+    "identifierSHA256": "48e4aab811ac1b02aa34b37a998ddbb3fcb655893f769c931a4830d234e223ef"
+  },
+  "artifact": {
+    "bundleID": "com.eliogenesis.tuneintoher",
+    "binarySHA256": "6a021a602bd4fd347e9738b5ce5ec4abdb658e4b3105277e08c166220abca08e",
+    "embeddedJSSHA256": "d6b4daa711d73d2a6216adb7514580d65d6d27fba904690f06c0e848580042ff",
+    "installedChecksumsMatch": true
+  },
+  "source": {
+    "head": "b8f68f04c31d61d23967066727319cbde2264a5f",
+    "changedPaths": [
+      "BILLING_QA.md",
+      "PRODUCT_SNAPSHOT.md",
+      "STORE_SETUP.md",
+      "TASKS.md",
+      "release/RELEASE_PREPARATION.md"
+    ]
+  },
+  "pressure": {
+    "workers": 0,
+    "workerMs": 4000,
+    "nativeQA": false
+  },
+  "standalone": {
+    "commonLocalMetroPortsClosed": [
+      8081,
+      8082,
+      8083,
+      8084,
+      8085,
+      19000,
+      19001
+    ]
+  },
+  "dataPolicy": "Update-install only; no uninstall/reset/preferences/history reads, navigation or billing",
+  "stageEvents": [
+    {
+      "stage": "COVER_INSTALLED",
+      "nativeMonotonicSeconds": 220026.512238
+    },
+    {
+      "stage": "COVER_FRAME_COMMITTED",
+      "nativeMonotonicSeconds": 220026.617476
+    },
+    {
+      "stage": "FACTORY_BEGIN",
+      "nativeMonotonicSeconds": 220026.617752
+    },
+    {
+      "stage": "EXPO_SPLASH_INSTALLED",
+      "nativeMonotonicSeconds": 220026.68357
+    },
+    {
+      "stage": "EARLY_COVER_HANDOFF",
+      "nativeMonotonicSeconds": 220026.717334
+    }
+  ],
+  "complete": true,
+  "processID": 38401,
+  "launchCommandVideoEstimateSeconds": 0.510749167,
+  "recordedWallSeconds": 40.334679334,
+  "sameProcessAliveAtEnd": true,
+  "stageOrderingPass": true,
+  "analysis": {
+    "frameCount": 1757,
+    "durationSeconds": 40.036667,
+    "timestampsMonotonic": true,
+    "blackFrameCount": 0,
+    "blackAfterLaunchCommandEstimate": 0
+  }
+}

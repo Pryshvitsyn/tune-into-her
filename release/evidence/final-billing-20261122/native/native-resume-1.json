@@ -1,0 +1,8 @@
+{
+  "test": "testFinalCompletePreparedOnboardingAndRealTrial",
+  "exitCode": 0,
+  "physicalDeviceWrites": false,
+  "appNativeBuild": "Prior verified Release, unsigned Mach-O identical; isolated current Hermes re-embed",
+  "mockBilling": false,
+  "realSDKKey": true
+}

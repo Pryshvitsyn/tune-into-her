@@ -1,0 +1,15 @@
+{
+  "matching": [
+    {
+      "applicationIdentifier": "B77TL63S9T.com.eliogenesis.tuneintoher",
+      "team": [
+        "B77TL63S9T"
+      ],
+      "expires": "2027-11-08T21:34:47",
+      "getTaskAllow": true,
+      "provisionedDeviceCount": 1,
+      "distributionType": "development"
+    }
+  ],
+  "diagnostics": []
+}

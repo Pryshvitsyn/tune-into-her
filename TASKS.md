@@ -2,6 +2,41 @@
 
 Updated: 2026-11-22 (Europe/Rome)
 
+## CURRENT — final Apple / Google billing audit (2026-11-22)
+
+- [x] Retain b8f68f0/newer work and local checkpoint; audit draftPR9 without push/PR edit.
+- [x] Re-read actual Apple group, periods, equal levels, both Italy prices, empty intro offers,
+  en-AU metadata, unset availability/inherited tax/review gaps; no duplicated provider objects.
+- [x] Verify Individual membership/Team/Account Holder and exact New Paid Agreement/legal
+  prerequisite; prepare owner-only legal/tester/Play handoffs, no invented identity/password.
+- [x] Reverify RC full_access/default/package mapping/valid IAP key, actual preview SDK key
+  and sandbox preflight; metadata-only signing/environment/Free-plan audit, production untouched.
+- [x] Request real Apple Sandbox TEST and verify SUCCESS delivery to existing RC callback;
+  keep callback/private values out of saved evidence, no purchase proof inferred.
+- [x] Repeat live sandbox trial with prior separate identity; exact14days/repeats/auth/400 pass.
+- [x] Repeat actual preserved AAB binary/API/Billing/16KB/signature audit with official tools;
+  retain Debug/upload-key/runtime limitations, remove task-only temporary JDK.
+- [x] Run all six source commands:531tests/55files and typecheck/lint/content pass;
+  release gate correctly remains blocked,9readiness flags unchanged.
+- [x] Reproduce store/local legal drafts and blocked public legal export; add broad international
+  availability proposal with separate China/Russia/Belarus/health/DSA conditions, no region saves.
+- [x] Preserve original native artifact after stopping resource-heavy full recompile; prepare
+  separate real-key standalone Simulator re-embed with verified signature/native-payload equality.
+- [x] Verify real-key normal prepared onboarding → explicit real sandbox trial → Today/cold restart,
+  and native store-unavailable/Retry/return-to-Today; retain first reminder-wait failure separately.
+- [x] Preserve exact accepted offer/retry test in existing guarded harness; Swift parse/8release tests pass.
+- [x] Record current standalone no-Metro cold40.036667s/1757frames/0black with stronger disk guard;
+  keep original artifact hashes, failed attempts and synthetic Simulator data, no personal-device writes.
+- [x] Reuse prior actual normal Release1206×2622 Cycle/Learn images as dated byte-identical
+  iOS draft candidates; exclude Today pending DO_043 and missing-offer views, keep approvals false.
+- [ ] Owner: real legal data/Paid Agreement/bank/tax, unused-email Sandbox tester, separate
+  Distribution signing consent, correct existing Play developer access and legal/editorial sign-off.
+- [x] Attempt required-size fresh Pro capture after disk recovery; retain actual ENOSPC/resource
+  blocker, stop/clean only own failed empty Simulator/cache, verify source/app artifacts intact.
+- [ ] After prerequisites: signed TestFlight IPA, real Apple/Google products/transactions,
+  restore/cancel/renewal/expiry, Android Play signing/device16KB/notification proof and store media.
+- [x] Review final preservation/secrets/diff and commit current evidence locally; no push/publication.
+
 ## CURRENT — App Store / Google Play release preparation (2026-11-21)
 
 - [x] Preserve clean9b6e031/checkpoint; isolate work on `codex/release-preparation-20261121`.
@@ -16,7 +51,7 @@ Updated: 2026-11-22 (Europe/Rome)
 - [x] Audit RevenueCat Apple dependency and prepare exact two-package sandbox runbook without device/data writes;49 purchase/configuration tests pass. Record initial zero active Apple IAP keys, no sandbox testers and no existing offering (All filter), before authorized key/catalog setup below.
 - [x] After explicit credential approval, create one protected Apple IAP key and RC Apple app with Valid credentials; register both exact Apple products, attach existing full_access and save/reload current default offering with both standard packages. Save/read back iOS SDK key and offering only in EAS preview; actual billing-test preflight passes. No phone/data/runtime/production write.
 - [x] Complete owner RevenueCat reauthentication; save/read back exact callback only in Apple's Sandbox URL, leaving production unset. Protect opaque callback with the separate local key inventory.
-- [ ] Complete separate owner-entered Apple sandbox tester, Apple agreement/availability and authorized signing; then run actual native purchase/lifecycle/notification-delivery proof. No App Store Connect API/signing key or password created in this connection pass.
+- [ ] Complete separate owner-entered Apple sandbox tester, Apple agreement/availability and authorized signing; then run actual native purchase/lifecycle proof. Independent Sandbox TEST delivery now passes. No App Store Connect API/signing key or password created in this connection pass.
 - [x] Harden store build gates; isolate credential-free Android native-audit profile and real artifact verifier.
 - [x] Build actual normal signed iOS Simulator Release; retain failed unsigned/cache/disk attempts explicitly.
 - [x] Pass531source tests/55files, typecheck/lint/content checks; preserve every pixel/hash assertion.
