@@ -9,7 +9,8 @@ Updated: 2026-11-23 (Europe/Rome)
 - [x] Verify public destination, clean working tree,10pending commits,125text blobs without
   credential findings; inspect9sensitive-category screenshots without exposing values.
 - [x] Create `codex/backup/tune-into-her-20261123` from verified`ca62e70`; previous refs intact.
-- [ ] Push and verify the public source branch's exact remote SHA without force/merge/PR changes.
+- [x] Push public source backup and verify exact remote`7ea1bd7`; no force/merge/PR changes.
+- [x] Verify complete-history36-ref Git bundle and restore clone including older V4/intro/context commits.
 - [ ] Encrypt all-ref Git bundle, native deliverables and local configuration/keys; validate
   restoration and upload only ciphertext to a separate private GitHub recovery repository.
 - [ ] Verify downloaded ciphertext; give the owner a separate recovery-key file to keep off Mac.
