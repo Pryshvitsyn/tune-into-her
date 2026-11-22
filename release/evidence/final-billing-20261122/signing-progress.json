@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T17:22:24.892736+00:00",
+  "checkedAtUTC": "2026-11-22T17:32:42.594970+00:00",
   "authorizedTeam": "B77TL63S9T",
   "authorizedBundle": "com.eliogenesis.tuneintoher",
   "certificateIssued": true,
@@ -57,7 +57,12 @@
   "directoryOwnerOnly": true,
   "allCredentialFilesOwnerOnly": true,
   "codesignApplePartitionPresent": false,
-  "codesignPartitionChangeAttempt": "Automatic review rejected before execution; not changed",
-  "applePartitionUpdateAwaitingSeparateApproval": true,
-  "keychainImportApprovalBlockResolved": true
+  "codesignPartitionChangeAttempt": "Initial auto-review rejection resolved by separate Founder approval; scoped Security.framework update submitted and awaiting macOS response",
+  "applePartitionUpdateAwaitingSeparateApproval": false,
+  "keychainImportApprovalBlockResolved": true,
+  "applePartitionUpdateSeparatelyAuthorized": true,
+  "applePartitionUpdateStatus": "Pending system return status and post-update readback; not claimed complete",
+  "targetKeyACLBackupCreated": true,
+  "applePartitionUpdateWaitingIn": "SecKeychainItemSetAccess / SecurityServer::changeAcl",
+  "signingApplicationExactlyCodesignVerified": true
 }

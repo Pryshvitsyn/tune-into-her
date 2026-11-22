@@ -65,7 +65,15 @@ Local Apple security(1) explicitly requires apple: for `/usr/bin/codesign`. The 
 stack is blocked in SecKeyCreateSignature/CSSM. Automatic review rejected the proposed
 exact-key apple: addition as broadening the Apple-signed-process partition scope beyond
 codesign-specific consent. The entire command was rejected before execution; no ACL
-backup/update or other-key change occurred. Separate explicit approval is required.
+backup/update or other-key change occurred in that rejected command. The Founder then
+**separately approved apple: for only this new key**. The accepted scoped command verified
+the signing application's trust data exactly matches `/usr/bin/codesign`, saved an owner-only
+ACL backup outside Git, and submitted only the partition edit through Security.framework.
+It is currently waiting inside SecKeychainItemSetAccess / SecurityServer::changeAcl;
+**no return status, post-update readback or completed update is yet claimed**. The owner
+was asked whether the matching system authentication prompt appeared. This approval is
+already received and must not be requested again. Current state supersedes the earlier
+dated rejection record in [signing progress](evidence/final-billing-20261122/signing-progress.json).
 No Keychain reset, password change or global partition-list override was performed.
 **Successful probe signing is not yet claimed.**
 [Scoped diagnosis](evidence/final-billing-20261122/codesign-acl-diagnosis.json) and
@@ -751,8 +759,9 @@ Smallest owner handoff:
    Complete the separate sandbox tester directly in the provider console. Certificate/profile
    creation and separately approved Login Keychain import are complete. Owner macOS Keychain
    confirmations are reported, but probe signing is blocked by the exact-key partition ACL.
-   Adding apple: requires separate approval after automatic-review rejection; native IPA
-   compilation also needs sufficient host capacity.
+   The scoped apple: update is separately approved/submitted, awaiting macOS result and
+   any matching owner system confirmation; native IPA compilation also needs sufficient
+   host capacity. Approval must not be requested again for the same edit.
    Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** Founder confirms no developer account exists. Resolve health-feature/account-type

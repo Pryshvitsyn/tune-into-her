@@ -37,8 +37,10 @@ Updated: 2026-11-22 (Europe/Rome)
   access and encrypted local PKCS12. Verify valid identity1→2/prior identity/search list preserved.
 - [x] Diagnose actual blocked probe via process stack/exact-key read-only ACL: missing apple:
   partition persists after owner confirmations; preserve all timed-out attempts.
-- [ ] Separate approval for new-key apple: partition after automatic-review rejection; no ACL
-  mutation executed. Then verify probe and build IPA on capable host. No key uploaded.
+- [x] Receive separate explicit new-key apple: approval after automatic-review rejection;
+  back up only its ACL, verify signing application exactly codesign and submit scoped update.
+- [ ] Await macOS scoped-update result/owner system confirmation, verify readback/probe,
+  then build IPA on capable host. No key uploaded.
 - [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
   in prepared forms (intent reported, completion pending); legal/editorial sign-off.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay

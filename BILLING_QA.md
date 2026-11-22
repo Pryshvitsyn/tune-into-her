@@ -29,8 +29,10 @@ approval: existing identity is now imported into local Login Keychain, with code
 access, prior identity/search list intact and encrypted local PKCS12. The probe remains
 INCOMPLETE after15s/45s/20s/180s timeouts. Owner confirmations were reported; read-only
 ACL inspection of this exact key still lacks apple:, required by local Apple security(1).
-Automatic review rejected adding that broader partition scope without separate consent;
-no ACL update was executed. Signed IPA and actual purchases remain unverified.
+Automatic review initially rejected that broader scope. Founder then explicitly approved
+apple: for only this key; its ACL is backed up, signing application is verified exactly
+codesign, and a scoped update is waiting for macOS response. Completion/readback, signed
+probe, IPA and actual purchases remain unverified.
 No private key was sent to EAS/Apple; existing Development credentials are unchanged.
 [Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
 

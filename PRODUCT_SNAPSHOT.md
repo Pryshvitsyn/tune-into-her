@@ -92,8 +92,10 @@ fertility, or mood-prediction product.
   and search list unchanged. Local PKCS12 is AES256/SHA256-encrypted outside Git.
   Probe signing remains INCOMPLETE (15s/45s/20s/180s timeouts retained). Owner reports
   system confirmations; exact-key ACL readback still lacks the Apple partition required
-  by codesign. Automatic review rejected adding apple: as broader scope than prior consent;
-  that change was not executed and needs separate approval. No IPA/EAS private-key upload.
+  by codesign. After the initial automatic-review rejection, Founder separately approved
+  apple: for only this key. Scoped update is submitted and awaiting macOS result; a protected
+  ACL backup exists, no completion/readback or successful signature is claimed yet.
+  No IPA/EAS private-key upload.
   Host free space recovered to about4GiB; prior4.5GiB attempt exhausted disk, so no full rebuild.
   [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
   Owner intends to complete the tester and Business forms; completion is not yet reported.
