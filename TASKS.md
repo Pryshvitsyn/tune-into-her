@@ -1,6 +1,19 @@
 # TASKS
 
-Updated: 2026-11-22 (Europe/Rome)
+Updated: 2026-11-23 (Europe/Rome)
+
+## CURRENT — GitHub recovery backup (2026-11-23)
+
+- [x] Receive explicit authorization for a named backup branch and a separate encrypted copy
+  covering builds, archives and keys; preserve store/production restrictions.
+- [x] Verify public destination, clean working tree,10pending commits,125text blobs without
+  credential findings; inspect9sensitive-category screenshots without exposing values.
+- [x] Create `codex/backup/tune-into-her-20261123` from verified`ca62e70`; previous refs intact.
+- [ ] Push and verify the public source branch's exact remote SHA without force/merge/PR changes.
+- [ ] Encrypt all-ref Git bundle, native deliverables and local configuration/keys; validate
+  restoration and upload only ciphertext to a separate private GitHub recovery repository.
+- [ ] Verify downloaded ciphertext; give the owner a separate recovery-key file to keep off Mac.
+- [ ] Record actual coverage, exclusions and hashes; never delete original data on this authority.
 
 ## CURRENT — final Apple / Google billing audit (2026-11-22)
 

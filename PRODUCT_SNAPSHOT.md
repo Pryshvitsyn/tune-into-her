@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-22 (Europe/Rome)
+Updated: 2026-11-23 (Europe/Rome)
 
 ## GOAL
 
@@ -11,7 +11,10 @@ fertility, or mood-prediction product.
 
 ## STATE
 
-- Current work branch: `codex/release-preparation-20261121`, preserving monetization/visual/QA baseline`9b6e031`. Original `codex/monetization-20261113`, release-candidate branch and `main` remain untouched. Original consolidation was based on PR #6 `25c8505`.
+- Current backup branch: `codex/backup/tune-into-her-20261123`, created from verified`ca62e70`.
+  Previous `codex/release-preparation-20261121` and all earlier baselines remain intact.
+  Founder explicitly authorized GitHub backup on23November; the earlier no-push restriction
+  is superseded for backup only. Store submission, production and merge remain unauthorized.
 - Recovery points: `archive/github-release-baseline-20261111` → `25c8505`; local V4
   preservation branch → `1147292`.
 - V4 renderer is directly used by Today and onboarding. Its renderer, clean texture,
@@ -69,7 +72,8 @@ fertility, or mood-prediction product.
 ## CURRENT FINAL BILLING AUDIT — 2026-11-22
 
 - Preserve b8f68f0 via `codex/checkpoint-apple-billing-20261122`; local-only continuation.
-  Newest instruction forbids push/PR edits/merge/store submission. No personal-device writes.
+  At that checkpoint the instruction forbade push/PR edits/merge/store submission. The later
+  November23 instruction authorizes a separate GitHub backup; no personal-device writes.
 - Fresh Apple readback: both approved level1 plans/periods/Italy prices/no intro intact;
   availability unset, inherited tax unconfirmed, review screenshots absent. Individual
   Developer membership renews9November2027, TeamB77TL63S9T; Account Holder role verified.
