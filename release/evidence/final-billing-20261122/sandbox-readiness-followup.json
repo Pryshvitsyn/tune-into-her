@@ -1,0 +1,48 @@
+{
+  "checkedAtUTC": "2026-11-22T21:44:06.708142+00:00",
+  "method": "Read-only current App Store Connect UI, existing Chrome session",
+  "app": "6832290282",
+  "group": "22605485",
+  "catalogTableReadback": {
+    "monthly_access": {
+      "level": 1,
+      "period": "1 month",
+      "status": "Prepare for Submission"
+    },
+    "annual_access": {
+      "level": 1,
+      "period": "1 year",
+      "status": "Prepare for Submission"
+    }
+  },
+  "paidApplicationsAgreement": "New",
+  "paidAgreementActive": false,
+  "sandboxTesterTableRowsIncludingHeader": 2,
+  "sandboxTesterCount": 1,
+  "sandboxTesterExists": true,
+  "testerNamesEmailsPasswordsStored": false,
+  "formsSubmitted": false,
+  "agreementsAccepted": false,
+  "providerDataMutated": false,
+  "newCredentialsCreated": false,
+  "testFlightUpload": false,
+  "realPurchaseProof": false,
+  "personalDeviceWrites": false,
+  "testerCountryItalyConfirmed": true,
+  "sandboxDataRowHasAccountEmail": true,
+  "sandboxDataRowCellCount": 4,
+  "trialHTTPRepeat": {
+    "status": "PASS_SANDBOX_HTTP",
+    "automaticReviewRejected": true,
+    "requestsSent": 9,
+    "reason": "Initial authorization rejection resolved by specific owner authorization; authorized repeat passed9requests",
+    "saferAlternative": "Existing local Worker/SQLite fixtures and source/artifact checks; previous live HTTP evidence remains dated",
+    "credentialValuesStored": false,
+    "priorAutomaticReviewRejectionResolvedBySpecificOwnerAuthorization": true,
+    "authorizationDestination": "https://tune-into-her-trial-sandbox.pryshvitsyna.workers.dev",
+    "proof": "trial-http-followup.json",
+    "initialRejectedAttemptRequestsSent": 0
+  },
+  "ownerAgreementInstruction": "Continue without completing legal/financial steps for now",
+  "ownerSpecificTrialHTTPAuthorizationReceived": true
+}

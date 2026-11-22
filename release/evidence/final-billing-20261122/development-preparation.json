@@ -1,0 +1,27 @@
+{
+  "existingValidDevelopmentPair": true,
+  "expiresUTC": "2027-11-08T21:34:47+00:00",
+  "noNewKeysOrProfiles": true,
+  "alreadyInstalledInCurrentXcodeProfileFolder": true,
+  "method": "debugging",
+  "destination": "export",
+  "deviceEligibility": {
+    "checkedAtUTC": "2026-11-22T22:01:48.920024+00:00",
+    "deviceWrites": false,
+    "installAttempted": false,
+    "privateIdentifiersExcluded": true,
+    "currentInventoryVerified": true,
+    "availableDeviceCount": 0,
+    "availablePairedIPhoneCount": 0,
+    "matchingAvailableIPhoneCount": null,
+    "availableIPhoneMatchesSelectedProfile": null,
+    "matchingIPhoneLockStateKnown": false,
+    "matchingIPhoneLocked": null,
+    "inventoryCommandSucceeded": true,
+    "availableCriterion": "connected CoreDevice tunnel; paired physical iPhone for profile comparison",
+    "profileEligibilityStatus": "unverified: no currently connected paired iPhone; no connection requested"
+  },
+  "exportAttempted": false,
+  "keysOrACLsChanged": false,
+  "personalDeviceWrites": false
+}

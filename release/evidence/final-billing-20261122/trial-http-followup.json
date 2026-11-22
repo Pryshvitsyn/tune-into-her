@@ -1,0 +1,20 @@
+{
+  "checkedAtUTC": "2026-11-22T21:57:01.146921+00:00",
+  "status": "PASS_SANDBOX_HTTP",
+  "commandExitCode": 0,
+  "resumedPrivateIdentity": true,
+  "requests": 9,
+  "exactFourteenDayInterval": true,
+  "repeatsAndRestartDoNotExtendKnownInterval": true,
+  "wrongOrMissingCredentialRejected": true,
+  "productionEnvironmentRejected": true,
+  "clientTimestampRejected": true,
+  "noCardOrStorePurchaseRequested": true,
+  "privateStatePrinted": false,
+  "specificOwnerAuthorizationReceived": true,
+  "priorAutomaticReviewRejectionResolved": true,
+  "scriptSHA256": "26a9fac4edf525657e5b1808b0250b02a87b66a1014d1556ff4a36e5c0b0e2c8",
+  "limits": [
+    "No real 14-day wait, server process restart, offline native cache or store purchase is inferred from this HTTP smoke. Controlled-clock expiry/offline tests remain separate."
+  ]
+}

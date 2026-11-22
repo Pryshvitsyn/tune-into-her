@@ -18,8 +18,9 @@ passes; full app archive/export and real Apple/Google transactions have separate
 ## Final live audit — 22 November 2026
 
 Existing mappings/prices/periods/levels remain verified. Last Apple audit had Paid
-Applications Agreement **New**, availability unset, banking/tax unverified and no Sandbox
-tester/TestFlight build. Owner intent to complete Business/tester is not completion proof.
+Applications Agreement **New**, availability unset, banking/tax unverified and no TestFlight
+build. Fresh follow-up UI now confirms one Italian Sandbox tester; no account values were
+saved. Agreement remains New. Reuse that tester rather than creating another.
 
 Local signing is now verified: exactly one certificate/App Store profile, matching private
 key/CSR, Apple trust and profile checks pass. Approved Login Keychain import preserved the
@@ -29,12 +30,29 @@ Actual isolated Distribution probe sign0/strictverify0/expectedTeam passes. No p
 was read by the agent; key/PKCS12 stay encrypted/local. Prior API/prompt failures remain dated
 history. [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
 
-A fresh normal device archive used app-only manual signing, real sandbox SDK key, no QA/demo/
+An earlier normal device archive used app-only manual signing, real sandbox SDK key, no QA/demo/
 mocks, arm64/jobs1/Metro1. After1529.72s/559compile events its disk guard stopped it at1.995GiB
 free, exit75 with0compiler errors. Export never started. Only its failed compiler cache was
 cleaned; prior artifacts/log intact, free disk3.939GiB. More host disk is required for the
 archive/export/artifact audit. No IPA or real purchase success is claimed.
 [Guarded build](release/evidence/final-billing-20261122/device-archive-build.json).
+
+Founder-authorized cleanup subsequently recovered3.157GiB of reviewed Xcode/CocoaPods/npm/
+Metro cache, preserving24credential/artifact files and39/173source hashes. A fresh guarded
+local archive/export retry started with8.161GiB free and unchanged resource floors.
+Archive1832.91s and Store export8.05s both pass. Store IPA passes the generic binary audit;
+Store and locally signed Development IPA each pass51content/signature/provenance checks,
+including byte-identical replayed Hermes, exact photo/font, real sandbox bindings and no QA.
+Xcode debugging export's managed-profile/manual mismatch is retained; the successful
+Development package uses the same compiled archive, existing key/profile and local codesign/
+ditto. No automatic cloud signing or new credentials. Both artifacts/archive are preserved
+under ignored`build/ios-sandbox-20261122`; no installation/upload/transaction is inferred.
+Own build intermediates were then pruned, leaving6.707GiB free; post-cleanup51checks pass.
+[Retry](release/evidence/final-billing-20261122/device-archive-retry.json) /
+[current tester/Agreement status](release/evidence/final-billing-20261122/sandbox-readiness-followup.json).
+[Actual artifacts](release/evidence/final-billing-20261122/ipa-artifacts.json) /
+[Store content](release/evidence/final-billing-20261122/ipa-content-audit.json) /
+[Development content](release/evidence/final-billing-20261122/development-content-audit.json).
 
 **Actual Apple Sandbox TEST notification delivery now passes:** request200/status200,
 `sendAttemptResult=SUCCESS`, using the existing approved IAP key locally. This is technical
@@ -107,9 +125,8 @@ Before running a real Apple sandbox transaction:
 3. Complete Apple owner prerequisites: the November21 Paid Applications Agreement/legal
    blocker (recheck current status), sales availability/tax/review metadata, and successful
    signed device archive/export. Local signing approval and credential access are resolved.
-   The sandbox account page showed **no testers** during this audit. The owner must create a separate tester
-   with an owned email and enter its password directly in Apple, then sign into the
-   device's Sandbox Apple Account. Never replace the personal iCloud account or send
+   The fresh follow-up confirms **one Italian Sandbox tester**. Reuse it; enter its
+   credentials directly into the test device's Sandbox Apple Account. Never replace the personal iCloud account or send
    credentials in chat. TestFlight has no builds at the dated audit; no upload is implied.
    After owner password reauthentication, the exact RevenueCat callback was saved in
    Apple's **Sandbox** server URL and matched after reload. The production URL remains
@@ -120,7 +137,8 @@ Before running a real Apple sandbox transaction:
    sandbox trial service, demo=false and mocks=false. Signing key stays on the Mac.
    `npx eas-cli build --profile billing-test --platform ios` is an **unexecuted alternative**,
    requiring separate remote credential/cost authorization. The current local attempt passes
-   `eas-production-check.mjs`; the disk-guard stop is recorded above. No paid build, upload or
+   `eas-production-check.mjs`; the earlier disk-guard stop and fresh local retry are recorded
+   above. No paid build, upload or
    physical-device replacement occurred. The private Founder QA entry is rejected by the gate.
    The app's sandbox flag alone does not select Apple's purchase environment: use the
    genuine sandbox/TestFlight build/account flow and inspect the native sheet before confirming.
@@ -139,6 +157,17 @@ native sheet explicitly identifies the sandbox/test environment before confirmat
 The current matrix below defines expected state/error handling; local SDK mocks are not
 transaction proof. Follow [RevenueCat's Apple sandbox guide](https://www.revenuecat.com/docs/test-and-launch/sandbox/apple-app-store)
 for the actual OS/account flow and known storefront-metadata quirks.
+
+Delivery must match the signature. An App Store-profile IPA has no device list and is not
+a direct `devicectl` install; TestFlight delivery requires separately authorized upload.
+A development-signed build can use real Apple sandbox on a registered test device without
+upload. A local debugging export may reuse an existing matching Development profile;
+it must not create credentials, change identifiers or replace the personal installation.
+For that development route, use Settings → Developer → Sandbox Apple Account after the
+first purchase attempt; signing out of the normal Apple Account is unnecessary. TestFlight
+sandbox controls have a different Media & Purchases sign-out flow that can affect purchased
+content. Use a dedicated test device for those controls; do not alter the owner's account.
+These delivery distinctions were rechecked against [Apple's current sandbox instructions](https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox).
 
 Paid acceptance requires confirmed `CustomerInfo.entitlements.active.full_access`, the
 expected product, sandbox status, expiration/renewal and successful verification. Today

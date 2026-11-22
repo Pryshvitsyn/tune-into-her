@@ -1,0 +1,77 @@
+{
+  "checkedAtUTC": "2026-11-22T21:39:33.255545+00:00",
+  "explicitOwnerAuthorization": true,
+  "freeGiBBefore": 5.018,
+  "freeGiBAfter": 8.174,
+  "actualFreeIncreaseGiB": 3.157,
+  "caches": [
+    {
+      "cache": "ModuleCache.noindex",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 1250807808
+    },
+    {
+      "cache": "SymbolCache.noindex",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 15454208
+    },
+    {
+      "cache": "SDKStatCaches.noindex",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 3035136
+    },
+    {
+      "cache": "Pods",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 897187840
+    },
+    {
+      "cache": "_cacache",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 723009536
+    },
+    {
+      "cache": "c15e4b19a90d9797",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 1208320
+    },
+    {
+      "cache": "d77349f55c2be1c0",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 350810112
+    },
+    {
+      "cache": "7cf525d1e16b4e35",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 241664
+    },
+    {
+      "cache": "b388654678d519d9",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 10108928
+    },
+    {
+      "cache": "32026684e21afda6",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 344027136
+    },
+    {
+      "cache": "metro-cache",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 55672832
+    },
+    {
+      "cache": "metro-file-map-expo-867b2157b92c4d5e8b4f1bc7eafe5f01-053554df9436ec8e00dccc34d53cb4fb",
+      "status": "REMOVED",
+      "allocatedBytesBefore": 1298432
+    }
+  ],
+  "protectedFilesPrivatelyHashVerified": 24,
+  "protectedFilesUnchanged": true,
+  "projectsRemoved": false,
+  "keysRemovedOrExposed": false,
+  "appArtifactsOrArchivesRemoved": false,
+  "simulatorOrPersonalDeviceDataChanged": false,
+  "sourceEdits": false,
+  "published": false
+}

@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "file": "build/ios-sandbox-20261122/TuneIntoHer-AppStore-Sandbox.ipa",
+      "bytes": 23843877,
+      "sha256": "0228f7134275946edafc0742a95ab6434f3ec2b0c28589217f0acea432e64723"
+    },
+    {
+      "file": "build/ios-sandbox-20261122/TuneIntoHer-Development-Sandbox.ipa",
+      "bytes": 23844625,
+      "sha256": "a5f669e4af2ea19f58621acbb4aa9c3bff28d5c987be212be5f155ea1ffb1572"
+    }
+  ],
+  "version": "1.0.0",
+  "build": "1",
+  "localOnly": true,
+  "uploaded": false,
+  "personalDeviceWrites": false,
+  "privateKeyMaterialIncluded": false
+}

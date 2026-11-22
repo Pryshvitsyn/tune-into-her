@@ -1,0 +1,22 @@
+{
+  "checkedAtUTC": "2026-11-22T22:28:18.220603+00:00",
+  "typecheck": "PASS",
+  "lint": "PASS:0errors/1existing generated Expo router unused-disable warning",
+  "vitestFilesPassed": 55,
+  "vitestTestsPassed": 531,
+  "nativeArtifactPythonFixturesPassed": 9,
+  "nativeAuditRegression": "Canonical extraction root accepts macOS symlinked temporary directory; traversal and archive symlink entries still rejected before native tools",
+  "applicationSourceChanged": false,
+  "storeReadinessChanged": false,
+  "personalDeviceWrites": false,
+  "protected39HashesMatched": true,
+  "core173HashesMatched": true,
+  "priorProtectedFilesUnchanged": 23,
+  "ownerInventoryOnlyMetadataUpdated": true,
+  "allNineReadinessFlagsFalse": true,
+  "nativeAuditorSHA256": "1e63dc910b0760bac81949b7305198a57666ef7a90dc8be13070fc9d8e5b5c91",
+  "netFreeGiBAtCompletion": 6.666,
+  "releaseGate": "EXPECTED_BLOCKED:9readiness flags false/legal missing; regular shell has no provider environment values, actual IPA sandbox configuration separately verified",
+  "gitDiffCheckPassed": true,
+  "knownCredentialValuesAbsentFromCommit": true
+}

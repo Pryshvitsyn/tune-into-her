@@ -16,7 +16,94 @@ the [prepared feature branch](https://github.com/Pryshvitsyn/tune-into-her/tree/
 Existing CI branch filters do not trigger on this feature/base pair; reported checks are
 the actual local source/native/provider evidence, not an invented GitHub CI pass.
 
-## Signing follow-up — 22 November 2026
+## Disk recovery and sandbox follow-up — 22 November 2026
+
+The Founder explicitly authorized deleting temporary/build caches, preserving projects,
+keys and data, then retrying the local IPA. Reviewed Xcode compiler/symbol/SDK caches,
+CocoaPods download cache, inactive npm fetched-tool/package caches and Metro cache were
+removed. Actual free space increased by **3.157GiB**, from5.018 to8.174GiB. All24 privately
+hashed credential/accepted-artifact files remained identical, as did39protected and173core
+source files. Projects, installed dependencies/Pods, Keychains, Archives, app artifacts,
+Simulator Devices/runtimes and personal iPhone data were preserved.
+[Cleanup evidence](evidence/final-billing-20261122/disk-recovery.json).
+
+A fresh isolated arm64/jobs1 archive completed in1832.91s and App Store export in8.05s,
+both exit0, using the existing certificate/profile and checked sandbox environment.
+Start free disk8.161GiB, minimum4.195GiB, maximum additional swap1258.25MiB. The2GiB disk
+and1.5GiB swap-growth guards stayed unchanged. Earlier failed logs/evidence are retained.
+The actual IPA passes the generic binary audit: strict deep signature, Distribution authority,
+preserved bundle, current SDK, unexpired App Store profile/no device list/debug disabled.
+[Retry evidence](evidence/final-billing-20261122/device-archive-retry.json).
+[Binary audit](evidence/final-billing-20261122/ipa-binary-audit.json).
+
+Fresh read-only Apple UI confirms **one Sandbox tester, Italy**; its name/email/password
+are not stored in public evidence. No new tester is needed. Paid Applications Agreement
+is still **New**, with a visible request to sign it; the owner must complete the legal/
+financial steps personally. Both subscription rows retain equal level1 and the approved
+monthly/yearly periods. No forms, contracts, catalog, production settings or credentials
+were changed. TestFlight upload and actual purchases remain unverified and unperformed.
+[Current sanitized Apple readback](evidence/final-billing-20261122/sandbox-readiness-followup.json).
+
+The owner explicitly chose to continue without completing the Agreement for now. After
+automatic review rejected an optional HTTP repeat's credential transmission, the owner
+specifically authorized the existing pseudonymous test identity/token only for the same
+isolated sandbox endpoint. The authorized9-request repeat passes: exact14days, unchanged
+known interval, rejected wrong/missing auth, production environment and client timestamp.
+No credential values or personal data were emitted; no actual purchase is inferred.
+[Actual HTTP follow-up](evidence/final-billing-20261122/trial-http-followup.json).
+
+One existing valid Development identity/profile also matches the exact Team/bundle and
+registered-device development scope, expiring8November2027. It is already installed in
+Xcode's current profile folder. Local debugging re-export options are prepared for the
+same completed archive. Xcode's manual debugging export rejected that existing managed
+profile. Automatic signing was not enabled: current Xcode help says it can create managed
+cloud credentials. Instead a copy of the completed app was locally re-signed with the exact
+existing Development identity and unchanged profile, including8frameworks, then packaged
+with Apple's ditto. Main entitlements match that profile: development debugging enabled,
+the TestFlight-only beta-report entitlement removed. No app code was rebuilt or changed.
+Strict deep signature verification passes. No key, profile, ACL or identifier was created
+or changed, and the archive/App Store IPA remain intact. The personal iPhone is not replaced.
+[Retained Xcode attempt](evidence/final-billing-20261122/development-export.json) /
+[actual local Development package](evidence/final-billing-20261122/development-package.json).
+
+Both local artifacts are version1.0.0/build1 in ignored, owner-only
+`build/ios-sandbox-20261122`; no next-upload-number availability is inferred.
+
+| Artifact | Bytes | SHA-256 |
+| --- | ---: | --- |
+| TuneIntoHer-AppStore-Sandbox.ipa | 23843877 | 0228f7134275946edafc0742a95ab6434f3ec2b0c28589217f0acea432e64723 |
+| TuneIntoHer-Development-Sandbox.ipa | 23844625 | a5f669e4af2ea19f58621acbb4aa9c3bff28d5c987be212be5f155ea1ffb1572 |
+
+Both signing-mode-specific content audits pass **51/51 checks** each: exact photo/font bytes, real SDK/offering/
+sandbox trial bindings, no mock/demo/private QA, complete six-layer/GPU-assembly/animated
+one-second protocol and39/173source hashes. Actual logged Hermes flags were replayed against
+the retained Metro plaintext; output is byte-identical to archive and IPA. Generic string
+presence alone is not used to prove runtime configuration. Native device playback/purchases
+remain separate; no connected iPhone was available, so profile-device membership is unverified.
+
+The first generic audit exposed a macOS temporary-root alias bug, not a bad IPA: resolve
+the root before checking resolved ZIP paths. Added a valid aliased-root fixture and an
+unsafe archive-symlink fixture; existing traversal checks remain enforced. All531tests/
+55files and9Python artifact fixtures pass; typecheck passes, lint0errors/1existing generated
+Expo router warning. Both artifacts contain no known private signing material or secret files.
+[App Store content audit](evidence/final-billing-20261122/ipa-content-audit.json) /
+[Development content audit](evidence/final-billing-20261122/development-content-audit.json) /
+[checks](evidence/final-billing-20261122/cleanup-checks.json) /
+[private-material scan](evidence/final-billing-20261122/ipa-private-material-check.json).
+
+After both audits, only this completed attempt's2844.16MiB of temporary intermediates were
+pruned. The exact Metro compiler input remains at its original path, with owner-only
+provenance/logs, installed Hermes compiler, native archive, both IPAs and signed Development
+app preserved. Actual free space increased another2.652GiB to6.707GiB. The content audit
+was rerun after cleanup and again passes51/51 with identical Hermes replay.
+[Post-build cleanup and recheck](evidence/final-billing-20261122/post-build-cache-cleanup.json).
+
+The release gate remains correctly blocked:9false approval/runtime/purchase flags and legal
+placeholders. Its ordinary shell has no provider environment values; that does not negate
+the separately verified real sandbox configuration inside both IPAs. No readiness flag,
+production setting, store account or personal installation was changed.
+
+## Earlier signing follow-up — 22 November 2026
 
 **Local Distribution signing is verified.** Exactly one Apple Distribution certificate and
 one `Tune Into Her App Store 20261122` profile exist for TeamB77TL63S9T /
@@ -80,8 +167,9 @@ files contain no known credential values/private signing material. All9readiness
 remain false. The protected owner signing inventory is updated with the actual result.
 [Current checks](evidence/final-billing-20261122/signing-checks.json).
 
-Owner Business/tester messages remain **intent**, not completion: last audit had Paid
-Agreement New, bank/tax unverified and zero Sandbox testers/TestFlight builds. Apple sales
+At this signing checkpoint, owner Business/tester messages were **intent**, not completion: the audit had Paid
+Agreement New, bank/tax unverified and zero Sandbox testers/TestFlight builds. The later
+follow-up above now confirms one tester; the Agreement remains New. Apple sales
 availability/tax/review media and genuine purchases remain open. Founder confirms no Google
 developer account exists; none was created/paid. Existing RC/full_access/default mapping,
 separate app trial, frozen content/branding, personal iPhone data and all nine false readiness
@@ -759,12 +847,13 @@ Smallest owner handoff:
 
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
    requirements; confirm sales regions/tax and review metadata for the now-created drafts.
-   Complete the separate sandbox tester directly in the provider console. Certificate/profile
+   Reuse the one confirmed Italian Sandbox tester; enter its credentials only on the test
+   device when purchase QA is ready. Certificate/profile
    creation, separately approved Login Keychain import and exact-key apple: update are complete.
    Owner Apple CLI exit0, original-ACL comparison and actual Distribution probe sign0/strict
    verify0 pass. No further owner authentication or repeated signing approval is needed.
-   The local device archive hit its disk guard; more host disk is needed for archive/export
-   and artifact verification. No signed IPA or upload is claimed.
+   Cache cleanup enabled the completed archive and locally verified App Store/Development
+   IPAs above. Existing credentials suffice; no upload/install is authorized by this result.
    Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** Founder confirms no developer account exists. Resolve health-feature/account-type

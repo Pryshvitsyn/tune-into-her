@@ -53,15 +53,33 @@ Updated: 2026-11-22 (Europe/Rome)
 - [x] Attempt guarded fresh arm64 device archive; app-only signing/preflight pass,0compiler errors,
   disk guard stops at1.995GiB after1529.72s/559compile events. Preserve log, clean only owned
   failed DerivedData, recover3.939GiB; no Simulator/phone/store writes or weakened guards.
-- [ ] Finish device archive/local IPA export and artifact audit with substantially more host
-  disk; initial4.927GiB did not fit. Credential access is resolved, export not attempted.
-- [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
-  in prepared forms (intent reported, completion pending); legal/editorial sign-off.
+- [x] Complete real device archive1832.91s/local Store export8.05s and binary audit after
+  cleanup; both exit0, unchanged resource guards, min disk4.195GiB.
+- [x] After explicit Founder authorization, remove only reviewed build/package/Metro caches;
+  recover3.157GiB, verify24protected credential/artifact files and39/173source hashes unchanged.
+- [x] Start a fresh guarded local archive/export retry at8.174GiB free; existing credentials,
+  arm64/jobs1 and unchanged2GiB disk/1.5GiB swap-growth guards, no device/store writes.
+- [x] Fresh read-only Apple UI confirms one Italian Sandbox tester; retain no account values.
+- [x] After specific owner destination/token authorization, repeat9sandbox HTTP requests with
+  prior identity; exact14days/repeats/auth/environment/timestamp checks pass, no store purchase.
+- [x] Prepare same-archive debugging export with existing valid Development credentials;
+  no new key/profile/ACL. No connected iPhone; membership/installation remain unverified.
+- [x] Retain Xcode managed-profile/manual-export failure; locally sign/package Development
+  copy with existing identity/profile, verify all8frameworks and app, no auto/cloud signing.
+- [x] Verify actual Store/Development IPAs:51checks each, replayed identical Hermes, exact
+  photo/font, normal entry/real SDK/trial/no QA; keep signed archive/app/IPAs locally.
+- [x] Fix macOS alias-root artifact-audit defect; retain malicious-path/symlink rejection,
+  pass531tests/55files,9Python fixtures, typecheck and lint0errors/1existing warning.
+- [x] Prune only completed attempt intermediates after audits; retain exact Metro input,
+  logs/compiler/archive/artifacts, recover2.652GiB and re-pass51content checks.
+- [ ] Owner: complete real legal data/Paid Agreement/bank/tax (still New at fresh follow-up);
+  reuse the confirmed tester, then legal/editorial sign-off and actual transaction proof.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay
   for one. Account type/health eligibility and owner-authorized registration remain open.
 - [x] Attempt required-size fresh Pro capture after disk recovery; retain actual ENOSPC/resource
   blocker, stop/clean only own failed empty Simulator/cache, verify source/app artifacts intact.
-- [ ] After prerequisites: signed TestFlight IPA, real Apple/Google products/transactions,
+- [ ] After prerequisites/authorization: deliver the prepared signed IPA through native test
+  flow, real Apple/Google products/transactions,
   restore/cancel/renewal/expiry, Android Play signing/device16KB/notification proof and store media.
 - [x] Review final preservation/secrets/diff and commit current evidence locally; no push/publication.
 

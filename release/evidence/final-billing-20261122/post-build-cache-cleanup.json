@@ -1,0 +1,20 @@
+{
+  "checkedAtUTC": "2026-11-22T22:23:45.635688+00:00",
+  "onlyThisCompletedBuildIntermediatesRemoved": true,
+  "logicalCacheMiBBefore": 2844.16,
+  "freeGiBBefore": 4.056,
+  "freeGiBAfter": 6.707,
+  "actualFreeIncreaseGiB": 2.652,
+  "metroPlaintextPreservedAtExactCompilerInputPath": true,
+  "metroPlaintextSHA256": "341ab7359faf6e2a7f5e80a20a23c73df79d4a2110a0ad5e2a3974886428ae9e",
+  "nativeArchivePreserved": "build/ios-sandbox-20261122/TuneIntoHer.xcarchive",
+  "signedDevelopmentAppPreserved": "build/ios-sandbox-20261122/Development/Payload/TuneIntoHer.app",
+  "auditScriptAndPrivateLogsRetained": true,
+  "installedHermesCompilerPreserved": true,
+  "oldArtifactsKeysProjectsOrDataRemoved": false,
+  "personalDeviceWrites": false,
+  "uploaded": false,
+  "postCleanupContentChecksPassed": 51,
+  "postCleanupHermesReplayIdentical": true,
+  "postCleanupAppStoreContentAudit": "PASS_CONTENT_AUDIT_ONLY"
+}

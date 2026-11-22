@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T21:14:11.542367+00:00",
+  "checkedAtUTC": "2026-11-22T22:26:48.969902+00:00",
   "authorizedTeam": "B77TL63S9T",
   "authorizedBundle": "com.eliogenesis.tuneintoher",
   "certificateIssued": true,
@@ -23,10 +23,10 @@
   "privateKeySentToAppleOrEAS": false,
   "existingDevelopmentCredentialsUnchanged": true,
   "systemSigningIdentityChanged": true,
-  "ipaBuilt": false,
+  "ipaBuilt": true,
   "testFlightUpload": false,
   "personalDeviceWrites": false,
-  "nativeBuildBlocker": "Fresh arm64 device archive stopped at1.995GiB free disk after1529.72s, exit75 from guard SIGINT; no compiler errors. Credentials work. Local export never started. Only own failed cache cleaned; more host disk required.",
+  "nativeBuildBlocker": null,
   "googleDeveloperAccount": "Owner confirms none exists; none created",
   "sandboxTester": "Owner intends creation; completion not reported",
   "paidAgreement": "Last verified New; owner intends Business action, Active not reported",
@@ -50,7 +50,7 @@
   "existingSigningIdentitiesUnchanged": true,
   "keychainSearchListUnchanged": true,
   "keychainTrustSettingsChanged": false,
-  "nativeBuildFreeGiB": 3.942,
+  "nativeBuildFreeGiB": 6.666,
   "ownerSystemConfirmationReported": true,
   "credentialSigningVerified": true,
   "probeStatus": "PASS: isolated Mach-O signed by Apple Distribution identity; strict codesign verify0, Team matches",
@@ -78,6 +78,9 @@
   "allOriginalApplicationListsAndFlagsPreserved": true,
   "officialAppleCLIExitCode": 0,
   "priorAPIErrorsDidNotValidateOwnerPassword": true,
-  "nativeBuildState": "RESOURCE_GUARD_STOPPED",
-  "nativeArchiveInitialFreeGiB": 4.927
+  "nativeBuildState": "ARCHIVE_AND_LOCAL_IPAS_VERIFIED",
+  "nativeBuildRetryProof": "device-archive-retry.json",
+  "signedStoreIPABinaryVerified": true,
+  "signedDevelopmentPackageVerified": true,
+  "newKeysOrProfilesCreatedDuringRetry": false
 }

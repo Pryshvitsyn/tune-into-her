@@ -1,8 +1,10 @@
 """Synthetic verifier regression fixtures, never actual distribution-build evidence."""
 import argparse
+from contextlib import nullcontext
 import importlib.util
 import io
 from pathlib import Path
+import plistlib
 import struct
 import tempfile
 import unittest
@@ -83,6 +85,38 @@ class NativeAuditFixtures(unittest.TestCase):
             file = Path(directory) / 'unsafe.ipa'
             with zipfile.ZipFile(file, 'w') as archive: archive.writestr('../escape', 'unsafe')
             with self.assertRaisesRegex(ValueError, 'Unsafe IPA'): audit.ios_audit(argparse.Namespace(ipa=str(file)))
+
+    def test_ipa_extraction_accepts_a_symlinked_temporary_root(self):
+        # macOS commonly aliases /var to /private/var. The same safe root must
+        # be used on both sides of the containment check.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); actual = root / 'actual'; actual.mkdir()
+            alias = root / 'alias'; alias.symlink_to(actual, target_is_directory=True)
+            file = root / 'fixture.ipa'
+            with zipfile.ZipFile(file, 'w') as archive:
+                archive.writestr('Payload/Fixture.app/Info.plist', plistlib.dumps({
+                    'CFBundleIdentifier': 'com.eliogenesis.tuneintoher',
+                    'CFBundleSupportedPlatforms': ['iPhoneOS'],
+                    'DTSDKName': 'iphoneos26.5', 'DTXcode': '2660',
+                }))
+                archive.writestr('Payload/Fixture.app/Assets.car', b'fixture')
+                archive.writestr('Payload/Fixture.app/main.jsbundle', b'ordinary fixture')
+            with patch.object(audit.tempfile, 'TemporaryDirectory', return_value=nullcontext(str(alias))), \
+                 patch.object(audit, 'run', return_value=(1, b'', b'')):
+                _, checks, _ = audit.ios_audit(argparse.Namespace(ipa=str(file)))
+            self.assertTrue(checks['bundleIdentifierPreserved'])
+            self.assertTrue(checks['nativeAssetsPresent'])
+            self.assertFalse(checks['strictCodesignVerified'])
+
+    def test_ipa_symlink_entry_is_rejected_before_native_tools(self):
+        with tempfile.TemporaryDirectory() as directory:
+            file = Path(directory) / 'unsafe.ipa'
+            link = zipfile.ZipInfo('Payload/Fixture.app/escape')
+            link.create_system = 3; link.external_attr = 0o120777 << 16
+            with zipfile.ZipFile(file, 'w') as archive: archive.writestr(link, '../outside')
+            with patch.object(audit, 'run', side_effect=AssertionError('Native tools must not run')):
+                with self.assertRaisesRegex(ValueError, 'Unsafe IPA'):
+                    audit.ios_audit(argparse.Namespace(ipa=str(file)))
 
 
 if __name__ == '__main__':

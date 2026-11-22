@@ -74,7 +74,8 @@ fertility, or mood-prediction product.
   availability unset, inherited tax unconfirmed, review screenshots absent. Individual
   Developer membership renews9November2027, TeamB77TL63S9T; Account Holder role verified.
   Paid Applications Agreement remains New with legal-entity confirmation prerequisite;
-  banking/tax not verified, TestFlight empty, no sandbox testers at audit. Owner forms ready.
+  banking/tax not verified, TestFlight empty. A later read-only follow-up now confirms one
+  Sandbox tester in Italy; its credentials were not saved or changed. Agreement remains New.
 - Fresh RC full_access/default mappings and valid existing key confirmed. EAS preview
   key matches owner copy and actual sandbox preflight passes; four preview variables only,
   production untouched, Free/$0plan, no remote iOS/Android signing credentials.
@@ -88,7 +89,7 @@ fertility, or mood-prediction product.
   Actual isolated probe sign0/strictverify0/expectedTeam passes; Mac password never read/saved
   by agent, private key stays local. Earlier approval/API/prompt failures remain historical.
   [Signing proof](release/evidence/final-billing-20261122/signing-progress.json).
-- A fresh device Release archive was attempted on4.927GiB free disk using installed prebuilt
+- An earlier device Release archive was attempted on4.927GiB free disk using installed prebuilt
   frameworks, isolated paths, arm64/jobs1/Metro1, automatic2GiB disk/1.5GiB swap-growth guards.
   App-only manual signing, empty Pods profile, normal real-key sandbox preflight and absent
   QA/demo/mock overrides pass. Disk guard stopped it at1.995GiB after1529.72s/559compile events,
@@ -96,6 +97,27 @@ fertility, or mood-prediction product.
   was cleaned, recovering3.939GiB; logs/prior artifacts intact. More host disk is required,
   not new credentials or another owner password. No upload/personal-device write.
   [Build proof](release/evidence/final-billing-20261122/device-archive-build.json).
+- Founder-authorized cache cleanup recovered3.157GiB (5.018→8.174GiB), preserving24privately
+  hashed credential/artifact files and all39/173source inputs. Only reviewed Xcode/CocoaPods/
+  npm/Metro caches were removed; projects, installed Pods/dependencies, Keychains, Archives,
+  Simulator data/runtimes and previous apps remain. Guarded arm64/jobs1 archive1832.91s and
+  App Store export8.05s both pass; min disk4.195GiB, peak additional swap1258.25MiB.
+  Existing-key Development copy is also locally signed/packaged; the managed-profile Xcode
+  attempt is retained as a failed attempt. Both actual IPAs pass51content/signature/provenance
+  checks each, identical replayed Hermes and exact photo/font bytes; generic Store audit passes.
+  Owner-only local files/archive/app are in ignored`build/ios-sandbox-20261122`.
+  After audits, own build intermediates were pruned while preserving the exact Metro input,
+  logs, compiler and archive; free disk6.707GiB, post-cleanup51checks pass again.
+  [Cleanup](release/evidence/final-billing-20261122/disk-recovery.json) /
+  [retry](release/evidence/final-billing-20261122/device-archive-retry.json) /
+  [Apple status](release/evidence/final-billing-20261122/sandbox-readiness-followup.json).
+- Owner chose to continue without completing the Apple Agreement. The separately authorized
+  9-request live sandbox trial repeat passes with the prior private identity and unchanged14-day
+  interval; no store purchase. No iPhone is currently connected; installation, device-profile
+  membership and actual purchases remain unverified. No upload or new security access.
+- Fixed the artifact auditor's canonical temporary-root comparison for macOS aliases;
+  traversal/archive-symlink checks retained. Current typecheck, lint0errors/1existing generated
+  warning,531tests/55files and9Python fixtures pass. App sources and39/173hashes remain intact.
 - Earlier Simulator recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;
   no success claimed. A separate current Hermes re-embed of prior verified Simulator Release
   has the real SDK key, no private QA, verified ad-hoc signature and identical unsigned

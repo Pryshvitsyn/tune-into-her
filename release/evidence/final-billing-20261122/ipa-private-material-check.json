@@ -1,0 +1,17 @@
+{
+  "artifacts": [
+    {
+      "artifact": "TuneIntoHer.ipa",
+      "privateCredentialFilesAbsent": true,
+      "knownPrivateKeyMaterialAbsent": true,
+      "knownPrivateMaterialValuesTested": 4
+    },
+    {
+      "artifact": "TuneIntoHer-Development-Sandbox.ipa",
+      "privateCredentialFilesAbsent": true,
+      "knownPrivateKeyMaterialAbsent": true,
+      "knownPrivateMaterialValuesTested": 4
+    }
+  ],
+  "secretValuesPrinted": false
+}

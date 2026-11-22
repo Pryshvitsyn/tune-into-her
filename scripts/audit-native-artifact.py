@@ -157,7 +157,7 @@ def android_audit(args):
 def ios_audit(args):
     file = Path(args.ipa)
     with tempfile.TemporaryDirectory(prefix='tih-ipa-audit-') as directory:
-        dest = Path(directory)
+        dest = Path(directory).resolve()
         with zipfile.ZipFile(file) as archive:
             for info in archive.infolist():
                 target = (dest / info.filename).resolve()

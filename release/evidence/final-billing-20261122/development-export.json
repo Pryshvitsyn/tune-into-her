@@ -1,0 +1,26 @@
+{
+  "startedAtUTC": "2026-11-22T22:13:16.452426+00:00",
+  "status": "EXPORT_FAILED",
+  "method": "debugging",
+  "sameCompletedArchive": true,
+  "archiveLogSHA256": "31c3c0e1d324973df6346e02db62475c05b0b060bf3d897faef9eef3c454b74c",
+  "existingCredentialsOnly": true,
+  "newCredentialsCreated": false,
+  "keysOrACLsChanged": false,
+  "uploaded": false,
+  "personalDeviceWrites": false,
+  "exportSucceeded": false,
+  "guardDiskFloorGiB": 2,
+  "guardSwapGrowthGiB": 1.5,
+  "initialFreeGiB": 4.235,
+  "swapBaselineFromArchiveMiB": 8479.06,
+  "minimumFreeGiB": 4.235,
+  "maximumSwapGrowthMiB": 674.19,
+  "exitCode": 70,
+  "elapsedSeconds": 4.02,
+  "errors": [
+    "error: exportArchive Provisioning profile \"iOS Team Provisioning Profile: com.eliogenesis.tuneintoher\" is Xcode managed, but signing settings require a manually managed profile."
+  ],
+  "logSHA256": "9473c69337c810ced3871e1cd484e905e32d6cb159553c2583974d8d9fdbfbed",
+  "completedAtUTC": "2026-11-22T22:13:20.475349+00:00"
+}

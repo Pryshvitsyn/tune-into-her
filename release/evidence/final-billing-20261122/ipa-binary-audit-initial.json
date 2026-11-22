@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED",
+  "reason": "Artifact/tool input unavailable or invalid; no artifact verification claimed.",
+  "storeReadinessChanged": false
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_BINARY_AUDIT_ONLY",
+  "artifact": "TuneIntoHer.ipa",
+  "sha256": "0228f7134275946edafc0742a95ab6434f3ec2b0c28589217f0acea432e64723",
+  "checks": {
+    "bundleIdentifierPreserved": true,
+    "devicePlatform": true,
+    "ios26SDKOrHigher": true,
+    "Xcode26OrHigher": true,
+    "nativeAssetsPresent": true,
+    "embeddedJavaScript": true,
+    "knownStandaloneQAMarkersAbsent": true,
+    "strictCodesignVerified": true,
+    "AppleDistributionAuthority": true,
+    "provisioningProfileDecoded": true,
+    "AppStoreProfileWithoutDeviceList": true,
+    "debugEntitlementDisabled": true,
+    "profileMatchesBundle": true,
+    "profileUnexpired": true
+  },
+  "limits": [
+    "No App Store Connect upload, agreement, TestFlight processing, real purchase/restore, icon/launch visual acceptance or installed-device behavior is inferred from this binary audit."
+  ],
+  "storeReadinessChanged": false
+}
