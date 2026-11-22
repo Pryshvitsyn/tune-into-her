@@ -15,6 +15,14 @@ fertility, or mood-prediction product.
   Previous `codex/release-preparation-20261121` and all earlier baselines remain intact.
   Founder explicitly authorized GitHub backup on23November; the earlier no-push restriction
   is superseded for backup only. Store submission, production and merge remain unauthorized.
+- Source backup was pushed and exact remote SHA verified. A private draft recovery release
+  contains the 722,098,094-byte age-encrypted core; an independent download/decryption verified
+  all 678 files / 991 entries. The complete-history 36-ref bundle and fresh clone preserve older V4,
+  intro and context commits. The OS-only Development key export, separate local-data scope
+  approval and off-Mac recovery-key confirmation remain pending; full recovery is not claimed.
+  A separate encrypted Android audit-key part also passed remote download/stream verification;
+  its existing keystore passphrase and Play-upload signing role are not verified.
+  No original files were deleted. See [backup coverage](docs/GITHUB_BACKUP.md).
 - Recovery points: `archive/github-release-baseline-20261111` → `25c8505`; local V4
   preservation branch → `1147292`.
 - V4 renderer is directly used by Today and onboarding. Its renderer, clean texture,

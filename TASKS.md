@@ -11,10 +11,19 @@ Updated: 2026-11-23 (Europe/Rome)
 - [x] Create `codex/backup/tune-into-her-20261123` from verified`ca62e70`; previous refs intact.
 - [x] Push public source backup and verify exact remote`7ea1bd7`; no force/merge/PR changes.
 - [x] Verify complete-history36-ref Git bundle and restore clone including older V4/intro/context commits.
-- [ ] Encrypt all-ref Git bundle, native deliverables and local configuration/keys; validate
-  restoration and upload only ciphertext to a separate private GitHub recovery repository.
-- [ ] Verify downloaded ciphertext; give the owner a separate recovery-key file to keep off Mac.
-- [ ] Record actual coverage, exclusions and hashes; never delete original data on this authority.
+- [x] Encrypt complete-history bundle, native deliverables, exported app credentials and matching
+  profiles directly to age; upload core ciphertext to a verified private draft GitHub release.
+- [x] Independently download and authenticate/decrypt core; verify 991 entries / 678 files and all
+  manifest/stream/member hashes, with no plaintext archive or exposed recovery key.
+- [x] Record core coverage, exclusions, hashes and missing-worktree limitation; original data intact.
+- [x] Preserve the additional internal Android audit keystore in its own encrypted part;
+  upload/download/stream verification passes, without claiming Play signing or passphrase recovery.
+- [x] Save the reviewed verifier, non-secret receipts and recovery guide in private backup storage.
+- [ ] Complete owner's scoped Development Keychain identity export and encrypted supplementary part.
+- [ ] Resolve separate owner approval for project-local DB/env/sandbox identity/token data;
+  these remain excluded while approval is pending.
+- [ ] Receive owner confirmation that the separate recovery-key file is saved outside this Mac;
+  only then evaluate complete recovery coverage before any future cleanup.
 
 ## CURRENT — final Apple / Google billing audit (2026-11-22)
 
