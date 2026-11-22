@@ -21,10 +21,12 @@ All existing mappings/prices/periods/levels were freshly verified. Apple Paid Ap
 Agreement remains **New** (owner legal-entity update required); availability is unset,
 Sandbox testers and TestFlight builds were absent at audit. The owner now intends to complete
 the tester/Business forms, without reporting completion yet. Distribution creation consent
-has now been explicitly received. One encrypted local private key/matching CSR is verified;
-public-CSR selection is blocked by the browser/system picker. Certificate/profile issuance,
-Keychain import, signed IPA and actual purchases remain unverified. No private key was sent
-to EAS/Apple; existing Development credentials are unchanged.
+has now been explicitly received. After owner manual public-CSR selection, exactly one
+Distribution certificate and App Store profile were issued, expiring22November2027.
+Key/CSR/certificate equality, Apple trust and profile Team/bundle/certificate/debug/no-device
+checks pass. Automatic review rejected persistent Login Keychain import outside prior consent;
+no import was executed. Signed IPA and actual purchases remain unverified. No private key was
+sent to EAS/Apple; existing Development credentials are unchanged.
 [Signing follow-up](release/evidence/final-billing-20261122/signing-progress.json).
 
 **Actual Apple Sandbox TEST notification delivery now passes:** request200/status200,

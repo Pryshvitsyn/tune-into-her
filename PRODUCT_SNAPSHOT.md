@@ -84,8 +84,11 @@ fertility, or mood-prediction product.
 - Founder subsequently explicitly approved one Apple Distribution certificate and App Store
   profile for the existing Team/bundle, with the private key local only. One encrypted RSA2048
   key and matching verified CSR are now in the protected owner directory, outside Git.
-  Certificate/profile issuance is pending manual public-CSR selection after browser/native
-  file selection failed; no new certificate, Keychain identity, IPA or EAS key upload claimed.
+  Owner completed public-CSR selection; exactly one Distribution certificate and one App Store
+  profile are issued through22November2027. Apple trust, key/CSR/certificate equality and
+  profile Team/bundle/single-certificate/debug-disabled/no-device checks pass.
+  Automatic review rejected persistent Login Keychain import as outside prior consent;
+  no Keychain change, IPA or EAS private-key upload. Native build capacity is about1.1GiB free.
   [Current signing proof](release/evidence/final-billing-20261122/signing-progress.json).
   Owner intends to complete the tester and Business forms; completion is not yet reported.
 - New full native recompile was stopped safely at1.24GiB disk/13.3GiB swap on8GiB host;

@@ -31,8 +31,10 @@ Updated: 2026-11-22 (Europe/Rome)
   iOS draft candidates; exclude Today pending DO_043 and missing-offer views, keep approvals false.
 - [x] Receive explicit consent for one Distribution certificate/profile; generate exactly one
   encrypted local RSA2048 key/matching verified CSR and separate protected owner inventory.
-- [ ] Complete public CSR upload/certificate/profile issuance: automatic file selection failed;
-  owner manual selection requested, no private key upload or duplicate signing assets.
+- [x] After owner selected public CSR, issue exactly one Distribution certificate/App Store
+  profile; verify key/CSR/certificate match, Apple trust and all profile identity/entitlement checks.
+- [ ] Login Keychain import needs separate approval after automatic-review rejection;
+  prepare local IPA only on host with sufficient capacity. No key uploaded to EAS/Apple.
 - [ ] Owner: complete real legal data/Paid Agreement/bank/tax and unused-email Sandbox tester
   in prepared forms (intent reported, completion pending); legal/editorial sign-off.
 - [x] Record Founder confirmation that no Google developer account exists; do not create/pay

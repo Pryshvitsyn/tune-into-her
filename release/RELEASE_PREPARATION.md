@@ -26,14 +26,29 @@ in the protected owner directory outside Git (directory0700, files0600). Private
 validation, CSR signature and matching public keys pass. A separate owner inventory
 explains paths/purpose/revocation without copying secret values into the repository.
 No private key was sent to Apple, EAS or RevenueCat; existing signing identities were
-not modified. Apple still showed only the existing Development certificate before upload.
+not modified. Apple showed only the existing Development certificate before upload.
 
 Chrome file selection stalled, and the native picker repeatedly failed to confirm the
 public CSR path. Manual selection of the public `/tmp/TuneIntoHer.certSigningRequest`
-was requested; the approval itself is not being requested again. **No Distribution
-certificate/profile has yet been issued**, and no signed IPA or TestFlight upload is
-claimed. Targeted checks found no reusable Release-iphoneos app in the known DerivedData
-or task temporary locations. Full compilation was not retried with only2.2GiB free after
+was requested. **Owner then completed selection**, and exactly one Apple Distribution
+certificate plus `Tune Into Her App Store 20261122` provisioning profile were issued.
+Both expire22November2027 at16:07:27UTC. Certificate public key matches the existing
+CSR/private key; macOS code-signing trust validation passes through Apple WWDR/Apple Root.
+Decoded profile matches Team/bundle and exactly this certificate, has `get-task-allow=false`,
+no provisioned device list and no Enterprise flag. No duplicate credentials were created.
+[Certificate proof](evidence/final-billing-20261122/apple-distribution-created.jpg) and
+[profile proof](evidence/final-billing-20261122/apple-app-store-profile-created.jpg).
+
+Automatic approval review **rejected persistent import of the private identity into the
+existing Login Keychain**: prior consent covered certificate/profile creation and protected
+local storage, not persistent signing access. The entire command was rejected before
+execution; no PKCS12 archive/import, Keychain ACL/search-list/trust-setting change occurred.
+Separate specific approval is required for that step. The protected owner inventory was
+updated with issued files, usage and revocation instructions; no secret values are copied here.
+
+No signed IPA or TestFlight upload is claimed. Targeted checks found no reusable
+Release-iphoneos app in the known DerivedData or task temporary locations. Full compilation
+was not retried: available disk declined from2.2GiB to about1.1GiB on the8GiB host after
 the documented disk failures. This is a separate host-capacity gate, not a reason to
 generate another key. [Sanitized signing proof](evidence/final-billing-20261122/signing-progress.json).
 
@@ -706,8 +721,9 @@ Smallest owner handoff:
 
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
    requirements; confirm sales regions/tax and review metadata for the now-created drafts.
-   Select the public CSR in the blocked picker (signing consent is already received) and
-   complete the separate sandbox tester directly in the provider console.
+   Complete the separate sandbox tester directly in the provider console. Certificate/profile
+   creation is complete; persistent Login Keychain import requires separate approval after
+   automatic-review rejection, and native IPA compilation needs sufficient host capacity.
    Apple RC integration/mapping and Sandbox URL are configured; real purchases/
    delivery remain open. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** Founder confirms no developer account exists. Resolve health-feature/account-type

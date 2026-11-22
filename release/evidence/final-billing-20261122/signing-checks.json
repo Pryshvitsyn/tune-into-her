@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-11-22T16:12:03.346053+00:00",
+  "checkedAtUTC": "2026-11-22T16:25:21.812379+00:00",
   "releaseTestsPassed": 8,
   "pythonNativeFixturesPassed": 7,
   "protectedInputHashesMatched": 39,
@@ -10,5 +10,11 @@
   "productionReadinessAllFalse": true,
   "applicationSourceChanged": false,
   "fullSourceChecks": "Prior same-source 531 tests/typecheck/lint/content passes retained at 4d79151; not rerun for this documentation/signing preparation",
-  "realPurchaseOrIpaSuccessClaimed": false
+  "realPurchaseOrIpaSuccessClaimed": false,
+  "certificateCSRAndPrivateKeyMatch": true,
+  "appleCertificateTrustPassed": true,
+  "profileIdentityAndEntitlementChecksPassed": 8,
+  "keychainImportExecuted": false,
+  "autoReviewRejectedPersistentKeychainImport": true,
+  "signedIPABuilt": false
 }
