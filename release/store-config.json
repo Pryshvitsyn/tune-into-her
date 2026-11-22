@@ -100,5 +100,6 @@
     "version": "1.0",
     "statusObserved": "Prepare for Submission",
     "checkedOn": "2026-11-21"
-  }
+  },
+  "appleSubscriptionCatalogEvidence": "release/evidence/apple-catalog-20261122/catalog.json"
 }

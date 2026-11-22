@@ -1,6 +1,6 @@
 # PRODUCT SNAPSHOT
 
-Updated: 2026-11-21 (Europe/Rome)
+Updated: 2026-11-22 (Europe/Rome)
 
 ## GOAL
 
@@ -77,10 +77,14 @@ fertility, or mood-prediction product.
   Production remains undeployed. Preview EAS receives actual public sandbox URL.
 - RevenueCat project5921ebba and approved `full_access` created; Play app445ba93d10 uses preserved
   package and public SDK key in EAS preview. Apple requires In-App Purchase p8/issuer/key ID;
-  Google service-account/notifications, actual store catalogs and offering mappings remain blocked.
-- Apple login succeeds: existing app6832290282 / en-AU / version1.0 found; groups/IAPs and
-  TestFlight empty. Paid Applications Agreement is not active and requires owner legal-entity
-  update/signing. No catalog/legal/security credential mutation is inferred from sign-in.
+  Google service-account/notifications, Play catalog and offering mappings remain blocked.
+- Apple app6832290282 / en-AU / version1.0 is preserved. Explicit Founder approval on
+  November 22 authorized group `22605485` and drafts `monthly_access` (Apple `6837968807`) /
+  `annual_access` (Apple `6837969104`), created with periods 1 month/1 year and the same level 1. Italy/EUR
+  prices €3.99/€24.99 were saved/read back; en-AU names/descriptions saved, no introductory
+  offers or sales availability configured. [Dated console proof](release/evidence/apple-catalog-20261122/catalog.json).
+  Paid Applications Agreement was not active at November21 audit and requires owner
+  legal-entity update/signing. TestFlight had no builds; legal/security changes remain separate.
   Current Google profile still reaches signup; correct existing developer access remains required.
 - Native Xcode26.6/iOS26.5 Release compilation and ordinary signed sandbox Simulator build pass.
   Missing-entitlement unsigned fixture and ENOSPC attempts are explicitly excluded. Distribution

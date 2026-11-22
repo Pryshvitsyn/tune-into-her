@@ -1,4 +1,4 @@
-# Native store release preparation — 21 November 2026
+# Native store release preparation — updated 22 November 2026
 
 Status: **NOT READY FOR STORE SUBMISSION**. All nine readiness flags remain false.
 Baseline `9b6e0311a8f63d0762e649d3803f5302f8961ecf` is preserved by
@@ -131,15 +131,16 @@ source; no key was invented or searched out of private user files. No Apple RC a
 key exists yet. Creating integration/distribution credentials is a separate security-sensitive
 owner action; browser sign-in does not supply these files to RevenueCat or EAS.
 
-The authenticated Apple app catalog was subsequently audited and is empty. The current
-Google profile still opens developer signup, so its catalog remains inaccessible. No
-monthly/annual products, base plans, current offering, provider notification credentials
-or paid trial migration were saved. Approved targets stay €3.99/month and€24.99/year, both `full_access`,
+The Apple catalog was empty at the November21 audit; the approved November22 Apple
+draft creation is recorded below. The current Google profile still opens developer signup,
+so its catalog remains inaccessible. No RC product mapping, Google base plans, current
+offering, provider notification credentials or paid trial migration were saved.
+Approved targets stay €3.99/month and€24.99/year, both `full_access`,
 with independent14-day card-free access and no automatic charge at expiry. Stripe/web
 checkout and production purchases are out of this pass. Real store sandbox matrices
 remain blocked by these actual account/catalog prerequisites.
 
-### Existing store consoles — actual read-only audit
+### Existing store consoles — November21 read-only audit
 
 - Apple app **6832290282** exists with bundle`com.eliogenesis.tuneintoher`,
   SKU`tuneintoher-ios-001`, primary language **English (Australia), en-AU**, version1.0
@@ -155,11 +156,11 @@ remain blocked by these actual account/catalog prerequisites.
   not saved as reviewer instructions or release authorization. The draft below describes
   the real no-account card-free flow; final owner review must set correct access/manual
   release behavior before any submission.
-- Proposed Apple group **Tune Into Her Full Access**, IDs`monthly_access`/`annual_access`,
-  periods1month/1year, targets€3.99/€24.99, equal full access and no introductory trial
-  are prepared for explicit approval. Automatic approval review rejected persistent
-  catalog creation because the group name/IDs were not specifically approved. The visible
-  form is unsaved; no group/product was created and no alternate API bypass was attempted.
+- The initial Apple group/product proposal was left unsaved after automatic approval
+  review rejected persistent creation without specific group-name/product-ID approval.
+  **Resolved November22:** the Founder explicitly approved that exact group and both IDs;
+  the authorized persistent creation and readback are recorded below. No alternate API
+  bypass was attempted while approval was absent.
 - Google Play under the initial existing owner profile still reaches developer-account signup.
   A second existing profile named for the project owner also reaches signup and requires
   two-step authentication for creation. Authentication settings were not changed; unrelated
@@ -167,8 +168,52 @@ remain blocked by these actual account/catalog prerequisites.
   No account, fee, organization type or legal terms were created/accepted. Correct existing
   developer-profile access/invitation remains required.
 
-Safe factual status is in`provider-console-audit.json`; private addresses/account details,
-keys and full financial-console screenshots are excluded from committed evidence.
+The historical audit is in`provider-console-audit.json`; current catalog facts are in
+the dated evidence below. Private addresses/account details, keys and financial-account
+screenshots are excluded from committed evidence.
+
+### Apple subscription drafts — November 22 authorized creation
+
+The Founder explicitly approved **Tune Into Her Full Access**, `monthly_access` and
+`annual_access`, 1 month/1 year, eurozone targets €3.99/€24.99, equal full access and no Apple
+introductory trial, without review submission/publication. After the owner restored the
+expired login, a fresh visible audit still showed zero groups; no duplicate was created.
+
+Created group **22605485**, with English (Australia) display name **Tune Into Her Full Access**
+and the existing **Tune Into Her** application name. Both subscriptions are **Prepare for
+Submission** and **level 1**, verified again after reloading the group from the server:
+
+| Product | Apple ID | Period | Saved/read-back Italy price | en-AU draft description |
+| --- | --- | --- | --- | --- |
+| `monthly_access` / Tune Into Her Monthly | 6837968807 | 1 month/P1M | €3.99 | Full app access, billed monthly. |
+| `annual_access` / Tune Into Her Annual | 6837969104 | 1 year/P1Y | €24.99 | Full app access, billed annually. |
+
+Apple initially assigned the second product level 2; its editor was used to move it into
+level 1, then saved and reloaded. This follows [Apple's subscription-level guidance](https://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions)
+for equal access across different durations. The reloaded table with both products at
+level 1 is the acceptance evidence.
+
+The pricing wizard defaulted to **Italy (EUR)**; the approved prices were saved and read
+back in the separate initial-price view. Apple calculated 175-territory price schedules;
+**sales availability remains unset**, so this is not a territory rollout. Both introductory
+offer pages remain empty. The annual product is yearly upfront; its separate monthly
+payment/12-month-commitment availability was not configured. Family Sharing stays off,
+tax category inherits the application without a new tax/legal attestation. No review
+screenshot, introductory/promotion offer, review submission or agreement acceptance occurred.
+
+[Machine-readable catalog/readback](evidence/apple-catalog-20261122/catalog.json) ·
+[reloaded equal-level table](evidence/apple-catalog-20261122/group.jpg) ·
+[monthly saved price](evidence/apple-catalog-20261122/monthly-price.jpg) ·
+[annual saved price](evidence/apple-catalog-20261122/annual-price.jpg).
+The dated November21 Paid Applications Agreement/legal-entity blocker remains unresolved;
+Apple RevenueCat integration credentials, mappings, distribution signing and real store
+sandbox purchase/lifecycle proof are still missing. Catalog creation does not set any
+readiness flag or prove a transaction. App/source/phone data were not changed.
+The focused existing release-preparation suite passed **8 tests**, including **7 Python
+native-artifact fixtures**. All 39 frozen inputs and 173 AAB source inputs remain
+byte-identical; JSON, screenshot hashes and the nine false readiness flags were checked.
+The preceding 531-test/typecheck/lint run remains dated November 21; this console/docs-only
+change does not claim a new native build or store transaction.
 
 ## Native build and runtime evidence
 
@@ -425,7 +470,7 @@ The canonical owner action matrix is [STORE_SETUP](../STORE_SETUP.md); it supers
 Smallest owner handoff:
 
 1. **Apple:** complete the legal-entity/Paid Applications Agreement and truthful DSA
-   requirements; approve the concrete group/product proposal. Provide the authorized
+   requirements; confirm sales regions/tax and review metadata for the now-created drafts. Provide the authorized
    distribution signing/profile and Apple In-App Purchase integration directly in the
    provider consoles. No passwords, keys or financial details belong in chat/Git.
 2. **Google:** identify/open the existing developer account or obtain its invitation.

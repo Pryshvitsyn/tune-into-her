@@ -1,6 +1,6 @@
 # TASKS
 
-Updated: 2026-11-21 (Europe/Rome)
+Updated: 2026-11-22 (Europe/Rome)
 
 ## CURRENT — App Store / Google Play release preparation (2026-11-21)
 
@@ -12,6 +12,7 @@ Updated: 2026-11-21 (Europe/Rome)
 - [x] Verify live explicit14-day start, repeat/client-restart/redeploy persistence,401/400 and429.
 - [x] Create one RevenueCat project/full_access/Play app; place public Android key and sandbox URL in EAS preview.
 - [x] Audit authenticated existing Apple app6832290282/en-AU, empty subscriptions/IAPs/TestFlight and inactive Paid Applications Agreement; keep legal/signing/catalog approvals explicit. Current Google profile reaches signup; no new account/fee accepted.
+- [x] After explicit Founder approval November22, create Apple group22605485 and monthly_access/annual_access drafts; save1month/1year, equal level1, en-AU metadata and Italy€3.99/€24.99; read back prices/levels after navigation/reload, confirm no introductory offers and retain console screenshots. Sales availability, tax confirmation, RC mapping and sandbox transactions remain open.
 - [x] Harden store build gates; isolate credential-free Android native-audit profile and real artifact verifier.
 - [x] Build actual normal signed iOS Simulator Release; retain failed unsigned/cache/disk attempts explicitly.
 - [x] Pass531source tests/55files, typecheck/lint/content checks; preserve every pixel/hash assertion.

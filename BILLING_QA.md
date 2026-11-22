@@ -1,6 +1,10 @@
 # Billing QA and evidence
 
-Current status, 2026-11-21: isolated Cloudflare sandbox HTTP and ordinary native Simulator
+Current status, 2026-11-22: Apple group and monthly/annual drafts are now created after
+explicit Founder approval, with equal level1,1month/1year and saved/read-back Italy prices
+€3.99/€24.99. No introductory offers or sales availability configured. See the
+[actual catalog and limits](release/evidence/apple-catalog-20261122/catalog.json).
+The November21 isolated Cloudflare sandbox HTTP and ordinary native Simulator
 trial→Today→cold restart now pass; RevenueCat is partially configured and an actual internal
 Android AAB has binary evidence. See [current release preparation](release/RELEASE_PREPARATION.md)
 and [remaining owner actions](STORE_SETUP.md). The dated November13 observations below are

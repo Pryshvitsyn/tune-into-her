@@ -1,6 +1,6 @@
 # Store and billing setup
 
-Updated: 2026-11-21. [Current evidence](release/RELEASE_PREPARATION.md) records the
+Updated: 2026-11-22. [Current evidence](release/RELEASE_PREPARATION.md) records the
 actual sandbox deployment, partial RevenueCat configuration and native build results.
 Production billing, store submission and Stripe checkout remain inactive; all readiness
 gates are false. This is the canonical remaining external-action list.
@@ -12,16 +12,20 @@ iOS `com.eliogenesis.tuneintoher`, Android `com.pryshvitsyn.tuneintoher`, EAS pr
 `dc8938e7-7163-413a-9003-479d0afc8a17`. The package mismatch is preserved deliberately;
 it is not grounds to replace an already registered application. The authenticated Apple
 audit found existing app6832290282, SKU`tuneintoher-ios-001`, primary locale`en-AU`,
-version1.0 in Prepare for Submission, no subscription groups/IAPs and no TestFlight builds.
-`monthly_access`/`annual_access` remain source/proposed IDs, not registered products.
+version1.0 in Prepare for Submission and no TestFlight builds on November21.
+After explicit Founder approval, November22 created group22605485 and registered
+`monthly_access`/`annual_access` as drafts, both at level1. Saved Italy/EUR prices were
+read back as€3.99/€24.99. [Catalog evidence](release/evidence/apple-catalog-20261122/catalog.json)
+records actual Apple IDs, periods, localization and remaining limits. Sales availability
+is not configured; the calculated175-territory price schedule does not enable sales.
 The existing EAS project belongs to`eliogenesis`; preview now contains the public sandbox
 URL and Android SDK key. Production is untouched. Earlier missing-variable findings in
 [the configuration audit](BILLING_QA.md#configuration-presence-audit) are historical.
 
 | Platform | Product ID | Base plan / RevenueCat package | Period | Eurozone base target | Entitlement | Sandbox / production status |
 | --- | --- | --- | --- | --- | --- | --- |
-| Apple | `monthly_access` **proposed from source** | Proposed Tune Into Her Full Access group / `$rc_monthly` | P1M | EUR 3.99 | `full_access` | Catalog empty; creation approval pending |
-| Apple | `annual_access` **proposed** | Same proposed group and level / `$rc_annual` | P1Y | EUR 24.99 | `full_access` | Catalog empty; creation approval pending |
+| Apple | `monthly_access` / Apple6837968807 | Tune Into Her Full Access22605485, level1 / intended `$rc_monthly` | P1M | EUR 3.99 saved/read back (Italy) | Intended `full_access`; RC unmapped | Prepare for Submission; no introductory offer; availability unset |
+| Apple | `annual_access` / Apple6837969104 | Same group and level1 / intended `$rc_annual` | P1Y | EUR 24.99 saved/read back (Italy) | Intended `full_access`; RC unmapped | Prepare for Submission; yearly upfront, no introductory offer; availability unset |
 | Google Play | `monthly_access` (preserve if registered) | `monthly` **proposed** / `$rc_monthly` | P1M | EUR 3.99 | `full_access` | Both unverified |
 | Google Play | Same subscription as above | `annual` **proposed** / `$rc_annual` | P1Y | EUR 24.99 | `full_access` | Not created/verified |
 | RevenueCat Billing web | `web_monthly` **proposed** | `$rc_monthly` in web offering | P1M | EUR 3.99 | `full_access` | Not created/verified |
@@ -47,7 +51,7 @@ RevenueCat, Cloudflare or the store's secret storage; never send secrets in chat
 | Service | Missing concrete action/value | Where to obtain/configure | Already prepared | Verification unlocked |
 | --- | --- | --- | --- | --- |
 | Apple account/signing | Existing app verified; complete owner-approved distribution credential/profile setup and next build number. Free-download pricing and Developer team/membership still need verification | Apple Developer; App Store Connect; EAS Credentials | App6832290282 / preserved bundle / en-AU / no TestFlight builds; Xcode26.6, one development identity, zero distribution identities/EAS iOS credentials | Signed TestFlight-capable IPA/install |
-| Apple agreements/catalog | Owner must update legal entity and accept Paid Applications Agreement (currently New, not active). Approve proposed group/IDs before persistent creation; then set EUR base prices, regions, same full-access level and localized review metadata without introductory trials | App Store Connect → Business; app → Monetization → Subscriptions | Free Applications Agreement Active; subscription groups/IAPs verified empty. Unsaved group proposal prepared; no catalog mutation or agreement acceptance | Catalog mapping and both sandbox purchase/lifecycle matrices |
+| Apple agreements/catalog | Owner must update legal entity and accept Paid Applications Agreement (New, not active at November21 audit); confirm sales regions and tax category, finish review screenshot/metadata. Draft creation approval is resolved | App Store Connect → Business; app → Monetization → Subscriptions | Founder-approved group22605485 and both products created November22; periods1month/1year, equal level1, en-AU draft names/descriptions, Italy€3.99/€24.99 saved/read back; no introductory offer, availability unset, tax category inherits app without attestation | Catalog mapping and both sandbox purchase/lifecycle matrices |
 | RevenueCat Apple | Confirm project/app; grant current Apple integration credentials and notifications; import actual products and attach entitlement | RevenueCat → iOS app configuration; Apple API keys/notifications | Live project5921ebba / approved `full_access` created; no products associated | Server-confirmed Apple CustomerInfo and notifications |
 | Google account/app | Open correct existing developer profile/invitation: current signed-in profile reaches signup. Then audit actual app/package, free pricing, account type/date/health Organization applicability, payment profile, Play App Signing, upload key and next unused versionCode | Play Console; EAS Credentials/version management | No new account/fee accepted. Package/EAS preserved; remote versionCode1 initialized only for internal native-audit | Play-signed AAB upload/internal install |
 | Android runtime/signing | Supply owner-verified upload key/Play App Signing and Android runtime equipment; run actual16KB device/emulator, launcher/splash/routing/notification/store QA | Play Console; authorized test host/device | Real EAS AAB/API36/Billing8.3.0; all50 64-bit ELF/RELRO and same-AAB derived APK ZIP checks pass. Internal debug signature is not upload signing | Store-signed artifact and actual16KB/runtime acceptance |
