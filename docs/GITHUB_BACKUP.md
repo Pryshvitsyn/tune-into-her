@@ -38,12 +38,14 @@ receipts and a recovery guide. The helper requires Python 3.11+ and age v1.3.2; 
 `--verify-only` with explicit `--age`, `--identity`, `--output` and `--receipt` paths before
 extracting anything. It never prints the recovery identity or archive member contents.
 
-**The complete backup remains pending.** The existing Development private key held only
-in macOS Keychain still needs the owner's scoped system-authorized encrypted export.
-Project-local databases, environment configuration and the sandbox identity/token require
-the separately requested scope approval and have not been copied. The owner has not yet
-confirmed saving the recovery key outside this Mac. Do not delete original files on the
-basis of the core copy alone.
+The owner separately authorized project-local data and confirmed saving the recovery key
+outside this Mac. `TuneIntoHer-supplement-20261123.tar.gz.age` contains the scoped Development
+identity, one SQLite snapshot, local config and existing trial sandbox identity/token. Its
+independent download passed age authentication and every manifest/member/stream hash. The
+PKCS12 MAC/passphrase and presence of both private-key and certificate bags passed without
+extracting private-key bytes. The Android audit-only JKS's passphrase recovery remains
+unverified; this key is not represented as Google Play upload signing. Original data remains
+intact until the owner chooses cleanup.
 
 Installed dependencies, downloaded Pods, generated build caches, unrelated Mac files and
 whole system Keychains are excluded. Device/Simulator data is not a project Git backup.

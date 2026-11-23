@@ -18,8 +18,11 @@ fertility, or mood-prediction product.
 - Source backup was pushed and exact remote SHA verified. A private draft recovery release
   contains the 722,098,094-byte age-encrypted core; an independent download/decryption verified
   all 678 files / 991 entries. The complete-history 36-ref bundle and fresh clone preserve older V4,
-  intro and context commits. The OS-only Development key export, separate local-data scope
-  approval and off-Mac recovery-key confirmation remain pending; full recovery is not claimed.
+  intro and context commits. The owner-authorized Development identity, one SQLite snapshot,
+  local configuration and trial test identity were added to a separate encrypted supplement;
+  its downloaded ciphertext, PKCS12 MAC/passphrase and key/certificate bags verify. The owner
+  confirms the recovery key is saved outside this Mac. The audit-only Android JKS passphrase
+  is not known, so usability of that debug key is unverified. No original files were deleted.
   A separate encrypted Android audit-key part also passed remote download/stream verification;
   its existing keystore passphrase and Play-upload signing role are not verified.
   No original files were deleted. See [backup coverage](docs/GITHUB_BACKUP.md).

@@ -19,11 +19,14 @@ Updated: 2026-11-23 (Europe/Rome)
 - [x] Preserve the additional internal Android audit keystore in its own encrypted part;
   upload/download/stream verification passes, without claiming Play signing or passphrase recovery.
 - [x] Save the reviewed verifier, non-secret receipts and recovery guide in private backup storage.
-- [ ] Complete owner's scoped Development Keychain identity export and encrypted supplementary part.
-- [ ] Resolve separate owner approval for project-local DB/env/sandbox identity/token data;
-  these remain excluded while approval is pending.
-- [ ] Receive owner confirmation that the separate recovery-key file is saved outside this Mac;
-  only then evaluate complete recovery coverage before any future cleanup.
+- [x] Complete scoped Development Keychain export and encrypted supplementary part, including
+  the separately approved project-local SQLite/config/trial identity data.
+- [x] Independently download and stream-verify supplementary ciphertext; PKCS12 MAC/passphrase
+  and both key/certificate bag types verified without extracting private key bytes.
+- [x] Record owner confirmation that the recovery identity is saved outside this Mac.
+- [ ] Resolve the Android audit-only JKS passphrase recovery before claiming that particular
+  debug signing key is independently usable. Core app backup and owner recovery-key confirmation
+  are complete; original files remain intact.
 
 ## CURRENT — final Apple / Google billing audit (2026-11-22)
 
